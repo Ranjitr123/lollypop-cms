@@ -1,0 +1,58 @@
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+# http to https redirection
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+
+
+# BEGIN WordPress
+
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+
+# 301 Redirection
+RewriteRule ^2021/june/ux-ui-design-deliverables-in-silicon-valley(/)?$ https://lollypop.design/blog/2021/june/ux-ui-design-deliverables-in-silicon-valley/ [L,R=301,NC]
+RewriteRule ^service(/)?$ https://lollypop.design/services/ [L,R=301,NC]
+RewriteRule ^enterprise(/)?$ https://lollypop.design/industries/enterprise/ [L,R=301,NC]
+RewriteRule ^2021/september/designer-can-learn-from-expo-2020-dubai(/)?$ https://lollypop.design/blog/2021/september/designer-can-learn-from-expo-2020-dubai/ [L,R=301,NC]
+RewriteRule ^about/rajesh(/)?$ https://lollypop.design/about/rajesh-vasanth/ [L,R=301,NC]
+RewriteRule ^blog/2017/february/the-basics-of-ui(/)?$ https://lollypop.design/blog/2018/june/the-basics-of-ui/ [L,R=301,NC]
+RewriteRule ^about-us(/)?$ https://lollypop.design/about/ [L,R=301,NC]
+RewriteRule ^2021/may/why-startup-should-invest-in-ux-research(/)?$ https://lollypop.design/blog/2021/may/why-startup-should-invest-in-ux-research/ [L,R=301,NC]
+RewriteRule ^blog/2018/august/designing-for-fintech(/)?$ https://lollypop.design/blog/2018/june/designing-for-fintech/ [L,R=301,NC]
+RewriteRule ^contact-us(/)?$ https://lollypop.design/contact/ [L,R=301,NC]
+RewriteRule ^vietnam(/)?$ https://lollypop.design/ui-ux-design-agency-vietnam/ [L,R=301,NC]
+RewriteRule ^industrie(/)?$ https://lollypop.design/industries/ [L,R=301,NC]
+RewriteRule ^uae(/)?$ https://lollypop.design/ae/ [L,R=301,NC]
+RewriteRule ^healthcare(/)?$ https://lollypop.design/industries/healthcare/ [L,R=301,NC]
+RewriteRule ^blog/2020/august/the-design-revolution-in-banking(/)?$ https://lollypop.design/blog/2020/april/the-design-revolution-in-banking/ [L,R=301,NC]
+RewriteRule ^2019/june/how-designers-can-benefit-by-working-collaboratively(/)?$ https://lollypop.design/blog/2019/june/how-designers-can-benefit-by-working-collaboratively/ [L,R=301,NC]
+RewriteRule ^agriculture(/)?$ https://lollypop.design/industries/agriculture/ [L,R=301,NC]
+RewriteRule ^2021/september/how-good-design-helps-businesses-grow-in-vietnam(/)?$ https://lollypop.design/blog/2021/september/how-good-design-helps-businesses-grow-in-vietnam/ [L,R=301,NC]
+RewriteRule ^build-fast-launch-fast/sucess.html(/)?$ https://lollypop.design/build-fast-launch-fast/ [L,R=301,NC]
+RewriteRule ^fintech(/)?$ https://lollypop.design/industries/fintech/ [L,R=301,NC]
+RewriteRule ^blog/2019/june/how-to-build-design-systems(/)?$ https://lollypop.design/blog/2019/january/how-to-build-design-systems/ [L,R=301,NC]
+RewriteRule ^usa(/)?$ https://lollypop.design/ui-ux-design-agency-in-usa/ [L,R=301,NC]
+RewriteRule ^ae(/)?$ https://lollypop.design/ui-ux-design-agency-in-uae/ [L,R=301,NC]
+
+
+# End 301 Redirection
+
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+# END WordPress
+</IfModule>
+
+
+
