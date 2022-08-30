@@ -28,22 +28,13 @@ get_header();
                 </div>
               </div>
               <div class="lp-video-wrap">
-              
-                <!--<div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="https://player.vimeo.com/video/668194256?h=6b8edc46ea" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
-                </div>
-              </div>-->
-              <!-- <div class="controls-hide">
-                <div class="plyr__video-embed" id="player">
-                   <iframe src="<?php the_field('banner_video');?>" allowfullscreen allowtransparency autoplay="true" allow="autoplay" hideControls="true"></iframe>
-                </div>
-                </div>-->
                 <div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_field('banner_video'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
+                  <div id="play2-out" style="display:none">
+                      <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider'); ?>" data-plyr-embed-id="<?php the_field('banner_video');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider="<?php the_field('banner_video_provider'); ?>" embed-id="<?php the_field('banner_video');?>" poster="<?php the_field('banner_video_poster'); ?>">
+                  </video>
                 </div>
-              </div>
               </div>
               
             </div>

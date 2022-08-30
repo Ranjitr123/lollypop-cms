@@ -1,7 +1,7 @@
 <?php
 
   if ( is_front_page() ) { echo'<meta name="keywords" content="ui ux agency, ui ux design agency India, ux studio, ui studio, uxui mumbai, ux bangalore, ux ui design company, UX consultant, ui ux agency, ux ui design agency India, ui design company, ux design consultancy, ui company, ux design company, ui ux design firm, ui design agency, user interface design company, ui ux company, ux consultant, ui ux design agency, ui design firm, best ui/ux design companies in india, ui studio, ux research companies India, ux research agency">';}
-if (strpos($_SERVER['REQUEST_URI'])) {
+if (strpos($_SERVER['REQUEST_URI'],'')) {
 		echo '<meta name="keywords" content="ui ux agency, ui ux design agency India, ux studio, ui studio, uxui mumbai, ux bangalore, ux ui design company, UX consultant, ui ux agency, ux ui design agency India, ui design company, ux design consultancy, ui company, ux design company, ui ux design firm, ui design agency, user interface design company, ui ux company, ux consultant, ui ux design agency, ui design firm, best ui/ux design companies in india, ui studio, ux research companies India, ux research agency">';
 }elseif (strpos($_SERVER['REQUEST_URI'], "ui-ux-design-agency-vietnam")) {
 	  echo '<meta name="keywords" content="UI/UX Design Company, web design , UI/UX Design Companies , Website Design, UI Designers , user experience design firms , UI/UX Design agency in Vietnam , ui ux design services , Mobile App Design , UX design firms in the market, Web design and development services, Branding & Corporate Identity Design">';

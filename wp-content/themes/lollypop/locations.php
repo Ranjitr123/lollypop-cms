@@ -48,11 +48,13 @@ padding: 35px 0px !important;
 <?php $locationVideo = get_field('video');
 if($locationVideo !=''){
 ?>
-<div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_field('video');?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
-                </div>
-              </div>
+	<div class="play-video-on-scroll">
+		<div id="play2-out" style="display:none">
+		<div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>"></div>
+	</div>
+	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php the_field('video_poster');?>">
+	</video>
+	</div>
 
 <?php }else{ ?>
 <div class="hover-img">
@@ -190,10 +192,12 @@ if($locationVideo !=''){
 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
 </div>
-<div class="controls-hide">
-<div class="plyr__video-embed js-player">
-<?php the_sub_field('video_url') ?>
+<div class="controls-hide play-video-on-scroll">
+<div id="play1-out" style="display:none">
+<div id="play1" data-plyr-provider="<?php the_sub_field('video_provider')?>" data-plyr-embed-id="<?php the_sub_field('video_url') ?>"></div>
 </div>
+<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_sub_field('video_url') ?>" provider="<?php the_sub_field('video_provider')?>" playsinline="" poster="<?php the_sub_field('video_poster')?>">
+</video>
 </div>
 </div>
 <?php endwhile; endif; ?>

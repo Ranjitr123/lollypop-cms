@@ -50,12 +50,13 @@ get_header();
               
                <?php $bannerVideo = get_field('banner_video_link') ?>
               <?php if($bannerVideo !=''){ ?>
-             
                 <div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_field('banner_video_link'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
+                  <div id="play2-out" style="display:none">
+                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider');?>" data-plyr-embed-id="<?php the_field('banner_video_link');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_link');?>" provider="<?php the_field('banner_video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  </video>
                 </div>
-              </div>
                <?php } ?>
               </div>
             </div>
@@ -118,17 +119,13 @@ get_header();
                 </div>
                    
                 <?php $i=0; if(get_sub_field('web_video') !=''){ ?>
-              <div class="play-video-on-scroll mb-80" video="<?php echo $i; ?>">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_sub_field('web_video'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
+                <div class="play-video-on-scroll mb-80" video="<?php echo $i; ?>">
+                  <div id="play2-out" style="display:none">
+                    <div id="play2" data-plyr-provider="<?php the_sub_field('web_video_provider');?>" data-plyr-embed-id="<?php the_sub_field('web_video');?>" ></div> 
+                  </div>
+                  <video class="playvid"  autoplay="" muted="" loop="" playsinline="" provider="<?php the_sub_field('web_video_provider');?>" embed-id="<?php the_sub_field('web_video');?>" poster="<?php the_sub_field('web_video_poster');?>">
+                  </video>
                 </div>
-              </div>
-              
-             <!-- <div class="play-video-on-scroll" video="<?php echo $i; ?>">
-                <div class="plyr__video-embed js-player">
-                  <iframe src="<?php the_sub_field('web_video'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
-                </div>
-              </div>-->
               <?php } $i++; ?>
                 
                  <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
@@ -159,16 +156,12 @@ get_header();
                 <a class="clr-second hvr-line d-inline-block data-scroll fnt-14" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_name'); ?></a>
                 <?php } ?>
               </div>
-                 <!--<div class="controls-hide">
-                <div class="plyr__video-embed js-player">
-                  <iframe src="<?php the_sub_field('video_url') ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true" volume="1"></iframe>
-             
+              <div class="play-video-on-scroll">
+                <div id="play1-out" style="display:none">
+                  <div id="play1" data-plyr-provider="<?php the_sub_field('video_provider')?>" data-plyr-embed-id="<?php the_sub_field('video_url') ?>"></div>
                 </div>
-                </div>-->
-                <div class="play-video-on-scrolls">
-                <div class="plyr__video-embed" id="player1">
-                  <iframe src="<?php the_sub_field('video_url') ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
-                </div>
+                <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_url') ?>" provider="<?php the_sub_field('video_provider')?>" poster="<?php the_sub_field('video_poster')?>">
+                </video>
               </div>
             </div>
              <?php wp_reset_postdata(); endwhile; endif; ?>
@@ -178,48 +171,48 @@ get_header();
 </section>
       <?php } ?>
       <!--04-->
-        <?php if( have_rows('sketch') ) : while( have_rows('sketch') ): the_row(); 
+    <?php if( have_rows('sketch') ) : while( have_rows('sketch') ): the_row();
         $sketch = get_sub_field('title');
-    endwhile; endif; 
+      endwhile; endif;
     if($sketch !=''){
-      ?>
-      <section class="p-r-80">
-        <div class="container"> 
-          <div class="row"> 
-           
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <?php if( have_rows('sketch') ) : while( have_rows('sketch') ): the_row(); ?> 
-              <div>
-                <div class="col-md-10 px-0 mx-auto">
-                  <div class="mb-r-80">
-                    <div class="project-step">
-                      <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
-                        <div class="col-12 col-md-8 project-step-disc">
-                          <div class="project-step-disc__item"> 
-                           <?php the_sub_field('content'); ?>
+        ?>
+        <section class="p-r-80">
+          <div class="container"> 
+            <div class="row"> 
+            
+              <div class="col-12 col-md-11 col-lg-10 mx-auto">
+                <?php if( have_rows('sketch') ) : while( have_rows('sketch') ): the_row(); ?> 
+                <div>
+                  <div class="col-md-10 px-0 mx-auto">
+                    <div class="mb-r-80">
+                      <div class="project-step">
+                        <div class="project-step__item row"> 
+                          <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
+                          <div class="col-12 col-md-8 project-step-disc">
+                            <div class="project-step-disc__item"> 
+                            <?php the_sub_field('content'); ?>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
+                  <div class="mb-r-80 m-img"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>"></div>
+                      <?php endwhile; endif; ?>
                 </div>
-                 <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
-                <div class="mb-r-80 m-img"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>"></div>
-                     <?php endwhile; endif; ?>
-              </div>
-               <?php endwhile; endif; ?>
-             
-            </div>
+                <?php endwhile; endif; ?>
               
+              </div>
+                
+            </div>
           </div>
-        </div>
-      </section>
-      <?php } ?>
-      
-       <?php if( have_rows('project_testimonial') ) : while( have_rows('project_testimonial') ): the_row();
-     if(get_sub_field('title') !=''){
-    ?>
+        </section>
+        <?php } ?>
+        
+        <?php if( have_rows('project_testimonial') ) : while( have_rows('project_testimonial') ): the_row();
+      if(get_sub_field('title') !=''){
+      ?>
       
        <section class="sec-pd pt-0">
       <div class="sec-bg"  style="background: #221429">

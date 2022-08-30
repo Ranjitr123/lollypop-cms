@@ -99,14 +99,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
-     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
-     <script  src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
+    <script  src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
     <script  src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/blog.js"></script>
-      <script defer src="<?php echo get_template_directory_uri(); ?>/js/contact.js"></script>
-      <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/contact.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
+
 
 <script type="application/ld+json">
 {
@@ -186,6 +188,13 @@
 cursor: no-drop;
 opacity:0.7 !important;
 }
+.plyr__controls{
+  display: none;
+} 
+.playvid[poster]{ 
+  width:100%; 
+  margin:auto; 
+  }
 </style>
 
 <script>
@@ -456,7 +465,7 @@ $(".menus a[href*='"+path+"']").addClass("active");
         const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
         });
 </script>
-<script>
+<!-- <script>
     
         var player1 = void 0;
 $(document).ready(function(){
@@ -519,7 +528,7 @@ $(document).ready(function(){
   });
 });*/
 
-</script>
+</script> -->
 
 
 

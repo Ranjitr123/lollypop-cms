@@ -53,7 +53,11 @@ $(window).scroll(function () {
 var input = document.getElementById('file-upload');
 var infoArea = document.getElementById('filename');
 
-input.addEventListener('change', showFileName);
+if (typeof(input) != 'undefined' && input != null)
+{
+    input.addEventListener('change', showFileName);
+}
+
 
 function showFileName(event) {
 

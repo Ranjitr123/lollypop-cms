@@ -88,22 +88,13 @@ get_header();
               </div>
               <div class="row">
                 <div class="col-12 mb-4">
-                  <!--<div class="lp-video-wrap">
-                    <video id="player" playsinline="" controls="false" data-poster="" preload autoplay="true"  muted="true">
-                      <source src="<?php the_field('video');?>" type="video/mp4">
-                      
-                    </video>
-                  </div>-->
-                  <!-- <div class="controls-hide">
-                <div class="plyr__video-embed" id="player">
-                   <iframe src="<?php the_field('video');?>" allowfullscreen allowtransparency autoplay="true" allow="autoplay" hideControls="true"></iframe>
-                </div>
-                </div>-->
                 <div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_field('video');?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
+               			<div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>" ></div> 
                 </div>
-              </div>
+                <video class="playvid"  autoplay="" muted="" loop="" playsinline="" provider="<?php the_field('video_provider');?>" embed-id="<?php the_field('video');?>"  poster="<?php the_field('video_poster');?>">              
+                </video>                     
+                </div>
                 </div>
               </div>
             </div>
@@ -351,19 +342,12 @@ get_header();
                 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
                 <!--<a class="clr-second hvr-line d-inline-block data-scroll fnt-14" href="<?php the_sub_field('url') ?>">View Project</a>-->
               </div>
-               <!--<a class="video-img position-relative popup-vimeo popup-youtube d-block" href="<?php the_sub_field('video_url') ?>">
-                <div class="reveal"> <img src="<?php the_sub_field('image') ?>"></div>
-                <div class="play-icon play-icon--red"><i class="icon-play"></i></div>
-                </a>-->
-               <!-- <div class="controls-hide">
-                <div class="plyr__video-embed js-player">
-                   <iframe src="<?php the_sub_field('video_url') ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true" volume="1"></iframe>
+              <div class="play-video-on-scroll">
+                	<div id="play1-out" style="display:none">
+                <div id="play1" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_sub_field('video_url');?>" ></div> 
                 </div>
-                </div>-->
-                 <div class="play-video-on-scrolls">
-                <div class="plyr__video-embed" id="player1">
-                  <iframe src="<?php the_sub_field('video_url') ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true" ></iframe>
-                </div>
+                      <video class="playvid"  autoplay="" muted="" loop="" playsinline="" provider="<?php the_sub_field('video_provider');?>" embed-id="<?php the_sub_field('video_url');?>" poster="<?php the_sub_field('video_url_poster');?>">                          
+                      </video>
               </div>
             </div>
             <?php endwhile; endif; ?>

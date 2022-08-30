@@ -85,10 +85,6 @@ $(document).ready(function () {
     once: true
   });
 
-
-
-
-
 // Image animation
   gsap.registerPlugin(ScrollTrigger);
 
@@ -121,16 +117,6 @@ $(document).ready(function () {
 
     
   });
-
-
-
-
-
-
-
-
-
-
 
   // Fluid cards
   var $fluidEl = $('.fluid-width').length;
@@ -304,8 +290,6 @@ $(document).ready(function () {
               
    });
 
-
-
 });
 
 $('body').on('click', '.accordion__head', function () {
@@ -371,8 +355,8 @@ $(document).ready(function () {
 
 $('body').on('click', '.tab-head-item__name', function () {
   var index = $(this).index();
-  $(this).addClass('active');
-  $(this).parents('.tab-head-item').find('.tab-head-item__name').not(this).removeClass('active');
+  //$(this).addClass('active');
+  //$(this).parents('.tab-head-item').find('.tab-head-item__name').not(this).removeClass('active');
   $(this).parents('.tab-section').find('.tab-section-content').find('.tab-section-content__item').removeClass('active');
   $(this).parents('.tab-section').find('.tab-section-content').find('.tab-section-content__item').eq(index).addClass('active');
 
@@ -426,10 +410,6 @@ $('body').on('click', '.f-accordion__head', function () {
   $("html,body").animate({scrollTop: $(".tab-content").offset().top -150 }, 0);
 });
 
-
-
-
-
 // Tab swicthing
 
 $("body").on("click", ".tab-sw-hd", function () {
@@ -467,8 +447,8 @@ $('body').on('click', '.tab-head-item__name', function() {
     $(this).parents(".tab-section").find('.tab-scroll-content').find('.tab-section-content__item').eq($index).addClass('active');
 
   
-    $(this).addClass('active');
-    $(this).parents('.tab-head-item').find('.tab-head-item__name').not(this).removeClass('active');
+    //$(this).addClass('active');
+    //$(this).parents('.tab-head-item').find('.tab-head-item__name').not(this).removeClass('active');
 
     $('html, body').animate({
         scrollTop: $($scrollIndex).offset().top - 160,
@@ -554,8 +534,4 @@ $('.page-head-tab').find(tab2).trigger('click');
 
 });
 
-
-
-
-
-},{}]},{},[1])//# sourceMappingURL=main.js.map
+},{}]},{},[1])    //# sourceMappingURL=main.js.map
