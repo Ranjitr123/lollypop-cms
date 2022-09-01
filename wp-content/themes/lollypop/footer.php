@@ -97,7 +97,8 @@
     <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>  -->
+	<script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
     <script  src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
@@ -108,6 +109,7 @@
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/player.js"></script>
 
 
 <script type="application/ld+json">
