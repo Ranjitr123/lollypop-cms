@@ -75,7 +75,12 @@ width: 96px;
 </div>
 </div>
 </div>
-<div class="w-100 h-auto"><img class="wpdm-img img-fit" src="<?php echo get_field('top_image')?>"></div>
+<div class="w-100 h-auto">
+  <!-- <img class="wpdm-img img-fit" src="<?php //echo get_field('top_image')?>"> -->
+  <iframe class="w-100" height="500"
+  src="<?php echo get_field('top_image')?>">
+  </iframe>
+</div>
 </div>
 </div>
 </div>
