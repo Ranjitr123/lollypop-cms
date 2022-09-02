@@ -28,7 +28,6 @@
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -46,9 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TQBBF4Z');</script>
 <!-- End Google Tag Manager -->
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
-<!-- End of HubSpot Embed Code -->
+
 
 
 <style>

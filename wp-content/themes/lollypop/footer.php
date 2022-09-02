@@ -84,33 +84,36 @@
   </footer>
    <div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg"></div>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script rel="preconnect" defer src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
+	
+	<!-- Start of HubSpot Embed Code -->
+	<script rel="preconnect" type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
+	<!-- End of HubSpot Embed Code -->
+
+    <script rel="preconnect" defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script rel="preconnect" defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.js"> </script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js"> </script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>  -->
-	<script src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
-    <script  src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
-    <script  src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js"> </script -->
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script rel="preconnect" defer src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script defer src="<?php echo get_template_directory_uri(); ?>/js/TweenMax.min.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/blog.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/contact.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/player.js"></script>
-
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
 
 <script type="application/ld+json">
 {
