@@ -6,7 +6,6 @@
 get_header();
 ?>
 <style>
-.carmail:hover{}
 .lp-mainheader--white .nav-item:last-child .nav-link{
 display: none;
 }
