@@ -54,9 +54,11 @@ display: none;
             
             <div class="col-12 col-md-11 col-lg-10 mx-auto mb-112">
               <div class="play-video-on-scroll">
-                <div class="plyr__video-embed" id="player2">
-                  <iframe src="<?php the_field('career_video'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
+                <div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="<?php the_field('career_video_provider');?>" data-plyr-embed-id="<?php the_field('career_video');?>" ></div> 
                 </div>
+                <video class="playvid"  autoplay="" muted="" loop="" playsinline="" provider="<?php the_field('career_video_provider');?>" embed-id="<?php the_field('career_video');?>" poster="<?php the_field('career_video_poster');?>">                    
+                </video>
               </div>
             </div>
 
