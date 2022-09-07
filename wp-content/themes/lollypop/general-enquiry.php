@@ -83,11 +83,9 @@ get_footer();
 ?>
 
 <script>
-  
   $(document).ready(function(){
    $('#enqform').submit(function (e, data) {
       //alert('hi');
-	   //   });
-	   //     });
-	   //
-	   //     </script>
+	   });
+	 });
+  </script>

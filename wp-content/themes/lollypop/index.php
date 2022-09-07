@@ -212,78 +212,6 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      
-      <!--03-->
-      <!-- Popshot
-      <section class="sec-pd sec-pb pt-md-0"> 
-        <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-md-10 col-lg-8 mx-auto">
-              <h2 class="fnt-50 fnt-800 mb-head data-scroll">Our Latest  Popshot</h2>
-              <div class="popshot">
-                <div class="row flex-wrap">
-                  <?php if( have_rows('latest_popshot') ) : while( have_rows('latest_popshot') ): the_row(); ?> 
-                  <div class="col-12 col-md-6 mb-4 mb-md-0"><a class="popshot__img d-block popup-vimeo" href="<?php the_sub_field('video_url'); ?>">
-                      <div class="reveal"><img class="video-poster" src="<?php the_sub_field('image'); ?>"></div>
-                      <div class="play-icon"> <i class="icon-play"></i></div></a></div>
-                  <div class="col-12 col-md-6">
-                    <div class="popshot__info">
-                      <div class="mb-40 col-md-10 px-0">
-                        <h3 class="fnt-30 fnt-800 mb-2 data-scroll"><?php the_sub_field('title'); ?></h3>
-                        <p class="data-scroll col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
-                      </div>
-                      <ul class="px-0 d-flex flex-wrap mb-40 data-scroll"> 
-                        <li class="me-3 me-lg-4 pe-xl-2"> 
-                          <h3 class="fnt-30 fnt-800"><?php the_sub_field('views'); ?></h3><span class="d-block fnt-16">Views</span>
-                        </li>
-                        <li class="me-3 me-lg-4 pe-xl-2"> 
-                          <h3 class="fnt-30 fnt-800"><?php the_sub_field('likes'); ?></h3><span class="d-block fnt-16">Likes</span>
-                        </li>
-                        <li class="me-3 me-lg-4 pe-xl-2"> 
-                          <h3 class="fnt-30 fnt-800"><?php the_sub_field('comments'); ?></h3><span class="d-block fnt-16">Comments</span>
-                        </li>
-                      </ul>
-                      <div class="d-flex align-items-center flex-wrap data-scroll"> <span class="fnt-16 d-inline-block me-4">Check more Popshots</span>
-                        <div class="icons d-flex flex-wrap">
-                          <div class="icons__item"><a class="me-2 icon-insta" target="_blank" href="<?php the_sub_field('instagrams'); ?>"></a></div>
-                          <div class="icons__item"><a class="me-2 icon-web" target="_blank" href="<?php the_sub_field('web'); ?>"></a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <?php endwhile; endif; ?>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      
-      <!--04-->
-      <!--SUbscribe-->
-      <!--<section class="sec-footer-trans">
-        <div class="container z-1">
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="py-70 px-3 data-scroll" style="background: #221429;">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45 pb-lg-3"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Want to read more?</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">All the blogs straight into your inbox.</h2>
-                    </div>
-                    <form data-parsley-validate="">
-                      <div class="subscribe-input d-flex flex-column flex-md-row align-items-center">
-                        <input class="fnt-16 fnt-400" type="email" placeholder="Your Email Address" required>
-                        <button class="web-btn web-btn--red subscribe-input__btn hvr-none" type="submit">Subscribe</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <section class="sec-footer-trans " id="nine">
         <div class="container z-1">
           <div class="row"> 
@@ -304,17 +232,6 @@ get_header(); ?>
     </main>
 <script>
     $(document).ready(function(){
-/*$('.thrid-article:nth-child(1)').hide();
-$('.thrid-article:nth-child(1)').addClass('hide');
-$('.thrid-article:nth-child(2)').addClass('hide');
-$('.second-article:nth-child(1)').addClass('hide');*/
-
-
-/*        $(".blog-pera").html(function(){
-  var text= $(this).text().trim().split(" ");
-  var first = text.shift();
-  return (text.length > 0 ? "<span class='hide'>"+ first + "</span> " : first) + text.join(" ");
-    });*/
 $('.thrid-article:nth-child(1)').addClass('first-blog');;
    });
     

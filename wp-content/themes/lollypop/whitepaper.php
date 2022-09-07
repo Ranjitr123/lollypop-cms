@@ -5,8 +5,6 @@
 
 get_header();
 ?>
-
-
 <main class="main">
       <!--01-->
       <section class="sec-pd pb-0 sec-bnr-ptsm">
@@ -39,7 +37,7 @@ get_header();
                                 'posts_per_page' => -1,
                                 //'meta_key'			=> 'date',
                                 //'orderby'			=> 'meta_value',
-								//'order'				=> 'ASC' ,
+								                //'order'				=> 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>
@@ -61,15 +59,13 @@ get_header();
                       </div>
                     </div>
                      </div></a>
-                </li>
-                 <?php wp_reset_postdata(); endwhile; endif; ?>
-              
+                  </li>
+                 <?php wp_reset_postdata(); endwhile; endif; ?>             
               </ul>
             </div>
           </div>
         </div>
-      </section>
-     
+      </section>   
       <section class="sec-footer-trans" id="nine">
         <div class="container z-1">
           <div class="row"> 
@@ -88,7 +84,6 @@ get_header();
         </div>
       </section>
     </main>
-
 <script type="application/ld+json">
     {
 	            "@context": "https://schema.org",
@@ -118,8 +113,6 @@ get_header();
 													          }
 		}
 </script>
-
-
 <?php
 get_footer();
 ?>

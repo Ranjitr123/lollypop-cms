@@ -21,16 +21,6 @@ get_header();
           </div>
         </div>
       </section>
-      <!--02-->
-      <!-- <section class="sec-sm-pd pt-0"> 
-        <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="img-hvr"><img class="img-fluid mx-auto d-inline-block" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"></div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <!--03-->
       <section class="sec-sm-pd">
         <div class="container"> 
@@ -53,24 +43,6 @@ get_header();
           </div>
         </div>
       </section>
-      <!--04-->
-      <!--<section class="bg-white sec-footer-trans">
-        <div class="container z-1">
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="py-70 px-3 data-scroll" style="background: #221429;">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Become a part of us!</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">Join the tribe and let’s dance in.</h2>
-                    </div><a class="web-btn web-btn--red" href="#">Apply now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
     </main>
      <script src="<?php echo get_template_directory_uri(); ?>/js/white-loader.js" defer></script>
     <script>

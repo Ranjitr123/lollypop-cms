@@ -269,7 +269,7 @@ height:140px;
                             <div class="col-12 col-md-12 px-0 ">
                                 <div class="row">
                                     <div class="col-12 col-md-10 mb-4 mb-md-5 col-lg-10 offset-md-1">
-                                        <h2 style='color:#221429;,max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3">
+                                        <h2 style='color:#221429; max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3">
                                             <?php echo get_field('why__heading')?>
                                         </h2>
                                         <p style='max-width:708px;' class="fnt-24 fnt-mb-14 col-md-12 col-lg-11 col-xl-11 px-0 mb-0">

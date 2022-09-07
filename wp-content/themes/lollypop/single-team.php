@@ -16,8 +16,7 @@ get_header();
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_field('key_word'); ?></h1>
                   </div>
                   <!-- Team profile-->
-                  <div class="row mb-r-120"> 
-         
+                  <div class="row mb-r-120">          
                     <div class="col-12 col-md-5 mb-4 mb-md-0">
                       <div class="reveal team-profile-img"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>" alt="Anil Reddy. Founder &amp; Design director"></div>
                     </div>
@@ -34,19 +33,8 @@ get_header();
                         </div>
                         <div><a class="data-scroll d-inline-block fnt-14 clr-second hvr-line" href="mailto:<?php the_field('drop_a_mail'); ?>">Drop a mail</a></div>
                       </div>
-                    </div>
-                   
-                  </div>
-                 
-        
-                    <!--<li class="team-view-btn__item col-6 col-md-5"><a class="team-nxt-view d-md-flex align-items-center" href="#">
-                        <div class="reveal team-nxt-view__profile"> <img src="<?php the_field('thumbnail_image'); ?>"></div>
-                        <div class="team-nxt-view__name">
-                          <div class="d-inline-block">
-                            <h4 class="m-0 fnt-22 fnt-800 data-scroll text-capitalize"><?php the_title(); ?></h4><span class="data-scroll fnt-14 clr-black-27f"><?php the_field('destination'); ?></span>
-                          </div>
-                        </div></a></li>-->
-                        
+                    </div>                  
+                  </div>                    
                         <ul id="nav-above" class="navigation row team-view-btn px-0 mb-0 justify-content-between">
 <li class="team-view-btn__item col-6 col-md-5">
             <div class="nav-previous">
@@ -64,41 +52,19 @@ if($prevPost) { ?>
                 </div></li>
                 <li class="team-view-btn__item col-6 col-md-5">
              <?php   $nextPost = get_next_post(true);
-if($nextPost) { 
+              if($nextPost) { 
 
-      $nextthumbnail = get_the_post_thumbnail($nextPost->ID, array(100,100) );
-     next_post_link( '%link', '<div class="reveal team-nxt-view__profile">'.  $nextthumbnail .' </div>
-                        <div class="team-nxt-view__name">
-                          <div class="d-inline-block">
-                            <h4 class="m-0 fnt-22 fnt-800 data-scroll text-capitalize">%title</h4><span class="data-scroll fnt-14 clr-black-27f"></span>
-                          </div>
-                        </div>',  TRUE ); 
-    
-    }?>
-</li>
-</ul>
-                 
-                <!-- <div id="cooler-nav" class="navigation">
-<?php $prevPost = get_previous_post(true);
-if($prevPost) {?>
-<div class="nav-box previous">
-<?php $prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) );?>
-<?php previous_post_link('%link',"$prevthumbnail  <p>%title</p>", TRUE); ?>
-</div>
- 
-<?php } $nextPost = get_next_post(true);
-if($nextPost) { ?>
-<div class="nav-box next" style="float:right;">
-<?php $nextthumbnail = get_the_post_thumbnail($nextPost->ID, array(100,100) );  ?>
-<?php next_post_link('%link',"$nextthumbnail  <p>%title</p>", TRUE); ?>
-</div>
-<?php } ?>
-</div>-->
+                    $nextthumbnail = get_the_post_thumbnail($nextPost->ID, array(100,100) );
+                  next_post_link( '%link', '<div class="reveal team-nxt-view__profile">'.  $nextthumbnail .' </div>
+                                      <div class="team-nxt-view__name">
+                                        <div class="d-inline-block">
+                                          <h4 class="m-0 fnt-22 fnt-800 data-scroll text-capitalize">%title</h4><span class="data-scroll fnt-14 clr-black-27f"></span>
+                                        </div>
+                                      </div>',  TRUE ); 
                   
-                  
-                   
-                   
-                    
+                  }?>
+              </li>
+              </ul>   
                 </div>
               </div>
             </div>
@@ -106,8 +72,6 @@ if($nextPost) { ?>
         </div>
       </section>
     </main>
-
-
 <?php
 get_footer();
 ?>

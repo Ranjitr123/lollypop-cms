@@ -28,8 +28,7 @@ get_header();
                   <div> <span class="fnt-24 me-3 mb-3 mb-md-0 d-flex flex-wrap mb-4 justify-content-md-between">
                   <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?>
                   <?php $authorName = get_sub_field('author');
-                       endwhile; endif; ?>
-                       
+                       endwhile; endif; ?>          
                <div class="auth-nm col-12  px-0 mb-1">
                                  </div>
                     <span>Posted on &nbsp;<?php the_time('j F, Y'); ?></span></span></div>
@@ -45,9 +44,6 @@ get_header();
           </div>
         </div>
       </section>
-      
-      
-     
       <!--01-->
       <!-- Blog detail-->
       <section class="sec-pd sec-blog">
@@ -104,22 +100,16 @@ get_header();
                 <div class="col-12 col-md-7 col-lg-8 offset-md-1"> 
                   <div class="blog-detail-content">
                     <div class="blog-detail-content__head">
-                      <div class="mb-40"> 
-                        <!--<h2 class="blog-h2 fnt-800 mb-head data-scroll">Introduction</h2>-->
+                      <div class="mb-40">
                         <div class="blog-detail-content__item">
-
                         <?php if (have_posts()) : while ( have_posts() ) : the_post();?>
-
                         <?php the_content(); ?>
-
                         <?php endwhile; else : ?>
                           <p>Sorry no posts matched your criteria.</p>
                         <?php endif; ?>
                       </div>
-                      </div>
-                      
-                    </div>
-                   
+                      </div>                      
+                    </div>                  
                   </div>
                 </div>
               </div>
@@ -128,23 +118,6 @@ get_header();
         </div>
       </section>
       <!--03-->
-     <!-- <section class="sec-concluison data-scroll">
-        <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="conclusion"> 
-                <div class="row"> 
-                  <div class="col-12 col-md-4 col-lg-3 order-2 order-md-1 d-flex align-items-center justify-content-center"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/blog/cncl.svg"></div>
-                  <div class="col-12 col-md-8 col-lg-9 order-1 order-md-2">
-                    <h2 class="blog-h2 fnt-800 mb-4">Conclusion</h2>
-                    <p><?php the_field('conclusion'); ?></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <section class="sec-auth sec-pd pt-0 sec-pb d-md-none"> 
         <div class="container"> 
           <div class="row"> 
@@ -178,8 +151,7 @@ get_header();
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
                   <li class="trending-blogs__item"> <a class="d-block" href="<?php the_permalink(); ?>">
                       <h3 class="fnt-22 fnt-800 mb-2"><?php the_title(); ?></h3>
-                      <div> <span class="fnt-12 me-4">By  <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?><?php the_sub_field('author'); ?>, <?php wp_reset_postdata(); endwhile; endif; ?> on  <?php the_time('j F, Y'); ?></span></div>
-                      
+                      <div> <span class="fnt-12 me-4">By  <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?><?php the_sub_field('author'); ?>, <?php wp_reset_postdata(); endwhile; endif; ?> on  <?php the_time('j F, Y'); ?></span></div>                     
                       </a></li>
                  <?php wp_reset_postdata(); endwhile; endif; ?>
                 </ul>
@@ -189,30 +161,6 @@ get_header();
         </div>
       </section>
       <!--04-->
-      <!--SUbscribe-->
-      <!--<section class="sec-footer-trans">
-        <div class="container z-1">
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="py-70 px-3 data-scroll" style="background: #221429;">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45 pb-lg-3"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Want to read more?</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">All the blogs straight into your inbox.</h2>
-                    </div>
-                    <form data-parsley-validate="">
-                      <div class="subscribe-input d-flex flex-column flex-md-row align-items-center">
-                        <input class="fnt-16 fnt-400" type="email" placeholder="Your Email Address" required>
-                        <button class="web-btn web-btn--red subscribe-input__btn hvr-none" type="submit">Subscribe</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <section class="sec-footer-trans " id="nine">
         <div class="container z-1">
           <div class="row"> 
@@ -231,7 +179,6 @@ get_header();
         </div>
       </section>
     </main>
-
 <script>
  $(document).ready(function(){
      $("h2").addClass("blog-h2")

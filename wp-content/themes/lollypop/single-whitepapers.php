@@ -44,7 +44,7 @@ get_header();
                                 'posts_per_page' => 2,
                                 //'meta_key'			=> 'date',
                                 //'orderby'			=> 'meta_value',
-								//'order'				=> 'ASC' ,
+								                //'order'				=> 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>
@@ -69,7 +69,7 @@ get_header();
                                 'posts_per_page' => 2,
                                 //'meta_key'			=> 'date',
                                 //'orderby'			=> 'meta_value',
-								//'order'				=> 'ASC' ,
+								                //'order'				=> 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>
@@ -113,23 +113,6 @@ get_header();
           </div>
         </div>
       </section>
-      <!--<section class="sec-footer-trans" id="nine">
-        <div class="container z-1">
-          <div class="row"> 
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="py-70 px-3 data-scroll" style="background: #221429;">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-11 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Got An Idea?</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">Let’s craft brilliance together!</h2>
-                    </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
     </div>
     </main>
 

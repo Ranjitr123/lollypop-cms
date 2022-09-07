@@ -46,8 +46,7 @@ get_header();
                       </div>
                     </div>
                      <?php endwhile; endif;?>
-                  </div>
-                  
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -55,8 +54,6 @@ get_header();
         </div>
       </section>
     </main>
-
-
 <?php
 get_footer();
 ?>

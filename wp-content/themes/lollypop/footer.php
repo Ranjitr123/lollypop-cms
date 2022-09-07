@@ -470,73 +470,6 @@ $(".menus a[href*='"+path+"']").addClass("active");
         const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
         });
 </script>
-<!-- <script>
-    
-        var player1 = void 0;
-$(document).ready(function(){
-   player1 = new Plyr('#player1');
-});
-    $(window).on('scroll', function () {
-
-  $('.play-video-on-scrolls').each(function () {
-
-    var $this = $(this);
-    var top_of_elements = $(this).offset().top;
-    var bottom_of_elements = $(this).offset().top + $(this).outerHeight();
-    var bottom_of_screens = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screens = $(window).scrollTop();
-
-    if (bottom_of_screens > top_of_elements && top_of_screens < bottom_of_elements) {
-      player1.muted = false;player1.play();
-    } else {
-      player1.muted = true;player1.pause();
-    }
-  });
-});
-    
-    var player2 = void 0;
-$(document).ready(function(){
-   player2 = new Plyr('#player2');
-});
-    $(window).on('scroll', function () {
-
-  $('.play-video-on-scroll').each(function () {
-
-    var $this = $(this);
-    var top_of_element = $(this).offset().top;
-    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-    if (bottom_of_screen > top_of_element && top_of_screen < bottom_of_element) {
-      player2.muted = false;player2.play();
-    } else {
-      player2.muted = true;player2.pause();
-    }
-  });
-});
-    
- /*       $(window).on('scroll', function () {
-
-  $('.play-video-on-scroll').each(function () {
-    var $index = $(this).attr('video')
-     players[$index].muted = true;players[$index].pause();
-    var $this = $(this);
-    var top_of_element = $(this).offset().top;
-    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-    if (bottom_of_screen > top_of_element && top_of_screen < bottom_of_element) {
-      players[$index].muted = false;players[$index].play();
-    }
-  });
-});*/
-
-</script> -->
-
-
-
 <script>
 $(window).on('scroll', function () {
 	$('.tab-section-content__item').each(function () {
@@ -552,7 +485,6 @@ $(window).on('scroll', function () {
 						    }
 	});
 });
-
 </script>
 <script>
     $(document).ready(function(){

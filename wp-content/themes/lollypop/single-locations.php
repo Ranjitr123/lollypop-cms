@@ -24,21 +24,7 @@ get_header();
               </div>
             </div>
           </div>
-        </div>
-        <!--<div class="fluid-width p-0">
-          <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 offset-md-2 px-md-0">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider">
-                <?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-                <li class="lp-awards-list__item col-12">
-                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('images'); ?>"></div>
-                </li>
-                 <?php endwhile; endif; ?>
-              </ul>
-            </div>
-          </div>
-        </div>-->
-       
+        </div>       
       </section>
       <!--02-->
       <section class="sec-pd">
@@ -57,8 +43,6 @@ get_header();
                       <p class="fnt-16 clr-black-354 data-scroll"><?php the_sub_field('content'); ?></p>
                     </div>
                     <div>
-                     <!-- <h6 class="fnt-800 fnt-22 mb-0">Lets' Talk</h6>
-                      <a class="data-scroll d-inline-block fnt-14 hvr-link" href="mailto:<?php the_sub_field('mail_id'); ?>"><?php the_sub_field('mail_id'); ?></a>-->
                       <a class="web-btn web-btn--primary data-scroll mt-3" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
                     </div>
                   </div>
@@ -91,61 +75,6 @@ get_header();
         </div>
       </section>
       <!--04-->
-     <!-- <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <?php if( have_rows('investors') ) : while( have_rows('investors') ): the_row(); ?>
-              <div class="row"> 
-                <div class="col-12 col-md-5 mb-4 mb-md-0">
-                  <div class="reveal w-100 h-100"><img class="img-text-wrap" src="<?php the_sub_field('image'); ?>"></div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="ps-md-4 ps-lg-5"><span class="d-block fnt-14 clr-white data-scroll"><?php the_sub_field('small_title'); ?>  </span>
-                    <h3 class="fnt-40 fnt-800 clr-white data-scroll"><?php the_sub_field('title'); ?></h3>
-                    <p class="fnt-24 clr-white data-scroll"><?php the_sub_field('content'); ?></p><a class="hvr-line clr-second fnt-14 data-scroll" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('lets_talk'); ?></a>
-                  </div>
-                </div>
-              </div>
-               <?php endwhile; endif; ?>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-      
-     <!-- <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 mx-auto slide-swap">
-             <?php if( have_rows('investors') ) : while( have_rows('investors') ): the_row(); ?>
-              <div class="row"> 
-                <div class="col-12 col-md-5 mb-4 mb-md-0">
-                  <div class="fade-div slide-swap__left auto-play-none">
-                   <?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-                    <div class="single-dot-slider__item"><img class="img-text-wrap" src="<?php the_sub_field('image'); ?>"></div>
-                     <?php endwhile; endif;?>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="ps-md-4 ps-lg-5 data-scroll dots-align"><span class="d-block fnt-14 clr-white"><?php the_sub_field('small_title'); ?> </span>
-                    <div class="single-dot-slider slide-swap__right single-dot-slider--leftdots">
-                     <?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-                      <div class="single-dot-slider__item">
-                        <h3 class="fnt-40 fnt-800 clr-white"><?php the_sub_field('title'); ?></h3>
-                        <p class="fnt-24 clr-white"><?php the_sub_field('content'); ?></p>
-                      </div>
-                       <?php endwhile; endif;?>
-                    </div><a class="hvr-line clr-second fnt-14" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('lets_talk'); ?></a>
-                  </div>
-                </div>
-              </div>
-               <?php endwhile; endif; ?>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      
       <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
         <div class="container z-1">
           <div class="row"> 
@@ -155,26 +84,8 @@ get_header();
                   <div class="lp-awards__left">
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('design_studio_content'); ?></span>
                   </div>
-                  <!--<div class="px-0 d-flex flex-wrap culture-slider-nav mb-35 data-scroll"><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="javascript:void(0);">India</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/usa/">USA</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/uae/">Dubai</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/vietnam/">Vietnam</a></div>-->
                   <a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo site_url(); ?>/about-us/">About Us</a>
-                </div>
-                <!--<div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-                 <div class="h-100 d-flex align-items-center justify-content-center" id="award">
-                 <?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
-                 <div class="award__item">
-                  <div class="lp-awards__right text-lg-center h-100 d-flex align-items-center justify-content-md-end">
-                    <div class="d-inline-block ml-md-auto"><img class="icon-awards mx-auto" src="<?php the_sub_field('image'); ?>" alt="Awards">
-                      <div class="d-flex flex-column mx-lg-auto text-center">
-                        <h5 class="fnt-16 my-2 clr-white"><?php the_sub_field('title'); ?></h5>
-                        <p class="fnt-12 max-width-100 mx-lg-auto clr-white"><?php the_sub_field('content'); ?></p>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                   <?php endwhile; endif; ?>
-                  </div>
-                </div>-->
-                
+                </div>                
               </div>
             </div>
           </div>
@@ -203,9 +114,7 @@ get_header();
               <div class="row mb-45 justify-content-between">
                 <div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
                   <div class="lp-awards__left">
-                    <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
-
-</span>
+                    <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?></span>
                   </div>
                 </div>
               </div>
@@ -234,18 +143,18 @@ get_header();
               <div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
                 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
                 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
-                <!--<a class="clr-second hvr-line d-inline-block data-scroll fnt-14" href="<?php the_sub_field('url') ?>">View Project</a>-->
               </div>
-               <!--<a class="video-img position-relative popup-vimeo popup-youtube d-block" href="<?php the_sub_field('video_url') ?>">
-                <div class="reveal"> <img src="<?php the_sub_field('image') ?>"></div>
-                <div class="play-icon play-icon--red"><i class="icon-play"></i></div>
-                </a>-->
                 <div class="controls-hide">
                 <div class="plyr__video-embed js-player">
-                  <!--<iframe src="<?php the_sub_field('video_url') ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true" volume="1"></iframe>-->
                   <?php the_sub_field('video_url') ?>
                 </div>
                 </div>
+                <div class="controls-hide play-video-on-scroll">
+                <div id="play1-out">
+                <div id="play1" data-plyr-provider="<?php the_sub_field('video_provider')?>" data-plyr-embed-id="<?php the_sub_field('video_url') ?>"></div>
+                </div>
+                <video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_sub_field('video_url') ?>" provider="<?php the_sub_field('video_provider')?>" playsinline="" poster="<?php the_sub_field('video_poster')?>">
+                </video>
             </div>
             <?php endwhile; endif; ?>
           </div>
@@ -261,34 +170,9 @@ get_header();
               
                 <h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
                 <p class="fnt-24 data-scroll col-md-11 col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
-              
-              <!-- <ul class="d-flex mb-0 flex-wrap services-list bg-white">
-                <?php if( have_rows('our_services_list') ) : while( have_rows('our_services_list') ): the_row(); ?>
-                <li class="services-list__item col-12 col-md-4"> 
-                  <div class="srv d-flex flex-column"> 
-                    <div class="srv__head"> 
-                      <h4 class="fnt-30 fnt-800 mb-2 mb-md-4"><?php the_sub_field('title'); ?></h4>
-                    </div>
-                    <div class="srv__info"> 
-                      <p class="fnt-16"><?php the_sub_field('content'); ?></p>
-                      <ul class="li-disc mb-4">
-                       <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-                         <li class="fnt-16 mb-1"><?php the_sub_field('content'); ?></li>
-                          <?php endwhile; endif; ?>
-                      </ul>
-                    </div>
-                    <div class="srv__ft mt-auto"> <a class="hvr-line clr-second fnt-14 data-scroll" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a></div>
-                  </div>
-                </li>
-               <?php endwhile; endif; ?>
-              </ul> -->
             </div>
              <?php endwhile; endif; ?>
           </div>
-
-
-
-
           <div class="row">
             <div class="col-12 col-md-11 col-lg-8 mx-auto">
             <?php if( have_rows('our_services') ) : while( have_rows('our_services') ): the_row(); ?>
@@ -301,17 +185,12 @@ get_header();
                       <h4 class="fnt-28 fnt-800 mb-2 mb-md-4 text-md-end pe-md-4 pe-lg-5"><?php the_sub_field('title'); ?></h4>
                     </div>
                     <div class="srv__info col-12 col-md-8"> 
-
-
                     <div class="row justify-content-between">
-
                     <div class="col-12 col-md-6">
                     <p class="fnt-16 mb-md-3"><?php the_sub_field('content'); ?></p>
                     <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
                   </div>
-
                   <div class="col-12 col-md-5">
-
                   <ul class="li-disc mb-4">
                        <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
                          <li class="fnt-16 mb-2"><?php the_sub_field('content'); ?></li>
@@ -319,56 +198,20 @@ get_header();
                       </ul>
                       <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
                   </div>
-
-                  </div>
-
-
-
-                     
-                      
+                  </div>                
                     </div>
-
-
                     <div class="srv__ft mt-auto"> </div>
-
-
                   </div>
                 </li>
                <?php endwhile; endif; ?>
               </ul>
             </div>
-             <?php endwhile; endif; ?>
-            
+             <?php endwhile; endif; ?>          
           </div>
           </div>
         </div>
       </section>
       <!--06-->
-      <!--<section class="sec-pd" id="third">
-        <div class="container"> 
-          <div class="row"> 
-           <?php if( have_rows('projects') ) : while( have_rows('projects') ): the_row(); ?>
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">     
-              <div class="mb-35 fluid-mb">
-               <a href="<?php the_sub_field('url'); ?>">
-                <div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('project_image'); ?>"></div>
-                  </a>
-              </div>
-              <div class="d-flex flex-wrap px-md-4 px-xl-5"> 
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 data-scroll pb-md-4">
-                  <div class="mb-4">
-                    <p class="fnt-16 mb-2"><?php the_sub_field('company_name'); ?></p>
-                    <h2 class="fnt-40 fnt-800 mb-1"><?php the_sub_field('title'); ?></h2>
-                    <p><?php the_sub_field('content'); ?></p>
-                  </div><a class="data-scroll fnt-14 lp-link lp-link--pri hvr-line" href="<?php echo site_url(); ?>/portfolio/">View portfolio</a>
-                </div>
-              </div>
-            </div>
-             <?php endwhile; endif; ?>
-          </div>
-        </div>
-      </section>-->
-      
       <section class="sec-pd" id="third">
         <div class="container"> 
           <div class="row"> 
@@ -404,7 +247,6 @@ get_header();
       </section>
       
       <!--07-->
-      <!--07-->
       <section class="sec-pd sec-pb">
         <div class="container">
           <div class="row"> 
@@ -422,7 +264,7 @@ get_header();
                                 'posts_per_page' => 1,
                                 //'meta_key'			=> 'date',
                                 //'orderby'			=> 'meta_value',
-								//'order'				=> 'ASC' ,
+								                //'order'				=> 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>

@@ -120,19 +120,6 @@ Usability Testing?</h2><p class="fnt-24 col-md-7 col-lg-7 px-0">Testing websites
           </div>
         </div>
       </section>
-      <!--<section class="sec-pd sec-pb">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-9 col-lg-8 mx-auto">
-              <div class="text-center mb-35"> 
-                <p class="fnt-24 mb-35 data-scroll">Quick facts</p>
-                <h3 class="fnt-40 fnt-800 data-scroll">We identity large gaps in the website which impacted the growth and revenue of onine sales</h3>
-              </div>
-              <div class="col-12 col-md-10 mx-auto d-flex flex-md-row flex-wrap justify-content-between"> <span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Revenue Impact</span><span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Brand Impact</span><span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Customer retention</span></div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <!--03-->
       <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
         <div class="container"> 
@@ -142,9 +129,7 @@ Usability Testing?</h2><p class="fnt-24 col-md-7 col-lg-7 px-0">Testing websites
                 <div class="col-12 col-md-6 clr-white mb-4 mb-md-0">
                   <div class="sticky-desktop text-center text-md-left">
                     <h3 class="fnt-40 fnt-800 mb-3 data-scroll">What are the benefits of Usability Testing?</h3>
-                    <p class="fnt-24 data-scroll col-md-10">Usability Testing is useful in identifying gaps in the functionality of a website and applications. It helps companies measure their products effectiveness & efficiency.
-
-</p>
+                    <p class="fnt-24 data-scroll col-md-10">Usability Testing is useful in identifying gaps in the functionality of a website and applications. It helps companies measure their products effectiveness & efficiency.</p>
                   </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 offset-md-1 clr-white">
@@ -189,10 +174,8 @@ Usability Testing?</h2><p class="fnt-24 col-md-7 col-lg-7 px-0">Testing websites
                             <div class="process row">
                               <div class="process__head col-12 col-md-5">
                                 <div class="sticky-desktop-tab data-scroll">
-                                  <h2 class="fnt-50 fnt-800 mb-2">How is Usability
-Testing conducted?</h2>
-                                  <p class="fnt-24">This is a method to evaluate how easy and useful it is to use a website/app. The test is conducted by usability experts with real users. The goal is to gather real user feedback and use these findings to shape and improve the product.
-</p>
+                                  <h2 class="fnt-50 fnt-800 mb-2">How is Usability Testing conducted?</h2>
+                                  <p class="fnt-24">This is a method to evaluate how easy and useful it is to use a website/app. The test is conducted by usability experts with real users. The goal is to gather real user feedback and use these findings to shape and improve the product.</p>
                                 </div>
                               </div>
                               <div class="process__body col-12 col-md-6 offset-md-1"><span class="d-block mb-3 data-scroll">Steps</span>
@@ -220,20 +203,16 @@ Testing conducted?</h2>
                                    <li class="step-list__item data-scroll">
                                     <h5 class="fnt-22 fnt-800 mb-1">Recommend</h5>
                                     <p class="fnt-14 col-xl-7 px-0">Recommendations are provided to ensure a continued user experience</p>
-                                  </li>
-                                  
+                                  </li>                                
                                 </ol>
                               </div>
                             </div>
-                          </div>
-                          
+                          </div>                        
                         </div>
               </div>
             </div>
            </div>
-    </section>
-      <!--04-->
-      
+    </section>  
       <!--05-->
         <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
         <div class="container"> 
@@ -325,20 +304,6 @@ Testing conducted?</h2>
           </div>
         </div>
       </section>
-      <!--06-->
-      <!--<section class="sec-pd">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-9 col-lg-8 mx-auto">
-              <div class="text-center">
-                <div class="mb-35">
-                  <h3 class="fnt-40 fnt-800">Let us review your website/app and share valuable insights.</h3>
-                </div><a class="web-btn web-btn--red" href="enquiry.html">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
       <!--07-->
       <section class="sec-pd sec-pb">
         <div class="container"> 
@@ -387,8 +352,7 @@ Testing conducted?</h2>
                         </div>
                         <div class="f-accordion__body"> 
                             <p class="fnt-16 mb-0">You can choose to conduct usability testing in person with your participant in the same room as you, or remotely through video calling software with screen sharing functionality.</p>
-
- <p class="fnt-16 mb-0">Theres also unmoderated testing, in which your participant takes part in your test in their own time over the internet.</p>
+                            <p class="fnt-16 mb-0">Theres also unmoderated testing, in which your participant takes part in your test in their own time over the internet.</p>
                         </div>
                       </div>
                     </li>
@@ -440,8 +404,7 @@ Testing conducted?</h2>
                           <p class="fnt-16 mb-0">First, the usability team will evaluate your application, product or platform to identify and document the scope of the engagement. Once the scope is agreed by the client, the team then sets out to plan the study and recruit the right users.The usability team then performs the test using different tools, methods and metrics to obtain user feedback on the product/application/platform. The data further distilled to identify major problems and provide actionable recommendations to improve the experience.</p>
                         </div>
                       </div>
-                    </li>
-                    
+                    </li>                    
                   </ul>
                 </div>
               </div>
@@ -468,9 +431,6 @@ Testing conducted?</h2>
         </div>
       </section>
     </main>
-
-
-
 <?php
 get_footer();
 ?>

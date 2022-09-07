@@ -94,11 +94,18 @@ padding: 35px 0px !important;
 <?php $locationVideo = get_field('video');
 if($locationVideo !=''){
 ?>
-<div class="play-video-on-scroll">
+              <div class="play-video-on-scroll">
                 <div class="plyr__video-embed" id="player2">
                   <iframe src="<?php the_field('video');?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
                 </div>
               </div>
+              <div class="play-video-on-scroll">
+                  <div id="play2-out" style="display:none">
+                      <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider'); ?>" data-plyr-embed-id="<?php the_field('video_url');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider="<?php the_field('banner_video_provider'); ?>" embed-id="<?php the_field('video_url');?>" poster="<?php the_field('banner_video_poster'); ?>">
+                  </video>
+                </div>
 
 <?php }else{ ?>
 <div class="hover-img">

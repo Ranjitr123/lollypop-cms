@@ -281,13 +281,9 @@ get_header();
                       <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-leftAr.svg"></div>
                       <div class="ps-4">
                         <?php
-                         // $nextthumbnail = get_the_post_thumbnail($nextPost->ID, array(100,100) );
-                         $destination = get_field('company_name', $nextPost->ID);
-                               
+                         $destination = get_field('company_name', $nextPost->ID);                               
                          next_post_link( '%link', '                       
-                            <h4 class="fnt-28 fnt-800">'. $destination .'</h4> ' ); ?>
-                           
-                       <!-- <h5 class="fnt-28 fnt-800">Paytm Money</h5><span class="d-block fnt-16">Paytm</span>-->
+                            <h4 class="fnt-28 fnt-800">'. $destination .'</h4> ' ); ?>                           
                       </div>
                       <?php }?>
                       </div>
@@ -344,13 +340,10 @@ $("h4").addClass("fnt-28 fnt-800 mb-2 data-scroll");
     $(".project-step-disc ul").addClass('li-disc m-0')
     $(".project-step-disc__item ul li").addClass('fnt-16 clr-black-354 data-scroll')
     $(".m-img").removeClass('mb-r-80');
-     $(".m-img:last-child").addClass('mb-r-80');
-   //  $(".define").addClass('projects-sec-pd');
-  //   $(".define:nth-child(1)").removeClass('projects-sec-pd');
-
-
+    $(".m-img:last-child").addClass('mb-r-80');
+    //  $(".define").addClass('projects-sec-pd');
+    //   $(".define:nth-child(1)").removeClass('projects-sec-pd');
 </script>
-
 <?php
 get_footer();
 ?>
