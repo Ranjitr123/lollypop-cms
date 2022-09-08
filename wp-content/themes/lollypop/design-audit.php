@@ -130,19 +130,7 @@ Design Audit?</h2><p class="fnt-24 col-md-9 col-lg-7 px-0">Design audits provide
           </div>
         </div>
       </section>
-      <!--<section class="sec-pd sec-pb">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-9 col-lg-8 mx-auto">
-              <div class="text-center mb-35"> 
-                <p class="fnt-24 mb-35 data-scroll">Quick facts</p>
-                <h3 class="fnt-40 fnt-800 data-scroll">We identity large gaps in the website which impacted the growth and revenue of onine sales</h3>
-              </div>
-              <div class="col-12 col-md-10 mx-auto d-flex flex-md-row flex-wrap justify-content-between"> <span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Revenue Impact</span><span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Brand Impact</span><span class="fnt-16 data-scroll d-inline-block mb-2 mb-md-0 mx-auto mx-md-0">Customer retention</span></div>
-            </div>
-          </div>
-        </div>
-      </section>-->
+
       <!--03-->
       <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
         <div class="container"> 
