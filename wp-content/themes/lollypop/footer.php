@@ -92,12 +92,8 @@
 
     <script rel="preconnect" defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
     <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script rel="preconnect" defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.js"> </script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js"> </script -->
     <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script rel="preconnect" defer src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>

@@ -206,6 +206,7 @@ if($locationVideo !=''){
 </section>
 
 <!--05-->
+
 <section class="sec-pd sec-pt">
 <div class="container"> 
 <div class="row  mb-4 pb-md-3 mb-lg-5 pb-lg-0">
@@ -276,8 +277,8 @@ if($locationVideo !=''){
 </div>
 </div>
 </section>
-<!--06-->
 
+<!--06-->
 <section class="sec-pd" id="third">
 <div class="container"> 
 <div class="row"> 

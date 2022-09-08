@@ -51,9 +51,6 @@ to build easy to use products for your users.</p>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
                     <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Monsanto.svg"></div>
                   </li>
-                   <!--<li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Vahan.webp"></div>
-                  </li>-->
                 </ul>
               </div>
             </div>

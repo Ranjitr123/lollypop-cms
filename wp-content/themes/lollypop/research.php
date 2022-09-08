@@ -284,7 +284,6 @@ height:140px;
                             the_row(); ?>
                                 <li class="case-img-list__item col-12">
                   <div class="case-std img-hvr">
-                    <!-- <img class="img lazyloaded" src="<?php echo get_sub_field('why_image_one')?>" data-ll-status="loaded"> -->
 
                      <img class="img" src="<?php echo get_sub_field('why_image_one')?>">
                     <noscript>
@@ -630,7 +629,6 @@ height:140px;
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
               <div class="revealnone h-100">
-<!--img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>"-->
 <img defer loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="<?php the_field('home_page_thumbnail') ?> 500w, <?php the_field('home_page_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
             343px" src="<?php the_field('home_page_thumbnail') ?>"alt="Blog Images">
 </div>

@@ -5,56 +5,7 @@
 
 get_header();
 ?>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Service",
-  "serviceType": "lollypop-design",
-  "provider": {
-    "@type": "Corporation",
-    "name": "lollypop-design"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "lollypop-design",
-    "itemListElement": [
-      {
-        "@type": "OfferCatalog",
-        "name": "lollypop-design",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Research",
-	      "description": "We provide data-driven insights that represent the voice of the user and resonate with business objectives.",
-	      "url":""
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Design",
-	      "description": "Our team of UX-UI designers thrive to create designs that users fall in love with, are intuitive and scalable.",
-	      "url":""
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Build",
-	      "description": "We help you translate any kind of design into pixel perfect, adaptable and scalable digital products for businesses.",
-	      "url":""
-            }
-          }
-        ]
-      }
-    ]
-  }
-}
-</script>
+
 <style>
     .plyr__controls{display: none;}
 </style>
@@ -227,7 +178,6 @@ get_header();
                               <?php if( have_rows('top_clients') ) : while( have_rows('top_clients') ): the_row(); ?>
                               <div class="col-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
 				<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft">
-<!--img class="img-fluid mx-auto mb-4" src="<?php the_sub_field('client_image'); ?>" alt="<?php the_sub_field('title'); ?>"-->
 <img class="img-fluid mx-auto mb-4" srcset="<?php the_sub_field('client_image'); ?> 200w, <?php the_sub_field('client_image'); ?> 202w" sizes="(max-width: 600px) 200px,
             202px" src="<?php the_sub_field('client_image'); ?>"alt="<?php the_sub_field('title'); ?>">
                                   <div class="lp-thumbnial__body pt-2 pt-md-4">
@@ -239,7 +189,7 @@ get_header();
                               <?php endwhile; endif; ?>
                       </div>
                     </div>
-                    <div class="d-flex flex-wrap data-scroll"><!--<span class="fnt-16 me-3">+300 happy clients</span>--><a class="lp-link lp-link--pri hvr-line fnt-16" href="<?php echo site_url(); ?>/clients/">View All Clients</a></div>
+                    <div class="d-flex flex-wrap data-scroll"><a class="lp-link lp-link--pri hvr-line fnt-16" href="<?php echo site_url(); ?>/clients/">View All Clients</a></div>
                   </div>
                 </div>
               </div>
@@ -264,24 +214,7 @@ get_header();
                   </div>
 		  <div class="px-0 d-flex flex-wrap culture-slider-nav mb-35 data-scroll">
 <a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design/">India</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ae/">Dubai</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a></div><a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo site_url(); ?>/about/">About Us</a>
-                </div>
-                <!--<div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-                 <div class="h-100 d-flex align-items-center justify-content-center" id="award">
-                 <?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
-                 <div class="award__item">
-                  <div class="lp-awards__right text-lg-center h-100 d-flex align-items-center justify-content-md-end">
-                    <div class="d-inline-block ml-md-auto"><img class="icon-awards mx-auto" src="<?php the_sub_field('image'); ?>" alt="Awards">
-                      <div class="d-flex flex-column mx-lg-auto text-center">
-                        <h5 class="fnt-16 my-2 clr-white"><?php the_sub_field('title'); ?></h5>
-                        <p class="fnt-12 max-width-100 mx-lg-auto clr-white"><?php the_sub_field('content'); ?></p>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                   <?php endwhile; endif; ?>
-                  </div>
-                </div>-->
-                
+                </div>                
               </div>
             </div>
           </div>
@@ -340,7 +273,6 @@ get_header();
               <div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
                 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
                 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
-                <!--<a class="clr-second hvr-line d-inline-block data-scroll fnt-14" href="<?php the_sub_field('url') ?>">View Project</a>-->
               </div>
               <div class="play-video-on-scroll">
                 	<div id="play1-out" style="display:none">
@@ -370,12 +302,6 @@ get_header();
                     <h3 class="fnt-22 fnt-800 mb-2">
                        <?php the_sub_field('title') ?></h3>
                     <p class=""><?php the_sub_field('content') ?></p>
-                    <!--<div class="fade-img">
-                      <?php if( have_rows('industries_image') ) : while( have_rows('industries_image') ): the_row(); ?>
-                      <div class="fade-img__item"><img class="img-fluid" src="<?php the_sub_field('images') ?>"></div>
-                      <?php endwhile; endif; ?>
-                      
-                    </div>-->
                   </a>
                 </li>
                <?php endwhile; endif; ?>
@@ -412,7 +338,6 @@ get_header();
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
 			  <div class="revealnone h-100">
-<!--img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>"-->
 <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_field('home_page_thumbnail') ?> 500w, <?php the_field('home_page_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
             343px" src="<?php the_field('home_page_thumbnail') ?>"alt="Blog Images">
 </div>
@@ -446,7 +371,6 @@ get_header();
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
 			  <div class="revealnone h-100">
-<!--img class="home-artical-img mb-3 mb-md-0" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"-->
 <img class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 500w, <?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 343w" sizes="(max-width: 600px) 500px,
             343px" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"alt="Blog Images">
 </div>
@@ -495,7 +419,56 @@ $(".menus .nav-link ").removeClass('active');
         players.volume = 1;*/
         });
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Service",
+  "serviceType": "lollypop-design",
+  "provider": {
+    "@type": "Corporation",
+    "name": "lollypop-design"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "lollypop-design",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "lollypop-design",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Research",
+	      "description": "We provide data-driven insights that represent the voice of the user and resonate with business objectives.",
+	      "url":""
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Design",
+	      "description": "Our team of UX-UI designers thrive to create designs that users fall in love with, are intuitive and scalable.",
+	      "url":""
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Build",
+	      "description": "We help you translate any kind of design into pixel perfect, adaptable and scalable digital products for businesses.",
+	      "url":""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+</script>
 		    <script type="application/ld+json">
 		        {
 				        "@context": "https://schema.org",
