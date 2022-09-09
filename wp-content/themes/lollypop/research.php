@@ -7,170 +7,6 @@
 
 get_header();
 ?>
-<style>
-.case-std__info{
-height:200px;
-}
-.hover-image,
-      .picture img,
-      .hover-image img {
-        transition: 0.4s ease-in-out;
-        -webkit-transition: 0.4s ease-in-out;
-        -o-transition: 0.4s ease-in-out;
-      }
-      a:hover, a:active, a:focus {
-  outline: 0;
-}
-      .img_wrap:hover .hover-image {
-        transform: scale(0.95) !important;
-        -webkit-transform: scale(0.95) !important;
-      }
-      .img_wrap:hover .hover-image img,
-      .picture img:hover img {
-        -webkit-transform: translate(0, 0) scale(1.08) !important;
-        -ms-transform: translate(0, 0) scale(1.08) !important;
-        transform: translate(0, 0) scale(1.08) !important;
-      }
-      .picture {
-        overflow: hidden;
-      }
-      img,
-      img:hover {
-        
-        object-fit: cover;
-      }
-
-
-
-
-
-.tab-head-item__name::before {
-width:45%;
-}
-    .description{
-       position: absolute;
-       width:258px;
-       height: 190px;
-       background-color:white;
-       bottom:22px;
-       left:22px;
-       padding:20px;
-    }
-     .description>p{
-        font-size: 14px;
-line-height: 20px;
-      }
-    .playvid[poster]{
-      width:100%;
-      margin:auto;
-    }
-     
-       .photo{
-  max-width: 100%;
-  height: auto;
-    transition: .4s ease-in-out;
-    object-fit: cover;
-}
- .wear-img{
-    width:285px;
-    height:311px;
-    transition: .4s ease-in-out;
-
-   }
-.com-img{
-    width:auto;
-    height:164px;
-    object-fit:cover;
-    transition: .4s ease-in-out;
-   }
-    .board{
-      min-height:270px !important;
-      background-color:#ffffff;
-      padding: 35px 25px 30px 0px;
-    }
-    .logo_grid{
-      margin-left:-30px;
-    }
-     .hvr-line:hover, .hvr-line:active, .hvr-line:focus {
-  outline: none !important;
-}
-    .slide_img{
-      height:60vh !important;
-      max-height:547px !important;
-      width:100% !important;
-      max-width:454px !important;
-    }
-    @media (max-width:767px) {
-     .board{
-      min-height:210px !important;
-      }
-    .case-std__info{
-height:140px;
-}
-    .common-list__item {
-    margin-top: 4px !important;
-}
-
-
-    .fnt-mb-14 {
-        font-size: 14px !important;
-        line-height: 22px !important;
-    }
-    
-    .pb-mb-0 {
-      padding-bottom: 0 !important;
-    }
-    
-    .fnt-mb-16 {
-    font-size: 16px !important;
-    }
-    
-    .w-mb-fluid {
-        width: calc(100% + 40px);
-        margin-left: -20px;
-    }
-    
-    .fnt-mb-12 {
-    font-size: 12px !important;
-    line-height: 19px !important;
-    }
-    
-     .fnt-mb-10 {
-        font-size: 10px !important;
-        line-height: 16px !important;
-    }
-    
-    .slide_img{
-      width:278px !important;
-      height:336px !important;
-    }
-    .description > p {
-  font-size: 12px !important;
-  line-height: 17px !important;
-  }
-  .description{
-        width:80%;
-        height:50%;
-        bottom:10px;
-        padding-top:10px !important;
-       left:10px;
-      }
-      .logo_grid{
-      margin-left:0px;
-    }
-    }
-    @media (min-width:767px) and (max-width:992px) {
-     .slide_img{   
-      height:auto !important;
-      width:453px;
-    }
-    }
-    
-    
-</style>
-
-
-
   <main class="main">
             <!--01-->
             <section class="lp-index sec-pd sec-bnr pb-mb-0">
@@ -269,7 +105,7 @@ height:140px;
                             <div class="col-12 col-md-12 px-0 ">
                                 <div class="row">
                                     <div class="col-12 col-md-10 mb-4 mb-md-5 col-lg-10 offset-md-1">
-                                        <h2 style='color:#221429; max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3">
+                                        <h2 style='color:#221429;,max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3">
                                             <?php echo get_field('why__heading')?>
                                         </h2>
                                         <p style='max-width:708px;' class="fnt-24 fnt-mb-14 col-md-12 col-lg-11 col-xl-11 px-0 mb-0">
@@ -662,7 +498,6 @@ height:140px;
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
               <div class="revealnone h-100">
-<!--img class="home-artical-img mb-3 mb-md-0" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"-->
 <img defer loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 500w, <?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 343w" sizes="(max-width: 600px) 500px,
             343px" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"alt="Blog Images">
 </div>

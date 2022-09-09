@@ -5,33 +5,7 @@
 
 get_header();
 ?>
-<style>
-  /*  .tab-section-content__item{display: block !important;}*/
-.serveice-a:hover h6{color: #fd2e35;}
-.serveice-a h6{position:relative;}
-.serveice-a h6:before{position: absolute;
-    content: "";
-    top: 32px;
-    left: 0;
-    width: 25%;
-    height: 2px;
-    background-color: #000;
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;}
-.serveice-a:hover h6:before{position: absolute;
-    content: "";
-   top: 32px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fd2e35;
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out; }
-</style>
+
  <main class="main">
       <!--01-->
       <section class="sec-pd pb-0 sec-bnr">
@@ -122,26 +96,26 @@ get_header();
                       </div>
                       <ul class="px-0 common-list row justify-content-between"> 
                        <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-			<li class="common-list__item col-12 col-md-5 data-scroll">
+						<li class="common-list__item col-12 col-md-5 data-scroll">
 
-<div class="d-flex flex-column h-100">
-<?php if(get_sub_field('url') !='') { ?>
-<a class="serveice-a" href="<?php the_sub_field('url'); ?>">
+						<div class="d-flex flex-column h-100">
+								<?php if(get_sub_field('url') !='') { ?>
+								<a class="serveice-a" href="<?php the_sub_field('url'); ?>">
                               <h6 class="fnt-800 mb-1 d-inline-block"><?php the_sub_field('title'); ?></h6>
                               <div class="">
                               <p class="col-11 col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
                             </div>
                            </a>
                           
-<?php } else { ?>
+							<?php } else { ?>
                         
                             
                               <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
                               <div class="">
                               <p class="col-11 col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
                             </div>
-<?php } ?>
-	  </div>
+							<?php } ?>
+						</div>
 
                         </li>
                        <?php  endwhile; endif; ?>

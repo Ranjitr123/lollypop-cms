@@ -7,26 +7,7 @@
 
 get_header();
 ?>
-<style>
-@media (max-width:767px){
-.sec-container{
-padding-top:70px !important;
-}
-}
-@media (min-width:768px){
-.sec-container{
-padding-top:100px !important;
-}
-}
-@media (min-width: 992px) {
-.sec-container{
-padding-top: 192px !important;
-}
-} 
-.sec-pd{
-padding: 35px 0px !important;
-}
-</style>
+
 <main class="main">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 
@@ -40,11 +21,7 @@ padding: 35px 0px !important;
 <div class="fnt-24 col-md-10 col-lg-8"><?php the_field('short_description'); ?></div>
 </div>
 </div>
-<!--div class="hover-img">
-<?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-<img class="wpdm-img" src="<?php the_sub_field('images'); ?>">
-<?php endwhile; endif; ?>
-</div-->
+
 <?php $locationVideo = get_field('video');
 if($locationVideo !=''){
 ?>
