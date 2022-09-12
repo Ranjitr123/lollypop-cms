@@ -59,7 +59,7 @@ get_header();
                               
                               <ul class="px-0 logo-list logo-list--3 row mb-40">
                                 <?php if( have_rows('clients_logos') ) : while( have_rows('clients_logos') ): the_row(); ?>
-                                <li class="logo-list__item col-4 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('logo'); ?>"></li>
+                                <li class="logo-list__item col-4 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('logo'); ?>" width="136" height="32"></li>
                                 <?php endwhile; endif; ?>
                               </ul>
                               </div>
