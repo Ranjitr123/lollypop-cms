@@ -23,7 +23,7 @@
 <noscript><link rel='stylesheet' id='main-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9' type='text/css' media='all' /> </noscript>
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='plyr-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9' type='text/css' media='all' /> </noscript>
-<link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!--link rel="stylesheet" href="magnific-popup/magnific-popup.css"-->
 <link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">

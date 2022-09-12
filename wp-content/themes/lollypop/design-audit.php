@@ -6,6 +6,14 @@
 get_header();
 ?>
 
+<style>
+
+    @media only screen and (min-width: 768px) {
+.cl-logo img {
+    max-width: 100%!important;
+}
+    }
+</style>
 <main class="main">
       <!--01-->
       <section class="sec-pd sec-bnr">

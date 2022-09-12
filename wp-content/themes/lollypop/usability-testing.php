@@ -6,7 +6,13 @@
 get_header();
 ?>
 <style>
-
+    .list-disk li{list-style: disc !important;}
+    
+    @media only screen and (min-width: 768px) {
+.cl-logo img {
+    max-width: 100%!important;
+}
+    }
 </style>
 
 <main class="main">
