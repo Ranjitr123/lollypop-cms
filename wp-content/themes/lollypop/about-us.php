@@ -78,10 +78,6 @@ get_header();
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-12 mx-auto text-center">
             <img class="img-fluid" src="<?php the_field('about_image');?>" alt="">
-              <!-- <div class="row justify-content-center justify-content-md-between"> 
-                <div class="col-8 col-md-5 mb-100 mb-md-0 data-scroll"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/about/celebrate.png"></div>
-                <div class="col-8 col-md-5 data-scroll"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/about/repect.png"></div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -106,8 +102,7 @@ get_header();
                         </div>
                         <div class="clnt__profile">
                           <div class="d-flex"> 
-                            <!--<div class="img"> <img src="<?php the_sub_field('client_photo'); ?>"></div>-->
-                            <div class="col-8 ms-2 ms-lg-3"> <span class="d-block fnt-14"><?php the_sub_field('client_name'); ?></span><span class="d-block fnt-14"><?php the_sub_field('client_position'); ?></span></div>
+                             <div class="col-8 ms-2 ms-lg-3"> <span class="d-block fnt-14"><?php the_sub_field('client_name'); ?></span><span class="d-block fnt-14"><?php the_sub_field('client_position'); ?></span></div>
                           </div>
                         </div></a></li>
                         <?php endwhile; endif; ?>
@@ -130,7 +125,6 @@ get_header();
 
            </h2>
                 <p class="fnt-26 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('leader_content');?></p>
-                <!--<a class="clr-second fnt-14 hvr-line mt-4 d-inline-block data-scroll" href="<?php the_field('leader_cta_url');?>"><?php the_field('leader_cta_name');?></a>-->
               </div>
               <!-- Team list-->
               <div class="team"> 
@@ -175,11 +169,7 @@ get_header();
                             $args = array(
                                 'post_type'=>'about', // Your post type name
                                 'posts_per_page' => -1,
-				'category_name' => 'tribe-leaders',
-			
-			
-			   	
-                                 
+								'category_name' => 'tribe-leaders',                                 
                             );
                     $about = new WP_Query( $args );
                     if ( $about->have_posts() ) : while ( $about->have_posts() ) : $about->the_post(); ?>
