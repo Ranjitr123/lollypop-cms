@@ -321,7 +321,7 @@ $header = new WP_Query( $args );
 <body>
 <div class="bd-brd"></div>
 <div class="loader">
-<div class="loader__item"><img defer src="<?php echo get_template_directory_uri(); ?>/img/logo-animate.gif"></div>
+<div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" width="100" height="100"></div>
 </div>
 
 
