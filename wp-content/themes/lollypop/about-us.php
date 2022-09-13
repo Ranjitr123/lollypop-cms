@@ -203,7 +203,7 @@ get_header();
                 </div><a class="web-btn web-btn--primary data-scroll" href="<?php the_field('cta_url') ?>"><?php the_field('cta_name') ?></a>
               </div>
             </div>
-          </div://lollypop.design/about/>
+          </div>
           </div>
           <div class="sec-pd sec-pt">
   <div class="fluid-width">

@@ -62,25 +62,6 @@ get_header();
                 <h2 class="fnt-50 fnt-800 mb-2 pb-lg-1 data-scroll"><?php the_field('services_heading');?></h2>
                   <span class="fnt-24 col-md-11 col-lg-10 px-0 d-block data-scroll"><?php the_field('services_content');?></span>
               </div>
-              <!--<div class="row flex-column">
-                <?php if( have_rows('research_design') ) : while( have_rows('research_design') ): the_row(); ?>
-                <div class="col-12">
-                  <h3 class="h3 mt-4 pt-1 mt-lg-4 mb-0 data-scroll"><?php the_sub_field('title'); ?></h3>
-                </div>
-                <div class="col-12">
-                  <ul class="lp-block-list ps-0 data-scroll">
-                    <li class="lp-block-list__item">
-                      <ul class="lp-list row row-cols-lg-2 flex-md-row">
-                              <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-                              <li class="lp-list__item col-6 col-md-6"><?php the_sub_field('content'); ?></li>
-                              <?php endwhile; endif; ?>
-                              
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                  <?php endwhile; endif; ?>
-              </div>-->
             </div>
           </div>
           <div class="row" id="services-listing">
@@ -136,7 +117,6 @@ get_header();
                    <a class="" href="<?php the_sub_field('url'); ?>">
                     <div class="mb-35 fluid-mb hover-img">
 		<div class="reveal">
-<!--img class="portfolio-img" width="1076px"height="472px" src="<?php the_sub_field('project_image'); ?>" alt="<?php the_sub_field('project_image'); ?>"-->
   <img class="portfolio-img" srcset="<?php the_sub_field('project_image'); ?> 480w, <?php the_sub_field('project_image'); ?> 1076w" sizes="(max-width: 600px) 480px,
             1076px" src="<?php the_sub_field('project_image'); ?>"alt="<?php the_sub_field('project_image'); ?>">
 </div>
@@ -198,9 +178,7 @@ get_header();
         </div>
       </section>
       <!--05-->
-      <!-- AWARS MIXIN-->
-      <!-- AWARS-->
-     
+    
       <!--06-->
       
        <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
@@ -326,9 +304,6 @@ get_header();
                             $args = array(
                                 'post_type'=>'whitepapers', // Your post type name
                                 'posts_per_page' => 1,
-                                //'meta_key'			=> 'date',
-                                //'orderby'			=> 'meta_value',
-								//'order'				=> 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                       
@@ -358,7 +333,6 @@ get_header();
                             $args = array(
                             'post_type'=>'post', // Your post type name
                                 'posts_per_page' => 1,
-                                //  'category_name' => 'top-blogs'
                                 'orderby'=> 'post_date',
                                 'order' => 'DESC'
                                
@@ -414,16 +388,13 @@ get_header();
 <script>
     $(document).ready(function(){
 $(".menus .nav-link ").removeClass('active');
-       /* const players = Plyr.setup('.js-player');
-        players.muted=false;
-        players.volume = 1;*/
         });
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Service",
-  "serviceType": "lollypop-design",
+  "serviceType": "lollypop-design", 
   "provider": {
     "@type": "Corporation",
     "name": "lollypop-design"

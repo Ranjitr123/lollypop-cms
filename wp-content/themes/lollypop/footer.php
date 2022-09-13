@@ -391,12 +391,7 @@ $("form#build-fast").submit(function(e) {
              e.preventDefault();    
             // var data = new FormData();
                   var data = new FormData($(this)[0]);
-            /* var title = $('input[name="whitepaper_title"]').text();
-           
-           
-             data.append("title",title);
-             data.append("email",email);
-             alert(title);*/
+
              var email = $('input[type="email"]').val();
              var sucess = $("form#whitepaper").parsley().isValid();
              if(sucess){
@@ -420,7 +415,6 @@ $("form#build-fast").submit(function(e) {
                                   window.location.href = "<?php echo site_url(); ?>/project-enquiry/thank-you/";
                                   $('#whitepaperForm').css('display', 'none');
 							 } else if (data.indexOf("False") >= 0) {
-								 //swal("Error uploading file", "Please try again", "error");
                                  $("#pageloader").css("display", "none");
                                   $("#error-msg").css("display", "block");
 								 return false;
@@ -460,9 +454,6 @@ $(".menus a[href*='"+path+"']").addClass("active");
 </script>
 <script>
     $(document).ready(function(){
-        // const players = Plyr.setup('.js-player');
-        // players.muted=false;
-        // players.volume = 1;
         const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
         });
 </script>
@@ -512,8 +503,6 @@ $('body').on('click', '.tab-head-item1__name', function() {
 			    	      $(this).parents(".tab-section1").find('.tab-scroll-content').find('.tab-section1-content1__item').eq($index).addClass('active');
 
 
-			    	      //$(this).addClass('active');
-			    	        //$(this).parents('.tab-head-item1').find('.tab-head-item1__name').not(this).removeClass('active');
 			    
 			    	        	        $('html, body').animate({
 			    	        	        		      scrollTop: $($scrollIndex).offset().top - 150,

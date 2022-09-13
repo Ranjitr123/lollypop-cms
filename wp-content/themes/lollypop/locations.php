@@ -40,11 +40,7 @@ padding: 35px 0px !important;
 <div class="fnt-24 col-md-10 col-lg-8"><?php the_field('short_description'); ?></div>
 </div>
 </div>
-<!--div class="hover-img">
-<?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-<img class="wpdm-img" src="<?php the_sub_field('images'); ?>">
-<?php endwhile; endif; ?>
-</div-->
+
 <?php $locationVideo = get_field('video');
 if($locationVideo !=''){
 ?>
@@ -86,8 +82,7 @@ if($locationVideo !=''){
 <p class="fnt-16 clr-black-354 data-scroll"><?php the_sub_field('content'); ?></p>
 </div>
 <div>
-<!-- <h6 class="fnt-800 fnt-22 mb-0">Lets' Talk</h6>
-<a class="data-scroll d-inline-block fnt-14 hvr-link" href="mailto:<?php the_sub_field('mail_id'); ?>"><?php the_sub_field('mail_id'); ?></a>-->
+
 <a class="web-btn web-btn--primary data-scroll mt-3" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
 </div>
 </div>

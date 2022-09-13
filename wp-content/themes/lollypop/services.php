@@ -6,7 +6,6 @@
 get_header();
 ?>
 <style>
-  /*  .tab-section-content__item{display: block !important;}*/
 .serveice-a:hover h6{color: #fd2e35;}
 .serveice-a h6{position:relative;}
 .serveice-a h6:before{position: absolute;

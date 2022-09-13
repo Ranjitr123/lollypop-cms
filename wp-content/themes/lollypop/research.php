@@ -617,9 +617,6 @@ height:140px;
                             $args = array(
                                 'post_type'=>'whitepapers', // Your post type name
                                 'posts_per_page' => 1,
-                                //'meta_key'            => 'date',
-                                //'orderby'         => 'meta_value',
-                                //'order'               => 'ASC' ,
                             );
                     $whitepaper = new WP_Query( $args );
                       
@@ -649,7 +646,6 @@ height:140px;
                             $args = array(
                             'post_type'=>'post', // Your post type name
                                 'posts_per_page' => 1,
-                                //  'category_name' => 'top-blogs'
                                 'orderby'=> 'post_date',
                                 'order' => 'DESC'
                                
@@ -662,7 +658,6 @@ height:140px;
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
               <div class="revealnone h-100">
-<!--img class="home-artical-img mb-3 mb-md-0" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"-->
 <img defer loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 500w, <?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 343w" sizes="(max-width: 600px) 500px,
             343px" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"alt="Blog Images">
 </div>

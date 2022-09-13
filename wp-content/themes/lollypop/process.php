@@ -50,7 +50,6 @@ get_header();
                     <?php if( have_rows('tab_content') ) : while( have_rows('tab_content') ): the_row(); ?>
                     <li class="fnt-28 pt-4 fnt-800 nav-link tab-head-item1__name"style="cursor:pointer"> <span class="tab-tag d-block fnt-16"><?php the_sub_field('small_title'); ?></span><span class="fnt-800"><?php the_sub_field('tab_title'); ?></span></li>
                      <?php endwhile; endif; ?>
-                    <!--<button class="fnt-28 fnt-800 pt-4 nav-link" id="v-pills-client-tab" data-bs-toggle="pill" data-bs-target="#v-pills-client" type="button" role="tab" aria-controls="v-pills-client" aria-selected="false"><span class="tab-tag d-block fnt-16">For startups </span><span>Build Fast. Launch fast</span></button>-->
                   </ul>
                   <!-- Tab content-->
                   <div class="tab-content tab-section1-content1 tab-scroll-content">
@@ -208,9 +207,6 @@ $('body').on('click', '.tab-head-item1__name', function() {
 	    $(this).parents(".tab-section1").find('.tab-scroll-content').find('.tab-section1-content1__item').removeClass('active');
 	      $(this).parents(".tab-section1").find('.tab-scroll-content').find('.tab-section1-content1__item').eq($index).addClass('active');
 
-
-	      //$(this).addClass('active');
-	        //$(this).parents('.tab-head-item1').find('.tab-head-item1__name').not(this).removeClass('active');
 
 	        $('html, body').animate({
 		      scrollTop: $($scrollIndex).offset().top - 150,
