@@ -177,3 +177,6 @@ add_filter('do_redirect_guess_404_permalink','stop_redirect_guess');
 function stop_redirect_guess() {
 	    return false;
 }
+
+// stop WordPress scaling large images 
+add_filter( 'big_image_size_threshold', '__return_false' );
