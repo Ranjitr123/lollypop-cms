@@ -30,35 +30,35 @@ get_header();
                   </div><a class="web-btn web-btn--primary mx-auto d-inline-block" href="<?php echo site_url(); ?>/project-enquiry/">Get Started Now</a>
                 </div>
               </div>
-              <div class="mb-70"><img class="wpdm-img" src="https://lollypop.design/wp-content/uploads/2022/02/DesignAudit_v3.png"></div>
+              <div class="mb-70"><img class="wpdm-img" src="https://lollypop.design/wp-content/uploads/2022/02/DesignAudit_v3.png" height="559" width="926" ></div>
               <div class="col-12 col-md-8 col-lg-7 mx-auto px-0 text-center">
                 <div class="mb-60">
                   <p class="fnt-24">We've audited 100+ websites and mobiles apps with insightful results.</p>
                 </div>
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/01-Polstrat.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/01-Polstrat.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/02-Mother-Care.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/02-Mother-Care.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/03-Lenovo.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/03-Lenovo.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/04-FabAlley.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/04-FabAlley.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/05-Udaan.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/05-Udaan.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/06-MateLabs.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/06-MateLabs.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/07-Burger-King.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/07-Burger-King.svg" height="27" width="117"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/08-f2f.svg"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/08-f2f.svg" height="27" width="117"></div>
                   </li>
                 </ul>
               </div>

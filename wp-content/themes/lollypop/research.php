@@ -234,7 +234,7 @@ height:140px;
                                         <ul class="px-0 mb-lg-4 logo-list row">
                                          <?php while(have_rows('startups_repeater')){the_row();?>
                                             <li class="logo-list__item col-4 col-md-3 data-scroll">
-                                                <img class="img-fluid grayscale" src="<?php echo get_sub_field('startups_images')?>">
+                                                <img class="img-fluid grayscale" src="<?php echo get_sub_field('startups_images')?>" width="122" height="28">
                                             </li>
                                              <?php } ?> 
                                             
@@ -320,7 +320,7 @@ height:140px;
  
  <div class="col-md-10 col-lg-8 mx-auto">
  
-                                        <h2 style='color:#221429;,'max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3"> <?php echo get_field('our_ux_title')?></h2>
+                                        <h2 style='color:#221429; max-width:730px;' class="fnt-40 fnt-800 mb-2 mb-md-3"> <?php echo get_field('our_ux_title')?></h2>
                                         <p style='max-width:708px;' class="fnt-24 fnt-mb-14 col-11 col-md-12 col-lg-11 col-xl-11 px-0 mb-0"><?php echo get_field('our_ux_description')?></p>
                                 <div class="mb-50 data-scroll"></div>
   
@@ -330,12 +330,11 @@ height:140px;
                                         <div class="home-artical">
                                             <div class="row img_wrap">
                                           <div class="hover-image col-12 col-md-5 col-lg-4">   
-                                                 <div class='picture'><img
-                                                            defer
+                                                 <div class='picture'><img defer
                                                             loading="lazy"
                                                             class="photo home-artical-img mb-3 mb-md-0"
                                                             src="<?php echo get_sub_field('our_image')?>"
-                                                            alt="Blog Images">
+                                                            alt="Blog Images" width="229" height="207" >
                                                 </div></div>
                                                 <div class="col-12 col-md-6 col-lg-7 ">
                                                     <div class="px-lg-4">
@@ -392,7 +391,7 @@ height:140px;
                                     <?php while(have_rows('solution_repeater')){the_row();?>
                                     <div class="col-lg-4 ps-0 mx-0 col-md-4 mb-1">
                                         <div class="board ps-0 mx-0 pt-2 m-1">
-                                            <img class="img-fluid ps-4 my-3" src="<?php echo get_sub_field('solution_image')?> " alt="Intel">
+                                            <img class="img-fluid ps-4 my-3" src="<?php echo get_sub_field('solution_image')?> " alt="Intel" width="184" height="34">
                                             <p class="lp-thumbnial__text pe-0 ps-4 mb-0">
                                                <?php echo get_sub_field('solut_description')?>
                                             </p>
@@ -421,7 +420,7 @@ height:140px;
                         <div class="col-5 mx-auto col-md-4 mb-4 mb-md-0">
                             <div class="expert-member__img text-center">
                                 <div class="data-scroll">
-                                    <img class="img-fluid mb-2 pb-1" src="<?php echo get_field('member_image')?>">
+                                    <img class="img-fluid mb-2 pb-1" src="<?php echo get_field('member_image')?>" width="208"  height="224" >
                                 </div>
                                 <h6 class="fnt-22 fnt-800 clr-white mb-0"><?php echo get_field('member_name')?></h6>
                                 <span class="fnt-14 clr-white d-inline-block"><?php echo get_field('member_lead')?></span>
@@ -516,7 +515,7 @@ height:140px;
         <a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo $link_url?>"><?php echo $link_title?></a>
         <?php endif; ?> 
         
-        <img class="wpdm-img pe-2 pe-md-0 mt-5" src=" <?php echo get_field('farmers_image')?>" alt="">
+        <img class="wpdm-img pe-2 pe-md-0 mt-5" src=" <?php echo get_field('farmers_image')?>" alt="" width="764" height="492"> 
     </div>
   </div>
 </section>
@@ -562,7 +561,7 @@ height:140px;
               <div class="revealnone h-100">
 
 <img defer="" loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail-1.webp 500w, https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail-1.webp 343w" sizes="(max-width: 600px) 500px,
-            343px" src="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail-1.webp" alt="Blog Images">
+            343px" src="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail-1.webp" alt="Blog Images" width="280" height="308">
 </div>
                         </div>
                         <div class="col-12 col-md-7 mt-md-5">
@@ -583,7 +582,7 @@ height:140px;
               <div class="revealnone h-100">
 
 <img defer="" loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail_ecomm_whitepaper.png 500w, https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail_ecomm_whitepaper.png 343w" sizes="(max-width: 600px) 500px,
-            343px" src="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail_ecomm_whitepaper.png" alt="Blog Images">
+            343px" src="https://staging.terralogic.com/lollypop/wp-content/uploads/2021/12/thumbnail_ecomm_whitepaper.png" width="280" height="309" alt="Blog Images">
 </div>
                         </div>
                         <div class="col-12 col-md-7 mt-md-5">
@@ -659,7 +658,7 @@ height:140px;
                         <div class="col-12 col-md-3 col-lg-5">
               <div class="revealnone h-100">
 <img defer loading="lazy" class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 500w, <?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?> 343w" sizes="(max-width: 600px) 500px,
-            343px" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"alt="Blog Images">
+            343px" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"alt="Blog Images" width="278" height="307" >
 </div>
                         </div>
                         <div class="col-12 col-md-7">
