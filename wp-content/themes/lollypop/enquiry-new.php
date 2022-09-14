@@ -1,3 +1,11 @@
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+    // tracking ( facebook or ggogle or ...)
+    var hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s*\=\s*([^;]).$)|^.*$/, "$1");
+    console.log("hutk value = "+hutk); </script>
 <?php
 /**
  *  Template Name: Enquiry-New
@@ -88,9 +96,7 @@ color: red;
     font-size: 22px;
   }
 </style>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
-<!-- End of HubSpot Embed Code -->
+
 
 
 <main class="main">
