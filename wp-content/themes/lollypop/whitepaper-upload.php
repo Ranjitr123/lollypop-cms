@@ -105,9 +105,7 @@ uton",serif">
                                                         </tr>
                                                         <tr>
                                                           <td style="text-align:center"> <a style="width:110px; background:#fd2e35; color: #fff;
-    padding: 10px 1px;
-    display: inline-block;
-    text-align: center; margin-bottom: 30px;" href="'.$_POST['pdf_attach'] .'">Download </a> </td>
+    padding: 10px 1px; display: inline-block; text-align: center; margin-bottom: 30px;" href=" '.$_POST['pdf_attach'] .' ">Download </a> </td>
 	  </tr>
 
                                                     </tbody>
