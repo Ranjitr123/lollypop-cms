@@ -133,9 +133,9 @@
     "url": "https://lollypop.design/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://lollypop.design/"
-    },
+      "target": "https://lollypop.design/",
 	  "query-input": "required name=search_term_string"
+    }
 }
 </script>
        
