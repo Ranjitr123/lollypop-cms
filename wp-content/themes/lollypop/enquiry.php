@@ -56,7 +56,9 @@ margin-top: 24px;
 margin-top: 64px;
 }
 </style>
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
+<!-- End of HubSpot Embed Code -->
  <main class="main">
       <!--01-->
       <!-- Enquiry Form-->
@@ -181,7 +183,10 @@ We're always on the lookout for talent. Come say hello and we'll figure out if y
     </main>
 
 
-
+    <script>
+    // tracking ( facebook or ggogle or ...)
+    var hutk = document.cookie.replace(/(?:(?:^|.;\s)hubspotutk\s*\=\s*([^;]).$)|^.*$/, "$1");
+    console.log("hutk value = "+hutk); </script>
 <?php
 get_footer();
 ?>
