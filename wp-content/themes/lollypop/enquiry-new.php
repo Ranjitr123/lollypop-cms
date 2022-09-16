@@ -95,6 +95,9 @@ color: red;
     font-weight: 800 !important;
     font-size: 22px;
   }
+  .lollypop-tabs .nav-link{
+	  background-color: transparent!important;
+  }
 </style>
 
 
