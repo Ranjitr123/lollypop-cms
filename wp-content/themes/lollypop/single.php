@@ -37,7 +37,7 @@ get_header();
                <?php $banner = get_field('banner_image');
                      if($banner !=''){ ?>
               <div class="position-relative">
-                <div class="reveal"><img class="img-fluid blog-d-img mb-0" src="<?php the_field('banner_image') ?>"></div>
+                <div class="reveal"><img class="img-fluid blog-d-img mb-0" src="<?php the_field('banner_image') ?>" width="636" height="278" ></div>
               </div>
               <?php } ?>
             </div>
