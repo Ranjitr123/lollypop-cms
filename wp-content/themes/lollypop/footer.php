@@ -416,7 +416,7 @@ $("form#build-fast").submit(function(e) {
 								$('form#whitepaper')[0].reset();
                                   $("#pageloader").css("display", "none");
                                  $("#sucess-msg").css("display", "block");
-                                  window.location.href = "<?php echo site_url(); ?>/project-enquiry/thank-you/";
+                                  window.location.href = "<?php echo site_url(); ?>/whitepapers/thank-you/";
                                   $('#whitepaperForm').css('display', 'none');
 							 } else if (data.indexOf("False") >= 0) {
                                  $("#pageloader").css("display", "none");
