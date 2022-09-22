@@ -37,8 +37,20 @@ get_header();
                <?php $banner = get_field('banner_image');
                      if($banner !=''){ ?>
               <div class="position-relative">
-                <div class="reveal"><img class="img-fluid blog-d-img mb-0" src="<?php the_field('banner_image') ?>" width="636" height="278" ></div>
-              </div>
+                <!--<div class="reveal"><img class="img-fluid blog-d-img mb-0" src="<?php the_field('banner_image') ?>" width="636" height="278" ></div>-->
+				<div class="reveal"> <!---desktop-->         
+					<div class="d-none d-lg-block" style="height:391px; width:100%; background-size:cover; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+				</div> 
+					
+				<div class="reveal"> <!----mobile---->         
+					<div class="d-md-none d-sm-none" style="height:195px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+				</div> 
+				
+				<div class="reveal"><!----ipad---->          
+					<div class="d-none d-lg-none d-md-block" style="height:285px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+				</div> 
+				
+			 </div>
               <?php } ?>
             </div>
           </div>
