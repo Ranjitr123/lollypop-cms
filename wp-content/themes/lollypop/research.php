@@ -694,10 +694,6 @@ height:140px;
     </div>
 </section>
 
-
-
-
-
 <!-- 13 -->
 <section class="sec-footer-trans" id="nine">
         <div class="container z-1">
@@ -716,9 +712,67 @@ height:140px;
           </div>
         </div>
       </section>
-
 -
 </main>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Service",
+  "serviceType": "lollypop-design", 
+  "provider": {
+    "@type": "Corporation",
+    "name": "lollypop-design"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "lollypop-design",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "lollypop-design",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "User Interviews",
+	      "description": "Users are asked questions to gather information about their behaviors, needs, preferences, motivations, and frustrations.",
+	      "url":""
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Usability Tests",
+	      "description": "It helps to measure and gain insights regarding the performance of the current app in accomplishing critical tasks.",
+	      "url":""
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concept Validation + Exploratory Research",
+	      "description": "It helps the business understand how users feel about ideas or concepts before investing resources to build a potentially unsuccessful idea.",
+	      "url":""
+            }
+          },
+		  {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Competitor Analysis + Benchmarking",
+	      "description": "A comprehensive tabular study of the features, differentiators, strengths, weaknesses, geography, market share, etc of the top competitors of the platform.",
+	      "url":""
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+</script>
 <?php
 get_footer();
 ?>
