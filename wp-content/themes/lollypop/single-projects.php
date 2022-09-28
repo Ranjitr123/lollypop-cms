@@ -85,7 +85,80 @@ get_header();
                        <?php endwhile; endif; ?>
                     </div>
                   </div>
-                </div>                
+                </div>    
+					<!--new section------------>
+				<?php if( have_rows('emaars_digital_booking') ) : while( have_rows('emaars_digital_booking') ): the_row();
+                   $digImage = get_sub_field('title');
+                if($digImage !='') { ?>	
+				<section class="Emaar_digital">
+					<div class="container head position-relative">
+						<h2><?php the_sub_field('title'); ?></h2>
+
+					<div class="row space3">
+						<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
+						<div class="col-md-4">
+							<figure>
+								<img src="<?php the_sub_field('image');?>" class="img-fluid w-100">
+							</figure>
+						</div>
+						<?php endwhile; endif; ?>
+						<!--<div class="col-md-4 mt-5">
+							<figure>
+								<img src="<?php //echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
+							</figure>
+						</div>
+
+						<div class="col-md-4">
+							<figure>
+								<img src="<?php //echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100">
+							</figure>
+						</div>-->
+
+					</div>
+      
+					<div class="row approach_style">
+					<?php if( have_rows('approach_section') ) : while( have_rows('approach_section') ): the_row(); ?>
+						<div class="col-md-3 ">
+							<p><?php the_sub_field('title');?></p>
+						</div>
+						<div class="col-md-9 space">
+							<p><?php the_sub_field('content');?></p>
+
+						<div class="row space1 ">
+							<?php if( have_rows('card_section') ) : while( have_rows('card_section') ): the_row(); ?>
+							<div class="col-md-6 ">
+								<?php if( have_rows('detail_card') ) : while( have_rows('detail_card') ): the_row(); ?>
+								<div class="space2 position-relative">
+									<h3 class="pb-1 "><?php the_sub_field('title');?></h3>
+									<p class="pb-5"><?php the_sub_field('content');?></p>
+								</div>
+								<?php endwhile; endif; ?>
+								<!--<div class="space2 position-relative ">
+									<h3 class="pb-1 ">Consistency</h3>
+									<p>Create a seamless experience across mobile and desktop</p>
+								</div>-->
+							</div>
+							<?php endwhile; endif; ?>
+							<!--<div class="col-md-6 space4">
+								<div class="space2 position-relative">
+									<h3 class="pb-1 ">Accessibility</h3>
+									<p class="pb-5">We focus on creating an easily accessible platform for global reach</p>
+								</div>
+								<div class="space2 position-relative">
+									<h3 class="pb-1 ">Quickness</h3>
+									<p>Optimize the booking flow and help users reach their goal faster</p>
+								</div>
+							</div>-->
+						</div>
+						</div>
+						<?php endwhile; endif; ?>
+					</div>
+				</div>
+			</section>
+			<?php } ?>
+            <?php endwhile; endif; ?>
+					<!----end new section--------->
+					
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();
                    $webImage = get_sub_field('project_gallery');
                 if($webImage !='') { ?>
@@ -334,69 +407,6 @@ get_header();
         </div>
       </section>
     </main>
-
-    <section class="Emaar_digital">
-      <div class="container head position-relative">
-        <h2>We discovered and segmented the users 
-            of Emaar’s digital booking platform.</h2>
-
-        <div class="row space3">
-
-          <div class="col-md-4">
-            <figure>
-             <img src="<?php echo get_template_directory_uri();?>/assets/images/frame1.png" class="img-fluid w-100">
-            </figure>
-          </div>
-
-          <div class="col-md-4 mt-5">
-            <figure>
-              <img src="<?php echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
-            </figure>
-          </div>
-
-          <div class="col-md-4">
-            <figure>
-              <img src="<?php echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100">
-            </figure>
-          </div>
-
-        </div>
-      
-        <div class="row approach_style">
-          <div class="col-md-3 ">
-            <p>APPROACH</p>
-          </div>
-          <div class="col-md-9 space">
-            <p>Creating an easily accessible platform to drive in users from all over the world</p>
-
-            <div class="row space1 ">
-              <div class="col-md-6 ">
-                    <div class="space2 position-relative">
-                      <h3 class="pb-1 ">Personalization</h3>
-                      <p class="pb-5">Take a multilingual approach for users across segments</p>
-                    </div>
-                    <div class="space2 position-relative ">
-                      <h3 class="pb-1 ">Consistency</h3>
-                      <p>Create a seamless experience across mobile and desktop</p>
-                    </div>
-              </div>
-              <div class="col-md-6 space4">
-                <div class="space2 position-relative">
-                  <h3 class="pb-1 ">Accessibility</h3>
-                  <p class="pb-5">We focus on creating an easily accessible platform for global reach</p>
-                </div>
-                <div class="space2 position-relative">
-                  <h3 class="pb-1 ">Quickness</h3>
-                  <p>Optimize the booking flow and help users reach their goal faster</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
 
 
 <script>
