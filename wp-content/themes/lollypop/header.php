@@ -26,6 +26,7 @@
 <link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-css.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
   window.dataLayer = window.dataLayer || [];

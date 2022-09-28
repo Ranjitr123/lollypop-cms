@@ -1,0 +1,20 @@
+.Emaar_digital{padding: 102px 0 98px 0;}
+.Emaar_digital p,.Emaar_digital h2, .Emaar_digital h3{margin: 0;}
+.Emaar_digital .head h2{ max-width: 805px; font-size: 40px;font-weight: 800;margin: auto; color: #221429;line-height: 130%;}
+.Emaar_digital .head h2::before{content: '';position: absolute;top: 11px;left: 230px;background-color: #FD2E35;width: 4px;height: 40px;}
+.Emaar_digital .approach_style .col-md-3 p{color: #FD2E35;font-size: 18px;font-weight: 700;}
+.Emaar_digital .approach_style .space p:first-child{color: #221429;font-size: 24px;font-weight: 400;max-width: 548px;padding-bottom: 69px;line-height: 145%;}
+.Emaar_digital .space1 p{max-width: 266px;font-size: 14px;font-weight: 400;color: #221429;line-height: 160%;}
+.Emaar_digital .space1 h3{font-size: 22px;font-weight: 800;line-height: 135%;}
+.Emaar_digital .space2 h3:before{content: '';position: absolute;top: -23px;left: 12px;width: 4px;height: 24px;background-color: #FD2E35;transform: rotate(90deg);}
+.Emaar_digital .space3{padding: 100px 0 132px 0;}
+.Emaar_digital .approach_style{width: 100%;max-width: 845px;margin: 0 auto;}
+
+@media only screen and (max-width: 768px){
+    .Emaar_digital .head h2::before{left: 0px;}
+    
+}
+@media only screen and (max-width: 426px){
+    .Emaar_digital .head h2::before{left: 0px;}
+    .space4{padding-top: 48px;}
+}

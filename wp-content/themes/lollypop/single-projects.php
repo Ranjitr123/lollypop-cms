@@ -1,6 +1,7 @@
 <?php 
 get_header();
 ?>
+
 <style>
      .define{margin-top: 30px;}
 
@@ -333,6 +334,71 @@ get_header();
         </div>
       </section>
     </main>
+
+    <section class="Emaar_digital">
+      <div class="container head position-relative">
+        <h2>We discovered and segmented the users 
+            of Emaar’s digital booking platform.</h2>
+
+        <div class="row space3">
+
+          <div class="col-md-4">
+            <figure>
+             <img src="<?php echo get_template_directory_uri();?>/assets/images/frame1.png" class="img-fluid w-100">
+            </figure>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <figure>
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
+            </figure>
+          </div>
+
+          <div class="col-md-4">
+            <figure>
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100">
+            </figure>
+          </div>
+
+        </div>
+      
+        <div class="row approach_style">
+          <div class="col-md-3 ">
+            <p>APPROACH</p>
+          </div>
+          <div class="col-md-9 space">
+            <p>Creating an easily accessible platform to drive in users from all over the world</p>
+
+            <div class="row space1 ">
+              <div class="col-md-6 ">
+                    <div class="space2 position-relative">
+                      <h3 class="pb-1 ">Personalization</h3>
+                      <p class="pb-5">Take a multilingual approach for users across segments</p>
+                    </div>
+                    <div class="space2 position-relative ">
+                      <h3 class="pb-1 ">Consistency</h3>
+                      <p>Create a seamless experience across mobile and desktop</p>
+                    </div>
+              </div>
+              <div class="col-md-6 space4">
+                <div class="space2 position-relative">
+                  <h3 class="pb-1 ">Accessibility</h3>
+                  <p class="pb-5">We focus on creating an easily accessible platform for global reach</p>
+                </div>
+                <div class="space2 position-relative">
+                  <h3 class="pb-1 ">Quickness</h3>
+                  <p>Optimize the booking flow and help users reach their goal faster</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
 <script>
 $("h4").addClass("fnt-28 fnt-800 mb-2 data-scroll");
     $('.bd-brd').css('border-color', '#f7f4f2');
