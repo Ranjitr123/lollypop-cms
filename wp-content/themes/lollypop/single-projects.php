@@ -102,7 +102,7 @@ get_header();
 							</figure>
 						</div>
 						<?php endwhile; endif; ?>
-						<!--<div class="col-md-4 mt-5">
+						<!--<div class="col-md-4 mt-5 pt-3">
 							<figure>
 								<img src="<?php //echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
 							</figure>

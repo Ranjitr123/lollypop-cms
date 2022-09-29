@@ -14,7 +14,7 @@
     .Emaar_digital .head h2::before{left: 10px;}
     
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     .Emaar_digital .head h2::before{left: 0px;}
     
 }
