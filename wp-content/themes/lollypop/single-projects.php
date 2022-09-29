@@ -115,6 +115,27 @@ get_header();
 						</div>-->
 
 					</div>
+
+         
+          
+            <div class="photo position-relative">
+                
+                <div class="card">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame1.png" class="img-fluid w-100" >
+                </div>
+
+                <div class="card">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
+                </div>
+
+                <div class="card">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100" >
+                </div>
+            
+            </div>
+          
+        </div>
+        
       
 					<div class="row approach_style">
 					<?php if( have_rows('approach_section') ) : while( have_rows('approach_section') ): the_row(); ?>
@@ -408,6 +429,13 @@ get_header();
       </section>
     </main>
 
+
+    
+<script>
+
+
+
+</script>
 
 <script>
 $("h4").addClass("fnt-28 fnt-800 mb-2 data-scroll");

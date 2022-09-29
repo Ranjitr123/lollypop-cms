@@ -181,6 +181,29 @@ $(document).ready(function () {
     });
   }
 
+// photo slider for mobile view for redefining-tourism-in-uae page
+  $('.photo').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+    
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  //photo slider for mobile view for redefining-tourism-in-uae page
+
   //SLider 1
   $('.four-card-slider').slick({
     dots: false,
