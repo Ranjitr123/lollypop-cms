@@ -10,9 +10,10 @@
 .Emaar_digital .space3{padding: 100px 0 132px 0;}
 .Emaar_digital .approach_style{width: 100%;max-width: 845px;margin: 0 auto;}
 .Emaar_digital .space3 .col-md-4:nth-child(2){margin-top: 60px;}
-.Emaar_digital .photo .card{border: 0;}
+.Emaar_digital .photo .card{border: 0;margin: 0 26px 0 0;}
 .Emaar_digital .photo{padding-bottom: 132px;padding-top: 100px;}
 .Emaar_digital .photo{display: none;}
+.Emaar_digital .photo img{height: 365px;}
 
 @media only screen and (max-width: 1367px){
     .Emaar_digital .head h2::before{left: 40px;}

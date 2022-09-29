@@ -186,14 +186,14 @@ $(document).ready(function () {
     dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     responsive: [
     
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.2,
           slidesToScroll: 1
         }
       }
