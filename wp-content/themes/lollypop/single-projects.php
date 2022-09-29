@@ -102,40 +102,17 @@ get_header();
 							</figure>
 						</div>
 						<?php endwhile; endif; ?>
-						<!--<div class="col-md-4 mt-5 pt-3">
-							<figure>
-								<img src="<?php //echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
-							</figure>
-						</div>
-
-						<div class="col-md-4">
-							<figure>
-								<img src="<?php //echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100">
-							</figure>
-						</div>-->
-
-					</div>
-
-         
+					</div>         
           
-            <div class="photo position-relative">
-                
+            <div class="photo position-relative"><!-----------mobile resposive------------->
+				<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
                 <div class="card">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame1.png" class="img-fluid w-100" >
+                    <img src="<?php the_sub_field('image');?>" class="img-fluid w-100" >
                 </div>
-
-                <div class="card">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame2.png" class="img-fluid w-100" >
-                </div>
-
-                <div class="card">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/images/frame3.png" class="img-fluid w-100" >
-                </div>
-            
+				<?php endwhile; endif; ?>
             </div>
           
         </div>
-        
       
 					<div class="row approach_style">
 					<?php if( have_rows('approach_section') ) : while( have_rows('approach_section') ): the_row(); ?>
@@ -154,22 +131,8 @@ get_header();
 									<p class="pb-5"><?php the_sub_field('content');?></p>
 								</div>
 								<?php endwhile; endif; ?>
-								<!--<div class="space2 position-relative ">
-									<h3 class="pb-1 ">Consistency</h3>
-									<p>Create a seamless experience across mobile and desktop</p>
-								</div>-->
 							</div>
 							<?php endwhile; endif; ?>
-							<!--<div class="col-md-6 space4">
-								<div class="space2 position-relative">
-									<h3 class="pb-1 ">Accessibility</h3>
-									<p class="pb-5">We focus on creating an easily accessible platform for global reach</p>
-								</div>
-								<div class="space2 position-relative">
-									<h3 class="pb-1 ">Quickness</h3>
-									<p>Optimize the booking flow and help users reach their goal faster</p>
-								</div>
-							</div>-->
 						</div>
 						</div>
 						<?php endwhile; endif; ?>
@@ -183,7 +146,7 @@ get_header();
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();
                    $webImage = get_sub_field('project_gallery');
                 if($webImage !='') { ?>
-                  <div class="mb-r-80 m-img"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('project_gallery'); ?>"></div>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('project_gallery'); ?>"></div>
                    <?php } ?>
                    <?php endwhile; endif; ?>
                   
@@ -225,7 +188,7 @@ get_header();
               <?php } $i++; ?>
                 
                  <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
-                <div class="mb-r-80 m-img"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>"></div>
+                <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>"></div>
                      <?php endwhile; endif; ?>
                       <?php endwhile; endif; ?>
               </div>
@@ -294,7 +257,7 @@ get_header();
                     </div>
                   </div>
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
-                  <div class="mb-r-80 m-img"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>"></div>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>"></div>
                       <?php endwhile; endif; ?>
                 </div>
                 <?php endwhile; endif; ?>
