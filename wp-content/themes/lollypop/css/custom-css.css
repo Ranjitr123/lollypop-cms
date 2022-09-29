@@ -9,6 +9,7 @@
 .Emaar_digital .space2 h3:before{content: '';position: absolute;top: -23px;left: 12px;width: 4px;height: 24px;background-color: #FD2E35;transform: rotate(90deg);}
 .Emaar_digital .space3{padding: 100px 0 132px 0;}
 .Emaar_digital .approach_style{width: 100%;max-width: 845px;margin: 0 auto;}
+.Emaar_digital .space3 .col-md-4:nth-child(2){margin-top: 60px;}
 
 @media only screen and (max-width: 1024px){
     .Emaar_digital .head h2::before{left: 10px;}
@@ -21,5 +22,6 @@
 
 @media only screen and (max-width: 426px){
     .Emaar_digital .head h2::before{left: 7px;}
-    .space4{padding-top: 48px;}
+    .Emaar_digital .space4{padding-top: 48px;}
+	.Emaar_digital .space3 .col-md-4:nth-child(2){margin-top: 0px;}
 }
