@@ -430,13 +430,6 @@ get_header();
     </main>
 
 
-    
-<script>
-
-
-
-</script>
-
 <script>
 $("h4").addClass("fnt-28 fnt-800 mb-2 data-scroll");
     $('.bd-brd').css('border-color', '#f7f4f2');
