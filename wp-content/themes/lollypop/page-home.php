@@ -283,7 +283,7 @@ get_header();
                   </a>
                 </li>
                <?php endwhile; endif; ?>
-              </ul><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/industrie/">View All Industries</a>
+              </ul><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/industries/">View All Industries</a>
             </div>
           </div>
         </div>
