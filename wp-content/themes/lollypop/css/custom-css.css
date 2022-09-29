@@ -14,6 +14,7 @@
 .Emaar_digital .photo{padding-bottom: 132px;padding-top: 100px;}
 .Emaar_digital .photo{display: none;}
 .Emaar_digital .photo img{height: 365px;}
+/*.project-step-disc__item p:first-child{font-size:20px;}*/
 
 @media only screen and (max-width: 1367px){
     .Emaar_digital .head h2::before{left: 40px;}
