@@ -14,10 +14,10 @@
 .Emaar_digital .photo{padding-bottom: 132px;padding-top: 100px;}
 .Emaar_digital .photo{display: none;}
 .Emaar_digital .photo img{height: 365px;}
-/*.project-step-disc__item p:first-child{font-size:20px;}*/
 
 @media only screen and (max-width: 1367px){
     .Emaar_digital .head h2::before{left: 40px;}
+	.offset-md-1 .fnt-78.h1, h1.fnt-78{font-size:61px!important;}
     
 }
 @media only screen and (max-width: 1024px){
