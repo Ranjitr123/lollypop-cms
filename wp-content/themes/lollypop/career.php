@@ -27,7 +27,7 @@ display: none;
 					
                   <div class="d-flex flex-wrap justify-content-center">
                    <?php if( have_rows('slide_content') ) : while( have_rows('slide_content') ): the_row(); ?>
-                  <span class="quotes" style="color:#221429;">&nbsp;<?php the_sub_field('list'); ?></span>
+                  <span class="quotes fnt-50" style="color:#221429;">&nbsp;<?php the_sub_field('list'); ?></span>
                    <?php endwhile; endif; ?>
                  
                   </div>
