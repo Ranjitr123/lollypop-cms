@@ -142,14 +142,14 @@ get_header();
 			<?php } ?>
             <?php endwhile; endif; ?>
 					<!----end new section--------->
-					
+				<div class="container">	
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();
                    $webImage = get_sub_field('project_gallery');
                 if($webImage !='') { ?>
                   <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('project_gallery'); ?>"></div>
                    <?php } ?>
                    <?php endwhile; endif; ?>
-                  
+                </div>  
                   <?php $projectVideo = get_field('video_url');
                 if($projectVideo !=''){?>
                 <!--div class="mb-r-80"><a class="video-img position-relative popup-vimeo d-block" href="<?php the_field('video_url'); ?>">
@@ -158,7 +158,7 @@ get_header();
                      <?php } ?>
                      
               </div>
-              <div> <?php if( have_rows('define_descriptions') ) : while( have_rows('define_descriptions') ): the_row(); ?> 
+              <div class="container"> <?php if( have_rows('define_descriptions') ) : while( have_rows('define_descriptions') ): the_row(); ?> 
                 <div class="col-md-10 px-0 mx-auto define">
                   <div class="mb-r-80">
                     <div class="project-step">
