@@ -9,6 +9,7 @@ get_header();
 .lp-mainheader--white .nav-item:last-child .nav-link{
 display: none;
 }
+.quotes {display: none;}
  </style>
 
 <main class="main" style="background: #221429;">
@@ -23,9 +24,10 @@ display: none;
               <div class=" col-md-10 mx-auto">
                 <h1 class="fnt-78 fnt-800 clr-white text-center head-text mb-35" data-aos="fade-up" data-aos-duration="500">
                  <span class="d-block"><?php the_sub_field('title'); ?></span>
-                  <div class="quote d-flex flex-wrap justify-content-center">
+					
+                  <div class="d-flex flex-wrap justify-content-center">
                    <?php if( have_rows('slide_content') ) : while( have_rows('slide_content') ): the_row(); ?>
-                  <span class="clr-black quote__item quotes">&nbsp;<?php the_sub_field('list'); ?></span>
+                  <span class="quotes" style="color:#221429;">&nbsp;<?php the_sub_field('list'); ?></span>
                    <?php endwhile; endif; ?>
                  
                   </div>

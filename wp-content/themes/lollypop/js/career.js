@@ -5,19 +5,48 @@ var player2 = void 0;
 
 $(document).ready(function () {
   $('header').addClass('lp-mainheader--white');
+  
+  	$(function () {
+		var words = ['artists', 'architects', 'writers', 'engineers'],
+			i = 0; // i for counting
+	
+		setInterval(function () {
+			$('.quote-career').fadeOut(function () {
+				//fadeout text
+				$(this).html(words[i = (i + 1) % words.length]).fadeIn(); //update, count and fadeIn
+			});
+		}, 2500); //2s
+	
+	});
 
-  var counter = $(".quote .quote__item").length;
-  var counter2 = $(".quote .quote__item").length;
+//  var counter = $(".quote .quote__item").length;
+//  var counter2 = $(".quote .quote__item").length;
+//
+//  var i = setInterval(function () {
+//    var EQ = $(".quote .quote__item").eq(counter - 1);
+//    $(".quote .quote__item").eq(counter - 1).addClass('active');
+//    $(".quote .quote__item").not(EQ).removeClass('active');
+//    counter--;
+//    if (counter === 0) {
+//      counter = counter2;
+//    }
+//  }, 2000);
+(function() {
 
-  var i = setInterval(function () {
-    var EQ = $(".quote .quote__item").eq(counter - 1);
-    $(".quote .quote__item").eq(counter - 1).addClass('active');
-    $(".quote .quote__item").not(EQ).removeClass('active');
-    counter--;
-    if (counter === 0) {
-      counter = counter2;
-    }
-  }, 2000);
+  var quotes = $(".quotes");
+  var quoteIndex = -1;
+
+  function showNextQuote() {
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+      .fadeIn(1000)
+      .delay(1000)
+      .fadeOut(1000, showNextQuote);
+  }
+
+  showNextQuote();
+
+})();
 
  // player2 = new Plyr('#player2');
 });
