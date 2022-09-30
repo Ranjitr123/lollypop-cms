@@ -39,7 +39,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-9 portfolio_thubmnail mx-auto"><a class="d-block" href="https://lollypop.design/projects/aha/" itemprop="url">
                 <div class="mb-35 overflow-hidden hover-img">
                 <div class="revealnone">
-                <img class="portfolio-img" src="https://lollypop.design/wp-content/uploads/2022/05/slice-1.webp" itemprop="image"></div>
+                <img class="portfolio-img" src="https://lollypop.design/wp-content/uploads/2022/05/slice-1.webp" alt="Image" itemprop="image"></div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-11 mx-auto">
@@ -80,7 +80,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 col-xl-9 portfolio_thubmnail  mx-auto"><a class="d-block" href="<?php the_permalink(); ?>" itemprop="url">
                 <div class="mb-35 overflow-hidden hover-img">
                 <div class="revealnone">
-                <img class="portfolio-img" src="<?php the_field('thumbnail_image'); ?>"itemprop="image" ></div>
+                <img class="portfolio-img" src="<?php the_field('thumbnail_image'); ?>" alt="Image" itemprop="image" ></div>
                 </div>
                  <div class="row"> 
                   <div class="col-12 col-md-11 mx-auto">
@@ -113,7 +113,7 @@ get_header();
               <ul class="px-0 mb-0 clients-logo row">
                <?php if( have_rows('clients_logos') ) : while( have_rows('clients_logos') ): the_row(); ?>
                 <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                  <div class="cl-logo text-center"><img class="img-fluid" src="<?php the_sub_field('logo'); ?>"></div>
+                  <div class="cl-logo text-center"><img class="img-fluid" src="<?php the_sub_field('logo'); ?>" alt="Image"></div>
                 </li>
                 <?php  endwhile; endif; ?>
               </ul>
@@ -144,7 +144,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-9 portfolio_thubmnail mx-auto"><a class="d-block" href="<?php the_permalink(); ?>" itemprop="url">
                 <div class="mb-35 overflow-hidden hover-img">
                 <div class="revealnone">
-                <img class="portfolio-img" src="<?php the_field('thumbnail_image'); ?>" itemprop="image"></div>
+                <img class="portfolio-img" src="<?php the_field('thumbnail_image'); ?>" alt="Image" itemprop="image"></div>
                 </div>
                 <div class="row"> 
                   <div class="col-12 col-md-11 mx-auto">

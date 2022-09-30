@@ -39,8 +39,8 @@ margin-top: -70px;
         <div class="designathon-container"> 
           <div class="container h-100 position-relative">
             <div class="row h-100 flex-column align-items-center justify-content-center"> 
-              <div class="col-10 col-md-4 col-xl-5 mb-4 mb-md-0 text-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/athon-logo-1.svg"></div>
-              <div class="col-12 col-md-6 designpoup-btn d-flex justify-content-center d-flex justify-content-md-end"><a class="d-flex align-items-center popup-youtube" href="https://www.youtube.com/watch?v=dm_RCYP-Vmg"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/play.svg"><span class="fnt-14 ms-2 ms-lg-3 hvr-line">Play Designathon Video</span></a></div>
+              <div class="col-10 col-md-4 col-xl-5 mb-4 mb-md-0 text-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/athon-logo-1.svg" alt="Image"></div>
+              <div class="col-12 col-md-6 designpoup-btn d-flex justify-content-center d-flex justify-content-md-end"><a class="d-flex align-items-center popup-youtube" href="https://www.youtube.com/watch?v=dm_RCYP-Vmg"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/play.svg" alt="Image"><span class="fnt-14 ms-2 ms-lg-3 hvr-line">Play Designathon Video</span></a></div>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ margin-top: -70px;
         </div>
       </section>
       <!--03-->
-      <section class="sec-pd-designathon sec-yel-bg position-relative sec-athon-text-bg"><img class="img-athon-text" src="https://lollypop.design/wp-content/uploads/2022/03/designathon.png">
+      <section class="sec-pd-designathon sec-yel-bg position-relative sec-athon-text-bg"><img class="img-athon-text" src="https://lollypop.design/wp-content/uploads/2022/03/designathon.png" alt="Image">
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-11 col-lg-8 mx-auto">
@@ -133,7 +133,7 @@ margin-top: -70px;
                   <div class="mb-4 pb-0 d-inline-block mx-auto">
                     <h3 class="fnt-50 fnt-800 clr-yel-92a mb-0 text-capitalize col-md-6 px-0 ps-md-4 ps-lg-5 w-100">Event Details</h3>
                   </div>
-                  <div class="text-center"><img class="img-fluid mb-4" src="https://lollypop.design/wp-content/uploads/2022/03/Registration_process-1-1.webp"></div>
+                  <div class="text-center"><img class="img-fluid mb-4" src="https://lollypop.design/wp-content/uploads/2022/03/Registration_process-1-1.webp" alt="Image"></div>
                 </div>
                 <div class="d-athon-mision__item col-12 col-md-8 col-lg-7">
                   <div class="ps-md-4">
@@ -172,7 +172,7 @@ margin-top: -70px;
                 <li class="d-athon-jury-list__item"> 
                   <div class="jury row">
                     <div class="col-10 col-md-5 img mx-auto mx-md-0">
-                      <div class="jury__img w-100"> <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Group-4632-1-scaled.webp"></div>
+                      <div class="jury__img w-100"> <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Group-4632-1-scaled.webp" alt="Image"></div>
                     </div>
                     <div class="col-12 col-md-7 info d-md-flex align-items-center">
 		      <div class="jury__info position-relative">
@@ -190,7 +190,7 @@ margin-top: -70px;
                 <li class="d-athon-jury-list__item"> 
                   <div class="jury row">
                     <div class="col-10 col-md-5 img mx-auto mx-md-0">
-                      <div class="jury__img w-100"> <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/04/Group-48097142-3-scaled.webp"></div>
+                      <div class="jury__img w-100"> <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/04/Group-48097142-3-scaled.webp" alt="Image"></div>
                     </div>
                     <div class="col-12 col-md-7 info d-md-flex align-items-center">
 		      <div class="jury__info position-relative">
@@ -221,11 +221,11 @@ margin-top: -70px;
                 <p class="fnt-20 px-0 mb-0">Snippets of previous editions.</p>
               </div>
               <ul class="fluid-slider img-card-slider px-0 row mb-0"> 
-                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story1.png"></li>
-                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/journey-pic-2.png"></li>
-                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story2.png"></li>
-                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/journey-pic-1.png"></li>
-                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story3.png"></li>
+                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story1.png" alt="Image"></li>
+                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/journey-pic-2.png" alt="Image"></li>
+                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story2.png" alt="Image"></li>
+                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/journey-pic-1.png" alt="Image"></li>
+                <li class="fluid-slider__item pe-3 mb-0"><img class="img-fluid img" src="https://lollypop.design/wp-content/uploads/2022/03/story3.png" alt="Image"></li>
               </ul>
             </div>
           </div>
@@ -245,7 +245,7 @@ margin-top: -70px;
 		    </div>
 <div>
 <a class="web-btn web-btn--whitetrans d-inline-flex align-itmes-center btn-dwnld" href="https://drive.google.com/file/d/13MmVO_N9XWt_74LVDijqFBDw9Fhz0ztU/view?usp=sharing" target="__blank"><span class="me-2">Download PDF</span>
-		      <div class="d-inline-block"><img class="ar-w" src="https://lollypop.design/wp-content/uploads/2022/03/download-ar.svg"><img class="ar-b" src="https://lollypop.design/wp-content/uploads/2022/03/drop-w.svg"></div></a>
+		      <div class="d-inline-block"><img class="ar-w" src="https://lollypop.design/wp-content/uploads/2022/03/download-ar.svg" alt="Image"><img class="ar-b" src="https://lollypop.design/wp-content/uploads/2022/03/drop-w.svg" alt="Image"></div></a>
 </div>
                   </div>
                 </div>
@@ -264,18 +264,18 @@ margin-top: -70px;
                   <div class="mb-4 d-inline-block mx-auto">
                     <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a">About the title</h3>
                     <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a">sponsor</h3>
-		    <div class="d-md-none col-12 px-0 mt-4"><div class="col-6 px-0"><img class="img-fluid mt-3 mb-3" src="https://lollypop.design/wp-content/uploads/2022/03/BYJU_S-_Corporate-Logo_Purple-1.png"></div><p class="fnt-20 d-md-none">BYJU'S is one of the world's leading EdTech companies that is redefining learning and teaching globally. Through multiple innovative and personalized learning offerings, it is creating cutting-edge education products in India for the world.</p>
+		    <div class="d-md-none col-12 px-0 mt-4"><div class="col-6 px-0"><img class="img-fluid mt-3 mb-3" src="https://lollypop.design/wp-content/uploads/2022/03/BYJU_S-_Corporate-Logo_Purple-1.png" alt="Image"></div><p class="fnt-20 d-md-none">BYJU'S is one of the world's leading EdTech companies that is redefining learning and teaching globally. Through multiple innovative and personalized learning offerings, it is creating cutting-edge education products in India for the world.</p>
 <a class="web-btn web-btn--orange d-inline-block d-md-none mt-4" href="https://byjus.com/" target="_blank">Visit Byju's</a>
 </div>		  </div>
                   <div class="text-center sponsor-img">
-                    <div class="sponsor-img__item"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Sponsor-2.webp"></div>
+                    <div class="sponsor-img__item"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Sponsor-2.webp" alt="Image"></div>
                   </div>
                 </div>
                 <div class="d-athon-mision__item col-12 col-md-6 col-lg-6">
                   <ul class="px-0 mb-0"> 
                     <li class="mb-4 pb-md-2">
                       <div class="col-5 mb-2">
-                        <div class="d-none d-md-block mt-1"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/BYJU_S-_Corporate-Logo_Purple-1.png"></div>
+                        <div class="d-none d-md-block mt-1"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/BYJU_S-_Corporate-Logo_Purple-1.png" alt="Image"></div>
                       </div>
                       <p class="mb-0 px-0 fnt-20 d-none d-md-block">BYJU'S is one of the world's leading EdTech companies that is redefining learning and teaching globally. Through multiple innovative and personalized learning offerings, it is creating cutting-edge education products in India for the world.</p>
                     </li>
@@ -437,7 +437,7 @@ margin-top: -70px;
                   <h3 class="fnt-40 fnt-800">Spend the most creative</h3>
                   <h3 class="fnt-40 fnt-800"><span class="clr-yel-92a">24 hours</span><span>&nbsp;of this year!</span></h3>
                   <div class="mt-4 pt-lg-2 text-center"><a class="web-btn web-btn--orange" href="https://forms.gle/wmAE7mZnMFwqh3DA8" target="__blank">Register Now</a></div>
-                </div><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Group-48097148.webp">
+                </div><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/03/Group-48097148.webp" alt="Image">
               </div>
             </div>
           </div>

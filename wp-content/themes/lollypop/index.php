@@ -67,7 +67,7 @@ get_header(); ?>
               
               <div class="blog-main-img position-relative">
                <a href="<?php the_permalink(); ?>">
-                <div class="reveal blog-main-img__img"><img class="img-fluid" src="<?php the_field('banner_image') ?>"></div>
+                <div class="reveal blog-main-img__img"><img class="img-fluid" src="<?php the_field('banner_image') ?>" alt="Image"></div>
                 <div class="blog-info col-12 col-md-5">
                   <div class="d-flex flex-column">
                     <div>
@@ -117,7 +117,7 @@ get_header(); ?>
                 <li class="blog-list__item second-article"><a class="blog row" href="<?php the_permalink(); ?>">
 		    <div class="blog-img col-12 col-md-5 col-lg-5 mb-img mb-md-0">
 <div class="hover-img w-100 h-100">
-                      <div class="reveal"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"></div>
+                      <div class="reveal"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>" alt="Image"></div>
                     </div></div>
                     <div class="blog-info col-12 col-md-7 col-lg-6">
                       <div class="d-flex flex-column">
@@ -140,7 +140,7 @@ get_header(); ?>
                <?php if( have_rows('whitepaper') ) : while( have_rows('whitepaper') ): the_row(); ?>
                 <li class="blog-list__item white-paper bg-white"><a class="blog row" href="<?php the_sub_field('url') ?>"><span class="text-uppercase d-block d-md-none mb-3 fnt-12 fnt-800 data-scroll">WHITE PAPER</span>
                     <div class="blog-img col-12 col-md-5 mb-img mb-md-0">
-                      <div class="reveal"><img src="<?php the_sub_field('image') ?>"></div>
+                      <div class="reveal"><img src="<?php the_sub_field('image') ?>" alt="Image"></div>
                     </div>
                     <div class="blog-info col-12 col-md-7 col-lg-6">
                       <div class="d-flex flex-column white-paper__info">
@@ -175,7 +175,7 @@ get_header(); ?>
                 <li class="blog-list__item thrid-article terra-load-blogs"><a class="blog row" href="<?php the_permalink(); ?>">
 		    <div class="blog-img col-12 col-md-5 col-lg-5 mb-img mb-md-0">
 <div class="hover-img w-100 h-100">
-                      <div class="reveal"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"></div>
+                      <div class="reveal"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>" alt="Image"></div>
                     </div></div>
                     <div class="blog-info col-12 col-md-7 col-lg-6">
                       <div class="d-flex flex-column">

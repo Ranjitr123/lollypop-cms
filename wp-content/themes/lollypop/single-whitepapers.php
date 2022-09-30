@@ -24,7 +24,7 @@ get_header();
                   </div> 
                 </div>
               </div>
-              <div class="reveal"><img class="wpdm-img" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>"></div>
+              <div class="reveal"><img class="wpdm-img" src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>" alt="Image"></div>
             </div>
           </div>
         </div>

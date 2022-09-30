@@ -59,7 +59,7 @@ get_header();
               <ul class="px-0 case-img-list row single-mb-slider">
                 <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
                 <li class="case-img-list__item col-12 col-md-4">
-                  <div class="case-std img-hvr"><img class="img" src="<?php the_sub_field('thumbnail_image'); ?>">
+                  <div class="case-std img-hvr"><img class="img" src="<?php the_sub_field('thumbnail_image'); ?>" alt="Image">
                     <div class="case-std__info">
                       <h6 class="fnt-16 fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
                       <p class="fnt-14 mb-3"><?php echo wp_trim_words(get_sub_field('content'), 10); ?></p>
@@ -153,7 +153,7 @@ get_header();
                       </div>
                       <ul class="px-0 logo-list row">
                        <?php if( have_rows('client_logo') ) : while( have_rows('client_logo') ): the_row(); ?>
-                        <li class="logo-list__item col-4 col-md-3 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('logo'); ?>" ></li>
+                        <li class="logo-list__item col-4 col-md-3 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('logo'); ?>" alt="Image"></li>
                          <?php  endwhile; endif; ?>
                         
                       </ul><a class="data-scroll hvr-line fnt-14 clr-second mt-5 d-inline-block" href="<?php echo site_url(); ?>/clients/">View Our Clients</a>
@@ -163,7 +163,7 @@ get_header();
                       <div class="expert-member d-flex flex-wrap data-scroll mb-md-5 pb-md-5"> 
                         <div class="col-12 col-md-4 mb-4 mb-md-0">
                           <div class="expert-member__img text-center">
-                            <div class="data-scroll"><img class="img-fluid mb-2 pb-1" src="<?php the_sub_field('image'); ?>"></div>
+                            <div class="data-scroll"><img class="img-fluid mb-2 pb-1" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
                             <h6 class="fnt-22 fnt-800 clr-white mb-0"><?php the_sub_field('name'); ?></h6><span class="fnt-14 clr-white d-inline-block"><?php the_sub_field('position'); ?></span>
                           </div>
                         </div>

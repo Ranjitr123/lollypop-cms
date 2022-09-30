@@ -16,7 +16,7 @@ get_header();
                 <div class="col-12 col-md-8 offset-md-1">
                   <div class="mb-40">
                     <h1 class="fnt-78 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0">Terms of Use</h1>
-                    <div class="col-8 col-md-5 mb-40 offset-md-1 px-0"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/career/career-ilustration.png"></div>
+                    <div class="col-8 col-md-5 mb-40 offset-md-1 px-0"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/career/career-ilustration.png" alt="Image"></div>
                     <p class="fnt-24 clr-black-354">
                        These Terms of Use (“Terms of Use”) have been drafted in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of <a class="clr-second hvr-link" href="https://lollypop.design/">https://lollypop.design/.</a></p>
                   </div>

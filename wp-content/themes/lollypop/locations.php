@@ -55,7 +55,7 @@ if($locationVideo !=''){
 <?php }else{ ?>
 <div class="hover-img">
 <?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-<img class="wpdm-img" src="<?php the_sub_field('images'); ?>">
+<img class="wpdm-img" src="<?php the_sub_field('images'); ?>" alt="Image">
 <?php endwhile; endif; ?>
 </div>
 <?php } ?>
@@ -105,7 +105,7 @@ if($locationVideo !=''){
 </div>
 <ul class="px-0 logo-list row mb-0">
 <?php if( have_rows('logos') ) : while( have_rows('logos') ): the_row(); ?>
-<li class="logo-list__item col-4 col-md-3"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>"></li>
+<li class="logo-list__item col-4 col-md-3"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>" alt="Image"></li>
 <?php endwhile; endif; ?>
 
 </ul>
@@ -137,7 +137,7 @@ if($locationVideo !=''){
 <ul class="px-0 lp-awards-list d-flex four-card-slider">
 <?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
 <li class="lp-awards-list__item">
-	<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>">
+	<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
 	<div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
 </div>
 </li>
@@ -164,7 +164,7 @@ if($locationVideo !=''){
 <ul class="awrad-list px-0 mb-0 row"> 
 <?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
 <li class="awrad-list__item col-6 col-md-4 data-scroll"> 
-	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>">
+	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
 <div class="award__name"> 
 <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
 <p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
@@ -283,7 +283,7 @@ if($locationVideo !=''){
 <div class="col-12 col-md-12 mx-auto">
 <a class="" href="<?php the_sub_field('url'); ?>">
 <div class="mb-35 fluid-mb hover-img">
-<div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('project_image'); ?>"></div>
+<div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('project_image'); ?>" alt="Image"></div>
 </div>
 <div class="d-flex flex-wrap px-md-4 px-xl-5">
 <div class="col-12 px-md-12 col-md-4 mb-3 mb-md-0 d-flex flex-column"><span class="d-inline-block fnt-16 data-scroll mt-0 text-rpd portfolio-title"><?php the_sub_field('company_name'); ?></span></div>
@@ -330,7 +330,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_permalink(); ?>">
 <div class="row">
 <div class="col-12 col-md-3 col-lg-5">
-<div class="revealnone h-100"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>"></div>
+<div class="revealnone h-100"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>" alt="Image"></div>
 </div>
 <div class="col-12 col-md-7">
 <div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">white paper</span>
@@ -348,7 +348,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_sub_field('url'); ?>">
 <div class="row">
 <div class="col-12 col-md-3 col-lg-5">
-<div class="revealnone  h-100"><img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('blog_image'); ?>"></div>
+<div class="revealnone  h-100"><img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('blog_image'); ?>" alt="Image"></div>
 </div>
 <div class="col-12 col-md-7">
 <div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">blog</span>

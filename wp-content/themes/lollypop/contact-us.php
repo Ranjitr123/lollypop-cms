@@ -16,7 +16,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="contact-bnr">
                 <div class="d-flex flex-column align-items-center text-center">
-                  <div class="col-8 col-md-4 col-lg-6 mb-2"><img class="img-fluid" src="<?php the_field('banner_image'); ?>" data-aos="zoom-in-down" data-aos-duration="2500"></div>
+                  <div class="col-8 col-md-4 col-lg-6 mb-2"><img class="img-fluid" src="<?php the_field('banner_image'); ?>" alt="Image" data-aos="zoom-in-down" data-aos-duration="2500"></div>
                   <div class="col-12 col-md-6">
                     <h1 class="fnt-78 fnt-800" data-aos="fade-up" data-aos-duration="500"><?php the_field('banner_title'); ?></h1>
                     <p class="fnt-24" data-aos="fade-up" data-aos-duration="500"><?php the_field('banner_content'); ?></p>

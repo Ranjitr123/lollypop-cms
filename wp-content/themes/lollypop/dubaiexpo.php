@@ -20,7 +20,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="reveal"><img class="wpdm-img" src="<?php the_field('banner_image');?>"></div>
+              <div class="reveal"><img class="wpdm-img" src="<?php the_field('banner_image');?>" alt="Image"></div>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ get_header();
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
                 <li class="lp-awards-list__item col-12">
-                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>">
+                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
                     <div class="col-12 col-md-8 px-0"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
                   </div>
                 </li>
@@ -179,14 +179,14 @@ get_header();
                 <div class="fade-img-list__item">
                   <ul class="img-fade-out px-0 mb-0 fade-img">
                     <?php if( have_rows('dubai_slider_1') ) : while( have_rows('dubai_slider_1') ): the_row(); ?>
-                    <li class="img-fade-out__item"> <img class="img" src="<?php the_sub_field('image');?>"></li>
+                    <li class="img-fade-out__item"> <img class="img" src="<?php the_sub_field('image');?>" alt="Image"></li>
                     <?php endwhile; endif; ?>
                   </ul>
                 </div>
                 <div class="fade-img-list__item">
                   <ul class="img-fade-out px-0 mb-0 fade-img">
                    <?php if( have_rows('dubai_slider_2') ) : while( have_rows('dubai_slider_2') ): the_row(); ?>
-                    <li class="img-fade-out__item"> <img class="img" src="<?php the_sub_field('image');?>"></li>
+                    <li class="img-fade-out__item"> <img class="img" src="<?php the_sub_field('image');?>" alt="Image"></li>
                      <?php endwhile; endif; ?>
                   </ul>
                 </div>
@@ -206,7 +206,7 @@ get_header();
                 <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_sub_field('url');?>">
                     <div class="row">
                       <div class="col-6 col-md-3"><span class="text-uppercase d-block d-md-none mb-2 fnt-12 fnt-800">Interesting Read</span>
-                        <div class="reveal"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('image');?>"></div>
+                        <div class="reveal"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('image');?>" alt="Image"></div>
                       </div>
                       <div class="col-12 col-md-8">
                         <div class="px-lg-4"><span class="text-uppercase d-none d-md-block mb-2 fnt-12 fnt-800">Interesting Read</span>

@@ -61,7 +61,7 @@ echo "True";
           <div class="row mb-4 mb-md-5 pb-lg-3"> 
             <div class="col-12 col-md-9 col-lg-7 mx-auto">
               <div class="col-lg-7 col-xl-8 col-xxl-12 px-0 mx-auto d-flex flex-column align-items-center justify-content-center text-center">
-			  <img class="img-fluid mb-40" src="<?php echo get_template_directory_uri(); ?>/img/thank-you.webp" data-aos="zoom-in-down" data-aos-duration="2000"></div>
+			  <img class="img-fluid mb-40" src="<?php echo get_template_directory_uri(); ?>/img/thank-you.webp" alt="Image" data-aos="zoom-in-down" data-aos-duration="2000"></div>
               <div class="text-center col-md-11 col-lg-10 mx-auto">
                 <h3 class="fnt-40 fnt-800 mb-2 data-scroll">We appreciate your interest in this whitepaper!</h3>
                 <p class="fnt-24 data-scroll col-lg-10 col-xxl-9 mx-auto">You'll get an email with a link to download our whitepaper, so enjoy learning more about it.</p>

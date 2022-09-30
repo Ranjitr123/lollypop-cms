@@ -72,7 +72,7 @@ get_header();
                     <div class="writer-info">
                       <div class="writer-info__profile text-center"> <span class="fnt-12 clr-gray66 d-block mb-3">Written by</span>
                         <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?>
-                        <div class="img mx-auto mb-3"> <img src="<?php the_sub_field('author_photo'); ?>"></div>
+                        <div class="img mx-auto mb-3"> <img src="<?php the_sub_field('author_photo'); ?>" alt="Image"></div>
                         <div class="name text-center mb-4"> 
                           <h6 class="fnt-16 fnt-400 mb-0"><?php the_sub_field('author'); ?></h6><span class="clr-gray66 fnt-12"><?php the_sub_field('positions'); ?></span>
                         </div>
@@ -82,7 +82,7 @@ get_header();
                     <?php } else { ?>
                     <div class="writer-info">
                       <div class="writer-info__profile text-center"> <span class="fnt-12 clr-gray66 d-block mb-3">Written by</span>
-                        <div class="img mx-auto mb-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/blog/anil.jpg"></div>
+                        <div class="img mx-auto mb-3"> <img src="<?php echo get_template_directory_uri(); ?>/img/blog/anil.jpg" alt="Image"></div>
                         <div class="name text-center"> 
                           <h6 class="fnt-16 fnt-400 mb-0">Anil Reddy</h6><span class="clr-gray66 fnt-12">Founder / Design Director</span>
                         </div>
@@ -142,7 +142,7 @@ get_header();
                 <div class="writer-info__profile text-center pt-0"> <span class="fnt-12 clr-gray66 d-block mb-3">Written by</span>
                  
                   <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?>
-                   <div class="img mx-auto mb-3"> <img src="<?php the_sub_field('author_photo'); ?>"></div>
+                   <div class="img mx-auto mb-3"> <img src="<?php the_sub_field('author_photo'); ?>" alt="Image"></div>
                   <div class="name text-center"> 
                     <h6 class="fnt-18 fnt-800 mb-0"><?php the_sub_field('author'); ?></h6><span class="clr-gray66"><?php the_sub_field('positions'); ?></span>
                   </div>

@@ -40,7 +40,7 @@ get_header();
               <div class="tab-pane fade show active" id="v-pills-brands" role="tabpanel" aria-labelledby="v-pills-brands-tab">
                 <ul class="px-0 logo-list row">
                   <?php if (have_rows('top_logos')) : while (have_rows('top_logos')) : the_row(); ?>
-                      <li class="logo-list__item col-4 col-md-3 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>"></li>
+                      <li class="logo-list__item col-4 col-md-3 data-scroll"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>" alt="Image"></li>
                   <?php wp_reset_postdata();
                     endwhile;
                   endif; ?>
@@ -93,7 +93,7 @@ get_header();
               <?php if (have_rows('award_list')) : while (have_rows('award_list')) : the_row(); ?>
                   <li class="award-list__item col-6 col-md-4 data-scroll">
                     <div class="award">
-                      <div class="award__icon text-center"> <img class="img-fluid" src="<?php the_sub_field('image'); ?>"></div>
+                      <div class="award__icon text-center"> <img class="img-fluid" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
                       <div class="award__info text-center">
                         <h6 class="fnt-16 fnt-400 text-center mb-1"><?php the_sub_field('title'); ?></h6>
                         <div> <span class="d-block text-center fnt-12"><?php the_sub_field('content'); ?></span><span class="d-block text-center fnt-12"><?php the_sub_field('year'); ?></span></div>

@@ -157,9 +157,8 @@ get_header();
                       <div class="row mb-45 single-mb-slider">
                               <?php if( have_rows('top_clients') ) : while( have_rows('top_clients') ): the_row(); ?>
                               <div class="col-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
-				<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft">
-<img class="img-fluid mx-auto mb-4" srcset="<?php the_sub_field('client_image'); ?> 200w, <?php the_sub_field('client_image'); ?> 202w" sizes="(max-width: 600px) 200px,
-            202px" src="<?php the_sub_field('client_image'); ?>"alt="<?php the_sub_field('title'); ?>">
+									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft">
+										<img class="img-fluid mx-auto mb-4" srcset="<?php the_sub_field('client_image'); ?> 200w, <?php the_sub_field('client_image'); ?> 202w" sizes="(max-width: 600px) 200px, 202px" src="<?php the_sub_field('client_image'); ?>"alt="<?php the_sub_field('title'); ?>">
                                   <div class="lp-thumbnial__body pt-2 pt-md-4">
                                     <h6 class="lp-thumbnial__heading"><?php the_sub_field('title'); ?></h6>
                                     <p class="lp-thumbnial__text mb-0"><?php the_sub_field('content'); ?></p>
@@ -229,7 +228,7 @@ get_header();
               <ul class="awrad-list px-0 mb-0 row"> 
                <?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
                 <li class="awrad-list__item col-6 col-md-4 data-scroll"> 
-                  <div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>">
+                  <div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
                     <div class="award__name"> 
                       <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
                       <p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>

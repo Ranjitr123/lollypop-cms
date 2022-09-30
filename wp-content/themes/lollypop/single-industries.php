@@ -32,7 +32,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 </div>
                 </div>
               </div>
-              <div class=""><img class="wpdm-img" src="<?php the_field('banner'); ?>"></div>
+              <div class=""><img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image"></div>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                 if($induLogo !=''){ ?>
               <ul class="px-0 logo-list logo-list--3 row">
                <?php if( have_rows('clients_logo_list') ) : while( have_rows('clients_logo_list') ): the_row(); ?>
-                <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="<?php the_sub_field('logos'); ?>"></li>
+                <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="<?php the_sub_field('logos'); ?>" alt="Image"></li>
                  <?php endwhile; endif; ?>
               </ul>
                <?php } ?>
@@ -99,7 +99,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                 <div class="col-12 col-md-11 mx-auto">
                    <a class="" href="<?php the_sub_field('url'); ?>">
                     <div class="mb-35 fluid-mb">
-                <div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('image'); ?>"></div>
+                <div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
               </div>
                    <div class="d-flex flex-wrap px-md-4 px-xl-5">
                     <div class="col-12 px-md-12 col-md-4 mb-3 mb-md-0 d-flex flex-column"><span class="d-inline-block fnt-16 data-scroll mt-0 text-rpd portfolio-title"><?php the_sub_field('company_name'); ?></span></div>

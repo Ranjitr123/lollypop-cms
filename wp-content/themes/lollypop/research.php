@@ -208,7 +208,7 @@ height:140px;
                 <!--banner image  -->
                 <div class=' col-md-10 col-sm-12 col-xl-9 mx-auto'>
                 <div class="position-relative">
-                <div class="reveal" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;"><img class="img-fluid blog-d-img mb-0" src="<?php echo get_field('researchbanner_image')?>" width="1077" height="471" style="transform: translate(0px, 0px);"></div>
+                <div class="reveal" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;"><img class="img-fluid blog-d-img mb-0" src="<?php echo get_field('researchbanner_image')?>" alt="Image" width="1077" height="471" style="transform: translate(0px, 0px);"></div>
               </div></div>
             </section>
             <!--02-->
@@ -234,7 +234,7 @@ height:140px;
                                         <ul class="px-0 mb-lg-4 logo-list row">
                                          <?php while(have_rows('startups_repeater')){the_row();?>
                                             <li class="logo-list__item col-4 col-md-3 data-scroll">
-                                                <img class="img-fluid grayscale" src="<?php echo get_sub_field('startups_images')?>" width="122" height="28">
+                                                <img class="img-fluid grayscale" src="<?php echo get_sub_field('startups_images')?>" width="122" height="28" alt="Image">
                                             </li>
                                              <?php } ?> 
                                             
@@ -285,9 +285,9 @@ height:140px;
                                 <li class="case-img-list__item col-12">
                   <div class="case-std img-hvr">
 
-                     <img class="img" src="<?php echo get_sub_field('why_image_one')?>">
+                     <img class="img" src="<?php echo get_sub_field('why_image_one')?>" alt="Image">
                     <noscript>
-                      <img class="img" src="<?php echo get_sub_field('why_image_two')?>">
+                      <img class="img" src="<?php echo get_sub_field('why_image_two')?>" alt="Image">
                     </noscript>
                     <div class="case-std__info">
                       <h6 class="fnt-16 fnt-800 mb-1"><?php echo get_sub_field('why_title')?></h6>
@@ -420,7 +420,7 @@ height:140px;
                         <div class="col-5 mx-auto col-md-4 mb-4 mb-md-0">
                             <div class="expert-member__img text-center">
                                 <div class="data-scroll">
-                                    <img class="img-fluid mb-2 pb-1" src="<?php echo get_field('member_image')?>" width="208"  height="224" >
+                                    <img class="img-fluid mb-2 pb-1" src="<?php echo get_field('member_image')?>" width="208"  height="224" alt="Image" >
                                 </div>
                                 <h6 class="fnt-22 fnt-800 clr-white mb-0"><?php echo get_field('member_name')?></h6>
                                 <span class="fnt-14 clr-white d-inline-block"><?php echo get_field('member_lead')?></span>

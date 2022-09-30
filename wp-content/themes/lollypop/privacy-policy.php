@@ -16,7 +16,7 @@ get_header();
                 <div class="col-12 col-md-8 offset-md-1">
                   <div class="mb-40">
                     <h1 class="fnt-78 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0">Privacy Policy</h1>
-                    <div class="col-8 col-md-5 mb-40 offset-md-1 px-0"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/career/career-ilustration.png"></div>
+                    <div class="col-8 col-md-5 mb-40 offset-md-1 px-0"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/career/career-ilustration.png" alt="Image"></div>
                     <p class="fnt-24 clr-black-354">This Privacy Policy describes Pixitree Digital Creatives Private Limited (Herein after referred to as the “Company”) policies and procedures on the collection and use and disclosure of the Information provided by the Users and visitors of the Website (together referred to as the “Users”). The Company shall not use the User’s information in any manner except as provided under this Privacy Policy. Every User who accesses the Website agrees to be bound by the terms of this Privacy Policy.</p>
                     <p class="fnt-24 clr-black-354">Interpretation: In this Privacy Policy, references to “You”, “Your”, “User” shall mean the end user accessing the Website or the Services and “We”, “Us” and “Our” shall mean the Company, its affiliates and partners.</p>
                   </div>

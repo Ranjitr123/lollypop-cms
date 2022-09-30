@@ -96,7 +96,7 @@ get_header();
                   <ul class="px-0 m-0 client-list single-mb-dot-slider">
                    <?php if( have_rows('our_clients') ) : while( have_rows('our_clients') ): the_row(); ?>
                     <li class="client-list__item data-scroll"> <a class="clnt d-block" href="javascript:void(0)">
-                        <div class="clnt__logo"><img class="grayscale" src="<?php the_sub_field('client_logo'); ?>"></div>
+                        <div class="clnt__logo"><img class="grayscale" src="<?php the_sub_field('client_logo'); ?>" alt="Image"></div>
                         <div class="clnt__info"> 
                           <p class="col-11 col-lg-10 px-0 fnt-24"><?php the_sub_field('content'); ?></p>
                         </div>
@@ -146,7 +146,7 @@ get_header();
                     <li class="team-list__item col-6 col-md-4"> 
                       <div class="team-profile">
                        <a href="<?php the_permalink(); ?>">
-                        <div class="team-profile__img animated data-scroll"> <img class="img-fluid" src="<?php the_field('thumbnail_image'); ?>"></div>
+                        <div class="team-profile__img animated data-scroll"> <img class="img-fluid" src="<?php the_field('thumbnail_image'); ?>" alt="Image"></div>
                         <div class="team-profile__name"> 
                           <h5 class="fnt-22 fnt-800 clr-white mb-0 text-capitalize data-scroll"><?php the_title(); ?></h5><span class="d-block fnt-14 clr-white data-scroll"><?php the_field('destination'); ?></span>
                            </div></a>
@@ -177,7 +177,7 @@ get_header();
                     <li class="team-list__item col-6 col-md-4"> 
                       <div class="team-profile">
                        <a href="<?php the_permalink(); ?>">
-                        <div class="team-profile__img animated data-scroll"> <img class="img-fluid" src="<?php the_field('thumbnail_image'); ?>"></div>
+                        <div class="team-profile__img animated data-scroll"> <img class="img-fluid" src="<?php the_field('thumbnail_image'); ?>" alt="Image"></div>
                         <div class="team-profile__name"> 
                           <h5 class="fnt-22 fnt-800 clr-white mb-0 text-capitalize data-scroll"><?php the_title(); ?></h5><span class="d-block fnt-14 clr-white data-scroll"><?php the_field('destination'); ?></span>
                         </div>
@@ -212,7 +212,7 @@ get_header();
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
                 <li class="lp-awards-list__item">
-                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>">
+                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
                     <div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
                   </div>
                 </li>

@@ -193,7 +193,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);
                   </div><a class="web-btn web-btn--primary mx-auto d-inline-block" href="#consult">Get Free Consultation</a>
                 </div>
               </div>
-              <div class="img-bl-ils d-none d-md-block"><img src="https://lollypop.design/wp-content/uploads/2022/02/BuildFast_illustration.png"></div>
+              <div class="img-bl-ils d-none d-md-block"><img src="https://lollypop.design/wp-content/uploads/2022/02/BuildFast_illustration.png" alt="Image"></div>
             </div>
           </div>
           <div class="row">

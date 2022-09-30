@@ -10,6 +10,11 @@ get_header();
 display: none;
 }
 .quotes {display: none;}
+@media (max-width:767px){
+	.llp-location-img{
+		height:200px !important;
+	}
+}
  </style>
 
 <main class="main" style="background: #221429;">
@@ -73,7 +78,7 @@ display: none;
                 <?php if( have_rows('culture_list') ) : while( have_rows('culture_list') ): the_row(); ?>
                 <li class="popshare-list__item col-12 col-md-5">
                  <div class="md-4">
-                     <img src="<?php the_sub_field('image'); ?>" class="img-fluid">
+                     <img src="<?php the_sub_field('image'); ?>" class="img-fluid" alt="Image">
                  </div>
                   <h3 class="fnt-22 clr-white fnt-800"><?php the_sub_field('title'); ?></h3>
                   <p class="fnt-16 clr-white mb-0 col-12 col-md-9"><?php the_sub_field('content'); ?></p>
@@ -103,7 +108,7 @@ display: none;
               <ul class="px-0 mb-0 location-list d-flex flex-wrap justify-content-between">
                  <?php if( have_rows('career_location_slider') ) : while( have_rows('career_location_slider') ): the_row(); ?>
                 <li class="location-list__item"><a class="location d-flex flex-column bg-card" href="<?php the_sub_field('location_url'); ?>">
-                    <div class="reveal"> <img class="loc-img" src="<?php the_sub_field('image'); ?>"></div>
+                    <div class="reveal llp-location-img"> <img class="loc-img" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
                     <div class="location__info col-11 col-md-10 col-lg-9 data-scroll px-0"> 
                       <h4 class="fnt-40 clr-white fnt-800 mb-0"><?php the_sub_field('country_name'); ?></h4><span class="d-block fnt-14 clr-white"><?php the_sub_field('location_name'); ?></span>
                     </div></a></li>
@@ -243,7 +248,7 @@ display: none;
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
                 <li class="lp-awards-list__item">
-                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>">
+                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
                     <div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
                   </div>
                 </li>

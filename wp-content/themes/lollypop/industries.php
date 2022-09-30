@@ -49,7 +49,7 @@ $indus = new WP_Query( $args );
                  <a href="<?php the_permalink(); ?>">
                   <div class="row"> 
                     <div class="col-12 col-md-6 col-lg-5 hover-img"> 
-                      <div class="img reveal"><img src="<?php the_field('front_banner'); ?>"></div>
+                      <div class="img reveal"><img src="<?php the_field('front_banner'); ?>" alt="Image"></div>
                     </div>
                     <div class="col-12 col-md-6"> 
                       <div class="text">
@@ -61,7 +61,7 @@ $indus = new WP_Query( $args );
                         <div class="indus-logo">
                             <ul class="px-0 logo-list logo-list--3 row mt-5 mb-5">
                                <?php if( have_rows('clients_logo_list') ) : while( have_rows('clients_logo_list') ): the_row(); ?>
-                               <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="<?php the_sub_field('logos'); ?>"></li>
+                               <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="<?php the_sub_field('logos'); ?>" alt="Image"></li>
                                  <?php endwhile; endif; ?>
                                </ul>
                         </div>

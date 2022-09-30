@@ -23,9 +23,9 @@
 <noscript><link rel='stylesheet' id='main-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9' type='text/css' media='all' /> </noscript>
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='plyr-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9' type='text/css' media='all' /> </noscript>
-<link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
-<link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg">
+<link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
+<link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-css.css">
@@ -143,8 +143,8 @@ $header = new WP_Query( $args );
 <div class="js-location-dropdown  js-nav-dropdown lp-dropdown-wrap">
 <div class="d-flex align-items-center js-location-dropdown__ar position-relative"style="cursor: pointer;">
 <div class="default nav-dropdown-text pe-2">Global</div>
-<div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg"></div>
-<div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg"></div>
+<div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg" alt="Image"></div>
+<div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg" alt="Image"></div>
 </div>
 <div class="menu menu--location transition hidden lp-dropdownmenu lp-dropdownmenu--lg">
 <div class="container">
@@ -156,7 +156,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/india.jpg" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/india.jpg" alt="Image" />
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">India</h6>
 <p class="fnt-16 mb-0">Bangalore, Mumbai,</p>
 <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
@@ -166,7 +166,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/02/US-Female-at-Pizzas.webp" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/02/US-Female-at-Pizzas.webp" alt="Image" />
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">USA</h6>
 <p class="fnt-16 mb-0">San Jose, Dallas</p>
 <!--p class="fnt-16 mb-0">Dallas,</p-->
@@ -177,7 +177,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/UAE.jpg" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/UAE.jpg" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">UAE</h6>
 <p class="fnt-16 mb-0">Dubai</p>
 </div>
@@ -186,7 +186,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/vietnam.jpg" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/vietnam.jpg" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
 <p class="fnt-16 mb-0">Ho Chi Minh City</p>
 </div>
@@ -325,7 +325,7 @@ $header = new WP_Query( $args );
 <body>
 <div class="bd-brd"></div>
 <div class="loader">
-<div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif"></div>
+<div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
 </div>
 
 

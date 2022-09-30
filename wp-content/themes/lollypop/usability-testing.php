@@ -33,23 +33,23 @@ to build easy to use products for your users.</p>
                   </div><a class="web-btn web-btn--primary mx-auto d-inline-block" href="<?php echo site_url(); ?>/project-enquiry/">Get Started Now</a>
                 </div>
               </div>
-	      <div class="mb-70"><img class="wpdm-img" src="https://lollypop.design/wp-content/uploads/2022/02/UsabilityTesting_v3.png" width="926" height="559" ></div>
+	      <div class="mb-70"><img class="wpdm-img" src="https://lollypop.design/wp-content/uploads/2022/02/UsabilityTesting_v3.png" width="926" height="559" alt="Image" ></div>
               <div class="col-12 col-md-8 col-lg-7 mx-auto px-0 text-center">
                 <div class="mb-60">
                   <p class="fnt-24">We have tested more than 100 websites and mobiles apps with insightful results.</p>
                 </div>
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Ace2Three.svg" width="117" height="27"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Ace2Three.svg" alt="Image" width="117" height="27"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Bayer.svg" width="117" height="27"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Bayer.svg" alt="Image" width="117" height="27"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Farmrise.svg" width="117" height="27"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Farmrise.svg" alt="Image" width="117" height="27"></div>
                   </li>
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Monsanto.svg" width="117" height="27"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/Monsanto.svg" alt="Image" width="117" height="27"></div>
                   </li>
                 </ul>
               </div>

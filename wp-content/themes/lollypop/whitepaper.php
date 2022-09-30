@@ -45,7 +45,7 @@ get_header();
                  <a href="<?php the_permalink(); ?>">
                   <div class="row">
                     <div class="col-12 col-md-6 col-lg-5 hover-img"> 
-                      <div class="img reveal"><img src="<?php the_field('landing_image') ?>"></div>
+                      <div class="img reveal"><img src="<?php the_field('landing_image') ?>" alt="Image"></div>
                     </div>
                     <div class="col-12 col-md-6"> 
                       <div class="text">

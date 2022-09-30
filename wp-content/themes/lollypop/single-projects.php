@@ -43,7 +43,7 @@ get_header();
               <div class="reveal-project">
                <?php $galImage = get_the_post_thumbnail_url(); ?>
               <?php if($galImage !=''){ ?>
-              <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>">
+              <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
               <?php } ?>
               
                <?php $bannerVideo = get_field('banner_video_link') ?>
@@ -98,7 +98,7 @@ get_header();
 						<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
 						<div class="col-md-4">
 							<figure>
-								<img src="<?php the_sub_field('image');?>" class="img-fluid w-100">
+								<img src="<?php the_sub_field('image');?>" class="img-fluid w-100" alt="Image">
 							</figure>
 						</div>
 						<?php endwhile; endif; ?>
@@ -107,7 +107,7 @@ get_header();
             <div class="photo position-relative"><!-----------mobile resposive------------->
 				<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
                 <div class="card">
-                    <img src="<?php the_sub_field('image');?>" class="img-fluid w-100" >
+                    <img src="<?php the_sub_field('image');?>" class="img-fluid w-100" alt="Image">
                 </div>
 				<?php endwhile; endif; ?>
             </div>
@@ -146,7 +146,7 @@ get_header();
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();
                    $webImage = get_sub_field('project_gallery');
                 if($webImage !='') { ?>
-                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('project_gallery'); ?>"></div>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('project_gallery'); ?>" alt="Image"></div>
                    <?php } ?>
                    <?php endwhile; endif; ?>
                 </div>  
@@ -188,7 +188,7 @@ get_header();
               <?php } $i++; ?>
                 
                  <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
-                <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>"></div>
+                <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>" alt="Image"></div>
                      <?php endwhile; endif; ?>
                       <?php endwhile; endif; ?>
               </div>
@@ -257,7 +257,7 @@ get_header();
                     </div>
                   </div>
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();?>
-                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>"></div>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
                       <?php endwhile; endif; ?>
                 </div>
                 <?php endwhile; endif; ?>
@@ -337,7 +337,7 @@ get_header();
                      <div class="d-flex">
                       <?php $nextPost = get_next_post();
                             if($nextPost) { ?>
-                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-leftAr.svg"></div>
+                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-leftAr.svg" alt="Image"></div>
                       <div class="ps-4">
                         <?php
                          $destination = get_field('company_name', $nextPost->ID);                               
@@ -360,7 +360,7 @@ get_header();
                         $destination = get_field('company_name', $prevPost->ID);
                          previous_post_link( '%link',  ' <h4 class="fnt-28 fnt-800">'. $destination .'</h4>' );  ?>
                       </div>
-                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-rightAr.svg"></div>
+                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-rightAr.svg" alt="Image"></div>
                       <?php } ?>
                       </div>
                       </div>

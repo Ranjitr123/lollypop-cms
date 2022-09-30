@@ -196,7 +196,7 @@ get_header();
             <?php while (have_rows('product_repeater')) {
               the_row(); ?>
               <li class="lp-awards-list__item w-auto">
-                <div class="award-info"><img class="product-image" src="<?php echo get_sub_field('product_image') ?>">
+                <div class="award-info"><img class="product-image" src="<?php echo get_sub_field('product_image') ?>" alt="Image">
                   <div class="col-12 col-md-8 px-0"><span class="fnt-22 clr-white d-block mb-1 mt-4 fnt-800imp"><?php echo get_sub_field('product_heading') ?></span><span class="w-18 d-block mb-0 fnt-16 clr-white mt-2"> <?php echo get_sub_field('product_description') ?></span></div>
                 </div>
               </li>
@@ -220,7 +220,7 @@ get_header();
                   the_row(); ?>
                   <div class="row">
                     <div class="col-6 col-md-3">
-                      <div class="w-100 h-auto mt-3"> <img class="home-artical-img mb-3 mb-md-0 img-fluid img-fit img-hw" src="<?php echo get_sub_field('covered_image') ?>"></div>
+                      <div class="w-100 h-auto mt-3"> <img class="home-artical-img mb-3 mb-md-0 img-fluid img-fit img-hw" src="<?php echo get_sub_field('covered_image') ?>" alt="Image"></div>
                     </div>
                     <div class="col-12 col-md-9">
                       <div class="mt-2">
@@ -344,7 +344,7 @@ get_header();
                   <?php echo get_field('structuring_heading') ?> <br class="d-none d-lg-block"><?php echo get_field('structuring_description') ?></p>
               </div>
             </div>
-            <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('structuring_image') ?>"></div>
+            <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('structuring_image') ?>" alt="Image"></div>
           </div>
         </div>
       </div>
@@ -371,10 +371,10 @@ get_header();
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('wireframes_image1') ?>"></div>
+                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('wireframes_image1') ?>" alt="Image"></div>
               </div>
               <div class="col-md-6 mt-3 mt-md-0">
-                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('wireframes_image2') ?>"></div>
+                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('wireframes_image2') ?>" alt="Image"></div>
               </div>
             </div>
           </div>
@@ -386,8 +386,8 @@ get_header();
     <div class="container">
       <div class="row">
         <div class="col-112 col-md-9 col-lg-10 mx-auto py-5">
-          <div class="w-100 h-auto d-none d-md-block"><img class="wpdm-img img-fit" src="<?php echo get_field('chat_image1') ?>"></div>
-          <div class="w-100 h-auto d-block d-md-none"><img class="wpdm-img img-fit" src="<?php echo get_field('chat_image2') ?>"></div>
+          <div class="w-100 h-auto d-none d-md-block"><img class="wpdm-img img-fit" src="<?php echo get_field('chat_image1') ?>" alt="Image"></div>
+          <div class="w-100 h-auto d-block d-md-none"><img class="wpdm-img img-fit" src="<?php echo get_field('chat_image2') ?>" alt="Image"></div>
         </div>
       </div>
     </div>
@@ -413,8 +413,8 @@ get_header();
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div class="w-100 h-auto d-none d-md-block"><img class="img-fluid img-fit" src="<?php echo get_field('typography_image') ?>"></div>
-                <div class="w-100 h-auto d-block d-md-none"><img class="img-fluid img-fit" src="<?php echo get_field('typography_mobile_image') ?>"></div>
+                <div class="w-100 h-auto d-none d-md-block"><img class="img-fluid img-fit" src="<?php echo get_field('typography_image') ?>" alt="Image"></div>
+                <div class="w-100 h-auto d-block d-md-none"><img class="img-fluid img-fit" src="<?php echo get_field('typography_mobile_image') ?>" alt="Image"></div>
               </div>
             </div>
           </div>
@@ -439,7 +439,7 @@ get_header();
                           <div class="row">
                             <?php while (have_rows('colours_repeater')) {
                               the_row(); ?>
-                              <div class="col-md-4 col-sm-4 col-4"><img src="<?php echo get_sub_field('colours_image') ?>">
+                              <div class="col-md-4 col-sm-4 col-4"><img src="<?php echo get_sub_field('colours_image') ?>" alt="Image">
                                 <div class="mt-4">
                                   <p class="mb-0 fnt-800imp fnt-22"><?php echo get_sub_field('colours_name') ?></p>
                                   <p class="fnt-14"><?php echo get_sub_field('colours_num') ?></p>
@@ -460,7 +460,7 @@ get_header();
     </div>
   </section>
   <section id="third">
-    <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('ui_image') ?>"></div>
+    <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('ui_image') ?>" alt="Image"></div>
   </section>
   <section class="p-r-80 pb-0 mt-5">
     <div class="container">
@@ -501,8 +501,8 @@ get_header();
             </div>
             <div class="col-md-6 offset-md-1 col-12">
               <div class="mt-4 mt-md-0 ms-3 d-flex">
-                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('language_image1') ?>"></div>
-                <div class="w-100 h-auto"> <img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('language_image2') ?>"></div>
+                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('language_image1') ?>" alt="Image"></div>
+                <div class="w-100 h-auto"> <img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('language_image2') ?>" alt="Image"></div>
               </div>
             </div>
           </div>
@@ -523,8 +523,8 @@ get_header();
             </div>
             <div class="col-md-6 col-12 order-md-1">
               <div class="mt-4 mt-md-0 ms-3 d-flex">
-                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('login_image_1') ?>"></div>
-                <div class="w-100 h-auto"> <img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('login_image_2') ?>"></div>
+                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('login_image_1') ?>" alt="Image"></div>
+                <div class="w-100 h-auto"> <img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('login_image_2') ?>" alt="Image"></div>
               </div>
             </div>
           </div>
@@ -543,7 +543,7 @@ get_header();
             <?php while (have_rows('home_repeater')) {
               the_row(); ?>
               <div class="col-md-3 offset-md-1">
-                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_sub_field('home_image') ?>"></div>
+                <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_sub_field('home_image') ?>" alt="Image"></div>
                 <div class="ms-2 ms-md-5">
                   <p class="fnt-22 fnt-800imp"><?php echo get_sub_field('home_heading') ?></p>
                   <p class="fnt-14"><?php echo get_sub_field('home_description') ?></p>
@@ -568,7 +568,7 @@ get_header();
               </ul>
             </div>
             <div class="col-md-6 col-12 order-md-1">
-              <div class="w-100 h-auto mt-4 mt-md-0"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('profile_image') ?>"></div>
+              <div class="w-100 h-auto mt-4 mt-md-0"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('profile_image') ?>" alt="Image"></div>
             </div>
           </div>
         </div>
@@ -584,7 +584,7 @@ get_header();
         </div>
       </div>
       <div class="container">
-        <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('aha_image') ?>"></div>
+        <div class="w-100 h-auto"><img class="wpdm-img img-fluid img-fit" src="<?php echo get_field('aha_image') ?>" alt="Image"></div>
       </div>
     </div>
   </section>
@@ -661,7 +661,7 @@ k">Twitter</a></li>
         </div>
         <div class="row">
           <div class="col-12 col-md-4 mb-4 mb-md-0 order-2 order-md-1 text-center text-md-left"><a class="clr-second d-inline-block fnt-24 lp-link--red fnt-800 mb-4 mb-md-2 col-8 col-lg-6
- px-0" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lollypop_logo1.svg" style="width:100%"></a>
+ px-0" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lollypop_logo1.svg" style="width:100%" alt="Image"></a>
             <p class="fnt-14 fnt-400 clr-primary mb-0 pb-1 mb-md-3 mb-lg-4 pb-lg-0 px-0 mt-2">A&nbsp;<a href="https://www.terralogic.com/" class="fnt-800 hvr-link fnt-16 d-inline-block">T
                 erralogic</a>&nbsp;company crafting meaningful experiences through Research, Design and Development.</p>
             <ul class="mt-5 mt-md-0 footer-logo-links fnt-400 fnt-14 d-flex justify-content-center justify-content-md-start flex-wrap px-0 mb-0">
@@ -711,7 +711,7 @@ k">Twitter</a></li>
     </div>
   </div>
 </footer>
-<div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg"></div>
+<div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
