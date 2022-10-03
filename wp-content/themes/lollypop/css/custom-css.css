@@ -32,10 +32,17 @@
     
 }
 
+@media only screen and (max-width: 768px){
+	.home-artical-list.whitetext{padding-top:30px;}
+}
 @media only screen and (max-width: 426px){
     .Emaar_digital .head h2::before{left: 7px;}
     .Emaar_digital .space4{padding-top: 48px;}
 	.Emaar_digital .space3 .col-md-4:nth-child(2){margin-top: 0px;}
     .Emaar_digital .space3{display: none;}
     .Emaar_digital .photo{display: block!important;}
+	.lp-sudo-right__textchange.redtext{line-height:unset!important;}
+	.stickytab{padding-top:20px!important;}
+	.ms_2{margin-left:0px !important;}
+	.rmejc{justify-content: unset!important;}
 }

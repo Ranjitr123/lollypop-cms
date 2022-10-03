@@ -35,7 +35,7 @@ get_header();
                 <div class="mb-60">
                   <p class="fnt-24">We've audited 100+ websites and mobiles apps with insightful results.</p>
                 </div>
-                <ul class="px-0 mb-0 clients-logo row justify-content-center">
+                <ul class="px-0 mb-0 clients-logo row justify-content-center rmejc">
                   <li class="clients-logo__item col-4 col-md-3 data-scroll">
                     <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/02/01-Polstrat.svg" height="27" width="117" alt="Image"></div>
                   </li>

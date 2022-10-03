@@ -8,6 +8,7 @@ get_header();
 
 <style>
     .plyr__controls{display: none;}
+	
 </style>
  <main class="main">
       <!--01-->
@@ -22,7 +23,7 @@ get_header();
                       <h1 class="fnt-50 fnt-800 px-0 red-stroke red-stroke--small px-0"><?php the_field('banner_content');?></h1>
                       <div class="rw-wrapper">
                         <div class="rw-sentence">
-                           <div class="lp-sudo-right__textchange fnt-60 fnt-800 clr-second fnt-50">users fall in love with</div>
+                           <div class="lp-sudo-right__textchange fnt-60 fnt-800 clr-second fnt-50 redtext">users fall in love with</div>
                         </div>
                       </div>
                     </div>
@@ -327,7 +328,7 @@ get_header();
 		</ul>
 			<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/whitepapers/">View all Whitepapers</a>
                 <!-- Blogs-->
-                <ul class="px-0 home-artical-list pb-4 pb-md-5 mb-md-3">
+                <ul class="px-0 home-artical-list pb-4 pb-md-5 mb-md-3 whitetext">
                   <?php 
                             $args = array(
                             'post_type'=>'post', // Your post type name

@@ -102,7 +102,7 @@ get_header();
                         </div>
                         <div class="clnt__profile">
                           <div class="d-flex"> 
-                             <div class="col-8 ms-2 ms-lg-3"> <span class="d-block fnt-14"><?php the_sub_field('client_name'); ?></span><span class="d-block fnt-14"><?php the_sub_field('client_position'); ?></span></div>
+                             <div class="col-8 ms-2 ms-lg-3 ms_2"> <span class="d-block fnt-14"><?php the_sub_field('client_name'); ?></span><span class="d-block fnt-14"><?php the_sub_field('client_position'); ?></span></div>
                           </div>
                         </div></a></li>
                         <?php endwhile; endif; ?>
