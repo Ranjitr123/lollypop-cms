@@ -81,6 +81,8 @@ get_header();
       min-width: auto;
     }
   }
+  
+  .secbottom{margin-bottom:80px;}
 </style>
 <main class="main">
 
@@ -214,10 +216,10 @@ get_header();
         </div>
         <div class="col-12 col-md-11 col-lg-11 mx-auto mb-60">
           <ul class="px-0 home-artical-list mt-5">
+		    <?php while (have_rows('we_covered_repeater')) {
+                  the_row(); ?>
             <li class="home-artical-list__item bg-white p-3 p-lg-5">
               <div class="home-artical">
-                <?php while (have_rows('we_covered_repeater')) {
-                  the_row(); ?>
                   <div class="row">
                     <div class="col-6 col-md-3">
                       <div class="w-100 h-auto mt-3"> <img class="home-artical-img mb-3 mb-md-0 img-fluid img-fit img-hw" src="<?php echo get_sub_field('covered_image') ?>" alt="Image"></div>
@@ -291,9 +293,9 @@ get_header();
                       </div>
                     </div>
                   </div>
-                <?php  } ?>
               </div>
             </li>
+			<?php  } ?>
           </ul>
         </div>
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
