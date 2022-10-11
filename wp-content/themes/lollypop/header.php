@@ -11,8 +11,8 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope%3Awght%40400%3B600%3B700%3B800&display=swap&ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope%3Awght%40400%3B600%3B700%3B800&display=swap&ver=5.9"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"></noscript>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel='stylesheet' href='https://lollypop.design/wp-content/themes/lollypop/css/Designathon.css' type='text/css' media='all' />
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/swiper-bundle.min.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
