@@ -156,7 +156,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/india.jpg" alt="Image" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/india.webp" alt="Image" />
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">India</h6>
 <p class="fnt-16 mb-0">Bangalore, Mumbai,</p>
 <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
@@ -166,7 +166,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/02/US-Female-at-Pizzas.webp" alt="Image" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/US-Female-at-Pizzas-new.webp" alt="Image" />
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">USA</h6>
 <p class="fnt-16 mb-0">San Jose, Dallas</p>
 <!--p class="fnt-16 mb-0">Dallas,</p-->
@@ -177,7 +177,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/UAE.jpg" alt="Image"/>
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/UAE.webp" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">UAE</h6>
 <p class="fnt-16 mb-0">Dubai</p>
 </div>
@@ -186,7 +186,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/07/vietnam.jpg" alt="Image"/>
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/vietnam.webp" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
 <p class="fnt-16 mb-0">Ho Chi Minh City</p>
 </div>
