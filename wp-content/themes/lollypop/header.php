@@ -143,8 +143,8 @@ $header = new WP_Query( $args );
 <div class="js-location-dropdown  js-nav-dropdown lp-dropdown-wrap">
 <div class="d-flex align-items-center js-location-dropdown__ar position-relative"style="cursor: pointer;">
 <div class="default nav-dropdown-text pe-2">Global</div>
-<div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg" alt="Image" width="" height=""></div>
-<div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg" alt="Image" width="" height=""></div>
+<div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg" alt="Image" width="10" height="7"></div>
+<div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg" alt="Image" width="10" height="7"></div>
 </div>
 <div class="menu menu--location transition hidden lp-dropdownmenu lp-dropdownmenu--lg">
 <div class="container">
