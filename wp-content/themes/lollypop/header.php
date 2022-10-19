@@ -305,8 +305,8 @@ $header = new WP_Query( $args );
 
 <body>
 <div class="bd-brd"></div>
-<div class="loader">
+<!--<div class="loader">
 <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
-</div>
+</div>-->
 
 
