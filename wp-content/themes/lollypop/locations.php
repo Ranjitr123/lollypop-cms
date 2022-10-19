@@ -55,7 +55,7 @@ if($locationVideo !=''){
 <?php }else{ ?>
 <div class="hover-img">
 <?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-<img class="wpdm-img" src="<?php the_sub_field('images'); ?>" alt="Image">
+<img class="wpdm-img" src="<?php the_sub_field('images'); ?>" alt="Image" width="926" height="649">
 <?php endwhile; endif; ?>
 </div>
 <?php } ?>
@@ -74,7 +74,7 @@ if($locationVideo !=''){
 <div class="row">
 <?php if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
 <div class="col-12 col-md-5 mb-4 mb-md-0 hover-img">
-	<div class="reveal team-profile-img"><img src="<?php the_sub_field('image'); ?>" alt=""></div>
+	<div class="reveal team-profile-img"><img src="<?php the_sub_field('image'); ?>" alt="" width="253" height="253"></div>
 </div>
 <div class="col-12 col-md-7">
 <div class="profile d-flex flex-column">
