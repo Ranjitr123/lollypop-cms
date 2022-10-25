@@ -116,7 +116,7 @@ get_header(); ?>
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
                 <li class="blog-list__item second-article"><a class="blog row" href="<?php the_permalink(); ?>">
 		    <div class="blog-img col-12 col-md-5 col-lg-5 mb-img mb-md-0">
-<div class="hover-img w-100 h-100">
+			<div class="hover-img w-100 h-100">
                       <div class="reveal"><img src="<?php echo the_post_thumbnail_url( 'post_thumbnail' ) ?>" alt="Image"></div>
                     </div></div>
                     <div class="blog-info col-12 col-md-7 col-lg-6">
