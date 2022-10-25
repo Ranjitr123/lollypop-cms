@@ -110,7 +110,7 @@ get_header(); ?>
                                // 'orderby'=> 'post_date',
                                // 'order' => 'DESC'
                                 'rewrite' => true,
-                                'category_name' => 'banner-blog'
+                                'category_name' => 'banner_blog'
                             );
                     $blog = new WP_Query( $args );
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
