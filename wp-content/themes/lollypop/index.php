@@ -104,23 +104,21 @@ get_header(); ?>
               <h2 class="fnt-40 fnt-800 mb-head">Must Read Articles</h2>
               <ul class="px-0 blog-list blog-list--topmost">
                <?php 
-                           // $args = array(
-                           //     'post_type'=>'post', // Your post type name
-                           //     'posts_per_page' => 4,
-                               // 'orderby'=> 'post_date',
-                               // 'order' => 'DESC'
-                            //    'rewrite' => true,
-                            //    'category_name' => 'banner_blog'
-								
-								$args = array(
+                            $args = array(
                                 'post_type'=>'post', // Your post type name
                                 'posts_per_page' => 4,
-				'rewrite' => true,
-				'tax_query' => array(
+                               // 'orderby'=> 'post_date',
+                               // 'order' => 'DESC'
+                                'rewrite' => true,
+								'tax_query' => array(
                                  array (
-				 'taxonomy' => 'blogs_category',
-				  'field'    => 'slug',
-				  'terms'    => 'top-blogs',  // this is slug
+									'taxonomy' => 'blogs_category',
+									'field'    => 'slug',
+									'terms'    => 'top-blogs',  // this is slug
+										  )
+											 ),
+                               // 'category_name' => 'banner_blog'
+								
                             );
                     $blog = new WP_Query( $args );
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
