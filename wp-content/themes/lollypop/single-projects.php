@@ -117,7 +117,7 @@ get_header();
 					<div class="row approach_style">
 					<?php if( have_rows('approach_section') ) : while( have_rows('approach_section') ): the_row(); ?>
 						<div class="col-md-3 ">
-							<p><?php the_sub_field('title');?></p>
+							<p class="text-uppercase data-scroll disc-head"><?php the_sub_field('title');?></p>
 						</div>
 						<div class="col-md-9 space">
 							<p><?php the_sub_field('content');?></p>
@@ -161,7 +161,7 @@ get_header();
               <div class="container"> <?php if( have_rows('define_descriptions') ) : while( have_rows('define_descriptions') ): the_row(); ?> 
                 <div class="col-md-10 px-0 mx-auto define">
                   <div class="mb-r-80">
-                    <div class="project-step">
+                     <div class="project-step">
                      
                       <div class="project-step__item row"> 
                         <div class="col-12 col-md-4 mb-3 mb-md-0"><span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
@@ -170,6 +170,16 @@ get_header();
                           <?php if(get_sub_field('cta_name') !=''){ ?>
                             <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
                           <?php } ?>
+                          <div class="row attract_attention">
+							<?php if( have_rows('list_content') ) : while( have_rows('list_content') ): the_row(); ?>
+                            <div class="col-md-4">
+                              <p class="clr-second fnt-18 fnt-600"> <?php the_sub_field('title'); ?></p>
+                            </div>
+                            <div class="col-md-8">
+                              <p><?php the_sub_field('content'); ?></p>
+                            </div>
+							<?php endwhile; endif; ?>							
+                          </div>
                         </div>
                       </div>
                     
