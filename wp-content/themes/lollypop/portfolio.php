@@ -33,7 +33,7 @@ get_header();
           </div>
         </div>
       </section>
-      <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
+      <!--<section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-11 col-lg-9 portfolio_thubmnail mx-auto"><a class="d-block" href="https://lollypop.design/projects/aha/" itemprop="url">
@@ -56,7 +56,7 @@ get_header();
                 </div></a></div>
           </div>
         </div>
-      </section>
+      </section>-->
       
   <!--02-->
                             <?php 
@@ -72,7 +72,7 @@ get_header();
                     $project = new WP_Query( $args );
      $count = 0 ;
                 if ( $project->have_posts() ) : while ( $project->have_posts() ) : $project->the_post();
-      if($count < 3){
+      if($count < 2){
      ?>
       <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="container">
@@ -99,6 +99,31 @@ get_header();
         </div>
       </section>
        <?php } wp_reset_postdata(); $count++; endwhile; endif; ?>
+	   
+	   <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-11 col-lg-9 portfolio_thubmnail mx-auto"><a class="d-block" href="https://lollypop.design/projects/aha/" itemprop="url">
+                <div class="mb-35 overflow-hidden hover-img">
+                <div class="revealnone">
+                <img class="portfolio-img" src="https://lollypop.design/wp-content/uploads/2022/05/slice-1.webp" alt="Image" itemprop="image"></div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-11 mx-auto">
+                    <div class="d-flex flex-wrap justify-content-center">
+                      <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex flex-column"><span class="d-inline-block fnt-16 data-scroll portfolio-title text-rpd">Aha</span></div>
+                      <div class="col-12 col-md-9 col-xl-8 data-scroll">
+                        <div class="px-md-3">
+                          <h2 class="fnt-40 fnt-800 mb-3"  itemprop="name">Designing 100% Regional OTT Platform</h2>
+                          <p class="fnt-16 col-lg-10 px-0 mb-0"  itemprop="description">Aha is a unique OTT platform which delivers regional content all over the world. It aims to be one of the largest platforms that deliver content to users in their native language.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </section>
       <!--03-->
      
       <!--04-->
@@ -139,7 +164,7 @@ get_header();
         $project = new WP_Query( $args );
 		$counts = 0 ;
         if ( $project->have_posts() ) : while ( $project->have_posts() ) : $project->the_post(); 
-		if($counts > 4){ 
+		if($counts > 3){ 
 		?>
       <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
         <div class="container">
