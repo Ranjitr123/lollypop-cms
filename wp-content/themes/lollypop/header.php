@@ -97,7 +97,10 @@ html {margin-top: 0 !important;}#pageloader{background: rgba(88, 87, 87, 0.8);di
  .h-transparent .header-nav .nav-item:last-of-type a::after {
 	 background-color: #fd2e35 !important;
 }
-
+.drop-clr, .drop-white {
+    position: absolute;
+    right: -9px;
+}
 </style>
 
 </head>
@@ -194,7 +197,7 @@ $header = new WP_Query( $args );
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/process/" data-hovermenu="Process">Process</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
-<li class="nav-item menus mb-0"><a class="nav-link fnt-14 hvr-line clr-second" href="<?php echo site_url(); ?>/project-enquiry/">Lets Talk</a></li>
+<li class="nav-item menus mb-0"><a class="nav-link fnt-14 hvr-line clr-second" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
 </ul>
 <div class="lp-hamberg ms-auto">
 <div class="lp-hamberg__item position-relative">
