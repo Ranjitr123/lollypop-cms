@@ -3,6 +3,7 @@
 /**
  *
  *Template Name: aha
+ *Template post type: projects
  *
  **/
 
