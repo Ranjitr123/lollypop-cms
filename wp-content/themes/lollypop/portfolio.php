@@ -62,7 +62,7 @@ get_header();
                             <?php 
                             $args = array(
                                 'post_type'=>'projects', // Your post type name
-                                'posts_per_page' => -1,
+                                'posts_per_page' => 3,
                                 'orderby'=> 'post_date',
                                 'order' => 'DESC'
                                 //'meta_key'			=> 'date',
