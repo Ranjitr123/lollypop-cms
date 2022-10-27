@@ -95,9 +95,6 @@ color: red;
     font-weight: 800 !important;
     font-size: 22px;
   }
-  .lollypop-tabs .nav-link{
-	  background-color: transparent!important;
-  }
 </style>
 
 
@@ -121,7 +118,7 @@ color: red;
                   style="background: #f7f4f2"
                 >
                   <button
-                    style="letter-spacing: -1px"
+                    style="letter-spacing: -1px ; background-color: transparent!important;"
                     class="nav-link active btn-fnt-siz"
                     id="v-pills-general-tab"
                     data-bs-toggle="pill"
@@ -135,7 +132,7 @@ color: red;
                     Project
 		  </button>
 		<button
-                    style="letter-spacing: -1px"
+                    style="letter-spacing: -1px; background-color: transparent!important;"
                     onClick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeRD8lbKmOPBXahymMY9UKppzhl_feNRXgmxiPiUq3pumLpmQ/viewform'"
                     class="nav-link btn-fnt-siz"
                     data-bs-toggle="pill"
@@ -149,7 +146,7 @@ color: red;
                     Jobs / Careers
                   </button>
 		<button
-                    style="letter-spacing: -1px"
+                    style="letter-spacing: -1px; background-color: transparent!important;"
                     class="nav-link btn-fnt-siz"
                     onClick="location.href='https://lollypop.design/general-enquiry/'"
                     data-bs-toggle="pill"
