@@ -715,21 +715,21 @@ k">Twitter</a></li>
   </div>
 </footer>
 <div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-<script defer src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+<script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-<script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
-<script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
-<script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
-<script defer src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
 <?php wp_footer(); ?>
