@@ -50,9 +50,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-css.css">
 
 <style>
-
-
-html {margin-top: 0 !important;}#pageloader{background: rgba(88, 87, 87, 0.8);display: none;height: 100%;position: fixed;width: 100%;z-index: 9999;	top: 0;}#pageloader img {left: 50%;margin-left: -32px;margin-top: -32px;position: absolute; top: 50%;}.nav-link.hvr-line{font-size: 14px !important;}
 .fnt-100 {
 	 font-size: 32px;
 	 line-height: 42px;

@@ -714,7 +714,7 @@ k">Twitter</a></li>
     </div>
   </div>
 </footer>
-<!--<div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
+<div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script defer src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -729,7 +729,7 @@ k">Twitter</a></li>
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/maginific-poup.js"></script>
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
-<script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>-->
+<script defer src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
 <script defer src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
-<?php get_footer(); ?>
+<?php wp_footer(); ?>
