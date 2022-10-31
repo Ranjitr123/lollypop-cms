@@ -732,4 +732,4 @@ k">Twitter</a></li>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/parsley.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aha.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/video-player.js"></script>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
