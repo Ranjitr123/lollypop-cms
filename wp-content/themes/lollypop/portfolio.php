@@ -130,7 +130,8 @@ get_header();
      <?php 
         $args = array(
             'post_type'=>'projects', // Your post type name
-            'posts_per_page' => -1,
+            'posts_per_page' => 9999,
+            'offset' => 1,
             'orderby'=> 'post_date',
             'order' => 'DESC'
             //'meta_key'			=> 'date',
@@ -138,9 +139,9 @@ get_header();
             //'order'				=> 'ASC' ,
         );
         $project = new WP_Query( $args );
-		$counts = 0 ;
+        $counts = 0 ;
         if ( $project->have_posts() ) : while ( $project->have_posts() ) : $project->the_post(); 
-		if($counts > 5){ 
+		// if($counts > 5){ 
 		?>
       <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
         <div class="container">
@@ -167,7 +168,7 @@ get_header();
           </div>
         </div>
       </section>
-		<?php  }wp_reset_postdata(); $counts++; endwhile; endif; ?>
+		<?php endwhile; endif; ?>
        </div>
       <!--09-->
       <section class="sec-footer-trans">
