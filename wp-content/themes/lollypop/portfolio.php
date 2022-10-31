@@ -72,7 +72,7 @@ get_header();
                     $project = new WP_Query( $args );
      $count = 0 ;
                 if ( $project->have_posts() ) : while ( $project->have_posts() ) : $project->the_post();
-      if($count < 3){
+      if($count < 4){
      ?>
       <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="container">
@@ -140,7 +140,7 @@ get_header();
         $project = new WP_Query( $args );
 		$counts = 0 ;
         if ( $project->have_posts() ) : while ( $project->have_posts() ) : $project->the_post(); 
-		if($counts > 3){ 
+		if($counts > 5){ 
 		?>
       <section class="sec-portfolio" itemscope itemtype="https://schema.org/CreativeWork" >
         <div class="container">
