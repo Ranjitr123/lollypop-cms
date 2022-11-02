@@ -7,7 +7,7 @@
 
 get_header();
 ?>
-<style>
+<!-- <style>
 @media (max-width:767px){
 .sec-container{
 padding-top:70px !important;
@@ -26,7 +26,7 @@ padding-top: 192px !important;
 .sec-pd{
 padding: 35px 0px !important;
 }
-</style>
+</style> -->
 <main class="main">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 

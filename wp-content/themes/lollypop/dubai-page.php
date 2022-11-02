@@ -53,9 +53,9 @@ padding-top:100px !important;
 padding-top: 192px !important;
 }
 } 
-.sec-pd{
+/* .sec-pd{
 padding: 35px 0px !important;
-}
+} */
 </style>
 <main class="main">
 <!--01-->
