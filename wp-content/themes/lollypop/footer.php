@@ -83,10 +83,7 @@
     </div>
   </footer>
    <div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
-	
-	
-	<script rel="preconnect" defer src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
-	
+		
 	<!-- Start of HubSpot Embed Code -->
 	<script rel="preconnect" type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script>
 	<!-- End of HubSpot Embed Code -->
@@ -515,16 +512,6 @@ $('body').on('click', '.tab-head-item1__name', function() {
 			    	        	        		      			          }, 150);
 			    	        	        		      			          		});
 			    	        	        		      			          		</script>
-
-
-
-
-<!-- Google Tag Manager (noscript body tag) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQBBF4Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
 
  <?php wp_footer(); ?>
 
