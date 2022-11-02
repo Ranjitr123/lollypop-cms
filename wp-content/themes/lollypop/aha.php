@@ -442,7 +442,7 @@ get_header();
                           <div class="row">
                             <?php while (have_rows('colours_repeater')) {
                               the_row(); ?>
-                              <div class="col-md-4 col-sm-4 col-4"><img src="<?php echo get_sub_field('colours_image') ?>" alt="Image">
+                              <div class="col-md-4 col-sm-4 col-4"><img src="<?php echo get_sub_field('colours_image') ?>" class="img-fluid" alt="Image">
                                 <div class="mt-4">
                                   <p class="mb-0 fnt-800imp fnt-22"><?php echo get_sub_field('colours_name') ?></p>
                                   <p class="fnt-14"><?php echo get_sub_field('colours_num') ?></p>
