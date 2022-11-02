@@ -196,7 +196,7 @@ $header = new WP_Query( $args );
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/process/" data-hovermenu="Process">Process</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
-<li class="nav-item menus mb-0"><a class="nav-link fnt-14 hvr-line clr-second" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
+<li class="nav-item menus mb-0"><a class=" nav-link fnt-14 hvr-line clr-second text-nowrap" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
 </ul>
 <div class="lp-hamberg ms-auto">
 <div class="lp-hamberg__item position-relative">
