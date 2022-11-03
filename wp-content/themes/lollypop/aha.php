@@ -84,17 +84,30 @@ get_header();
   }
   
   .AhaTitle {
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: -1px;
-}
-  @media (max-width: 450px) {
+    font-size: 65px;
+    line-height: 76px;
+    letter-spacing: -3px;
+  }
+  @media (max-width: 991.98px) { 
     .AhaTitle {
+      font-size: 45px;
+      line-height: 55px!important;
+      letter-spacing: -2px!important;
+    }
+   }
+   @media (max-width: 767.98px) { 
+     .AhaTitle {
+      font-size: 32px;
+      line-height: 38px!important;
+      letter-spacing: -1px!important;
+     }
+    }
+    @media (max-width: 450px) {
+     .AhaTitle {
       font-size: 28px;
 
+     }
     }
-  }
-  
   .secbottom{margin-bottom:80px;}
 </style>
 <main class="main">
