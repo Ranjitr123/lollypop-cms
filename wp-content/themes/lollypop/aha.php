@@ -83,6 +83,12 @@ get_header();
     }
   }
   
+  @media (min-width: 450px) {
+    .AhaTitle {
+      font-size: 28px!important;
+    }
+  }
+  
   .secbottom{margin-bottom:80px;}
 </style>
 <main class="main">
@@ -94,7 +100,7 @@ get_header();
           <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
               <div class="page-head"><span class="d-block fnt-14 text-lowercase mb-2 clr-default"><?php echo get_field('top_title') ?></span>
-                <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0">
+                <h1 class="AhaTitle fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0">
                   <?php echo get_field('top_heading') ?></h1>
                 <p class="fnt-24"> <?php echo get_field('top_description') ?></p>
               </div>
