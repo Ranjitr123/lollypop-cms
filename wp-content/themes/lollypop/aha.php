@@ -83,7 +83,7 @@ get_header();
     }
   }
   
-  @media (min-width: 450px) {
+  @media (max-width: 450px) {
     .AhaTitle {
       font-size: 28px!important;
     }
