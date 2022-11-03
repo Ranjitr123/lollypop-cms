@@ -109,6 +109,10 @@ get_header();
      }
     }
   .secbottom{margin-bottom:80px;}
+  .float-end {
+    float: left!important;
+	}
+   .colsec{padding-bottom:35px;}	
 </style>
 <main class="main">
 
@@ -145,7 +149,7 @@ get_header();
         </div>
       </div>
   </section>
-  <section class="p-r-80 pb-0 mb-80">
+  <section class="p-r-80 pb-0"><!----removed mb-80------->
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -467,7 +471,7 @@ get_header();
                           <div class="row">
                             <?php while (have_rows('colours_repeater')) {
                               the_row(); ?>
-                              <div class="col-md-4 col-sm-4 col-4"><img src="<?php echo get_sub_field('colours_image') ?>" class="img-fluid" alt="Image">
+                              <div class="col-md-4 col-sm-4 col-4 colsec"><img src="<?php echo get_sub_field('colours_image') ?>" class="img-fluid" alt="Image">
                                 <div class="mt-4">
                                   <p class="mb-0 fnt-800imp fnt-22"><?php echo get_sub_field('colours_name') ?></p>
                                   <p class="fnt-14"><?php echo get_sub_field('colours_num') ?></p>
