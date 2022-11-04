@@ -10,7 +10,220 @@ get_header();
 ?>
 <main class="main">
 
+<section class="sec-pd p-r-80 sec-bnr">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-11 ">
+              <div class="page-head">
+                <h1 class="fnt-800 px-md-0 mb-0 text-center">Data Visualisation to</h1>
+                <h1 class="fnt-800 px-md-0 mb-0 text-center mw-682"><span class="data_red1">Reveal information within your data</span></h1>
+                <p class="fnt-24 text-center mw-634">Become a storyteller by turning your data into visually compelling information. </p>
+              </div>
+            </div>
+          </div>
+          
+            <!-- <div class="w-100 h-auto">
+            <iframe class="w-100" height="500" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/09/Group-1171276527-1.svg">
+            </iframe>
+          </div> -->
+          
+          
+          <div class='col-12 '>
+            <div class="play-video-on-scroll">
+              <div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="https://player.vimeo.com/video/745332440"></div>
+              </div>
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="https://player.vimeo.com/video/745332440" poster="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Mask-Group.png">
+              </video>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  </section>
 
+  <section class="some_stories">
+    <div class="container">
+        <p class="firstp">Some of the stories we helped transform</p>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+        </div>
+
+        <p class="firstp pt-5">Some of the stories we helped transform</p>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            </div>
+        </div>
+
+        <div class="need_data">
+                <h2>Why do we need Data Visualisation?</h2>
+                <p>In the world of Big Data, data visualization is essential to analyze massive amounts of information and make meaningful decisions that are data driven.</p>
+            <div class="row">
+
+                <div class="col-md-6 space">
+                    <p class="heading">Fast Conception of Information</p>
+                    <p class="para">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="heading">Discover & Predict New Trends</p>
+                    <p class="para">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
+                </div>
+
+                <div class="col-md-6 space">
+                    <p class="heading">Find out Relationships and Patterns</p>
+                    <p class="para">Present your data graphically to understand different relationships and identify various patterns to point out the pain points affecting your business.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="heading">Present your Data</p>
+                    <p class="para">Showcase your data in visually appealing, impactful and highly insightful ways to the stakeholders. </p>
+                </div>
+
+                <div class="col-md-6 space">
+                    <p class="heading">Smart Decision Making</p>
+                    <p class="para">Enable faster and smarter decision making based on facts and discoveries.</p>
+                </div>
+
+                
+                    <p class="para"><span class="data_red">Your Data, Our Insights </span>for all you data visualisation needs<span class="data_red1"> Get in Touch</span></p>
+                
+        
+            </div>
+
+
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="black">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <h2 class="white_text1">What are the Use Cases for Data Visulisation</h2>
+                        <p class="white_text2">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">Data Science</p>
+                            <p class="white_text2 mw-362">Helps in complicated data analysis, to better comprehend data sets, spot patterns and seamlessly communicate information.
+</p>
+                        </div>
+
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">E-Commerce</p>
+                            <p class="white_text2 mw-362">Identifies consumer trends, gives rapid insights to attract new customers and in turn improve customer experience.
+</p>
+                        </div>
+
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">Financials</p>
+                            <p class="white_text2 mw-362">Emphasizes recent trends to devise better investment strategies, resulting in improved business prospects.  Drill down into various data aspects to propel the business in the right direction.
+</p>
+                        </div>
+
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">Education</p>
+                            <p class="white_text2 mw-362">Allows inexperienced users to analyze data and make meaningful decisions. Provides intuitive and interactive dashboards that makes monitoring student progress possible.
+</p>
+                        </div>
+
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">Business intelligence</p>
+                            <p class="white_text2 mw-362">Standardized display of data and make it easier for the user to see bigger volumes of data, and provide a cohesive view of an organization’s entire data system.
+</p>
+                        </div>
+
+                        <div class="pb-5">
+                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                            <p class="white_text3 pb-2">Artificial Intelligence & 
+Machine Learning</p>
+                            <p class="white_text2 mw-362">Analyze historical data to provide insights into business-critical incidents.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="container">
+        <div class="need_data need_data1">
+                <h2>What services do we provide?</h2>
+                <div class="row">
+
+                    <div class="col-md-6 space">
+                        <p class="heading">Dashboard optimisation</p>
+                        <p class="para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.
+</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="heading">Tableau to Power BI Migration</p>
+                        <p class="para">Making data analytics accessible to everyone by delivering a low-code to no-code experience for all aspects of data analysis. Visually showcase complex datasets, identify relations and trends.</p>
+                    </div>
+
+                    <div class="col-md-6 space">
+                        <p class="heading">Report Development</p>
+                        <p class="para">Report development for all the teams, from analytics to the executive to the customer.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="heading">Power BI Services</p>
+                        <p class="para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
+                    </div>
+
+                    <p class="para"><span class="data_red1"> Get in Touch</span></p>
+                </div>
+        </div>
+    </div>
+
+</section>
+            
 
 
 
@@ -23,75 +236,9 @@ get_header();
 
 
 </main>
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-11 col-lg-10 mx-auto">
-        <div class="row mb-60">
-          <h5 class="fnt-16 fnt-600 mb-22 text-center">Follow our work</h5>
-          <ul class="px-0 ft-social-links d-flex flex-wrap justify-content-center">
-            <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center">
-              <a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a>
-            </li>
-            <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" targ et="_blank">Instagram</a></li>
-            <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_b
-lank">Facebook</a></li>
-            <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blan
-k">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4 mb-4 mb-md-0 order-2 order-md-1 text-center text-md-left"><a class="clr-second d-inline-block fnt-24 lp-link--red fnt-800 mb-4 mb-md-2 col-8 col-lg-6
- px-0" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lollypop_logo1.svg" style="width:100%" alt="Image"></a>
-            <p class="fnt-14 fnt-400 clr-primary mb-0 pb-1 mb-md-3 mb-lg-4 pb-lg-0 px-0 mt-2">A&nbsp;<a href="https://www.terralogic.com/" class="fnt-800 hvr-link fnt-16 d-inline-block">T
-                erralogic</a>&nbsp;company crafting meaningful experiences through Research, Design and Development.</p>
-            <ul class="mt-5 mt-md-0 footer-logo-links fnt-400 fnt-14 d-flex justify-content-center justify-content-md-start flex-wrap px-0 mb-0">
-              <li class="footer-logo-links__item col-12 px-0">
-                <div class="fnt-12"> 2022 Lollypop - A Terralogic company</div>
-              </li>
-              <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/frequently-ask-questions/">FAQs</a></li>
-              <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a></li>
-              <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/terms-of-use/">Terms of Use</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-7 col-lg-8 order-1 order-md-2 mb-5 mb-md-0">
-            <div class="footer-nav-links d-flex flex-wrap ps-lg-5 justify-content-center justify-content-md-left">
-              <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                <a class="d-block hvr-link-div text-center text-md-left" href="<?php echo site_url(); ?>/ui-ux-design/">
-                  <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">India</h6>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Bangalore</span></div>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Mumbai</span></div>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Chennai</span></div>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Hyderabad</span></div>
-                </a>
-              </div>
-              <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                <a class="d-block hvr-link-div text-center text-md-left" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
-                  <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">USA</h6>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">San Jose</span></div>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Dallas</span></div>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Salt Lake City</span></div>
-                </a>
-              </div>
-              <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                <a class="d-block hvr-link-div text-center text-md-left" href="<?php echo site_url(); ?>/ae/">
-                  <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">UAE</h6>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Dubai</span></div>
-                </a>
-              </div>
-              <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                <a class="d-block hvr-link-div text-center text-md-left" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
-                  <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">Vietnam</h6>
-                  <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Ho Chi Minh City</span></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+
+
+
 <div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
