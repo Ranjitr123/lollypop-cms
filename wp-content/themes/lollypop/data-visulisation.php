@@ -46,85 +46,99 @@ get_header();
 
   <section class="some_stories">
     <div class="container">
-        <p class="firstp">Some of the stories we helped transform</p>
         <div class="row">
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            <div class="col-12 col-md-10 col-lg-7 mx-auto">
+                <p class="firstp">Some of the stories we helped transform</p>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <p class="firstp pt-5">Some of the stories we helped transform</p>
         <div class="row">
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+            <div class="col-12 col-md-10 col-lg-7 mx-auto">
+                <p class="firstp pt-5">Some of the stories we helped transform</p>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_144_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Group_145_1_.svg" class="img-fluid" alt="...">
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="need_data">
-                <h2>Why do we need Data Visualisation?</h2>
-                <p>In the world of Big Data, data visualization is essential to analyze massive amounts of information and make meaningful decisions that are data driven.</p>
             <div class="row">
-
-                <div class="col-md-6 space">
-                    <p class="heading">Fast Conception of Information</p>
-                    <p class="para">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
+                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                    <h2>Why do we need Data Visualisation?</h2>
+                    <p>In the world of Big Data, data visualization is essential to analyze massive amounts of information and make meaningful decisions that are data driven.</p>
                 </div>
-
-                <div class="col-md-6">
-                    <p class="heading">Discover & Predict New Trends</p>
-                    <p class="para">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
-                </div>
-
-                <div class="col-md-6 space">
-                    <p class="heading">Find out Relationships and Patterns</p>
-                    <p class="para">Present your data graphically to understand different relationships and identify various patterns to point out the pain points affecting your business.</p>
-                </div>
-
-                <div class="col-md-6">
-                    <p class="heading">Present your Data</p>
-                    <p class="para">Showcase your data in visually appealing, impactful and highly insightful ways to the stakeholders. </p>
-                </div>
-
-                <div class="col-md-6 space">
-                    <p class="heading">Smart Decision Making</p>
-                    <p class="para">Enable faster and smarter decision making based on facts and discoveries.</p>
-                </div>
-
-                
-                    <p class="para"><span class="data_red">Your Data, Our Insights </span>for all you data visualisation needs<span class="data_red1"> Get in Touch</span></p>
-                
-        
             </div>
+                <div class="row">
+                    <div class=" col-lg-8 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6 space">
+                                <p class="heading">Fast Conception of Information</p>
+                                <p class="para">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p class="heading">Discover & Predict New Trends</p>
+                                <p class="para">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
+                            </div>
+
+                            <div class="col-md-6 space">
+                                <p class="heading">Find out Relationships and Patterns</p>
+                                <p class="para">Present your data graphically to understand different relationships and identify various patterns to point out the pain points affecting your business.</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <p class="heading">Present your Data</p>
+                                <p class="para">Showcase your data in visually appealing, impactful and highly insightful ways to the stakeholders. </p>
+                            </div>
+
+                            <div class="col-md-6 space">
+                                <p class="heading">Smart Decision Making</p>
+                                <p class="para">Enable faster and smarter decision making based on facts and discoveries.</p>
+                            </div>
+                            <p class="para"><span class="data_red">Your Data, Our Insights </span>for all you data visualisation needs <span class="data_red1 position-relative">Get in Touch</span></p>
+                        </div>
+                    
+                        
+                    
+                    </div>
+                </div>
 
 
 
@@ -137,53 +151,50 @@ get_header();
     <div class="black">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6">
-                        <h2 class="white_text1">What are the Use Cases for Data Visulisation</h2>
-                        <p class="white_text2">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.
-                    </div>
+                    <div class=" col-lg-10 mx-auto">
+                        <div class="row black_row">
+                            <div class="col-md-6">
+                                <h2 class="white_text1">What are the Use Cases for Data Visulisation</h2>
+                                <p class="white_text2">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.
+                            </div>
 
-                    <div class="col-md-6">
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">Data Science</p>
-                            <p class="white_text2 mw-362">Helps in complicated data analysis, to better comprehend data sets, spot patterns and seamlessly communicate information.
-</p>
-                        </div>
+                            <div class="col-md-6">
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">Data Science</p>
+                                    <p class="white_text2 mw-362">Helps in complicated data analysis, to better comprehend data sets, spot patterns and seamlessly communicate information.</p>
+                                </div>
 
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">E-Commerce</p>
-                            <p class="white_text2 mw-362">Identifies consumer trends, gives rapid insights to attract new customers and in turn improve customer experience.
-</p>
-                        </div>
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">E-Commerce</p>
+                                    <p class="white_text2 mw-362">Identifies consumer trends, gives rapid insights to attract new customers and in turn improve customer experience.</p>
+                                </div>
 
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">Financials</p>
-                            <p class="white_text2 mw-362">Emphasizes recent trends to devise better investment strategies, resulting in improved business prospects.  Drill down into various data aspects to propel the business in the right direction.
-</p>
-                        </div>
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">Financials</p>
+                                    <p class="white_text2 mw-362">Emphasizes recent trends to devise better investment strategies, resulting in improved business prospects.  Drill down into various data aspects to propel the business in the right direction.</p>
+                                </div>
 
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">Education</p>
-                            <p class="white_text2 mw-362">Allows inexperienced users to analyze data and make meaningful decisions. Provides intuitive and interactive dashboards that makes monitoring student progress possible.
-</p>
-                        </div>
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">Education</p>
+                                    <p class="white_text2 mw-362">Allows inexperienced users to analyze data and make meaningful decisions. Provides intuitive and interactive dashboards that makes monitoring student progress possible.</p>
+                                </div>
 
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">Business intelligence</p>
-                            <p class="white_text2 mw-362">Standardized display of data and make it easier for the user to see bigger volumes of data, and provide a cohesive view of an organization’s entire data system.
-</p>
-                        </div>
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">Business intelligence</p>
+                                    <p class="white_text2 mw-362">Standardized display of data and make it easier for the user to see bigger volumes of data, and provide a cohesive view of an organization’s entire data system.</p>
+                                </div>
 
-                        <div class="pb-5">
-                            <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
-                            <p class="white_text3 pb-2">Artificial Intelligence & 
-Machine Learning</p>
-                            <p class="white_text2 mw-362">Analyze historical data to provide insights into business-critical incidents.
-</p>
+                                <div class="pb-5">
+                                    <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2022/11/Slot.svg" class="img-fluid pb-2 m-0">
+                                    <p class="white_text3 pb-2">Artificial Intelligence & Machine Learning</p>
+                                    <p class="white_text2 mw-362">Analyze historical data to provide insights into business-critical incidents.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,35 +204,105 @@ Machine Learning</p>
 
     <div class="container">
         <div class="need_data need_data1">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto">
                 <h2>What services do we provide?</h2>
-                <div class="row">
-
-                    <div class="col-md-6 space">
-                        <p class="heading">Dashboard optimisation</p>
-                        <p class="para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.
-</p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p class="heading">Tableau to Power BI Migration</p>
-                        <p class="para">Making data analytics accessible to everyone by delivering a low-code to no-code experience for all aspects of data analysis. Visually showcase complex datasets, identify relations and trends.</p>
-                    </div>
-
-                    <div class="col-md-6 space">
-                        <p class="heading">Report Development</p>
-                        <p class="para">Report development for all the teams, from analytics to the executive to the customer.</p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p class="heading">Power BI Services</p>
-                        <p class="para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
-                    </div>
-
-                    <p class="para"><span class="data_red1"> Get in Touch</span></p>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class=" col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 space">
+                            <p class="heading">Dashboard optimisation</p>
+                            <p class="para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p class="heading">Tableau to Power BI Migration</p>
+                            <p class="para">Making data analytics accessible to everyone by delivering a low-code to no-code experience for all aspects of data analysis. Visually showcase complex datasets, identify relations and trends.</p>
+                        </div>
+
+                        <div class="col-md-6 space">
+                            <p class="heading">Report Development</p>
+                            <p class="para">Report development for all the teams, from analytics to the executive to the customer.</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p class="heading">Power BI Services</p>
+                            <p class="para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
+                        </div>
+                        <p class="para"><span class="data_red1 position-relative">Get in Touch</span></p>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-10 mx-auto">
+                <div class="need_data2">
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-9 mx-auto">
+                            <p>FAQ</p>
+                            <h2>When in doubt, always ask</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button position-relative plus" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Why do I need Data visualization?
+                                    </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How does a data visualization expert at lollypop approach a project?
+                                    </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What are the main goals of data visualization?
+                                    </button>
+                                    </h3>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What tools do we use for data visualization?
+                                    </button>
+                                    </h3>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
             
 
