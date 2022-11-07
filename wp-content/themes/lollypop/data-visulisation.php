@@ -100,7 +100,7 @@ get_header();
 
         <div class="need_data">
             <div class="row">
-                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div class="col-12 col-lg-8 mx-auto">
                     <h2>Why do we need Data Visualisation?</h2>
                     <p>In the world of Big Data, data visualization is essential to analyze massive amounts of information and make meaningful decisions that are data driven.</p>
                 </div>
@@ -132,7 +132,7 @@ get_header();
                                 <p class="heading">Smart Decision Making</p>
                                 <p class="para">Enable faster and smarter decision making based on facts and discoveries.</p>
                             </div>
-                            <p class="para"><span class="data_red">Your Data, Our Insights </span>for all you data visualisation needs <span class="data_red1 position-relative">Get in Touch</span></p>
+                            <p class="para ps-3"><span class="data_red">Your Data, Our Insights </span>for all you data visualisation needs <span class="data_red1 position-relative">Get in Touch</span></p>
                         </div>
                     
                         
@@ -205,7 +205,7 @@ get_header();
     <div class="container">
         <div class="need_data need_data1">
             <div class="row">
-                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div class="col-12 col-lg-8 mx-auto">
                 <h2>What services do we provide?</h2>
                 </div>
             </div>
@@ -232,7 +232,7 @@ get_header();
                             <p class="heading">Power BI Services</p>
                             <p class="para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
                         </div>
-                        <p class="para"><span class="data_red1 position-relative">Get in Touch</span></p>
+                        <p class="para ps-3"><span class="data_red1 position-relative">Get in Touch</span></p>
                     </div>
                     
                 </div>
