@@ -91,7 +91,7 @@ get_header();
 							<?php } ?>  
                             <p class="para ps-3">
 							<?php while(have_rows('bottom_section')){the_row();?>
-								<span class="data_red"><?php echo get_sub_field('red_text1')?> </span><?php echo get_sub_field('black_text')?> <span class="data_red1 position-relative"><?php echo get_sub_field('red_text')?></span>
+								<span class="data_red"><?php echo get_sub_field('red_text1')?> </span><?php echo get_sub_field('black_text')?> <a href="<?php echo site_url(); ?>/project-enquiry/"><span class="data_red1 position-relative"><?php echo get_sub_field('red_text')?></span></a>
 							<?php } ?> 	
 							</p>
                         </div>                                         
@@ -146,7 +146,7 @@ get_header();
                             <p class="para"><?php echo get_sub_field('service_content')?></p>
                         </div>
 						<?php } ?>
-                        <p class="para ps-3"><span class="data_red1 position-relative">Get in Touch</span></p>
+                        <p class="para ps-3"><a href="<?php echo site_url(); ?>/project-enquiry/"><span class="data_red1 position-relative">Get in Touch</span></a></p>
                     </div>
                     
                 </div>
