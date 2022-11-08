@@ -132,13 +132,13 @@ get_header();
     <div class="container">
         <div class="need_data need_data1">
             <div class="row">
-                <div class="col-12 col-lg-8 mx-auto">
+                <div class="col-12 col-lg-9 mx-auto">
                 <h2><?php echo get_field('service_heading')?></h2>
                 </div>
             </div>
 
             <div class="row">
-                <div class=" col-lg-8 mx-auto">
+                <div class=" col-lg-9 mx-auto">
                     <div class="row">
 						<?php while(have_rows('service_content_section')){the_row();?>
                         <div class="col-md-6 space">
