@@ -113,7 +113,7 @@ get_header();
 								<?php } ?> 	
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 secright">
 								<?php while(have_rows('right_section')){the_row();?>
                                 <div class="pb-5">
                                     <img src="<?php echo get_sub_field('icon')?>" class="img-fluid pb-2 m-0">
