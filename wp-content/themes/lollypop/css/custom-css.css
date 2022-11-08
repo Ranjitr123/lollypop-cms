@@ -40,7 +40,7 @@
 .plus[aria-expanded=true]::before {transform: rotate(180deg)!important;}
 .plus::after {transform: rotate(180deg) !important;;}
 .plus::before {transform: rotate(90deg) !important;;}
-.accordion-button:not(.collapsed){background-color: unset!important;}
+.accordion-button:not(.collapsed){background-color: unset!important;box-shadow:none !important; }
 .accordion-button:focus{border-color: unset!important;box-shadow: none;}
 .need_data2 .accordion-item{border: 0px;}
 .need_data2 .accordion-body{padding: 0px;}
