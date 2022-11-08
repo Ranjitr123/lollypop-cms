@@ -25,7 +25,7 @@
 .black .white_text2{font-weight: 500;font-size: 18px;line-height: 158.6%;color: #ffffff;margin: 0;}
 .black .white_text3{font-weight: 800;font-size: 22px;line-height: 135%;color: #ffffff;margin: 0;}
 .black .col-md-6{padding-left: 0;padding-right: 0;}
-.black .col-md-6:first-child{padding-right: 95px;}
+/**.black .col-md-6:first-child{padding-right: 95px;}*****/
 .black .mw-362{max-width: 360px;width: 100%;}
 .mw-634{width: 100%;max-width: 634px;margin: 0 auto;padding-top: 52px;}
 .mw-682{width: 100%;max-width: 500px;margin: 0 auto;}
@@ -48,7 +48,7 @@
 .need_data2 .accordion-body p{font-weight: 400;font-size: 16px;line-height: 168%;color: #000000;}
 .need_data2 .accordion-item button{font-weight: 800;color: #221429;font-size: 16px;line-height: 160%;}
 .data_red1::before{position: absolute;content: '';bottom: -8px;left: 0px;background: #FD2E35;width: 44.71px;height: 2px;}
-.secright{padding-left:22px;}
+.secright{padding-left:101px!important;}
 .need_data2 .accordion-button:focus{box-shadow:none !important; border-bottom: 0!important;}
 
 @media only screen and (max-width:768px){
@@ -61,6 +61,7 @@
     .black .white_text3{font-size: 18px;}
     .black .white_text2{font-size: 14px;}
     .need_data2 h2{font-size: 30px;}
+	.secright{padding-left:0px!important;}
 }
 @media only screen and (max-width:426px){
 

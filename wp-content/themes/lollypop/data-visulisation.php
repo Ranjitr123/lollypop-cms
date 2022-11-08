@@ -113,7 +113,7 @@ get_header();
 								<?php } ?> 	
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 secright">
 								<?php while(have_rows('right_section')){the_row();?>
                                 <div class="pb-5">
                                     <img src="<?php echo get_sub_field('icon')?>" class="img-fluid pb-2 m-0">
@@ -166,7 +166,7 @@ get_header();
                                 <?php $count = 0; while(have_rows('faq_section')){the_row();?>
 								<div class="accordion-item">
                                     <h3 class="accordion-header" id="heading<?php echo $count; ?>">
-                                    <button class="accordion-button position-relative plus" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count; ?>" aria-expanded="true" aria-controls="collapse<?php echo $count; ?>">
+                                    <button class="accordion-button position-relative plus" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count; ?>" aria-expanded="<?php if($count == 0){echo 'true';} else {echo 'false';}?>" aria-controls="collapse<?php echo $count; ?>">
                                         <?php echo get_sub_field('question')?>
                                     </button>
                                     </h3>
@@ -177,42 +177,7 @@ get_header();
                                     </div>
                                 </div>
 								<?php $count++; } ?>
-                                <!--<div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How does a data visualization expert at lollypop approach a project?
-                                    </button>
-                                    </h3>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What are the main goals of data visualization?
-                                    </button>
-                                    </h3>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed plus position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    What tools do we use for data visualization?
-                                    </button>
-                                    </h3>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    <p>Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>-->
+                                
                         </div>
                     </div>
                 </div>
