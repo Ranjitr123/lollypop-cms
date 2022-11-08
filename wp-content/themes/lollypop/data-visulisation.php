@@ -187,14 +187,23 @@ get_header();
 </section>
             
 
-
-
-
-
-
-
-
-
+ <section class="sec-footer-trans footmar">
+        <div class="container z-1">
+          <div class="row"> 
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+              <div class="py-70 px-3 data-scroll" style="background: #221429;">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="col-11 col-md-8 col-lg-8 px-0 d-inline-block clr-white text-center"> 
+                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Want impactful data insights?</span>
+                      <h2 class="fnt-50 fnt-800 clr-white">Let's talk about your <br>Data Visualisation needs.</h2>
+                    </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/project-enquiry/">GET IN TOUCH</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 </main>

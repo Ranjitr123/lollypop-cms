@@ -50,6 +50,7 @@
 .data_red1::before{position: absolute;content: '';bottom: -8px;left: 0px;background: #FD2E35;width: 44.71px;height: 2px;}
 .secright{padding-left:101px!important;}
 .need_data2 .accordion-button:focus{box-shadow:none !important; border-bottom: 0!important;}
+.footmar{margin-top: 111px;}
 
 @media only screen and (max-width:768px){
 
