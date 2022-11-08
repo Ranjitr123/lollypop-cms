@@ -49,7 +49,7 @@
 .need_data2 .accordion-item button{font-weight: 800;color: #221429;font-size: 16px;line-height: 160%;}
 .data_red1::before{position: absolute;content: '';bottom: -8px;left: 0px;background: #FD2E35;width: 44.71px;height: 2px;}
 .secright{padding-left:22px;}
-.need_data2 .accordion-button:focus{box-shadow:none !important;}
+.need_data2 .accordion-button:focus{box-shadow:none !important; border-bottom: 0!important;}
 
 @media only screen and (max-width:768px){
 
