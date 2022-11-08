@@ -84,7 +84,7 @@ get_header();
                     <div class=" col-lg-8 mx-auto">
                         <div class="row">
 							<?php while(have_rows('content_section')){the_row();?>
-                            <div class="col-md-6 space">
+                            <div class="col-md-6">
                                 <p class="heading"><?php echo get_sub_field('title')?></p>
                                 <p class="para"><?php echo get_sub_field('content')?></p>
                             </div>
