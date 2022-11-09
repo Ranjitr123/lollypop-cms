@@ -24,10 +24,10 @@ get_header();
               <div class="row mb-80">
                 <div class="col-12 col-md-9 mx-auto d-flex flex-column align-items-center">
                   <div class="mb-50 text-center mx-auto mb-4">
-                    <h1 class="fnt-50 fnt-800"> <span class="d-block">Data Visualisation to Reveal information within your data</span>
+                    <h1 class="fnt-50 fnt-800"> <span class="d-block"><?php echo get_field('title1')?></span>
                     <!--  <div class="quote d-flex justify-content-center flex-wrap"><span class="clr-second quote__item quotes">Strengthen your Brand</span><span class="clr-second quote__item quotes">In-depth Insight</span><span class="clr-second quote__item quotes">Better Positioning</span><span class="clr-second quote__item quotes">Increase your profits</span><span class="clr-second quote__item quotes">To Build Trust</span></div>-->
                     </h1>
-                    <p class="fnt-24 mt-4">Become a storyteller by turning your data into visually compelling information.</p>
+                    <p class="fnt-24 mt-4"><?php echo get_field('description')?></p>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="faq-el">
                 <div class="faq-el__head mb-40"><span class="d-block text-uppercase data-scroll">faq</span>
-                  <h2 class="fnt-50 fnt-800 col-md-10 col-lg-8 col-xl-7 px-0 mb-0 data-scroll"><?php echo get_field('main_title')?><</h2>
+                  <h2 class="fnt-50 fnt-800 col-md-10 col-lg-8 col-xl-7 px-0 mb-0 data-scroll"><?php echo get_field('main_title')?></h2>
                 </div>
                 <div class="faq-el__body"> 
                   <ul class="px-0 mb-0 faq-ac row justify-content-between">
