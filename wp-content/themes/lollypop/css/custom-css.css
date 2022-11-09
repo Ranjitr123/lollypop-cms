@@ -15,7 +15,7 @@
 .need_data .col-md-6.space{padding-right: 55px;}
 .need_data .col-12.col-md-10.col-lg-8{}
 .need_data .row, .black .row{width: unset;max-width: none;}
-.data_red{color: #FD2E35;font-weight: 800;font-size: 22px;}
+.data_red{color: #FD2E35;font-weight: 800;}
 .data_red1{color: #FD2E35;}
 
 .black{background: #221429;}
