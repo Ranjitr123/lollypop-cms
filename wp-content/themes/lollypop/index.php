@@ -102,23 +102,19 @@ get_header(); ?>
           <div class="row article-div"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
               <h2 class="fnt-40 fnt-800 mb-head">Must Read Articles</h2>
-              <ul class="px-0 blog-list blog-list--topmost">
+             <!-- <ul class="px-0 blog-list blog-list--topmost">
                <?php 
                             $args = array(
-                                'post_type'=>'post', // Your post type name
+                                'post_type'=>'post', 
                                 'posts_per_page' => 4,
-                               // 'orderby'=> 'post_date',
-                               // 'order' => 'DESC'
                                 'rewrite' => true,
 								'tax_query' => array(
                                  array (
 									'taxonomy' => 'blogs_category',
 									'field'    => 'slug',
-									'terms'    => 'top-blogs',  // this is slug
+									'terms'    => 'top-blogs',  
 										  )
-											 ),
-                               // 'category_name' => 'banner_blog'
-								
+											 ),								
                             );
                     $blog = new WP_Query( $args );
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
@@ -139,7 +135,7 @@ get_header(); ?>
                     </div></a></li>
                     <?php wp_reset_postdata(); endwhile; endif; ?>
                  
-              </ul>
+              </ul>-->
             </div>
           </div>
           <div class="row article-div blog-whitepaper"> 
