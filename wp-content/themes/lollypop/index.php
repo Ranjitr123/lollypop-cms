@@ -176,15 +176,15 @@ get_header(); ?>
                                 'orderby'=> 'post_date',
                                 'order' => 'DESC',
                                 'rewrite' => true,
-								'tax_query' => array(
-                                 array (
-									'taxonomy' => 'blogs_category',
+									'tax_query' => array(
+									array (
+									'taxonomy' => 'category',
 									'field'    => 'slug',
-									'blogs_category__not_in' => 25 ,  // this is slug
+									//'terms'    => 'top-blogs',  // this is slug
 										  )
 											 ),
-                                
-                            );							
+                            );					
+							
 							
                     $blog = new WP_Query( $args );
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
