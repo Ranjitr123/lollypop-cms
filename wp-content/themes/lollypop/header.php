@@ -13,7 +13,7 @@
 <link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">
-<!-- Google tag (gtag.js) -->
+<!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
