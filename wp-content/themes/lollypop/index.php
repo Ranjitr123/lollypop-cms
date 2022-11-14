@@ -180,7 +180,7 @@ get_header(); ?>
                                  array (
 									'taxonomy' => 'blogs_category',
 									'field'    => 'slug',
-									'category__not_in' => 25 ,  // this is slug
+									'blogs_category__not_in' => 25 ,  // this is slug
 										  )
 											 ),
                                 
