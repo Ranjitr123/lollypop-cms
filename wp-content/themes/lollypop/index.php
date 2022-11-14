@@ -174,7 +174,7 @@ get_header(); ?>
                                 'post_type'=>'post', // Your post type name
                                 'posts_per_page' => -1,
                                 'orderby'=> 'post_date',
-                                'order' => 'DESC',
+                                'order' => 'ASC',
                                 'rewrite' => true,
                                 
                             );
