@@ -174,10 +174,18 @@ get_header(); ?>
                                 'post_type'=>'post', // Your post type name
                                 'posts_per_page' => -1,
                                 'orderby'=> 'post_date',
-                                'order' => 'ASC',
+                                'order' => 'DESC',
                                 'rewrite' => true,
+								'tax_query' => array(
+                                 array (
+									'taxonomy' => 'blogs_category',
+									'field'    => 'slug',
+									'category__not_in' => 25 ,  // this is slug
+										  )
+											 ),
                                 
-                            );
+                            );							
+							
                     $blog = new WP_Query( $args );
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
                 <li class="blog-list__item thrid-article terra-load-blogs"><a class="blog row" href="<?php the_permalink(); ?>">
