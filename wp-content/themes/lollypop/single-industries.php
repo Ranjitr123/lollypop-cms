@@ -140,13 +140,21 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
               </div>
                <!--<a class="video-img position-relative popup-vimeo d-block" href="<?php the_sub_field('video'); ?>">
                 <div class="reveal"><img src="<?php the_sub_field('image'); ?>"></div>
-		<div class="play-icon play-icon"><i class="icon-play"></i></div></a>-->
- <div class="play-video-on-scroll">
+		<div class="play-icon play-icon"><i class="icon-play"></i></div></a>old--->
+			<!--<div class="play-video-on-scroll">
                 <div class="plyr__video-embed" id="player2">
                   <iframe src="<?php the_sub_field('video'); ?>" allowfullscreen allowtransparency allow="autoplay" hideControls="true"></iframe>
                 </div>
+              </div>new-->
+				
+			<div class="play-video-on-scroll">
+              <div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php the_sub_field('video'); ?>"></div>
               </div>
-
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php the_sub_field('video'); ?>" poster="<?php the_sub_field('image'); ?>">
+              </video>
+            </div>
+				
                 <?php endwhile; endif; ?>
             </div>
           </div>
