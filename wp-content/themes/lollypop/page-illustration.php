@@ -418,7 +418,7 @@ height:140px;
 		   <section class="sec-pd sec-pt pb-0">
      <div class="container"> 
         <div class="row mt-4 mt-md-5 pt-md-5"> 
-            <div class="col-12 col-md-11 col-lg-9 mx-auto"> 
+            <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="col-md-10 col-lg-12 px-0">
                 <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('solution_title')?></h3>
