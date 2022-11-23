@@ -13,6 +13,11 @@ get_header();
     max-width: 100%!important;
 }
     }
+	.data_red {
+    color: #FD2E35;
+    font-weight: 800;
+    font-size: 16px;
+}
 </style>
 
 <main class="main">
