@@ -85,7 +85,7 @@ get_header();
                 </li>
                 <?php } ?>
               </ul>
-			  <p class="para ps-3">
+			  <p class="para">
 							<?php while(have_rows('bottom_section')){the_row();?>
 								<span class="data_red"><?php echo get_sub_field('red_text1')?> </span><?php echo get_sub_field('black_text')?> <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/"> Get in Touch</a></strong>
 							<?php } ?> 	
