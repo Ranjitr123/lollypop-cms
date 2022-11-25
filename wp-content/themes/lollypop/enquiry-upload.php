@@ -160,56 +160,56 @@ if ($greater_data == "2") {
 			//$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 			//$curl_errors = curl_error($ch);
 			//curl_close($ch);
-			if($file_name == "") {
+		// 	if($file_name == "") {
 				
-			$curl = curl_init();
+		// 	$curl = curl_init();
 
-			curl_setopt_array($curl, array(
-		 	CURLOPT_URL => 'https://forms.hubspot.com/uploads/form/v2/5176965/d678089d-e2e8-4138-a9dc-c3d2b6da4969',
-		  	CURLOPT_RETURNTRANSFER => true,
-		  	CURLOPT_ENCODING => '',
-		  	CURLOPT_MAXREDIRS => 10,
-		  	CURLOPT_TIMEOUT => 20,
-		  	CURLOPT_FOLLOWLOCATION => true,
-		  	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		  	CURLOPT_CUSTOMREQUEST => 'POST',
-		  	CURLOPT_POSTFIELDS => array(
-					'firstname' => $_POST["full_name"],
-					'phone' => $_POST["phone"],
-					'email' => $_POST["email"],
-					'message' => $_POST["description"]
-				),
-			));
+		// 	curl_setopt_array($curl, array(
+		//  	CURLOPT_URL => 'https://forms.hubspot.com/uploads/form/v2/5176965/d678089d-e2e8-4138-a9dc-c3d2b6da4969',
+		//   	CURLOPT_RETURNTRANSFER => true,
+		//   	CURLOPT_ENCODING => '',
+		//   	CURLOPT_MAXREDIRS => 10,
+		//   	CURLOPT_TIMEOUT => 20,
+		//   	CURLOPT_FOLLOWLOCATION => true,
+		//   	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		//   	CURLOPT_CUSTOMREQUEST => 'POST',
+		//   	CURLOPT_POSTFIELDS => array(
+		// 			'firstname' => $_POST["full_name"],
+		// 			'phone' => $_POST["phone"],
+		// 			'email' => $_POST["email"],
+		// 			'message' => $_POST["description"]
+		// 		),
+		// 	));
 
-			$response = curl_exec($curl);
+		// 	$response = curl_exec($curl);
 
-			curl_close($curl);
-		} else {
-			$curl = curl_init();
+		// 	curl_close($curl);
+		// } else {
+		// 	$curl = curl_init();
 
-                        curl_setopt_array($curl, array(
-                        CURLOPT_URL => 'https://forms.hubspot.com/uploads/form/v2/5176965/d678089d-e2e8-4138-a9dc-c3d2b6da4969',
-                        CURLOPT_RETURNTRANSFER => true,
-                        CURLOPT_ENCODING => '',
-                        CURLOPT_MAXREDIRS => 10,
-                        CURLOPT_TIMEOUT => 20,
-                        CURLOPT_FOLLOWLOCATION => true,
-                        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                        CURLOPT_CUSTOMREQUEST => 'POST',
-                        CURLOPT_POSTFIELDS => array(
-                                        'upload_document'=> new CURLFILE($uploadDir . $file_name),
-                                        'firstname' => $_POST["full_name"],
-                                        'phone' => $_POST["phone"],
-                                        'email' => $_POST["email"],
-                                        'message' => $_POST["description"]
-                                ),
-                        ));
+        //                 curl_setopt_array($curl, array(
+        //                 CURLOPT_URL => 'https://forms.hubspot.com/uploads/form/v2/5176965/d678089d-e2e8-4138-a9dc-c3d2b6da4969',
+        //                 CURLOPT_RETURNTRANSFER => true,
+        //                 CURLOPT_ENCODING => '',
+        //                 CURLOPT_MAXREDIRS => 10,
+        //                 CURLOPT_TIMEOUT => 20,
+        //                 CURLOPT_FOLLOWLOCATION => true,
+        //                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        //                 CURLOPT_CUSTOMREQUEST => 'POST',
+        //                 CURLOPT_POSTFIELDS => array(
+        //                                 'upload_document'=> new CURLFILE($uploadDir . $file_name),
+        //                                 'firstname' => $_POST["full_name"],
+        //                                 'phone' => $_POST["phone"],
+        //                                 'email' => $_POST["email"],
+        //                                 'message' => $_POST["description"]
+        //                         ),
+        //                 ));
 
-                        $response = curl_exec($curl);
+        //                 $response = curl_exec($curl);
 
-                        curl_close($curl);
+        //                 curl_close($curl);
 
-		}
+		// }
 
 
 			if (!$mailReply->send()) {
