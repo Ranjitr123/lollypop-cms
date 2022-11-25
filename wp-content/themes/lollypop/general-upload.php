@@ -96,43 +96,43 @@ $contact_data = [
 "company" => $company,
 ];
 
-$hapikey = "2688c174-6aa7-4622-8d21-16e0744d56ed";
+// $hapikey = "2688c174-6aa7-4622-8d21-16e0744d56ed";
 
-$arr = [
-'properties' => [
-[
-'property' => 'email',
-'value' => $contact_data["email"],
-],
-[
-'property' => 'firstname',
-'value' => $contact_data["fname"],
-],
-[
-'property' => 'company',
-'value' => $contact_data["company"],
-],
+// $arr = [
+// 'properties' => [
+// [
+// 'property' => 'email',
+// 'value' => $contact_data["email"],
+// ],
+// [
+// 'property' => 'firstname',
+// 'value' => $contact_data["fname"],
+// ],
+// [
+// 'property' => 'company',
+// 'value' => $contact_data["company"],
+// ],
 
-[
-'property' => 'phone',
-'value' => $contact_data["phone"],
-],
-],
-];
+// [
+// 'property' => 'phone',
+// 'value' => $contact_data["phone"],
+// ],
+// ],
+// ];
 
-$post_json = json_encode($arr);
-$endpoint = 'https://api.hubapi.com/contacts/v1/contact?hapikey=' . $hapikey;
+// $post_json = json_encode($arr);
+// $endpoint = 'https://api.hubapi.com/contacts/v1/contact?hapikey=' . $hapikey;
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post_json);
-curl_setopt($ch, CURLOPT_URL, $endpoint);
-curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-$curl_errors = curl_error($ch);
-curl_close($ch);
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_POST, true);
+// curl_setopt($ch, CURLOPT_POSTFIELDS, $post_json);
+// curl_setopt($ch, CURLOPT_URL, $endpoint);
+// curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// $response = curl_exec($ch);
+// $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+// $curl_errors = curl_error($ch);
+// curl_close($ch);
 
 if (!$mailReply->send()) {
 echo "False";
