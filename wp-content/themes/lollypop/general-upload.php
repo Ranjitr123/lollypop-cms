@@ -22,14 +22,18 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;
 $mail->Host = "smtp.gmail.com";
-$mail->Username = "marketing@lollypop.design";
-$mail->Password = "M@rketing@LL";
+// $mail->Username = "marketing@lollypop.design";
+// $mail->Password = "M@rketing@LL";
+$mail->Username = "hello@lollypop.design";
+$mail->Password = "L0!!6P0p@101";
 
 $mail->IsHTML(true);
+// $mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
+// $mail->SetFrom("marketing@lollypop.design", "Lollypop Design");
+// $mail->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
 $mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
-
-$mail->SetFrom("marketing@lollypop.design", "Lollypop Design");
-$mail->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
+$mail->SetFrom("hello@lollypop.design", "Lollypop Design");
+$mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
 $mail->Subject = "General Enquiry ";
 $content .=
 '<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{backg
