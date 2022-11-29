@@ -84,6 +84,7 @@ $email->Body  .= '<html>
 
 $email->AddAddress( 'ravikiran.mec339@gmail.com' );
 $email->AddAddress( 'vinoth.madhavan@terralogic.com' );
+$email->AddAddress( 'sukshith.bs@lollypop.design' );
 
 if($_FILES['attachment']['name'] !=''){
 $email->AddAttachment($uploadDir . $file_name );

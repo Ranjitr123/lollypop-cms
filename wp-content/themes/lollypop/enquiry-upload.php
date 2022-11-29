@@ -62,6 +62,7 @@ if ($greater_data == "2") {
 		$mail->addAddress('venkat@terralogic.com', 'Venkat');		
 		$mail->addAddress('anjali@lollypop.design','Anjali');
 		$mail->addAddress('manoj@terralogic.com','Manoj');
+		$mail->addAddress('sukshith.bs@lollypop.design','Sukshith');
 
 		//testing mails
 		//$mail->addAddress('b.bharath@terralogic.com','Bharath');
