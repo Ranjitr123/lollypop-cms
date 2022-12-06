@@ -20,6 +20,107 @@ get_header();
 }
 </style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why do I need data visualisation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "By visualizing your data, you immediately make it much easier to analyze and build relationships and gain meaningful insights. Data visualisation is important to analyze massive amounts of information and make designs that are data driven."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does a data visualisation expert at Lollypop approach a project?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Through our data visualisation techniques, we start by understanding the goal of the data visualisation engagement, if it is for understanding and, or for persuasion. The next step is to explore the various data sets that we have at our disposal followed by analysis and visualisation."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the main goals of data visualisation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
+    }
+  },{
+    "@type": "Question",
+    "name": "What tools do we use for data visualisation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
+    }
+  }]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Design Audit",
+    "item": "https://lollypop.design/design-audit"  
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Usability Testing",
+    "item": "https://lollypop.design/usability-testing/"  
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "UX Research",
+    "item": "https://lollypop.design/ux-research/"  
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Data Visualisation",
+    "item": "https://lollypop.design/data-visualisation/"  
+  }]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Lollypop - UI/UX Design Studio Bangalore",
+  "image": "https://lollypop.design/wp-content/themes/lollypop/img/lollypop-logo.svg",
+  "description": "Lollypop is a globally renowned UX UI design company that specializes in UX research, user experience design, user interface design, and Usability Testing.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lollypop"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1",
+    "reviewCount": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "name": "Charan Balse",
+    "reviewBody": "Lollypop Studio being the best in the industry for UI/UX, it is a pleasure being a part of their business family. Working with them was such a great experience as their design are always inspiring & educative.. Looking forward to see much more great designs from them in future..
+
+Cheers to Anil Reddy & Team..:)",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "datePublished": "2019-12-01",
+    "author": {"@type": "Person", "name": "Charan Balse"},
+    "publisher": {"@type": "Organization", "name": "Charan Balse"}
+  }
+}
+</script>
+
+
 <main class="main">
       <!--01-->
       <section class="sec-pd sec-bnr">
@@ -204,106 +305,7 @@ get_header();
       </section>
     </main>
 	
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Why do I need data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "By visualizing your data, you immediately make it much easier to analyze and build relationships and gain meaningful insights. Data visualisation is important to analyze massive amounts of information and make designs that are data driven."
-    }
-  },{
-    "@type": "Question",
-    "name": "How does a data visualisation expert at Lollypop approach a project?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Through our data visualisation techniques, we start by understanding the goal of the data visualisation engagement, if it is for understanding and, or for persuasion. The next step is to explore the various data sets that we have at our disposal followed by analysis and visualisation."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the main goals of data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
-    }
-  },{
-    "@type": "Question",
-    "name": "What tools do we use for data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
-    }
-  }]
-}
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Design Audit",
-    "item": "https://lollypop.design/design-audit"  
-  },{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Usability Testing",
-    "item": "https://lollypop.design/usability-testing/"  
-  },{
-    "@type": "ListItem",
-    "position": 3,
-    "name": "UX Research",
-    "item": "https://lollypop.design/ux-research/"  
-  },{
-    "@type": "ListItem",
-    "position": 4,
-    "name": "Data Visualisation",
-    "item": "https://lollypop.design/data-visualisation/"  
-  }]
-}
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Lollypop - UI/UX Design Studio Bangalore",
-  "image": "https://lollypop.design/wp-content/themes/lollypop/img/lollypop-logo.svg",
-  "description": "Lollypop is a globally renowned UX UI design company that specializes in UX research, user experience design, user interface design, and Usability Testing.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Lollypop"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "ratingCount": "1",
-    "reviewCount": "1"
-  },
-  "review": {
-    "@type": "Review",
-    "name": "Charan Balse",
-    "reviewBody": "Lollypop Studio being the best in the industry for UI/UX, it is a pleasure being a part of their business family. Working with them was such a great experience as their design are always inspiring & educative.. Looking forward to see much more great designs from them in future..
-
-Cheers to Anil Reddy & Team..:)",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "datePublished": "2019-12-01",
-    "author": {"@type": "Person", "name": "Charan Balse"},
-    "publisher": {"@type": "Organization", "name": "Charan Balse"}
-  }
-}
-</script>
-
+	
 <?php
 get_footer();
 ?>
