@@ -204,11 +204,7 @@ get_header();
       </section>
     </main>
 	
-<?php
-get_footer();
-?>
-
-<script type="application/ld+json">
+	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -308,3 +304,6 @@ Cheers to Anil Reddy & Team..:)",
 }
 </script>
 
+<?php
+get_footer();
+?>
