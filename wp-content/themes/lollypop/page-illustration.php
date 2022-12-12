@@ -171,6 +171,13 @@ height:140px;
     padding: 35px 30px;
     width: 82%;
    } }
+   
+	.lp-awards-list__item.newimg:nth-child(odd) .img {
+    min-height: 450px;
+    }
+	.lp-awards-list__item.newimg:nth-child(even) .img {
+    min-height: 450px;
+    }
 </style>
 
 
@@ -291,7 +298,7 @@ height:140px;
             <div class="col-12 px-md-0">
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
-                <li class="lp-awards-list__item">
+                <li class="lp-awards-list__item newimg">
                   <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
                     <div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
                   </div>
