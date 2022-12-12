@@ -174,11 +174,9 @@ height:140px;
    
 	.lp-awards-list__item.newimg:nth-child(odd) .img {
     min-height: 402px;
-	min-width: 454px;
     }
 	.lp-awards-list__item.newimg:nth-child(even) .img {
     min-height: 402px;
-	min-width: 454px;
     }
 </style>
 
