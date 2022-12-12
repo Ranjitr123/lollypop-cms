@@ -435,7 +435,7 @@ height:140px;
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('solution_repeater') ) : while( have_rows('solution_repeater') ): the_row(); ?>
                 <li class="lp-awards-list__item">
-                  <div class="award-info"><img class="mb-3" src="<?php the_sub_field('solution_image') ?>" alt="Image">
+                  <div class="award-info"><img class="mb-3 img-fluid" src="<?php the_sub_field('solution_image') ?>" alt="Image">
                   </div>
                 </li>
                   <?php endwhile; endif; ?>
