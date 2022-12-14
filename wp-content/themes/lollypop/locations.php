@@ -27,6 +27,12 @@ padding-top: 192px !important;
 padding: 35px 0px !important;
 }
 </style> -->
+<style>
+@media (min-width: 992px){
+.logo-list__item img {
+    max-width: 100%!important;
+}}
+</style>
 <main class="main">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 
