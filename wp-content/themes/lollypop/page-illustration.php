@@ -179,10 +179,10 @@ height:140px;
     min-height: 402px;
     }
 	.lp-awards-list__item.newimg:nth-child(odd) {
-    min-width: 454px;
+    min-width: 501px;
 	}
 	.lp-awards-list__item.newimg:nth-child(even) {
-    min-width: 454px;
+    min-width: 501px;
 	}
 @media (min-width: 992px){
 .sec-pd:first-of-type {
