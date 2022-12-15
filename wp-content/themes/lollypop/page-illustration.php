@@ -178,7 +178,12 @@ height:140px;
 	.lp-awards-list__item.newimg:nth-child(even) .img {
     min-height: 402px;
     }
-
+	.lp-awards-list__item.newimg:nth-child(odd) {
+    min-width: 454px;
+	}
+	.lp-awards-list__item.newimg:nth-child(even) {
+    min-width: 454px;
+	}
 @media (min-width: 992px){
 .sec-pd:first-of-type {
     padding-top: 135px;
