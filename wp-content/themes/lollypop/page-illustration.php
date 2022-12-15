@@ -173,16 +173,16 @@ height:140px;
    } }
    
 	.lp-awards-list__item.newimg:nth-child(odd) .img {
-    min-height: 402px;
+    min-height: 451px;
     }
 	.lp-awards-list__item.newimg:nth-child(even) .img {
-    min-height: 402px;
+    min-height: 451px;
     }
 	.lp-awards-list__item.newimg:nth-child(odd) {
-    min-width: 501px;
+    min-width: 521px;
 	}
 	.lp-awards-list__item.newimg:nth-child(even) {
-    min-width: 501px;
+    min-width: 521px;
 	}
 @media (min-width: 992px){
 .sec-pd:first-of-type {
