@@ -95,6 +95,11 @@ color: red;
     font-weight: 800 !important;
     font-size: 22px;
   }
+  .fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
+    font-size: 32px!important;
+    line-height: 61px!important;
+    letter-spacing: -1px!important;
+}
 </style>
 
 
