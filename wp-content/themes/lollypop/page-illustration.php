@@ -515,6 +515,51 @@ height:140px;
 -
 </main>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is illustration design?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The skill of creating engaging images (drawings, paintings, pictures, vectors, etc.) that can convey a message even in the absence of words is known as illustration design. Additionally, illustrations are used to reinforce a story's or an article's main ideas and arguments in the most beautiful as well as effective way."
+    }
+  },{
+    "@type": "Question",
+    "name": "What exactly is custom illustration design, and what perks will I receive?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Custom illustrations are vibrant visual depictions of concepts, tones, brand personality, and mostly unique messaging. There are a plethora of amazing, one-of-a-kind visuals appearing, ranging from symbols to banners to videos. Generic artwork is being replaced by distinctive visuals on websites, publications, and printed promotional items.
+You'll get all the files you need to print or publish your unique illustration once your project is finished. This includes online preview files as well as vector files, such as a JPG or PNG. Naturally, you also receive complete legal ownership of the design."
+    }
+  },{
+    "@type": "Question",
+    "name": "What all industries do y design serviour illustrationces cater to?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Media & Entertainment, Banking & Finance, SaaS, Telecommunications, Tech Automation, Media & Entertainment, and Education are just a few of the many businesses and sectors that Lollypop works with. Our customer is also diverse in terms of business size and model. We assist start-ups, small companies, franchises, businesses, nonprofit organizations, and corporations.
+We continually update our knowledge set based on the various sectors we work with in order to keep ahead of trends and position ourselves advantageously to work with customers from new and growing domains."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the difference between an illustrator and a graphic designer?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Graphic designers create static visuals and turn it into a one-of-a-kind visual from their vision by using pre-existing elements such as forms, text, images, logos, and effects. Illustrators draw to create unique stories and characters that stems out of their own imagination and creativity. A motion designer can animate both drawings and graphic creations, and make them come to life."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is Lollypop Design better than other illustration design services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Whether it is design, development or graphics, Lollypop Design Studio has always believed in being actively involved in the services sector and offering only the finest services to its clients. Our illustrators are extensively involved in the production process, which broadens their understanding of the market and enhances their expertise, enabling them to create the greatest illustrations."
+    }
+  }]
+}
+</script>
+
 <?php
 get_footer();
 ?>
