@@ -207,6 +207,60 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
     </main>
 
+<script type=application/ld+json>{
+	"@context": "https://schema.org/",
+	"@type": "Service",
+	"serviceType": "IT services",
+	"provider": {
+	"@type": "Organization",
+	"name": "Enabling growth in Edtech"
+	},
+	"hasOfferCatalog": {
+	"@type": "OfferCatalog",
+	"name": "IT services",
+	"itemListElement": [
+	{
+	"@type": "OfferCatalog",
+	"name": "IT Services",
+	"itemListElement": [
+	{
+	"@type": "Offer",
+	"itemOffered": {
+	"@type": "Service",
+	"name": "Enabling a complete digital immersion",
+	"Description":"Leveraging digital design and AI based learning to provide the best methods for engaging students in the educational process."
+	}
+	},
+	{
+	"@type": "Offer",
+	"itemOffered": {
+	"@type": "Service",
+	"name": "Increasing accessibility and usability",
+	"Description":"Offering anytime, everywhere access platforms for improved usability and accessibility."
+	}
+	},
+	{
+	"@type": "Offer",
+	"itemOffered": {
+	"@type": "Service",
+	"name": "Designing an engaging simulation of a classroom",
+	"Description":"Infusing a youthful energy in our designs to make learning, sharing, and teaching fun in a digital learning environment."
+	}
+	},
+	{
+	"@type": "Offer",
+	"itemOffered": {
+	"@type": "Service",
+	"name": "Democratizing education",
+	"Description":"Ensuring that students from all over the world have access to educational possibilities by providing them with endless opportunities."
+		}
+	}
+	
+	]
+	}
+	]
+	}
+}</script>
 
 <?php
 get_footer();
