@@ -35,6 +35,9 @@ span.d-block.mb-3.data-scroll.fnt-24 {
 ol.step-list.step-list--leadingZero.mb-0 {
     margin-left: 30px;
 }
+.ps-md-5.data-scroll {
+    margin-left: -15px;
+}
  </style>
 <main class="main">
       <!--01-->
