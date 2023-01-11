@@ -37,7 +37,6 @@ get_header();
                <?php $banner = get_field('banner_image');
                      if($banner !=''){ ?>
               <div class="position-relative">
-                <!--<div class="reveal"><img class="img-fluid blog-d-img mb-0" src="<?php the_field('banner_image') ?>" width="636" height="278" ></div>-->
 				<div class="reveal"> <!---desktop-->         
 					<div class="d-none d-lg-block" style="height:391px; width:100%; background-size:cover; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
 				</div> 
@@ -52,6 +51,18 @@ get_header();
 				
 			 </div>
               <?php } ?>
+			  
+			   <?php $bannerVideo = get_field('banner_video_link') ?>
+              <?php if($bannerVideo !=''){ ?>
+                <div class="play-video-on-scroll">
+                  <div id="play2-out" style="display:none">
+                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider');?>" data-plyr-embed-id="<?php the_field('banner_video_link');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_link');?>" provider="<?php the_field('banner_video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  </video>
+                </div>
+               <?php } ?>
+			   
             </div>
           </div>
         </div>
@@ -116,6 +127,26 @@ get_header();
                         <div class="blog-detail-content__item">
                         <?php if (have_posts()) : while ( have_posts() ) : the_post();?>
                         <?php the_content(); ?>
+						<!--------------added new section----->
+						 <?php if( have_rows('content_section_with_videos') ) : while( have_rows('content_section_with_videos') ): the_row(); ?>
+								<?php if( have_rows('paragraph_with_videos_and_images') ) : while( have_rows('paragraph_with_videos_and_images') ): the_row(); ?>
+										<?php the_sub_field('paragraph'); ?>
+										<?php the_sub_field('banner_image'); ?>
+										
+											<?php $bannerVideo = get_sub_field('video_link') ?>
+												<?php if($bannerVideo !=''){ ?>
+													<div class="play-video-on-scroll mb-3">
+														<div id="play2-out" style="display:none">
+															<div id="play2" data-plyr-provider="<?php the_sub_field('video_from');?>" data-plyr-embed-id="<?php the_sub_field('video_link');?>"></div>
+														</div>
+															<video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_link');?>" provider="<?php the_sub_field('video_from');?>" poster="<?php the_sub_field('video_poster');?>">
+															</video>
+													</div>
+												<?php } ?>
+									
+								<?php endwhile; endif; ?>
+						 <?php endwhile; endif; ?>
+						<!--------------ended new sec----------->
                         <?php endwhile; else : ?>
                           <p>Sorry no posts matched your criteria.</p>
                         <?php endif; ?>
