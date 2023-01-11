@@ -36,7 +36,7 @@ ol.step-list.step-list--leadingZero.mb-0 {
     margin-left: 30px;
 }
 .ps-md-5.data-scroll {
-    margin-left: -15px;
+    margin-left: -7px;
 }
  </style>
 <main class="main">
