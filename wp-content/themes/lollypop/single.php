@@ -135,7 +135,7 @@ get_header();
 										
 											<?php $bannerVideo = get_sub_field('video_link') ?>
 												<?php if($bannerVideo !=''){ ?>
-													<div class="play-video-on-scroll mb-2">
+													<div class="play-video-on-scroll mb-3">
 														<div id="play2-out" style="display:none">
 															<div id="play2" data-plyr-provider="<?php the_sub_field('video_from');?>" data-plyr-embed-id="<?php the_sub_field('video_link');?>"></div>
 														</div>
