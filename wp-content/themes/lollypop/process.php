@@ -29,6 +29,12 @@ get_header();
 	}
 
 }
+span.d-block.mb-3.data-scroll.fnt-24 {
+    margin-left: 30px;
+}
+ol.step-list.step-list--leadingZero.mb-0 {
+    margin-left: 30px;
+}
  </style>
 <main class="main">
       <!--01-->
@@ -98,7 +104,7 @@ get_header();
                                   <p><?php the_sub_field('content'); ?></p>
                                 </div>
                               </div>
-                              <div class="process__body col-12 col-md-6 offset-md-1"><span class="d-block mb-3 data-scroll fnt-24">Activities</span>
+                              <div class="process__body col-12 offset-md-1 col-md-6"><span class="d-block mb-3 data-scroll fnt-24">Activities</span>
                                 <ol class="step-list step-list--leadingZero mb-0"> 
                                  <?php if( have_rows('activities_list') ) : while( have_rows('activities_list') ): the_row(); ?>
                                   <li class="step-list__item data-scroll">
