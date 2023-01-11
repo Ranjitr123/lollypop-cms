@@ -11,6 +11,7 @@ get_header();
    .blog-detail-content__item a{color: blue}
     .blog-detail-content__item ol li{list-style: auto !important; padding-bottom: 0.5rem;}
     .blog-detail-content__item ul li{list-style: disc !important; padding-bottom: 0.5rem;}
+	.spacm{margin-top:4px!important;}
     @media only screen and (max-width: 1024px) {
    
     }
