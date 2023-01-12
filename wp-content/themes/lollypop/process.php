@@ -38,6 +38,10 @@ ol.step-list.step-list--leadingZero.mb-0 {
 .ps-md-5.data-scroll {
     margin-left: -7px;
 }
+@media (min-width: 768px){
+.ps-md-5 {
+    padding-left: 2.5rem!important;
+}}
  </style>
 <main class="main">
       <!--01-->
