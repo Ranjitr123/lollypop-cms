@@ -112,7 +112,7 @@ ol.step-list.step-list--leadingZero.mb-0 {
                                  <?php if( have_rows('activities_list') ) : while( have_rows('activities_list') ): the_row(); ?>
                                   <li class="step-list__item data-scroll">
                                     <h5 class="fnt-22 fnt-800 mb-1"><?php the_sub_field('title'); ?></h5>
-                                    <p class="fnt-16 col-xl-8 px-0"><?php the_sub_field('content'); ?></p>
+                                    <p class="fnt-16 col-xl-12 px-0"><?php the_sub_field('content'); ?></p>
                                   </li>
                                   <?php endwhile; endif; ?>
                                  
@@ -120,7 +120,7 @@ ol.step-list.step-list--leadingZero.mb-0 {
                                 <div class="ps-md-5 data-scroll">
                                  <?php if( have_rows('expect') ) : while( have_rows('expect') ): the_row(); ?>
                                   <h5 class="d-block fnt-400 fnt-24 mb-1"><?php the_sub_field('title'); ?></h5>
-                                  <p class="fnt-14 col-xl-8 px-0"><?php the_sub_field('content'); ?></p>
+                                  <p class="fnt-14 col-xl-12 px-0"><?php the_sub_field('content'); ?></p>
                                   <?php endwhile; endif; ?>
                                 </div>
                               </div>
