@@ -39,7 +39,7 @@ get_header();
                      if($banner !=''){ ?>
               <div class="position-relative">
 				<div class="reveal"> <!---desktop-->         
-					<div class="d-none d-lg-block" style="height:391px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+					<div class="d-none d-lg-block" style="height:391px; width:100%; background-size:cover; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
 				</div> 
 					
 				<div class="reveal"> <!----mobile---->         
