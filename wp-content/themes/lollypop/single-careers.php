@@ -9,7 +9,7 @@ get_header();
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-10 mx-auto car-bnr"> 
-              <div class="d-flex flex-column align-items-center justify-content-center text-center"><img class="img-fluid mb-40" src="https://lollypop.design/wp-content/uploads/2022/02/About-Us-Illustration.webp" alt="career-artist" data-aos="zoom-in-down" data-aos-duration="2000">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center"><img class="img-fluid mb-40" src="https://lollypop.design/wp-content/uploads/2021/12/Job-Designations-1.webp" alt="career-artist" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="mb-40"><span class="d-block fnt-14 mb-1 mb-md-2" data-aos="fade-up" data-aos-duration="500">Job Role</span>
                   <h1 class="fnt-50 fnt-800" data-aos="fade-up" data-aos-duration="1000"><?php the_title(); ?></h1>
                 </div>
