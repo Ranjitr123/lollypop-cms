@@ -69,7 +69,7 @@ get_header();
                 </li>
                  <?php endwhile; endif; ?>
                
-              </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/contact-us/">Get in Touch</a>
+              </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/contact/">Get in Touch</a>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@ get_header();
                   <div class="lp-awards__left">
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll">We are a bunch of restless, go-getters, imaginative & berserk designers!</h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll">We're a group of 180+ creative minds spread across 6+ global locations, touching billions of lives through design.</span>
                   </div>
-                  <div class="px-0 d-flex flex-wrap culture-slider-nav mb-35 data-scroll"><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>">India</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/usa/">USA</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/uae/">Dubai</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/vietnam/">Vietnam</a></div><a class="clr-second fnt-14 hvr-line mb-4 mb-lg-0 d-inline-block data-scroll" href="<?php echo site_url(); ?>/about-us/">Learn more about us</a>
+                  <div class="px-0 d-flex flex-wrap culture-slider-nav mb-35 data-scroll"><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>">India</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/uae/">Dubai</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/vietnam/">Vietnam</a></div><a class="clr-second fnt-14 hvr-line mb-4 mb-lg-0 d-inline-block data-scroll" href="<?php echo site_url(); ?>/about/">Learn more about us</a>
                 </div>
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
                  <div class="h-100 d-flex align-items-center justify-content-center" id="award">
@@ -262,7 +262,7 @@ get_header();
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
                     <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Let’s grab a coffee!</span>
                       <h2 class="fnt-50 fnt-800 clr-white">Acheive great success at Dubai Expo 2020</h2>
-                    </div><a class="web-btn web-btn--red" href="#">Get in Touch</a>
+                    </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/contact/">Get in Touch</a>
                   </div>
                 </div>
               </div>
