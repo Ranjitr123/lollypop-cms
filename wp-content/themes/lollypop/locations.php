@@ -154,57 +154,8 @@ if($locationVideo !=''){
 </div>
 </section>
 
-<section class="sec-pd" style="background: #221429;">
-<div class="container z-1">
-<div class="row"> 
-<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
-<div class="row mb-45 justify-content-between">
-<div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
-<div class="lp-awards__left">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
-
-</span>
-</div>
-</div>
-</div>
-<ul class="awrad-list px-0 mb-0 row"> 
-<?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
-<li class="awrad-list__item col-6 col-md-4 data-scroll"> 
-	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
-<div class="award__name"> 
-<h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
-<p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
-</div>
-</div>
-</li>
-<?php endwhile; endif; ?>
-</ul>
-</div>
-</div>
-</div>
-</section>
 <!--07-->
-<section class="sec-pd sec-pb" style="background: #221429">
-<div class="container"> 
-<div class="row">
-<?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
-<div class="col-12 col-md-10 col-lg-8 mx-auto">
-<div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
-<h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
-<p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
-</div>
-<div class="controls-hide play-video-on-scroll">
-<div id="play1-out" style="display:none">
-<div id="play1" data-plyr-provider="<?php the_sub_field('video_provider')?>" data-plyr-embed-id="<?php the_sub_field('video_url') ?>"></div>
-</div>
-<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_sub_field('video_url') ?>" provider="<?php the_sub_field('video_provider')?>" playsinline="" poster="<?php the_sub_field('video_poster')?>">
-</video>
-</div>
-</div>
-<?php endwhile; endif; ?>
-</div>
-</div>
-</section>
+
 
 <!--05-->
 
@@ -303,7 +254,7 @@ if($locationVideo !=''){
 </div></div> </a>
 <div class="px-md-4 px-xl-5">
 <div class="col-12 px-md-12 col-md-5 offset-md-4">
-<div class="px-md-3"><a class="data-scroll fnt-14 lp-link lp-link--pri hvr-line" href="<?php the_sub_field('url'); ?>">View Project</a></div>
+<div class="px-md-3" style="padding-bottom:2rem"><a class="data-scroll fnt-14 lp-link lp-link--pri hvr-line" href="<?php the_sub_field('url'); ?>">View Project</a></div>
 </div>
 </div>
 </div>
@@ -315,6 +266,57 @@ if($locationVideo !=''){
 </section>
 
 <!--07-->
+<section class="sec-pd" style="background: #221429;">
+<div class="container z-1">
+<div class="row"> 
+<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+<div class="row mb-45 justify-content-between">
+<div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
+<div class="lp-awards__left">
+<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+
+</span>
+</div>
+</div>
+</div>
+<ul class="awrad-list px-0 mb-0 row"> 
+<?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
+<li class="awrad-list__item col-6 col-md-4 data-scroll"> 
+	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
+<div class="award__name"> 
+<h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
+<p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
+</div>
+</div>
+</li>
+<?php endwhile; endif; ?>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec-pd sec-pb" style="background: #221429">
+<div class="container"> 
+<div class="row">
+<?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
+<div class="col-12 col-md-10 col-lg-8 mx-auto">
+<div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
+<h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
+<p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
+</div>
+<div class="controls-hide play-video-on-scroll">
+<div id="play1-out" style="display:none">
+<div id="play1" data-plyr-provider="<?php the_sub_field('video_provider')?>" data-plyr-embed-id="<?php the_sub_field('video_url') ?>"></div>
+</div>
+<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_sub_field('video_url') ?>" provider="<?php the_sub_field('video_provider')?>" playsinline="" poster="<?php the_sub_field('video_poster')?>">
+</video>
+</div>
+</div>
+<?php endwhile; endif; ?>
+</div>
+</div>
+</section>
 <!--07-->
 <section class="sec-pd sec-pb">
 <div class="container">
@@ -330,6 +332,7 @@ if($locationVideo !=''){
 $args = array(
 	'post_type'=>'whitepapers', // Your post type name
 	'posts_per_page' => 1,
+	'order'  => 'DESC' ,
 );
 $whitepaper = new WP_Query( $args );
 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>
