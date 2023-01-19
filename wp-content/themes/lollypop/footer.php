@@ -13,6 +13,22 @@
  */
 
 ?>
+<style>
+.link-dribble:hover {
+    color: #ea4c89;
+}
+.link-dribble {
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+a.fnt-30.fnt-800.link-insta {
+    margin-left: 9px;
+}
+a.fnt-30.fnt-800.link-twt {
+    margin-left: -23px;
+}
+</style>
 
 <footer class="footer">
     <div class="container">
@@ -21,12 +37,12 @@
           <div class="row mb-60">
             <h5 class="fnt-16 fnt-600 mb-22 text-center">Follow our work</h5>
             <ul class="px-0 ft-social-links d-flex flex-wrap justify-content-center">
-              <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center">
-              <a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a></li>
-              <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a></li>
-              <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a></li>
-              <li class="ft-social-links__item col-6 col-sm-3 col-md-3 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blank">Twitter</a></li>
-            </ul>
+              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"><a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a></li>
+              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a></li>
+              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a></li>
+			  <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-dribble" href="https://dribbble.com/lollypop_studio" target="_blank">Dribbble</a></li>              
+			  <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blank">Twitter</a></li>
+			</ul>
           </div> 
           <div class="row">
             <div class="col-12 col-md-4 mb-4 mb-md-0 order-2 order-md-1 text-center text-md-left"><a class="clr-second d-inline-block fnt-24 lp-link--red fnt-800 mb-4 mb-md-2 col-8 col-lg-6 px-0" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lollypop_logo1.svg" style="width:100%" alt="Image"></a>
@@ -512,7 +528,11 @@ $('body').on('click', '.tab-head-item1__name', function() {
 			    	        	        		      			          }, 150);
 			    	        	        		      			          		});
 			    	        	        		      			          		</script>
-
+<!---------dynamic schema------------------>
+	<?php if( get_field('each_page_schema') ): ?>
+		<?php the_field('each_page_schema')?>
+	<?php endif; ?>
+	
  <?php wp_footer(); ?>
 
 </body>
