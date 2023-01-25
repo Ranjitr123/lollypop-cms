@@ -130,7 +130,7 @@ if($locationVideo !=''){
 <div class="col-md-6 col-lg-8 fluid-offset"> 
 <div class="lp-awards__left">
 <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('design_studio_content'); ?></span>
-<a class="web-btn web-btn--primary data-scroll" href="https://lollypop.design/careers/" style="opacity: 1; transform: translateY(0px);">Join Us</a>
+<a class="web-btn web-btn--primary data-scroll" href="https://lollypop.design/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Contact us</a>
 </div>
 
 </div>
