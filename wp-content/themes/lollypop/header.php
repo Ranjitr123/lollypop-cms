@@ -252,7 +252,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/contact/">Contact Us</a></div>
 </div>
 <div class="d-md-flex hvr-m flex-column justify-content-end">
-<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edutech</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
