@@ -20,12 +20,13 @@ get_header();
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="mb-60">
                     <div class="mb-45 multi-line-text">
-                      <h1 class="fnt-50 fnt-800 px-0 red-stroke red-stroke--small px-0"><?php the_field('banner_content');?></h1>
-                      <div class="rw-wrapper">
+                      <h1 class="fnt-50 fnt-800 px-0 red-stroke red-stroke--small px-0"><?php the_field('banner_content');?> 
+					  <span class="lp-sudo-right__textchange fnt-60 fnt-800 clr-second fnt-50 redtext">users fall in love with</span></h1>
+                     <!-- <div class="rw-wrapper">
                         <div class="rw-sentence">
                            <div class="lp-sudo-right__textchange fnt-60 fnt-800 clr-second fnt-50 redtext">users fall in love with</div>
                         </div>
-                      </div>
+                      </div>-->
                     </div>
                     <ul class="lp-number-list ps-0">
                      
