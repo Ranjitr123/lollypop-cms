@@ -15,6 +15,16 @@
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/Mobile-Favicon.png" alt="Image">
 <link rel="shortcut icon" type="image/svg" sizes="18x18" href="<?php echo get_template_directory_uri(); ?>/img/Mobile-Favicon.png" alt="Image">
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/Path.svg" alt="Image">
+
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/services/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/design-audit"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/usability-testing/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/ux-research/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/illustrations/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualisation/"/>
+	<link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
+
 <!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>
