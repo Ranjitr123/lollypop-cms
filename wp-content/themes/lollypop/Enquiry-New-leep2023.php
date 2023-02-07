@@ -197,7 +197,7 @@ color: red;
                     <!--Heading-End-->
 		   <!--Form-start-->
                     <form
-                      id="enquiry-form"
+                      id="enquiry-form1"
                       method="POST"
                       data-parsley-validate=""
                     >

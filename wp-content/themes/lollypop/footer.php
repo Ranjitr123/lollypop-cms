@@ -402,7 +402,7 @@ $("form#build-fast").submit(function(e) {
 
 
 $(function() {
-$("form#build-fast1").submit(function(e) {
+$("form#enquiry-form1").submit(function(e) {
 	e.preventDefault();
 	var data = new FormData($(this)[0]);
 	var email = $('input[type="email"]').val();
@@ -424,7 +424,7 @@ $("form#build-fast1").submit(function(e) {
 			success: function(data) {
 				if (data.indexOf("True") >= 0) {
 					$("#pageloader").css("display", "none");
-					$('form#build-fast1')[0].reset();
+					$('form#enquiry-form1')[0].reset();
 
 					$('.file-reset').addClass('d-none');
 					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
