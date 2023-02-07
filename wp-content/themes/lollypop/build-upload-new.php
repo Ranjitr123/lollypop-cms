@@ -12,7 +12,27 @@ require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.ph
 
 require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
 
+$maxsize    = 2097152;
+if($_FILES['attachment']['name'] !=''){
+	 $file_size = $_FILES['attachment']['size'];
+	 $file_tmp = $_FILES['attachment']['tmp_name'];
+	 $file_type = $_FILES['attachment']['type'];
+	 $file_ext=strtolower(end(explode('.',$_FILES['attachment']['name'])));
+	 $file_name = $_POST['full_name']."_".time().".".$file_ext;
+	 if($_FILES['attachment']['size'] >= $maxsize) {
+		$greater_data =  "1";
+	 }else{
+		 $uploadDir = $_SERVER["DOCUMENT_ROOT"].'/lollypop/wp-content/files/';
+			if(move_uploaded_file($file_tmp, $uploadDir.$file_name)){
+			
+		}
+		$greater_data =  "2";
+	 }
+}else{
+	$greater_data =  "2";
+}
 
+if($greater_data == "2"){
 if ($_POST['email'] !="") {
 $mail = new PHPMailer();
 $mail->IsSMTP();
@@ -32,7 +52,7 @@ $mail->addAddress('hello@lollypop.design', 'Lollypop Design');
 
 $mail->SetFrom("hello@lollypop.design", "Lollypop Design");
 $mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
-$mail->Subject = "Thank you" ;
+$mail->Subject = "Leap 2023 Form" ;
 $content .=
 '<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{backg
 round: url(https://lollypop.design/lollypop-logo.PNG) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><div id=ample_service_widget-2 class="widget widget_service_block main-div-padding" style=background-color:#f5f5f5;padding:40px><div class="clearfix white-bg-align" style=background-color:#fff><div class=services-header style="text-align:center;padding-top:30px;"><a href=#><div class="asdjhdagsd"><div></a></div><div class="services-content clearfix"><div class=inner-text style="padding:40px 60px"><h2>Yay!! Build Fast Launch Fast Enquiry.</h2>
@@ -166,9 +186,14 @@ else {
 		}
 	}
 }
-else{
+else {
 	header("Location: ".get_site_url());
 		exit();
+	
+}
+}
+else{
+	echo "Invalid_doc";
 }
 
 ?>
