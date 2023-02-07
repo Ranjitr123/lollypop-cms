@@ -1,6 +1,6 @@
 <?php
 /** 
-* Template Name: Enquiry Upload New
+* Template Name: Build Upload New
 */
 
 
