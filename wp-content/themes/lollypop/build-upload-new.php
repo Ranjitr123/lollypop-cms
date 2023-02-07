@@ -1,53 +1,75 @@
 <?php
-/** 
-* Template Name: Build Upload New
-*/
+/**
+ * * * Template Name: Build Upload new
+ * * */
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/Exception.php';
+require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
+require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
+
+require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
 
 
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-//include("./enquiry-upload.php");
+if ($_POST['email'] !="") {
+$mail = new PHPMailer();
+$mail->IsSMTP();
 
-print_r($_SERVER["DOCUMENT_ROOT"]);
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = "tls";
+$mail->Port = 587;
+$mail->Host = "smtp.gmail.com";
+$mail->Username = "marketing@lollypop.design";
+$mail->Password = "L0llyp0p@TL";
+
+$mail->IsHTML(true);
+$mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
+//$mail->addAddress('anil@lollypop.design', 'Anil');
+//$mail->addAddress('anjali@lollypop.design', 'Anjali');
+
+$mail->SetFrom("marketing@lollypop.design", "Lollypop Design");
+$mail->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
+$mail->Subject = "Thank you Leap 2023" ;
+$content .=
+'<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{backg
+round: url(https://lollypop.design/lollypop-logo.PNG) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><div id=ample_service_widget-2 class="widget widget_service_block main-div-padding" style=background-color:#f5f5f5;padding:40px><div class="clearfix white-bg-align" style=background-color:#fff><div class=services-header style="text-align:center;padding-top:30px;"><a href=#><div class="asdjhdagsd"><div></a></div><div class="services-content clearfix"><div class=inner-text style="padding:40px 60px"><h2>Yay!! Build Fast Launch Fast Enquiry.</h2>
+<span><br><br>Requirement : </span> <span><b>' .
+$_POST['build'] .
+'</b><span><br><br>First Name : </span> <span><b>' .
+$_POST['full_name'] .
+'</b></span><br><br><span>Email : </span> <span><b>' .
+$_POST['email'] .
+'</b></span><br><br><span>Phone Number: </span> <span><b>' .
+$_POST['phone'] .
+'</b></span><br><br><span>Description : </span> <span><b>' .
+$_POST['description'] .
+'</b></span><br><br></div></div></div></div></body></html>';
 
 
-#use PHPMailer\PHPMailer\PHPMailer;
-#use PHPMailer\PHPMailer\Exception;
-if (!class_exists('PHPMailer\PHPMailer\Exception')){
-   require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/Exception.php';
-   require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
-   require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
-}
-require '/var/www/html/lollypop/wp-content/themes/lollypop/vendors/autoload.php';
+$mail->MsgHTML($content);
+if (!$mail->Send()) {
+echo "False";
+} else {
+$mailReply = new PHPMailer();
+$mailReply->IsSMTP();
 
- $maxsize    = 2097152;
-if($_FILES['attachment']['name'] !=''){
-	 $file_size = $_FILES['attachment']['size'];
-	 $file_tmp = $_FILES['attachment']['tmp_name'];
-	 $file_type = $_FILES['attachment']['type'];
-	 $file_ext=strtolower(end(explode('.',$_FILES['attachment']['name'])));
-	 $file_name = $_POST['full_name']."_".time().".".$file_ext;
-	 if($_FILES['attachment']['size'] >= $maxsize) {
-		$greater_data =  "1";
-	 }else{
-		 $uploadDir = $_SERVER["DOCUMENT_ROOT"].'/lollypop/wp-content/files/';
-			if(move_uploaded_file($file_tmp, $uploadDir.$file_name)){
-			
-		}
-		$greater_data =  "2";
-	 }
-}else{
-	$greater_data =  "2";
-}
+$mailReply->SMTPDebug = 0;
+$mailReply->SMTPAuth = true;
+$mailReply->SMTPSecure = "tls";
+$mailReply->Port = 587;
+$mailReply->Host = "smtp.gmail.com";
+$mailReply->Username = "marketing@lollypop.design";
+$mailReply->Password = "L0llyp0p@TL";
 
-if($greater_data == "2"){
-if($_POST['email']){
-
-$email = new PHPMailer();
-$email->SetFrom('vinoth.madhavan@terralogic.com', 'Lollypop'); //Name is optional
-$email->Subject   = 'Mail from Enquiry';
-$email->isHTML(true);
-$email->Body  .=
+$mailReply->IsHTML(true);
+$mailReply->addAddress($_POST['email'], $_POST['full_name']);
+$mailReply->SetFrom("marketing@lollypop.design", "Lollypop Design");
+$mailReply->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
+$mailReply->Subject = "Thank you for contacting Lollypop Design Studio";
+$contentReply .=
 '<html><head><style>.asdjhdagsd{background: url(https://lollypop.design/email-template-image.png) no-repeat center center;background-size: contain;padding:40
 px;height:200px;}.sdfsdfsfdsdfsdfsf{background: url(https://lollypop.design/company-email-template-logo.png) no-repeat center center;background-size: contain;padding:40px;}</style></head><b
 ody><table border="0" cellspacing="0" cellpadding="0" width="100%" style="min-width:600px;padding:80px" bgcolor="#E5E5E5"><tbody><tr><td><table border="0" cellspacing="0" cellpadding="0" wi
@@ -73,26 +95,74 @@ arget="_blank" data-saferedirecturl="https://www.google.com/url?q=https://twitte
 op on Linkedin" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/lollypop_design/&amp;source=gmail&amp;ust=1644058795127000&amp;usg=AOvVaw0ERXoRM
 -zappPtEM1HKoL0">Instagram</a></td><td align="center"><a style="text-align:center;font-size:12px;color:#454545;line-height:29px;text-decoration:none;font-weight:bold" href="https://www.facebook.com/lollypop.india" title="Lollypop on Linkedin" target="_blank" data-saferedirecturl="https://www.facebook.com/lollypop.india">Facebook</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></h
 tml>';
+$mailReply->MsgHTML($contentReply);
 
-$email->AddAddress( 'ravikiran.mec339@gmail.com' );
-$email->AddAddress( 'vinoth.madhavan@terralogic.com' );
-$email->AddAddress( 'sukshith.bs@lollypop.design' );
+$company = '';
+$fname = $_POST['full_name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
 
-if($_FILES['attachment']['name'] !=''){
-$email->AddAttachment($uploadDir . $file_name );
+$contact_data = [
+"fname" => $fname,
+"email" => $email,
+"phone" => $phone,
+"company" => $company,
+];
+
+$hapikey = "2688c174-6aa7-4622-8d21-16e0744d56ed";
+
+$arr = [
+'properties' => [
+[
+'property' => 'email',
+'value' => $contact_data["email"],
+],
+[
+'property' => 'firstname',
+'value' => $contact_data["fname"],
+],
+[
+'property' => 'company',
+'value' => $contact_data["company"],
+],
+
+[
+'property' => 'phone',
+'value' => $contact_data["phone"],
+],
+],
+];
+
+$post_json = json_encode($arr);
+$endpoint = 'https://api.hubapi.com/contacts/v1/contact?hapikey=' . $hapikey;
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post_json);
+curl_setopt($ch, CURLOPT_URL, $endpoint);
+curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curl_errors = curl_error($ch);
+curl_close($ch);
+
+if (!$mailReply->send()) {
+echo "False";
+} else {
+if ($_FILES['attachment']['name'] != '' && !empty($_FILES['attachment']['name'])) {
+$doctype = ['doc', 'docx', 'pdf'];
+if (in_array($file_ext, $doctype)) {
+echo "True";
+} else {
+echo "Invalid_doc";
 }
-
-//return $email->Send();
-if($email->send()){
-			echo "True";
-		}else{
-			echo "False";
-		}
+} else {
+echo "True";
+}
+}
+}
 }else{
-	echo "False";
+	header("Location: ".get_site_url());
+		exit();
 }
-}else{
-	echo "greater_mb";
-}
- ?>
-      
