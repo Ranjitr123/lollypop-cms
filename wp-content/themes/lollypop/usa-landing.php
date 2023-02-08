@@ -88,7 +88,10 @@ if($locationVideo !=''){
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="row"> 
                 <div class="col-12 col-md-10 offset-md-1">
-<div class="tab-section1">
+				<div class="mb-5"> 
+					<h5 class="fnt-40 fnt-800 data-scroll px-0">Build Fast Launch Fast</h5>
+					</div>
+					<div class="tab-section1">
                   <!-- Tab content-->
                   <div class="tab-content tab-section1-content1 tab-scroll-content">
                     <?php if( have_rows('tab_content') ) : while( have_rows('tab_content') ): the_row(); ?>
