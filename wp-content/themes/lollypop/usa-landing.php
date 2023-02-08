@@ -13,6 +13,10 @@ get_header();
 .logo-list__item img {
     max-width: 100%!important;
 }}
+@media (min-width: 992px){
+.sec-pd1 {
+    padding: 45px 0;
+}}
 </style>
 <main class="main">
 <!--01-->
@@ -82,14 +86,14 @@ if($locationVideo !=''){
 </section>
 <!-------------------------->
 		  <!-- Tab head-->
-		  <section class="sec-pd">
+		  <section class="sec-pd1">
         <div class="container"> 
           <div class="row">
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="row"> 
                 <div class="col-12 col-md-10 offset-md-1">
 				<div class="mb-5"> 
-					<h5 class="fnt-40 fnt-800 data-scroll px-0">Build Fast Launch Fast</h5>
+					<h5 class="fnt-40 fnt-800 data-scroll px-0" style="text-align:center;">Build Fast. Launch Fast.</h5>
 					</div>
 					<div class="tab-section1">
                   <!-- Tab content-->
