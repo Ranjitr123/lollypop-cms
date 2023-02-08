@@ -103,6 +103,8 @@ color: red;
 
   .leapBanner{padding-top: 92px!important;}
   .mx923{max-width: 923px;width: 100%;margin: 0 auto;}
+  .red-stroke.fnt-78::before{height: 36px;width: 5px;top: 20px;}
+  .input-textarea .input__require{top: inherit;bottom: 10px;}
 </style>
 
 
@@ -207,7 +209,7 @@ color: red;
                             <h3 class="fnt-28 fnt-800 mb-1">
                             Let’s get started
                             </h3>
-                            <p class="fnt-14 label">
+                            <p class="fnt-14 label mb-4">
                             We are eager to hear about your idea/ business and assist you with our Branding, UX research, Design and Technology expertise
                             </p>
                           </div>
