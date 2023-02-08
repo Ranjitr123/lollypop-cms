@@ -402,59 +402,66 @@ $("form#build-fast").submit(function(e) {
 
 
 $(function() {
-$("form#enquiry-form1").submit(function(e) {
-	e.preventDefault();
-	var data = new FormData($(this)[0]);
-	var email = $('input[type="email"]').val();
-	var description = $('textarea[name="description"]').val();
-	var fullname = $('input[name="full_name"]').val();
-	var phone = $('input[name="phone"]').val();
-	if(email !='' && description !='' && fullname !='' && phone !=''){
-		$(".js-submit.data-scroll.web-btn").prop("disabled",true);
-
-		$(".format_message").hide();
-		$("#pageloader").fadeIn();
-		$.ajax({
-		type: "POST",
-			url: "<?php echo site_url(); ?>/build-upload-new/",
-			data: data,
-			processData: false,
-			contentType: false,
-			cache: false,
-			success: function(data) {
-				if (data.indexOf("True") >= 0) {
-					$("#pageloader").css("display", "none");
-					$('form#enquiry-form1')[0].reset();
-
-					$('.file-reset').addClass('d-none');
+         $("form#enquiry-form1").submit(function(e) {
+		 e.preventDefault();	 
+             var data = new FormData($(this)[0]);
+	     var file = $('input[type="file"]').val();
+	     var email = $('input[type="email"]').val();
+	     var description = $('textarea[name="description"]').val();
+	     var fullname = $('input[name="full_name"]').val();
+	     var phone = $('input[name="phone"]').val();
+	     if(email !='' && description !='' && fullname !='' && phone !=''){
+		     
+		     if($(".js-submit").prop("disabled", "disabled")){
+		     	$(".js-submit").addClass("disabled");
+		     } 
+					$(".format_message").hide();
+					$("#pageloader").fadeIn();
+					$.ajax({
+						 type: "POST",
+						 url: "<?php echo site_url(); ?>/build-upload-new/",
+						 data: data,
+						 processData: false,
+						 contentType: false,
+						 cache: false,
+						 beforeSend: function(){
+						 $('.js-submit').html("Please wait. We are submitting your query");
+						 },
+						 success: function(data) {
+							 if (data.indexOf("True") >= 0) {
+								 $("#pageloader").css("display", "none");
+								$('form#enquiry-form1')[0].reset();
+                                 $('#filename').text("Attach your Document");
+								 $('.file-reset').addClass('d-none');
+						 $(".js-submit.data-scroll.web-btn").prop("disabled",false);
+                                  window.location.href = "<?php echo site_url(); ?>/thank-you-2023/";
+							 } else if (data.indexOf("False") >= 0) {
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+								 return false;
+							 }else if (data.indexOf("greater_mb") >= 0) {
+                                
+								 $("#file-error").css("display", "block");
 					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-					window.location.href = "<?php echo site_url(); ?>/thank-you-2023/";
-				} else if (data.indexOf("False") >= 0) {
-					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-					return false;
-				}else if (data.indexOf("greater_mb") >= 0) {
+                                   $("#pageloader").css("display", "none");
+                             }
+                             else if (data.indexOf("Invalid_doc") >= 0) {
+                                 //alert("Invalid Doc");
+                                 $("#file-error").css("display", "block");
+				 $("#pageloader").css("display", "none");
+				 $(".js-submit.data-scroll.web-btn").prop("disabled",false);
+                             }
+                             
+						 },
+						 error: function(data) {
+							$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+							 return false;
+						 }
+					 });
+				 
+	     }
+         });
 
-
-					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-					$("#pageloader").css("display", "none");
-				}
-				else if (data.indexOf("Invalid_doc") >= 0) {
-					$("#file-error").css("display", "block");
-					$("#pageloader").css("display", "none");
-					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-				}
-
-			},
-			error: function(data) {
-				$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-				return false;
-			}
-		});
-
-	}
-});
-
-});
+       });
 
 
 
