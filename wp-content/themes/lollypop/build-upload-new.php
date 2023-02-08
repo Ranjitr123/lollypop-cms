@@ -47,12 +47,13 @@ $mail->Password = "L0!!6P0p@101";
 
 $mail->IsHTML(true);
 $mail->addAddress('hello@lollypop.design', 'Lollypop Design');
+$mail->addAddress('neha.naik@lollypop.design', 'Neha Naik');
 //$mail->addAddress('anil@lollypop.design', 'Anil');
 //$mail->addAddress('anjali@lollypop.design', 'Anjali');
 
 $mail->SetFrom("hello@lollypop.design", "Lollypop Design");
 $mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
-$mail->Subject = "Leap 2023 Form" ;
+$mail->Subject = "Leap 2023 Query" ;
 $content .=
 '<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{backg
 round: url(https://lollypop.design/lollypop-logo.PNG) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><div id=ample_service_widget-2 class="widget widget_service_block main-div-padding" style=background-color:#f5f5f5;padding:40px><div class="clearfix white-bg-align" style=background-color:#fff><div class=services-header style="text-align:center;padding-top:30px;"><a href=#><div class="asdjhdagsd"><div></a></div><div class="services-content clearfix"><div class=inner-text style="padding:40px 60px"><h2>Yay!! Build Fast Launch Fast Enquiry.</h2>
