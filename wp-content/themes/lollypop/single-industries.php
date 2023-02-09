@@ -11,6 +11,7 @@ padding-bottom:26px;
 border-left: 5px solid #FD2E35;
 background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
+.sec-pd1{padding-bottom:40px;}
 </style>
 
 <main class="main">
@@ -87,9 +88,34 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           </div>
         </div>
       </section>
-      <!--04-->
-      
-      
+	  
+	  <!------------new------------->
+	  <section class="sec-pd"> 
+        <div class="container"> 
+          <div class="row"> 
+			<?php if( have_rows('research_build_design_section') ) : while( have_rows('research_build_design_section') ): the_row(); ?>
+            <div class="col-12 col-md-10 col-lg-8 mx-auto sec-pd1">
+              <div class="mb-4 pb-md-2 col-md-11 px-0">
+                <h3 class="fnt-50 fnt-800 mb-4 data-scroll">
+                  <?php the_sub_field('title'); ?></h3>
+                <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
+              </div>
+              <ul class="px-0 values-list row justify-content-between mb-0"> 
+               <?php if( have_rows('our_expertise_list') ) : while( have_rows('our_expertise_list') ): the_row(); ?>
+                <li class="values-list__item col-12 col-md-5 data-scroll"> 
+                  <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
+                  <p class="col-11 col-lg-11 px-0 mb-0 "><?php the_sub_field('content'); ?></p>
+                </li>
+                <?php endwhile; endif; ?>
+              </ul>
+            </div>
+			<?php endwhile; endif; ?>
+          </div>
+        </div>
+      </section>
+	  <!------------------------->
+	  
+      <!--04-->      
       <section class="sec-pd" id="third">
         <div class="container"> 
           <div class="row"> 
@@ -132,9 +158,9 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       <section class="sec-pd sec-pt sec-pb" style="background: #221429">
         <div class="container"> 
           <div class="row">
-            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+            <div class="col-12 col-md-10 col-lg-10 mx-auto">
               <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
-              <div class="col-12 col-md-8 col-lg-7 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
+              <div class="col-12 col-md-8 col-lg-8 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
                 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title'); ?></h2>
                 <p class="data-scroll clr-white col-12 col-md-8 px-0"><?php the_sub_field('content'); ?></p><a class="clr-second hvr-line d-inline-block data-scroll fnt-14" href="<?php the_sub_field('cta_url'); ?>"><?php the_sub_field('cta_name'); ?></a>
               </div>
@@ -195,10 +221,12 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
               <div class="py-70 px-3 data-scroll" style="background: #221429;">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Got An Idea?</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">Let’s craft brilliance together!</h2>
-                    </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
-                  </div>
+					<?php if( have_rows('last_blue_section') ) : while( have_rows('last_blue_section') ): the_row(); ?>
+                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0"><?php the_sub_field('small_title'); ?></span>
+                      <h2 class="fnt-50 fnt-800 clr-white"><?php the_sub_field('heading'); ?></h2>
+                    </div><a class="web-btn web-btn--red" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_text'); ?></a>
+					<?php endwhile; endif; ?>
+				  </div>
                 </div>
               </div>
             </div>
@@ -207,7 +235,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
     </main>
 
-<script type=application/ld+json>{
+<script type='application/ld+json'>{
 	"@context": "https://schema.org/",
 	"@type": "Service",
 	"serviceType": "IT services",
