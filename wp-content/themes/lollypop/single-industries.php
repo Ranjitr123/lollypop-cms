@@ -20,7 +20,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
 .sec-pd1 .approach_style .col-md-3 p {
     color: #FD2E35;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 .sec-pd1 .approach_style .space p:first-child {
