@@ -12,17 +12,18 @@ border-left: 5px solid #FD2E35;
 background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
 .sec-pd1{padding-bottom:40px;}
-.sec-pd .approach_style {
+.sec-top{padding-top:40px;}}
+.sec-pd1 .approach_style {
     width: 100%;
     max-width: 845px;
     margin: 0 auto;
 }
-.sec-pd .approach_style .col-md-3 p {
+.sec-pd1 .approach_style .col-md-3 p {
     color: #FD2E35;
     font-size: 18px;
     font-weight: 700;
 }
-.sec-pd .approach_style .space p:first-child {
+.sec-pd1 .approach_style .space p:first-child {
     color: #221429;
     font-size: 18px;
     font-weight: 400;
@@ -30,12 +31,12 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-bottom: 25px;
     line-height: 26px;
 }
-.sec-pd .space1 h3 {
+.sec-pd1 .space1 h3 {
     font-size: 22px;
     font-weight: 800;
     line-height: 30px;
 }
-.sec-pd .space1 p {
+.sec-pd1 .space1 p {
     max-width: 266px;
     font-size: 16px;
     font-weight: 400;
@@ -121,7 +122,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
 	  
 	  <!------------new------------->
-	 <section class="sec-pd"> 
+	 <section class="sec-pd1 sec-top"> 
         <div class="container"> 
           <div class="row"> 
 			<?php if( have_rows('research_build_design_section') ) : while( have_rows('research_build_design_section') ): the_row(); ?>
