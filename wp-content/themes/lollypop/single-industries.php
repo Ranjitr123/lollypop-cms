@@ -267,7 +267,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="py-70 px-3 data-scroll" style="background: #221429;">
                 <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
+                  <div class="col-12 col-md-8 col-lg-8 px-0 d-inline-block clr-white text-center"> 
 					<?php if( have_rows('last_blue_section') ) : while( have_rows('last_blue_section') ): the_row(); ?>
                     <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0"><?php the_sub_field('small_title'); ?></span>
                       <h2 class="fnt-50 fnt-800 clr-white"><?php the_sub_field('heading'); ?></h2>
