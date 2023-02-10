@@ -12,6 +12,37 @@ border-left: 5px solid #FD2E35;
 background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
 .sec-pd1{padding-bottom:40px;}
+.sec-pd .approach_style {
+    width: 100%;
+    max-width: 845px;
+    margin: 0 auto;
+}
+.sec-pd .approach_style .col-md-3 p {
+    color: #FD2E35;
+    font-size: 18px;
+    font-weight: 700;
+}
+.sec-pd .approach_style .space p:first-child {
+    color: #221429;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 548px;
+    padding-bottom: 25px;
+    line-height: 26px;
+}
+.sec-pd .space1 h3 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.sec-pd .space1 p {
+    max-width: 266px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #221429;
+    line-height: 26px;
+}
+
 </style>
 
 <main class="main">
@@ -90,29 +121,44 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
 	  
 	  <!------------new------------->
-	  <section class="sec-pd"> 
+	 <section class="sec-pd"> 
         <div class="container"> 
           <div class="row"> 
 			<?php if( have_rows('research_build_design_section') ) : while( have_rows('research_build_design_section') ): the_row(); ?>
-            <div class="col-12 col-md-10 col-lg-8 mx-auto sec-pd1">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
               <div class="mb-4 pb-md-2 col-md-11 px-0">
                 <h3 class="fnt-50 fnt-800 mb-4 data-scroll">
-                  <?php the_sub_field('title'); ?></h3>
-                <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
+                  <?php the_sub_field('main_heading'); ?></h3>
+                <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('main_content'); ?></p>
               </div>
-              <ul class="px-0 values-list row justify-content-between mb-0"> 
-               <?php if( have_rows('our_expertise_list') ) : while( have_rows('our_expertise_list') ): the_row(); ?>
-                <li class="values-list__item col-12 col-md-5 data-scroll"> 
-                  <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
-                  <p class="col-11 col-lg-11 px-0 mb-0 "><?php the_sub_field('content'); ?></p>
-                </li>
-                <?php endwhile; endif; ?>
-              </ul>
+			  
+              <div class="row approach_style">
+					<?php if( have_rows('sub_point_heading_section') ) : while( have_rows('sub_point_heading_section') ): the_row(); ?>
+						<div class="col-md-3 ">
+							<p class="text-uppercase data-scroll disc-head"><?php the_sub_field('title');?></p>
+						</div>
+						<div class="col-md-9 space">
+							<p><?php the_sub_field('content');?></p>
+
+						<div class="row space1 ">
+							<?php if( have_rows('points_sec') ) : while( have_rows('points_sec') ): the_row(); ?>
+							<div class="col-md-6 ">
+								<div class="space2 position-relative">
+									<h3 class="pb-1 "><?php the_sub_field('title_point');?></h3>
+									<p class="pb-5"><?php the_sub_field('content_point');?></p>
+								</div>
+							</div>
+							<?php endwhile; endif; ?>
+						</div>
+						</div>
+						<?php endwhile; endif; ?>
+	  </div>
             </div>
 			<?php endwhile; endif; ?>
           </div>
         </div>
       </section>
+	
 	  <!------------------------->
 	  
       <!--04-->      
