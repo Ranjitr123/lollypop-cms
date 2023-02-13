@@ -25,9 +25,12 @@
 a.fnt-30.fnt-800.link-insta {
     margin-left: 9px;
 }
-a.fnt-30.fnt-800.link-twt {
-    margin-left: -23px;
-}
+
+@media (min-width: 768px){
+.fnt-30 {
+    font-size: 22px;
+    line-height: 26px;
+}}
 </style>
 
 <footer class="footer">
