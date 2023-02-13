@@ -31,7 +31,7 @@ a.fnt-30.fnt-800.link-insta {
 	gap:25px;
 }
 }
-@media(min-device-width:768px){
+@media(max-device-width:768px){
 .alifot{text-align:start!important;}
 .alifot .fnt-14{font-size:11px;}
 }
