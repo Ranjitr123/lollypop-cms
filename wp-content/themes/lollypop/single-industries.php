@@ -127,7 +127,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           <div class="row"> 
 			<?php if( have_rows('research_build_design_section') ) : while( have_rows('research_build_design_section') ): the_row(); ?>
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
-              <div class="mb-4 pb-md-2 col-md-11 px-0">
+              <div class="mb-4 pb-md-2 col-md-12 px-0">
                 <h3 class="fnt-50 fnt-800 mb-4 data-scroll">
                   <?php the_sub_field('main_heading'); ?></h3>
                 <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('main_content'); ?></p>
