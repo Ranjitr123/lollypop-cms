@@ -26,8 +26,8 @@ a.fnt-30.fnt-800.link-insta {
     margin-left: 9px;
 }
 
-@media (min-width: 768px){
-.fnt-30 {
+@media (min-device-width:769px) and (max-device-width:1024px){
+.footer .ft-social-links .ft-social-links__item .fnt-30{
     font-size: 22px;
     line-height: 26px;
 }}
