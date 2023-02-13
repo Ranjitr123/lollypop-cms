@@ -86,7 +86,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                <?php if( have_rows('our_expertise_list') ) : while( have_rows('our_expertise_list') ): the_row(); ?>
                 <li class="values-list__item col-12 col-md-5 data-scroll"> 
                   <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
-                  <p class="col-11 col-lg-10 px-0 mb-0"><?php the_sub_field('content'); ?></p>
+                  <p class="col-11 col-lg-11 px-0 mb-0"><?php the_sub_field('content'); ?></p>
                 </li>
                 <?php endwhile; endif; ?>
               </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
