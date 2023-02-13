@@ -18,7 +18,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     max-width: 845px;
     margin: 0 auto;
 }
-.sec-pd1 .approach_style .col-md-3 p {
+.sec-pd1 .approach_style .col-md-2 p {
     color: #FD2E35;
     font-size: 16px;
     font-weight: 700;
@@ -135,10 +135,10 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 			  
               <div class="row approach_style">
 					<?php if( have_rows('sub_point_heading_section') ) : while( have_rows('sub_point_heading_section') ): the_row(); ?>
-						<div class="col-md-3 ">
+						<div class="col-md-2 ">
 							<p class="text-uppercase data-scroll disc-head"><?php the_sub_field('title');?></p>
 						</div>
-						<div class="col-md-9 space">
+						<div class="col-md-10 space">
 							<p><?php the_sub_field('content');?></p>
 
 						<div class="row space1 ">
