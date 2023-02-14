@@ -119,6 +119,9 @@
     position: absolute;
     right: -9px;
 }
+.fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
+    line-height: 61px!important;
+}
 </style>
 
 </head>
@@ -283,8 +286,8 @@ $header = new WP_Query( $args );
 </div>
 </div>
 </div>
-<div class="menu-ftr d-block d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg">
-<div class="menu-ftr__links hvr-div d-none d-md-flex flex-wrap">
+<div class="menu-ftr d-block d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg" style="padding-top:30px;">
+<div class="menu-ftr__links hvr-div d-md-flex flex-wrap">
 <a class="d-inline-block fnt-18" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a>
 <a class="d-inline-block fnt-18" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a>
 <a class="d-inline-block fnt-18" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a>

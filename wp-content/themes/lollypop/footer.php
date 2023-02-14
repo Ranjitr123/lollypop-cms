@@ -35,6 +35,10 @@ a.fnt-30.fnt-800.link-insta {
 .alifot{text-align:start!important;}
 .alifot .fnt-14{font-size:11px;}
 }
+@media (min-device-width:320px) and (max-device-width:766px){
+a.fnt-30.fnt-800.link-insta {
+    margin-left: 0px!important; 
+}}
 </style>
 
 <footer class="footer">
@@ -44,11 +48,11 @@ a.fnt-30.fnt-800.link-insta {
           <div class="row mb-60">
             <h5 class="fnt-16 fnt-600 mb-22 text-center">Follow our work</h5>
             <ul class="px-0 ft-social-links d-flex flex-wrap justify-content-center">
-              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"><a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a></li>
-              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a></li>
-              <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a></li>
-			  <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-dribble" href="https://dribbble.com/lollypop_studio" target="_blank">Dribbble</a></li>              
-			  <li class="ft-social-links__item col-6 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blank">Twitter</a></li>
+              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"><a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a></li>
+              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a></li>
+              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a></li>
+			  <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-dribble" href="https://dribbble.com/lollypop_studio" target="_blank">Dribbble</a></li>              
+			  <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blank">Twitter</a></li>
 			</ul>
           </div> 
           <div class="row">
