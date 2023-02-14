@@ -43,7 +43,9 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     color: #221429;
     line-height: 26px;
 }
-
+.pb-5 {
+    padding-bottom: 4rem!important;
+}
 </style>
 
 <main class="main">
