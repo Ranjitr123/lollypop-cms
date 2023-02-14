@@ -36,12 +36,12 @@ get_header();
 if($locationVideo !=''){
 ?>
 	<div class="play-video-on-scroll">
-		<div id="play2-out" style="display:none">
-		<div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>"></div>
-	</div>
-	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php the_field('video_poster');?>">
-	</video>
-	</div>
+              <div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php the_sub_field('video'); ?>"></div>
+              </div>
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php the_sub_field('video'); ?>" poster="<?php the_sub_field('image'); ?>">
+              </video>
+            </div>
 
 <?php }else{ ?>
 <div class="hover-img">
