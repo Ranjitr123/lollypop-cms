@@ -120,7 +120,7 @@
     right: -9px;
 }
 .fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
-    line-height: 48px!important;
+    line-height: 43px!important;
 }
 </style>
 
