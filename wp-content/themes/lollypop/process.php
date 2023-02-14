@@ -42,6 +42,10 @@ ol.step-list.step-list--leadingZero.mb-0 {
 .ps-md-5 {
     padding-left: 2.5rem!important;
 }}
+@media (max-width: 767px){
+.lollypop-tabs .nav-link {
+    font-size: 15px!important;
+}}
  </style>
 <main class="main">
       <!--01-->
