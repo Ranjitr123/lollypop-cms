@@ -119,8 +119,11 @@
     position: absolute;
     right: -9px;
 }
-.fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
+
+@media (min-device-width:320px) and (max-device-width:767px){
+    .fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
     line-height: 43px!important;
+}
 }
 </style>
 
@@ -255,9 +258,7 @@ $header = new WP_Query( $args );
 <!-- For Desktop-->
 <div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between"> 
 <div class="d-md-flex hvr-m flex-column justify-content-end">
-<div>
-<a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
-</div>
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a></div> 
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/careers/">Careers</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/blogs/">Blogs</a></div>
@@ -282,6 +283,15 @@ $header = new WP_Query( $args );
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/whitepapers/">Whitepapers</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/contact/">Contact Us</a>
 </div>
+<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb h-100 d-flex flex-column justify-content-end d-md-none">
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+</div>
+
 </div>
 </div>
 </div>
