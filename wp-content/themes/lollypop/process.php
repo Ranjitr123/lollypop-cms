@@ -57,7 +57,7 @@ ol.step-list.step-list--leadingZero.mb-0 {
                 <div class="col-12 col-md-10 offset-md-1">
                   <div class="mb-50"><span class="d-block fnt-14 text-capitalize mb-2 clr-default">Process</span>
                    <?php if( have_rows('banner_content') ) : while( have_rows('banner_content') ): the_row(); ?>
-                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-0 col-12 col-md-10"><?php the_sub_field('title'); ?></h1>
+                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-0 col-12 col-md-11"><?php the_sub_field('title'); ?></h1>
                     <p class="fnt-24 col-md-10 col-lg-8 col-xl-7 px-0Crafting"><?php the_sub_field('content'); ?></p>
                      <?php endwhile; endif; ?>
                   </div>
