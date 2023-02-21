@@ -485,9 +485,12 @@ $(function() {
 			var fullname = $('input[name="full_name"]').val();
 			var phone = $('input[name="phone"]').val();
              if(email !='' && description !='' && fullname !='' && phone !=''){
-					$(".format_message").hide();
+				
+				if($(".js-submit").prop("disabled", "disabled")){
+		     	$(".js-submit").addClass("disabled");
+				}
+				$(".format_message").hide();
 				$("#pageloader").fadeIn();
-             console.log("Hello world!");
 					$.ajax({
 						 type: "POST",
 						 url: "<?php echo site_url(); ?>/step23-upload/",
@@ -501,18 +504,17 @@ $(function() {
 						 success: function(data) {
                            
 							 if (data.indexOf("True") >= 0) {
+								 $("#pageloader").css("display", "none");
 								$('form#enquiry-form11')[0].reset();
-                                  $("#pageloader").css("display", "none");
-                                 $("#success-msg").css("display", "block");
+								$(".js-submit.data-scroll.web-btn").prop("disabled",false);
                                   window.location.href = "<?php echo site_url(); ?>/step23-thank-you/";
-                                  $('#enquiry-form11').css('display', 'none');
 							 } else if (data.indexOf("False") >= 0) {
-                                 $("#pageloader").css("display", "none");
-                                  $("#error-msg").css("display", "block");
+								$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 								 return false;
-							 }
+							 } 
 						 },
 						 error: function(data) {
+							$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 							 return false;
 						 }
 					 });
