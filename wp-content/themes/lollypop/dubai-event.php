@@ -355,7 +355,7 @@ color: red;
                                     name="utm_source"
                                     id="utm_source"
 									value="<?php echo $utm_source ?>"
-                                   />                           
+                                   hidden />                           
                               </div>
                             </div>
                           </div>
