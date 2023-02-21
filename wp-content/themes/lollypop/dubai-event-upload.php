@@ -172,10 +172,5 @@ else {
 		exit();
 	
 }
-
-else{
-	echo "Invalid_doc";
-}
-
 ?>
 
