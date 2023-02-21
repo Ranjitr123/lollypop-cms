@@ -491,7 +491,7 @@ $(function() {
 					$("#pageloader").fadeIn();
 					$.ajax({
 						 type: "POST",
-						 url: "<?php echo site_url(); ?>/dubai-event-upload/",
+						 url: "<?php echo site_url(); ?>/step23-upload/",
 						 data: data,
 						 processData: false,
 						 contentType: false,
@@ -504,7 +504,7 @@ $(function() {
 								 $("#pageloader").css("display", "none");
 								$('form#enquiry-form11')[0].reset();
 						 $(".js-submit.data-scroll.web-btn").prop("disabled",false);
-                                  window.location.href = "<?php echo site_url(); ?>/dubai-event/step-2023-thank-you/";
+                                  window.location.href = "<?php echo site_url(); ?>/step23-thank-you/";
 							 } else if (data.indexOf("False") >= 0) {
 						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 								 return false;
