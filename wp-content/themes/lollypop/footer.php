@@ -473,22 +473,22 @@ $(function() {
          });
 
        });
-	   
-	   $(function() {
+
+		 $(function() {
          $("form#enquiry-form11").submit(function(e) {
-		 e.preventDefault();	 
-             var data = new FormData($(this)[0]);
-	     var email = $('input[type="email"]').val();
-	     var description = $('textarea[name="description"]').val();
-	     var fullname = $('input[name="full_name"]').val();
-	     var phone = $('input[name="phone"]').val();
-	     if(email !='' && description !='' && fullname !='' && phone !=''){
-		     
-		     if($(".js-submit").prop("disabled", "disabled")){
-		     	$(".js-submit").addClass("disabled");
-		     } 
+             e.preventDefault();    
+            // var data = new FormData();
+                  var data = new FormData($(this)[0]);
+
+            var email = $('input[type="email"]').val();
+			var description = $('textarea[name="description"]').val();
+			var fullname = $('input[name="full_name"]').val();
+			var phone = $('input[name="phone"]').val();
+             if(sucess){
+             if(email !='' && description !='' && fullname !='' && phone !=''){
 					$(".format_message").hide();
-					$("#pageloader").fadeIn();
+				$("#pageloader").fadeIn();
+             
 					$.ajax({
 						 type: "POST",
 						 url: "<?php echo site_url(); ?>/step23-upload/",
@@ -500,27 +500,29 @@ $(function() {
 						 $('.js-submit').html("Please wait. We are submitting your query");
 						 },
 						 success: function(data) {
+                           
 							 if (data.indexOf("True") >= 0) {
-								 $("#pageloader").css("display", "none");
 								$('form#enquiry-form11')[0].reset();
-						 $(".js-submit.data-scroll.web-btn").prop("disabled",false);
+                                  $("#pageloader").css("display", "none");
+                                 $("#sucess-msg").css("display", "block");
                                   window.location.href = "<?php echo site_url(); ?>/step23-thank-you/";
+                                  $('#enquiry-form11').css('display', 'none');
 							 } else if (data.indexOf("False") >= 0) {
-						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+                                 $("#pageloader").css("display", "none");
+                                  $("#error-msg").css("display", "block");
 								 return false;
-							 }                             
+							 }
 						 },
 						 error: function(data) {
-							$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 							 return false;
 						 }
 					 });
-				 
-	     }
+                 }
+				 }
          });
+             
 
-       });
-
+     });
 
 
 
