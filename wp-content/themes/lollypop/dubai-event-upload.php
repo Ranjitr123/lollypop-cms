@@ -88,7 +88,7 @@ else {
 
 
 	We are thrilled to hear from you. We are looking forward to collaborating with you and ideating on the possibilities of crafting a seamless experience. </td></tr>
-	<tr><tdstyle="font-weight: 400;font-size: 12px;line-height: 160%;color: #6D6D6D;margin-top: 16px;">Our design consultant will get in touch with you real soon. </td></tr>
+	<tr><tdstyle="font-size: 12px;line-height: 160%;color: #6D6D6D;margin-top: 16px;">Our design consultant will get in touch with you real soon. </td></tr>
 	<tr><table border="0" cellspaci
 	ng="0" cellpadding="0" align="center" style="padding: 72px 0 0 0;width:100%"><tbody><tr><td align="center" style="padding-bottom: 16px;"><a href="#"><div class="sdfsdfsfdsdfsdfsf"style="width: 180px;
 		height: 70px;padding:0"><div></a></td></tr></tb
