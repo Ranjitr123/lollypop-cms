@@ -487,7 +487,7 @@ $(function() {
              if(email !='' && description !='' && fullname !='' && phone !=''){
 					$(".format_message").hide();
 				$("#pageloader").fadeIn();
-             
+             console.log("Hello world!");
 					$.ajax({
 						 type: "POST",
 						 url: "<?php echo site_url(); ?>/step23-upload/",
