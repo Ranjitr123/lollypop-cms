@@ -365,7 +365,7 @@ color: red;
                         class="js-submit data-scroll web-btn web-btn--primary fnt-800imp"
                         type="submit"
                       >
-                        Send Enquiry
+                        Submit Form
                       </button>
                     </form>
                     <!--Form-End-->
