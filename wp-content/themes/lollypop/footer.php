@@ -484,7 +484,6 @@ $(function() {
 			var description = $('textarea[name="description"]').val();
 			var fullname = $('input[name="full_name"]').val();
 			var phone = $('input[name="phone"]').val();
-             if(success){
              if(email !='' && description !='' && fullname !='' && phone !=''){
 					$(".format_message").hide();
 				$("#pageloader").fadeIn();
@@ -518,7 +517,6 @@ $(function() {
 						 }
 					 });
                  }
-				 }
          });
              
 
