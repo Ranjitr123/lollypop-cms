@@ -27,6 +27,8 @@ $mail->Password = "L0!!6P0p@101";
 $mail->IsHTML(true);
 $mail->addAddress('hello@lollypop.design', 'Lollypop Design');
 $mail->addAddress('swati.kumar@terralogic.com', 'Swati Kumari');
+$mail->addAddress('veeresh.g@terralogic.com', 'Veeresh');
+$mail->addAddress('rajesh.b@terralogic.com', 'Rajesh');
 //$mail->addAddress('neha.naik@lollypop.design', 'Neha Naik');
 //$mail->addAddress('anil@lollypop.design', 'Anil');
 //$mail->addAddress('anjali@lollypop.design', 'Anjali');
