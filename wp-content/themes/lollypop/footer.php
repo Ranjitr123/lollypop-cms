@@ -484,7 +484,7 @@ $(function() {
 			var description = $('textarea[name="description"]').val();
 			var fullname = $('input[name="full_name"]').val();
 			var phone = $('input[name="phone"]').val();
-             if(sucess){
+             if(success){
              if(email !='' && description !='' && fullname !='' && phone !=''){
 					$(".format_message").hide();
 				$("#pageloader").fadeIn();
@@ -504,7 +504,7 @@ $(function() {
 							 if (data.indexOf("True") >= 0) {
 								$('form#enquiry-form11')[0].reset();
                                   $("#pageloader").css("display", "none");
-                                 $("#sucess-msg").css("display", "block");
+                                 $("#success-msg").css("display", "block");
                                   window.location.href = "<?php echo site_url(); ?>/step23-thank-you/";
                                   $('#enquiry-form11').css('display', 'none');
 							 } else if (data.indexOf("False") >= 0) {
