@@ -473,6 +473,53 @@ $(function() {
          });
 
        });
+	   
+	   $(function() {
+         $("form#enquiry-form11").submit(function(e) {
+		 e.preventDefault();	 
+             var data = new FormData($(this)[0]);
+	     var email = $('input[type="email"]').val();
+	     var description = $('textarea[name="description"]').val();
+	     var fullname = $('input[name="full_name"]').val();
+	     var phone = $('input[name="phone"]').val();
+	     if(email !='' && description !='' && fullname !='' && phone !=''){
+		     
+		     if($(".js-submit").prop("disabled", "disabled")){
+		     	$(".js-submit").addClass("disabled");
+		     } 
+					$(".format_message").hide();
+					$("#pageloader").fadeIn();
+					$.ajax({
+						 type: "POST",
+						 url: "<?php echo site_url(); ?>/dubai-event-upload/",
+						 data: data,
+						 processData: false,
+						 contentType: false,
+						 cache: false,
+						 beforeSend: function(){
+						 $('.js-submit').html("Please wait. We are submitting your query");
+						 },
+						 success: function(data) {
+							 if (data.indexOf("True") >= 0) {
+								 $("#pageloader").css("display", "none");
+								$('form#enquiry-form11')[0].reset();
+						 $(".js-submit.data-scroll.web-btn").prop("disabled",false);
+                                  window.location.href = "<?php echo site_url(); ?>/dubai-event/step-2023-thank-you/";
+							 } else if (data.indexOf("False") >= 0) {
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+								 return false;
+							 }                             
+						 },
+						 error: function(data) {
+							$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+							 return false;
+						 }
+					 });
+				 
+	     }
+         });
+
+       });
 
 
 
