@@ -489,6 +489,7 @@ $(function() {
 				if($(".js-submit").prop("disabled", "disabled")){
 		     	$(".js-submit").addClass("disabled");
 				}
+				//console.log("Hello world!");
 				$(".format_message").hide();
 				$("#pageloader").fadeIn();
 					$.ajax({
