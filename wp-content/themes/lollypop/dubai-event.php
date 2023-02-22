@@ -71,10 +71,15 @@ get_header();
     border: 1px solid #221429;
 }
 .sec-pad-5{padding-top:100px;}
+
 @media (min-width: 768px){
 .pt-md-4 {
      padding-top: 0rem!important;
-}}
+}
+..imgstep{height: 55px;
+    width: 80px;
+    margin-top: -22px;}
+}
 .enquiry-head {
     margin-bottom: 40px!important;
 }
@@ -166,6 +171,7 @@ color: red;
   .mx923{max-width: 923px;width: 100%;margin: 0 auto;}
   .red-stroke.fnt-78::before{height: 36px;width: 5px;top: 20px;}
   .input-textarea .input__require{top: inherit;bottom: 10px;}
+  .imgstep{height: 75px;width: 90px;margin-top: -22px;}
 </style>
 
 
@@ -179,7 +185,7 @@ color: red;
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="page-head"><span class="d-block fnt-142 text-capitalize mb-2 clr-default">Marhaba! Glad to meet you</span>
-                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0">You are one <span><img src="<?php echo get_template_directory_uri(); ?>/img/step1.png" alt="step logo" style="height: 75px;width: 90px;margin-top: -22px;"></span> closer to transforming <span class="d-inline-block clr-second"> digital experience</span></h1>
+                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0">You are one <span><img src="<?php echo get_template_directory_uri(); ?>/img/step1.png" alt="step logo" class="imgstep"></span> closer to transforming <span class="d-inline-block clr-second"> digital experience</span></h1>
                     <p class="fnt-24 col-md-10 col-lg-8 px-0">We are one of the leading agencies in the Middle East with 
 					curated design and technology process that suits startups and fortune 500 companies</p>
 		  </div>
