@@ -171,6 +171,7 @@ color: red;
   }
    @media (max-width:375px) {
   .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
+  .mobpad{padding-bottom: 8px!important;}
   }
 
   .leapBanner{padding-top: 40px!important;}
@@ -190,7 +191,7 @@ color: red;
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1">
-                  <div class="page-head"><span class="d-block fnt-142 text-capitalize mb-2 clr-default">Marhaba! Glad to meet you</span>
+                  <div class="page-head"><span class="d-block fnt-142 text-capitalize mb-2 clr-default mobpad">Marhaba! Glad to meet you</span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0">You are one <span><img src="<?php echo get_template_directory_uri(); ?>/img/step1.png" alt="step logo" class="imgstep"></span> closer to transforming <span class="d-inline-block clr-second"> digital experience</span></h1>
                     <p class="fnt-24 col-md-10 col-lg-8 px-0">We are one of the leading agencies in the Middle East with 
 					curated design and technology process that suits startups and fortune 500 companies</p>
