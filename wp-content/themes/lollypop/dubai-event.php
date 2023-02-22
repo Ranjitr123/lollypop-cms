@@ -380,7 +380,7 @@ input[type="radio" i] {
                     >
                             <div class="row mb-45 single-mb-slider-re">
                             <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Design">
   <label class="custom-control-label" for="customRadio1">
   <div class="col-12  col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex flex-column gap-3 mb-md-4 mb-lg-0">
                                     <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
@@ -392,7 +392,7 @@ input[type="radio" i] {
   </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="Build">
   <label class="custom-control-label" for="customRadio2">
   <div class="col-12 col-md-6  lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
 									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
@@ -404,7 +404,7 @@ input[type="radio" i] {
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="Funding">
   <label class="custom-control-label" for="customRadio3">
   <div class="col-12 col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
 									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
