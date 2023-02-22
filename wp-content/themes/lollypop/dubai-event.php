@@ -231,9 +231,7 @@ color: red;
     display:none;
 } */
 
-input[type="radio" i] {
-   display:none;
-}
+
 .sec-left21{
     margin-left: -20px;
 }
