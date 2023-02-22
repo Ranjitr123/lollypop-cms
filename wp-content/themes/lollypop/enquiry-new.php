@@ -203,10 +203,10 @@ color: red;
                         <div class="enquiry-form__item data-scroll">
                           <div class="col-md-6 col-lg-8 px-0 mb-2">
                             <h3 class="fnt-28 fnt-800 mb-1">
-                              What are you looking for?
+                              Tell us your project requirement
                             </h3>
                             <p class="fnt-14 label">
-                              Want to be partners in design? Looking for UX/UI
+                              Looking for UX/UI
                               research or product branding? Post your query now,
                               and we'll get in touch with you soon!
                             </p>
@@ -248,7 +248,7 @@ color: red;
                                   class="file-uplod w-100 d-flex align-items-center"
                                   for="file-upload"
                                   ><span class="fnt-16" id="filename"
-                                    >Attach your Document</span
+                                    >Attach your Project Document</span
                                   ></label
                                 >
                                 <div class="file-reset d-none">
@@ -272,6 +272,9 @@ color: red;
                                 File must be less than 2 MB
                               </li>
                             </ul>
+							<p class="label fnt-14 mt-3" style="font-weight: 800;color: #000;font-size: 15px;">
+                              No Resumes Please
+                            </p>
                           </div>
                         </div>
                         <div class="enquiry-form__item data-scroll">
