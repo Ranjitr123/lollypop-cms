@@ -11,7 +11,9 @@ get_header();
 .fnt-50.h1, h1.fnt-50 {
     font-size: 50px!important;
     line-height: 64px!important;
-}}
+}
+.imgstep{height: 55px; width: 80px; margin-top: -22px;}
+}
 .fnt-142{
     font-size: 24px;
     line-height: 35px;
