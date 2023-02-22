@@ -32,13 +32,13 @@ get_header();
                 <li class="contat-list__item col-12 col-md-4 data-scroll"><a class="contact d-flex flex-column bg-white card-hvr" href="<?php echo site_url(); ?>/blogs/">
                     <div class="mb-40"> 
                       <h3 class="fnt-30 fnt-800 mb-2 pb-md-1">Blogs</h3>
-                      <p class="fnt-20">Read our curated articles for designers</p>
+                      <p class="fnt-20">Read our curated articles for designers.</p>
                     </div>
                     <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Explore blogs</span></div></a></li>
                 <li class="contat-list__item col-12 col-md-4 data-scroll"><a class="contact d-flex flex-column bg-white card-hvr" href="<?php echo site_url(); ?>/projects/">
                     <div class="mb-40"> 
                       <h3 class="fnt-30 fnt-800 mb-2 pb-md-1">Projects</h3>
-                      <p class="fnt-20">Deep-drive into our recognized projects</p>
+                      <p class="fnt-20">Deep-drive into our recognized projects.</p>
                     </div>
                     <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Projects</span></div></a></li>
               </ul>
