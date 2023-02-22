@@ -168,12 +168,17 @@ color: red;
     line-height: 38px!important;
   }
   .imgstep{height: 55px; width: 80px; margin-top: -22px;}
+   .single-mb-slider-re{
+    flex-wrap: wrap !important;
+   }
   }
    @media (max-width:375px) {
   .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
   .mobpad{padding-bottom: 8px!important;}
   .sec-pad-51{ padding-top: 45px!important;}
   .pt-5 { padding-top: 1rem!important;}
+  .custom-control.custom-radio { width:100%;}
+  .sec-left21{margin-left:0px!important;}
   }
 
   .leapBanner{padding-top: 40px!important;}
@@ -181,6 +186,62 @@ color: red;
   .red-stroke.fnt-78::before{height: 36px;width: 5px;top: 20px;}
   .input-textarea .input__require{top: inherit;bottom: 10px;}
   .imgstep{height: 75px;width: 90px;margin-top: -22px;}
+  
+  .single-mb-slider-re{
+     justify-content:space-between;
+     display: flex;
+     gap: 10px;
+     flex-wrap: nowrap;
+  }
+  .lp-thumbnial--sm {
+    max-width: 280px;
+    width: 100%;
+}
+.custom-control.custom-radio {
+    width: 290px;
+}
+
+
+  /* .custom-control-label::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    display:none;
+}
+.custom-radio .custom-control-label::before {
+    border-radius: 50%;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: 50%/50% 50% no-repeat;
+    display:none;
+} */
+
+input[type="radio" i] {
+   display:none;
+}
+.sec-left21{
+    margin-left: -20px;
+}
+@media (max-width: 767px){
+.custom-control.custom-radio {
+    width: 100% !important;
+    padding-left: 2rem;
+}}
 </style>
 
 
@@ -236,7 +297,7 @@ color: red;
         </div>
       </section>
 	  
-	  <section class="pb-0 sec-pad-5 sec-pad-51" id="fourth">
+	  <!--<section class="sec-pd sec-pb" id="fourth">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -246,16 +307,39 @@ color: red;
                         </div>
                         <div class="col-12 col-md-11 offset-md-1 pt-5">
                         <div class="full-mb">
-                            <div class="row mb-45 single-mb-slider">
-                                <div class="col-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
+                            <div class="row mb-45 single-mb-slider-re">
+                                <div class="col-12 col-md-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex flex-column gap-3 mb-md-4 mb-lg-0">
                                     <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
-							</noscript></noscript><div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Design</h6><p class="lp-thumbnial__text mb-0">Branding,  Research, UX, UI and product illustrations</p></div></div></div><div class="col-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0"><div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
-							</noscript></noscript><div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Build</h6><p class="lp-thumbnial__text mb-0">Front-end Development, Web Apps, Mobile Apps & much more</p></div></div></div><div class="col-6 col-md-4 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0"><div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
-							<noscript></noscript><div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Funding</h6><p class="lp-thumbnial__text mb-0">Connect to the pool of global investors to scale your company</p></div></div></div></div></div></div></div></div></div></div>
-		</section>
+<div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Design</h6>
+<p class="lp-thumbnial__text mb-0">Branding,  Research, UX, UI and product illustrations</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6  lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
+    <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
+<div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Build</h6><p class="lp-thumbnial__text mb-0">Front-end Development, Web Apps, Mobile Apps & much more</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
+    <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
+<div class="lp-thumbnial__body pt-2 pt-md-4">
+    <h6 class="lp-thumbnial__heading">Funding</h6>
+    <p class="lp-thumbnial__text mb-0">Connect to the pool of global investors to scale your company</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>-->
   <!-- Enquiry Form-->
   <div id="enqform">
-    <section class="leapBanner">
+    <section class="leapBanner sec-pad-51">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -273,8 +357,19 @@ color: red;
                   >
 
                     <!--Heading-End-->
-		   <!--Form-start-->
-		   <?php 
+
+<section class="sec-pd-51 sec-pb sec-left21" id="fourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-md-11">
+                            <h2 class="fnt-50 fnt-800 mb-3 mb-md-2 pb-lg-1 data-scroll px-0" style="opacity: 1; transform: translateY(0px);">Let’s help you get there</h2>
+                        </div>
+                        <div class="col-12 col-md-11 pt-5">
+                        <div class="full-mb">
+									   <!--Form-start-->
+						<?php 
 			$utm_source=""; 
 		   if(isset($_GET['utm_source'])) $utm_source = $_GET['utm_source'];
 			   ?>
@@ -283,7 +378,50 @@ color: red;
                       method="POST"
                       data-parsley-validate=""
                     >
-                      <div class="enquiry-form">
+                            <div class="row mb-45 single-mb-slider-re">
+                            <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">
+  <div class="col-12  col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex flex-column gap-3 mb-md-4 mb-lg-0">
+                                    <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
+										<div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Design</h6>
+											<p class="lp-thumbnial__text mb-0">Branding,  Research, UX, UI and product illustrations</p>
+										</div>
+									</div>
+								</div>
+  </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">
+  <div class="col-12 col-md-6  lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
+									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
+										<div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Build</h6><p class="lp-thumbnial__text mb-0">Front-end Development, Web Apps, Mobile Apps & much more</p>
+										</div>
+									</div>
+								</div>
+  </label>
+</div>
+
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio3">
+  <div class="col-12 col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
+									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
+										<div class="lp-thumbnial__body pt-2 pt-md-4">
+											<h6 class="lp-thumbnial__heading">Funding</h6>
+												<p class="lp-thumbnial__text mb-0">Connect to the pool of global investors to scale your company</p>
+										</div>
+									</div>
+								</div>
+  </label>
+</div>
+							</div>
+						</div>
+					</div>
+				</div></div></div></div></section>
+
+                      <div class="enquiry-form pt-5">
                         <div class="enquiry-form__item data-scroll">
                           <div class="col-md-6 col-lg-8 px-0 mb-2">
                             <h3 class="fnt-28 fnt-800 mb-1">
