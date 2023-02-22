@@ -76,9 +76,7 @@ get_header();
 .pt-md-4 {
      padding-top: 0rem!important;
 }
-..imgstep{height: 55px;
-    width: 80px;
-    margin-top: -22px;}
+.imgstep{height: 55px; width: 80px; margin-top: -22px;}
 }
 .enquiry-head {
     margin-bottom: 40px!important;
