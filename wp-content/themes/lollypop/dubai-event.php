@@ -69,9 +69,6 @@ get_header();
     background: #FFFFFF;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.13);
 }
-.lp-thumbnial--sm:hover{
-    border: 1px solid #221429;
-}
 .sec-pad-5{padding-top:100px;}
 
 @media (min-width: 768px){
@@ -240,6 +237,13 @@ color: red;
     width: 100% !important;
     padding-left: 2rem;
 }}
+input[type="radio"]:checked + label {
+  border: 1px solid #221429;
+}
+
+.custom-control-input{
+   display:none;
+}
 </style>
 
 
@@ -378,12 +382,11 @@ color: red;
                     >
                             <div class="row mb-45 single-mb-slider-re">
                             <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="request_for" class="custom-control-input" value="Design">
   <label class="custom-control-label" for="customRadio1">
   <div class="col-12  col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex flex-column gap-3 mb-md-4 mb-lg-0">
                                     <div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
-										<div class="lp-thumbnial__body pt-2 pt-md-4">
-										  
-										<h6 class="lp-thumbnial__heading"><input type="radio" id="customRadio1" name="request_for" class="custom-control-input" value="Design"> Design</h6>
+										<div class="lp-thumbnial__body pt-2 pt-md-4"><h6 class="lp-thumbnial__heading">Design</h6>
 											<p class="lp-thumbnial__text mb-0">Branding,  Research, UX, UI and product illustrations</p>
 										</div>
 									</div>
@@ -391,11 +394,13 @@ color: red;
   </label>
 </div>
 <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="request_for" class="custom-control-input" value="Build">
   <label class="custom-control-label" for="customRadio2">
   <div class="col-12 col-md-6  lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
 									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
 										<div class="lp-thumbnial__body pt-2 pt-md-4">
-										<h6 class="lp-thumbnial__heading"><input type="radio" id="customRadio2" name="request_for" class="custom-control-input" value="Build"> Build</h6><p class="lp-thumbnial__text mb-0">Front-end Development, Web Apps, Mobile Apps & much more</p>
+										
+										<h6 class="lp-thumbnial__heading">Build</h6><p class="lp-thumbnial__text mb-0">Front-end Development, Web Apps, Mobile Apps & much more</p>
 										</div>
 									</div>
 								</div>
@@ -403,11 +408,12 @@ color: red;
 </div>
 
 <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="request_for" class="custom-control-input" value="Funding">
   <label class="custom-control-label" for="customRadio3">
   <div class="col-12 col-md-6 lp-thumbnial lp-thumbnial--sm d-md-flex mb-md-4 mb-lg-0">
 									<div class="lp-thumbnial__info data-scroll client-cards border-0 align-items-start text-center lp-thumbnial-borderlft" style="opacity: 1; transform: translateY(0px);">
 										<div class="lp-thumbnial__body pt-2 pt-md-4">
-											<h6 class="lp-thumbnial__heading"><input type="radio" id="customRadio3" name="request_for" class="custom-control-input" value="Funding"> Funding</h6>
+											<h6 class="lp-thumbnial__heading">Funding</h6>
 												<p class="lp-thumbnial__text mb-0">Connect to the pool of global investors to scale your company</p>
 										</div>
 									</div>
