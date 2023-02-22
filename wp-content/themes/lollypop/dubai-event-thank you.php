@@ -33,34 +33,16 @@ get_header();
                       <h3 class="fnt-30 fnt-800 mb-2 pb-md-1">Blogs</h3>
                       <p class="fnt-20">Read our curated articles for designers</p>
                     </div>
-                    <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Blogs and Whitepapers</span></div></a></li>
-                <li class="contat-list__item col-12 col-md-4 data-scroll"><a class="contact d-flex flex-column bg-white card-hvr" href="<?php echo site_url(); ?>/careers/">
+                    <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Explore blogs</span></div></a></li>
+                <li class="contat-list__item col-12 col-md-4 data-scroll"><a class="contact d-flex flex-column bg-white card-hvr" href="<?php echo site_url(); ?>/projects/">
                     <div class="mb-40"> 
-                      <h3 class="fnt-30 fnt-800 mb-2 pb-md-1">Join Tribe</h3>
-                      <p class="fnt-20">Do you wish to be a part of our tribe?</p>
+                      <h3 class="fnt-30 fnt-800 mb-2 pb-md-1">Projects</h3>
+                      <p class="fnt-20">Deep-drive into our recognized projects</p>
                     </div>
-                    <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Careers</span></div></a></li>
+                    <div class="mt-auto"> <span class="hvr-line clr-second text-capitalize">Projects</span></div></a></li>
               </ul>
               </div>
               </div>
-          <!--div class="row col-12 col-md-11 col-lg-10 mx-auto">
-            <div class="lets-continue data-scroll">
-              <div class="lets-continue__head text-center"> 
-                <h3 class="fnt-40 fnt-800">Let’s continue</h3>
-              </div>
-              <div class="lets-continue__body d-flex flex-wrap">
-                <div class="lets__disc">
-                  <p class="fnt-24">Designing a unique experience for India’s leading telecom</p><a class="fnt-14 clr-second hvr-line" href="<?php echo site_url(); ?>/myvi-app/">See the Case study</a>
-                </div>
-                <div class="lets__disc">
-                  <p class="fnt-24">UX trends 2022</p><a class="fnt-14 clr-second hvr-line" href="#">Read an Article</a>
-                </div>
-                <div class="lets__disc">
-                  <p class="fnt-24">Designing for IoT & Wearables</p><a class="fnt-14 clr-second hvr-line" href="<?php echo site_url(); ?>/designing-wearable-and-iot-solutions/">Read the Whitepaper</a>
-                </div>
-              </div>
-            </div>
-          </div-->
         </div>
       </section>
       </div>
