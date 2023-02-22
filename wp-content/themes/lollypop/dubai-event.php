@@ -178,7 +178,6 @@ color: red;
   .sec-pad-51{ padding-top: 45px!important;}
   .pt-5 { padding-top: 1rem!important;}
   .custom-control.custom-radio { width:100%;}
-  .sec-left21{margin-left:0px!important;}
   }
 
   .leapBanner{padding-top: 40px!important;}
