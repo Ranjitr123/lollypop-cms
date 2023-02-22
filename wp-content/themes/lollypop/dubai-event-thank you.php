@@ -5,8 +5,9 @@
 
 get_header();
 ?>
-
-
+<style>
+@media (max-width:767px) {.tha-max{max-width:280px}}
+</style>
  <div id="success-form">
            <section class="sec-pd sec-bnr">
         <div class="container"> 
@@ -15,7 +16,7 @@ get_header();
               <div class="col-lg-7 col-xl-8 col-xxl-12 px-0 mx-auto d-flex flex-column align-items-center justify-content-center text-center"><img class="img-fluid mb-40" src="<?php echo get_template_directory_uri(); ?>/img/thank-you.webp" alt="Image" data-aos="zoom-in-down" data-aos-duration="2000"></div>
               <div class="text-center col-md-11 col-lg-11 mx-auto">
                 <h3 class="fnt-40 fnt-800 mb-2 data-scroll">Thanks for getting in touch!</h3>
-                <p class="fnt-24 data-scroll col-lg-11 col-xxl-9 mx-auto">We have received your inquiry and our Design Consultant will reach out to you soon</p>
+                <p class="fnt-24 data-scroll col-lg-11 col-xxl-9 mx-auto tha-max">We have received your inquiry and our Design Consultant will reach out to you soon</p>
               </div>
             </div>
           </div>
