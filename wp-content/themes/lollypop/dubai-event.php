@@ -169,6 +169,9 @@ color: red;
   }
   .imgstep{height: 55px; width: 80px; margin-top: -22px;}
   }
+   @media (max-width:375px) {
+  .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
+  }
 
   .leapBanner{padding-top: 40px!important;}
   .mx923{max-width: 923px;width: 100%;margin: 0 auto;}
