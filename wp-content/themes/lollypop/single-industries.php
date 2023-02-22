@@ -60,14 +60,26 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0"><?php the_field('heading'); ?></h1>
                     <p class="fnt-24 col-md-10 col-lg-8 px-0"><?php the_field('short_title_description'); ?></p>
 		  </div>
-<!--<div class="cta">
-      <h2 class="fnt-28 fnt-800 mb-3"><?php the_field('cta_heading'); ?></h2>
-    <p class="fnt-24"><?php the_field('cta_short_title_description'); ?></p> 
-    <a class="clr-second mt-4 mt-md-5 fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Get in Touch</a>
-</div>-->
                 </div>
               </div>
-              <div class=""><img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image"></div>
+             <!-- <div class=""><img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image"></div> -->
+			 <div class="reveal-project">
+               <?php $galImage = get_field('banner'); ?>
+              <?php if($galImage !=''){ ?>
+              <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image">
+              <?php } ?>
+              
+               <?php $bannerVideo = get_field('banner_video_link'); ?>
+              <?php if($bannerVideo !=''){ ?>
+                <div class="play-video-on-scroll">
+                  <div id="play2-out" style="display:none">
+                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider');?>" data-plyr-embed-id="<?php the_field('banner_video_link');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_link');?>" provider="<?php the_field('banner_video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  </video>
+                </div>
+               <?php } ?>
+              </div>
             </div>
           </div>
         </div>
