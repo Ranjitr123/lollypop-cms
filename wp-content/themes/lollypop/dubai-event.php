@@ -154,6 +154,7 @@ color: red;
     .lollypop-tabs .nav-link {
       font-size: 16px !important;
     }
+	.imgstep{height: 55px; width: 80px; margin-top: -22px;}
   }
   .lollypop-tabs .nav-link {
     font-weight: 800 !important;
@@ -163,7 +164,9 @@ color: red;
   .fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
 	font-size: 32px!important;
     line-height: 38px!important;
-  }}
+  }
+  .imgstep{height: 55px; width: 80px; margin-top: -22px;}
+  }
 
   .leapBanner{padding-top: 40px!important;}
   .mx923{max-width: 923px;width: 100%;margin: 0 auto;}
