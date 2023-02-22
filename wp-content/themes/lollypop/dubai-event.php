@@ -173,6 +173,7 @@ color: red;
   .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
   .mobpad{padding-bottom: 8px!important;}
   .sec-pad-51{ padding-top: 45px!important;}
+  .pt-5 { padding-top: 1rem!important;}
   }
 
   .leapBanner{padding-top: 40px!important;}
