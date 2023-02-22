@@ -201,7 +201,7 @@ color: red;
                     >
                       <div class="enquiry-form">
                         <div class="enquiry-form__item data-scroll">
-                          <div class="col-md-6 col-lg-8 px-0 mb-2">
+                          <div class="col-md-6 col-lg-10 px-0 mb-2">
                             <h3 class="fnt-28 fnt-800 mb-1">
                               Tell us about your project's requirements.
                             </h3>
