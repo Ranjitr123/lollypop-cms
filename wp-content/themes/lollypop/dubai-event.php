@@ -172,6 +172,7 @@ color: red;
    @media (max-width:375px) {
   .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
   .mobpad{padding-bottom: 8px!important;}
+  .sec-pad-51{ padding-top: 45px!important;}
   }
 
   .leapBanner{padding-top: 40px!important;}
@@ -234,7 +235,7 @@ color: red;
         </div>
       </section>
 	  
-	  <section class="pb-0 sec-pad-5" id="fourth">
+	  <section class="pb-0 sec-pad-51" id="fourth">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
