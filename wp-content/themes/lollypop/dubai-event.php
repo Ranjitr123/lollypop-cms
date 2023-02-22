@@ -168,6 +168,9 @@ color: red;
    .single-mb-slider-re{
     flex-wrap: wrap !important;
    }
+   .lp-thumbnial--sm {
+    max-width: 100% !important;
+}
   }
    @media (max-width:375px) {
   .imgstep{height: 55px!important; width: 80px!important; margin-top: -22px!important;}
