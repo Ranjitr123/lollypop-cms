@@ -2,6 +2,20 @@
 <html lang="en" data-page="home">
 
 <head>
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-TQBBF4Z');</script>
+
+<!-- End Google Tag Manager -->
+
 <?php if( get_field('keywords') ): ?>
 	<meta name="keywords" content="<?php the_field('keywords')?>">
 <?php endif; ?>
@@ -343,6 +357,14 @@ $header = new WP_Query( $args );
 </div>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQBBF4Z"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="bd-brd"></div>
 <div class="loader">
 <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
