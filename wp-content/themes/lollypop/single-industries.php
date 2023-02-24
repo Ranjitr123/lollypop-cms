@@ -10,7 +10,7 @@ section.sec-pd51{
     padding-bottom: 160px;
 }
 @media(max-width:767px){
-.sec-pd51{ padding-bottom: 71px;
+.sec-pd51{ padding-bottom: 71px!important;
 }}
 .cta{
 margin-bottom:80px;
