@@ -9,6 +9,9 @@ section.sec-pd51.last {
 section.sec-pd51{
     padding-bottom: 160px;
 }
+@media(max-width:767px){
+.sec-pd51{ padding-bottom: 71px;
+}}
 .cta{
 margin-bottom:80px;
 padding-left:40px;
