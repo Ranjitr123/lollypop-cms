@@ -291,7 +291,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                   <div id="play2-out" style="display:none">
                     <div id="play2" data-plyr-provider="<?php the_sub_field('video_provider');?>" data-plyr-embed-id="<?php the_sub_field('video_link');?>"></div>
                   </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_link');?>" provider="<?php the_sub_field('video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_link');?>" provider="<?php the_sub_field('video_provider');?>" poster="<?php the_sub_field('video_poster');?>">
                   </video>
 				  <?php endwhile; endif; ?>
                 </div>
