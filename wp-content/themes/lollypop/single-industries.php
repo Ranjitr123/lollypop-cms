@@ -3,6 +3,12 @@
 get_header();
 ?>
 <style>
+section.sec-pd51.last {
+    padding-bottom: 160px;
+}
+section.sec-pd51{
+    padding-bottom: 160px;
+}
 .cta{
 margin-bottom:80px;
 padding-left:40px;
@@ -270,6 +276,27 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                
               </ul>
               <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo get_site_url(); ?>/project-enquiry/">Let’s talk</a>
+            </div>
+          </div>
+        </div>
+      </section>
+	  <!-------ew----------------->
+	  <section class="sec-pd51">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+			 <div class="reveal-project">              
+                <div class="play-video-on-scroll">
+				<?php if( have_rows('specific_video_section') ) : while( have_rows('specific_video_section') ): the_row(); ?>
+                  <div id="play2-out" style="display:none">
+                    <div id="play2" data-plyr-provider="<?php the_sub_field('video_provider');?>" data-plyr-embed-id="<?php the_sub_field('video_link');?>"></div>
+                  </div>
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_link');?>" provider="<?php the_sub_field('video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  </video>
+				  <?php endwhile; endif; ?>
+                </div>
+              </div>  
+			  
             </div>
           </div>
         </div>
