@@ -468,7 +468,7 @@ $header = new WP_Query( $args );
 </a>
 </div>
 <div class="col-3 location-drop-list__item">
-<a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
+<a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
 <div class="location">
 <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/vietnam.webp" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
@@ -610,7 +610,7 @@ $header = new WP_Query( $args );
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">India</a>
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a>
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">UAE</a>
-<a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">Vietnam</a>
+<a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a>
 </div>
 </div>
 </div>
