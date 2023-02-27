@@ -532,12 +532,12 @@ $header = new WP_Query( $args );
 		<div class="langue-container">
 			<form action="#">
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test1" name="radio-group"  value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam-vie/">
+					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
 					<label for="test1">Tiếng Việt</label>
 				</p>
 				 <div class="hr-1"></div>
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test2" name="radio-group" value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam/" checked>
+					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/" checked>
 					<label for="test2">English</label>
 				</p>
 			</form>
