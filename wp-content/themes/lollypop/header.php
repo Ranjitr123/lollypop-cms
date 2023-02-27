@@ -116,6 +116,7 @@ else
 		 line-height: 75px;
 		 letter-spacing: -2px;
 	}
+	.sec-last1{padding-bottom:25px!important;}
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
