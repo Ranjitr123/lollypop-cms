@@ -410,7 +410,7 @@ else
 
 .secut{
     position:fixed;
-    top:10%;
+    top:9%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
 
