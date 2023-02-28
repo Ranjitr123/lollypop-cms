@@ -534,7 +534,7 @@ $header = new WP_Query( $args );
 <div class="main-links main-links--sub d-md-flex flex-column">
 <!-- For Desktop-->
 <div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between"> 
-<div class="d-md-flex hvr-m flex-column justify-content-end">
+<div class="d-md-flex hvr-m flex-column">
 <div>
 <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 </div>
