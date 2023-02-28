@@ -171,7 +171,7 @@ else
    }
 .sec-last1{padding-bottom:25px!important;}
 .menu-open .js-hide .secut{
-	 display:none;
+	 display:none!important;
    }
 
 }
@@ -182,7 +182,7 @@ else
 		 letter-spacing: -4px;
 	}
 	.menu-open .js-hide .secut{
-	 display:none;
+	 display:none!important;
    }
 }
  @media (min-width: 1200px) {
@@ -192,7 +192,7 @@ else
 		 letter-spacing: -4px;
 	}
 	.menu-open .js-hide .secut{
-	 display:none;
+	 display:none!important;
    }
 }
 .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
