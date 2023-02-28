@@ -414,6 +414,12 @@ else
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
 .menu-open .lang-mob{opacity:0!important;pointer-events:none;}
+@media only screen and (min-width: 1024px) {
+	.secut{
+		position:fixed;
+		top:10%;
+	}
+}
 </style>
 
 </head>
