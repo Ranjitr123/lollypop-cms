@@ -166,10 +166,6 @@ else
 	color: #221429 !important;
    }
 	.sec-last1{padding-bottom:25px!important;}
-	.menu-open .js-hide .secut{
-	 display:none!important;
-   }
-
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -177,9 +173,6 @@ else
 		 line-height: 85px;
 		 letter-spacing: -4px;
 	}
-	.menu-open .js-hide .secut{
-	 display:none!important;
-   }
 }
  @media (min-width: 1200px) {
 	 .fnt-100 {
@@ -187,9 +180,6 @@ else
 		 line-height: 104px;
 		 letter-spacing: -4px;
 	}
-	.menu-open .js-hide .secut{
-	 display:none!important;
-   }
 }
 .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
 	 background-color: #fff !important;
