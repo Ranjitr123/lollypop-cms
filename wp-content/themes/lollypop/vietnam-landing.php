@@ -471,7 +471,8 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <?php if( have_rows('get_in_touch') ) : while( have_rows('get_in_touch') ): the_row(); ?>
 <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0"><?php the_sub_field('small_title'); ?></span>
 	<h2 class="fnt-50 fnt-800 clr-white"><?php the_sub_field('title'); ?></h2>
-	</div><a class="web-btn web-btn--red" href="<?php the_sub_field('cta_url'); ?>">Get in Touch</a>
+	</div>
+	<a class="web-btn web-btn--red" href="<?php the_sub_field('cta_url'); ?>">Kết nối ngay</a>
 <?php wp_reset_postdata(); endwhile; endif;?>
 </div>
 </div>
