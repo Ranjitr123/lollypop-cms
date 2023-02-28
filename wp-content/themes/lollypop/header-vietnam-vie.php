@@ -414,6 +414,24 @@ else
 		position:fixed;
 		top:10%;
 	}
+	#myDIV {
+		 left: -54px;
+		 width: 150px;
+	}
+	.triangle {
+    margin: 0 15px;
+		}
+		
+ .triangle-4 {
+    width: 0px;
+    height: 0px;
+	bottom: 6px;
+    border-bottom: solid 15px #FFFFFF;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+    position: relative;
+    left: 74%;
+}
 }
 </style>
 
