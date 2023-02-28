@@ -408,6 +408,7 @@ else
     top:9%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
+.menu-open .lang-mob{opacity:0!important;pointer-events:none;}
 </style>
 
 </head>
@@ -514,7 +515,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
- <div class="d-md-flex hvr-m flex-column justify-content-end">
+ <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide" id="drop-menu">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
