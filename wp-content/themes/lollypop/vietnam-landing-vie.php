@@ -29,6 +29,7 @@ width: 322px; height:211px!important; }
 		left:44% !important;
 		top:10% !important;
 	}
+	.swiper_pad{padding-left:0px!important;}
 
 }
 
@@ -233,7 +234,7 @@ if($locationVideo !=''){
 </div>
 </div>
 </div>
-<div class="fluid-width">
+<div class="fluid-width swiper_pad">
 <div class="row">
 <div class="col-12 px-md-0">
 <ul class="px-0 lp-awards-list d-flex four-card-slider">
@@ -504,8 +505,8 @@ get_footer();
         type: "fraction",
 		clickable: true,
       },
-	  mousewheel: true,
-	   grabCursor: "true",
+	 // mousewheel: true,
+	 //  grabCursor: "true",
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
