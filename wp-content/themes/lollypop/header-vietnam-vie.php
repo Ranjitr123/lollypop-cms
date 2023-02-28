@@ -415,7 +415,7 @@ else
 		top:10%;
 	}
 	#myDIV {
-		 left: -54px;
+		 left: -19px;
 		 width: 150px;
 	}
 	.triangle {
@@ -425,12 +425,12 @@ else
  .triangle-4 {
     width: 0px;
     height: 0px;
-	bottom: 6px;
+	bottom: 0px;
     border-bottom: solid 15px #FFFFFF;
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
     position: relative;
-    left: 74%;
+    left: 67%;
 }
 }
 </style>
