@@ -166,6 +166,9 @@ else
 	color: #221429 !important;
    }
 	.sec-last1{padding-bottom:25px!important;}
+	.menu-open .js-hide .secut{
+	 display:none;
+   }
 
 }
  @media (min-width: 992px) {
@@ -174,6 +177,9 @@ else
 		 line-height: 85px;
 		 letter-spacing: -4px;
 	}
+	.menu-open .js-hide .secut{
+	 display:none;
+   }
 }
  @media (min-width: 1200px) {
 	 .fnt-100 {
@@ -181,6 +187,9 @@ else
 		 line-height: 104px;
 		 letter-spacing: -4px;
 	}
+	.menu-open .js-hide .secut{
+	 display:none;
+   }
 }
 .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
 	 background-color: #fff !important;
@@ -527,7 +536,7 @@ $header = new WP_Query( $args );
 		<div class="langue-container">
 			<form action="#">
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/" checked>
+					<input type="radio" id="test1" name="radio-group"  value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam-vie/" checked>
 					<label for="test1">Tiếng Việt</label>
 				</p>
 				 <div class="hr-1"></div>

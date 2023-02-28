@@ -170,6 +170,9 @@ else
 	color: #221429 !important;
    }
 .sec-last1{padding-bottom:25px!important;}
+.menu-open .js-hide .secut{
+	 display:none;
+   }
 
 }
  @media (min-width: 992px) {
@@ -178,6 +181,9 @@ else
 		 line-height: 85px;
 		 letter-spacing: -4px;
 	}
+	.menu-open .js-hide .secut{
+	 display:none;
+   }
 }
  @media (min-width: 1200px) {
 	 .fnt-100 {
@@ -185,6 +191,9 @@ else
 		 line-height: 104px;
 		 letter-spacing: -4px;
 	}
+	.menu-open .js-hide .secut{
+	 display:none;
+   }
 }
 .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
 	 background-color: #fff !important;
@@ -413,6 +422,7 @@ else
     top:10%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
+
 </style>
 
 </head>
