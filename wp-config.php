@@ -1,6 +1,6 @@
 <?php
 // Allow editor fastest cache access
-define(WPFC_TOOLBAR_FOR_EDITOR, true);
+// define(WPFC_TOOLBAR_FOR_EDITOR, true);
 
 /**
  * The base configuration for WordPress
@@ -26,10 +26,10 @@ define(WPFC_TOOLBAR_FOR_EDITOR, true);
 define( 'DB_NAME', 'lollypop' );
 
 /** Database username */
-define( 'DB_USER', 'lollypopdbuserprod' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'L0llyp0p@123' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -85,8 +85,8 @@ define( 'WP_DEBUG', false );
 
 
 define('ALLOW_UNFILTERED_UPLOADS', true);
-define('WP_HOME','https://lollypop.design'); 
-define('WP_SITEURL','https://lollypop.design');
+// define('WP_HOME','https://lollypop.design'); 
+// define('WP_SITEURL','https://lollypop.design');
 //define('FS_METHOD', 'direct');
 
 
