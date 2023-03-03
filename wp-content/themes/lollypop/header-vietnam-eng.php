@@ -34,28 +34,45 @@
 
   gtag('config', 'UA-42458763-1');
 </script>
-
+<!-- End Google Tag Manager -->
+ 
+<!-- translate button -->
 <script>
-$(document).mouseup(function(e) {
-  var container = $('.dropdown-content');
-  var menu = $('#drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
-});
+}
 
-$(document).ready(function() {
-  $("#drop-menu").click(function() {
-    var dropdownContent = $(".dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-});
 </script>
 
+<script>
+  function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+<script>
+  var menu = document.getElementById('drop-menu');
+
+  // Add an event listener to the document
+  document.addEventListener('click', function(event) {
+
+    // Check if the clicked element is outside of the menu
+    if (!menu.contains(event.target)) {
+      // If so, hide the menu
+      menu.style.display = 'none';
+    }
+  });
+</script>
 <script>
 
 $(window).scroll(function() {
@@ -140,7 +157,7 @@ else
 		 line-height: 75px;
 		 letter-spacing: -2px;
 	}
-  
+
 	
 }
 /* dropdown */
@@ -153,11 +170,6 @@ else
 	color: #221429 !important;
    }
 .sec-last1{padding-bottom:25px!important;}
-
-.mobile-space{
-  margin-bottom:1rem;
-}
-
 
 }
  @media (min-width: 992px) {
@@ -187,7 +199,7 @@ else
     position: absolute;
     right: -9px;
 }
-#myDIV {
+#myDIV, #myDIV1 {
 	display:none;
 	position: absolute;
 	top: 30px;
@@ -536,7 +548,7 @@ $header = new WP_Query( $args );
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide" id="drop-menu">
 	 <div class="dropdown-ver d-flex">
-			<a href="javascript:void(0)">
+			<a href="javascript:void(0)" onclick="myFunction()">
 			   <p class="">ENG</p>
 		    </a>
 	 </div>
@@ -607,7 +619,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 <!-- For mobile-->
-<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none mobile-space">
+<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none">
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/careers">Careers</a>

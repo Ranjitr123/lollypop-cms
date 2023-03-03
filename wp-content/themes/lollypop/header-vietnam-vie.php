@@ -38,26 +38,42 @@
  
 <!-- translate button -->
 <script>
-$(document).mouseup(function(e) {
-  var container = $('.dropdown-content');
-  var menu = $('#drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
-});
+}
 
-$(document).ready(function() {
-  $("#drop-menu").click(function() {
-    var dropdownContent = $(".dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-});
 </script>
 
+<script>
+  function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+<script>
+  var menu = document.getElementById('drop-menu');
+
+  // Add an event listener to the document
+  document.addEventListener('click', function(event) {
+
+    // Check if the clicked element is outside of the menu
+    if (!menu.contains(event.target)) {
+      // If so, hide the menu
+      menu.style.display = 'none';
+    }
+  });
+</script>
 <script>
 
 $(window).scroll(function() {
@@ -289,10 +305,6 @@ else
 	font-weight:600;
 	margin-top:6px;
 }
-.mobile-space{
-  margin-bottom:1rem;
-}
-
  @media (max-width: 768px) {
 	 #myDIV {
 		 left:8px;
@@ -530,7 +542,7 @@ $header = new WP_Query( $args );
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide" id="drop-menu">
 	 <div class="dropdown-ver d-flex">
-			<a href="javascript:void(0)">
+			<a href="javascript:void(0)" onclick="myFunction()">
 			   <p class="">VIE</p>
 		    </a>
 	 </div>
@@ -555,6 +567,31 @@ $header = new WP_Query( $args );
 </div>
 
 </div>
+
+<!--<div class="secut col-1 scroll-hide" id="drop-menu">
+	 <div class="dropdown-ver d-flex">
+			<a href="javascript:void(0)" onclick="myFunction()">
+			   <p class="">VIE</p>
+		    </a>
+	 </div>
+	 <div class="dropdown-content" id="myDIV">
+		<div class="triangle triangle-4"></div>
+		<div class="langue-container">
+			<form action="#" method="post">
+				<p>
+					<input type="radio" id="test1" name="radio-group" value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam-vie/" checked>
+					<label for="test1">Tiếng Việt</label>
+				</p>
+				 <hr>
+				<p>
+					<input type="radio" id="test2" name="radio-group" value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam/">
+					<label for="test2">English</label>
+				</p>
+				
+			</form>					
+		</div>
+	</div>
+</div>-->
 </div>
 </div>
 </div>
@@ -602,7 +639,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 <!-- For mobile-->
-<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none mobile-space">
+<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none">
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/careers">Careers</a>
