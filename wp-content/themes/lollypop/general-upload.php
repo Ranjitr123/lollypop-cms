@@ -22,14 +22,16 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;
 $mail->Host = "smtp.gmail.com";
-$mail->Username = "marketing@lollypop.design";
-$mail->Password = "M@rketing@LL";
+// $mail->Username = "marketing@lollypop.design";
+// $mail->Password = "M@rketing@LL";
+$mail->Username = "hello@lollypop.design";
+$mail->Password = "L0!!6P0p@101";
 
 $mail->IsHTML(true);
-$mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
+$mail->addAddress('hello@lollypop.design', 'Lollypop Design');
 
-$mail->SetFrom("marketing@lollypop.design", "Lollypop Design");
-$mail->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
+$mail->SetFrom("hello@lollypop.design", "Lollypop Design");
+$mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
 $mail->Subject = "General Enquiry ";
 $content .=
 '<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{backg
@@ -57,13 +59,13 @@ $mailReply->SMTPAuth = true;
 $mailReply->SMTPSecure = "tls";
 $mailReply->Port = 587;
 $mailReply->Host = "smtp.gmail.com";
-$mailReply->Username = "marketing@lollypop.design";
-$mailReply->Password = "L0llyp0p@TL";
+$mailReply->Username = "hello@lollypop.design";
+$mailReply->Password = "L0!!6P0p@101";
 
 $mailReply->IsHTML(true);
 $mailReply->addAddress($_POST['email'], $_POST['full_name']);
-$mailReply->SetFrom("marketing@lollypop.design", "Lollypop Design");
-$mailReply->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
+$mailReply->SetFrom("hello@lollypop.design", "Lollypop Design");
+$mailReply->AddReplyTo("hello@lollypop.design", "Lollypop Design");
 $mailReply->Subject = "Thank you for contacting Lollypop Design Studio";
 $contentReply .=
 	'<html><head><style>.asdjhdagsd{background: url(https://lollypop.design/email-template-image.png) no-repeat center center;background-size: contain;padding:40px;height:130px;}.sdfsdfsfdsdfsdfsf{background: url(https://lollypop.design/company-email-template-logo.png) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><table border="0" cellspacing="0" cellpadding="0" width="100%" style="min-width:600px;padding:80px" bgcolor="#E5E5E5"><tbody><tr><td><table border="0" cellspacing="0" cellpadding="0" width="720" bgcolor="#ffffff" align="center" style="width:600px"><tbody><tr><td style="padding: 48px;font-family:Helvetica, sans-serif"><table border="0" width="100%" align="left" ><tbody><tr><td width="100%"><table border="0" cellspacing="0" cellpadding="0" align="left"><tbody><tr><td style="padding-bottom: 24px"><div class="asdjhdagsd"><div></td></tr><tr><td align="center" style="width:100%;font-size:32px;padding: 8px 0;font-weight:bold;letter-spacing:-1.2px;line-height:38px;color:#333333;">Thank you for contacting us! </td></tr><tr><td align="left" style="width:100%;padding: 8px 0;font-size:16px;font-weight:400;line-height:24px;color:#333333;font-family:Helvetica, sans-serif"> Hello ' .
