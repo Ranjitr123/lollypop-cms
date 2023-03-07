@@ -67,7 +67,7 @@ get_header(); ?>
               
               <div class="blog-main-img position-relative">
                <a href="<?php the_permalink(); ?>">
-                <div class="reveal blog-main-img__img"><img class="img-fluid" src="<?php the_field('banner_image') ?>" alt="Image"></div>
+                <div class="reveal blog-main-img__img"><img class="img-fluid" src="<?php the_field('banner_image') ?><?php the_field('banner_thumbnail_image_for_video') ?>" alt="Image"></div>
                 <div class="blog-info col-12 col-md-5">
                   <div class="d-flex flex-column">
                     <div>
