@@ -64,6 +64,13 @@ get_header();
                 </div>
                <?php } ?>
 			   
+			   				
+				<!-------you tube link------->
+				<div class="reveal"> <!---desktop-->         
+					<div class="d-none d-lg-block"><?php the_field('you_tube_video') ?></div>
+				</div> 
+				<!------end you tube link------->
+			   
             </div>
           </div>
         </div>
