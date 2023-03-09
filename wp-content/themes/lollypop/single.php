@@ -50,6 +50,12 @@ get_header();
 					<div class="d-none d-lg-none d-md-block" style="height:285px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
 				</div> 
 				
+				<!-------you tube link------->
+				<div class="reveal"> <!---desktop-->         
+					<div class="d-none d-lg-block" style="height:405px; width:100%;"><?php the_field('you_tube_video') ?></div>
+				</div> 
+				<!------end you tube link------->
+				
 			 </div>
               <?php } ?>
 			  
