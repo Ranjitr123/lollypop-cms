@@ -71,7 +71,7 @@ get_header();
 						<!--<a href="<?php the_field('you_tube_video') ?>">
 							<img src="<?php the_field('you_tube_poster_image') ?>" alt="img">
 						</a>-->
-						<iframe width="100%" height="auto" src="<?php the_field('you_tube_video') ?>"></iframe>
+						<iframe width="100%" height="415px" src="<?php the_field('you_tube_video') ?>"></iframe>
 					</div>
 				</div> 
 				
