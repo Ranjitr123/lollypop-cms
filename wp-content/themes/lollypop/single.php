@@ -67,8 +67,14 @@ get_header();
 			   				
 				<!-------you tube link------->
 				<div class="reveal"> <!---desktop-->         
-					<div class="d-none d-lg-block"><a href="<?php the_field('you_tube_video') ?>"><img src="<?php the_field('you_tube_poster_image') ?>" alt="img"></a></div>
+					<div class="d-none d-lg-block">
+						<!--<a href="<?php the_field('you_tube_video') ?>">
+							<img src="<?php the_field('you_tube_poster_image') ?>" alt="img">
+						</a>-->
+						<iframe width="100%" height="auto" src="<?php the_field('you_tube_video') ?>"></iframe>
+					</div>
 				</div> 
+				
 				<!------end you tube link------->
 			   
             </div>
