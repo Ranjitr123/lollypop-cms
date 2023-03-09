@@ -66,6 +66,9 @@ get_header();
 			   
 			   				
 				<!-------you tube link------->
+				<?php $banner_youtube = get_field('you_tube_video');
+                     if($banner_youtube !=''){ ?>
+				<div class="position-relative">
 				<div class="reveal"> <!---desktop-->         
 					<div class="d-none d-lg-block">
 						<!--<a href="<?php the_field('you_tube_video') ?>">
@@ -73,8 +76,9 @@ get_header();
 						</a>-->
 						<iframe width="100%" height="415px" src="<?php the_field('you_tube_video') ?>"></iframe>
 					</div>
-				</div> 
-				
+				</div>
+				</div>	
+				<?php } ?>
 				<!------end you tube link------->
 			   
             </div>
