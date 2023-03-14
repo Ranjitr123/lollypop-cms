@@ -63,7 +63,7 @@ width: 322px; height:211px!important; }
 	line-height: 150%;
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
-	max-width:606px;
+	max-width:645px;
 	text-align:left;
 	padding-bottom:14px;
 	padding-top:16px;
