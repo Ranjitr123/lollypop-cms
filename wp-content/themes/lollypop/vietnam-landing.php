@@ -225,7 +225,7 @@ if($locationVideo !=''){
 <div class="row"> 
 <div class="col-12 col-md-10 col-lg-8 mx-auto pb-2 mb-md-0 pb-md-0">
 <div class="row mb-45 justify-content-between">
-<div class="col-md-6 col-lg-8 fluid-offset"> 
+<div class="col-md-6 col-lg-9 fluid-offset"> 
 <div class="lp-awards__left">
 <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('design_studio_content'); ?></span>
 <a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
