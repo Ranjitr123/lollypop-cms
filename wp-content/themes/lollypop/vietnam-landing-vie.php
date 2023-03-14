@@ -255,7 +255,7 @@ if($locationVideo !=''){
 <div class="row"> 
 <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
 <div class="row mb-45 justify-content-between">
-<div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
+<div class="col-md-9 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
 <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
 
