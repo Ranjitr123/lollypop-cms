@@ -182,7 +182,8 @@ if($locationVideo !=''){
 <div class="col-12 col-md-7">
 <div class="profile d-flex flex-column">
 <div class="profile__about"> 
-<p class="fnt-16 clr-black-354 data-scroll"><?php the_sub_field('content'); ?></p>
+<?php the_sub_field('content'); ?>
+<!--<p class="fnt-16 clr-black-354 data-scroll"><?php //the_sub_field('content'); ?></p>-->
 </div>
 <div>
 
