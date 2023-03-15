@@ -37,42 +37,37 @@
 <!-- End Google Tag Manager -->
  
 <!-- translate button -->
+
 <script>
-  function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.dropdown-content');
+  var menu = $('#drop-menu');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
   }
-}
+});
 
-</script>
-
-<script>
-  function myFunction1() {
-  var x = document.getElementById("myDIV1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-</script>
-<script>
-  var menu = document.getElementById('drop-menu');
-
-  // Add an event listener to the document
-  document.addEventListener('click', function(event) {
-
-    // Check if the clicked element is outside of the menu
-    if (!menu.contains(event.target)) {
-      // If so, hide the menu
-      menu.style.display = 'none';
+$(document).ready(function() {
+  $("#drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
     }
   });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
 </script>
+
+
 <script>
 
 $(window).scroll(function() {
