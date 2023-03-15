@@ -80,6 +80,11 @@ a.hvr-line {
 .mb-15 {
     margin-bottom: 25px;
 }}
+@media (min-width: 768px){
+.portfolio-title {
+    padding-top: 9px;
+    padding-bottom: 10px;
+}}
 </style>
 
 <main class="main">
