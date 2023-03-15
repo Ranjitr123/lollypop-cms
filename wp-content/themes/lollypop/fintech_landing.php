@@ -163,7 +163,7 @@ a.hvr-line {
 		<?php if( have_rows('portfolio') ) : while( have_rows('portfolio') ): the_row(); ?>
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
-				<div class="mb-4 pb-md-2 col-md-11 px-0">
+				<div class="mb-4 pb-md-2 col-md-12 px-0">
                <?php if( have_rows('project_section_for_page') ) : while( have_rows('project_section_for_page') ): the_row(); ?>
                 <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll">
                    <?php the_sub_field('project_title'); ?></h3>
