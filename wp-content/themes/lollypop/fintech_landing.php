@@ -81,6 +81,11 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-top: 9px;
     padding-bottom: 10px;
 }}
+@media (min-width: 992px){
+.values-list .h6, .values-list h6 {
+    font-size: 35px;
+    line-height: 45px;
+}}
 </style>
 
 <main class="main">
