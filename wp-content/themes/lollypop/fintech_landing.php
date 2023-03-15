@@ -81,7 +81,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-top: 9px;
     padding-bottom: 10px;
 }}
-.new_text {
+h6.fnt-800.mb-1.new_text {
     font-size: 35px;
     line-height: 45px;
 }
