@@ -63,6 +63,11 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
 .pleft{padding-left: 0px;
     padding-top: 60px;}
+	
+a.hvr-line {
+    font-size: 16px;
+    line-height: 26px!important;
+}
 </style>
 
 <main class="main">
