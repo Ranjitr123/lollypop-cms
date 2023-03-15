@@ -187,7 +187,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
               </ul>
 			  
 				<div class="col-12 pleft">
-					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">View all Projects</a>
+					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
               </div>
             </div>
           </div>
