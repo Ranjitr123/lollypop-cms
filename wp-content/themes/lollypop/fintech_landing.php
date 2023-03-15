@@ -65,7 +65,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-top: 60px;}
 	
 a.hvr-line {
-    font-size: 16px;
+    font-size: 16px!important;
     line-height: 26px!important;
 }
 </style>
