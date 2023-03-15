@@ -81,11 +81,10 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-top: 9px;
     padding-bottom: 10px;
 }}
-@media (min-width: 992px){
-.values-list .h6, .values-list h6 {
+.new_text {
     font-size: 35px;
     line-height: 45px;
-}}
+}
 </style>
 
 <main class="main">
@@ -199,7 +198,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 						<img class="" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
 					</div>
 					<span class="d-inline-block fnt-16 data-scroll mt-0 portfolio-title"><?php the_sub_field('company_name'); ?></span>
-                  <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
+                  <h6 class="fnt-800 mb-1 new_text"><?php the_sub_field('title'); ?></h6>
                   <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('content'); ?></p>
 				  </a>
 				<div class="">
