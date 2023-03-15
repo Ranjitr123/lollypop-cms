@@ -83,7 +83,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 			 <div class="reveal-project">
                <?php $galImage = get_field('banner'); ?>
               <?php if($galImage !=''){ ?>
-              <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image" height="924" width="519">
+              <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image" style="height:924px; width:519px;">
               <?php } ?>
               
                <?php $bannerVideo = get_field('banner_video_link'); ?>
