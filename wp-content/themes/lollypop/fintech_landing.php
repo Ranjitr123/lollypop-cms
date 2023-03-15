@@ -75,7 +75,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a>/<?php the_field('category_name'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0"><?php the_field('heading'); ?></h1>
-                    <p class="fnt-24 col-md-10 col-lg-8 px-0"><?php the_field('short_title_description'); ?></p>
+                    <p class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_field('short_title_description'); ?></p>
 		  </div>
                 </div>
               </div>
