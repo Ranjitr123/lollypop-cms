@@ -64,7 +64,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 .pleft{padding-left: 0px;
     padding-top: 60px;}
 	
-a.hvr-line {
+a.hvr-line1 {
     font-size: 16px!important;
     line-height: 26px!important;
 }
@@ -142,7 +142,7 @@ a.hvr-line {
                   <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('content'); ?></p>
                 </li>
                 <?php endwhile; endif; ?>
-              </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
+              </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line1" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ a.hvr-line {
                 </li>
                 <?php endwhile; endif; ?>
               </ul>
-              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo get_site_url(); ?>/project-enquiry/">Let’s talk</a>
+              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line1" href="<?php echo get_site_url(); ?>/project-enquiry/">Let’s talk</a>
             </div>
           </div>
         </div>
