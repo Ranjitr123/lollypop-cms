@@ -223,7 +223,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           <div class="row">
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
               <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
-              <div class="col-12 col-md-8 col-lg-8 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
+              <div class="col-12 col-md-8 col-lg-8 px-0 mb-4 pb-3 pb-lg-2">
                 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title'); ?></h2>
                 <p class="data-scroll clr-white col-12 col-md-8 px-0"><?php the_sub_field('content'); ?></p>
               </div>
