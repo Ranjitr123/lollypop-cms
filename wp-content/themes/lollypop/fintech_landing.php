@@ -167,7 +167,7 @@ a.hvr-line {
                <?php if( have_rows('project_section_for_page') ) : while( have_rows('project_section_for_page') ): the_row(); ?>
                 <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll">
                    <?php the_sub_field('project_title'); ?></h3>
-                <p class="fnt-24 col-md-9 col-lg-8 px-0 data-scroll"><?php the_sub_field('project_content'); ?></p>
+                <p class="fnt-24 col-md-12 col-lg-12 px-0 data-scroll"><?php the_sub_field('project_content'); ?></p>
                 <?php endwhile; endif; ?>
               </div>
               
