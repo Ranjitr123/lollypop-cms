@@ -68,6 +68,18 @@ a.hvr-line {
     font-size: 16px!important;
     line-height: 26px!important;
 }
+.mb-15 {
+    margin-bottom: 15px;
+}
+@media (min-width: 992px){
+.mb-15 {
+    margin-bottom: 15px;
+}
+}
+@media (min-width: 768px){
+.mb-15 {
+    margin-bottom: 25px;
+}}
 </style>
 
 <main class="main">
@@ -176,7 +188,7 @@ a.hvr-line {
                <?php if( have_rows('project_list_section') ) : while( have_rows('project_list_section') ): the_row(); ?>
                 <li class="values-list__item col-12 col-md-6 data-scroll"> 
 					<a class="" href="<?php the_sub_field('url'); ?>">
-					<div class="mb-35 fluid-mb">
+					<div class="mb-15 fluid-mb">
 						<div class="reveal">
 						<img class="" src="<?php the_sub_field('image'); ?>" alt="Image"></div>
 					</div>
