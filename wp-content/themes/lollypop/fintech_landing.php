@@ -5,9 +5,9 @@
  * * @package WordPress
  * */
 
-get_header();
- 
+get_header('fintech-landing');
 ?>
+
 <style>
 section.sec-pd51.last {
     padding-bottom: 160px;
