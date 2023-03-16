@@ -184,7 +184,7 @@ h6.fnt-800.mb-1.new_text {
             <div class="col-12 col-md-10 col-lg-9 mx-auto">
 				<div class="mb-4 pb-md-2 col-md-12 px-0">
                <?php if( have_rows('project_section_for_page') ) : while( have_rows('project_section_for_page') ): the_row(); ?>
-                <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll">
+                <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll mt-4">
                    <?php the_sub_field('project_title'); ?></h3>
                 <p class="fnt-24 col-md-12 col-lg-12 px-0 data-scroll"><?php the_sub_field('project_content'); ?></p>
                 <?php endwhile; endif; ?>
@@ -204,14 +204,14 @@ h6.fnt-800.mb-1.new_text {
                   <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('content'); ?></p>
 				  </a>
 				<div class="">
-					<a class="clr-second mt-4 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('url')?>">View Project</a>
+					<a class="clr-second mt-4 d-inline-block fnt-14 data-scroll hvr-line mt-2" href="<?php the_sub_field('url')?>">View Project</a>
 				</div>
                 </li>
                 <?php endwhile; endif; ?>
               </ul>
 			  
-				<div class="col-12 mb-2 pleft pleft-top">
-					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line mb-2" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
+				<div class="col-12 mb-5 pleft pleft-top">
+					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line mb-2 mt-2" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
               </div>
             </div>
           </div>
