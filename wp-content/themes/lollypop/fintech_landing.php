@@ -86,6 +86,7 @@ h6.fnt-800.mb-1.new_text {
     line-height: 45px;
 }
 .sec-pad-new{padding-top:20px;}
+.pleft-top{padding-top:0px;}
 </style>
 
 <main class="main">
@@ -209,7 +210,7 @@ h6.fnt-800.mb-1.new_text {
                 <?php endwhile; endif; ?>
               </ul>
 			  
-				<div class="col-12 mt-2">
+				<div class="col-12 mb-2 pleft pleft-top">
 					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line mb-2" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
               </div>
             </div>
