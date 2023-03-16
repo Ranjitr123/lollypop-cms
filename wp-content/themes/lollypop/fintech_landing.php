@@ -85,6 +85,7 @@ h6.fnt-800.mb-1.new_text {
     font-size: 35px;
     line-height: 45px;
 }
+.sec-pad-new{padding-top:20px;}
 </style>
 
 <main class="main">
@@ -142,13 +143,13 @@ h6.fnt-800.mb-1.new_text {
                   <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('content'); ?></p>
                 </li>
                 <?php endwhile; endif; ?>
-              </ul><a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
+              </ul><a class="clr-second mt-2 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
             </div>
           </div>
         </div>
       </section>
       <!--03-->
-      <section class="sec-pd"> 
+      <section class="sec-pad-new"> 
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
@@ -175,7 +176,7 @@ h6.fnt-800.mb-1.new_text {
       </section>
 	  
       <!--04-->      
-      <section class="sec-pd" id="third">
+      <section class="sec-pad-new" id="third">
         <div class="container"> 
 		<?php if( have_rows('portfolio') ) : while( have_rows('portfolio') ): the_row(); ?>
           <div class="row"> 
@@ -208,8 +209,8 @@ h6.fnt-800.mb-1.new_text {
                 <?php endwhile; endif; ?>
               </ul>
 			  
-				<div class="col-12 pleft">
-					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
+				<div class="col-12 mt-2">
+					<a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line mb-2" href="<?php echo site_url(); ?>/projects/">View all Projects</a>
               </div>
             </div>
           </div>

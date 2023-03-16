@@ -566,7 +566,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 <!-- For mobile-->
-<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none">
+<div class="hvr-div mb-2 mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none">
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/careers">Careers</a>
@@ -574,7 +574,7 @@ $header = new WP_Query( $args );
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/whitepapers/">Whitepapers</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/contact/">Contact Us</a>
 </div>
-<div class="d-md-flex hvr-m flex-column justify-content-end d-md-none">
+<div class="d-md-flex mb-2 hvr-m flex-column justify-content-end d-md-none">
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
