@@ -86,7 +86,7 @@ h6.fnt-800.mb-1.new_text {
     line-height: 45px;
 }
 .sec-pad-new{padding-top:20px;}
-.pleft-top{padding-top:0px;}
+.pleft-top{padding-top:0px!important;}
 </style>
 
 <main class="main">
