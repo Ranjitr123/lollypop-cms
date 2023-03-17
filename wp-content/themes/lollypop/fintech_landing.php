@@ -82,7 +82,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     padding-bottom: 10px;
 }}
 h6.fnt-800.mb-1.new_text {
-    font-size: 35px;
+    font-size: 31px;
     line-height: 45px;
 }
 .sec-pad-new{padding-top:20px;}
