@@ -86,7 +86,7 @@ if($locationVideo !=''){
 </section>
 <!-------------------------->
 		  <!-- Tab head-->
-		  <section class="sec-pd1">
+		  <!--<section class="sec-pd1">
         <div class="container"> 
           <div class="row">
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
@@ -96,7 +96,7 @@ if($locationVideo !=''){
 					<h5 class="fnt-40 fnt-800 data-scroll px-0" style="text-align:center;">Build Fast. Launch Fast.</h5>
 					</div>
 					<div class="tab-section1">
-                  <!-- Tab content-->
+                  <!-- Tab content
                   <div class="tab-content tab-section1-content1 tab-scroll-content">
                     <?php if( have_rows('tab_content') ) : while( have_rows('tab_content') ): the_row(); ?>
                     <div class="tab-section1-content1__item d-block">
@@ -175,7 +175,50 @@ if($locationVideo !=''){
 				   </div>
 				    </div>
 					 </div>
-					 </section>
+					 </section>-->
+					 
+					 <!--------new design added------------->
+					 <section class="sec-pd pt-0"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+              <div class="mb-100"> 
+                <h2 class="fnt-50 fnt-800 mb-3 mb-md-4 data-scroll">Get rid of the lengthy design and development process, don't get trapped into an unending loop of iterations!</h2>
+                <div class="col-12 col-md-10 px-0">
+                  <p class="fnt-24 data-scroll">There's a need for your product in the market and there is a time when you need to hit the market. You need to do it right because if you don't do it, your competitors will do it and will own the market! </p>
+                </div>
+              </div>
+              <div>
+                <div class="mb-70"> 
+                  <h3 class="fnt-50 fnt-800 data-scroll"> <span class="d-block">Instead, go to </span><span class="d-block">market in just...</span></h3>
+                </div>
+                <div class="col-12 col-md-8 ms-md-auto">
+                  <ul class="px-0 mb-0 itration-list d-inline-block ms-md-auto">
+                    <div class="itration-list__item mt-5 d-flex flex-wrap data-scroll"><span class="d-block">step 1</span>
+                      <div class="col-md-10 ps-md-4">
+                        <h5 class="fnt-22 fnt-800">Discovery workshop</h5>
+                        <p class="fnt-16">A workshop to gather knowledge from all stakeholders. This helps us craft a holistic approach for all requirements.</p><span class="fnt-16">Timelines: 2-4 Days</span>
+                      </div>
+                    </div>
+                    <div class="itration-list__item mt-5 d-flex flex-wrap data-scroll"><span class="d-block">step 2</span>
+                      <div class="col-md-10 ps-md-4">
+                        <h5 class="fnt-22 fnt-800">Design & Test</h5>
+                        <p class="fnt-16">Prototyping the final product and testing it in real time to get inputs and reliable user feedback..</p><span class="fnt-16">Timelines: 2-4 Weeks</span>
+                      </div>
+                    </div>
+                    <div class="itration-list__item mt-5 d-flex flex-wrap data-scroll"><span class="d-block">step 3</span>
+                      <div class="col-md-10 ps-md-4">
+                        <h5 class="fnt-22 fnt-800">Build & Launch</h5>
+                        <p class="fnt-16">Translating the designs into pixel perfect, adaptable and scalable digital products followed by launching a quality product into the market as soon as possible.</p><span class="fnt-16">Timelines: 2-4 Weeks</span>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 <!--03-->
 <section class="sec-pd sec-pb">
 <div class="container"> 
