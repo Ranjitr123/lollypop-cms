@@ -187,7 +187,7 @@ if($locationVideo !=''){
 </div>
 <div>
 
-<a class="web-btn web-btn--primary data-scroll mt-3" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
+<a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
 </div>
 </div>
 </div>
