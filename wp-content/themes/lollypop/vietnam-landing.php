@@ -326,7 +326,7 @@ if($locationVideo !=''){
 <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
 	<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
-	<p class="fnt-24 data-scroll col-md-11 col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
+	<p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
 </div>
 <?php endwhile; endif; ?>
