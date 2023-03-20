@@ -128,7 +128,10 @@ width: 322px; height:211px!important; }
 .lp-awards__left h2{
 	max-width:548px;
 }
-  
+.fnt-12 {
+    font-size: 11px;
+    line-height: 22px;
+}  
 </style>
 <main class="main">
 <!--01-->
