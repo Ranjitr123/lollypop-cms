@@ -370,12 +370,6 @@ get_header();
    }
 
  }
-  @media (min-width: 992px){
-.fnt-24 {
-    font-size: 22px;
-    line-height: 36px;
-  }}
-
    
 </style>
 
@@ -387,7 +381,7 @@ get_header();
 <span class="fnt-14 clr-black354">Mobile Application Design </span></div></div></div></div><div class="reveal-project"><div class="play-video-on-scroll"><div id="play2-out" style="display:none"><div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="https://player.vimeo.com/video/764113737?h=b5566c2bf1"></div></div><video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="https://player.vimeo.com/video/764113737?h=b5566c2bf1" provider="vimeo" poster="https://lollypop.design/wp-content/uploads/2022/10/eshakthi-project-video-thumbnail.webp"></video></div></div></div></div></div>
 </section>
 <!-- 02 -->
-<section class="p-r-80 pb-0 pare-define">
+<section class="sec-pd sec-bnr p-r-80">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-11 col-lg-10 mx-auto">
