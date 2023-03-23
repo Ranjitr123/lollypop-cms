@@ -1,7 +1,8 @@
 <?php
 /**
  Template Name: Trading League portfolio
- */
+ Template post type: projects
+**/
 
 get_header();
 ?>
