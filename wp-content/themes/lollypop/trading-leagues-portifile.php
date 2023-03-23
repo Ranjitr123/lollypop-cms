@@ -370,7 +370,11 @@ get_header();
    }
 
  }
-  
+  @media (min-width: 992px){
+.fnt-24 {
+    font-size: 22px;
+    line-height: 36px;
+  }}
 
    
 </style>
