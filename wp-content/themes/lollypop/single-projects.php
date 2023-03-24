@@ -149,7 +149,7 @@ get_header();
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
 
-					<div class="row">
+					<div class="row space3">
 						<?php if( have_rows('images_tl__section') ) : while( have_rows('images_tl__section') ): the_row(); ?>
 						<div class="col-md-4">
 							<figure>
