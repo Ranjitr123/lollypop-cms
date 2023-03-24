@@ -142,6 +142,38 @@ get_header();
 			<?php } ?>
             <?php endwhile; endif; ?>
 					<!----end new section--------->
+			<!--tradinng  leagues   new section------------>
+				<?php if( have_rows('trading__leagues__section') ) : while( have_rows('trading__leagues__section') ): the_row();
+                   $digImage = get_sub_field('title');
+                if($digImage !='') { ?>	
+				<section class="Emaar_digital">
+					<div class="container head position-relative">
+
+					<div class="row space3">
+						<?php if( have_rows('images_tl__section') ) : while( have_rows('images_tl__section') ): the_row(); ?>
+						<div class="col-md-4">
+							<figure>
+								<img src="<?php the_sub_field('tl__image');?>" class="img-fluid w-100" alt="Image">
+							</figure>
+						</div>
+						<?php endwhile; endif; ?>
+					</div>         
+          
+            <div class="photo position-relative"><!-----------mobile resposive------------->
+				<?php if( have_rows('images_tl__section') ) : while( have_rows('images_tl__section') ): the_row(); ?>
+                <div class="card">
+                    <img src="<?php the_sub_field('tl__image');?>" class="img-fluid w-100" alt="Image">
+                </div>
+				<?php endwhile; endif; ?>
+            </div>
+          
+        </div>
+				</div>
+			</section>
+			<?php } ?>
+            <?php endwhile; endif; ?>
+					<!----end tradinng  leagues  new section--------->
+					
 				<div class="container">	
                   <?php if( have_rows('web_image') ) : while( have_rows('web_image') ): the_row();
                    $webImage = get_sub_field('project_gallery');
