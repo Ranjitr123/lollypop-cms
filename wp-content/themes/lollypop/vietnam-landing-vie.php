@@ -131,7 +131,8 @@ width: 322px; height:211px!important; }
 .fnt-12 {
     font-size: 11px;
     line-height: 22px;
-}  
+} 
+ 
 </style>
 <main class="main">
 <!--01-->

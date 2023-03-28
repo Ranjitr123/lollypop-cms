@@ -107,7 +107,7 @@ else
 
  
 <style>
-
+.secut{top:60px;}
 .fnt-100 {
 	 font-size: 32px;
 	 line-height: 42px;
@@ -391,21 +391,18 @@ else
     background: #fff;
 }
 .secut {
-         top:4% !important;
          right:28% !important;
     }
  }
 
 .secut{
     position:fixed;
-    top:9%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
 .menu-open .lang-mob{opacity:0!important;pointer-events:none;}
 @media only screen and (min-width: 1024px) {
 	.secut{
 		position:fixed;
-		top:10%;
 	}
 	#myDIV {
 		 left: -19px;
