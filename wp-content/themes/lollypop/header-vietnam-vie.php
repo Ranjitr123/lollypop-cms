@@ -242,7 +242,7 @@ else
     position: relative;
     padding-left: 28px;
     cursor: pointer;
-    line-height: 20px;
+    line-height: 15px;
     display: inline-block;
     color: black;
 }
