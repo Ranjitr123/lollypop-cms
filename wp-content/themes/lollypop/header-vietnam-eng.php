@@ -109,6 +109,11 @@ else
  
 <style>
 .secut{top:60px;}
+@media (max-width: 768px){
+.secut {
+    top: 57px;
+    right: 7% !important;
+}}
 .fnt-100 {
 	 font-size: 32px;
 	 line-height: 42px;
