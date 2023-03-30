@@ -124,6 +124,7 @@ width: 322px; height:211px!important; }
 }
 .viethan-sec{
 	 position: relative;
+	  padding-top:140px;
 }
 .lp-awards__left h2{
 	max-width:548px;
