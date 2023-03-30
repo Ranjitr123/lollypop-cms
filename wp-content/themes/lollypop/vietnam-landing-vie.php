@@ -95,7 +95,7 @@ width: 322px; height:211px!important; }
   width: 52px;
   border-radius: 50%;
   transition: all 0.2s linear;
-  top:42%;
+  top:36%;
 }
 
 .button-up::after,
