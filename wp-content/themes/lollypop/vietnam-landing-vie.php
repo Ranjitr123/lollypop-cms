@@ -176,7 +176,7 @@ if($locationVideo !=''){
 <section class="sec-pd">
 <div class="container">
 <div class="row"> 
-<div class="col-12 col-md-9 col-lg-8 mx-auto">
+<div class="col-12 col-md-9 col-lg-7 mx-auto">
 <!-- Team profile-->
 <div class="row">
 <?php if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
