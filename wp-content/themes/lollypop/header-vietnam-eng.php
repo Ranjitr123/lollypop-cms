@@ -111,7 +111,7 @@ else
 .secut{top:60px;}
 @media (max-width: 768px){
 .secut {
-    top: 57px;
+    top: 28px;
     right: 7% !important;
 }}
 .fnt-100 {
