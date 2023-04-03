@@ -157,6 +157,24 @@ width: 80px !important;
 .sponsor-img__item-content {
     margin-top: 100px;
   }
+
+  .why-txt p{
+  
+font-size: 14px !important;
+margin-top:2rem !important;
+}
+.why-txt{
+  
+  margin-top: -16rem !important;
+    margin-left: -3% !important;
+    text-align: center;
+}
+.register-btn a{
+  margin-top:0px !important;
+}
+.one-slide br{
+  display:none !important;
+}
 }
 
 /* designathon */
@@ -319,6 +337,9 @@ margin-top: 4rem;
     margin-bottom: 90px !important;
 }
 
+.register-btn a{
+  margin-top:65px;
+}
 
 </style>
 
@@ -379,12 +400,13 @@ margin-top: 4rem;
       <section>
         <div class="container">
            <div class="slick-img position-relative">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg.svg" alt="logo">
+              <img class="img-fluid d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg.svg" alt="logo">
+              <img class="img-fluid d-block d-md-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg-mobile.svg" alt="logo">
                 <div class="why-txt">
                     <h2>Why Participate?</h2>
                   <div class="one">
                         <div>
-                             <p>Collaborate and network with <br>budding <span class="clr-yel-92a">designers</span> from across the <br> country!</p>
+                             <p class="one-slide">Collaborate and network with <br>budding <span class="clr-yel-92a">designers</span> from across the <br> country!</p>
                         </div>
                         <div>
                              <p>Get mentored by <span class="clr-yel-92a"> top industry </span> <br> pioneers!</p>
@@ -393,8 +415,8 @@ margin-top: 4rem;
                              <p>Win cash prizes of up to <br> <span class="clr-yel-92a"> Rs. 2,00,000 </span> </p>
                         </div>
                   </div>
-                   <div class="text-center">
-                   <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <div class="text-center register-btn">
+                   <a href="#" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
 
@@ -469,8 +491,8 @@ margin-top: 4rem;
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
                     <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2" style="margin-bottom:70px !important;">Keen to know more?</span>
-                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;">Rules and regulations</h2>
-                      <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;">to get you started </h2>
+                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize;">Rules and regulations</h2>
+                      <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
 		               </div>
                   <div>
                   <a href="#" class="btn-red">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
