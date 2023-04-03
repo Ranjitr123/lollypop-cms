@@ -284,7 +284,7 @@ color: #0D0EA3;
         <div class="container">
           <div class="row"> 
             <div class="col-12 col-md-12 col-lg-12 mx-auto mt-5">
-               <img class="img-fluid mb-5 design-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/logo.png" alt="logo">
+               <img class="img-fluid mb-5 design-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/Frame1171278150.svg" alt="logo">
               <div class="col-md-10 px-0">
                  <p class="fnt-20 mb-0 fnt-700 clr-yel-92a mt-5 design__p">Designathon 2023 is here!</p>
                 <h2 class="fnt-800 fnt-50  mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head">Bigger<span class=" clr-yel-92a">.</span> Grander<span class=" clr-yel-92a">.</span> crazier<span class=" clr-yel-92a">.</span></h2>
