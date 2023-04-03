@@ -156,7 +156,7 @@ width: 80px !important;
   .why-txt p{
   
 font-size: 14px !important;
-margin-top:2rem !important;
+margin-top:0rem !important;
 }
 .why-txt{
   
@@ -294,6 +294,32 @@ color: #0D0EA3;
 .dots-image{
   margin-top: -7%;
 }
+.why-txt h2{
+  margin-bottom:4rem !important;
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+color: #FF3500;
+}
+.why-txt p{
+  
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+text-transform: capitalize;
+color: #0D0EA3 !important;
+  }
+  .why-txt{
+    
+    margin-top: -28rem !important;
+      margin-left: -5% !important;
+      text-align: center;
+  }
 
 .register-btn a{
   margin-top:65px;
@@ -375,7 +401,7 @@ color: #0D0EA3;
                    </div>
                 </div>
 
-      <section class="sec-pd-designathonposition-relative sec-athon-text-bg">
+      <!-- <section class="sec-pd-designathonposition-relative sec-athon-text-bg">
         <div class="container"> 
           <div class="row"> 
                 <div class="lines-img-top">
@@ -414,7 +440,7 @@ color: #0D0EA3;
              </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- event details -->
        <section class="event-Details position-relative">
