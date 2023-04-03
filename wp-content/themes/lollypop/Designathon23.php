@@ -516,7 +516,7 @@ color: #0D0EA3 !important;
                       <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
 		               </div>
                   <div>
-                  <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
                  </div>
                 </div>
                 </div>
