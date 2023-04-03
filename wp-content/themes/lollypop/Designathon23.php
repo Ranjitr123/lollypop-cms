@@ -372,6 +372,9 @@ color: #0D0EA3 !important;
                   <figure class="imgBdr">
                     <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyderabad.svg" alt="hyderabad">
                   </figure>
+                  <figure class="imgBdr">
+                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyd.svg" alt="hyderabad">
+                  </figure>
              </div>
             </div>
         </div>
