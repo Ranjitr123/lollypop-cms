@@ -26,10 +26,10 @@ position:absolute;
 top: -30px;
 left: -5px;
 }
-.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;top: -3px;left:28%;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg");background-repeat:no-repeat;background-size:contain;z-index: -1;}
+.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;left:33%;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
 
 /*designathon23-css-mithun-bl*/
-.event-Details {padding: 100px 0;}
+.event-Details {padding: 180px 0;}
 .event-Details .details-width{width: 100%;max-width:765px;margin: 0 auto;}
 .event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;}
 .event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1;}
@@ -41,14 +41,15 @@ left: -5px;
 .btn-red:hover{color:#fff;}
 .design-cities-hacks{padding:130px 0 60px 0;}
 .design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;}
-.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-31px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-mobile.svg");background-repeat:no-repeat;background-size:cover;z-index: -1;}
+.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-31px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
 .hack-Cities{width: 100%;max-width:931px; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 30px}
-figure .slide  {-webkit-transition: all 300ms cubic-bezier(.25, .46, .45, .94);
-    transition: all 300ms cubic-bezier(.25, .46, .45, .94);}
-figure .slide:hover{-webkit-transform: translate(-1.1rem, -1.0rem);
+    figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
+    transition: all 700ms cubic-bezier(.25, .46, .45, .94); transform: translate(0rem, -0rem);}
+figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     -ms-transform: translate(-1.1rem, -1.0rem);
-    transform: translate(1.1rem, -1.0rem);}
+    transform: translate(1.1rem, -1.0rem); transition: all 700ms cubic-bezier(.25, .46, .45, .94);}
+.last-Design{padding: 50px 0 100px 0;}
 .last-Design{padding: 50px 0 100px 0;}
 .last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
 .btn-red .white_arrow{display:none;}
@@ -364,7 +365,7 @@ color: #0D0EA3 !important;
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities">
-              <h2>The hack is back in 2 cities now!</h2>
+              <h2 class="our-sponser">The hack is back in 2 cities now!</h2>
               <div class="d-md-flex d-block">
                   <figure class="imgBdr">
                     <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bng.svg" alt="bangaluru">
@@ -447,7 +448,7 @@ color: #0D0EA3 !important;
 
       <!-- event details -->
        <section class="event-Details position-relative">
-        <img class="position-absolute d-none d-md-block img-fluid" style="left:0; top: 25%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
+        <img class="position-absolute d-none d-md-block img-fluid" style="left:-9%; top: 25%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
         <div class="container">
           <div class="details-width">
           <div class="row">
@@ -515,7 +516,7 @@ color: #0D0EA3 !important;
                       <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
 		               </div>
                   <div>
-                  <a href="#" class="btn-red">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                  </div>
                 </div>
                 </div>
@@ -525,14 +526,42 @@ color: #0D0EA3 !important;
           </div>
         </div>
       </section>
+      <!-- sponsers -->
+
+      <section class="sec-pd-designathon2 pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+              <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
+                    <div class=" row sponsor-img">
+                      <div class="col-md-5">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
+                      </div>
+                        <div class="col-md-7">
+                             <p style="color: rgba(255, 255, 255, 0.7)!important;">Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
+                          </div>
+                    </div> 
+                    <div class=" row sponsor-img">
+                      <div class="col-md-5">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
+                      </div>
+                        <div class="col-md-7">
+                             <p style="color: rgba(255, 255, 255, 0.7)!important;">CreditVidya is India's industry leader in alternative credit scoring space in India. They deploy artificial intelligence (AI), machine learning, and alternative data to facilitate institutional credit for marginalized populations. Their products are helping a large section of the salaried and self-employed population become visible to lenders, by making it financially viable for banks and NBFC's to underwrite customers for much smaller unsecured loans. They are dedicated to their mission of making affordable credit accessible to more than 3 billion under-served people, and over 55 leading banks and NBFCs rely on their products to manage the credit cycle end-to-end.</p>
+
+                          </div>
+                    </div> 
+                </div>
+             </div>
+          </div>
+        </div>
+      </section>
 
      <!-- faq -->
      <section class="sec-pd-designathon2 pt-2 pb-0">
         <div class="container"> 
           <div class="row"> 
-            <div class="col-12 col-md-10 col-lg-10 col-xl-19 mx-auto">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-9 mx-auto">
               <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
-                <div class="d-athon-mision__item col-12 col-md-11">
+                <!-- <div class="d-athon-mision__item col-12 col-md-11">
                   <div class="mb-4 d-inline-block mx-auto">
                     <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a text-center our-sponser position-relative">Our Sponsor</h3>	  
                     <div class="text-center sponsor-img">
@@ -542,8 +571,8 @@ color: #0D0EA3 !important;
                         <div class="sponsor-img__item-content">
                              <p>Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
                           </div>
-                      </div> 
-                </div>
+                    </div> 
+                </div> -->
               </div>
               <div class="faq-el faq-el--athon" style="background: #1718AD;">
                 <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700">Frequently asked questions</span>
