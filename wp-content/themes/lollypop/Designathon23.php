@@ -42,7 +42,7 @@ left: -5px;
 .design-cities-hacks{padding:130px 0 60px 0;}
 .design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;}
 .design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-31px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
-.hack-Cities{width: 100%;max-width:931px; margin:0 auto;}
+.hack-Cities{width: 100%; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 30px}
     figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
     transition: all 700ms cubic-bezier(.25, .46, .45, .94); transform: translate(0rem, -0rem);}
@@ -57,7 +57,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 
 
 @media(max-width: 767px){
-  .event-Details{padding: 90px 0 72px 0;}
+  .event-Details{padding: 0px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
 .event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
 .event-Details .register-process p{max-width:100%;}
@@ -65,7 +65,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;max-width:201px;margin-bottom:35px ;}
+.design-cities-hacks h2{font-size:24px;width:100%;max-width:201px;margin-bottom:35px ; margin-left:1rem;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
@@ -171,6 +171,14 @@ margin-top:0rem !important;
 .one-slide br{
   display:none !important;
 }
+.why-txt h2{
+  margin-bottom:2rem !important;
+}
+.keen-head{
+   margin-bottom:0px !important;
+}
+
+
 }
 
 /* designathon */
@@ -296,7 +304,7 @@ color: #0D0EA3;
   margin-top: -7%;
 }
 .why-txt h2{
-  margin-bottom:4rem !important;
+  margin-bottom:4rem;
   font-family: 'Manrope';
 font-style: normal;
 font-weight: 700;
@@ -324,6 +332,9 @@ color: #0D0EA3 !important;
 
 .register-btn a{
   margin-top:65px;
+}
+.keen-head{
+   margin-bottom:70px;
 }
 
 </style>
@@ -364,7 +375,7 @@ color: #0D0EA3 !important;
 
       <section class="design-cities-hacks">
         <div class="container">
-            <div class="hack-Cities">
+            <div class="hack-Cities row">
               <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
               <div class="d-md-flex d-block">
                   <figure class="imgBdr">
@@ -496,7 +507,7 @@ color: #0D0EA3 !important;
           <div class="text-center">
             <h2>In the meantime enjoy last year Designathon’22</h2>
             <a href="https://youtu.be/2ZO_TVnvTBI" data-fancybox>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/lollypop-design-video.svg" alt="video">
+              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/vedio-design-logo.webp" alt="video">
             </a>
           </div>
         </div>
@@ -511,7 +522,7 @@ color: #0D0EA3 !important;
               <div class=" pt-md-5 px-3 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2" style="margin-bottom:70px !important;">Keen to know more?</span>
+                    <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2 keen-head">Keen to know more?</span>
                       <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize;">Rules and regulations</h2>
                       <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
 		               </div>
