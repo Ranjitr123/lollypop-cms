@@ -275,6 +275,10 @@ color: #0D0EA3;
     padding-top: 100px !important;
 }
 
+.dots-image{
+  margin-top: -7%;
+}
+
 
 </style>
 
@@ -336,7 +340,7 @@ color: #0D0EA3;
                 <div class="lines-img-top">
                    <img class="img-fluid" style="width:194px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-top-lines.svg" alt="logo">
                  </div>
-              <div class="col-12 col-md-10 col-lg-10 mx-auto clr-gray ">
+              <div class="col-12 col-md-10 col-lg-10 mx-auto clr-gray p-0 ">
               <ul class="px-0 participate-slider dots-red dots-red--wide mb-0 clr-gray pb-0">
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-10 px-0 text-center mx-auto">
@@ -344,6 +348,7 @@ color: #0D0EA3;
                     <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Collaborate and network with budding <span class="clr-yel-92a">designers</span> from across the country!</p>
                   </div>
                   <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-8 px-0 text-center mx-auto">
@@ -351,6 +356,7 @@ color: #0D0EA3;
                     <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Get mentored by top industry <span class="clr-yel-92a">top industry</span> pioneers!</p>
                   </div>
                   <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-6 px-0 text-center mx-auto">
@@ -358,9 +364,9 @@ color: #0D0EA3;
                     <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Win cash prizes of up to <span class="clr-yel-92a">Rs. 2,00,000</span></p>
                   </div>
                   <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
               </ul>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
             </div>
             <div class="lines-imgs-bottom">
                    <img class="img-fluid" style="width:194px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-bot-lines.svg" alt="logo">
