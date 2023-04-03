@@ -286,26 +286,28 @@ color: #0D0EA3;
         <div class="container">
           <div class="row"> 
             <div class="col-12 col-md-12 col-lg-12 mx-auto mt-5">
+			<?php if( have_rows('section1__main_heading') ) : while( have_rows('section1__main_heading') ): the_row(); ?>
                <img class="img-fluid mb-5 design-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/Frame1171278150.svg" alt="logo">
               <div class="col-md-10 px-0">
-                 <p class="fnt-20 mb-0 fnt-700 clr-yel-92a mt-5 design__p">Designathon 2023 is here!</p>
-                <h2 class="fnt-800 fnt-50  mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head">Bigger<span class=" clr-yel-92a">.</span> Grander<span class=" clr-yel-92a">.</span> crazier<span class=" clr-yel-92a">.</span></h2>
-                <p class="col-lg-11 col-xxl-10 px-0 fnt-16 design-content-p">An in-person action packed design hackathon where students and aspiring designers are given a platform to experience real-life design problems and master the art of creating usable, viable, and empathetic design solutions while having a great deal of fun for 24 hours straight. </p>
+                 <p class="fnt-20 mb-0 fnt-700 clr-yel-92a mt-5 design__p"><?php the_sub_field('main_heading'); ?></p>
+                <h2 class="fnt-800 fnt-50  mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head"><?php the_sub_field('sub__heading1'); ?><span class=" clr-yel-92a">.</span> <?php the_sub_field('sub__heading2'); ?><span class=" clr-yel-92a">.</span> <?php the_sub_field('sub__heading3'); ?><span class=" clr-yel-92a">.</span></h2>
+                <p class="col-lg-11 col-xxl-10 px-0 fnt-16 design-content-p"><?php the_sub_field('description'); ?> </p>
               </div>
               <ul class="px-0 d-flex flex-wrap athon-prize-list">
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Date</p>
-                  <h6 class="fnt-700 fnt-24 mb-0">28 - 29th April</h6>
+                  <h6 class="fnt-700 fnt-24 mb-0"><?php the_sub_field('date'); ?></h6>
                 </li>
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Duration</p>
-                  <h6 class="fnt-700 fnt-24 mb-0">24 hours</h6>
+                  <h6 class="fnt-700 fnt-24 mb-0"><?php the_sub_field('duration'); ?></h6>
                 </li>
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Designers</p>
-                  <h6 class="fnt-700 fnt-24  mb-0">150+ Participants</h6>
+                  <h6 class="fnt-700 fnt-24  mb-0"><?php the_sub_field('designers'); ?></h6>
                 </li>
               </ul>
+			  <?php  endwhile; endif; ?>
             </div>
             <img class="img-fluid mb-5 banner-side-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-right-img.png" alt="logo">
           </div>
@@ -317,15 +319,17 @@ color: #0D0EA3;
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities">
-              <h2>The hack is back in 2 cities now!</h2>
+			<?php if( have_rows('2_cities_section') ) : while( have_rows('2_cities_section') ): the_row(); ?>
+              <h2><?php the_sub_field('heading'); ?></h2>
               <div class="d-md-flex d-block">
                   <figure class="imgBdr">
-                    <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bengaluru.svg" alt="bangaluru">
+                    <img class=" img-fluid slide" src="<?php the_sub_field('citi__image1'); ?>" alt="bangaluru">
                   </figure> 
                   <figure class="imgBdr">
-                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyderabad.svg" alt="hyderabad">
+                    <img  class=" img-fluid slide" src="<?php the_sub_field('citi_image2'); ?>" alt="hyderabad">
                   </figure>
              </div>
+			 <?php  endwhile; endif; ?>
             </div>
         </div>
       </section>
@@ -340,30 +344,33 @@ color: #0D0EA3;
                  </div>
               <div class="col-12 col-md-10 col-lg-10 mx-auto clr-gray p-0 ">
               <ul class="px-0 participate-slider dots-red dots-red--wide mb-0 clr-gray pb-0">
+				<?php if( have_rows('why_participants_slick_section') ) : while( have_rows('why_participants_slick_section') ): the_row(); ?>
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-10 px-0 text-center mx-auto">
-                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Collaborate and network with budding <span class="clr-yel-92a">designers</span> from across the country!</p>
+                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800"><?php the_sub_field('first__slide_title'); ?></p>
+                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;"><?php the_sub_field('first__slide__content'); ?></p>
                   </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="<?php the_sub_field('first__slide_button__link'); ?>" class="btn-red" style="margin-top:65px;"><?php the_sub_field('first__slide__button__name'); ?>  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                   <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
+				 
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-8 px-0 text-center mx-auto">
-                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Get mentored by top industry <span class="clr-yel-92a">top industry</span> pioneers!</p>
+                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800"><?php the_sub_field('second_slide_title'); ?></p>
+                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;"><?php the_sub_field('second_slide_content'); ?></p>
                   </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="<?php the_sub_field('first__slide_button__link'); ?>" class="btn-red" style="margin-top:65px;"><?php the_sub_field('first__slide__button__name'); ?>  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                   <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
                 <li class="participate-slider__item text-center clr-gray">
                   <div class="col-md-6 px-0 text-center mx-auto">
-                    <p class="clr-yel-92a  fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Win cash prizes of up to <span class="clr-yel-92a">Rs. 2,00,000</span></p>
+                    <p class="clr-yel-92a  fnt-20 mb-3 mb-md-4 fnt-800"><?php the_sub_field('third_slide_title'); ?></p>
+                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;"><?php the_sub_field('third_slide_content'); ?></p>
                   </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="<?php the_sub_field('first__slide_button__link'); ?>" class="btn-red" style="margin-top:65px;"><?php the_sub_field('first__slide__button__name'); ?>  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                   <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
                 </li>
+				<?php  endwhile; endif; ?>
               </ul>
             </div>
             <div class="lines-imgs-bottom">
@@ -383,12 +390,13 @@ color: #0D0EA3;
               <h2>Event Details</h2>
             </div>
             <div class="col-md-8">
+			<?php if( have_rows('event_details_section') ) : while( have_rows('event_details_section') ): the_row(); ?>
               <div class="register-process mb-4 mb-md-5">
-                <h4>Registration Process</h4>
-                <p>Registration starts on 30th March & closes on <span> 5th April .</span>
-                Since we have limited seats, there will be a selection process, and if you’re selected, you will receive an email confirming your selection!</p>
+                <h4><?php the_sub_field('event_title'); ?></h4>
+                <p><?php the_sub_field('event__description'); ?></p>
               </div>
-              <div class="register-process mb-4 mb-md-5">
+			  <?php  endwhile; endif; ?>
+              <!--<div class="register-process mb-4 mb-md-5">
                 <h4>Date and Time</h4>
                 <p>Designathon will take place on from <span>28th-29th April, 2023.</span> The duration of the event is 24 hours.</p>
               </div>
@@ -403,12 +411,13 @@ color: #0D0EA3;
               <div class="register-process mb-4 mb-md-5">
                 <h4>Awards</h4>
                 <p>The Award Ceremony will take place after the final presentation to the jury members, on 29th April. </p>
-              </div>
+              </div>-->
 
               <label>So what are you waiting for?</label>
               <div>
-                <a href="#" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
-               
+			  <?php if( have_rows('why_participants_slick_section') ) : while( have_rows('why_participants_slick_section') ): the_row(); ?>
+                <a href="<?php the_sub_field('first__slide_button__link'); ?>" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+              <?php  endwhile; endif; ?> 
               </div>
             </div>
             </div>
@@ -421,10 +430,12 @@ color: #0D0EA3;
       <section class="last-Design">
         <div class="container">
           <div class="text-center">
-            <h2>In the meantime enjoy last year Designathon’22</h2>
-            <a href="https://youtu.be/2ZO_TVnvTBI" data-fancybox>
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/lollypop-design-video.svg" alt="video">
+			<?php if( have_rows('vedio_section') ) : while( have_rows('vedio_section') ): the_row(); ?>
+            <h2><?php the_sub_field('video_title'); ?></h2>
+            <a href="<?php the_sub_field('video_link'); ?>" data-fancybox>
+              <img class="img-fluid" src="<?php the_sub_field('video__image'); ?>" alt="video">
             </a>
+			<?php  endwhile; endif; ?> 
           </div>
         </div>
       </section>
@@ -435,20 +446,22 @@ color: #0D0EA3;
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
+			<?php if( have_rows('pdf_section') ) : while( have_rows('pdf_section') ): the_row(); ?>
               <div class=" pt-md-5 px-3 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
-                    <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2" style="margin-bottom:70px !important;">Keen to know more?</span>
-                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;">Rules and regulations</h2>
-                      <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;">to get you started </h2>
+                    <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2" style="margin-bottom:70px !important;"><?php the_sub_field('main_title'); ?></span>
+                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;"><?php the_sub_field('titletext1'); ?></h2>
+                      <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize; letter-spacing:1px !important; line-height:48px;"><?php the_sub_field('titletext2'); ?></h2>
 		               </div>
                   <div>
-                  <a href="#" class="btn-red">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                  <a href="<?php the_sub_field('pdf_file__upload'); ?>" class="btn-red"><?php the_sub_field('pdf__text__download'); ?> <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                  </div>
                 </div>
                 </div>
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
               </div>
+			  <?php  endwhile; endif; ?> 
             </div>
           </div>
         </div>
@@ -479,17 +492,19 @@ color: #0D0EA3;
                 </div>
                 <div class="faq-el__body"> 
                   <ul class="px-0 mb-0 faq-ac row justify-content-between">
+				  <?php if( have_rows('faq__section') ) : while( have_rows('faq__section') ): the_row(); ?>
                     <li class="faq-ac__item col-12">
                       <div class="f-accordion">
                         <div class="f-accordion__head">
-                          <h6 class="fnt-16 fnt-800 mb-0">Is this an online or in-house Event?</h6>
+                          <h6 class="fnt-16 fnt-800 mb-0"><?php the_sub_field('question'); ?></h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Being an in-house event, Designathon 2022 is back with a bang!</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;"><?php the_sub_field('answer'); ?></p>
                         </div>
                       </div>
                     </li>
-                    <li class="faq-ac__item col-12">
+					<?php  endwhile; endif; ?>
+                    <!--<li class="faq-ac__item col-12">
                       <div class="f-accordion">
                         <div class="f-accordion__head">
                           <h6 class="fnt-16 fnt-800 mb-0">What is the Eligibility Criteria?</h6>
@@ -618,7 +633,7 @@ color: #0D0EA3;
                           <p class="fnt-18 mb-0"style="color: rgba(255, 255, 255, 0.7) !important;" >The Winning team will get a cash prize worth Rs 1,50,000 and Rs 50,000 for the runner-up team.</p>
                         </div>
                       </div>
-                    </li>
+                    </li>-->
                   </ul>
                 </div>
               </div>
