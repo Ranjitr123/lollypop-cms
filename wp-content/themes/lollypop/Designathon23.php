@@ -204,7 +204,7 @@ p, h6{
 }
  .banner-side-img{
     width: 537px;
-    top: 0;
+    top: 21px;
     position: absolute;
     right: 0;
  }
