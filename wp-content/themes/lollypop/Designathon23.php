@@ -16,9 +16,7 @@ opacity:0;
 opacity:0;
 pointer-events:none !important;
 }
-.jury__img::after {
-display: none;
-}
+.jury__img::after {display: none;}
 .plyr__controls{
 opacity:0;
 display:none !important;
