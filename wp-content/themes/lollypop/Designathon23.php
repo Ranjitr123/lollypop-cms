@@ -317,7 +317,7 @@ color: #0D0EA3 !important;
   }
   .why-txt{
     
-    margin-top: -28rem !important;
+    margin-top: -28rem;
       margin-left: -5% !important;
       text-align: center;
   }
@@ -365,7 +365,7 @@ color: #0D0EA3 !important;
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities">
-              <h2 class="our-sponser">The hack is back in 2 cities now!</h2>
+              <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
               <div class="d-md-flex d-block">
                   <figure class="imgBdr">
                     <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bng.svg" alt="bangaluru">
