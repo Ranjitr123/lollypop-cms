@@ -367,13 +367,13 @@ color: #0D0EA3 !important;
               <h2>The hack is back in 2 cities now!</h2>
               <div class="d-md-flex d-block">
                   <figure class="imgBdr">
-                    <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bengaluru.svg" alt="bangaluru">
+                    <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bng.svg" alt="bangaluru">
                   </figure> 
                   <figure class="imgBdr">
-                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyderabad.svg" alt="hyderabad">
+                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyd.svg" alt="hyderabad">
                   </figure>
                   <figure class="imgBdr">
-                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyd.svg" alt="hyderabad">
+                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/chennai.svg" alt="hyderabad">
                   </figure>
              </div>
             </div>
