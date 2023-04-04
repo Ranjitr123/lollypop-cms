@@ -38,7 +38,7 @@ left: -5px;
 .event-Details .register-process span{font-weight: 700;color:#fff !important;}
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
     font-style: normal;
-    font-family: 'Manrope';}
+         font-family: 'Cairo', sans-serif;}
 .btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -92,6 +92,13 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 
 
 @media(max-width: 768px){
+  .our-sponser:before{display: none;}
+  .download-btn .btn-red {padding: 12px 36px !important;}
+  .download-btn {max-width: 172px !important;}
+  .data-scroll{padding: 40px 0 !important}
+  .download-btn:hover {
+    max-width: 195px !important;
+}
 .faq-el--athon{
 margin-top: -70px;
 }
@@ -104,7 +111,7 @@ margin-top: -70px;
    height:233px !important;
 
 }
-.design23-head{
+.design23-head{font-family: 'Cairo', sans-serif;
   font-size: 20px !important;
 line-height: 130% !important;
 font-weight:700 !important;
