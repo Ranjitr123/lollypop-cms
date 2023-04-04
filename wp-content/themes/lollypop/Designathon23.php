@@ -64,165 +64,6 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .athon-prize-list__item h6{
    font-family: 'Cairo', sans-serif;
 }
-@media(max-width: 767px){
-  .white_arrow{display: inline-block !important;}
-  .event-Details{padding: 180px 0 72px 0;}
-.event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
-.event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
-.event-Details .register-process p{max-width:100%;}
-.event-Details .register-process h4{font-size:20px;}
-.event-Details label{font-size:14px;margin-top:20px;}
-.btn-red{font-size:14px;line-height:19px;height:43px;}
-.design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;}
-.design-cities-hacks h2:before{width:95px;max-width:69px;}
-.imgBdr{margin-right: 0px;margin-bottom:34px ;}
-.last-Design{padding: 0px 0 72px 0;}
-.last-Design h2{font-size:24px;max-width:323px;}
-.one-slide{ max-width:230px;
-    margin:0 auto;}
-    .sponsor-sec{flex-direction:column;}
-    .footer-slide-img{width:80px; margin-left:0px !important;}
-    .event-details-content{padding-left:15px;}
-    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
-    .sponsor-sec img{height: 78px;}
-
-
-}
-
-/*designathon23-css-mithun-bl*/
-
-
-
-
-@media(max-width: 768px){
-  .our-sponser:before{display: none;}
-  .download-btn .btn-red {padding: 12px 36px !important;}
-  .download-btn {max-width: 196px !important;}
-  .data-scroll{padding: 40px 0 !important}
-  .download-btn:hover {
-    max-width: 195px !important;
-}
-.register-red-btn img {
-    opacity: 1 !important;
-    display: inherit !important;
-    width: auto !important;
-    visibility: visible !important;}
-    .btn-red img{margin-left: 10px !important;}
-.faq-el--athon{
-margin-top: -70px;
-}
-/* design */
-.design-logo{
-   width:100px !important;
-}
-.banner-side-img{
-   width:136px !important;
-   height:223px !important;
-
-}
-.design23-head{font-family: 'Cairo', sans-serif;
-  font-size: 24px !important;
-line-height: 130% !important;
-font-weight:700 !important;
-}
-.design__p{
-  font-size: 14px !important;
-}
-.athon-prize-list__item h6{
-   font-size:20px !important;
-   font-family: 'Cairo', sans-serif;
-}
-.athon-prize-list__item p{
-   font-size:12px !important;
-}
-.lines-img-top img {
-  margin-left:0rem !important;
-  width: 119px !important;
-}
-.lines-img-top:before {
-   background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-top.svg") !important;
-   left: -26px !important;
-    top: 5px !important;
-    width: 39px !important;
-
-}
-.lines-imgs-bottom:before{
-   background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-bottom.svg") !important;
-   width: 39px !important;
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 120px;
-    right: -15px !important;
-    top: -27px !important;
-    top: 0;
-}
-.lines-imgs-bottom img{
-  position: absolute;
-    right: 24px !important;
-    top: -33px !important;
-    z-index: -1;
-    width:119px !important;
-}
-.slider-content {
-  font-size:20px !important;
-}
-.sec-participate-23 {
-   padding-top:0px !important;
-   padding-bottom:0px !important;
-}
-
-/* .our-sponser:before {
-    content: '';
-    position: absolute;
-    width: 95px;
-    height: 48px;
-    top: -4px;
-    left: 21%;
-} */
-.footer-slide-img{
-width: 80px !important;
-bottom: 43.9rem !important;
-}
-.sponsor-img__item-content {
-    margin-top: 100px;
-  }
-
-  .why-txt p{
-  
-font-size: 20px !important;
-margin-top:0rem !important;
-/* max-width: 250px; */
-margin-bottom:2rem;
-}
-.why-txt{
-  
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: -18rem !important;
-}
-.register-btn a{
-  margin-top:0px !important;
-}
-.one-slide br{
-  display:none !important;
-}
-.why-txt h2{
-  margin-bottom:2rem !important;
-}
-.keen-head{
-   margin-bottom:0px !important;
-}
-.banner-designathon23{
-  left:0 !important;
-}
-.banner-side-img{
-  padding:0px !important;
-}
-
-}
 
 .download-btn{
   margin: 0 auto;
@@ -394,6 +235,164 @@ color: #0D0EA3 !important;
 .keen-head{
    margin-bottom:70px;
 }
+@media(max-width: 767px){
+  .white_arrow{display: inline-block !important;}
+  .event-Details{padding: 180px 0 72px 0;}
+.event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
+.event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
+.event-Details .register-process p{max-width:100%;}
+.event-Details .register-process h4{font-size:20px;}
+.event-Details label{font-size:14px;margin-top:20px;}
+.btn-red{font-size:14px;line-height:19px;height:43px;}
+.design-cities-hacks{padding: 0px 0;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;}
+.design-cities-hacks h2:before{width:95px;max-width:69px;}
+.imgBdr{margin-right: 0px;margin-bottom:34px ;}
+.last-Design{padding: 0px 0 72px 0;}
+.last-Design h2{font-size:24px;max-width:323px;}
+.one-slide{ max-width:230px;
+    margin:0 auto;}
+    .sponsor-sec{flex-direction:column;}
+    .footer-slide-img{width:80px; margin-left:0px !important;}
+    .event-details-content{padding-left:15px;}
+    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
+    .sponsor-sec img{height: 78px;}
+    .figure .slide, figure .slide:hover{
+      transform: inherit !important;
+    }
+
+}
+
+/*designathon23-css-mithun-bl*/
+
+
+
+
+@media(max-width: 768px){
+  .our-sponser:before{display: none;}
+  .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
+  .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important}
+  .download-btn .btn-red {padding: 12px 36px !important;}
+  .download-btn {max-width: 196px !important;}
+  .data-scroll{padding: 40px 0 !important}
+  .download-btn:hover {
+    max-width: 195px !important;
+  }
+
+.register-red-btn img {
+    opacity: 1 !important;
+    display: inherit !important;
+    width: auto !important;
+    visibility: visible !important;}
+    .btn-red img{margin-left: 10px !important;}
+.faq-el--athon{
+margin-top: -70px;
+}
+/* design */
+.design-logo{
+   width:100px !important;
+}
+.banner-side-img{
+   width:136px !important;
+   height:223px !important;
+
+}
+.design23-head{font-family: 'Cairo', sans-serif;
+  font-size: 24px !important;
+line-height: 130% !important;
+font-weight:700 !important;
+}
+.design__p{
+  font-size: 14px !important;
+}
+.athon-prize-list__item h6{
+   font-size:20px !important;
+   font-family: 'Cairo', sans-serif;
+}
+.athon-prize-list__item p{
+   font-size:12px !important;
+}
+.lines-img-top img {
+  margin-left:0rem !important;
+  width: 119px !important;
+}
+.lines-img-top:before {
+   background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-top.svg") !important;
+   left: -26px !important;
+    top: 5px !important;
+    width: 39px !important;
+
+}
+.lines-imgs-bottom:before{
+   background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-bottom.svg") !important;
+   width: 39px !important;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 120px;
+    right: -15px !important;
+    top: -27px !important;
+    top: 0;
+}
+.lines-imgs-bottom img{
+  position: absolute;
+    right: 24px !important;
+    top: -33px !important;
+    z-index: -1;
+    width:119px !important;
+}
+.slider-content {
+  font-size:20px !important;
+}
+.sec-participate-23 {
+   padding-top:0px !important;
+   padding-bottom:0px !important;
+}
+
+.footer-slide-img{
+width: 80px !important;
+bottom: 43.9rem !important;
+}
+.sponsor-img__item-content {
+    margin-top: 100px;
+  }
+
+  .why-txt p{
+  
+font-size: 20px !important;
+margin-top:0rem !important;
+/* max-width: 250px; */
+margin-bottom:2rem;
+}
+.why-txt{
+  
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -18rem !important;
+}
+.register-btn a{
+  margin-top:0px !important;
+}
+.one-slide br{
+  display:none !important;
+}
+.why-txt h2{
+  margin-bottom:2rem !important;
+}
+.keen-head{
+   margin-bottom:0px !important;
+}
+.banner-designathon23{
+  left:0 !important;
+}
+.banner-side-img{
+  padding:0px !important;
+}
+
+
+}
+
 
 /* large device */
 @media screen and (min-width: 1900px) {
@@ -402,6 +401,7 @@ color: #0D0EA3 !important;
   }
   
 }
+
 .register-red-btn{
   -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
