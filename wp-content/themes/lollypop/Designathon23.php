@@ -36,7 +36,9 @@ left: -5px;
 .event-Details .register-process h4{font-size: 24px;font-weight: 700;line-height: 1.2;color: #FFFFFF;}
 .event-Details .register-process p{font-weight: 400;line-height: 1.45;color: rgba(255, 255, 255, 0.7) !important;width: 100%;max-width:446px ;}
 .event-Details .register-process span{font-weight: 700;color:#fff !important;}
-.event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height:1}
+.event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
+    font-style: normal;
+    font-family: 'Manrope';}
 .btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -57,7 +59,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
 .btn-red .white_arrow{display:none;}
 .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;}
-.event-details-content{padding-left:30px;}
+.event-details-content{padding-left:75px;}
 .our-sponser h3{position:relative;}
 @media(max-width: 767px){
   .event-Details{padding: 180px 0 72px 0;}
@@ -456,7 +458,7 @@ color: #0D0EA3 !important;
                         </div>
                   </div>
                    <div class="text-center register-btn">
-                   <a href="#" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
              </div>
@@ -497,8 +499,7 @@ color: #0D0EA3 !important;
 
               <label class="mt-4">So what are you waiting for?</label>
               <div>
-                <a href="#" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
-               
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
               </div>
             </div>
             </div>
@@ -523,7 +524,7 @@ color: #0D0EA3 !important;
       <!-- pdf -->
       <section class="sec-participate-23">
         <div class="container"> 
-          <div class="row"> 
+          <div class="row mx-auto"> 
             <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
               <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
                 <div class="d-flex align-items-center justify-content-center">
