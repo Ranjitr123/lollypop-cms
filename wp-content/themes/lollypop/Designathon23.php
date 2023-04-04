@@ -372,6 +372,28 @@ color: #0D0EA3 !important;
   }
   
 }
+.register-red-btn{
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.register-red-btn img{
+  opacity: 0;display: inherit !important;
+    width: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.register-red-btn:hover img{
+  opacity: 1;
+    visibility: visible;
+    width: auto;
+}
 
 </style>
 
@@ -381,6 +403,7 @@ color: #0D0EA3 !important;
         <div class="container">
           <div class="row"> 
             <div class="col-12 col-md-12 col-lg-12 mx-auto mt-5">
+               <img class="img-fluid mb-5 design-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/new-logo.svg" alt="logo">
                <img class="img-fluid mb-5 design-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/new-logo.svg" alt="logo">
               <div class="col-md-10 px-0">
                  <p class="fnt-20 mb-0 fnt-700 clr-yel-92a mt-5 design__p">Designathon 2023 is here!</p>
@@ -458,7 +481,7 @@ color: #0D0EA3 !important;
                         </div>
                   </div>
                    <div class="text-center register-btn">
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red register-red-btn" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
              </div>
@@ -499,7 +522,7 @@ color: #0D0EA3 !important;
 
               <label class="mt-4">So what are you waiting for?</label>
               <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red register-red-btn">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
               </div>
             </div>
             </div>
@@ -526,9 +549,9 @@ color: #0D0EA3 !important;
         <div class="container"> 
           <div class="row mx-auto"> 
             <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
-              <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
+              <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px); position: relative;padding-bottom:65px;">
                 <div class="d-flex align-items-center justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
+                  <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center" style="position: relative;z-index: 100;"> 
                     <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2 keen-head">Keen to know more?</span>
                       <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a">Rules and regulations</h2>
                       <h2 class="fnt-40 fnt-800 clr-yel-92a">to get you started </h2>
@@ -540,7 +563,7 @@ color: #0D0EA3 !important;
                  </div>
                 </div>
                 </div>
-                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
+                <img class="img-fluid" style="position: absolute;bottom: 0;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
               </div>
             </div>
           </div>
