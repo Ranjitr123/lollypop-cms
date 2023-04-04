@@ -410,7 +410,7 @@ color: #0D0EA3 !important;
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities row">
-               <div class="col-12 col-md-12 col-lg-12 mx-auto">
+               <div class="col-12 col-md-12 col-lg-11 mx-auto">
                   <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
                   <div class="d-md-flex d-block">
                     <div class="col-md-4">
