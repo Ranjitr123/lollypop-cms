@@ -61,7 +61,11 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;}
 .event-details-content{padding-left:75px;}
 .our-sponser h3{position:relative;}
+.athon-prize-list__item h6{
+   font-family: 'Cairo', sans-serif;
+}
 @media(max-width: 767px){
+  .white_arrow{display: inline-block !important;}
   .event-Details{padding: 180px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
 .event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
@@ -94,11 +98,17 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 @media(max-width: 768px){
   .our-sponser:before{display: none;}
   .download-btn .btn-red {padding: 12px 36px !important;}
-  .download-btn {max-width: 172px !important;}
+  .download-btn {max-width: 196px !important;}
   .data-scroll{padding: 40px 0 !important}
   .download-btn:hover {
     max-width: 195px !important;
 }
+.register-red-btn img {
+    opacity: 1 !important;
+    display: inherit !important;
+    width: auto !important;
+    visibility: visible !important;}
+    .btn-red img{margin-left: 10px !important;}
 .faq-el--athon{
 margin-top: -70px;
 }
@@ -108,18 +118,22 @@ margin-top: -70px;
 }
 .banner-side-img{
    width:136px !important;
-   height:233px !important;
+   height:223px !important;
 
 }
 .design23-head{font-family: 'Cairo', sans-serif;
-  font-size: 20px !important;
+  font-size: 24px !important;
 line-height: 130% !important;
 font-weight:700 !important;
 }
 .design__p{
-
+  font-size: 14px !important;
 }
 .athon-prize-list__item h6{
+   font-size:20px !important;
+   font-family: 'Cairo', sans-serif;
+}
+.athon-prize-list__item p{
    font-size:12px !important;
 }
 .lines-img-top img {
@@ -177,7 +191,7 @@ bottom: 43.9rem !important;
 
   .why-txt p{
   
-font-size: 24px !important;
+font-size: 20px !important;
 margin-top:0rem !important;
 /* max-width: 250px; */
 margin-bottom:2rem;
@@ -187,7 +201,7 @@ margin-bottom:2rem;
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: -21rem !important;
+    margin-top: -18rem !important;
 }
 .register-btn a{
   margin-top:0px !important;
@@ -201,7 +215,12 @@ margin-bottom:2rem;
 .keen-head{
    margin-bottom:0px !important;
 }
-
+.banner-designathon23{
+  left:0 !important;
+}
+.banner-side-img{
+  padding:0px !important;
+}
 
 }
 
@@ -250,6 +269,7 @@ p, h6{
     top: 21px;
     position: absolute;
     right: 0;
+    
  }
  .design-content-p{
   max-width:600px;
@@ -585,7 +605,7 @@ color: #0D0EA3 !important;
         <div class="container">
           <div class="row">
               <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
-                    <div class=" row sponsor-img mb-5 mx-uto">
+                    <div class=" row sponsor-img mb-5 mx-md-auto">
                       <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto d-flex sponsor-sec">
                           <div class="col-md-3">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
@@ -595,7 +615,7 @@ color: #0D0EA3 !important;
                           </div>
                       </div>
                     </div> 
-                    <div class=" row sponsor-img mx-auto">
+                    <div class=" row sponsor-img mx-md-auto">
                     <div class="d-flex col-12 col-md-11 col-lg-9 col-xl-10 mx-auto  sponsor-sec">
                       <div class="col-md-3">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
@@ -742,6 +762,16 @@ color: #0D0EA3 !important;
                         </div>
                         <div class="f-accordion__body"> 
                           <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Yes, you will be expected to submit your designs in a specified format. The format will be explained to you before the start of the event.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="faq-ac__item col-12">
+                      <div class="f-accordion">
+                        <div class="f-accordion__head">
+                          <h6 class="fnt-16 fnt-800 mb-0">Do we have any prize money for the Designathon winner team?</h6>
+                        </div>
+                        <div class="f-accordion__body"> 
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">The winning teams will get super exciting cash prizes!</p>
                         </div>
                       </div>
                     </li>
