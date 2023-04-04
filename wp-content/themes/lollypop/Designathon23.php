@@ -717,7 +717,7 @@ color: #0D0EA3 !important;
             </div>
           </div>
         </div>
-        <img class="img-fluid footer-slide-img lazyloaded position-absolute" style="width:320px; bottom:33rem" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" data-ll-status="loaded">
+        <img class="img-fluid footer-slide-img  position-absolute" style="width:320px; bottom:33rem" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" >
         <img class="img-fluid position-relative" style="transform: rotate(180deg);" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-top-dots.png" alt="logo">
     </section>
      
