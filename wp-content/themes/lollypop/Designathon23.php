@@ -273,10 +273,10 @@ color: #0D0EA3 !important;
   .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
   .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important}
   .download-btn .btn-red {padding: 12px 36px !important;}
-  .download-btn {max-width: 196px !important;}
+  .download-btn {max-width:200px !important;}
   .data-scroll{padding: 40px 0 !important}
   .download-btn:hover {
-    max-width: 195px !important;
+    max-width: 210px !important;
   }
 
 .register-red-btn img {
@@ -389,7 +389,12 @@ margin-bottom:2rem;
 .banner-side-img{
   padding:0px !important;
 }
-
+.banner-designathon23 {
+  background-size: auto;
+}
+p br{
+  display:none !important;
+}
 
 }
 
