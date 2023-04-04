@@ -423,7 +423,11 @@ $header = new WP_Query( $args );
 <div class="row">
 <div class="col-12 col-lg-11 mx-auto">
 <div class="row">
-<div class="col-8 col-md-1 js-toggle d-flex align-items-center"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+<div class="col-8 col-md-1 js-toggle d-flex align-items-center"> 
+    <a class="logo-header pz-2 d-none d-md-flex align-items-center" href="<?php echo site_url(); ?>">
+<i class="icon-lollypop"></i>
+</a>
+</div>
 <div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">

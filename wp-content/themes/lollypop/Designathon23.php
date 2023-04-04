@@ -70,7 +70,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ; margin-left:1rem;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
@@ -79,8 +79,11 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     margin:0 auto;}
     .sponsor-sec{flex-direction:column;}
     .footer-slide-img{width:80px; margin-left:0px !important;}
-    .event-details-content{padding-left:0px;}
+    .event-details-content{padding-left:15px;}
     .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
+    .sponsor-sec img{height: 78px;}
+
+
 }
 
 /*designathon23-css-mithun-bl*/
@@ -167,7 +170,7 @@ bottom: 43.5rem !important;
 
   .why-txt p{
   
-font-size: 14px !important;
+font-size: 24px !important;
 margin-top:0rem !important;
 /* max-width: 250px; */
 margin-bottom:2rem;
@@ -177,7 +180,7 @@ margin-bottom:2rem;
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: -18rem !important;
+    margin-top: -21rem !important;
 }
 .register-btn a{
   margin-top:0px !important;
@@ -351,7 +354,7 @@ color: #0D0EA3 !important;
   }
   .why-txt{
     
-    margin-top: -28rem;
+    margin-top: -30rem;
     text-align: center;
     width: 70%;
     margin-left: auto;
