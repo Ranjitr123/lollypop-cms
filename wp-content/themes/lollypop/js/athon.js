@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $("header").addClass("lp-mainheader--white athon-header"),
-    $("footer").css({ background: "#f8e1af", "padding-top": "0" }),
+    // $("footer").css({ background: "#f8e1af", "padding-top": "0" }),
     $("footer").find(".container").addClass("lp-container1000"),
     $("body").addClass("sec-yel-bg"),
-    $("footer").addClass("athon-footer"),
+    // $("footer").addClass("athon-footer"),
     $(".img-card-slider").slick({
       dots: !1,
       infinite: !0,

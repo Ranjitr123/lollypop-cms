@@ -41,7 +41,7 @@ left: -5px;
 .btn-red:hover{color:#fff;}
 .design-cities-hacks{padding:130px 0 60px 0;}
 .design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;}
-.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-31px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
+.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-19px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
 .hack-Cities{width: 100%; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 30px}
     figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
@@ -57,7 +57,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 
 
 @media(max-width: 767px){
-  .event-Details{padding: 0px 0 72px 0;}
+  .event-Details{padding: 180px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
 .event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
 .event-Details .register-process p{max-width:100%;}
@@ -65,11 +65,13 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;max-width:201px;margin-bottom:35px ; margin-left:1rem;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:35px ; margin-left:1rem;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
 .last-Design h2{font-size:24px;max-width:323px;}
+.one-slide{
+    margin:0 auto;}
 }
 
 /*designathon23-css-mithun-bl*/
@@ -158,12 +160,15 @@ width: 80px !important;
   
 font-size: 14px !important;
 margin-top:0rem !important;
+max-width: 250px;
+margin-bottom:2rem;
 }
 .why-txt{
   
-  margin-top: -16rem !important;
-    margin-left: -3% !important;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -18rem !important;
 }
 .register-btn a{
   margin-top:0px !important;
@@ -178,8 +183,9 @@ margin-top:0rem !important;
    margin-bottom:0px !important;
 }
 
-
 }
+
+media
 
 /* designathon */
 .footer {
@@ -326,8 +332,10 @@ color: #0D0EA3 !important;
   .why-txt{
     
     margin-top: -28rem;
-      margin-left: -5% !important;
+      /* margin-left: -5% !important; */
       text-align: center;
+      /* width: 80%;
+    margin: 0 auto; */
   }
 
 .register-btn a{
@@ -351,7 +359,7 @@ color: #0D0EA3 !important;
                 <h2 class="fnt-800 fnt-50  mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head">Bigger<span class=" clr-yel-92a">.</span> Grander<span class=" clr-yel-92a">.</span> crazier<span class=" clr-yel-92a">.</span></h2>
                 <p class="col-lg-11 col-xxl-10 px-0 fnt-16 design-content-p">An in-person action packed design hackathon where students and aspiring designers are given a platform to experience real-life design problems and master the art of creating usable, viable, and empathetic design solutions while having a great deal of fun for 24 hours straight. </p>
               </div>
-              <ul class="px-0 d-flex flex-wrap athon-prize-list">
+              <ul class="px-0 d-flex  athon-prize-list">
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Date</p>
                   <h6 class="fnt-700 fnt-24 mb-0">28 - 29th April</h6>
@@ -395,9 +403,11 @@ color: #0D0EA3 !important;
       <!-- why participants slick -->
       <section>
         <div class="container">
-           <div class="slick-img position-relative">
+           <div class="row">
+             <div class="col-md-12 col-12">
+             <div class="slick-img position-relative">
               <img class="img-fluid d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg.svg" alt="logo">
-              <img class="img-fluid d-block d-md-none" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg-mobile.svg" alt="logo">
+              <img class="img-fluid d-block d-md-none m-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg-mobile.svg" alt="logo">
                 <div class="why-txt">
                     <h2>Why Participate?</h2>
                   <div class="one">
@@ -415,48 +425,9 @@ color: #0D0EA3 !important;
                    <a href="#" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
-
-      <!-- <section class="sec-pd-designathonposition-relative sec-athon-text-bg">
-        <div class="container"> 
-          <div class="row"> 
-                <div class="lines-img-top">
-                   <img class="img-fluid" style="width:194px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-top-lines.svg" alt="logo">
-                 </div>
-              <div class="col-12 col-md-10 col-lg-10 mx-auto clr-gray p-0 ">
-              <ul class="px-0 participate-slider dots-red dots-red--wide mb-0 clr-gray pb-0">
-                <li class="participate-slider__item text-center clr-gray">
-                  <div class="col-md-10 px-0 text-center mx-auto">
-                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Collaborate and network with budding <span class="clr-yel-92a">designers</span> from across the country!</p>
-                  </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
-                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
-                </li>
-                <li class="participate-slider__item text-center clr-gray">
-                  <div class="col-md-8 px-0 text-center mx-auto">
-                    <p class=" clr-yel-92a fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Get mentored by top industry <span class="clr-yel-92a">top industry</span> pioneers!</p>
-                  </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
-                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
-                </li>
-                <li class="participate-slider__item text-center clr-gray">
-                  <div class="col-md-6 px-0 text-center mx-auto">
-                    <p class="clr-yel-92a  fnt-20 mb-3 mb-md-4 fnt-800">Why Participate?</p>
-                    <p class="clr-blue fnt-40 mb-0 fnt-20  px-0 mx-auto fnt-800 slider-content" style="max-width:736px; margin-top:91px;">Win cash prizes of up to <span class="clr-yel-92a">Rs. 2,00,000</span></p>
-                  </div>
-                  <a href="#" class="btn-red" style="margin-top:65px;">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
-                  <img class="img-fluid dots-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-dots.svg" alt="dots">
-                </li>
-              </ul>
-            </div>
-            <div class="lines-imgs-bottom">
-                   <img class="img-fluid" style="width:194px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/why-p-bot-lines.svg" alt="logo">
              </div>
-          </div>
-        </div>
-      </section> -->
-
+           </div>
+         
       <!-- event details -->
        <section class="event-Details position-relative">
         <img class="position-absolute d-none d-md-block img-fluid" style="left:-9%; top: 25%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
