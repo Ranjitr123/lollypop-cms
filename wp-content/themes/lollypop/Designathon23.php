@@ -169,7 +169,7 @@ font-weight:700 !important;
 } */
 .footer-slide-img{
 width: 80px !important;
-bottom: 43.5rem !important;
+bottom: 43.9rem !important;
 }
 .sponsor-img__item-content {
     margin-top: 100px;
