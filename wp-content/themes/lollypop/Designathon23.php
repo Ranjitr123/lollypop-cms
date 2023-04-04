@@ -225,7 +225,7 @@ margin-bottom:2rem;
 }
 .banner-designathon23{
    background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-top-dots.png");
-   background-repeat: no-repeat;
+   background-repeat: no-repeat;background-size: contain;
     top: -21px;
     left: 11px;
 }
