@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("header").addClass("lp-mainheader--white athon-header"),
-    $("footer").css({ background: "#f8e1af", "padding-top": "0" }),
+    // $("footer").css({ background: "#f8e1af", "padding-top": "0" }),
     $("footer").find(".container").addClass("lp-container1000"),
     $("body").addClass("sec-yel-bg"),
     // $("footer").addClass("athon-footer"),
@@ -70,5 +70,16 @@ $(document).ready(function () {
       arrows: !1,
       autoplay: !0,
       adaptiveHeight: !0,
+    });
+
+    $(".one").slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows:false,
+      speed:600,
+      autoplay: !0,
+    
     });
 });
