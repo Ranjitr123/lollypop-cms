@@ -26,10 +26,10 @@ position:absolute;
 top: -30px;
 left: -5px;
 }
-.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;left:33%;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
+.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;margin-left: -11px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
 
 /*designathon23-css-mithun-bl*/
-.event-Details {padding: 180px 0;}
+.event-Details {padding: 180px 0 120px 0;}
 .event-Details .details-width{width: 100%;max-width:765px;margin: 0 auto;}
 .event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;}
 .event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1;}
@@ -38,24 +38,23 @@ left: -5px;
 .event-Details .register-process span{font-weight: 700;color:#fff !important;}
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height:1}
 .btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
-.btn-red:hover{color:#fff;}
+.btn-red:hover{color:#fff; clip-path:polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 .design-cities-hacks{padding:130px 0 60px 0;}
 .design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;}
 .design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-19px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
 .hack-Cities{width: 100%; margin:0 auto;}
-.imgBdr{border: 1px solid #FF3500;margin-right: 30px}
+.imgBdr{border: 1px solid #FF3500;margin-right: 53px;}
     figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
     transition: all 700ms cubic-bezier(.25, .46, .45, .94); transform: translate(0rem, -0rem);}
 figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     -ms-transform: translate(-1.1rem, -1.0rem);
     transform: translate(1.1rem, -1.0rem); transition: all 700ms cubic-bezier(.25, .46, .45, .94);}
-.last-Design{padding: 50px 0 100px 0;}
-.last-Design{padding: 50px 0 100px 0;}
+.last-Design{padding: 0px 0 100px 0;}
 .last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
 .btn-red .white_arrow{display:none;}
 .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;}
-
-
+.event-details-content{padding-left:30px;}
+.our-sponser h3{position:relative;}
 @media(max-width: 767px){
   .event-Details{padding: 180px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
@@ -72,6 +71,10 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .last-Design h2{font-size:24px;max-width:323px;}
 .one-slide{ max-width:230px;
     margin:0 auto;}
+    .sponsor-sec{flex-direction:column;}
+    .footer-slide-img{width:80px; margin-left:0px !important;}
+    .event-details-content{padding-left:0px;}
+    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
 }
 
 /*designathon23-css-mithun-bl*/
@@ -140,17 +143,17 @@ font-weight:700 !important;
    padding-bottom:0px !important;
 }
 
-.our-sponser:before {
+/* .our-sponser:before {
     content: '';
     position: absolute;
     width: 95px;
     height: 48px;
     top: -4px;
     left: 21%;
-}
+} */
 .footer-slide-img{
-margin-left: -20px !important;
 width: 80px !important;
+bottom: 43.5rem !important;
 }
 .sponsor-img__item-content {
     margin-top: 100px;
@@ -183,9 +186,19 @@ margin-bottom:2rem;
    margin-bottom:0px !important;
 }
 
+
 }
 
-
+.download-btn{
+  margin: 0 auto;
+    max-width: 198px;
+    background-color: #fff;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
+    padding: 1px;
+}
+.download-btn:hover{max-width: 227px;}
+.download-btn .btn-red{display: flex; padding: 15px 36px;}
+.download-btn .btn-red:hover{    clip-path: polygon(7.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 
 /* designathon */
 .footer {
@@ -293,7 +306,7 @@ color: #0D0EA3;
 }
 .sec-participate-23{
    padding-top:50px;
-   padding-bottom:150px;
+   padding-bottom:100px;
 }
 .footer-nav-links span{
   color: #FFFFFF !important;
@@ -327,16 +340,16 @@ font-weight: 800;
 font-size: 40px;
 line-height: 120%;
 text-align: center;
-text-transform: capitalize;
+/* text-transform: capitalize; */
 color: #0D0EA3 !important;
   }
   .why-txt{
     
     margin-top: -28rem;
-      /* margin-left: -5% !important; */
-      text-align: center;
-      /* width: 80%;
-    margin: 0 auto; */
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .register-btn a{
@@ -393,18 +406,26 @@ color: #0D0EA3 !important;
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities row">
-              <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
-              <div class="d-md-flex d-block">
-                  <figure class="imgBdr">
-                    <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bng.svg" alt="bangaluru">
-                  </figure> 
-                  <figure class="imgBdr">
-                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyd.svg" alt="hyderabad">
-                  </figure>
-                  <figure class="imgBdr">
-                    <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/chennai.svg" alt="hyderabad">
-                  </figure>
-             </div>
+               <div class="col-12 col-md-12 col-lg-12 mx-auto">
+                  <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4">
+                      <figure class="imgBdr">
+                          <img class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/bng.svg" alt="bangaluru">
+                        </figure> 
+                    </div>
+                    <div class="col-md-4">
+                    <figure class="imgBdr">
+                        <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/hyd.svg" alt="hyderabad">
+                      </figure>
+                    </div>
+                    <div class="col-md-4">
+                    <figure class="imgBdr">
+                        <img  class=" img-fluid slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/chennai.svg" alt="hyderabad">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
       </section>
@@ -436,17 +457,19 @@ color: #0D0EA3 !important;
                 </div>
              </div>
            </div>
+       </div>
+     </section>
          
       <!-- event details -->
        <section class="event-Details">
         <img class="position-absolute d-none d-md-block img-fluid" style="left:0%; top: 30%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
         <div class="container">
-          <div class="details-width">
+          <div class="col-12 col-md-12 col-lg-8 mx-auto">
           <div class="row">
             <div class="col-md-4">
               <h2>Event Details</h2>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 event-details-content">
               <div class="register-process mb-4 mb-md-5">
                 <h4>Registration Process</h4>
                  <p>Registration starts on 4th April & closes on <span>9th April. </span> Since we have limited seats, there will be a selection process, and if you’re selected, you will receive an email confirming your selection!</p>
@@ -468,7 +491,7 @@ color: #0D0EA3 !important;
                   <p>The award ceremony will take place after the final presentation to the jury members, on 29th April.</p>
               </div>
 
-              <label>So what are you waiting for?</label>
+              <label class="mt-4">So what are you waiting for?</label>
               <div>
                 <a href="#" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                
@@ -498,16 +521,16 @@ color: #0D0EA3 !important;
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
-              <div class=" pt-md-5 px-3 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
+              <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px);">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
                     <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2 keen-head">Keen to know more?</span>
-                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a" style="text-transform: capitalize;">Rules and regulations</h2>
-                      <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
+                      <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a">Rules and regulations</h2>
+                      <h2 class="fnt-40 fnt-800 clr-yel-92a">to get you started </h2>
 		               </div>
-                  <div>
+                  <div class="download-btn-container">
                      <div class="download-btn">
-                        <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF; clip-path: none;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
+                        <a href="#" class="btn-red" style="background: #1718AD;margin: 0;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
                      </div>
                  </div>
                 </div>
@@ -523,22 +546,26 @@ color: #0D0EA3 !important;
       <section class="sec-pd-designathon2 pt-5 pb-5">
         <div class="container">
           <div class="row">
-              <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
-                    <div class=" row sponsor-img mb-5">
-                      <div class="col-md-5">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
-                      </div>
-                        <div class="col-md-7">
-                             <p style="color: rgba(255, 255, 255, 0.7)!important;">Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
+              <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
+                    <div class=" row sponsor-img mb-5 mx-uto">
+                      <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto d-flex sponsor-sec">
+                          <div class="col-md-3">
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
                           </div>
+                          <div class="col-md-9 mx-md-5">
+                            <p style="color: rgba(255, 255, 255, 0.7)!important;">Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
+                          </div>
+                      </div>
                     </div> 
-                    <div class=" row sponsor-img">
-                      <div class="col-md-5">
+                    <div class=" row sponsor-img mx-auto">
+                    <div class="d-flex col-12 col-md-11 col-lg-9 col-xl-10 mx-auto  sponsor-sec">
+                      <div class="col-md-3">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
                       </div>
-                        <div class="col-md-7">
+                        <div class="col-md-9 mx-md-5">
                              <p style="color: rgba(255, 255, 255, 0.7)!important;">Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers. With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost. Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.</p>
                           </div>
+                      </div>
                     </div> 
                 </div>
              </div>
@@ -555,7 +582,7 @@ color: #0D0EA3 !important;
               </div>
               <div class="faq-el faq-el--athon" style="background: #1718AD;">
                 <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700">Frequently asked questions</span>
-                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-6 px-0 mb-0 clr-yel-92a mb-5">When in doubt, always ask</h2>
+                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-7 px-0 mb-0 clr-yel-92a mb-5">When in doubt, always ask</h2>
                 </div>
                 <div class="faq-el__body"> 
                   <ul class="px-0 mb-0 faq-ac row justify-content-between">
@@ -566,7 +593,7 @@ color: #0D0EA3 !important;
                         </div>
                         <div class="f-accordion__body"> 
                           <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Being an in-house event at our studios in Bengaluru, Hyderabad, and Chennai, Designathon 2023 is back with a bang!
-</p>
+                            </p>
                         </div>
                       </div>
                     </li>
@@ -686,7 +713,8 @@ color: #0D0EA3 !important;
             </div>
           </div>
         </div>
-        <img class="img-fluid footer-slide-img" style="width:320px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo">
+        <img class="img-fluid footer-slide-img lazyloaded position-absolute" style="width:320px; bottom:33rem" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" data-ll-status="loaded">
+        <img class="img-fluid position-relative" style="transform: rotate(180deg);" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-top-dots.png" alt="logo">
     </section>
      
 </main>
