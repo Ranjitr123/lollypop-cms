@@ -65,12 +65,12 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:35px ; margin-left:1rem;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ; margin-left:1rem;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
 .last-Design h2{font-size:24px;max-width:323px;}
-.one-slide{
+.one-slide{ max-width:230px;
     margin:0 auto;}
 }
 
@@ -160,7 +160,7 @@ width: 80px !important;
   
 font-size: 14px !important;
 margin-top:0rem !important;
-max-width: 250px;
+/* max-width: 250px; */
 margin-bottom:2rem;
 }
 .why-txt{
@@ -185,7 +185,7 @@ margin-bottom:2rem;
 
 }
 
-media
+
 
 /* designathon */
 .footer {
@@ -224,6 +224,7 @@ p, h6{
  }
  .design-content-p{
   max-width:600px;
+  margin-bottom:3rem;
  }
  .sponsor-img__item-content{
    margin-top:120px;
@@ -345,6 +346,14 @@ color: #0D0EA3 !important;
    margin-bottom:70px;
 }
 
+/* large device */
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+  
+}
+
 </style>
 
 <main class="main">
@@ -406,7 +415,7 @@ color: #0D0EA3 !important;
            <div class="row">
              <div class="col-md-12 col-12">
              <div class="slick-img position-relative">
-              <img class="img-fluid d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg.svg" alt="logo">
+              <img class="img-fluid d-none d-md-block m-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg.svg" alt="logo">
               <img class="img-fluid d-block d-md-none m-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/slick-bg-mobile.svg" alt="logo">
                 <div class="why-txt">
                     <h2>Why Participate?</h2>
@@ -429,8 +438,8 @@ color: #0D0EA3 !important;
            </div>
          
       <!-- event details -->
-       <section class="event-Details position-relative">
-        <img class="position-absolute d-none d-md-block img-fluid" style="left:-9%; top: 25%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
+       <section class="event-Details">
+        <img class="position-absolute d-none d-md-block img-fluid" style="left:0%; top: 30%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
         <div class="container">
           <div class="details-width">
           <div class="row">
@@ -440,8 +449,7 @@ color: #0D0EA3 !important;
             <div class="col-md-8">
               <div class="register-process mb-4 mb-md-5">
                 <h4>Registration Process</h4>
-                <p>Registration starts on 30th March & closes on <span> 5th April .</span>
-                Since we have limited seats, there will be a selection process, and if you’re selected, you will receive an email confirming your selection!</p>
+                 <p>Registration starts on 4th April & closes on <span>9th April. </span> Since we have limited seats, there will be a selection process, and if you’re selected, you will receive an email confirming your selection!</p>
               </div>
               <div class="register-process mb-4 mb-md-5">
                 <h4>Date and Time</h4>
@@ -457,7 +465,7 @@ color: #0D0EA3 !important;
               </div>
               <div class="register-process mb-4 mb-md-5">
                 <h4>Awards</h4>
-                <p>The Award Ceremony will take place after the final presentation to the jury members, on 29th April. </p>
+                  <p>The award ceremony will take place after the final presentation to the jury members, on 29th April.</p>
               </div>
 
               <label>So what are you waiting for?</label>
@@ -476,7 +484,7 @@ color: #0D0EA3 !important;
       <section class="last-Design">
         <div class="container">
           <div class="text-center">
-            <h2>In the meantime enjoy last year Designathon’22</h2>
+            <h2>Here is a sneak peak of Designathon’22</h2>
             <a href="https://youtu.be/2ZO_TVnvTBI" data-fancybox>
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/vedio-design-logo.webp" alt="video">
             </a>
@@ -498,7 +506,9 @@ color: #0D0EA3 !important;
                       <h2 class="fnt-40 fnt-800 clr-yel-92a" style="text-transform: capitalize;">to get you started </h2>
 		               </div>
                   <div>
-                  <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
+                     <div class="download-btn">
+                        <a href="#" class="btn-red" style="background: #1718AD;border: 1px solid #FFFFFF; clip-path: none;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
+                     </div>
                  </div>
                 </div>
                 </div>
@@ -514,7 +524,7 @@ color: #0D0EA3 !important;
         <div class="container">
           <div class="row">
               <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
-                    <div class=" row sponsor-img">
+                    <div class=" row sponsor-img mb-5">
                       <div class="col-md-5">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
                       </div>
@@ -527,8 +537,7 @@ color: #0D0EA3 !important;
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
                       </div>
                         <div class="col-md-7">
-                             <p style="color: rgba(255, 255, 255, 0.7)!important;">CreditVidya is India's industry leader in alternative credit scoring space in India. They deploy artificial intelligence (AI), machine learning, and alternative data to facilitate institutional credit for marginalized populations. Their products are helping a large section of the salaried and self-employed population become visible to lenders, by making it financially viable for banks and NBFC's to underwrite customers for much smaller unsecured loans. They are dedicated to their mission of making affordable credit accessible to more than 3 billion under-served people, and over 55 leading banks and NBFCs rely on their products to manage the credit cycle end-to-end.</p>
-
+                             <p style="color: rgba(255, 255, 255, 0.7)!important;">Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers. With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost. Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.</p>
                           </div>
                     </div> 
                 </div>
@@ -543,18 +552,6 @@ color: #0D0EA3 !important;
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-10 col-xl-9 mx-auto">
               <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
-                <!-- <div class="d-athon-mision__item col-12 col-md-11">
-                  <div class="mb-4 d-inline-block mx-auto">
-                    <h3 class="fnt-50 fnt-800 mb-0 clr-yel-92a text-center our-sponser position-relative">Our Sponsor</h3>	  
-                    <div class="text-center sponsor-img">
-                      <div class="sponsor-img__item mt-5">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
-                      </div>
-                        <div class="sponsor-img__item-content">
-                             <p>Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
-                          </div>
-                    </div> 
-                </div> -->
               </div>
               <div class="faq-el faq-el--athon" style="background: #1718AD;">
                 <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700">Frequently asked questions</span>
@@ -568,7 +565,8 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">Is this an online or in-house Event?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Being an in-house event, Designathon 2022 is back with a bang!</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Being an in-house event at our studios in Bengaluru, Hyderabad, and Chennai, Designathon 2023 is back with a bang!
+</p>
                         </div>
                       </div>
                     </li>
@@ -588,7 +586,7 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">When and where will Designathon be conducted?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Designathon is a 24-hour-in-person Design Hackathon scheduled on 22nd April at Lollypop Design Studio, Bangalore.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">Designathon is a 24-hour-in-person Design Hackathon scheduled on 28th April at our studios in Hyderabad, Bengaluru, and Chennai.</p>
                         </div>
                       </div>
                     </li>
@@ -618,7 +616,7 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">Will travel and accommodation compensation be provided?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">You will have to reach our studio in Bangalore at your own expense, after that, we will take care of everything.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">You will have to reach our studio in Hyderabad, Bengaluru, and Chennai at your own expense, after that, we will take care of everything.</p>
                         </div>
                       </div>
                     </li>
@@ -638,7 +636,7 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">Do we have to pay to participate in the competition?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">No. Designathon 2022 is free for all.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">No. Designathon 2023 is free for all.</p>
                         </div>
                       </div>
                     </li>
@@ -648,7 +646,7 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">What is the last date for Registration?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">The last date of registration is 5th April.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">The last date for registration is at 6 PM, 9th April.</p>
                         </div>
                       </div>
                     </li>
@@ -658,17 +656,17 @@ color: #0D0EA3 !important;
                           <h6 class="fnt-16 fnt-800 mb-0">Are we allowed to form our teams?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">No, you are required to register as an individual, and you will be allocated into teams on the day of the event.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">No, you are required to register as an individual, and you will be allocated your team on the day of the event.</p>
                         </div>
                       </div>
                     </li>
                     <li class="faq-ac__item col-12">
                       <div class="f-accordion">
                         <div class="f-accordion__head">
-                          <h6 class="fnt-16 fnt-800 mb-0">Will the required resources are provided to the participants?</h6>
+                          <h6 class="fnt-16 fnt-800 mb-0">Will the required resources be provided to the participants?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">Participants have to carry their Laptops with all the necessary design tools installed. You'll be provided with the required stationery for the competition by the Lollypop team.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">Participants have to carry their laptops with all the necessary design tools installed. You'll be provided with the required stationery and internet connectivity for the competition by the Lollypop team.</p>
                         </div>
                       </div>
                     </li>
@@ -682,33 +680,13 @@ color: #0D0EA3 !important;
                         </div>
                       </div>
                     </li>
-                    <li class="faq-ac__item col-12">
-                      <div class="f-accordion">
-                        <div class="f-accordion__head">
-                          <h6 class="fnt-16 fnt-800 mb-0">Do we have any prize money for the Designathon winner team?</h6>
-                        </div>
-                        <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7) !important;">The Winning team will get a cash prize worth Rs 1,50,000 and Rs 50,000 for the runner-up team.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="faq-ac__item col-12">
-                      <div class="f-accordion">
-                        <div class="f-accordion__head">
-                          <h6 class="fnt-16 fnt-800 mb-0">Do we have any prize money for the Designathon winner team?</h6>
-                        </div>
-                        <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0"style="color: rgba(255, 255, 255, 0.7) !important;" >The Winning team will get a cash prize worth Rs 1,50,000 and Rs 50,000 for the runner-up team.</p>
-                        </div>
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <img class="img-fluid footer-slide-img" style="margin-left: -98px; width:320px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo">
         </div>
+        <img class="img-fluid footer-slide-img" style="width:320px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo">
     </section>
      
 </main>
