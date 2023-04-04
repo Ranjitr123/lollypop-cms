@@ -458,7 +458,7 @@ color: #0D0EA3 !important;
                         </div>
                   </div>
                    <div class="text-center register-btn">
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
              </div>
@@ -499,7 +499,7 @@ color: #0D0EA3 !important;
 
               <label class="mt-4">So what are you waiting for?</label>
               <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
               </div>
             </div>
             </div>
@@ -535,7 +535,7 @@ color: #0D0EA3 !important;
 		               </div>
                   <div class="download-btn-container">
                      <div class="download-btn">
-                        <a href="#" class="btn-red" style="background: #1718AD;margin: 0;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
+                        <a href="https://lollypop.design/wp-content/uploads/2023/04/Designathon-23_-Rules-Regs_compressed.pdf" target="_blank" class="btn-red" style="background: #1718AD;margin: 0;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
                      </div>
                  </div>
                 </div>
