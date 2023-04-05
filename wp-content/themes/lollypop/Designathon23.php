@@ -364,7 +364,7 @@ font-weight:700 !important;
 
 .footer-slide-img{
 width: 80px !important;
-bottom: 44.2rem !important;
+bottom: 43rem !important;
 }
 .sponsor-img__item-content {
     margin-top: 100px;
@@ -650,7 +650,7 @@ p br{
       </section>
 
      <!-- faq -->
-     <section class="sec-pd-designathon2 pt-2 pb-0">
+     <section class="sec-pd-designathonfaq pt-2 pb-0">
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-10 col-xl-9 mx-auto">
