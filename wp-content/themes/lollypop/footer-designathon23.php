@@ -31,6 +31,9 @@
 a.fnt-30.fnt-800.link-insta {
     margin-left: 9px;
 }
+.link-twt{
+	margin-left: 0px !important;
+}
 
 @media (min-device-width:768px) and (max-device-width:1024px){
 .footer .ft-social-links{
