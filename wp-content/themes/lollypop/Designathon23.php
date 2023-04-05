@@ -89,6 +89,10 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     top: -21px;
     left: 11px;
 }
+/* .sec-pd-designathonfaq{
+  background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-Bottom-dots.svg");
+   background-repeat: no-repeat;background-size: contain;
+} */
 .design23-head{
   color: #FFFFFF;
   text-transform: uppercase;
@@ -363,8 +367,8 @@ font-weight:700 !important;
 }
 
 .footer-slide-img{
-width: 80px !important;
-bottom: 43rem !important;
+  width: 45px !important;
+  bottom: 43rem !important;
 }
 .sponsor-img__item-content {
     margin-top: 100px;
@@ -800,7 +804,7 @@ p br{
           </div>
         </div>
         <img class="img-fluid footer-slide-img  position-absolute" style="width:320px; bottom:33rem" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" >
-        <img class="img-fluid position-relative" style="transform: rotate(180deg); width:100%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-top-dots.png" alt="logo">
+        <img class="img-fluid position-relative" style=" width:100%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-Bottom-dots.svg" alt="logo">
     </section>
      
 </main>
