@@ -39,14 +39,14 @@ left: -5px;
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
     font-style: normal;
          font-family: 'Cairo', sans-serif;}
-.btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
+.btn-red{display: inline-block;text-decoration: none;padding: 15px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;}
 .btn-red:hover{color:#fff; clip-path:polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 .design-cities-hacks{padding:130px 0 60px 0;}
-.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;}
+.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0; margin-left: 28px;}
 .design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-19px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
 .hack-Cities{width: 100%; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 53px;}
@@ -59,7 +59,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
 .btn-red .white_arrow{display:none;}
 .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;}
-.event-details-content{padding-left:75px;}
+.event-details-content{padding-left:60px;}
 .our-sponser h3{position:relative;}
 .athon-prize-list__item h6{
    font-family: 'Cairo', sans-serif;
@@ -233,7 +233,10 @@ color: #0D0EA3 !important;
   margin-top:65px;
 }
 .keen-head{
-   margin-bottom:70px;
+   margin-bottom:70px !important;
+}
+.sec-pd-designathon2{
+  padding-bottom:150px !important;
 }
 @media(max-width: 767px){
   .white_arrow{display: inline-block !important;}
@@ -264,6 +267,12 @@ color: #0D0EA3 !important;
       /* transform:none; */
       transform: translate(1.1rem, -1rem);
     }
+    .keen-head{
+   margin-bottom:70px !important;
+}
+.sec-pd-designathon2{
+  padding-bottom:60px !important;
+}
 
 }
 
@@ -456,7 +465,7 @@ p br{
                 </li>
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Duration</p>
-                  <h6 class="fnt-700 fnt-24 mb-0">24 hours</h6>
+                  <h6 class="fnt-700 fnt-24 mb-0">24 Hours</h6>
                 </li>
                 <li class="athon-prize-list__item"> 
                   <p class="fnt-20 mb-0 fnt-400 clr-yel-92a ">Designers</p>
@@ -474,7 +483,7 @@ p br{
       <section class="design-cities-hacks">
         <div class="container">
             <div class="hack-Cities row">
-               <div class="col-12 col-md-12 col-lg-11 mx-auto">
+               <div class="col-12 col-md-12 col-lg-12 mx-auto">
                   <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
                   <div class="d-md-flex d-block">
                     <div class="col-md-4">
@@ -573,7 +582,7 @@ p br{
 
       <section class="last-Design">
         <div class="container">
-          <div class="text-center">
+          <div class="text-center col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
             <h2>Here is a sneak peak of Designathon’22</h2>
             <a href="https://youtu.be/2ZO_TVnvTBI" data-fancybox>
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/vedio-design-logo.webp" alt="video">
@@ -587,7 +596,7 @@ p br{
       <section class="sec-participate-23">
         <div class="container"> 
           <div class="row mx-auto"> 
-            <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
+            <div class="col-12 col-md-11 col-lg-9 col-xl-9 mx-auto">
               <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px); position: relative;padding-bottom:65px;">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center" style="position: relative;z-index: 100;"> 
@@ -615,21 +624,21 @@ p br{
           <div class="row">
               <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
                     <div class=" row sponsor-img mb-5 mx-md-auto">
-                      <div class="col-12 col-md-11 col-lg-9 col-xl-10 mx-auto d-flex sponsor-sec">
+                      <div class="col-12 col-md-11 col-lg-9 col-xl-9 mx-auto d-flex sponsor-sec">
                           <div class="col-md-3">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
                           </div>
-                          <div class="col-md-9 mx-md-5">
+                          <div class="col-md-10 mx-md-5">
                             <p style="color: rgba(255, 255, 255, 0.7)!important;">Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone. Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding. The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices. Today, Upstox is one of India's largest digital investing platforms, boasting over 10 million customers and unicorn status.</p>
                           </div>
                       </div>
                     </div> 
                     <div class=" row sponsor-img mx-md-auto">
-                    <div class="d-flex col-12 col-md-11 col-lg-9 col-xl-10 mx-auto  sponsor-sec">
+                    <div class="d-flex col-12 col-md-11 col-lg-9 col-xl-9 mx-auto  sponsor-sec">
                       <div class="col-md-3">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
                       </div>
-                        <div class="col-md-9 mx-md-5">
+                        <div class="col-md-10 mx-md-5">
                              <p style="color: rgba(255, 255, 255, 0.7)!important;">Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers. With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost. Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.</p>
                           </div>
                       </div>
