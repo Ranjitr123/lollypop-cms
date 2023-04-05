@@ -1,6 +1,6 @@
 <?php
 /**
- * * Template Name: UAE Landing Locations
+ * * Template Name: UAE Arabic Landing Locations
  * *
  * * @package WordPress
  * */
@@ -70,7 +70,7 @@ if($locationVideo !=''){
 <div class="container"> 
 <div class="row"> 
 <?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
-<div class="col-12 col-md-10 col-lg-8 mx-auto">
+<div class="col-12 col-md-9 col-lg-7 mx-auto">
 <div class="mb-5"> 
 <h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
 <p class="fnt-24"><?php the_sub_field('content'); ?></p>
