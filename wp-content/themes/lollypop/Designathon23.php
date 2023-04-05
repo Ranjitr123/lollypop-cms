@@ -73,7 +73,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     padding: 1px;
 }
 .download-btn:hover{max-width: 227px;}
-.download-btn .btn-red{display: flex; padding: 15px 36px;}
+.download-btn .btn-red{display: flex; padding: 15px 36px; justify-content: space-between;}
 .download-btn .btn-red:hover{    clip-path: polygon(7.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 
 /* designathon */
@@ -290,7 +290,7 @@ color: #0D0EA3 !important;
   .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
   .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important}
   .download-btn .btn-red {padding: 12px 36px !important;}
-  .download-btn {max-width:225px !important;}
+  .download-btn {max-width:200px !important;}
   .data-scroll{padding: 40px 0 !important}
   .download-btn:hover {
     max-width: 240px !important;
@@ -368,7 +368,7 @@ font-weight:700 !important;
 
 .footer-slide-img{
   width: 45px !important;
-  bottom: 43rem !important;
+  bottom: 0rem !important;
 }
 .sponsor-img__item-content {
     margin-top: 100px;
@@ -416,10 +416,11 @@ p br{
 }
 
 
-/* large device */
-@media screen and (min-width: 1900px) {
-  .container {
-    width: 1870px;
+/* small device */
+@media screen and (min-width: 320px) and (max-width:420px) {
+  .footer-slide-img {
+    width: 45px !important;
+    bottom: 0rem !important;
   }
   
 }
@@ -654,7 +655,7 @@ p br{
       </section>
 
      <!-- faq -->
-     <section class="sec-pd-designathonfaq pt-2 pb-0">
+     <section class="sec-pd-designathonfaq pt-2 pb-0 position-relative">
         <div class="container"> 
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-10 col-xl-9 mx-auto">
@@ -803,7 +804,7 @@ p br{
             </div>
           </div>
         </div>
-        <img class="img-fluid footer-slide-img  position-absolute" style="width:320px; bottom:33rem" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" >
+        <img class="img-fluid footer-slide-img  position-absolute" style="width:320px; bottom:0rem;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-slide.svg" alt="logo" >
         <img class="img-fluid position-relative" style=" width:100%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/faq-Bottom-dots.svg" alt="logo">
     </section>
      
