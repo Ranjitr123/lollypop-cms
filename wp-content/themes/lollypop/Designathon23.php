@@ -258,15 +258,9 @@ color: #0D0EA3 !important;
     .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
     .sponsor-sec img{height: 78px;}
     figure .slide, figure .slide:hover{
-      transform: inherit !important;
-      transform: none;
       transition: none;
-      -webkit-transform:none;
     }
-    .imgBdr {
-    border: none;
-    margin-right:0px;
-}
+    
 
 }
 
