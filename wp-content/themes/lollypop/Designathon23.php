@@ -260,7 +260,10 @@ color: #0D0EA3 !important;
     figure .slide, figure .slide:hover{
       transition: none;
     }
-    
+    figure .slide:hover{
+      /* transform:none; */
+      transform: translate(1.1rem, -1rem);
+    }
 
 }
 
