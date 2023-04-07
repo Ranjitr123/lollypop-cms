@@ -18,6 +18,7 @@ get_header();
     height: 5px;}
     .conclustion p, .conclustion ul{margin-bottom: 20px !important;}
     .plyr__controls{display: none;}
+	.conclusion-pad{padding-top:80px;}
 </style>
 
 
@@ -340,7 +341,7 @@ get_header();
     endwhile; endif; ?>
      
           <?php if( get_field('conclusion') !=''){?>
-          <section class=" sec-pt">
+          <section class="conclusion-pad sec-pt">
         <div class="container"> 
           <div class="row"> 
           <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
