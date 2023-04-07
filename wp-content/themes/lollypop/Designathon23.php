@@ -39,7 +39,7 @@ left: -5px;
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
     font-style: normal;
          font-family: 'Cairo', sans-serif;}
-.btn-red{display: inline-block;text-decoration: none;padding: 15px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
+.btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
