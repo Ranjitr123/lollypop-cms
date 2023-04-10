@@ -129,6 +129,7 @@ cursor: pointer;
    .arabic-slider figcaption {
      font-size:16px;
    }
+   .lp_mr{margin-right:0rem !important;}
    .case-study-slider{
     margin-right:1rem;
     width:auto;
@@ -183,7 +184,7 @@ cursor: pointer;
 .arabic_sec{ flex-direction: row-reverse;}
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse !important;}
-
+.lp_mr{margin-right:2rem;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
@@ -318,7 +319,7 @@ if($locationVideo !=''){
         <div class="col-12 col-md-10 col-lg-9 mb-4 pb-2 mb-md-0 pb-md-0" style="margin-left:auto;">
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
-                <div class="lp-awards__left">
+                <div class="lp-awards__left lp_mr">
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading'); ?></h2>
                     <span class="fnt-24 clr-white my-4 d-block data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('sub_content'); ?></span>
                 </div>
@@ -574,7 +575,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <?php if( have_rows('get_in_touch') ) : while( have_rows('get_in_touch') ): the_row(); ?>
 <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0"><?php the_sub_field('small_title'); ?></span>
 	<h2 class="fnt-50 fnt-800 clr-white"><?php the_sub_field('title'); ?></h2>
-	</div><a class="web-btn web-btn--red" href="<?php the_sub_field('cta_url'); ?>">Get in Touch</a>
+	</div><a class="web-btn web-btn--red" href="<?php the_sub_field('cta_url'); ?>">ابقى على تواصل</a>
 <?php wp_reset_postdata(); endwhile; endif;?>
 </div>
 </div>
