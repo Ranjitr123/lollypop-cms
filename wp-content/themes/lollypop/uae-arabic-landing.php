@@ -181,8 +181,8 @@ cursor: pointer;
 .case-study-slider h6 { max-width:250px;}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 .arabic_sec{ flex-direction: row-reverse;}
-.flag-container{ flex-direction: row-reverse !important;}
-.logo-list__item{flex-direction: row-reverse !important;}
+.flag-container1{ flex-direction: row-reverse;}
+.logo-list__item{flex-direction: row-reverse;}
 
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
@@ -287,7 +287,7 @@ if($locationVideo !=''){
        </div>
        <div class="row px-0">
        <div class="col-12 col-md-9 mx-auto">
-        <div class="row px-0 flag-container">
+        <div class="row px-0 flag-container flag-container1">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
                   <div class="card-white-bg">
@@ -459,7 +459,7 @@ if($locationVideo !=''){
 <div class="container z-1">
 <div class="row"> 
 <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
-<div class="row mb-45 justify-content-between">
+<div class="row mb-45 justify-content-end">
 <div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
 <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
