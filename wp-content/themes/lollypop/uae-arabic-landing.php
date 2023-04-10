@@ -470,7 +470,7 @@ if($locationVideo !=''){
 </div>
 <ul class="awrad-list px-0 mb-0 row"> 
 <?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
-<li class="awrad-list__item col-6 col-md-4 data-scroll"> 
+<li class="awrad-list__item col-6 col-md-4 data-scroll flex-row-reverse"> 
 	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
 <div class="award__name"> 
 <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
