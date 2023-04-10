@@ -316,7 +316,7 @@ if($locationVideo !=''){
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-9 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
-          <div class="row mb-45 justify-content-between">
+          <div class="row mb-45 justify-content-end">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left">
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading'); ?></h2>
