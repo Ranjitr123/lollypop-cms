@@ -159,6 +159,9 @@ cursor: pointer;
     line-height: 100%;
     letter-spacing: -1px;
 }
+.flag-content:nth-child(3) {
+    margin-top: 1.5rem;
+}
 }
 @media (min-width: 992px){
 .logo-list__item img {
