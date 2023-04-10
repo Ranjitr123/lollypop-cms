@@ -300,8 +300,8 @@ if($locationVideo !=''){
           </div> 
 
           <div class="have-calss">
-           <div class="fnt-18 fnt-800">Have a project in mind?</div>
-           <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">Yalla! Let’s work together</a></div>
+           <div class="fnt-18 fnt-800">هل لديك مشروع ما تفكر فيه؟ </div>
+           <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">يالا! دعونا نعمل معا </a></div>
         </div>
        </div>
         
@@ -382,7 +382,7 @@ if($locationVideo !=''){
 
 <div class="col-12 col-md-6">
 <p class="fnt-16 mb-md-3"><?php the_sub_field('content'); ?></p>
-<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
+<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
 <div class="col-12 col-md-5">
@@ -392,7 +392,7 @@ if($locationVideo !=''){
 <li class="fnt-16 mb-2"><?php the_sub_field('content'); ?></li>
 <?php endwhile; endif; ?>
 </ul>
-	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
+	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
 </div>
@@ -537,7 +537,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 </div>
 </div>
 </div></a></li>
-<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/whitepapers/">View All Whitepapers</a>
+<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/whitepapers/">عرض مزيد من الأوراق البيضاء</a>
 <?php wp_reset_postdata(); endwhile; endif;?>
 </ul>
 <!-- Blogs-->
@@ -556,7 +556,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 </div>
 </div>
 </div></a></li>
-<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/blogs/">View All Blogs</a>
+<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/blogs/">عرض كل المدونات</a>
 <?php endwhile; endif; ?>
 </ul>
 </div>
