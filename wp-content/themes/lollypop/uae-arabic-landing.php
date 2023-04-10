@@ -531,9 +531,9 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <div class="revealnone h-100"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>" alt="Image"></div>
 </div>
 <div class="col-12 col-md-7">
-<div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">white paper</span>
+<div class=""><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">white paper</span>
 <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_title(); ?> </h3>
-<p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php echo wp_trim_words(get_field('landing_content'), 35); ?></p><span class="d-block fnt-12">Posted on <?php the_field('date') ?></span> 
+<p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3" style="margin-left:auto;"><?php echo wp_trim_words(get_field('landing_content'), 35); ?></p><span class="d-block fnt-12">Posted on <?php the_field('date') ?></span> 
 </div>
 </div>
 </div></a></li>
@@ -549,9 +549,9 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <div class="revealnone  h-100"><img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('blog_image'); ?>" alt="Image"></div>
 </div>
 <div class="col-12 col-md-7">
-<div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">blog</span>
+<div class=""><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">blog</span>
 <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?></h3>
-<p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php the_sub_field('content'); ?></p><span class="d-block fnt-12">By 
+<p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3" style="margin-left:auto;"><?php the_sub_field('content'); ?></p><span class="d-block fnt-12">By 
 <?php the_sub_field('author'); ?> on <?php the_sub_field('date'); ?></span>
 </div>
 </div>
