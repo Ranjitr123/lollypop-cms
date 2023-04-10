@@ -73,8 +73,6 @@ get_header();
   font-weight: 800;
   font-size: 20px;
   line-height: 120%;
-  display: flex;
-  align-items: center;
   letter-spacing: -1px;
   color: #FFFFFF;
 }
