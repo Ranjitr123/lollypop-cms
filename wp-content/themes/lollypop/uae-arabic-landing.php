@@ -175,6 +175,17 @@ cursor: pointer;
    margin-top:1.5rem;
 }
 .red-stroke::before{ position:absolute;right: -40px !important; left: inherit!important;}
+.lp-number-list{justify-content:end;}
+.lp-number-list__item{margin-left:0px;}
+@media (min-width: 992px)
+{
+.lp-number-list__item {margin-left: 4.5rem;}
+}
+@media (min-width: 768px){.lp-number-list__item {  margin-left: 2.5rem;
+}
+.lp-number-list__item {    margin-left: 1.5rem;
+}
+
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
@@ -186,7 +197,7 @@ cursor: pointer;
 <div class="col-12 col-md-11 offset-md-1">
 <div class="col-lg-11 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default locations"><?php the_field('locations'); ?></span>
 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
-<div class="fnt-24 col-md-11 col-lg-9"><?php the_field('short_description'); ?></div>
+<div class="fnt-24 col-md-11 col-lg-9" style="margin-left:auto;"><?php the_field('short_description'); ?></div>
 <ul class="lp-number-list ps-0">
                      
                       <?php if( have_rows('banner_list') ) : while( have_rows('banner_list') ): the_row(); ?>

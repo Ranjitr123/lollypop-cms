@@ -173,6 +173,8 @@ cursor: pointer;
 .flag-content:nth-child(4){
    margin-top:1.5rem;
 }
+.case-study-slider h6 { max-width:250px;}
+@media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 </style>
 <main class="main">
 <!--01-->
