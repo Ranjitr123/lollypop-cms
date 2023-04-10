@@ -63,7 +63,7 @@ get_header();
 
 .case-study-slider img{
   width: 100%;
-  height: 593px;
+  height: 100%;
   position:relative;
 }
 
@@ -185,6 +185,8 @@ cursor: pointer;
 }
 .lp-number-list__item {    margin-left: 1.5rem;
 }
+.case-study-slider h6 { max-width:250px;}
+@media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">

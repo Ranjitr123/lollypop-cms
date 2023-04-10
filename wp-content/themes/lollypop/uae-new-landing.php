@@ -62,7 +62,7 @@ get_header();
 
 .case-study-slider img{
   width: 100%;
-  height: 593px;
+  height: 100%;
   position:relative;
 }
 
