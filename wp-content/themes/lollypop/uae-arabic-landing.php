@@ -183,7 +183,9 @@ cursor: pointer;
 .arabic_sec{ flex-direction: row-reverse;}
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse;}
-
+.row.px-0.flag-container.flag-sec1 {
+    flex-direction: row-reverse;
+}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
