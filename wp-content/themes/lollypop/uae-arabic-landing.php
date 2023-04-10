@@ -184,7 +184,7 @@ cursor: pointer;
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse;}
 .row.px-0.flag-container.flag-sec1 {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
 }
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
