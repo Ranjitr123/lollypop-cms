@@ -177,14 +177,9 @@ cursor: pointer;
 .red-stroke::before{ position:absolute;right: -40px !important; left: inherit!important;}
 .lp-number-list{justify-content:end;}
 .lp-number-list__item{margin-left:0px;}
-@media (min-width: 992px)
-{
-.lp-number-list__item {margin-left: 4.5rem;}
-}
-@media (min-width: 768px){.lp-number-list__item {  margin-left: 2.5rem;
-}
-.lp-number-list__item {    margin-left: 1.5rem;
-}
+@media (min-width: 992px){.lp-number-list__item {margin-left: 4.5rem;margin-right:0px!important;}}
+@media (min-width: 768px){.lp-number-list__item {  margin-left: 2.5rem;}
+.lp-number-list__item {    margin-left: 1.5rem;}
 .case-study-slider h6 { max-width:250px;}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 
