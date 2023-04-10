@@ -277,8 +277,8 @@ if($locationVideo !=''){
       <div class="row">
          <div class="col-12 col-md-9 mx-auto">
             <div class="mb-5">
-               <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);">نحتفل بعامين في الشرق الأوسط و خدمة العملاء في جميع أنحاء منطقة الشرق الأوسط وشمال إفريقيا</h5>
-               <p class="fnt-24 sec-2">بينما نتحرك في جميع أنحاء الشرق الأوسط ، نقوم برعاية التجارب وفقًا لسلوك المستخدم.</p>
+               <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);margin-left:auto;">نحتفل بعامين في الشرق الأوسط و خدمة العملاء في جميع أنحاء منطقة الشرق الأوسط وشمال إفريقيا</h5>
+               <p class="fnt-24 sec-2" style="margin-left:auto;">بينما نتحرك في جميع أنحاء الشرق الأوسط ، نقوم برعاية التجارب وفقًا لسلوك المستخدم.</p>
             </div>
           </div>
        </div>
