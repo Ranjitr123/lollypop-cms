@@ -487,7 +487,7 @@ if($locationVideo !=''){
 <div class="row">
 <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
 <div class="col-12 col-md-10 col-lg-8 mx-auto">
-<div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
+<div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2" style="margin-left:auto;">
 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24" style="margin-left:auto;"><?php the_sub_field('content') ?></p>
 </div>
