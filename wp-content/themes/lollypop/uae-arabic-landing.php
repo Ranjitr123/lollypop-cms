@@ -8,6 +8,7 @@
 get_header();
 ?>
 
+
 <style>
 @media (min-width: 992px){
 .logo-list__item img {
@@ -16,8 +17,166 @@ get_header();
 .lp-number-list {
     margin-top: 37px;
 }
+
+.card-white-bg{
+  background: #FFFFFF;
+  padding:10px 18px 30px 25px;
+  max-width:100%;
+  
+}
+.sec-2{
+  max-width:638px;
+}
+.card-white-bg p{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #221429;
+}
+.card-white-bg h6{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #221429;
+
+}
+.have-calss{
+  padding-top:50px;
+}
+
+.arabic-slider figcaption{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-top:13px;
+}
+
+.case-study-slider img{
+  width: 100%;
+  height: 593px;
+  position:relative;
+}
+
+.case-study-slider span{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.case-study-slider h6{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 120%;
+display: flex;
+align-items: center;
+letter-spacing: -2px;
+color: #FFFFFF;
+max-width: 381px;
+}
+.case-study-slider .hvr-line-re a{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+color: #FFFFFF;
+opacity: 0.7 !important;
+cursor: pointer;
+}
+.case-study-slider .case-slider-content{
+  position:absolute;
+  bottom:8%;
+  padding-left:36px;
+  padding-right:37px;
+}
+
+.width-container{
+  width: calc(100% - 45px);
+  margin-left: 45px !important;
+}
+
+.arabic-slider img{
+   width:100%;
+}
+ .slick-initialized .slick-slide {padding-left:19px !important; }
+
+@media(max-width:767px){
+   /* .arabic-slider{
+    margin-right:1rem;
+   } */
+   .width-container {
+    width: auto;
+    margin-left:0px !important;
+   }
+   .arabic-slider figcaption {
+     font-size:16px;
+   }
+   .case-study-slider{
+    margin-right:1rem;
+    width:auto;
+   }
+   .case-study-slider .case-slider-content
+    {
+    padding-left: 24px;
+    padding-right: 24px;
+  }  
+  .case-study-slider h6 {font-size: 16px;line-height: 24px; letter-spacing: 0px;}
+  .case-study-slider h6 br{display:none;}
+  .case-study-slider span {font-size: 18px;}
+  .case-study-slider .hvr-line-re a {font-size: 14px;}
+  .card-white-bg h6 {font-size:16px;}
+  .flag-content:nth-child(4){margin-top:0rem!important;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .card-white-bg{
+      height:200px;
+  }
+  .card-bg-tab{
+     margin-top:1.4rem;
+  }
+  .case-study-slider h6 {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+}
+@media (min-width: 992px){
+.logo-list__item img {
+    max-width: 100%!important;
+}}
+@media (min-width: 992px){
+.sec-pd1 {
+    padding: 45px 0;
+}}
+.client_mt{margin-top:72px;}
+.sec-pd-celeb{padding-bottom:84px;}
+.flag-content:nth-child(4){
+   margin-top:1.5rem;
+}
+.red-stroke::before{ position:absolute;right: -40px !important; left: inherit!important;}
 </style>
-<main class="main">
+<main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 
 <div class="container sec-container"> 
@@ -25,7 +184,7 @@ get_header();
 <div class="col-12 col-md-11 col-lg-10 mx-auto">
 <div class="row">
 <div class="col-12 col-md-11 offset-md-1">
-<div class="mb-r-80 col-lg-11 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default locations"><?php the_field('locations'); ?></span>
+<div class="col-lg-11 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default locations"><?php the_field('locations'); ?></span>
 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
 <div class="fnt-24 col-md-11 col-lg-9"><?php the_field('short_description'); ?></div>
 <ul class="lp-number-list ps-0">
@@ -64,13 +223,31 @@ if($locationVideo !=''){
 
 </section>
 <!--02-->
+<section class="project-sec">
+   <div class="col-md-11 mx-auto width-container">
+  <div class="case-study-container">
+	<?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+     <div>
+        <div class="case-study-slider case-study-slider-<?php echo $count; ?>">
+			<img src="<?php the_sub_field('slider_image'); ?>" alt="logo">
+            <div class="case-slider-content">
+              <span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
+              <h6 style="color: #FFFFFF;"><?php the_sub_field('slider_subtitle'); ?></h6>
+              <div class="hvr-line-re fnt-14  d-inline-block"><a href="<?php the_sub_field('button_link'); ?>">  فتح دراسة الحالة</a></div>
+            </div>
+        </div>
+     </div>
+	 <?php $count++; endwhile; endif; ?>
+  </div>
+  </div>
+</section>
 
 <!--03-->
 <section class="sec-pd sec-pb">
 <div class="container"> 
 <div class="row"> 
 <?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
-<div class="col-12 col-md-9 col-lg-7 mx-auto">
+<div class="col-12 col-md-10 col-lg-9 mx-auto">
 <div class="mb-5"> 
 <h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
 <p class="fnt-24"><?php the_sub_field('content'); ?></p>
@@ -81,45 +258,82 @@ if($locationVideo !=''){
 <?php endwhile; endif; ?>
 
 </ul>
+<div class="hvr-line fnt-14 clr-second data-scroll d-inline-block client_mt" style="opacity:1; transform: translateY(0px);"><a href=" https://lollypop.design/projects/" style="text-transform: capitalize;color: #FD2E35;">تعلم المزيد عن عملائنا</a></div>
 </div>
 <?php endwhile; endif; ?>
 </div>
 </div>
 </section>
-<!--04-->
 
-<section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
-<div class="container z-1">
-<div class="row"> 
-<div class="col-12 col-md-10 col-lg-8 mx-auto pb-2 mb-md-0 pb-md-0">
-<div class="row mb-45 justify-content-between">
-<div class="col-md-6 col-lg-8 fluid-offset"> 
-<div class="lp-awards__left">
-<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('design_studio_content'); ?></span>
-<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
-</div>
+<!-- 04 -->
+<section class="sec-pd-celeb">
+   <div class="container">
+      <div class="row">
+         <div class="col-12 col-md-9 mx-auto">
+            <div class="mb-5">
+               <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);">نحتفل بعامين في الشرق الأوسط و خدمة العملاء في جميع أنحاء منطقة الشرق الأوسط وشمال إفريقيا</h5>
+               <p class="fnt-24 sec-2">بينما نتحرك في جميع أنحاء الشرق الأوسط ، نقوم برعاية التجارب وفقًا لسلوك المستخدم.</p>
+            </div>
+          </div>
+       </div>
+       <div class="row px-0">
+       <div class="col-12 col-md-9 mx-auto">
+        <div class="row px-0 flag-container">
+				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
+            <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
+                  <div class="card-white-bg">
+                      <img  class="mb-3" src="<?php the_sub_field('flag_icon'); ?>" alt="flage">
+                      <h6 class="fnt-800 fnt-18"><?php the_sub_field('heading'); ?></h6>
+                      <p class="fnt-14 fnt-400"><?php the_sub_field('content'); ?> </p>
+                  </div>
+              </div>
+			  <?php endwhile; endif; ?>
+          </div> 
 
-</div>
-</div>
-</div>
-</div>
-<div class="fluid-width">
-<div class="row">
-<div class="col-12 px-md-0">
-<ul class="px-0 lp-awards-list d-flex four-card-slider">
-<?php if( have_rows('location_slider') ) : while( have_rows('location_slider') ): the_row(); ?>
-<li class="lp-awards-list__item">
-	<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('image') ?>" alt="Image">
-	<div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
-</div>
-</li>
-<?php endwhile; endif; ?>
-</ul>
-</div>
-</div>
-</div>
+          <div class="have-calss">
+           <div class="fnt-18 fnt-800">Have a project in mind?</div>
+           <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">Yalla! Let’s work together</a></div>
+        </div>
+       </div>
+        
+    </div>
+     </div>
+   </div>
+ </section>
+ 
+  <!-- 05 -->
+ <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
+	<?php if( have_rows('slider_section_of_background') ) : while( have_rows('slider_section_of_background') ): the_row(); ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-9 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+          <div class="row mb-45 justify-content-between">
+              <div class="col-md-10 col-lg-10 fluid-offset">
+                <div class="lp-awards__left">
+                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading'); ?></h2>
+                    <span class="fnt-24 clr-white my-4 d-block data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('sub_content'); ?></span>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    <div class="col-md-11 mx-auto width-container">
+     <div class="arabic-sliders-container">
+		<?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
+       <div>
+          <div class="arabic-slider">
+              <figure>
+                <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
+                <figcaption><?php the_sub_field('image_title'); ?></figcaption>
+            </figure>
+          </div>
+       </div>
+	   <?php endwhile; endif; ?>
+     </div>
+    </div>
+	<?php endwhile; endif; ?>
 </section>
-
 <!--07-->
 
 
@@ -366,6 +580,97 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <script>
 var locas = $('.locations_name').text();
 $('.nav-dropdown-text').text(locas);
+</script>
+
+<script>
+  $(document).ready(function () {
+
+    $(".arabic-sliders-container").slick({
+      infinite: false,
+      slidesToShow:2.8,
+      slidesToScroll: 1,
+      dots: false,
+      arrows:false,
+      autoplay:0,
+    
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+          },
+        },
+
+        {
+          breakpoint: 991,
+          settings: { slidesToShow: 1.6, slidesToScroll: 1, },
+        },
+
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1400,
+          settings:{
+            slidesToShow: 2.8,
+            slidesToScroll: 1,
+          },
+        },
+
+      ],
+    
+    });
+
+    $(".case-study-container").slick({
+      infinite: false,
+      slidesToShow: 2.5,
+      slidesToScroll: 1,
+      dots: false,
+      arrows:false,
+      autoplay:0,
+      mobileFirst:false,
+      centerMode: false,
+
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings:{
+            slidesToShow:2.5,
+            slidesToScroll: 1,
+          },
+        },
+
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+           
+          },
+        },
+
+        {
+          breakpoint: 991,
+          settings: { slidesToShow:2, slidesToScroll: 1, },
+        },
+       
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    
+    });
+
+  });
 </script>
 <?php
 get_footer();
