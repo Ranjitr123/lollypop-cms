@@ -181,6 +181,7 @@ cursor: pointer;
 .case-study-slider h6 { max-width:250px;}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 .arabic_sec{ flex-direction: row-reverse;}
+.flag-container{ flex-direction: row-reverse;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
