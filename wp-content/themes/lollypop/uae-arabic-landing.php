@@ -180,7 +180,7 @@ cursor: pointer;
 .lp-number-list__item {    margin-left: 1.5rem;}
 .case-study-slider h6 { max-width:250px;}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
-
+.arabic_sec{ flex-direction: row-reverse;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
@@ -523,7 +523,7 @@ $args = array(
 $whitepaper = new WP_Query( $args );
 if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitepaper->the_post(); ?>
 <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_permalink(); ?>">
-<div class="row">
+<div class="row arabic_sec">
 <div class="col-12 col-md-3 col-lg-5">
 <div class="revealnone h-100"> <img class="home-artical-img mb-3 mb-md-0" src="<?php the_field('home_page_thumbnail') ?>" alt="Image"></div>
 </div>
@@ -541,7 +541,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 <ul class="px-0 home-artical-list">
 <?php if( have_rows('blogs') ) : while( have_rows('blogs') ): the_row(); ?>
 <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_sub_field('url'); ?>">
-<div class="row">
+<div class="row arabic_sec">
 <div class="col-12 col-md-3 col-lg-5">
 <div class="revealnone  h-100"><img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('blog_image'); ?>" alt="Image"></div>
 </div>
