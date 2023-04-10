@@ -183,7 +183,7 @@ cursor: pointer;
 .arabic_sec{ flex-direction: row-reverse;}
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse;}
-.row.px-0.flag-container.flag-sec1 {
+.flag-container .flag-sec1 {
     flex-direction: row-reverse !important;
 }
 </style>
