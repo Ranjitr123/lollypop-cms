@@ -182,7 +182,8 @@ cursor: pointer;
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 .arabic_sec{ flex-direction: row-reverse;}
 .flag-sec{ flex-direction: row-reverse;}
-.logo-list__item{flex-direction: row-reverse;}
+.logo-list__item{flex-direction: row-reverse !important;}
+
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end;">
 <!--01-->
@@ -262,7 +263,7 @@ if($locationVideo !=''){
 </div>
 <ul class="px-0 logo-list row mb-0">
 <?php if( have_rows('logos') ) : while( have_rows('logos') ): the_row(); ?>
-<li class="logo-list__item col-4 col-md-3"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>" alt="Image"></li>
+<li class="logo-list__item col-4 col-md-3 flex-row-reverse"><img class="img-fluid grayscale" src="<?php the_sub_field('images'); ?>" alt="Image"></li>
 <?php endwhile; endif; ?>
 
 </ul>
