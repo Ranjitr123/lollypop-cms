@@ -181,7 +181,7 @@ cursor: pointer;
 .case-study-slider h6 { max-width:250px;}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 .arabic_sec{ flex-direction: row-reverse;}
-.flag-container1{ flex-direction: row-reverse;}
+.flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse;}
 
 </style>
@@ -287,7 +287,7 @@ if($locationVideo !=''){
        </div>
        <div class="row px-0">
        <div class="col-12 col-md-9 mx-auto">
-        <div class="row px-0 flag-container flag-container1">
+        <div class="row px-0 flag-container flag-sec1">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
                   <div class="card-white-bg">
