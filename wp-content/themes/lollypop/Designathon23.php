@@ -533,8 +533,9 @@ p br{
                              <p>Win cash prizes of up to <br> <span class="clr-yel-92a"> Rs. 2,00,000 </span> </p>
                         </div>
                   </div>
-                   <div class="text-center register-btn">
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red register-red-btn" >Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <div class="text-center register-btn"> 
+                   <!-- href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" -->
+                   <a target="_blank" class="btn-red register-red-btn" >Registrations Closed  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
                    </div>
                 </div>
              </div>
@@ -575,7 +576,7 @@ p br{
 
               <label class="mt-4">So what are you waiting for?</label>
               <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" target="_blank" class="btn-red register-red-btn">Register Now  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                <a target="_blank" class="btn-red register-red-btn">Registrations Closed  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
               </div>
             </div>
             </div>
@@ -734,7 +735,7 @@ p br{
                           <h6 class="fnt-16 fnt-800 mb-0">What is the process for Registration?</h6>
                         </div>
                         <div class="f-accordion__body"> 
-                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">You need to fill out the form which is listed on this page. Click on Register now button.</p>
+                          <p class="fnt-18 mb-0" style="color: rgba(255, 255, 255, 0.7)  !important;">You need to fill out the form which is listed on this page. Click on Register Now button.</p>
                         </div>
                       </div>
                     </li>
