@@ -195,7 +195,7 @@ cursor: pointer;
     padding-left: 11rem !important;
 }
 </style>
-<main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important; font-weight:800">
+<main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 
 <div class="container sec-container"> 
