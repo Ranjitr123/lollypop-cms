@@ -10,7 +10,7 @@ get_header('arabic');
 
 
 <style>
-  body{font-family: 'Manrope',sans-serif !important;}
+
 @media (min-width: 992px){
 .logo-list__item img {
     max-width: 100%!important;
@@ -195,7 +195,7 @@ cursor: pointer;
     padding-left: 11rem !important;
 }
 </style>
-<main class="main" dir="ltr" lang='ar' style="text-align:end;">
+<main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important; font-weight:800">
 <!--01-->
 <section class="sec-pd sec-bnr p-r-80"> 
 <div class="container sec-container"> 
