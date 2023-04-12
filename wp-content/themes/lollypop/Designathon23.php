@@ -39,7 +39,7 @@ left: -5px;
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
     font-style: normal;
          font-family: 'Cairo', sans-serif;}
-.btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
+.btn-red{display: inline-block;text-decoration: none;padding: 14px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -58,7 +58,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .last-Design{padding: 0px 0 100px 0;}
 .last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
 .btn-red .white_arrow{display:none;}
-.btn-red:hover .white_arrow{display: inline-block;padding-left:10px;}
+/* .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;} */
 .event-details-content{padding-left:60px;}
 .our-sponser h3{position:relative;}
 .athon-prize-list__item h6{
@@ -442,10 +442,17 @@ p br{
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.register-red-btn:hover img{
+/* .register-red-btn:hover img{
   opacity: 1;
     visibility: visible;
     width: auto;
+} */
+.download-btnd:hover .white_arrow {
+    display: inline-block !important;
+    padding-left: 10px;
+}
+.download-btn .btn-red:hover .white_arrow {
+    display: inline-block !important;
 }
 
 </style>
