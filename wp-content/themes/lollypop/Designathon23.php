@@ -635,7 +635,7 @@ p br{
       <section class="sec-pd-designathon2 pt-5 pb-5">
         <div class="container">
           <div class="row justify-content-center">
-              <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsor</h3>	  
+              <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsors</h3>	  
                     <div class="sponsor-img mb-5 mx-auto">
                       <div class="col-12 col-md-11 col-lg-9 col-xl-9 mx-auto d-flex sponsor-sec">
                           <div class="col-md-3">
