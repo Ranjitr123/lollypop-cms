@@ -145,6 +145,8 @@ cursor: pointer;
   .case-study-slider .hvr-line-re a {font-size: 14px;}
   .card-white-bg h6 {font-size:16px;}
   .flag-content:nth-child(4){margin-top:0rem!important;}
+  .case-study-slider h6 { max-width:250px;}
+ 
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -173,8 +175,13 @@ cursor: pointer;
 .flag-content:nth-child(4){
    margin-top:1.5rem;
 }
-.case-study-slider h6 { max-width:250px;}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
+
+.client-max{max-width:709px;}
+.blue-max{max-width: 662px;}
+.max-580{max-width: 580px;}
+.mb-69{margin-bottom:69px !important;}
 </style>
 <main class="main">
 <!--01-->
@@ -249,7 +256,7 @@ if($locationVideo !=''){
 <?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
 <div class="col-12 col-md-10 col-lg-9 mx-auto">
 <div class="mb-5"> 
-<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
+<h5 class="fnt-40 fnt-800 data-scroll px-0 client-max"><?php the_sub_field('title'); ?></h5>
 <p class="fnt-24"><?php the_sub_field('content'); ?></p>
 </div>
 <ul class="px-0 logo-list row mb-0">
@@ -310,8 +317,8 @@ if($locationVideo !=''){
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left">
-                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading'); ?></h2>
-                    <span class="fnt-24 clr-white my-4 d-block data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('sub_content'); ?></span>
+                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll blue-max" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading'); ?></h2>
+                    <span class="fnt-24 clr-white my-4 d-block data-scroll max-580" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('sub_content'); ?></span>
                 </div>
           </div>
         </div>
@@ -346,7 +353,7 @@ if($locationVideo !=''){
 <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
 	<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
-	<p class="fnt-24 data-scroll col-md-11 col-lg-10 px-0"><?php the_sub_field('content'); ?></p>
+	<p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
 </div>
 <?php endwhile; endif; ?>
@@ -453,7 +460,7 @@ if($locationVideo !=''){
 <div class="row mb-45 justify-content-between">
 <div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll mb-69"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
 
 </span>
 </div>
@@ -481,7 +488,7 @@ if($locationVideo !=''){
 <div class="row">
 <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
 <div class="col-12 col-md-10 col-lg-8 mx-auto">
-<div class="col-12 col-md-10 col-lg-9 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
+<div class="col-12 col-md-10 col-lg-10 px-0 mb-4 pb-3 mb-lg-5 pb-lg-2">
 <h2 class="fnt-50 fnt-800 clr-white mb-4 data-scroll"><?php the_sub_field('title') ?></h2>
 <p class="data-scroll clr-white col-12 col-md-9 px-0 fnt-24"><?php the_sub_field('content') ?></p>
 </div>
