@@ -189,11 +189,11 @@ cursor: pointer;
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse !important;}
 .lp_mr{margin-right:2rem;}
-.case-study-slider-1 h6{padding-top:56px; padding-bottom:69px;}
-.case-study-slider-1 .case-slider-content{padding-left:160px;}
-.case-study-slider.case-study-slider-1 .case-slider-content {
+/* .case-study-slider-1 h6{padding-top:56px; padding-bottom:69px;}
+.case-study-slider-1 .case-slider-content{padding-left:160px;} */
+/* .case-study-slider.case-study-slider-1 .case-slider-content {
     padding-left: 11rem !important;
-}
+} */
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
