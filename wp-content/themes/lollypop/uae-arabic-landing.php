@@ -5,7 +5,7 @@
  * * @package WordPress
  * */
 
-get_header('arabic');
+get_header();
 ?>
 
 
@@ -29,7 +29,8 @@ get_header('arabic');
   max-width:638px;
 }
 .card-white-bg p{
-  font-family: 'Manrope',sans-serif;
+  /* font-family:'Manrope',sans-serif; */
+  font-family:'Manrope',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -39,7 +40,7 @@ get_header('arabic');
   color: #221429;
 }
 .card-white-bg h6{
-  font-family: 'Manrope',sans-serif;
+  font-family:'Manrope',sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -53,7 +54,7 @@ get_header('arabic');
 }
 
 .arabic-slider figcaption{
-  font-family: 'Manrope',sans-serif;
+  font-family:'Manrope',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -69,7 +70,7 @@ get_header('arabic');
 }
 
 .case-study-slider span{
-  font-family: 'Manrope',sans-serif;
+  font-family:'Manrope',sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -78,7 +79,7 @@ get_header('arabic');
   color: #FFFFFF;
 }
 .case-study-slider h6{
-  font-family: 'Manrope',sans-serif;
+  font-family:'Manrope',sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 42px;
@@ -90,7 +91,7 @@ color: #FFFFFF;
 max-width: 381px;
 }
 .case-study-slider .hvr-line-re a{
-  font-family: 'Manrope',sans-serif;
+  font-family:'Manrope',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -99,7 +100,7 @@ display: flex;
 align-items: center;
 text-decoration-line: underline;
 color: #FFFFFF;
-opacity: 0.7 !important;
+/* opacity: 0.7 !important; */
 cursor: pointer;
 }
 .case-study-slider .case-slider-content{
@@ -189,6 +190,12 @@ cursor: pointer;
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse !important;}
 .lp_mr{margin-right:2rem;}
+.li-disc li::before {right:-40px !important;} 
+.services-list__item .srv {direction: rtl !important;}
+
+
+
+
 /* .case-study-slider-1 h6{padding-top:56px; padding-bottom:69px;}
 .case-study-slider-1 .case-slider-content{padding-left:160px;} */
 /* .case-study-slider.case-study-slider-1 .case-slider-content {
@@ -311,7 +318,7 @@ if($locationVideo !=''){
 
           <div class="have-calss">
            <div class="fnt-18 fnt-800">هل لديك مشروع ما تفكر فيه؟ </div>
-           <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">يالا! دعونا نعمل معا </a></div>
+           <!-- <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">يالا! دعونا نعمل معا </a></div> -->
         </div>
        </div>
         
