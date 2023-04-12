@@ -10,6 +10,7 @@ get_header();
 
 
 <style>
+  body{font-family: 'Manrope',sans-serif !important;}
 @media (min-width: 992px){
 .logo-list__item img {
     max-width: 100%!important;
@@ -28,7 +29,7 @@ get_header();
   max-width:638px;
 }
 .card-white-bg p{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -38,7 +39,7 @@ get_header();
   color: #221429;
 }
 .card-white-bg h6{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -52,7 +53,7 @@ get_header();
 }
 
 .arabic-slider figcaption{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -68,7 +69,7 @@ get_header();
 }
 
 .case-study-slider span{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -77,7 +78,7 @@ get_header();
   color: #FFFFFF;
 }
 .case-study-slider h6{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 42px;
@@ -89,7 +90,7 @@ color: #FFFFFF;
 max-width: 381px;
 }
 .case-study-slider .hvr-line-re a{
-  font-family: 'Manrope';
+  font-family: 'Manrope',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -182,7 +183,7 @@ cursor: pointer;
 @media (min-width: 992px){.lp-number-list__item {margin-left: 4.5rem;margin-right:0px!important;}}
 @media (min-width: 768px){.lp-number-list__item {  margin-left: 2.5rem;}
 .lp-number-list__item {    margin-left: 1.5rem;}
-.case-study-slider h6 { max-width:250px;}
+.case-study-slider h6 { max-width:250px;}}
 @media screen and (min-width: 768px) and (max-width: 1023px){.case-study-slider h6 { max-width:250px;}}
 .arabic_sec{ flex-direction: row-reverse;}
 .flag-sec{ flex-direction: row-reverse;}
