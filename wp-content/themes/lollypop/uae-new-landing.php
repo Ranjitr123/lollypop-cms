@@ -21,7 +21,7 @@ get_header();
   background: #FFFFFF;
   padding:10px 18px 30px 25px;
   max-width:100%;
-  
+  height:100%;
 }
 .sec-2{
   max-width:638px;
@@ -48,6 +48,9 @@ get_header();
 }
 .have-calss{
   padding-top:50px;
+}
+.have-class div{
+  margin-bottom:19px;
 }
 
 .arabic-slider figcaption{
@@ -99,12 +102,12 @@ display: flex;
 align-items: center;
 text-decoration-line: underline;
 color: #FFFFFF;
-opacity: 0.7 !important;
+/* opacity: 0.7 !important; */
 cursor: pointer;
 }
 .case-study-slider .case-slider-content{
   position:absolute;
-  bottom:8%;
+  bottom:6%;
   padding-left:36px;
   padding-right:37px;
 }
