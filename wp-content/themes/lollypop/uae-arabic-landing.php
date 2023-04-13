@@ -284,7 +284,7 @@ if($locationVideo !=''){
 <?php endwhile; endif; ?>
 
 </ul>
-<div class="hvr-line fnt-14 clr-second data-scroll d-inline-block client_mt" style="opacity:1; transform: translateY(0px);"><a href=" https://lollypop.design/projects/" style="text-transform: capitalize;color: #FD2E35;">تعلم المزيد عن عملائنا</a></div>
+<div class="hvr-line fnt-14 clr-second data-scroll d-inline-block client_mt" style="opacity:1; transform: translateY(0px);"><a href=" https://lollypop.design/clients/" style="text-transform: capitalize;color: #FD2E35;">تعلم المزيد عن عملائنا</a></div>
 </div>
 <?php endwhile; endif; ?>
 </div>
