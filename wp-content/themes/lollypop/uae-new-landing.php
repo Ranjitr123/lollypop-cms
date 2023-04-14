@@ -390,8 +390,30 @@ if($locationVideo !=''){
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-<li class="fnt-16 mb-2"><a href="<?php the_sub_field('content_url'); ?>"><?php the_sub_field('content'); ?></a></li>
+
+<li class="fnt-16 mb-2">
+	<div class="d-flex flex-column h-100">
+<?php if(get_sub_field('content_url') !='') { ?>
+<a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
+                              <p class="mb-1 d-inline-block"><?php the_sub_field('title'); ?></p>
+                              <div class="">
+                            </div>
+                           </a>
+                          
+<?php } else { ?>
+                        
+                            
+                              <p class="mb-1"><?php the_sub_field('title'); ?></p>
+                              <div class="">
+                            </div>
+<?php } ?>
+	  </div>
+	  
+<!--a href="<?php the_sub_field('content_url'); ?>"><?php the_sub_field('content'); ?></a-->
+
+</li>
 <?php endwhile; endif; ?>
+
 </ul>
 	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
 </div>
