@@ -108,7 +108,7 @@ else
 
  
 <style>
-.secut{top:60px;}
+.secut{top:55px;}
 @media (max-width: 768px){
 .secut {
     top: 28px;
