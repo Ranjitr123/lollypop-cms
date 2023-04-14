@@ -185,6 +185,22 @@ cursor: pointer;
 .blue-max{max-width: 662px;}
 .max-580{max-width: 580px;}
 .mb-69{margin-bottom:69px !important;}
+.serveice-a:hover span {
+    color: #fd2e35;
+}
+.serveice-a:hover span:before
+position: absolute;
+    content: "";
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 </style>
 <main class="main">
 <!--01-->
