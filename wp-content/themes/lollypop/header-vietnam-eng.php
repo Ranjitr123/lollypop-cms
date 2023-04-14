@@ -457,7 +457,7 @@ else
     padding: 16px;
     border-radius: 5px;
     width: 240px;
-    top: 0px;
+    top: 20px;
     border-radius: 10px;
     right: inherit;
     left: 0px;
@@ -495,7 +495,7 @@ margin-bottom:12px;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    top: -32px;
+    top: 0;
     margin-left: 1rem;
 }
 /* @media (max-width: 767px){
