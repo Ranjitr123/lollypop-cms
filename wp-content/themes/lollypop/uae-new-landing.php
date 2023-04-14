@@ -390,7 +390,7 @@ if($locationVideo !=''){
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-<li class="fnt-16 mb-2"><?php the_sub_field('content'); ?></li>
+<li class="fnt-16 mb-2"><a href="<?php the_sub_field('content_url'); ?>"><?php the_sub_field('content'); ?></a></li>
 <?php endwhile; endif; ?>
 </ul>
 	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
