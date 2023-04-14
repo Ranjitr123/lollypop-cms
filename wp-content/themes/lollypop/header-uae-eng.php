@@ -2,20 +2,6 @@
 <html lang="en" data-page="home">
 
 <head>
-<!-- Google Tag Manager -->
-
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-
-})(window,document,'script','dataLayer','GTM-TQBBF4Z');</script>
-
-<!-- End Google Tag Manager -->
-
 <?php if( get_field('keywords') ): ?>
 	<meta name="keywords" content="<?php the_field('keywords')?>">
 <?php endif; ?>
@@ -49,20 +35,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'UA-42458763-1');
 </script>
 <!-- End Google Tag Manager -->
+ 
+<!-- translate button -->
 
 <script>
-  var menu = document.getElementById('drop-menu');
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.lang-mob .dropdown-content');
+  var menu = $('.lang-mob #drop-menu');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
 
-  // Add an event listener to the document
-  document.addEventListener('click', function(event) {
-
-    // Check if the clicked element is outside of the menu
-    if (!menu.contains(event.target)) {
-      // If so, hide the menu
-      menu.style.display = 'none';
+$(document).ready(function() {
+  $(".lang-mob #drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".lang-mob .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
     }
   });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".lang-mob .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
 </script>
+
+
 <script>
 
 $(window).scroll(function() {
@@ -84,10 +89,6 @@ else
 <!---css---------->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"></noscript>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel='stylesheet' href='https://lollypop.design/wp-content/themes/lollypop/css/Designathon.css' type='text/css' media='all' />
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/swiper-bundle.min.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -107,20 +108,29 @@ else
 
  
 <style>
-
+.secut{top:60px;}
+@media (max-width: 768px){
+.secut {
+    top: 28px;
+    right: 7% !important;
+}}
 .fnt-100 {
 	 font-size: 32px;
 	 line-height: 42px;
 	 letter-spacing: -2px;
 }
-
+.dropdown-ver a ::after {
+    width: 20px;
+    height: 100%;
+    width: 100%;
+    left: 41px!important;
+}
  @media (min-width: 768px) {
 	 .fnt-100 {
 		 font-size: 70px;
 		 line-height: 75px;
 		 letter-spacing: -2px;
 	}
-	.sec-last1{padding-bottom:25px!important;}
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -159,7 +169,7 @@ else
    .secut-res label{
 	color: #221429 !important;
    }
-	.sec-last1{padding-bottom:25px!important;}
+.sec-last1{padding-bottom:25px!important;}
 
 }
  @media (min-width: 992px) {
@@ -239,7 +249,7 @@ else
     position: relative;
     padding-left: 28px;
     cursor: pointer;
-    line-height: 20px;
+    line-height: 15px;
     display: inline-block;
     color: black;
 }
@@ -309,6 +319,7 @@ else
     margin: 0 15px;
 	
 		}
+		
  .triangle-4 {
     width: 0px;
     height: 0px;
@@ -364,7 +375,6 @@ else
     width: 104px;
     left: -5px;
 }
-
  .langue-container form label{
      font-size:12px;
 	 line-height:16px;
@@ -393,17 +403,210 @@ else
     background: #fff;
 }
 .secut {
-         top:4% !important;
-         right:28% !important;
+         right:70px !important;
+         top:50px !important;
     }
  }
 
 .secut{
     position:fixed;
-    top:10%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
+.menu-open .lang-mob{opacity:0!important;pointer-events:none;}
+@media only screen and (min-width: 1024px) {
+	.secut{
+		position:fixed;
+	}
+	#myDIV {
+		 left: -19px;
+		 width: 150px;
+	}
+	.triangle {
+    margin: 0 15px;
+		}
+		
+ .triangle-4 {
+    width: 0px;
+    height: 0px;
+	bottom: 0px;
+    border-bottom: solid 15px #FFFFFF;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+    position: relative;
+    left: 67%;
+}
+}
+
+
+/* global button */
+.global-drop .dropdown-ver a ::after {
+    background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
+    left:56px;
+}
+.global-drop .dropdown-ver a p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FD2E35;
+}
+.global-drop .langue-container {
+    
+    position: relative;
+    padding: 16px;
+    border-radius: 5px;
+    width: 240px;
+    top: 20px;
+    border-radius: 10px;
+    right: inherit;
+    left: 0px;
+}
+.global-drop .langue-container ul{padding:0px;}
+.global-drop .langue-container ul li{}
+.global-drop .langue-container ul li h6{font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+color: #221429;
+margin-bottom:4px;
+}
+.global-drop .langue-container ul li p{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 160%;
+color: #877C88;
+margin-bottom:12px;
+}
+.global-drop .langue-container ul hr {
+    margin: 12px 0;
+    color: inherit;
+    border: 0;
+    opacity: .25;
+    background: #F7F5F3;
+}
+.global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
+.global-drop .secut {right: inherit !important; top: inherit !important; }
+.global-drop{margin-left:1rem;}
+.global-drop .dropdown-ver {
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    margin-left: 1rem;
+}
+/* @media (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(0px,-100%)!important;
+    }
+} */
+
+@media (min-width:661px) and (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(360px,-100%)!important;
+    }
+}
+
+@media (min-width:320px) and (max-width:359px)
+{
+    .lp-hamberg {
+        transform: translate(140px,-40%)!important;
+    }
+}
+@media (min-width:360px) and (max-width:374px)
+{
+    .lp-hamberg {
+        transform: translate(140px,-40%)!important;
+    }
+}
+@media (min-width:375px) and (max-width:420px)
+{
+    .lp-hamberg {
+        transform: translate(150px,-40%)!important;
+    }
+}
+@media (min-width:421px) and (max-width:430px)
+{
+    .lp-hamberg {
+        transform: translate(180px,-40%)!important;
+    }
+}
+@media (min-width:431px) and (max-width:490px)
+{
+    .lp-hamberg {
+        transform: translate(195px,-40%)!important;
+    }
+}
+@media (min-width:491px) and (max-width:535px)
+{
+    .lp-hamberg {
+        transform: translate(205px,-40%)!important;
+    }
+}
+@media (min-width:536px) and (max-width:600px)
+{
+    .lp-hamberg {
+        transform: translate(220px,-40%)!important;
+    }
+}
+@media (min-width:601px) and (max-width:767px)
+{
+    .lp-hamberg {
+        transform: translate(240px,-40%)!important;
+    }
+}
+@media (min-width:767px) and (max-width:1024px)
+{
+    .lp-hamberg {
+        transform: translate(50px,-40%)!important;
+    }
+}
+@media (min-width: 768px){
+header .default, header .menu-title {
+    margin-right: -6px !important;
+}
+}
+@media (min-width:320px) and (max-width: 768px){
+.secut {
+    right: 110px !important;
+    top: 30px !important;
+}
+}
+
 </style>
+
+<!-- global button -->
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.global-drop .dropdown-content');
+  var menu = $('.global-drop #drop-menu');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".global-drop #drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
+</script>
 
 </head>
 
@@ -421,9 +624,53 @@ $header = new WP_Query( $args );
 <header class="header">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-11 mx-auto">
-<div class="row">
-<div class="col-8 col-md-1 js-toggle d-flex align-items-center"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+<div class="col-12 col-lg-11 mx-auto d-flex">
+<div class="row d-block d-md-none">
+<div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+   <!-- global dropdown -->
+<div class="row d-block d-md-none">
+    <div class="col-12 col-lg-11 mx-auto">
+        <div class="row ">
+        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+         <div class="global-drop col-2">
+            <div class="secut col-12 scroll-hide" id="drop-menu">
+                <div class="dropdown-ver d-flex">
+                        <a href="javascript:void(0)" onclick="myFunction()">
+                        <p class="">Global</p>
+                        </a>
+                </div>
+                <div class="dropdown-content" id="myDIV">
+                    <div class="langue-container">
+                        <ul>
+                            <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
+                                <h6>India</h6>
+                                <p>Bangalore, Mumbai, Chennai,<br>Hyderabad</p></a>
+                            </li>
+                            <hr>
+                            <li><a href="https://lollypop.design/ui-ux-design-agency-in-usa/">
+                                <h6>USA</h6>
+                                <p>San Jose, Dallas, Salt Lake City</p></a>
+                            </li>
+                            <hr>
+                            <li><a href="https://lollypop.design/ui-ux-design-agency-in-uae/">
+                                <h6>UAE</h6>
+                                <p>Dubai</p></a>
+                            </li>
+                            <hr>
+                            <li><a href="https://lollypop.design/ui-ux-design-agency-vietnam/">
+                                <h6>Vietnam</h6>
+                                <p>Ho Chi Minh City</p></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div> 
+         </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
 <div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
@@ -472,7 +719,7 @@ $header = new WP_Query( $args );
 </a>
 </div>
 <div class="col-3 location-drop-list__item">
-<a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
+<a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
 <div class="location">
 <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/vietnam.webp" alt="Image"/>
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
@@ -501,6 +748,7 @@ $header = new WP_Query( $args );
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
 <li class="nav-item menus mb-0"><a class=" nav-link fnt-14 hvr-line clr-second text-nowrap" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
 </ul>
+
 <div>
 <div class="lp-hamberg ms-auto">
 <div class="lp-hamberg__item position-relative">
@@ -508,8 +756,33 @@ $header = new WP_Query( $args );
 <div class="lines end"><span class="lp-hamberg__line"></span><span class="lp-hamberg__line"></span></div>
 </div>
 </div>
-</div>
 
+ <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
+  <div class="secut col-1 scroll-hide" id="drop-menu">
+	 <div class="dropdown-ver d-flex">
+			<a href="javascript:void(0)" onclick="myFunction()">
+			   <p class="">ENG</p>
+		    </a>
+	 </div>
+	 <div class="dropdown-content" id="myDIV">
+		<div class="triangle triangle-4"></div>
+		<div class="langue-container">
+			<form action="#">
+				<p style="margin-bottom: 0;">
+					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
+					<label for="test1">Arabic</label>
+				</p>
+				 <div class="hr-1"></div>
+				<p style="margin-bottom: 0;">
+					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/" checked>
+					<label for="test2">English</label>
+				</p>
+			</form>
+		</div>
+	</div> 
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -538,7 +811,7 @@ $header = new WP_Query( $args );
 <div class="main-links main-links--sub d-md-flex flex-column">
 <!-- For Desktop-->
 <div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between"> 
-<div class="d-md-flex hvr-m flex-column">
+<div class="d-md-flex hvr-m flex-column justify-content-end">
 <div>
 <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 </div>
@@ -554,7 +827,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-<div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
 </div>
 </div>
 <!-- For mobile-->
@@ -572,7 +845,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
 </div>
 </div>
 </div>
@@ -614,7 +887,7 @@ $header = new WP_Query( $args );
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">India</a>
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a>
 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">UAE</a>
-<a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a>
+<a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">Vietnam</a>
 </div>
 </div>
 </div>
@@ -625,15 +898,9 @@ $header = new WP_Query( $args );
 </div>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQBBF4Z"
-
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-<!-- End Google Tag Manager (noscript) -->
-
 <div class="bd-brd"></div>
 <div class="loader">
 <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
 </div>
+
+

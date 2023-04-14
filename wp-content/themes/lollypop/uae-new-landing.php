@@ -5,7 +5,7 @@
  * * @package WordPress
  * */
 
-get_header();
+get_header('uae-eng');
 ?>
 
 <style>
