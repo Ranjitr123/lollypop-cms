@@ -295,7 +295,7 @@ if($locationVideo !=''){
 <section class="sec-pd-celeb">
    <div class="container">
       <div class="row">
-         <div class="col-12 col-md-9 mx-auto">
+         <div class="col-12 col-md-8 mx-auto">
             <div class="mb-5">
                <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);">Celebrating two years in the Middle East and serving clients across the MENA region.</h5>
                <p class="fnt-24 sec-2">As we move across the Middle East, we are curating experiences accordingly based on user behaviour.</p>
