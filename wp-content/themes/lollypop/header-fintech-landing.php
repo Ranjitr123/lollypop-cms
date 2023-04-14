@@ -484,7 +484,6 @@ margin-bottom:12px;
     opacity: .25;
     background: #F7F5F3;
 }
-
 .global-drop .dropdown-ver{align-items: center;
     justify-content: flex-start;}
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
