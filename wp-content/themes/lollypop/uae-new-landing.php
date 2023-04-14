@@ -188,8 +188,8 @@ cursor: pointer;
 .serveice-a:hover span {
     color: #fd2e35;
 }
-.serveice-a:hover span:before
-position: absolute;
+.serveice-a:hover span:before{
+	position: absolute;
     content: "";
     top: 32px;
     left: 0;
