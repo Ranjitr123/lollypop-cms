@@ -8,7 +8,7 @@
 	<?php get_template_part( 'meta', 'keywords' ); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php wp_head(); ?>
-	
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">-->
 <link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/Path.svg" alt="Image">
@@ -37,18 +37,19 @@
 <!-- End Google Tag Manager -->
  
 <!-- translate button -->
+
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.language-drop .dropdown-content');
-  var menu = $('.language-drop #drop-menu');
+  var container = $('.dropdown-content');
+  var menu = $('#drop-menu');
   if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
     container.hide();
   }
 });
 
 $(document).ready(function() {
-  $(".language-drop #drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".language-drop .dropdown-content");
+  $("#drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     } else {
@@ -57,7 +58,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    var dropdownContent = $(".language-drop .dropdown-content");
+    var dropdownContent = $(".dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     }
@@ -118,7 +119,12 @@ else
 	 line-height: 42px;
 	 letter-spacing: -2px;
 }
-
+.dropdown-ver a ::after {
+    width: 20px;
+    height: 100%;
+    width: 100%;
+    left: 41px!important;
+}
  @media (min-width: 768px) {
 	 .fnt-100 {
 		 font-size: 70px;
@@ -163,7 +169,8 @@ else
    .secut-res label{
 	color: #221429 !important;
    }
-	.sec-last1{padding-bottom:25px!important;}
+.sec-last1{padding-bottom:25px!important;}
+
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -312,6 +319,7 @@ else
     margin: 0 15px;
 	
 		}
+		
  .triangle-4 {
     width: 0px;
     height: 0px;
@@ -367,7 +375,6 @@ else
     width: 104px;
     left: -5px;
 }
-
  .langue-container form label{
      font-size:12px;
 	 line-height:16px;
@@ -391,7 +398,7 @@ else
     top: 0;
     width: 16px;
     height: 16px;
-    border: 2px solid #221429;
+    border: 2px solid #221429;
     border-radius: 100%;
     background: #fff;
 }
@@ -429,133 +436,7 @@ else
 }
 }
 
-
-
-/* global button */
-/* .global-drop .dropdown-ver a ::after {
-    background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:56px;
-}
-.global-drop .dropdown-ver a p {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FD2E35;
-}
-.global-drop .langue-container {
-    
-    position: relative;
-    padding: 16px;
-    border-radius: 5px;
-    width: 240px;
-    top: 20px;
-    border-radius: 10px;
-    right: inherit;
-    left: -6px;
-}
-.global-drop .langue-container ul{padding:0px;}
-.global-drop .langue-container ul li{}
-.global-drop .langue-container ul li h6{font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 160%;
-color: #221429;
-margin-bottom:4px;
-}
-.global-drop .langue-container ul li p{
-    font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 160%;
-color: #877C88;
-margin-bottom:12px;
-}
-.global-drop .langue-container ul hr {
-    margin: 12px 0;
-    color: inherit;
-    border: 0;
-    opacity: .25;
-    background: #F7F5F3;
-}
-
-.global-drop .dropdown-ver{align-items: center;
-    justify-content: flex-start;}
-.global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
-.global-drop .secut {right: inherit !important; top: inherit !important; } */
-
-/* @media (min-width:661px) and (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(360px,-100%)!important;
-    }
-}
-
-@media (min-width:320px) and (max-width:359px)
-{
-    .lp-hamberg {
-        transform: translate(180px,-100%)!important;
-    }
-}
-@media (min-width:360px) and (max-width:374px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:375px) and (max-width:420px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:421px) and (max-width:430px)
-{
-    .lp-hamberg {
-        transform: translate(240px,-100%)!important;
-    }
-}
-@media (min-width:431px) and (max-width:600px)
-{
-    .lp-hamberg {
-        transform: translate(275px,-100%)!important;
-    }
-} */
-
 </style>
-
-
-<!-- global button
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.dropdown-content');
-  var menu = $('#drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).ready(function() {
-  $("#drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-</script> -->
 
 </head>
 
@@ -576,8 +457,6 @@ $header = new WP_Query( $args );
 <div class="col-12 col-lg-11 mx-auto">
 <div class="row">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
-<div class="row">
-    <div class="col-12 col-lg-11 mx-auto">
 <div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
@@ -655,6 +534,7 @@ $header = new WP_Query( $args );
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
 <li class="nav-item menus mb-0"><a class=" nav-link fnt-14 hvr-line clr-second text-nowrap" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
 </ul>
+
 <div>
 <div class="lp-hamberg ms-auto">
 <div class="lp-hamberg__item position-relative">
@@ -663,11 +543,11 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
- <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob language-drop">
+ <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide" id="drop-menu">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
-			   <p class="">VIE</p>
+			   <p class="">ENG</p>
 		    </a>
 	 </div>
 	 <div class="dropdown-content" id="myDIV">
@@ -680,7 +560,7 @@ $header = new WP_Query( $args );
 				</p>
 				 <div class="hr-1"></div>
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
+					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/" >
 					<label for="test2">English</label>
 				</p>
 			</form>
@@ -689,33 +569,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 </div>
-
 </div>
-
-<!--<div class="secut col-1 scroll-hide" id="drop-menu">
-	 <div class="dropdown-ver d-flex">
-			<a href="javascript:void(0)" onclick="myFunction()">
-			   <p class="">VIE</p>
-		    </a>
-	 </div>
-	 <div class="dropdown-content" id="myDIV">
-		<div class="triangle triangle-4"></div>
-		<div class="langue-container">
-			<form action="#" method="post">
-				<p>
-					<input type="radio" id="test1" name="radio-group" value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam-vie/" checked>
-					<label for="test1">Tiếng Việt</label>
-				</p>
-				 <hr>
-				<p>
-					<input type="radio" id="test2" name="radio-group" value="https://localhost/cms/lollypop-cms/ui-ux-design-agency-vietnam/">
-					<label for="test2">English</label>
-				</p>
-				
-			</form>					
-		</div>
-	</div>
-</div>-->
 </div>
 </div>
 </div>
@@ -759,7 +613,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-<div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
 </div>
 </div>
 <!-- For mobile-->
@@ -777,7 +631,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
 </div>
 </div>
 </div>
