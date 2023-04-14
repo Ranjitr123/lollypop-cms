@@ -5,7 +5,7 @@
  * * @package WordPress
  * */
 
-get_header('uaeara');
+get_header( 'uaeara' );
 ?>
 
 

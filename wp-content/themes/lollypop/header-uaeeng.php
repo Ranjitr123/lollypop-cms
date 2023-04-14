@@ -769,12 +769,12 @@ $header = new WP_Query( $args );
 		<div class="langue-container">
 			<form action="#">
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
+					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ae-arabic/">
 					<label for="test1">Arabic</label>
 				</p>
 				 <div class="hr-1"></div>
 				<p style="margin-bottom: 0;">
-					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/" checked>
+					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ae-new-page/" checked>
 					<label for="test2">English</label>
 				</p>
 			</form>
