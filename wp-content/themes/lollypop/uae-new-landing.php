@@ -682,6 +682,11 @@ $('.nav-dropdown-text').text(locas);
 
   });
 </script>
+<script>
+$('input[type="radio"]').on('click', function() {
+     window.location = $(this).val();
+});
+</script>
 <?php
 get_footer();
 ?>
