@@ -303,7 +303,7 @@ if($locationVideo !=''){
           </div>
        </div>
        <div class="row px-0">
-       <div class="col-12 col-md-9 mx-auto">
+       <div class="col-12 col-md-8 mx-auto">
         <div class="row px-0 flag-container">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
@@ -332,7 +332,7 @@ if($locationVideo !=''){
 	<?php if( have_rows('slider_section_of_background') ) : while( have_rows('slider_section_of_background') ): the_row(); ?>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-9 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+        <div class="col-12 col-md-9 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left">
@@ -493,7 +493,7 @@ if($locationVideo !=''){
 <section class="sec-pd" style="background: #221429;">
 <div class="container z-1">
 <div class="row"> 
-<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+<div class="col-12 col-md-9 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
 <div class="row mb-45 justify-content-between">
 <div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
