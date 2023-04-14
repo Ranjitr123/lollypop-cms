@@ -395,15 +395,13 @@ if($locationVideo !=''){
 	<div class="d-flex flex-column h-100">
 <?php if(get_sub_field('content_url') !='') { ?>
 <a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
-                              <p class="mb-1 d-inline-block"><?php the_sub_field('content'); ?></p>
+                              <p class="d-inline-block"><?php the_sub_field('content'); ?></p>
                               <div class="">
                             </div>
                            </a>
                           
-<?php } else { ?>
-                        
-                            
-                              <p class="mb-1"><?php the_sub_field('content'); ?></p>
+<?php } else { ?>                            
+                              <p class=""><?php the_sub_field('content'); ?></p>
                               <div class="">
                             </div>
 <?php } ?>
