@@ -392,7 +392,7 @@ if($locationVideo !=''){
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
 
 <li class="fnt-16 mb-2">
-	<div class="d-flex flex-column h-100">
+	<div class="d-flex flex-column">
 <?php if(get_sub_field('content_url') !='') { ?>
 <a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
                               <p class="d-inline-block"><?php the_sub_field('content'); ?></p>
