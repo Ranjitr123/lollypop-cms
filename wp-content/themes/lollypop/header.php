@@ -457,66 +457,29 @@ margin-bottom:12px;
     justify-content: flex-start;}
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
-
-@media (min-width:661px) and (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(360px,-100%)!important;
-    }
-}
-
-@media (min-width:320px) and (max-width:359px)
-{
-    .lp-hamberg {
-        transform: translate(180px,-100%)!important;
-    }
-}
-@media (min-width:360px) and (max-width:374px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:375px) and (max-width:420px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:421px) and (max-width:430px)
-{
-    .lp-hamberg {
-        transform: translate(240px,-100%)!important;
-    }
-}
-@media (min-width:431px) and (max-width:600px)
-{
-    .lp-hamberg {
-        transform: translate(275px,-100%)!important;
-    }
-}
-
-
-/* @media (max-width: 767px){
+.global-drop{margin-left:1rem;}
+@media (max-width: 767px){
     .lp-hamberg {
         transform: translate(0px,-100%)!important;
     }
-} */
+}
+
 
 </style>
 
 <!-- global button -->
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.dropdown-content');
-  var menu = $('#drop-menu');
+  var container = $('.global-drop .dropdown-content');
+  var menu = $('.global-drop #drop-menu');
   if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
     container.hide();
   }
 });
 
 $(document).ready(function() {
-  $("#drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".dropdown-content");
+  $(".global-drop #drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     } else {
@@ -525,7 +488,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    var dropdownContent = $(".dropdown-content");
+    var dropdownContent = $(".global-drop .dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     }
@@ -562,8 +525,8 @@ $header = new WP_Query( $args );
     <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
-         <div class="global-drop col-2">
-            <div class="secut col-12 scroll-hide" id="drop-menu">
+         <div class="global-drop col-2" >
+            <div class="secut col-sm-12 scroll-hide" id="drop-menu">
                 <div class="dropdown-ver d-flex">
                         <a href="javascript:void(0)" onclick="myFunction()">
                         <p class="">Global</p>

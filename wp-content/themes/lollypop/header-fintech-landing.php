@@ -489,52 +489,12 @@ margin-bottom:12px;
     justify-content: flex-start;}
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
-
-/* @media (max-width: 767px){
+.global-drop{margin-left:1rem;}
+@media (max-width: 767px){
     .lp-hamberg {
         transform: translate(0px,-100%)!important;
     }
-} */
-
-@media (min-width:661px) and (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(360px,-100%)!important;
-    }
 }
-
-@media (min-width:320px) and (max-width:359px)
-{
-    .lp-hamberg {
-        transform: translate(180px,-100%)!important;
-    }
-}
-@media (min-width:360px) and (max-width:374px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:375px) and (max-width:420px)
-{
-    .lp-hamberg {
-        transform: translate(210px,-100%)!important;
-    }
-}
-@media (min-width:421px) and (max-width:430px)
-{
-    .lp-hamberg {
-        transform: translate(240px,-100%)!important;
-    }
-}
-@media (min-width:431px) and (max-width:600px)
-{
-    .lp-hamberg {
-        transform: translate(275px,-100%)!important;
-    }
-}
-
-
-
 
 </style>
 
@@ -543,16 +503,16 @@ margin-bottom:12px;
 <!-- global button -->
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.dropdown-content');
-  var menu = $('#drop-menu');
+  var container = $('.global-drop .dropdown-content');
+  var menu = $('.global-drop #drop-menu');
   if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
     container.hide();
   }
 });
 
 $(document).ready(function() {
-  $("#drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".dropdown-content");
+  $(".global-drop #drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     } else {
@@ -561,7 +521,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    var dropdownContent = $(".dropdown-content");
+    var dropdownContent = $(".global-drop .dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     }
