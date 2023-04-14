@@ -436,7 +436,7 @@ else
 
 /* global button */
 .global-drop .dropdown-ver a ::after {
-    background-image:url('http://localhost/cms/lollypop-cms/wp-content/uploads/2023/04/chevron.svg');
+    background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:56px;
 }
 .global-drop .dropdown-ver a p {
@@ -490,11 +490,49 @@ margin-bottom:12px;
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
     .lp-hamberg {
         transform: translate(0px,-100%)!important;
     }
+} */
+
+@media (min-width:661px) and (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(360px,-100%)!important;
+    }
 }
+
+@media (min-width:320px) and (max-width:359px)
+{
+    .lp-hamberg {
+        transform: translate(180px,-100%)!important;
+    }
+}
+@media (min-width:360px) and (max-width:374px)
+{
+    .lp-hamberg {
+        transform: translate(210px,-100%)!important;
+    }
+}
+@media (min-width:375px) and (max-width:420px)
+{
+    .lp-hamberg {
+        transform: translate(210px,-100%)!important;
+    }
+}
+@media (min-width:421px) and (max-width:430px)
+{
+    .lp-hamberg {
+        transform: translate(240px,-100%)!important;
+    }
+}
+@media (min-width:431px) and (max-width:600px)
+{
+    .lp-hamberg {
+        transform: translate(275px,-100%)!important;
+    }
+}
+
 
 
 

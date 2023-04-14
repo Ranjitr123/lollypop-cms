@@ -432,8 +432,8 @@ else
 
 
 /* global button */
-.global-drop .dropdown-ver a ::after {
-    background-image:url('http://localhost/cms/lollypop-cms/wp-content/uploads/2023/04/chevron.svg');
+/* .global-drop .dropdown-ver a ::after {
+    background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:56px;
 }
 .global-drop .dropdown-ver a p {
@@ -485,9 +485,9 @@ margin-bottom:12px;
 .global-drop .dropdown-ver{align-items: center;
     justify-content: flex-start;}
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
-.global-drop .secut {right: inherit !important; top: inherit !important; }
+.global-drop .secut {right: inherit !important; top: inherit !important; } */
 
-@media (min-width:661px) and (max-width: 767px){
+/* @media (min-width:661px) and (max-width: 767px){
     .lp-hamberg {
         transform: translate(360px,-100%)!important;
     }
@@ -522,12 +522,12 @@ margin-bottom:12px;
     .lp-hamberg {
         transform: translate(275px,-100%)!important;
     }
-}
+} */
 
 </style>
 
 
-<!-- global button -->
+<!-- global button
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
   var container = $('.dropdown-content');
@@ -555,7 +555,7 @@ $(document).ready(function() {
   });
 });
 
-</script>
+</script> -->
 
 </head>
 
@@ -574,52 +574,10 @@ $header = new WP_Query( $args );
 <div class="container">
 <div class="row">
 <div class="col-12 col-lg-11 mx-auto">
-<div class="row justify-content-end">
-<div class="col-8 col-md-1 js-toggle d-flex align-items-center"> <a class="logo-header pz-2 d-flex align-items-center d-none d-md-block" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
-
-<!-- global dropdown -->
-<div class="row d-block d-md-none">
+<div class="row">
+<div class="col-8 col-md-1 js-toggle d-flex align-items-center"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+<div class="row">
     <div class="col-12 col-lg-11 mx-auto">
-        <div class="row ">
-        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
-         <div class="global-drop col-2">
-            <div class="secut col-12 scroll-hide" id="drop-menu">
-                <div class="dropdown-ver d-flex">
-                        <a href="javascript:void(0)" onclick="myFunction()">
-                        <p class="">Global</p>
-                        </a>
-                </div>
-                <div class="dropdown-content" id="myDIV">
-                    <div class="langue-container">
-                        <ul>
-                            <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
-                                <h6>India</h6>
-                                <p>Bangalore, Mumbai, Chennai,<br>Hyderabad</p></a>
-                            </li>
-                            <hr>
-                            <li><a href="https://lollypop.design/ui-ux-design-agency-in-usa/">
-                                <h6>USA</h6>
-                                <p>San Jose, Dallas, Salt Lake City</p></a>
-                            </li>
-                            <hr>
-                            <li><a href="https://lollypop.design/ui-ux-design-agency-in-uae/">
-                                <h6>UAE</h6>
-                                <p>Dubai</p></a>
-                            </li>
-                            <hr>
-                            <li><a href="https://lollypop.design/ui-ux-design-agency-vietnam/">
-                                <h6>Vietnam</h6>
-                                <p>Ho Chi Minh City</p></a>
-                            </li>
-                        </ul>
-                    </div>
-            </div> 
-         </div>
-        </div>
-    </div>
-</div>
-
-
 <div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
