@@ -332,7 +332,7 @@ if($locationVideo !=''){
 	<?php if( have_rows('slider_section_of_background') ) : while( have_rows('slider_section_of_background') ): the_row(); ?>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-9 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+        <div class="col-12 col-md-8 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left">
