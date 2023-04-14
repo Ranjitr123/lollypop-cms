@@ -201,6 +201,22 @@ cursor: pointer;
 /* .case-study-slider.case-study-slider-1 .case-slider-content {
     padding-left: 11rem !important;
 } */
+.serveice-a:hover span {
+    color: #fd2e35;
+}
+.serveice-a:hover span:before{
+	position: absolute;
+    content: "";
+    top: 32px;
+    left: 0;
+    width: 81%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
@@ -406,7 +422,20 @@ if($locationVideo !=''){
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-<li class="fnt-16 mb-2"><a href="<?php the_sub_field('content_url'); ?>"><?php the_sub_field('content'); ?></a></li>
+<li class="fnt-16 mb-2">
+	<div class="d-flex flex-column">
+	<?php if(get_sub_field('content_url') !='') { ?>
+		<a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
+                              <span class="d-inline-block"><?php the_sub_field('content'); ?></span>
+                              
+                           </a>
+                          
+	<?php } else { ?>                            
+                              <span class=""><?php the_sub_field('content'); ?></span>
+
+	<?php } ?>
+	</div>
+</li>
 <?php endwhile; endif; ?>
 </ul>
 	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>

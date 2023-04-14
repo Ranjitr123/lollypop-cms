@@ -193,7 +193,7 @@ cursor: pointer;
     content: "";
     top: 32px;
     left: 0;
-    width: 100%;
+    width: 81%;
     height: 2px;
     background-color: #fd2e35;
     opacity: 1;
