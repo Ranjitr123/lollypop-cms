@@ -407,6 +407,7 @@ else
     top:10%;
 }
 .hr-1{border-bottom:1px solid #F7F4F2;padding: 2px;}
+.icon-lollypop{display:none;}
 </style>
 
 </head>
