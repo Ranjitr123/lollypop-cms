@@ -73,7 +73,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     padding: 1px;
 }
 .download-btn:hover{max-width: 220px;}
-.download-btn .btn-red{display: flex; padding: 15px 36px; justify-content: space-between;}
+.download-btn .btn-red{display: flex; padding: 15px 36px; justify-content: space-between; align-items: center;}
 .download-btn .btn-red:hover{    clip-path: polygon(7.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 
 /* designathon */
