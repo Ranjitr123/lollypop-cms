@@ -31,9 +31,9 @@ left: -5px;
 /*designathon23-css-mithun-bl*/
 .event-Details {padding: 180px 0 120px 0;}
 .event-Details .details-width{width: 100%;max-width:765px;margin: 0 auto;}
-.event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;}
+.event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;font-family: 'Cairo';}
 .event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1; opacity:0.6}
-.event-Details .register-process h4{font-size: 24px;font-weight: 700;line-height: 1.2;color: #FFFFFF;}
+.event-Details .register-process h4{font-size: 24px;font-weight: 700;line-height: 1.2;color: #FFFFFF; font-family: 'Cairo';}
 .event-Details .register-process p{font-weight: 400;line-height: 1.45;color: rgba(255, 255, 255, 0.7) !important;width: 100%;max-width:446px ;}
 .event-Details .register-process span{font-weight: 700;color:#fff !important;}
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
@@ -56,11 +56,11 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     -ms-transform: translate(-1.1rem, -1.0rem);
     transform: translate(1.1rem, -1.0rem); transition: all 700ms cubic-bezier(.25, .46, .45, .94);}
 .last-Design{padding: 0px 0 100px 0;}
-.last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px;}
+.last-Design h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;width: 100%;max-width:676px;margin: 0 auto 40px; font-family: 'Cairo',sansarif; }
 .btn-red .white_arrow{display:none !important;}
 /* .btn-red:hover .white_arrow{display: inline-block;padding-left:10px;} */
 .event-details-content{padding-left:60px;}
-.our-sponser h3{position:relative;}
+.our-sponser h3{position:relative; font-family: 'Cairo';}
 .athon-prize-list__item h6{
    font-family: 'Cairo', sans-serif;
 }
@@ -86,7 +86,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 .banner-designathon23{
    background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/banner-top-dots.png");
    background-repeat: no-repeat;background-size: contain;
-    top: -21px;
+    top: -40px;
     left: 11px;
 }
 /* .sec-pd-designathonfaq{
@@ -242,6 +242,13 @@ color: #0D0EA3 !important;
 .sec-pd-designathon2{
   padding-bottom:150px !important;
 }
+.faq-el__head h2{
+  font-family: 'Cairo';
+  /* max-width:245px; */
+}
+.faq-h2{
+  line-height:48px !important;
+}
 @media(max-width: 767px){
   .white_arrow{display: inline-block !important;}
   .event-Details{padding: 180px 0 72px 0;}
@@ -262,7 +269,7 @@ color: #0D0EA3 !important;
     .sponsor-sec{flex-direction:column;}
     .footer-slide-img{width:80px; margin-left:0px !important;}
     .event-details-content{padding-left:15px;}
-    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1; left: -2px;}
+    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1; left: -34px;}
     .sponsor-sec img{height: 78px;}
     figure .slide, figure .slide:hover{
       transition: none;
@@ -280,10 +287,14 @@ color: #0D0EA3 !important;
 .sec-pd-designathon2{
   padding-bottom:60px !important;
 }
+.faq-h2{
+  line-height:24px !important;
+  font-size:24px !important;
+}
 
 }
 
-
+.our-sponser{font-family: 'Cairo';}
 /*designathon23-css-mithun-bl*/
 
 
@@ -292,7 +303,7 @@ color: #0D0EA3 !important;
 @media(max-width: 768px){
   .our-sponser:before{display: none;}
   .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
-  .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important}
+  .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important; font-family: 'Cairo';}
   .download-btn .btn-red {padding: 12px 36px !important;}
   .download-btn {max-width:200px !important;}
   .data-scroll{padding: 40px 0 !important}
@@ -467,6 +478,7 @@ p br{
 .download-btn a .white_arrow{
   display:block !important;
 }
+
 
 </style>
 
@@ -683,8 +695,8 @@ p br{
               <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
               </div>
               <div class="faq-el faq-el--athon" style="background: #1718AD;">
-                <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700">Frequently asked questions</span>
-                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-7 px-0 mb-0 clr-yel-92a mb-5">When in doubt, always ask</h2>
+                <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700 ">Frequently asked questions</span>
+                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-7 px-0 mb-0 clr-yel-92a mb-5 faq-h2">When in doubt,<br> always ask</h2>
                 </div>
                 <div class="faq-el__body"> 
                   <ul class="px-0 mb-0 faq-ac row justify-content-between">
