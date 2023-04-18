@@ -249,6 +249,7 @@ color: #0D0EA3 !important;
 .faq-h2{
   line-height:48px !important;
 }
+.rules-conatiner{margin-bottom:74px !important; }
 @media(max-width: 767px){
   .white_arrow{display: inline-block !important;}
   .event-Details{padding: 180px 0 72px 0;}
@@ -291,6 +292,7 @@ color: #0D0EA3 !important;
   line-height:24px !important;
   font-size:24px !important;
 }
+.rules-conatiner{margin-bottom:84px !important; }
 
 }
 
@@ -416,7 +418,7 @@ margin-right:auto;
   margin-bottom:2rem !important;
 }
 .keen-head{
-   margin-bottom:0px !important;
+   margin-bottom:84px !important;
 }
 .banner-designathon23{
   left:0 !important;
@@ -638,7 +640,7 @@ p br{
               <div class=" pt-md-5 data-scroll" style="background: #1718AD;opacity: 1; transform: translateY(0px); position: relative;padding-bottom:65px;">
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center" style="position: relative;z-index: 100;"> 
-                    <div class="mb-45"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2 keen-head">Keen to know more?</span>
+                    <div class="mb-45 rules-conatiner"><span class="d-block fnt-20 mb-5 pb-2 mb-md-4 pb-md-0 mt-2 keen-head">Keen to know more?</span>
                       <h2 class="fnt-40 fnt-800  mb-0 clr-yel-92a">Rules and regulations</h2>
                       <h2 class="fnt-40 fnt-800 clr-yel-92a">to get you started </h2>
 		               </div>
