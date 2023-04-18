@@ -39,11 +39,11 @@ left: -5px;
 .event-Details label{font-size: 20px;font-weight:700;color: #FF3500;line-height: 37px;
     font-style: normal;
          font-family: 'Cairo', sans-serif;}
-.btn-red{display: inline-block;text-decoration: none;padding: 14px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
+.btn-red{display: inline-block;text-decoration: none;padding: 12px 36px;background: #FF3500;font-size: 18px;font-weight: 700;color: #FFFFFF;margin: 8px 0 0 0;position: relative;line-height:1.0;height: 50px;clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;}
+    transition: all 0.3s ease; line-height: 25px;}
 .btn-red:hover{color:#fff; clip-path:polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 .design-cities-hacks{padding:130px 0 60px 0;}
 .design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0; margin-left: 28px;}
@@ -67,12 +67,12 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 
 .download-btn{
   margin: 0 auto;
-    max-width: 198px;
+    max-width: 220px;
     background-color: #fff;
     clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
     padding: 1px;
 }
-.download-btn:hover{max-width: 227px;}
+.download-btn:hover{max-width: 220px;}
 .download-btn .btn-red{display: flex; padding: 15px 36px; justify-content: space-between;}
 .download-btn .btn-red:hover{    clip-path: polygon(7.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 
@@ -266,7 +266,7 @@ color: #0D0EA3 !important;
     .sponsor-sec img{height: 78px;}
     figure .slide, figure .slide:hover{
       transition: none;
-      transform: none;
+      transform: none !important;
     }
     figure .slide:hover{
       transform: translate(1.1rem, -1rem);
@@ -282,6 +282,7 @@ color: #0D0EA3 !important;
 }
 
 }
+
 
 /*designathon23-css-mithun-bl*/
 
@@ -460,8 +461,11 @@ p br{
     display: inline-block !important;
     padding-left: 10px;
 }
-.download-btn .btn-red:hover .white_arrow {
+/* .download-btn .btn-red:hover .white_arrow {
     display: inline-block !important;
+} */
+.download-btn a .white_arrow{
+  display:block !important;
 }
 
 </style>
