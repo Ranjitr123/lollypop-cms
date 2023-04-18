@@ -414,6 +414,7 @@ else
     font-size: 14px;
     line-height: 19px;
     color: #FD2E35;
+    padding-left:12px;
 }
 .global-drop .langue-container {
     
