@@ -185,6 +185,22 @@ cursor: pointer;
 .blue-max{max-width: 662px;}
 .max-580{max-width: 580px;}
 .mb-69{margin-bottom:69px !important;}
+.serveice-a:hover span {
+    color: #fd2e35;
+}
+.serveice-a:hover span:before{
+	position: absolute;
+    content: "";
+    top: 32px;
+    left: 0;
+    width: 81%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 </style>
 <main class="main">
 <!--01-->
@@ -257,7 +273,7 @@ if($locationVideo !=''){
 <div class="container"> 
 <div class="row"> 
 <?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
-<div class="col-12 col-md-10 col-lg-9 mx-auto">
+<div class="col-12 col-md-9 col-lg-8 mx-auto">
 <div class="mb-5"> 
 <h5 class="fnt-40 fnt-800 data-scroll px-0 client-max"><?php the_sub_field('title'); ?></h5>
 <p class="fnt-24"><?php the_sub_field('content'); ?></p>
@@ -268,7 +284,7 @@ if($locationVideo !=''){
 <?php endwhile; endif; ?>
 
 </ul>
-<div class="hvr-line fnt-14 clr-second data-scroll d-inline-block client_mt" style="opacity:1; transform: translateY(0px);"><a href=" https://lollypop.design/projects/" style="text-transform: capitalize;color: #FD2E35;">Learn more about our clients</a></div>
+<div class="hvr-line fnt-14 clr-second data-scroll d-inline-block client_mt" style="opacity:1; transform: translateY(0px);"><a href=" https://lollypop.design/clients/" style="text-transform: capitalize;color: #FD2E35;">Learn more about our clients</a></div>
 </div>
 <?php endwhile; endif; ?>
 </div>
@@ -279,7 +295,7 @@ if($locationVideo !=''){
 <section class="sec-pd-celeb">
    <div class="container">
       <div class="row">
-         <div class="col-12 col-md-9 mx-auto">
+         <div class="col-12 col-md-8 mx-auto">
             <div class="mb-5">
                <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);">Celebrating two years in the Middle East and serving clients across the MENA region.</h5>
                <p class="fnt-24 sec-2">As we move across the Middle East, we are curating experiences accordingly based on user behaviour.</p>
@@ -287,7 +303,7 @@ if($locationVideo !=''){
           </div>
        </div>
        <div class="row px-0">
-       <div class="col-12 col-md-9 mx-auto">
+       <div class="col-12 col-md-8 mx-auto">
         <div class="row px-0 flag-container">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
@@ -316,7 +332,7 @@ if($locationVideo !=''){
 	<?php if( have_rows('slider_section_of_background') ) : while( have_rows('slider_section_of_background') ): the_row(); ?>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-9 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+        <div class="col-12 col-md-8 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left">
@@ -395,15 +411,13 @@ if($locationVideo !=''){
 	<div class="d-flex flex-column">
 <?php if(get_sub_field('content_url') !='') { ?>
 <a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
-                              <p class="d-inline-block"><?php the_sub_field('content'); ?></p>
-                              <div class="">
-                            </div>
+                              <span class="d-inline-block"><?php the_sub_field('content'); ?></span>
+                              
                            </a>
                           
 <?php } else { ?>                            
-                              <p class=""><?php the_sub_field('content'); ?></p>
-                              <div class="">
-                            </div>
+                              <span class=""><?php the_sub_field('content'); ?></span>
+
 <?php } ?>
 	  </div>
 	  
@@ -479,7 +493,7 @@ if($locationVideo !=''){
 <section class="sec-pd" style="background: #221429;">
 <div class="container z-1">
 <div class="row"> 
-<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+<div class="col-12 col-md-9 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
 <div class="row mb-45 justify-content-between">
 <div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">

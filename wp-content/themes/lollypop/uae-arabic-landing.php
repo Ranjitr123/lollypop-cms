@@ -201,6 +201,22 @@ cursor: pointer;
 /* .case-study-slider.case-study-slider-1 .case-slider-content {
     padding-left: 11rem !important;
 } */
+.serveice-a:hover span {
+    color: #fd2e35;
+}
+.serveice-a:hover span:before{
+	position: absolute;
+    content: "";
+    top: 27px;
+    left: 0;
+    width: 81%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
@@ -273,7 +289,7 @@ if($locationVideo !=''){
 <div class="container"> 
 <div class="row"> 
 <?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
-<div class="col-12 col-md-10 col-lg-9 mx-auto">
+<div class="col-12 col-md-9 col-lg-8 mx-auto">
 <div class="mb-5"> 
 <h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
 <p class="fnt-24"><?php the_sub_field('content'); ?></p>
@@ -295,7 +311,7 @@ if($locationVideo !=''){
 <section class="sec-pd-celeb">
    <div class="container">
       <div class="row">
-         <div class="col-12 col-md-9 mx-auto">
+         <div class="col-12 col-md-8 mx-auto">
             <div class="mb-5">
                <h5 class="fnt-40 fnt-800 data-scroll px-0 sec-2" style="opacity: 0.5; transform: translateY(0px);margin-left:auto;">نحتفل بعامين في الشرق الأوسط و خدمة العملاء في جميع أنحاء منطقة الشرق الأوسط وشمال إفريقيا</h5>
                <p class="fnt-24 sec-2" style="margin-left:auto;">بينما نتحرك في جميع أنحاء الشرق الأوسط ، نقوم برعاية التجارب وفقًا لسلوك المستخدم.</p>
@@ -303,7 +319,7 @@ if($locationVideo !=''){
           </div>
        </div>
        <div class="row px-0">
-       <div class="col-12 col-md-9 mx-auto">
+       <div class="col-12 col-md-8 mx-auto">
         <div class="row px-0 flag-container flex-row-reverse">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
@@ -332,7 +348,7 @@ if($locationVideo !=''){
 	<?php if( have_rows('slider_section_of_background') ) : while( have_rows('slider_section_of_background') ): the_row(); ?>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-9 mb-4 pb-2 mb-md-0 pb-md-0" style="margin-left:auto;">
+        <div class="col-12 col-md-8 col-lg-8 mb-4 pb-2 mb-md-0 pb-md-0" style="margin-left:auto;">
           <div class="row mb-45 justify-content-between">
               <div class="col-md-10 col-lg-10 fluid-offset">
                 <div class="lp-awards__left lp_mr">
@@ -406,7 +422,20 @@ if($locationVideo !=''){
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
-<li class="fnt-16 mb-2"><a href="<?php the_sub_field('content_url'); ?>"><?php the_sub_field('content'); ?></a></li>
+<li class="fnt-16 mb-2">
+	<div class="d-flex flex-column">
+	<?php if(get_sub_field('content_url') !='') { ?>
+		<a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
+                              <span class="d-inline-block"><?php the_sub_field('content'); ?></span>
+                              
+                           </a>
+                          
+	<?php } else { ?>                            
+                              <span class=""><?php the_sub_field('content'); ?></span>
+
+	<?php } ?>
+	</div>
+</li>
 <?php endwhile; endif; ?>
 </ul>
 	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
