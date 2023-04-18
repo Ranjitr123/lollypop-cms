@@ -488,7 +488,7 @@ margin-bottom:12px;
     justify-content: flex-start;}
 .global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
-.global-drop{margin-left:1rem;}
+/* .global-drop{margin-left:1rem;} */
 @media (max-width: 767px){
     .lp-hamberg {
         transform: translate(0px,-100%)!important;

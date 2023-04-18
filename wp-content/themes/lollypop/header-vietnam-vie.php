@@ -496,7 +496,7 @@ margin-bottom:12px;
     justify-content: flex-end;
     position: absolute;
     top:0px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 /* @media (max-width: 767px){
     .lp-hamberg {
