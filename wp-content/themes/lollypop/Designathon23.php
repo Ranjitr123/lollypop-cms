@@ -26,13 +26,13 @@ position:absolute;
 top: -30px;
 left: -5px;
 }
-.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;margin-left: -11px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
+.our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;margin-left: -11px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1; opacity: 0.6;}
 
 /*designathon23-css-mithun-bl*/
 .event-Details {padding: 180px 0 120px 0;}
 .event-Details .details-width{width: 100%;max-width:765px;margin: 0 auto;}
 .event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;}
-.event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1;}
+.event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1; opacity:0.6}
 .event-Details .register-process h4{font-size: 24px;font-weight: 700;line-height: 1.2;color: #FFFFFF;}
 .event-Details .register-process p{font-weight: 400;line-height: 1.45;color: rgba(255, 255, 255, 0.7) !important;width: 100%;max-width:446px ;}
 .event-Details .register-process span{font-weight: 700;color:#fff !important;}
@@ -46,8 +46,8 @@ left: -5px;
     transition: all 0.3s ease; line-height: 25px;}
 .btn-red:hover{color:#fff; clip-path:polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 .design-cities-hacks{padding:130px 0 60px 0;}
-.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0; margin-left: 28px;}
-.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height: 67px;top: -7px;left:-19px;background-repeat:no-repeat;background-size:cover;z-index: -1;}
+.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;font-family: 'Cairo',sansarif;}
+.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height:100%;top:-1px;left: -14px;px;background-repeat:no-repeat;background-size:cover;z-index: -1;opacity: 0.6;}
 .hack-Cities{width: 100%; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 53px;}
     figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
@@ -234,7 +234,7 @@ color: #0D0EA3 !important;
   }
 
 .register-btn a{
-  margin-top:65px;
+  margin-top:2rem;
 }
 .keen-head{
    margin-bottom:70px !important;
@@ -252,7 +252,7 @@ color: #0D0EA3 !important;
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;margin-left: -17px;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
@@ -262,7 +262,7 @@ color: #0D0EA3 !important;
     .sponsor-sec{flex-direction:column;}
     .footer-slide-img{width:80px; margin-left:0px !important;}
     .event-details-content{padding-left:15px;}
-    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1;}
+    .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px; top: -15px; background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1; left: -2px;}
     .sponsor-sec img{height: 78px;}
     figure .slide, figure .slide:hover{
       transition: none;
@@ -382,9 +382,9 @@ font-weight:700 !important;
   .why-txt p{
   
 font-size: 20px !important;
-margin-top:0rem !important;
-max-width: 250px !important;
-margin-bottom:2rem;
+margin-top:1rem !important;
+max-width: 183px !important;
+/* margin-bottom:2rem; */
 margin-left:auto;
 margin-right:auto;
 }
@@ -393,11 +393,11 @@ margin-right:auto;
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: -20rem !important;
+    margin-top: -21rem !important;
 }
-.register-btn a{
+/* .register-btn a{
   margin-top:0px !important;
-}
+} */
 .one-slide br{
   display:none !important;
 }
@@ -509,7 +509,7 @@ p br{
         <div class="container">
             <div class="hack-Cities row">
                <div class="col-12 col-md-12 col-lg-12 mx-auto">
-                  <h2 class="our-sponser">The hack is back in 3 cities now!</h2>
+                  <h2 class="our-sponser">The hack is back in <br>3 cities now!</h2>
                   <div class="d-md-flex d-block">
                     <div class="col-md-4">
                       <figure class="imgBdr">
