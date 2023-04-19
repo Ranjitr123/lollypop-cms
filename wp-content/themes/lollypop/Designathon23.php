@@ -29,7 +29,7 @@ left: -5px;
 .our-sponser:before{content:'';position:absolute;width: 141px;height: 104px;margin-left: -11px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/upsrok-slide-lines.svg") !important;background-repeat:no-repeat;background-size:contain;z-index: -1; opacity: 0.6;}
 
 /*designathon23-css-mithun-bl*/
-.event-Details {padding: 180px 0 120px 0;}
+.event-Details {padding: 250px 0 120px 0;}
 .event-Details .details-width{width: 100%;max-width:765px;margin: 0 auto;}
 .event-Details h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;z-index: 0;font-family: 'Cairo';}
 .event-Details h2::before{content:'';position:absolute;width: 141px;height: 104px;top: -5px;left:-27px;background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/red-event-dots.svg");background-repeat:no-repeat;background-size:contain;z-index: -1; opacity:0.6}
@@ -46,8 +46,8 @@ left: -5px;
     transition: all 0.3s ease; line-height: 25px;}
 .btn-red:hover{color:#fff; clip-path:polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 .design-cities-hacks{padding:130px 0 60px 0;}
-.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;font-family: 'Cairo',sansarif;}
-.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height:100%;top:-1px;left: -14px;px;background-repeat:no-repeat;background-size:cover;z-index: -1;opacity: 0.6;}
+.design-cities-hacks h2{font-size: 48px;font-weight: 800;line-height: 1;color: #FF3500;position: relative;margin-bottom:82px;z-index: 0;font-family: 'Cairo',sansarif; margin-left:35px;}
+.design-cities-hacks h2:before{content:'';position:absolute;width: 141px;height:100%;top:-1px;left: -25px;px;background-repeat:no-repeat;background-size:cover;z-index: -1;opacity: 0.6;}
 .hack-Cities{width: 100%; margin:0 auto;}
 .imgBdr{border: 1px solid #FF3500;margin-right: 53px;}
     figure .slide:hover {-webkit-transition: all 700ms cubic-bezier(.25, .46, .45, .94);
@@ -251,8 +251,12 @@ color: #0D0EA3 !important;
 }
 .rules-conatiner{margin-bottom:74px !important; }
 @media(max-width: 767px){
+  .event-banner::before{margin-left:0px !important; left:20px;}
+  .event-banner br {
+    display: block !important;
+}
   .white_arrow{display: inline-block !important;}
-  .event-Details{padding: 180px 0 72px 0;}
+  .event-Details{padding: 160px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
 .event-Details h2::before{width: 95px; height: 48px;top: -10px;background-size:inherit;}
 .event-Details .register-process p{max-width:100%;}
@@ -260,7 +264,7 @@ color: #0D0EA3 !important;
 .event-Details label{font-size:14px;margin-top:20px;}
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
-.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;margin-left: -17px;}
+.design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;margin-left:13px;}
 .design-cities-hacks h2:before{width:95px;max-width:69px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
@@ -298,7 +302,7 @@ color: #0D0EA3 !important;
 
 .our-sponser{font-family: 'Cairo';}
 /*designathon23-css-mithun-bl*/
-
+.event-banner br{display:none;}
 
 
 
@@ -396,7 +400,7 @@ font-weight:700 !important;
   
 font-size: 20px !important;
 margin-top:1rem !important;
-max-width: 183px !important;
+max-width: 193px !important;
 /* margin-bottom:2rem; */
 margin-left:auto;
 margin-right:auto;
@@ -523,7 +527,7 @@ p br{
         <div class="container">
             <div class="hack-Cities row">
                <div class="col-12 col-md-12 col-lg-12 mx-auto">
-                  <h2 class="our-sponser">The hack is back in <br>3 cities now!</h2>
+                  <h2 class="our-sponser event-banner">The hack is back in <br>3 cities now!</h2>
                   <div class="d-md-flex d-block">
                     <div class="col-md-4">
                       <figure class="imgBdr">
@@ -579,7 +583,7 @@ p br{
          
       <!-- event details -->
        <section class="event-Details">
-        <img class="position-absolute d-none d-md-block img-fluid" style="left:0%; top: 30%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
+        <img class="position-absolute d-none d-md-block img-fluid" style="top: 30%;" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/event-side.svg" alt="">
         <div class="container">
           <div class="col-12 col-md-12 col-lg-8 mx-auto">
           <div class="row">
@@ -662,10 +666,10 @@ p br{
       <section class="sec-pd-designathon2 pt-5 pb-5">
         <div class="container">
           <div class="row justify-content-center">
-              <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser">Our Sponsors</h3>	  
+              <h3 class="fnt-50 fnt-800 pb-md-4 clr-yel-92a text-center mb-5 our-sponser mt-4 mt-md-none">Our Sponsors</h3>	  
                     <div class="sponsor-img mb-5 mx-auto">
                       <div class="col-12 col-md-11 col-lg-9 col-xl-9 mx-auto d-flex sponsor-sec">
-                          <div class="col-md-3">
+                          <div class="col-md-3 mb-4">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/In-app use.png" alt="Image">
                           </div>
                           <div class="col-md-10 mx-md-5">
@@ -675,7 +679,7 @@ p br{
                     </div> 
                     <div class="sponsor-img mx-auto">
                     <div class="d-flex col-12 col-md-11 col-lg-9 col-xl-9 mx-auto  sponsor-sec">
-                      <div class="col-md-3">
+                      <div class="col-md-3 mb-4">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/cred.svg" alt="Image">
                       </div>
                         <div class="col-md-10 mx-md-5">
