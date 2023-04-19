@@ -441,7 +441,7 @@ else
 /* global button */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:60px !important;
+    left:47px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -588,6 +588,17 @@ $(document).off("mouseup").on("mouseup", function(e) {
   }
 });
 
+$(document).mouseup(function (e) {
+    if ($(e.target).closest(".drop-hide").length=== 0) 
+    {
+        $(".drop-hide").hide();
+    }
+    else ($(e.target).closest(".drop-hide").length!=== 0)
+    {
+        $(".drop-hide").show();
+    }
+});
+
 $(document).ready(function() {
   $(".global-drop #drop-menu").off("click").on("click", function() {
     var dropdownContent = $(".global-drop .dropdown-content");
@@ -606,12 +617,7 @@ $(document).ready(function() {
   });
 });
 
-$(document).mouseup(function (e) {
-            if ($(e.target).closest(".drop-hide").length
-                        === 0) {
-                $(".drop-hide").hide();
-            }
-        });
+
 
 </script>
 

@@ -441,7 +441,7 @@ else
 /* global button */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:60px !important;
+    left:47px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -588,6 +588,17 @@ $(document).off("mouseup").on("mouseup", function(e) {
   }
 });
 
+$(document).mouseup(function (e) {
+    if ($(e.target).closest(".drop-hide").length=== 0) 
+    {
+        $(".drop-hide").hide();
+    }
+    else ($(e.target).closest(".drop-hide").length!=== 0)
+    {
+        $(".drop-hide").show();
+    }
+});
+
 $(document).ready(function() {
   $(".global-drop #drop-menu").off("click").on("click", function() {
     var dropdownContent = $(".global-drop .dropdown-content");
@@ -608,12 +619,6 @@ $(document).ready(function() {
 
 
 
-$(document).mouseup(function (e) {
-            if ($(e.target).closest(".drop-hide").length
-                        === 0) {
-                $(".drop-hide").hide();
-            }
-        });
 
 </script>
 
@@ -784,26 +789,29 @@ $header = new WP_Query( $args );
 
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide " id="drop-menu">
-	 <div class="dropdown-ver d-flex">
-			<a href="javascript:void(0)" onclick="myFunction()">
-			   <p class="">ENG</p>
-		    </a>
-	 </div>
-	 <div class="dropdown-content drop-hide" id="myDIV">
-		<div class="triangle triangle-4"></div>
-		<div class="langue-container">
-			<form action="#">
-				<p style="margin-bottom: 0;">
-					<input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ae-arabic/">
-					<label for="test1">Arabic</label>
-				</p>
-				 <div class="hr-1"></div>
-				<p style="margin-bottom: 0;">
-					<input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ae-new-page/" checked>
-					<label for="test2">English</label>
-				</p>
-			</form>
-		</div>
+            <div class="dropdown-ver d-flex">
+                    <a href="javascript:void(0)" onclick="myFunction()">
+                    <p class="">ENG</p>
+                    </a>
+            </div>
+            <div class="dropdown-content drop-hide" id="myDIV">
+                <div class="">
+                        <div class="triangle triangle-4"></div>
+                        <div class="langue-container">
+                            <form action="#">
+                                <p style="margin-bottom: 0;">
+                                    <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ae-arabic/">
+                                    <label for="test1">Arabic</label>
+                                </p>
+                                <div class="hr-1"></div>
+                                <p style="margin-bottom: 0;">
+                                    <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ae-new-page/" checked>
+                                    <label for="test2">English</label>
+                                </p>
+                            </form>
+                        </div>
+                </div>
+          </div>
 	</div> 
 </div>
 </div>
