@@ -250,12 +250,10 @@ height:140px;
                                 <div class="col-12 col-md-11 offset-md-1">
                                     
                                         <div class="mb-45 multi-line-text">
-                                        <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href='<?=get_site_url()?>'>Services</a> /  Branding</span>
-                                        
-                                       
-                                        
-                                            <h1 style='color:#221429;' class="fnt-70 mb-lg-2 fnt-800 col-12 col-md-11 col-lg-12 red-stroke red-stroke--small13 px-0 mb-22 aos-init aos-animate"> Designing Brand Identity that narrates your brand story, visually.</h1>
-                                            <p style='max-width:612px;' class="fnt-24 col-md-11 col-lg-10 col-xl-9 px-0">Every brand is a living personality with attributes both visual and sensual. We craft visual brand identities that elevate your brand’s personality, tone and voice.</p>
+                                        <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href='<?=get_site_url()?>'><?php echo get_field('services_text_feild')?></a> /  <?php echo get_field('research_text_feild')?></span>
+                                                                                
+                                            <h1 style='color:#221429;' class="fnt-70 mb-lg-2 fnt-800 col-12 col-md-11 col-lg-12 red-stroke red-stroke--small13 px-0 mb-22 aos-init aos-animate"> <?php echo get_field('research_heading')?></h1>
+                                            <p style='max-width:612px;' class="fnt-24 col-md-11 col-lg-10 col-xl-9 px-0"><?php echo get_field('research_description')?></p>
                                         </div>
                                 </div>
                             </div>
@@ -271,7 +269,7 @@ height:140px;
               <div id="play2-out" style="display:none">
                 <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="https://player.vimeo.com/video/683673582" poster="<?php echo get_template_directory_uri(); ?>/assets/images/branding/brand-vedio.svg">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_template_directory_uri(); ?>/assets/images/branding/brand-vedio.svg">
               </video>
             </div>
 					<!--	<img class="img-fluid blog-d-img mb-0" src="<?php echo get_field('researchbanner_image')?>" alt="Image" width="1077" height="471" style="transform: translate(0px, 0px);">-->
