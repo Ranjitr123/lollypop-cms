@@ -441,7 +441,7 @@ else
 /* global button */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:47px !important;
+    left:60px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -606,6 +606,29 @@ $(document).ready(function() {
   });
 });
 
+$(document).mouseup(function (e) {
+            if ($(e.target).closest(".drop-hide").length
+                        === 0) {
+                $(".drop-hide").hide();
+            }
+        });
+
+</script>
+
+<script>
+
+$(window).scroll(function() {
+
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+ }
+});
+
 </script>
 
 </head>
@@ -635,7 +658,7 @@ $header = new WP_Query( $args );
          <div class="global-drop col-2">
             <div class="secut col-12 scroll-hide" id="drop-menu">
                 <div class="dropdown-ver d-flex">
-                        <a href="javascript:void(0)" onclick="myFunction()">
+                        <a href="javascript:void(0)" onclick="myFunction1()">
                         <p class="">Global</p>
                         </a>
                 </div>
@@ -764,7 +787,7 @@ $header = new WP_Query( $args );
 			   <p class="">VIE</p>
 		    </a>
 	 </div>
-	 <div class="dropdown-content" id="myDIV">
+	 <div class="dropdown-content drop-hide" id="myDIV">
 		<div class="triangle triangle-4"></div>
 		<div class="langue-container">
 			<form action="#">

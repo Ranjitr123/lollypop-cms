@@ -65,6 +65,14 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).mouseup(function (e) {
+            if ($(e.target).closest(".drop-hide").length
+                        === 0) {
+                $(".drop-hide").hide();
+            }
+        });
+
 </script>
 
 
@@ -441,7 +449,7 @@ else
 /* global button */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:47px !important;
+    left:60px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -764,7 +772,7 @@ $header = new WP_Query( $args );
 			   <p class="">ENG</p>
 		    </a>
 	 </div>
-	 <div class="dropdown-content" id="myDIV">
+	 <div class="dropdown-content drop-hide" id="myDIV">
 		<div class="triangle triangle-4"></div>
 		<div class="langue-container">
 			<form action="#">

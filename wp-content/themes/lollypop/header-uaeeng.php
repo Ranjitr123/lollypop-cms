@@ -199,7 +199,7 @@ else
     position: absolute;
     right: -9px;
 }
-#myDIV, #myDIV1 {
+#myDIV{
 	display:none;
 	position: absolute;
 	top: 30px;
@@ -225,8 +225,8 @@ else
     padding: 10px;
     border-radius: 5px;
     width: 131px;
-	right: -50px;
-	    top: -4px;
+	/* right: -50px; */
+	top: -4px;
 }
 .triangle-4 {
     width: 0px;
@@ -418,7 +418,7 @@ else
 		position:fixed;
 	}
 	#myDIV {
-		 left: -19px;
+		 left: 45px;
 		 width: 150px;
 	}
 	.triangle {
@@ -433,7 +433,7 @@ else
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
     position: relative;
-    left: 67%;
+    /* left: 67%; */
 }
 }
 
@@ -441,7 +441,7 @@ else
 /* global button */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-    left:47px !important;
+    left:60px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -606,6 +606,31 @@ $(document).ready(function() {
   });
 });
 
+
+
+$(document).mouseup(function (e) {
+            if ($(e.target).closest(".drop-hide").length
+                        === 0) {
+                $(".drop-hide").hide();
+            }
+        });
+
+</script>
+
+<script>
+
+$(window).scroll(function() {
+
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+ }
+});
+
 </script>
 
 </head>
@@ -633,9 +658,9 @@ $header = new WP_Query( $args );
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-2">
-            <div class="secut col-12 scroll-hide" id="drop-menu">
+            <div class="secut col-12 scroll-hide" id="drop-menu" >
                 <div class="dropdown-ver d-flex">
-                        <a href="javascript:void(0)" onclick="myFunction()">
+                        <a href="javascript:void(0)" onclick="myFunction1()">
                         <p class="">Global</p>
                         </a>
                 </div>
@@ -758,13 +783,13 @@ $header = new WP_Query( $args );
 </div>
 
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-  <div class="secut col-1 scroll-hide" id="drop-menu">
+  <div class="secut col-1 scroll-hide " id="drop-menu">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
 			   <p class="">ENG</p>
 		    </a>
 	 </div>
-	 <div class="dropdown-content" id="myDIV">
+	 <div class="dropdown-content drop-hide" id="myDIV">
 		<div class="triangle triangle-4"></div>
 		<div class="langue-container">
 			<form action="#">
