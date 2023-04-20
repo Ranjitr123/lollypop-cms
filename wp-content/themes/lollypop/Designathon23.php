@@ -72,7 +72,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
     clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
     padding: 1px;
 }
-.download-btn:hover{max-width: 220px;}
+/* .download-btn:hover{max-width: 220px;} */
 .download-btn .btn-red{display: flex; padding: 15px 36px; justify-content: space-between; align-items: center;}
 .download-btn .btn-red:hover{    clip-path: polygon(7.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);}
 
@@ -234,7 +234,7 @@ color: #0D0EA3 !important;
   }
 
 .register-btn a{
-  margin-top:2rem;
+  margin-top:3rem;
 }
 .keen-head{
    margin-bottom:70px !important;
@@ -309,6 +309,9 @@ color: #0D0EA3 !important;
 
 @media(max-width: 768px){
   .our-sponser:before{display: none;}
+  .register-btn a{
+  margin-top:2rem;
+}
   .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
   .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important; font-family: 'Cairo';}
   .download-btn .btn-red {padding: 12px 36px !important;}
