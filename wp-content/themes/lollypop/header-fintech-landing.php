@@ -554,7 +554,7 @@ $header = new WP_Query( $args );
 <div class="row d-block d-md-none">
     <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
-        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-2">
             <div class="secut col-12 scroll-hide" id="drop-menu">
                 <div class="dropdown-ver d-flex">

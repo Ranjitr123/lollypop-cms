@@ -644,7 +644,7 @@ $header = new WP_Query( $args );
 <div class="row d-block d-md-none">
     <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
-        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-2">
             <div class="secut col-12 scroll-hide" id="drop-menu">
                 <div class="dropdown-ver d-flex">
@@ -774,7 +774,7 @@ $header = new WP_Query( $args );
   <div class="secut col-1 scroll-hide" id="drop-menu">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
-			   <p class="">ARA</p>
+			   <p class="" style="line-height:24px;">ARA</p>
 		    </a>
 	 </div>
 	<div class="dropdown-content drop-hide" id="myDIV">

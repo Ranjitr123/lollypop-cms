@@ -128,7 +128,7 @@ $(document).ready(function() {
 
 
 
-<script>
+<!-- <script>
 
 $(window).scroll(function() {
 
@@ -142,11 +142,7 @@ else
  }
 });
 
-
-
-
-
-</script>
+</script> -->
  
 
 <!---css---------->
@@ -502,6 +498,7 @@ else
 
 
 /* global button */
+/* .global-drop{position:fixed;} */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:47px !important;
@@ -728,7 +725,7 @@ $header = new WP_Query( $args );
 <div class="row d-block d-md-none">
     <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
-        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+        <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-2">
             <div class="secut col-12 scroll-hide global-sec">
                 <div class="dropdown-ver d-flex global-dropdown">
@@ -858,7 +855,7 @@ $header = new WP_Query( $args );
   <div class="secut col-1 scroll-hide " id="drop-menu">
             <div class="dropdown-ver d-flex">
                     <a href="javascript:void(0)" onclick="myFunction1()">
-                    <p class="">ENG</p>
+                    <p class="" style="line-height:24px;">ENG</p>
                     </a>
             </div>
             <div class="dropdown-content drop-hide" id="myDIV">
