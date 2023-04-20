@@ -328,7 +328,7 @@ else
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
     position: relative;
-    left: -2%;
+    left: 3%;
 }
 .button-up, .button-down {
     position: absolute;
@@ -588,20 +588,9 @@ $(document).off("mouseup").on("mouseup", function(e) {
   }
 });
 
-$(document).mouseup(function (e) {
-    if ($(e.target).closest(".drop-hide").length=== 0) 
-    {
-        $(".drop-hide").hide();
-    }
-    else ($(e.target).closest(".drop-hide").length!=== 0)
-    {
-        $(".drop-hide").show();
-    }
-});
-
 $(document).ready(function() {
   $(".global-drop #drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".global-drop .dropdown-content");
+    var dropdownContent = $(".global-drop .global-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     } else {
@@ -610,13 +599,23 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    var dropdownContent = $(".global-drop .dropdown-content");
+    var dropdownContent = $(".global-drop .global-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     }
   });
 });
 
+// $(document).mouseup(function (e) {
+//     if ($(e.target).closest(".drop-hide").length=== 0) 
+//     {
+//         $(".drop-hide").hide();
+//     }
+//     else ($(e.target).closest(".drop-hide").length!=== 0)
+//     {
+//         $(".drop-hide").show();
+//     }
+// });
 
 
 </script>
@@ -664,11 +663,11 @@ $header = new WP_Query( $args );
          <div class="global-drop col-2">
             <div class="secut col-12 scroll-hide" id="drop-menu">
                 <div class="dropdown-ver d-flex">
-                        <a href="javascript:void(0)" onclick="myFunction1()">
+                        <a href="javascript:void(0)" onclick="myFunction()">
                         <p class="">Global</p>
                         </a>
                 </div>
-                <div class="dropdown-content" id="myDIV">
+                <div class="dropdown-content global-content" id="myDIV">
                     <div class="langue-container">
                         <ul>
                             <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">

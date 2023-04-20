@@ -488,7 +488,9 @@ margin-bottom:12px;
     opacity: .25;
     background: #F7F5F3;
 }
-.global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
+.global-drop #myDIV1{width:inherit;background-color:unset;left: 0;
+    position: absolute;
+    top: 30px;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
 .global-drop{margin-left:1rem;}
 .global-drop .dropdown-ver {
@@ -588,16 +590,16 @@ $(document).off("mouseup").on("mouseup", function(e) {
   }
 });
 
-$(document).mouseup(function (e) {
-    if ($(e.target).closest(".drop-hide").length=== 0) 
-    {
-        $(".drop-hide").hide();
-    }
-    else ($(e.target).closest(".drop-hide").length!=== 0)
-    {
-        $(".drop-hide").show();
-    }
-});
+// $(document).mouseup(function (e) {
+//     if ($(e.target).closest(".drop-hide").length=== 0) 
+//     {
+//         $(".drop-hide").hide();
+//     }
+//     else ($(e.target).closest(".drop-hide").length!=== 0)
+//     {
+//         $(".drop-hide").show();
+//     }
+// });
 
 $(document).ready(function() {
   $(".global-drop #drop-menu").off("click").on("click", function() {
@@ -650,7 +652,7 @@ $header = new WP_Query( $args );
                         <p class="">Global</p>
                         </a>
                 </div>
-                <div class="dropdown-content" id="myDIV">
+                <div class="dropdown-content" id="myDIV1">
                     <div class="langue-container">
                         <ul>
                             <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">

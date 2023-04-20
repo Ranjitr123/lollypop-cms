@@ -47,16 +47,16 @@ $(document).off("mouseup").on("mouseup", function(e) {
   }
 });
 
-$(document).mouseup(function (e) {
-    if ($(e.target).closest(".drop-hide").length=== 0) 
-    {
-        $(".drop-hide").hide();
-    }
-    else ($(e.target).closest(".drop-hide").length!=== 0)
-    {
-        $(".drop-hide").show();
-    }
-});
+// $(document).mouseup(function (e) {
+//     if ($(e.target).closest(".drop-hide").length=== 0) 
+//     {
+//         $(".drop-hide").hide();
+//     }
+//     else ($(e.target).closest(".drop-hide").length!=== 0)
+//     {
+//         $(".drop-hide").show();
+//     }
+// });
 
 
 $(document).ready(function() {

@@ -65,6 +65,17 @@ $(document).ready(function() {
   });
 });
 
+$(document).mouseup(function (e) {
+    if ($(e.target).closest(".drop-hide").length=== 0) 
+    {
+        $(".drop-hide").hide();
+    }
+    // else ($(e.target).closest(".drop-hide").length!=== 0)
+    // {
+    //     $(".drop-hide").show();
+    // }
+});
+
 </script>
 
 
@@ -84,6 +95,58 @@ else
 
 </script>
 <!-- translate button end -->
+
+<!-- global button -->
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.global-dropdown-content');
+  var menu = $('.global-sec');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".global-sec").off("click").on("click", function() {
+    var dropdownContent = $(".global-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".global-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
+</script>
+
+
+
+<script>
+
+$(window).scroll(function() {
+
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+ }
+});
+
+
+
+
+
+</script>
  
 
 <!---css---------->
@@ -488,7 +551,9 @@ margin-bottom:12px;
     opacity: .25;
     background: #F7F5F3;
 }
-.global-drop #myDIV{width:inherit;background-color:unset;left: inherit;}
+.global-drop #myDIV1{width:inherit;background-color:unset;left: 0;
+    position: absolute;
+    top: 30px;}
 .global-drop .secut {right: inherit !important; top: inherit !important; }
 .global-drop{margin-left:1rem;}
 .global-drop .dropdown-ver {
@@ -578,7 +643,7 @@ header .default, header .menu-title {
 
 </style>
 
-<!-- global button -->
+<!-- global button
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
   var container = $('.global-drop .dropdown-content');
@@ -599,9 +664,11 @@ $(document).mouseup(function (e) {
     }
 });
 
+
+
 $(document).ready(function() {
-  $(".global-drop #drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".global-drop .dropdown-content");
+  $(".global-sec").off("click").on("click", function() {
+    var dropdownContent = $(".global-dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     } else {
@@ -610,7 +677,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    var dropdownContent = $(".global-drop .dropdown-content");
+    var dropdownContent = $(".global-dropdown-content");
     if (dropdownContent.is(":visible")) {
       dropdownContent.hide();
     }
@@ -636,7 +703,7 @@ else
  }
 });
 
-</script>
+</script> -->
 
 </head>
 
@@ -663,13 +730,13 @@ $header = new WP_Query( $args );
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-2">
-            <div class="secut col-12 scroll-hide" id="drop-menu" >
-                <div class="dropdown-ver d-flex">
-                        <a href="javascript:void(0)" onclick="myFunction1()">
+            <div class="secut col-12 scroll-hide global-sec">
+                <div class="dropdown-ver d-flex global-dropdown">
+                        <a href="javascript:void(0)" onclick="myFunction()">
                         <p class="">Global</p>
                         </a>
                 </div>
-                <div class="dropdown-content" id="myDIV">
+                <div class="dropdown-content global-dropdown-content" id="myDIV1">
                     <div class="langue-container">
                         <ul>
                             <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
@@ -790,7 +857,7 @@ $header = new WP_Query( $args );
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
   <div class="secut col-1 scroll-hide " id="drop-menu">
             <div class="dropdown-ver d-flex">
-                    <a href="javascript:void(0)" onclick="myFunction()">
+                    <a href="javascript:void(0)" onclick="myFunction1()">
                     <p class="">ENG</p>
                     </a>
             </div>
