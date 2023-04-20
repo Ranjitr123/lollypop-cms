@@ -255,7 +255,7 @@ color: #0D0EA3 !important;
   .event-banner br {
     display: block !important;
 }
-.event-banner{margin-left:-3px !important;}
+.event-banner{margin-left:-16px !important;}
   .white_arrow{display: inline-block !important;}
   .event-Details{padding: 160px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
@@ -266,7 +266,7 @@ color: #0D0EA3 !important;
 .btn-red{font-size:14px;line-height:19px;height:43px;}
 .design-cities-hacks{padding: 0px 0;}
 .design-cities-hacks h2{font-size:24px;width:100%;margin-bottom:58px ;margin-left:13px;}
-.design-cities-hacks h2:before{width:95px;max-width:69px;}
+.design-cities-hacks h2:before{width:95px;max-width:69px; left:-29px;}
 .imgBdr{margin-right: 0px;margin-bottom:34px ;}
 .last-Design{padding: 0px 0 72px 0;}
 .last-Design h2{font-size:24px;max-width:323px;}
