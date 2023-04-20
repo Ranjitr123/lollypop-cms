@@ -67,7 +67,7 @@ figure .slide{-webkit-transform: translate(-1.1rem, -1.0rem);
 
 .download-btn{
   margin: 0 auto;
-    max-width: 220px;
+    max-width: 200px;
     background-color: #fff;
     clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
     padding: 1px;
@@ -255,6 +255,7 @@ color: #0D0EA3 !important;
   .event-banner br {
     display: block !important;
 }
+.event-banner{margin-left:-3px !important;}
   .white_arrow{display: inline-block !important;}
   .event-Details{padding: 160px 0 72px 0;}
 .event-Details h2{font-size:24px;line-height:1.0;margin-bottom:36px;}
@@ -311,7 +312,7 @@ color: #0D0EA3 !important;
   .design-cities-hacks .our-sponser:before, .sec-pd-designathon2 .our-sponser:before{display: block;}
   .sec-pd-designathon2 .our-sponser{position: relative;text-align: left !important; font-family: 'Cairo';}
   .download-btn .btn-red {padding: 12px 36px !important;}
-  .download-btn {max-width:200px !important;}
+  .download-btn {max-width:175px !important;}
   .data-scroll{padding: 40px 0 !important}
   .download-btn:hover {
     max-width: 240px !important;
@@ -332,8 +333,8 @@ margin-top: -70px;
    width:100px !important;
 }
 .banner-side-img{
-   width:136px !important;
-   height:223px !important;
+   width:104px !important;
+   height:205px !important;
 
 }
 .design23-head{font-family: 'Cairo', sans-serif;
@@ -439,6 +440,9 @@ p br{
 .download-btn .btn-red:hover .white_arrow {
     display: inline-block !important;
 }
+.design-content-p {
+  margin-bottom: 2rem;
+}
 
 }
 
@@ -523,7 +527,7 @@ p br{
 
       <!-- 02 -->
 
-      <section class="design-cities-hacks">
+      <section class="design-cities-hacks mb-5 mb-md-none">
         <div class="container">
             <div class="hack-Cities row">
                <div class="col-12 col-md-12 col-lg-12 mx-auto">
@@ -573,7 +577,9 @@ p br{
                   </div>
                    <div class="text-center register-btn"> 
                    <!-- href="https://docs.google.com/forms/d/e/1FAIpQLSdhHLKU1rsZ0tFOcvsT2l6BVtDNUF2WXz59m23aUFIhBmJyBg/viewform" -->
-                   <a target="_blank" class="btn-red register-red-btn" >Registrations Closed  <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow"></a>
+                   <a target="_blank" class="btn-red register-red-btn" >Registrations Closed  
+                    <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/arrow.png" alt="arrow">
+                  </a>
                    </div>
                 </div>
              </div>
@@ -650,7 +656,9 @@ p br{
 		               </div>
                   <div class="download-btn-container">
                      <div class="download-btn">
-                        <a href="https://lollypop.design/wp-content/uploads/2023/04/Designathon-23_-Rules-Regs_compressed.pdf" target="_blank" class="btn-red" style="background: #1718AD;margin: 0;">Download PDF <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"></a>
+                        <a href="https://lollypop.design/wp-content/uploads/2023/04/Designathon-23_-Rules-Regs_compressed.pdf" target="_blank" class="btn-red" style="background: #1718AD;margin: 0;">Download PDF 
+                        <!-- <img class="img-fluid white_arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon23/down-arrow.svg" alt="arrow"> -->
+                      </a>
                      </div>
                  </div>
                 </div>
@@ -702,7 +710,7 @@ p br{
               </div>
               <div class="faq-el faq-el--athon" style="background: #1718AD;">
                 <div class="faq-el__head mb-40"><span class="d-block clr-white fnt-700 ">Frequently asked questions</span>
-                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-7 px-0 mb-0 clr-yel-92a mb-5 faq-h2">When in doubt,<br> always ask</h2>
+                  <h2 class="fnt-50 fnt-800 col-md-6 col-lg-7 px-0 mb-0 clr-yel-92a mb-5 faq-h2" style="letter-spacing: 0px!important;">When in doubt,<br> always ask</h2>
                 </div>
                 <div class="faq-el__body"> 
                   <ul class="px-0 mb-0 faq-ac row justify-content-between">
