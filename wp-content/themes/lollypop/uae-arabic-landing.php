@@ -190,9 +190,22 @@ cursor: pointer;
 .flag-sec{ flex-direction: row-reverse;}
 .logo-list__item{flex-direction: row-reverse !important;}
 .lp_mr{margin-right:2rem;}
-.li-disc li::before {right:-40px !important;} 
+.li-disc li::before {right:-24px !important;} 
 .services-list__item .srv {direction: rtl !important;}
 
+.serveice-a:hover span:before {
+    position: absolute;
+    content: "";
+    top: 27px;
+    right: 0 !important;
+    width: 15%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 
 
 
@@ -336,7 +349,7 @@ if($locationVideo !=''){
 
           <div class="have-calss">
            <div class="fnt-18 fnt-800">هل لديك مشروع ما تفكر فيه؟ </div>
-           <!-- <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">يالا! دعونا نعمل معا </a></div> -->
+           <div class="hvr-line fnt-14 clr-second data-scroll d-inline-block" style="opacity:0.6; transform: translateY(0px);"><a href="https://lollypop.design/project-enquiry/" style="color:#FD2E35;">يالا! دعونا نعمل معا </a></div>
         </div>
        </div>
         
