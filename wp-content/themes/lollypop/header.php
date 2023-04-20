@@ -717,7 +717,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 </div>
-<div class="menu-ftr d-done d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg">
+<div class="menu-ftr d-none d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg">
 <div class="menu-ftr__links hvr-div d-md-flex flex-wrap">
 <a class="d-inline-block fnt-18" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a>
 <a class="d-inline-block fnt-18" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a>
