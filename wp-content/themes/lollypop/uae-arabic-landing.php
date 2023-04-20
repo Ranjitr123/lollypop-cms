@@ -275,7 +275,6 @@ if($locationVideo !=''){
 </div>
 </div>
 </div>
-
 </section>
 <!--02-->
 <section class="project-sec">
@@ -457,10 +456,6 @@ if($locationVideo !=''){
 </div>
 
 </div>
-
-
-
-
 
 </div>
 
@@ -652,6 +647,8 @@ var locas = $('.locations_name').text();
 $('.nav-dropdown-text').text(locas);
 </script>
 
+
+
 <script>
   $(document).ready(function () {
 
@@ -746,7 +743,9 @@ $('.nav-dropdown-text').text(locas);
 $('input[type="radio"]').on('click', function() {
      window.location = $(this).val();
 });
+
 </script>
+
 <?php
 get_footer();
 ?>

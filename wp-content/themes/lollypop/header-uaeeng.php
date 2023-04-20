@@ -33,8 +33,12 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-42458763-1');
+
 </script>
 <!-- End Google Tag Manager -->
+
+
+
  
 <!-- translate button -->
 
@@ -726,7 +730,7 @@ $header = new WP_Query( $args );
     <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
-         <div class="global-drop col-2">
+         <div class="global-drop col-4">
             <div class="secut col-12 scroll-hide global-sec">
                 <div class="dropdown-ver d-flex global-dropdown">
                         <a href="javascript:void(0)" onclick="myFunction()">
