@@ -251,6 +251,7 @@ color: #0D0EA3 !important;
 }
 .rules-conatiner{margin-bottom:74px !important; }
 @media(max-width: 767px){
+  .our-sponser{margin-left:21px !important;}
   .event-banner::before{margin-left:0px !important; left:20px;}
   .event-banner br {
     display: block !important;
