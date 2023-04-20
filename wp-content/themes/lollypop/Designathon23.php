@@ -298,7 +298,7 @@ color: #0D0EA3 !important;
   font-size:24px !important;
 }
 .rules-conatiner{margin-bottom:84px !important; }
-
+.max-width-slider{max-width:150px !important}
 }
 
 .our-sponser{font-family: 'Cairo';}
@@ -404,7 +404,7 @@ font-weight:700 !important;
   
 font-size: 20px !important;
 margin-top:1rem !important;
-max-width: 193px !important;
+max-width: 193px;
 /* margin-bottom:2rem; */
 margin-left:auto;
 margin-right:auto;
@@ -572,7 +572,7 @@ p br{
                              <p class="one-slide">Collaborate and network with <br>budding <span class="clr-yel-92a">designers</span> from across the <br> country!</p>
                         </div>
                         <div>
-                             <p>Get mentored by <span class="clr-yel-92a"> top industry </span> <br> pioneers!</p>
+                             <p class="max-width-slider">Get mentored by <span class="clr-yel-92a"> top industry </span> <br> pioneers!</p>
                         </div>
                         <div>
                              <p>Win cash prizes of up to <br> <span class="clr-yel-92a"> Rs. 2,00,000 </span> </p>
