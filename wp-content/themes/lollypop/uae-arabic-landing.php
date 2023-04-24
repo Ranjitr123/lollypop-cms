@@ -231,6 +231,7 @@ cursor: pointer;
     transition: .3s ease-in-out;
 }
 .hvr-line::after { right: 0 !important;}
+.hvr-line::after {left: inherit !important;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
