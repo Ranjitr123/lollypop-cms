@@ -524,7 +524,7 @@ $header = new WP_Query( $args );
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
 
 <!-- global dropdown -->
-<div class="row d-block d-md-none">
+<div class="row d-block d-md-none p-0">
     <div class="col-12 col-lg-11 mx-auto p-0">
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
