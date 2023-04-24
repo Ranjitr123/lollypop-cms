@@ -222,7 +222,7 @@ cursor: pointer;
     content: "";
     top: 27px;
     left: 0;
-    width: 81%;
+    width: 100%;
     height: 2px;
     background-color: #fd2e35;
     opacity: 1;
@@ -230,6 +230,7 @@ cursor: pointer;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+.hvr-line::after { right: 0 !important;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
@@ -432,7 +433,7 @@ if($locationVideo !=''){
 <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
-<div class="col-12 col-md-5">
+<div class="col-12 col-md-6">
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
