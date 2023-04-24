@@ -68,21 +68,7 @@ $(document).ready(function() {
 </script>
 
 
-<script>
 
-$(window).scroll(function() {
-
-if ($(this).scrollTop()>50)
- {
-    $('.scroll-hide').fadeOut();
- }
-else
- {
-  $('.scroll-hide').fadeIn();
- }
-});
-
-</script>
 <!-- translate button end -->
  
 
@@ -578,6 +564,10 @@ header .default, header .menu-title {
 }
 }
 
+.secut{
+    display:block;
+}
+
 </style>
 
 <!-- global button -->
@@ -617,6 +607,20 @@ $(document).ready(function() {
       dropdownContent.hide();
     }
   });
+});
+
+$(window).scroll(function() {
+ $('.scroll-hide').css('display', 'block');
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+    $('.scroll-hide').css('display', 'none');
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+  $('.scroll-hide').css('display', 'block');
+ }
 });
 
 </script>

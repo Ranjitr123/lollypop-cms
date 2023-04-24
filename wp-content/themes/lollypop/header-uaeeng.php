@@ -85,19 +85,52 @@ $(document).ready(function() {
 
 <script>
 
-$(window).scroll(function() {
+// $(window).scroll(function() {
+// $('.scroll-hide').css('display', 'block');
+// if ($(this).scrollTop()>50)
+//  {
+//     $('.scroll-hide').fadeOut();
+//  }
+// else
+//  {
+//   $('.scroll-hide').fadeIn();
+      
+//  }
+// });
 
-if ($(this).scrollTop()>50)
- {
-    $('.scroll-hide').fadeOut();
- }
-else
- {
-  $('.scroll-hide').fadeIn();
- }
-});
+// $(document).ready(function() {
+//     var scrolled = false;
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 50 && !scrolled) {
+//             $('.scroll-hide').fadeOut();
+//             scrolled = true;
+//         } else if ($(this).scrollTop() <= 50 && scrolled) {
+//             $('.scroll-hide').fadeIn();
+//             scrolled = false;
+//         }
+//     });
+// });
+
+// $(document).ready(function() {
+//     var scrolled = false;
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 0 && !scrolled) {
+//             $('.scroll-hide').fadeOut();
+//             scrolled = true;
+//         } else if ($(this).scrollTop() <= 0 && scrolled) {
+//             $('.scroll-hide').fadeIn();
+//             scrolled = false;
+//         }
+//     });
+// });
+
+
+
+
 
 </script>
+
+
 <!-- translate button end -->
 
 <!-- global button -->
@@ -132,21 +165,23 @@ $(document).ready(function() {
 
 
 
-<!-- <script>
+<script>
 
 $(window).scroll(function() {
-
+ $('.scroll-hide').css('display', 'block');
 if ($(this).scrollTop()>50)
  {
     $('.scroll-hide').fadeOut();
+    $('.scroll-hide').css('display', 'none');
  }
 else
  {
   $('.scroll-hide').fadeIn();
+  $('.scroll-hide').css('display', 'block');
  }
 });
 
-</script> -->
+</script>
  
 
 <!---css---------->
@@ -171,6 +206,7 @@ else
 
  
 <style>
+   
 .secut{top:55px;}
 @media (max-width: 768px){
 .secut {
@@ -640,6 +676,10 @@ header .default, header .menu-title {
     right: 110px !important;
     top: 30px !important;
 }
+}
+
+.secut{
+    display:block;
 }
 
 </style>

@@ -63,21 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   });
 </script>
-<script>
 
-$(window).scroll(function() {
-
-if ($(this).scrollTop()>50)
- {
-    $('.scroll-hide').fadeOut();
- }
-else
- {
-  $('.scroll-hide').fadeIn();
- }
-});
-
-</script>
 <!-- translate button end -->
  
 
@@ -464,7 +450,9 @@ margin-bottom:12px;
         transform: translate(0px,-100%)!important;
     }
 }
-
+.secut{
+    display:block;
+}
 
 </style>
 
@@ -494,6 +482,20 @@ $(document).ready(function() {
       dropdownContent.hide();
     }
   });
+});
+
+$(window).scroll(function() {
+ $('.scroll-hide').css('display', 'block');
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+    $('.scroll-hide').css('display', 'none');
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+  $('.scroll-hide').css('display', 'block');
+ }
 });
 
 </script>

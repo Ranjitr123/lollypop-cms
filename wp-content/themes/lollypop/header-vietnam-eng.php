@@ -85,14 +85,16 @@ $(document).ready(function() {
 <script>
 
 $(window).scroll(function() {
-
+ $('.scroll-hide').css('display', 'block');
 if ($(this).scrollTop()>50)
  {
     $('.scroll-hide').fadeOut();
+    $('.scroll-hide').css('display', 'none');
  }
 else
  {
   $('.scroll-hide').fadeIn();
+  $('.scroll-hide').css('display', 'block');
  }
 });
 
@@ -122,6 +124,9 @@ else
 
  
 <style>
+    .secut{
+    display:block;
+}
 .secut{top:60px;}
 @media (max-width: 768px){
 .secut {
