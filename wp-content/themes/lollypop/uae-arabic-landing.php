@@ -221,7 +221,7 @@ cursor: pointer;
 	position: absolute;
     content: "";
     top: 27px;
-    left: 0;
+    left:auto !important;
     width: 100%;
     height: 2px;
     background-color: #fd2e35;
