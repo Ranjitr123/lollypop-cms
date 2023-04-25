@@ -36,42 +36,6 @@
 </script>
 <!-- End Google Tag Manager -->
  
-<!-- translate button -->
-
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.lang-mob .dropdown-content');
-  var menu = $('.lang-mob #drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).ready(function() {
-  $(".lang-mob #drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".lang-mob .dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".lang-mob .dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-</script>
-
-
-
-<!-- translate button end -->
- 
-
 <!---css---------->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"></noscript>
@@ -619,6 +583,37 @@ else
 
 </script>
 
+<!-- language convertor -->
+
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.lanuage-dropdown-content');
+  var menu = $('.language-sec');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".language-sec").off("click").on("click", function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
+</script>
+
 </head>
 
 
@@ -769,13 +764,13 @@ $header = new WP_Query( $args );
 </div>
 
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-  <div class="secut col-1 scroll-hide" id="drop-menu">
+  <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
 			   <p class="" style="line-height:24px;">ARA</p>
 		    </a>
 	 </div>
-	<div class="dropdown-content drop-hide" id="myDIV">
+	<div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
         <div class="">
             <div class="triangle triangle-4"></div>
                 <div class="langue-container">

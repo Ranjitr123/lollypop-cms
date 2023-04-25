@@ -37,102 +37,6 @@
 </script>
 <!-- End Google Tag Manager -->
 
-
-
- 
-<!-- translate button -->
-
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.lang-mob .dropdown-content');
-  var menu = $('.lang-mob #drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).ready(function() {
-  $(".lang-mob #drop-menu").off("click").on("click", function() {
-    var dropdownContent = $(".lang-mob .dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".lang-mob .dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-// $(document).mouseup(function (e) {
-//     if ($(e.target).closest(".drop-hide").length=== 0) 
-//     {
-//         $(".drop-hide").hide();
-//     }
-//     // else ($(e.target).closest(".drop-hide").length!=== 0)
-//     // {
-//     //     $(".drop-hide").show();
-//     // }
-// });
-
-</script>
-
-
-<script>
-
-// $(window).scroll(function() {
-// $('.scroll-hide').css('display', 'block');
-// if ($(this).scrollTop()>50)
-//  {
-//     $('.scroll-hide').fadeOut();
-//  }
-// else
-//  {
-//   $('.scroll-hide').fadeIn();
-      
-//  }
-// });
-
-// $(document).ready(function() {
-//     var scrolled = false;
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 50 && !scrolled) {
-//             $('.scroll-hide').fadeOut();
-//             scrolled = true;
-//         } else if ($(this).scrollTop() <= 50 && scrolled) {
-//             $('.scroll-hide').fadeIn();
-//             scrolled = false;
-//         }
-//     });
-// });
-
-// $(document).ready(function() {
-//     var scrolled = false;
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 0 && !scrolled) {
-//             $('.scroll-hide').fadeOut();
-//             scrolled = true;
-//         } else if ($(this).scrollTop() <= 0 && scrolled) {
-//             $('.scroll-hide').fadeIn();
-//             scrolled = false;
-//         }
-//     });
-// });
-
-
-
-
-
-</script>
-
-
-<!-- translate button end -->
-
 <!-- global button -->
 <script>
 $(document).off("mouseup").on("mouseup", function(e) {
@@ -163,8 +67,6 @@ $(document).ready(function() {
 
 </script>
 
-
-
 <script>
 
 $(window).scroll(function() {
@@ -179,6 +81,37 @@ else
   $('.scroll-hide').fadeIn();
   $('.scroll-hide').css('display', 'block');
  }
+});
+
+</script>
+
+<!-- language convertor -->
+
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.lanuage-dropdown-content');
+  var menu = $('.language-sec');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".language-sec").off("click").on("click", function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
 });
 
 </script>
@@ -298,7 +231,7 @@ else
     position: absolute;
     right: -9px;
 }
-#myDIV{
+#myDIV, #myDIV1{
 	display:none;
 	position: absolute;
 	top: 30px;
@@ -717,7 +650,7 @@ $header = new WP_Query( $args );
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-4">
-            <div class="secut col-12 scroll-hide global-sec">
+            <div class="secut col-12 scroll-hide global-sec" id="drop-menu">
                 <div class="dropdown-ver d-flex global-dropdown">
                         <a href="javascript:void(0)" onclick="myFunction()">
                         <p class="">Global</p>
@@ -842,13 +775,13 @@ $header = new WP_Query( $args );
 </div>
 
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-  <div class="secut col-1 scroll-hide " id="drop-menu">
+  <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
             <div class="dropdown-ver d-flex">
                     <a href="javascript:void(0)" onclick="myFunction1()">
                     <p class="" style="line-height:24px;">ENG</p>
                     </a>
             </div>
-            <div class="dropdown-content drop-hide" id="myDIV">
+            <div class="lanuage-dropdown-content drop-hide" id="myDIV">
                 <div class="">
                         <div class="triangle triangle-4"></div>
                         <div class="langue-container">
