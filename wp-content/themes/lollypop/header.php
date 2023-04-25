@@ -392,6 +392,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:60px !important;
+    background-size: 10px 10px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
