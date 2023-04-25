@@ -57,6 +57,10 @@
 
  
 <style>
+    .secut{
+    display:block;
+}
+
 .secut{top:60px;}
 @media (max-width: 768px){
 .secut {
@@ -526,9 +530,6 @@ header .default, header .menu-title {
 }
 }
 
-.secut{
-    display:block;
-}
 
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
