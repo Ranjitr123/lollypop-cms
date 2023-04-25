@@ -569,7 +569,7 @@ header .default, header .menu-title {
 }
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
-    transform: translate(185px,-45%)!important;
+    transform: translate(160px,-45%)!important;
 }
 }
 </style>
