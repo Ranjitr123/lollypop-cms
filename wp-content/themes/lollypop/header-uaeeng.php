@@ -682,69 +682,14 @@ header .default, header .menu-title {
     display:block;
 }
 
+@media (min-width: 375px) and (max-width: 420px){
+.lp-hamberg {
+    transform: translate(185px,-45%)!important;
+}
+}
+
+
 </style>
-
-<!-- global button
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.global-drop .dropdown-content');
-  var menu = $('.global-drop #drop-menu');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).mouseup(function (e) {
-    if ($(e.target).closest(".drop-hide").length=== 0) 
-    {
-        $(".drop-hide").hide();
-    }
-    else ($(e.target).closest(".drop-hide").length!=== 0)
-    {
-        $(".drop-hide").show();
-    }
-});
-
-
-
-$(document).ready(function() {
-  $(".global-sec").off("click").on("click", function() {
-    var dropdownContent = $(".global-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".global-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-
-
-
-</script>
-
-<script>
-
-$(window).scroll(function() {
-
-if ($(this).scrollTop()>50)
- {
-    $('.scroll-hide').fadeOut();
- }
-else
- {
-  $('.scroll-hide').fadeIn();
- }
-});
-
-</script> -->
 
 </head>
 
@@ -766,8 +711,8 @@ $header = new WP_Query( $args );
 <div class="row d-block d-md-none">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
    <!-- global dropdown -->
-<div class="row d-block d-md-none p-0">
-    <div class="col-12 col-lg-11 mx-auto p-0">
+<div class="row d-block d-md-none">
+    <div class="col-12 col-lg-11 mx-auto">
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-4">
