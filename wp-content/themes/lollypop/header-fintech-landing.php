@@ -442,7 +442,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     top: 20px;
     border-radius: 10px;
     right: inherit;
-    left: -6px;
+    left: 10px;
 }
 .global-drop .langue-container ul{padding:0px;}
 .global-drop .langue-container ul li{}
