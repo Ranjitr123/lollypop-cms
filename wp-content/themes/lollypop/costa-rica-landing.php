@@ -372,37 +372,7 @@ if($locationVideo !=''){
                 <img class="img-fluid grayscale lazyloaded" src="<?php the_sub_field('images'); ?>" alt="Image" data-ll-status="loaded">
               </li>
 			  <?php endwhile; endif; ?>
-              <!--<li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Cisco-2 1.svg" alt="Image" data-ll-status="loaded"> 
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/appreciate-wealth 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Wrench 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Avesha-1 1.svg" alt="Image" data-ll-status="loaded">
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Flashhouse 1.svg" alt="Image" data-ll-status="loaded">
-                
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/mission-bio-2 1.svg" alt="Image" data-ll-status="loaded">              
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Intel-2 1.svg" alt="Image" data-ll-status="loaded">  
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Recalc 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Sandbox-Banking 1.svg" alt="Image" data-ll-status="loaded">                
-              </li>-->
+              
           </ul>
         </div>
     </div>
