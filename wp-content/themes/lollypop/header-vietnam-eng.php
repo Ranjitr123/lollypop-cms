@@ -549,7 +549,7 @@ header .default, header .menu-title {
 
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
-    transform: translate(160px,-45%)!important;
+    transform: translate(270px,-45%)!important;
 }
 }
 
@@ -750,7 +750,7 @@ $header = new WP_Query( $args );
 </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
 </div>
 </div>
-<div class="col-4 col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
+<div class="col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
 <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
