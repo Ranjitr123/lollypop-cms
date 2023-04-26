@@ -396,6 +396,8 @@
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:47px !important;
     background-size: 10px 10px !important;
+    width:20px !important;
+    height:25px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -637,7 +639,7 @@ $header = new WP_Query( $args );
 <div class="container">
 <div class="row">
 <div class="col-12 col-lg-11 mx-auto d-flex">
-<div class="row d-block d-md-none">
+<div class="col-6 d-block d-md-none">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
    <!-- global dropdown -->
 <div class="row d-block d-md-none">
@@ -683,7 +685,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
-<div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+<div class="col-2 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
 <div class="nav-item clr-second">

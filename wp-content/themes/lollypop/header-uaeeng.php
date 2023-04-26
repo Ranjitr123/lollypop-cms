@@ -476,6 +476,8 @@ $(document).ready(function() {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:47px !important;
     background-size: 10px 10px !important;
+    width:20px !important;
+    height:25px !important;
 }
 .global-drop .dropdown-ver a p {
     font-family: 'Manrope';
@@ -653,9 +655,9 @@ $header = new WP_Query( $args );
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-4">
             <div class="secut col-12 scroll-hide global-sec" id="drop-menu">
-                <div class="dropdown-ver d-flex global-dropdown" onclick="myFunction()">
+                <div class="dropdown-ver d-flex global-dropdown" >
                         <a href="javascript:void(0)" >
-                        <p class="">Global</p>
+                        <p onclick="myFunction()">Global</p>
                         </a>
                 </div>
                 <div class="dropdown-content global-dropdown-content" id="myDIV1">
@@ -690,7 +692,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
-<div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+<div class="col-3 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
 <div class="nav-item clr-second">
