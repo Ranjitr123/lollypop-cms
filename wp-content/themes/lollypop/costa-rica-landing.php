@@ -133,6 +133,11 @@ width: 322px; height:211px!important; }
     font-size: 11px;
     line-height: 22px;
 } 
+.card-know{width:347px !important}
+.lp-awards__left h2 {
+    max-width: 772px !important;
+}
+.scale-p{max-width:666px !important;}
 </style>
 <main class="main">
 <!--01-->
@@ -200,7 +205,55 @@ if($locationVideo !=''){
 </div>
 </div>
 </section>
-<!--04 love to know -->
+
+<!--03 costa rika-->
+
+<section class="sec-pd sec-pt" id="fifth" style="background: #221429;" >
+    <div class="container">
+        <div class="row"> 
+                <div class="col-md-8 col-12 col-lg-8 mx-auto">
+                  <div class="why-coastrika">
+                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);">We are a culture-driven design studio!</h2>
+                    <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);">We understand that time is of the essence in the competitive market of Costa Rica. That's why we streamline the design and development process to get your product to market faster without sacrificing quality or effectiveness. With a unique brand identity and user experience, be prepared to set your brand apart from competitors in North America.</p>
+                  </div>
+                  <div class="mt-5">
+                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/castarika.svg" alt="img">
+                  </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- 04 achivements sec -->
+<section class="sec-pd2" style="background: #221429;">
+<div class="container z-1">
+<div class="row"> 
+<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+<div class="row mb-45 justify-content-between">
+<div class="col-md-9 mb-4 mb-md-0 fluid-offset"> 
+<div class="lp-awards__left">
+<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll">our achivements<?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+</span>
+</div>
+</div>
+</div>
+<ul class="awrad-list px-0 mb-0 row"> 
+<?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
+<li class="awrad-list__item col-6 col-md-4 data-scroll"> 
+	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
+<div class="award__name"> 
+<h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
+<p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
+</div>
+</div>
+</li>
+<?php endwhile; endif; ?>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!--05 love to know -->
 <section class="sec-pb" style="background: #221429;">
   <div class="container-fluid"> 
     <div class="row"> 
@@ -210,44 +263,155 @@ if($locationVideo !=''){
           </div>       
         </div>
         <div class="row">
-           <div class="offset-md-2 offset-lg-2 col-lg-3 col-md-3">
+           <div class="offset-md-2 offset-lg-2 col-lg-3 col-md-3 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">We love startups! To meet startups' unique needs and constraints, we offer flexible pricing and packages that fit their budgets and timelines. If you want to Design, and Launch within 3 months, our unique process will suit you perfectly!</p>
            </div>
-           <div class="col-lg-3 col-md-3">
+           <div class="col-lg-3 col-md-3 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
-               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">We love startups! To meet startups' unique needs and constraints, we offer flexible pricing and packages that fit their budgets and timelines. If you want to Design, and Launch within 3 months, our unique process will suit you perfectly!</p>
+               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Being the top-of-mind agency for many large companies whenever it comes to rebranding for market entry, we have proven our expertise in research and design in a local style that wins local hearts.</p>
            </div>
-           <div class="col-lg-3 col-md-3">
+           <div class="col-lg-3 col-md-3 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
-               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">We love startups! To meet startups' unique needs and constraints, we offer flexible pricing and packages that fit their budgets and timelines. If you want to Design, and Launch within 3 months, our unique process will suit you perfectly!</p>         
+               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Our experienced designers ensure your digital product is intuitive and optimized for today’s mobile-centric world, while creating a seamless user experience across all devices.</p>         
            </div>
           </div>
   </div>
 </section>
 
-<!--03 costa rika-->
+<!-- 06 pura vida -->
+<section class="sec-pd">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-10 col-lg-8 mx-auto">
+              <div class="lp-our-services mb-50">
+                  <h2 class="fnt-50 fnt-800 mb-2 pb-lg-1 data-scroll" style="opacity: 1; transform: translateY(0px);"> Pura Vida! “De músico, poeta y loco, todos tenemos un poco.”</h2>
+                  <span class="fnt-24 col-md-11 col-lg-10 px-0 d-block data-scroll" style="opacity: 1; transform: translateY(0px);"> 
+                     “We all have a little bit of the musician, poet, and crazy person in ourselves.” (Let’s be honest, sometimes we’re a little bit crazy also.)
+                  </span>
+                   <img class="img-fluid mt-5 mb-5 poco-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/poco.svg" alt="logo">
+              </div>
+              <div class="agile_process">
+                 <h3 class="fnt-40 fnt-800">Our agile design process </h3>
+                 <ul class="mb-0 services-list px-0">
+                      <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
+                          <div class="srv row">
+                            <div class="srv__head col-12 col-md-4">
+                                <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 1</p>
+                            </div>
+                            <div class="srv__info col-12 col-md-8">
+                                <div class="row justify-content-between">
+                                  <div class="col-12 col-md-12">
+                                      <h3 class="fnt-28 fnt-800 ">Discovery Workshop</h3>
+                                      <p class="fnt-16 mb-md-3">A workshop to gather all knowledge from all stakeholders. This helps us craft a holistic approach for all requirements.</p>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Research" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </li>
+                      <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
+                          <div class="srv row">
+                            <div class="srv__head col-12 col-md-4">
+                            <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 2</p>
+                            </div>
+                            <div class="srv__info col-12 col-md-8">
+                                <div class="row justify-content-between">
+                                  <div class="col-12 col-md-12">
+                                      <h3 class="fnt-28 fnt-800 ">Design & Test</h3>
+                                      <p class="fnt-16 mb-md-3">Prototyping the final product and testing it in real time to getinputs and reliable user feedback.</p>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Design" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </li>
+                      <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
+                          <div class="srv row">
+                            <div class="srv__head col-12 col-md-4">
+                             <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 3</p>
+                            </div>
+                            <div class="srv__info col-12 col-md-8">
+                                <div class="row justify-content-between">
+                                  <div class="col-12 col-md-12">
+                                      <h3 class="fnt-28 fnt-800">Build & Launch</h3>
+                                      <p class="fnt-16 mb-md-3">Translating the design into pixel perfect, adaptable, and scalable digital products followed by launching a quality product into the market as soon as possible.</p>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Build" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+              </div>
+           </div>
+      </div>
+  </div>
+</section>
 
-<section class="sec-pd sec-pt" id="fifth" style="background: #221429;" >
-<div class="container">
-    <div class="row"> 
-            <div class="col-md-8 col-12 col-lg-8 mx-auto">
-              <div class="why-coastrika">
-                <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);">We are a culture-driven design studio!</h2>
-                <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);">We understand that time is of the essence in the competitive market of Costa Rica. That's why we streamline the design and development process to get your product to market faster without sacrificing quality or effectiveness. With a unique brand identity and user experience, be prepared to set your brand apart from competitors in North America.</p>
-              </div>
-              <div class="mt-5">
-                  <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/castarika.svg" alt="img">
-              </div>
-            </div>
+<!-- future 500 -->
+<section class="sec-pd">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="mb-5">
+              <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);">From start ups to fortune 500, we have served all</h5>
+              <p class="mt-2 fnt-24 fnt-400 mt-3">Some of the clients we have worked with in Vietnam</p>
+          </div>
+          <ul class="px-0 logo-list row">
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Stanford-University-1 1.svg" alt="Image" data-ll-status="loaded">
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Cisco-2 1.svg" alt="Image" data-ll-status="loaded"> 
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/appreciate-wealth 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Wrench 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Avesha-1 1.svg" alt="Image" data-ll-status="loaded">
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Flashhouse 1.svg" alt="Image" data-ll-status="loaded">
+                
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/mission-bio-2 1.svg" alt="Image" data-ll-status="loaded">              
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Intel-2 1.svg" alt="Image" data-ll-status="loaded">  
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Recalc 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Sandbox-Banking 1.svg" alt="Image" data-ll-status="loaded">                
+              </li>
+          </ul>
+        </div>
     </div>
+  </div>
+</section>
+
+
+<!-- scales business-->
+
+<section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
+<div class="container">
 <div class="row"> 
 <div class="col-12 col-md-10 col-lg-8 mx-auto pb-2 mb-md-0 pb-md-0">
-<div class="row mb-45 justify-content-between">
-<div class="col-md-6 col-lg-9 fluid-offset"> 
+<div class="row mb-45">
+<div class="col-md-10 col-lg-12"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
-<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
+<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll ">We are experts in designing digital offerings that transform & scale businesses!<?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
+<p class="fnt-24 fnt-400 clr-white scale-p">Partner with Lollypop Costa Rica to take your digital offerings to the next level. </p>
+<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);">Contact Us<?php the_field('design_studio_content_button_text'); ?></a>
 </div>
 
 </div>
@@ -269,70 +433,9 @@ if($locationVideo !=''){
 </div>
 </div>
 </div>
-<section class="sec-pd2" style="background: #221429;">
-<div class="container z-1">
-<div class="row"> 
-<div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
-<div class="row mb-45 justify-content-between">
-<div class="col-md-9 mb-4 mb-md-0 fluid-offset"> 
-<div class="lp-awards__left">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
-</span>
-</div>
-</div>
-</div>
-<ul class="awrad-list px-0 mb-0 row"> 
-<?php if( have_rows('winners') ) : while( have_rows('winners') ): the_row(); ?>
-<li class="awrad-list__item col-6 col-md-4 data-scroll"> 
-	<div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
-<div class="award__name"> 
-<h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
-<p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
-</div>
-</div>
-</li>
-<?php endwhile; endif; ?>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="sec-pd viethan-sec" style="background: #221429;">
-<div class="container z-1">
-<div class="row"> 
-<div class="col-12 col-md-10 col-lg-9 mx-auto pb-2 mb-md-0 pb-md-0">
-<div class="rowjustify-content-between">
-<div class="col-md-8 mb-4 mb-md-0 fluid-offset"> 
-</div>
-</div>
- <!-- swiper -->
- <div class="swiper mySwiper">
-	<?php if( have_rows('new_slider_section_with_content') ) : while( have_rows('new_slider_section_with_content') ): the_row(); ?>
- <div class="lp-awards__left mb-45">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_sub_field('main_heading') ?></h2>
-</div>
-    <div class="swiper-wrapper vitanam-wrapper">
-		<?php if( have_rows('slider') ) : while( have_rows('slider') ): the_row(); ?>
-	  <div class="swiper-slide vitanam-slider">
-		 <img src="<?php the_sub_field('image') ?>" alt="logo">
-		<div> <h4><?php the_sub_field('title') ?></h4>
-		<p><?php the_sub_field('content') ?></p></div>
-	  </div>
-	  <?php endwhile; endif; ?>
-    </div>
-    <div class="swiper-button-next vitanam-slider-button-next button-up"></div>
-    <div class="swiper-button-prev vitanam-slider-button-prev button-down"></div>
-    <div class="swiper-pagination vitanam-slider-pagination"></div>
-  <?php endwhile; endif; ?>
-  </div>
-</div>
-</div>
-</div>
-</section>
 </section>
 
-<!--07-->
-<!--05-->
+<!--05 from concept launch -->
 
 <section class="sec-pd sec-pt">
 <div class="container"> 
@@ -340,7 +443,7 @@ if($locationVideo !=''){
 <?php if( have_rows('our_services') ) : while( have_rows('our_services') ): the_row(); ?>
 <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
-	<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
+	<h5 class="fnt-40 fnt-800 data-scroll px-0">From concept to launch, we can help you at every stage!<?php the_sub_field('title'); ?></h5>
 	<p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
 </div>
@@ -386,51 +489,14 @@ if($locationVideo !=''){
 </div>
 </section>
 
-<!--06-->
-<section class="" id="third">
-<div class="container"> 
-<div class="row"> 
-<div class="col-12 col-md-11 col-lg-10 mx-auto">
-<?php if( have_rows('projects') ) : while( have_rows('projects') ): the_row(); ?>
-<div class="row"> 
-<div class="col-12 col-md-12 mx-auto">
-<a class="" href="<?php the_sub_field('url'); ?>">
-<div class="mb-35 fluid-mb hover-img">
-<div class="reveal"><img class="portfolio-img" src="<?php the_sub_field('project_image'); ?>" alt="Image"></div>
-</div>
-<div class="d-flex flex-wrap px-md-4 px-xl-5">
-<div class="col-12 px-md-12 col-md-4 mb-3 mb-md-0 d-flex flex-column"><span class="d-inline-block fnt-16 data-scroll mt-0 text-rpd portfolio-title"><?php the_sub_field('company_name'); ?></span></div>
-<div class="col-12 px-md-12 col-md-8 data-scroll pb-md-3">
-<div class="px-md-3">
-<div class="mb-2 pb-lg-0">
-<h2 class="fnt-40 fnt-800 mb-3"> <span class="d-block"><?php the_sub_field('title'); ?></span></h2>
-<p><?php the_sub_field('content'); ?></p>
-</div>
-</div>
-</div></div> </a>
-<div class="px-md-4 px-xl-5">
-<div class="col-12 px-md-12 col-md-5 offset-md-4">
-<div class="px-md-3" style="padding-bottom:2rem"><a class="data-scroll fnt-14 lp-link lp-link--pri hvr-line" href="<?php the_sub_field('url'); ?>">View Project</a></div>
-</div>
-</div>
-</div>
-</div>
-<?php endwhile; endif; ?>
-</div>
-</div>
-</div>
-</section>
-
-<!--07-->
-
-<!--07-->
+<!--07 our stores-->
 <section class="sec-pd sec-pb">
 <div class="container">
 <div class="row"> 
 <div class="col-md-10 col-lg-8 mx-auto">
 <div class="mb-90 data-scroll">
 <?php if( have_rows('our_stories') ) : while( have_rows('our_stories') ): the_row(); ?>
-<h2 class="fnt-50 fnt-800 mb-16"><?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
+<h2 class="fnt-50 fnt-800 mb-16">Our Stories <?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
 <?php endwhile; endif; ?>
 </div>
 <ul class="px-0 home-artical-list">
@@ -480,7 +546,7 @@ if ( $whitepaper->have_posts() ) : while ( $whitepaper->have_posts() ) : $whitep
 </div>
 </div>
 </section>
-<!--08-->
+<!--08 get in touch-->
 <section class="sec-footer-trans">
 <div class="container z-1">
 <div class="row"> 
