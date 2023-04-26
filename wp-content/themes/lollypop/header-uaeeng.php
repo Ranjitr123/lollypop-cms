@@ -620,7 +620,7 @@ header .default, header .menu-title {
 
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
-    transform: translate(160px,-45%)!important;
+    transform: translate(271px,-45%)!important;
 }
 }
 
@@ -692,7 +692,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
-<div class="col-3 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+<div class="js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
 <div class="nav-item clr-second">
