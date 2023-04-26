@@ -148,9 +148,9 @@ width: 322px; height:211px!important; }
 <div class="col-12 col-md-11 col-lg-10 mx-auto">
 <div class="row">
 <div class="col-12 col-md-12">
-<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;"><?php the_field('locations'); ?></span>
-<h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
-<div class="fnt-24 col-md-10 col-lg-12"><?php the_field('short_description'); ?></div>
+<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;">Hola, Costa Rica!</span>
+<h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12">UI UX Design Agency in Costa Rica crafting impactful experiences</h1>
+<div class="fnt-24 col-md-10 col-lg-12">We are a dedicated Design Agency in the heart of Costa Rica, San Jose, helping businesses unlock their full potential in today's crowded digital landscape through design.</div>
 </div>
 </div>
 
@@ -161,13 +161,13 @@ if($locationVideo !=''){
 		<div id="play2-out" style="display:none">
 		<div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>"></div>
 	</div>
-	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php the_field('video_poster');?>">
+	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/div-hero.svg">
 	</video>
 	</div>
 
 <?php }else{ ?>
 <div class="hover-img">
-<img class="wpdm-img" src="<?php the_field('banner_image'); ?>" alt="Image" width="926" height="649">
+<img class="wpdm-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/div-hero.svg" alt="Image" width="926" height="649">
 </div>
 <?php } ?>
 </div>
@@ -183,24 +183,24 @@ if($locationVideo !=''){
 <div class="col-12 col-md-9 col-lg-8 mx-auto">
 <!-- Team profile-->
 <div class="row">
-<?php if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
+<?php //if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
 <div class="col-12 col-md-5 mb-4 mb-md-0 hover-img">
-	<div class="reveal team-profile-img"><img src="<?php the_sub_field('image'); ?>" alt="" width="298" height="298"></div>
+	<div class="reveal team-profile-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/juhi.webp.svg" alt="" width="298" height="298"></div>
 </div>
 <div class="col-12 col-md-7">
 <div class="profile d-flex flex-column">
 <div class="profile__about"> 
-<?php the_sub_field('content'); ?> 
-<!--<p class="fnt-16 clr-black-354 data-scroll">At Lollypop, we prioritize user-centric design with a business-goal-driven approach. Whether you're a startup looking to make a splash in North America's growing tech scene or to touch global markets, Lollypop Design Studio has the expertise and experience to help you achieve your goals.</p>
- <p class="fnt-16 clr-black-354 data-scroll">Talk to [Name], Delivery Head, Costa Rica, to learn how design can impact your business.</p>-->
+ 
+<p class="fnt-16 clr-black-354 data-scroll">At Lollypop, we prioritize user-centric design with a business-goal-driven approach. Whether you're a startup looking to make a splash in North America's growing tech scene or to touch global markets, Lollypop Design Studio has the expertise and experience to help you achieve your goals.</p>
+ <p class="fnt-16 clr-black-354 data-scroll">Talk to [Name], Delivery Head, Costa Rica, to learn how design can impact your business.</p>
 </div>
 <div>
 
-<a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
+<a class="web-btn web-btn--primary data-scroll mt-1" href="#" style="opacity: 1; transform: translateY(0px);">Let's Talk</a>
 </div>
 </div>
 </div>
-<?php endwhile; endif; ?>
+<?php //endwhile; endif; ?>
 </div>
 </div>
 </div>
@@ -213,15 +213,13 @@ if($locationVideo !=''){
     <div class="container">
         <div class="row"> 
                 <div class="col-md-8 col-12 col-lg-8 mx-auto">
-				  <?php if( have_rows('new_slider_section_with_content') ) : while( have_rows('new_slider_section_with_content') ): the_row(); ?>
                   <div class="why-coastrika">
-                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
-                    <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
+                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);">We are a culture-driven design studio!</h2>
+                    <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);">We understand that time is of the essence in the competitive market of Costa Rica. That's why we streamline the design and development process to get your product to market faster without sacrificing quality or effectiveness. With a unique brand identity and user experience, be prepared to set your brand apart from competitors in North America.</p>
                   </div>
                   <div class="mt-5">
-                      <img class="img-fluid" src="<?php the_sub_field('section_image') ?>" alt="img">
+                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/castarika.svg" alt="img">
                   </div>
-				  <?php endwhile; endif; ?>
                 </div>
         </div>
     </div>
@@ -234,7 +232,7 @@ if($locationVideo !=''){
 <div class="row mb-45 justify-content-between">
 <div class="col-md-9 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll">our achivements<?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
 </span>
 </div>
 </div>
@@ -362,18 +360,45 @@ if($locationVideo !=''){
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-			<?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
           <div class="mb-5">
-              <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('title'); ?></h5>
-              <p class="mt-2 fnt-24 fnt-400 mt-3"><?php the_sub_field('content'); ?></p>
+              <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);">From start ups to fortune 500, we have served all</h5>
+              <p class="mt-2 fnt-24 fnt-400 mt-3">Some of the clients we have worked with in Vietnam</p>
           </div>
           <ul class="px-0 logo-list row">
-				<?php if( have_rows('logos') ) : while( have_rows('logos') ): the_row(); ?>
               <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php the_sub_field('images'); ?>" alt="Image" data-ll-status="loaded">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Stanford-University-1 1.svg" alt="Image" data-ll-status="loaded">
               </li>
-			  <?php endwhile; endif; ?>
-              
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Cisco-2 1.svg" alt="Image" data-ll-status="loaded"> 
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/appreciate-wealth 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Wrench 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Avesha-1 1.svg" alt="Image" data-ll-status="loaded">
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Flashhouse 1.svg" alt="Image" data-ll-status="loaded">
+                
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/mission-bio-2 1.svg" alt="Image" data-ll-status="loaded">              
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Intel-2 1.svg" alt="Image" data-ll-status="loaded">  
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Recalc 1.svg" alt="Image" data-ll-status="loaded">
+               
+              </li>
+              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Sandbox-Banking 1.svg" alt="Image" data-ll-status="loaded">                
+              </li>
           </ul>
         </div>
     </div>
@@ -390,9 +415,9 @@ if($locationVideo !=''){
 <div class="row mb-45">
 <div class="col-md-10 col-lg-12"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll "><?php the_field('design_studio_heading'); ?></h2>
-<p class="fnt-24 fnt-400 clr-white scale-p"><?php the_field('design_studio_content'); ?></p>
-<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
+<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll ">We are experts in designing digital offerings that transform & scale businesses!<?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
+<p class="fnt-24 fnt-400 clr-white scale-p">Partner with Lollypop Costa Rica to take your digital offerings to the next level. </p>
+<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);">Contact Us<?php the_field('design_studio_content_button_text'); ?></a>
 </div>
 
 </div>
@@ -424,7 +449,7 @@ if($locationVideo !=''){
 <?php if( have_rows('our_services') ) : while( have_rows('our_services') ): the_row(); ?>
 <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
-	<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
+	<h5 class="fnt-40 fnt-800 data-scroll px-0">From concept to launch, we can help you at every stage!<?php the_sub_field('title'); ?></h5>
 	<p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
 </div>
@@ -477,7 +502,7 @@ if($locationVideo !=''){
 <div class="col-md-10 col-lg-8 mx-auto">
 <div class="mb-90 data-scroll">
 <?php if( have_rows('our_stories') ) : while( have_rows('our_stories') ): the_row(); ?>
-<h2 class="fnt-50 fnt-800 mb-16"><?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
+<h2 class="fnt-50 fnt-800 mb-16">Our Stories <?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
 <?php endwhile; endif; ?>
 </div>
 <ul class="px-0 home-artical-list">
