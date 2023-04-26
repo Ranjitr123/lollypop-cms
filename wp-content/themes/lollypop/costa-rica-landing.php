@@ -133,7 +133,8 @@ width: 322px; height:211px!important; }
     font-size: 11px;
     line-height: 22px;
 } 
-.card-know{width:347px !important}
+.design-studio-sec{padding-top:68px !important; padding-bottom:124px !important;}
+.poco-sec{padding-top:120px !important; padding-bottom:126px !important;}
 .lp-awards__left h2 {
     max-width: 772px !important;
 }
@@ -147,7 +148,7 @@ width: 322px; height:211px!important; }
 <div class="col-12 col-md-11 col-lg-10 mx-auto">
 <div class="row">
 <div class="col-12 col-md-12">
-<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default locations">Hola, Costa Rica!</span>
+<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;">Hola, Costa Rica!</span>
 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12">UI UX Design Agency in Costa Rica crafting impactful experiences</h1>
 <div class="fnt-24 col-md-10 col-lg-12">We are a dedicated Design Agency in the heart of Costa Rica, San Jose, helping businesses unlock their full potential in today's crowded digital landscape through design.</div>
 </div>
@@ -254,8 +255,8 @@ if($locationVideo !=''){
 </section>
 
 <!--05 love to know -->
-<section class="sec-pb" style="background: #221429;">
-  <div class="container-fluid"> 
+<section class="sec-pb design-studio-sec" style="background: #221429;">
+  <div class="container"> 
     <div class="row"> 
         <div class="offset-md-2 offset-lg-2 col-md-7 col-12 col-lg-8">
           <div class="why-coastrika">
@@ -263,18 +264,23 @@ if($locationVideo !=''){
           </div>       
         </div>
         <div class="row">
-           <div class="offset-md-2 offset-lg-2 col-lg-3 col-md-3 card-know">
+        <div class="offset-md-2 offset-lg-2 col-lg-11 col-md-10 card-know">
+          <div class="row">
+          <div class=" col-lg-4 col-md-4 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">We love startups! To meet startups' unique needs and constraints, we offer flexible pricing and packages that fit their budgets and timelines. If you want to Design, and Launch within 3 months, our unique process will suit you perfectly!</p>
            </div>
-           <div class="col-lg-3 col-md-3 card-know">
+           <div class="col-lg-4 col-md-4 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Being the top-of-mind agency for many large companies whenever it comes to rebranding for market entry, we have proven our expertise in research and design in a local style that wins local hearts.</p>
            </div>
-           <div class="col-lg-3 col-md-3 card-know">
+           <div class="col-lg-4 col-md-4 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Our experienced designers ensure your digital product is intuitive and optimized for today’s mobile-centric world, while creating a seamless user experience across all devices.</p>         
            </div>
+          </div>
+        </div>
+          
           </div>
   </div>
 </section>
@@ -350,7 +356,7 @@ if($locationVideo !=''){
 </section>
 
 <!-- future 500 -->
-<section class="sec-pd">
+<section class="sec-pd mb-4">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
