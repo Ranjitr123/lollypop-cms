@@ -161,7 +161,7 @@ if($locationVideo !=''){
 		<div id="play2-out" style="display:none">
 		<div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>"></div>
 	</div>
-	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/div-hero.svg">
+	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php the_field('video_poster');?>">
 	</video>
 	</div>
 
@@ -221,6 +221,7 @@ if($locationVideo !=''){
                   <div class="mt-5">
                       <img class="img-fluid" src="<?php the_sub_field('section_image') ?>" alt="img">
                   </div>
+				  <?php endwhile; endif; ?>
                 </div>
         </div>
     </div>
