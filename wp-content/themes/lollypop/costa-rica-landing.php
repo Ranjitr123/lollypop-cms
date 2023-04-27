@@ -277,9 +277,9 @@ if($locationVideo !=''){
 			<?php endwhile; endif; ?>
           </div>
         </div>
+		<a class="clr-second fnt-14 hvr-line data-scroll" href="#" style="opacity: 1; transform: translateY(0px);">View our Build Fast, Launch Fast process</a>
           </div>
 		  <?php endwhile; endif; ?>
-		<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/whitepapers/" style="opacity: 1; transform: translateY(0px);">View All Whitepapers</a>
   </div>
 </section>
 
