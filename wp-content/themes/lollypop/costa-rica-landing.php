@@ -308,7 +308,7 @@ if($locationVideo !=''){
                                   <div class="col-12 col-md-12">
                                       <h3 class="fnt-28 fnt-800 ">Discovery Workshop</h3>
                                       <p class="fnt-16 mb-md-3">A workshop to gather all knowledge from all stakeholders. This helps us craft a holistic approach for all requirements.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Research" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
                                   </div>
                                 </div>
                             </div>
@@ -324,7 +324,7 @@ if($locationVideo !=''){
                                   <div class="col-12 col-md-12">
                                       <h3 class="fnt-28 fnt-800 ">Design & Test</h3>
                                       <p class="fnt-16 mb-md-3">Prototyping the final product and testing it in real time to getinputs and reliable user feedback.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Design" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
                                   </div>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@ if($locationVideo !=''){
                                   <div class="col-12 col-md-12">
                                       <h3 class="fnt-28 fnt-800">Build & Launch</h3>
                                       <p class="fnt-16 mb-md-3">Translating the design into pixel perfect, adaptable, and scalable digital products followed by launching a quality product into the market as soon as possible.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" tab-id="#Build" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
                                   </div>
                                 </div>
                             </div>

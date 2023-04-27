@@ -405,7 +405,7 @@ if($locationVideo !=''){
 <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">Learn More</a>
 </div>
 
-<div class="col-12 col-md-5">
+<div class="col-12 col-md-6">
 
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
