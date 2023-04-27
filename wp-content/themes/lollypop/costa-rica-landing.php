@@ -149,9 +149,9 @@ width: 322px; height:211px!important; }
 <div class="col-12 col-md-11 col-lg-10 mx-auto">
 <div class="row">
 <div class="col-12 col-md-12">
-<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;">Hola, Costa Rica!</span>
-<h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12">UI UX Design Agency in Costa Rica crafting impactful experiences</h1>
-<div class="fnt-24 col-md-10 col-lg-12">We are a dedicated Design Agency in the heart of Costa Rica, San Jose, helping businesses unlock their full potential in today's crowded digital landscape through design.</div>
+<div class="mb-r-80 col-lg-10 px-0"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;"><?php the_field('locations'); ?></span>
+<h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
+<div class="fnt-24 col-md-10 col-lg-12"><?php the_field('short_description'); ?></div>
 </div>
 </div>
 
@@ -162,13 +162,13 @@ if($locationVideo !=''){
 		<div id="play2-out" style="display:none">
 		<div id="play2" data-plyr-provider="<?php the_field('video_provider');?>" data-plyr-embed-id="<?php the_field('video');?>"></div>
 	</div>
-	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/div-hero.svg">
+	<video class="playvid" autoplay="" muted="" loop="" embed-id="<?php the_field('video');?>" provider="<?php the_field('video_provider');?>" playsinline="" poster="<?php the_field('video_poster');?>">
 	</video>
 	</div>
 
 <?php }else{ ?>
 <div class="hover-img">
-<img class="wpdm-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/div-hero.svg" alt="Image" width="926" height="649">
+<img class="wpdm-img" src="<?php the_field('banner_image');?>" alt="Image" width="926" height="649">
 </div>
 <?php } ?>
 </div>
