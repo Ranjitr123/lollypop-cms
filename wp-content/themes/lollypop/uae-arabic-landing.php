@@ -338,7 +338,7 @@ if($locationVideo !=''){
           </div>
        </div>
        <div class="row px-0">
-       <div class="col-12 col-md-8 col-lg-10 offset-md-2">
+       <div class="col-12 col-md-8 col-lg-10">
         <div class="row px-0 flag-container flex-row-reverse">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
