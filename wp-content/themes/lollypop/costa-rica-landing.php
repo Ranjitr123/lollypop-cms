@@ -260,30 +260,26 @@ if($locationVideo !=''){
 <section class="sec-pb design-studio-sec" style="background: #221429;">
   <div class="container"> 
     <div class="row"> 
+		<?php if( have_rows('love_to_know_section') ) : while( have_rows('love_to_know_section') ): the_row(); ?>
         <div class="offset-md-2 offset-lg-2 col-md-7 col-12 col-lg-8">
           <div class="why-coastrika">
-             <h2 class="fnt-40 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);">Facts about Lollypop Design Studio that you would love to know!</h2>
+             <h2 class="fnt-40 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
           </div>       
         </div>
         <div class="row">
         <div class="offset-md-2 offset-lg-2 col-lg-11 col-md-10 card-know sec-pd50">
           <div class="row">
+		  <?php if( have_rows('section_repeater') ) : while( have_rows('section_repeater') ): the_row(); ?>
           <div class=" col-lg-4 col-md-4 card-know">
-               <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
-               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">We love startups! To meet startups' unique needs and constraints, we offer flexible pricing and packages that fit their budgets and timelines. If you want to Design, and Launch within 3 months, our unique process will suit you perfectly!</p>
+               <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll"><?php the_sub_field('card_title') ?></h4>
+               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll"><?php the_sub_field('card_content') ?></p>
            </div>
-           <div class="col-lg-4 col-md-4 card-know">
-               <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
-               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Being the top-of-mind agency for many large companies whenever it comes to rebranding for market entry, we have proven our expertise in research and design in a local style that wins local hearts.</p>
-           </div>
-           <div class="col-lg-4 col-md-4 card-know">
-               <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
-               <p class="fnt-16 l-3 clr-white fnt-400 data-scroll">Our experienced designers ensure your digital product is intuitive and optimized for today’s mobile-centric world, while creating a seamless user experience across all devices.</p>         
-           </div>
+			<?php endwhile; endif; ?>
           </div>
         </div>
           
           </div>
+		  <?php endwhile; endif; ?>
   </div>
 </section>
 
