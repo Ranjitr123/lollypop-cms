@@ -275,9 +275,9 @@ if($locationVideo !=''){
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll"><?php the_sub_field('card_content') ?></p>
            </div>
 			<?php endwhile; endif; ?>
+			        <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" href="<?php echo site_url()?>/blogs/" style="opacity: 1; transform: translateY(0px);">View All Blogs</a>
           </div>
         </div>
-        <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" href="<?php echo site_url()?>/blogs/" style="opacity: 1; transform: translateY(0px);">View All Blogs</a>
           </div>
 		  <?php endwhile; endif; ?>
   </div>
