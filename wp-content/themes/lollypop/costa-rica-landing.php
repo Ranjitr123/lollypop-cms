@@ -139,6 +139,7 @@ width: 322px; height:211px!important; }
     max-width: 772px !important;
 }
 .scale-p{max-width:666px !important;}
+.sec-pd50 { padding-top: 50px;}
 </style>
 <main class="main">
 <!--01-->
@@ -225,14 +226,14 @@ if($locationVideo !=''){
     </div>
 </section>
 <!-- 04 achivements sec -->
-<section class="sec-pd2" style="background: #221429;">
+<section class="sec-pd" style="background: #221429;">
 <div class="container z-1">
 <div class="row"> 
 <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
 <div class="row mb-45 justify-content-between">
 <div class="col-md-9 mb-4 mb-md-0 fluid-offset"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll">our achivements<?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+<h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
 </span>
 </div>
 </div>
@@ -264,7 +265,7 @@ if($locationVideo !=''){
           </div>       
         </div>
         <div class="row">
-        <div class="offset-md-2 offset-lg-2 col-lg-11 col-md-10 card-know">
+        <div class="offset-md-2 offset-lg-2 col-lg-11 col-md-10 card-know sec-pd50">
           <div class="row">
           <div class=" col-lg-4 col-md-4 card-know">
                <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll">We are startup friendly</h4>
@@ -415,9 +416,9 @@ if($locationVideo !=''){
 <div class="row mb-45">
 <div class="col-md-10 col-lg-12"> 
 <div class="lp-awards__left">
-<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll ">We are experts in designing digital offerings that transform & scale businesses!<?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
-<p class="fnt-24 fnt-400 clr-white scale-p">Partner with Lollypop Costa Rica to take your digital offerings to the next level. </p>
-<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);">Contact Us<?php the_field('design_studio_content_button_text'); ?></a>
+<h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll "><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
+<!--<p class="fnt-24 fnt-400 clr-white scale-p">Partner with Lollypop Costa Rica to take your digital offerings to the next level. </p>-->
+<a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
 </div>
 
 </div>
@@ -449,7 +450,7 @@ if($locationVideo !=''){
 <?php if( have_rows('our_services') ) : while( have_rows('our_services') ): the_row(); ?>
 <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
-	<h5 class="fnt-40 fnt-800 data-scroll px-0">From concept to launch, we can help you at every stage!<?php the_sub_field('title'); ?></h5>
+	<h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
 	<p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
 </div>
