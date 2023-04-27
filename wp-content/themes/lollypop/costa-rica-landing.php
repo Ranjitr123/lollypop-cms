@@ -363,13 +363,13 @@ if($locationVideo !=''){
               <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('title'); ?></h5>
               <p class="mt-2 fnt-24 fnt-400 mt-3"><?php the_sub_field('content'); ?></p>
           </div>
-          <ul class="px-0 logo-list row">
+          <ul class="px-0 logo-list row mb-0">
 				<?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php the_sub_field('logos'); ?>" alt="Image" data-ll-status="loaded">
-              </li>
+					<li class="logo-list__item col-4 col-md-3"><img class="img-fluid grayscale" src="<?php the_sub_field('logos'); ?>" alt="Image"></li>
 				<?php endwhile; endif; ?>
-          </ul>
+
+			</ul>
+		  
         </div>
 		<?php endwhile; endif; ?>
     </div>
