@@ -502,7 +502,7 @@ if($locationVideo !=''){
 <div class="col-md-10 col-lg-8 mx-auto">
 <div class="mb-90 data-scroll">
 <?php if( have_rows('our_stories') ) : while( have_rows('our_stories') ): the_row(); ?>
-<h2 class="fnt-50 fnt-800 mb-16">Our Stories <?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
+<h2 class="fnt-50 fnt-800 mb-16"><?php the_sub_field('title'); ?></h2><span class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_sub_field('content'); ?></span>
 <?php endwhile; endif; ?>
 </div>
 <ul class="px-0 home-artical-list">
