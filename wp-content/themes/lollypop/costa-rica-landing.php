@@ -275,6 +275,7 @@ if($locationVideo !=''){
                <p class="fnt-16 l-3 clr-white fnt-400 data-scroll"><?php the_sub_field('card_content') ?></p>
            </div>
 			<?php endwhile; endif; ?>
+			<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url()?>/blogs/">View All Blogs</a>
           </div>
         </div>
           
