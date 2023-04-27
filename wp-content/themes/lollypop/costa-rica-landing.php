@@ -299,7 +299,7 @@ if($locationVideo !=''){
               <div class="agile_process">
                  <h3 class="fnt-40 fnt-800"><?php the_sub_field('agile_design_main_heading') ?> </h3>
                  <ul class="mb-0 services-list px-0">
-						<?php if( have_rows('section_repeater') ) : while( have_rows('section_repeater') ): the_row(); ?>
+						<?php if( have_rows('agile_design_content_repeater') ) : while( have_rows('agile_design_content_repeater') ): the_row(); ?>
                       <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
                           <div class="srv row">
                             <div class="srv__head col-12 col-md-4">
