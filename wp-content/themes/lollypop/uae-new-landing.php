@@ -19,7 +19,7 @@ get_header('uaeeng');
 
 .card-white-bg{
   background: #FFFFFF;
-  padding:10px 18px 30px 25px;
+  padding: 10px 25px 31px 18px;
   max-width:100%;
   height:100%;
 }
@@ -201,6 +201,9 @@ cursor: pointer;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+.service-width-prop {display: block !important;
+    width: 100% !important;
+    max-width: fit-content !important;}
 </style>
 <main class="main">
 <!--01-->
@@ -303,7 +306,7 @@ if($locationVideo !=''){
           </div>
        </div>
        <div class="row px-0">
-       <div class="col-12 col-md-8 mx-auto">
+       <div class="col-12 col-md-8 col-lg-10 offset-md-2">
         <div class="row px-0 flag-container">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
             <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
@@ -407,7 +410,7 @@ if($locationVideo !=''){
 <ul class="li-disc mb-4">
 <?php if( have_rows('list') ) : while( have_rows('list') ): the_row(); ?>
 
-<li class="fnt-16 mb-2">
+<li class="fnt-16 mb-2 service-width-prop">
 	<div class="d-flex flex-column">
 <?php if(get_sub_field('content_url') !='') { ?>
 <a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
