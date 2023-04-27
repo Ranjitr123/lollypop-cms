@@ -184,24 +184,23 @@ if($locationVideo !=''){
 <div class="col-12 col-md-9 col-lg-8 mx-auto">
 <!-- Team profile-->
 <div class="row">
-<?php //if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
+<?php if( have_rows('client_challenges') ) : while( have_rows('client_challenges') ): the_row(); ?>
 <div class="col-12 col-md-5 mb-4 mb-md-0 hover-img">
-	<div class="reveal team-profile-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/juhi.webp.svg" alt="" width="298" height="298"></div>
+	<div class="reveal team-profile-img"><img src="<?php the_sub_field('image'); ?>" alt="" width="298" height="298"></div>
 </div>
 <div class="col-12 col-md-7">
 <div class="profile d-flex flex-column">
 <div class="profile__about"> 
- 
-<p class="fnt-16 clr-black-354 data-scroll">At Lollypop, we prioritize user-centric design with a business-goal-driven approach. Whether you're a startup looking to make a splash in North America's growing tech scene or to touch global markets, Lollypop Design Studio has the expertise and experience to help you achieve your goals.</p>
- <p class="fnt-16 clr-black-354 data-scroll">Talk to [Name], Delivery Head, Costa Rica, to learn how design can impact your business.</p>
+ <?php the_sub_field('content'); ?>
+<!--<p class="fnt-16 clr-black-354 data-scroll"></p>-->
 </div>
 <div>
 
-<a class="web-btn web-btn--primary data-scroll mt-1" href="#" style="opacity: 1; transform: translateY(0px);">Let's Talk</a>
+<a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
 </div>
 </div>
 </div>
-<?php //endwhile; endif; ?>
+<?php endwhile; endif; ?>
 </div>
 </div>
 </div>
