@@ -20,70 +20,70 @@ get_header();
 }
 </style>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Why do I need data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "By visualizing your data, you immediately make it much easier to analyze and build relationships and gain meaningful insights. Data visualisation is important to analyze massive amounts of information and make designs that are data driven."
-    }
-  },{
-    "@type": "Question",
-    "name": "How does a data visualisation expert at Lollypop approach a project?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Through our data visualisation techniques, we start by understanding the goal of the data visualisation engagement, if it is for understanding and, or for persuasion. The next step is to explore the various data sets that we have at our disposal followed by analysis and visualisation."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the main goals of data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
-    }
-  },{
-    "@type": "Question",
-    "name": "What tools do we use for data visualisation?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Data visualisation helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
-    }
-  }]
+<script type="application/ld+json">{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [{
+"@type": "Question",
+"name": "Why do I need data visualization?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "By visualizing your data, you immediately make it much easier to analyze and build relationships and gain meaningful insights. Data visualization is important to analyze massive amounts of information and make designs that are data driven."
 }
-</script>
+},{
+"@type": "Question",
+"name": "How does a data visualization expert at Lollypop approach a project?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Through our data visualization techniques, we start by understanding the goal of the data visualization engagement, if it is for understanding and, or for persuasion. The next step is to explore the various data sets that we have at our disposal followed by analysis and visualization."
+}
+},{
+"@type": "Question",
+"name": "What are the main goals of data visualization?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
+}
+},{
+"@type": "Question",
+"name": "What tools do we use for data visualization?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Data visualization helps in faster conceptualisation and discovering new trends, which facilitates better understanding and decision making."
+}
+}]
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Design Audit",
-    "item": "https://lollypop.design/design-audit"  
-  },{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "Usability Testing",
-    "item": "https://lollypop.design/usability-testing/"  
-  },{
-    "@type": "ListItem",
-    "position": 3,
-    "name": "UX Research",
-    "item": "https://lollypop.design/ux-research/"  
-  },{
-    "@type": "ListItem",
-    "position": 4,
-    "name": "Data Visualisation",
-    "item": "https://lollypop.design/data-visualisation/"  
-  }]
-}
-</script>
+}</script>
+
+
+<script type="application/ld+json">{
+"@context": "https://schema.org/",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "Design Audit",
+"item": "https://lollypop.design/design-audit"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "Usability Testing",
+"item": "https://lollypop.design/usability-testing/"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "UX Research",
+"item": "https://lollypop.design/ux-research/"
+},{
+"@type": "ListItem",
+"position": 4,
+"name": "Data Visualization",
+"item": "https://lollypop.design/data-visualization/"
+}]
+}</script>
+
+
 
 
 <script type="application/ld+json">
@@ -294,7 +294,7 @@ Cheers to Anil Reddy & Team..:)",
                 <div class="d-flex align-items-center justify-content-center">
                   <div class="col-12 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
                     <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Want impactful data insights?</span>
-                      <h2 class="fnt-50 fnt-800 clr-white">Let's talk about your Data Visualisation needs.</h2>
+                      <h2 class="fnt-50 fnt-800 clr-white">Let's talk about your Data Visualization needs.</h2>
                     </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
                   </div>
                 </div>

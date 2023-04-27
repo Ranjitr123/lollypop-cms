@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/usability-testing/"/>
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/ux-research/"/>
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/illustrations/"/>
-	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualisation/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualization/"/>
 	<link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
 
 <!-- Google new tag (gtag.js) -->

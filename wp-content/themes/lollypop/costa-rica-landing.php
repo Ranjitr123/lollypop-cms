@@ -276,7 +276,7 @@ if($locationVideo !=''){
            </div>
 			<?php endwhile; endif; ?>
           </div>
-		  	<a class="clr-second fnt-14 hvr-line data-scroll" href="#" style="opacity: 1; transform: translateY(0px);">View our Build Fast, Launch Fast process</a>
+		  	<a class="clr-second fnt-14 hvr-line data-scroll" href="<?php the_sub_field('button_url') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('button_text') ?></a>
         </div>
           </div>
 		  <?php endwhile; endif; ?>
@@ -288,66 +288,38 @@ if($locationVideo !=''){
   <div class="container">
       <div class="row">
           <div class="col-12 col-md-10 col-lg-8 mx-auto">
+			 <?php if( have_rows('pura_vida_section') ) : while( have_rows('pura_vida_section') ): the_row(); ?>
               <div class="lp-our-services mb-50">
-                  <h2 class="fnt-50 fnt-800 mb-2 pb-lg-1 data-scroll" style="opacity: 1; transform: translateY(0px);"> Pura Vida! “De músico, poeta y loco, todos tenemos un poco.”</h2>
+                  <h2 class="fnt-50 fnt-800 mb-2 pb-lg-1 data-scroll" style="opacity: 1; transform: translateY(0px);"> <?php the_sub_field('section_main_heading') ?></h2>
                   <span class="fnt-24 col-md-11 col-lg-10 px-0 d-block data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                     “We all have a little bit of the musician, poet, and crazy person in ourselves.” (Let’s be honest, sometimes we’re a little bit crazy also.)
+                     <?php the_sub_field('section_contents') ?>
                   </span>
-                   <img class="img-fluid mt-5 mb-5 poco-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/poco.svg" alt="logo">
+                   <img class="img-fluid mt-5 mb-5 poco-img" src=" <?php the_sub_field('section_image') ?>" alt="logo">
               </div>
               <div class="agile_process">
-                 <h3 class="fnt-40 fnt-800">Our agile design process </h3>
+                 <h3 class="fnt-40 fnt-800"><?php the_sub_field('agile_design_main_heading') ?> </h3>
                  <ul class="mb-0 services-list px-0">
+						<?php if( have_rows('agile_design_content_repeater') ) : while( have_rows('agile_design_content_repeater') ): the_row(); ?>
                       <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
                           <div class="srv row">
                             <div class="srv__head col-12 col-md-4">
-                                <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 1</p>
+                                <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center"><?php the_sub_field('step_number') ?></p>
                             </div>
                             <div class="srv__info col-12 col-md-8">
                                 <div class="row justify-content-between">
                                   <div class="col-12 col-md-12">
-                                      <h3 class="fnt-28 fnt-800 ">Discovery Workshop</h3>
-                                      <p class="fnt-16 mb-md-3">A workshop to gather all knowledge from all stakeholders. This helps us craft a holistic approach for all requirements.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
+                                      <h3 class="fnt-28 fnt-800 "><?php the_sub_field('step_title') ?></h3>
+                                      <p class="fnt-16 mb-md-3"><?php the_sub_field('step_content') ?></p>
+                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block" href="#" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('step_timeline') ?></a>
                                   </div>
                                 </div>
                             </div>
                           </div>
                       </li>
-                      <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
-                          <div class="srv row">
-                            <div class="srv__head col-12 col-md-4">
-                            <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 2</p>
-                            </div>
-                            <div class="srv__info col-12 col-md-8">
-                                <div class="row justify-content-between">
-                                  <div class="col-12 col-md-12">
-                                      <h3 class="fnt-28 fnt-800 ">Design & Test</h3>
-                                      <p class="fnt-16 mb-md-3">Prototyping the final product and testing it in real time to getinputs and reliable user feedback.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                      </li>
-                      <li class="services-list__item data-scroll" style="opacity: 1; transform: translateY(0px);">
-                          <div class="srv row">
-                            <div class="srv__head col-12 col-md-4">
-                             <p class="fnt-16 fnt-400 mb-2 mb-md-4 text-md-center">Step 3</p>
-                            </div>
-                            <div class="srv__info col-12 col-md-8">
-                                <div class="row justify-content-between">
-                                  <div class="col-12 col-md-12">
-                                      <h3 class="fnt-28 fnt-800">Build & Launch</h3>
-                                      <p class="fnt-16 mb-md-3">Translating the design into pixel perfect, adaptable, and scalable digital products followed by launching a quality product into the market as soon as possible.</p>
-                                      <a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-none d-md-inline-block"  href="#" style="opacity: 1; transform: translateY(0px);">Timeline: 2 - 4 days</a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                      </li>
+                      <?php endwhile; endif; ?>
                     </ul>
               </div>
+			  <?php endwhile; endif; ?>
            </div>
       </div>
   </div>
