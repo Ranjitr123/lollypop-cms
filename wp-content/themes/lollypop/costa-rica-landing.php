@@ -360,48 +360,21 @@ if($locationVideo !=''){
 <section class="sec-pd mb-4">
   <div class="container">
     <div class="row">
+		<?php if( have_rows('client_logos') ) : while( have_rows('client_logos') ): the_row(); ?>
       <div class="col-lg-8 col-md-10 mx-auto">
           <div class="mb-5">
-              <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);">From start ups to fortune 500, we have served all</h5>
-              <p class="mt-2 fnt-24 fnt-400 mt-3">Some of the clients we have worked with in Vietnam</p>
+              <h5 class="fnt-40 fnt-800 data-scroll col-md-10 col-lg-12 px-0" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('title'); ?></h5>
+              <p class="mt-2 fnt-24 fnt-400 mt-3"><?php the_sub_field('content'); ?></p>
           </div>
           <ul class="px-0 logo-list row">
+				<?php if( have_rows('logos') ) : while( have_rows('logos') ): the_row(); ?>
               <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Stanford-University-1 1.svg" alt="Image" data-ll-status="loaded">
+                <img class="img-fluid grayscale lazyloaded" src="<?php the_sub_field('images'); ?>" alt="Image" data-ll-status="loaded">
               </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Cisco-2 1.svg" alt="Image" data-ll-status="loaded"> 
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/appreciate-wealth 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Wrench 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Avesha-1 1.svg" alt="Image" data-ll-status="loaded">
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Flashhouse 1.svg" alt="Image" data-ll-status="loaded">
-                
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/mission-bio-2 1.svg" alt="Image" data-ll-status="loaded">              
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Intel-2 1.svg" alt="Image" data-ll-status="loaded">  
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Recalc 1.svg" alt="Image" data-ll-status="loaded">
-               
-              </li>
-              <li class="logo-list__item col-4 col-md-3 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                <img class="img-fluid grayscale lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/Sandbox-Banking 1.svg" alt="Image" data-ll-status="loaded">                
-              </li>
+				<?php endwhile; endif; ?>
           </ul>
         </div>
+		<?php endwhile; endif; ?>
     </div>
   </div>
 </section>
