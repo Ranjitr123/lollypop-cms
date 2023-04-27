@@ -542,7 +542,7 @@ margin-bottom:12px;
     }
 } */
 
-@media (min-width:661px) and (max-width: 767px){
+/* @media (min-width:661px) and (max-width: 767px){
     .lp-hamberg {
         transform: translate(360px,-100%)!important;
     }
@@ -601,10 +601,13 @@ margin-bottom:12px;
     .lp-hamberg {
         transform: translate(50px,-40%)!important;
     }
-}
+} */
 @media (min-width: 768px){
 header .default, header .menu-title {
     margin-right: -6px !important;
+}
+.head-container{
+    justify-content: space-between;
 }
 }
 @media (min-width:320px) and (max-width: 768px){
@@ -618,12 +621,14 @@ header .default, header .menu-title {
     display:block;
 }
 
-@media (min-width: 375px) and (max-width: 420px){
+/* @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
     transform: translate(271px,-45%)!important;
 }
+} */
+.head-container{
+    justify-content:space-around;
 }
-
 
 
 
@@ -645,7 +650,7 @@ $header = new WP_Query( $args );
 <header class="header">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-11 mx-auto d-flex">
+<div class="col-12 col-lg-11 mx-auto d-flex head-container">
 <div class="row d-block d-md-none">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
    <!-- global dropdown -->
@@ -761,7 +766,7 @@ $header = new WP_Query( $args );
 </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
 </div>
 </div>
-<div class="col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
+<div class="col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav" style="display: contents !important;">
 <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
