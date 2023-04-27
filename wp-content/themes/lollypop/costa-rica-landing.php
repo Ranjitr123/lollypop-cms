@@ -212,15 +212,17 @@ if($locationVideo !=''){
 <section class="sec-pd sec-pt" id="fifth" style="background: #221429;" >
     <div class="container">
         <div class="row"> 
+				<?php if( have_rows('new_slider_section_with_content') ) : while( have_rows('new_slider_section_with_content') ): the_row(); ?>
                 <div class="col-md-8 col-12 col-lg-8 mx-auto">
                   <div class="why-coastrika">
-                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);">We are a culture-driven design studio!</h2>
-                    <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);">We understand that time is of the essence in the competitive market of Costa Rica. That's why we streamline the design and development process to get your product to market faster without sacrificing quality or effectiveness. With a unique brand identity and user experience, be prepared to set your brand apart from competitors in North America.</p>
+                    <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
+                    <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
                   </div>
                   <div class="mt-5">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/castarika/castarika.svg" alt="img">
+                      <img class="img-fluid" src="<?php the_sub_field('section_image') ?>" alt="img">
                   </div>
                 </div>
+				 <?php endwhile; endif; ?>
         </div>
     </div>
 </section>
