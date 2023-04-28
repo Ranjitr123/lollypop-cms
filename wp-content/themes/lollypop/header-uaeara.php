@@ -59,6 +59,7 @@
  
 <style>
 .secut{top:55px;}
+.header-container{justify-content:center;}
 @media (max-width: 768px){
 .secut {
     top: 28px;
@@ -329,7 +330,7 @@
      font-size:12px;
 	 line-height:16px;
    }
-      type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+     [type="radio"]:not(:checked) + label:after {
     content: '';
     width:6px;
     height: 6px;
@@ -634,7 +635,7 @@ $header = new WP_Query( $args );
 <header class="header">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-11 mx-auto d-flex">
+<div class="col-12 col-lg-11 mx-auto d-flex header-container">
 <div class="row d-block d-md-none">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
    <!-- global dropdown -->
@@ -914,5 +915,4 @@ $header = new WP_Query( $args );
 <div class="loader">
 <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
 </div>
-
 
