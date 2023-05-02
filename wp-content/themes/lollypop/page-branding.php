@@ -656,40 +656,38 @@ height:140px;
   "@type": "FAQPage",
   "mainEntity": [{
     "@type": "Question",
-    "name": "What is illustration design?",
+    "name": "What is Brand Visual Identity?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The skill of creating engaging images (drawings, paintings, pictures, vectors, etc.) that can convey a message even in the absence of words is known as illustration design. Additionally, illustrations are used to reinforce a story's or an article's main ideas and arguments in the most beautiful as well as effective way."
+      "text": "It is how your brand communicates visually. Every brand is represented by visual assets like logo, logo mark, brand mark, graphic devies, patterns, typography, brand colors etc. The Brand Visual Identity is a Guide Book comprising guidelines that ensures your brand’s communication is consistent across any media."
     }
   },{
     "@type": "Question",
-    "name": "What exactly is custom illustration design, and what perks will I receive?",
+    "name": "What does a Brand Visual Identity consist?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Custom illustrations are vibrant visual depictions of concepts, tones, brand personality, and mostly unique messaging. There are a plethora of amazing, one-of-a-kind visuals appearing, ranging from symbols to banners to videos. Generic artwork is being replaced by distinctive visuals on websites, publications, and printed promotional items.
-You'll get all the files you need to print or publish your unique illustration once your project is finished. This includes online preview files as well as vector files, such as a JPG or PNG. Naturally, you also receive complete legal ownership of the design."
+      "text": "The Brand Visual Identity consists of your logo, the concept behind the logo, logo construction, Clear Zone, logo usage, Brand Color palette, Brand Typography System, Iconography, Illustration style and an extensive selection of mockups that illustrate the usage of brand assets."
     }
   },{
     "@type": "Question",
-    "name": "What all industries do y design serviour illustrationces cater to?",
+    "name": "Is Brand Strategy, Brand Positioning, Brand Tone & Voice, Brand Communication offered as a service?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Media & Entertainment, Banking & Finance, SaaS, Telecommunications, Tech Automation, Media & Entertainment, and Education are just a few of the many businesses and sectors that Lollypop works with. Our customer is also diverse in terms of business size and model. We assist start-ups, small companies, franchises, businesses, nonprofit organizations, and corporations.
-We continually update our knowledge set based on the various sectors we work with in order to keep ahead of trends and position ourselves advantageously to work with customers from new and growing domains."
+      "text": "We do not offer these services as of now. But we do align to these aspects of the brand when creating visual identity. If the clients have the above mentioned documents, we can incorporate them in the Brand Visual Identity."
     }
   },{
     "@type": "Question",
-    "name": "What is the difference between an illustrator and a graphic designer?",
+    "name": "Does Lollypop do Presentation Design and Business Stationery Design?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Graphic designers create static visuals and turn it into a one-of-a-kind visual from their vision by using pre-existing elements such as forms, text, images, logos, and effects. Illustrators draw to create unique stories and characters that stems out of their own imagination and creativity. A motion designer can animate both drawings and graphic creations, and make them come to life."
+      "text": "These will be done as a separate scope. Presentation Design will be delivered in Google Slide format if required. Business Statoinery Design consists of business cards, envelope and letterhead. Print ready files in Adobe Illustrator format or PDF will be delivered."
     }
   },{
     "@type": "Question",
-    "name": "Why is Lollypop Design better than other illustration design services?",
+    "name": "What other collaterals for print design is offered?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Whether it is design, development or graphics, Lollypop Design Studio has always believed in being actively involved in the services sector and offering only the finest services to its clients. Our illustrators are extensively involved in the production process, which broadens their understanding of the market and enhances their expertise, enabling them to create the greatest illustrations."
+      "text": "A separate scope is defined for all print designs. These could include – Brochures, Catalogs, Flyers, Posters, Banners, Hoardings, Signages, Exhibition Design, Booth Graphics, Case Studies, Whitepapers, Newsletters, Manuals, Packaging, Store Graphics, Manuals, Direct Mailers, Stickers, Wobblers, Sales Kits, Marketing Materials, Gifts, Wraps, Bags, POP/POS Design, Awards, Trophies, Certificates, Calendars, Greetings, Book Covers, Coffee table books, Magazines, Folders, Holders"
     }
   }]
 }
