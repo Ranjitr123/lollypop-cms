@@ -213,7 +213,7 @@ if($locationVideo !=''){
     <div class="container">
         <div class="row"> 
 				<?php if( have_rows('new_slider_section_with_content') ) : while( have_rows('new_slider_section_with_content') ): the_row(); ?>
-                <div class="col-md-8 col-12 col-lg-8 mx-auto">
+                <div class="col-md-9 col-12 col-lg-9 mx-auto">
                   <div class="why-coastrika">
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
                     <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
