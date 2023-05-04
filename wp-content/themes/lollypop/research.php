@@ -212,9 +212,9 @@ height:140px;
 								
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
-                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
+                <div id="play2" data-plyr-provider="<?php echo get_field('researchbanner_video_provider')?>" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_field('researchbanner_image')?>">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('researchbanner_video_provider')?>" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_field('researchbanner_image')?>">
               </video>
             </div>
 					<!--	<img class="img-fluid blog-d-img mb-0" src="<?php echo get_field('researchbanner_image')?>" alt="Image" width="1077" height="471" style="transform: translate(0px, 0px);">-->
