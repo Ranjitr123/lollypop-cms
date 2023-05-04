@@ -539,9 +539,9 @@ height:140px;
 								
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
-                <div id="play2" data-plyr-provider="<?php echo get_field('researchbanner_video_provider')?>" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
+                <div id="play2" data-plyr-provider="<?php echo get_field('researchbanner_video_provider_farmer')?>" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link_farmer')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('researchbanner_video_provider')?>" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_field('researchbanner_image')?>">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('researchbanner_video_provider_farmer')?>" embed-id="<?php echo get_field('researchbanner_video_link_farmer')?>" poster="<?php echo get_field('researchbanner_image_farmer')?>">
               </video>
             </div>
 					<!--</div>
