@@ -533,7 +533,20 @@ height:140px;
         <a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo $link_url?>"><?php echo $link_title?></a>
         <?php endif; ?> 
         
-        <img class="wpdm-img pe-2 pe-md-0 mt-5" src=" <?php echo get_field('farmers_image')?>" alt="" width="764" height="492"> 
+       <!-- <img class="wpdm-img pe-2 pe-md-0 mt-5" src=" <?php echo get_field('farmers_image')?>" alt="" width="764" height="492"> -->
+                <!--<div class="position-relative">
+					<div class="reveal" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">-->
+								
+            <div class="play-video-on-scroll">
+              <div id="play2-out" style="display:none">
+                <div id="play2" data-plyr-provider="<?php echo get_field('researchbanner_video_provider')?>" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
+              </div>
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('researchbanner_video_provider')?>" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_field('researchbanner_image')?>">
+              </video>
+            </div>
+					<!--</div>
+				
+				</div>-->
     </div>
   </div>
 </section>
