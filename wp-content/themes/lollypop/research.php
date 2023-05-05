@@ -530,7 +530,7 @@ height:140px;
                                                     $link_title = $viewlink['title'];
                                                     $link_target = $viewlink['target'] ? $viewlink['target'] : '_self';
                                                     ?>
-        <a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo $link_url?>"><?php echo $link_title?></a>
+        <a class="clr-second fnt-16 hvr-line d-inline-block data-scroll my-4" href="<?php echo $link_url?>"><?php echo $link_title?></a>
         <?php endif; ?> 
         
        <!-- <img class="wpdm-img pe-2 pe-md-0 mt-5" src=" <?php echo get_field('farmers_image')?>" alt="" width="764" height="492"> -->
