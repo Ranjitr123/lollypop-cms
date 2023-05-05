@@ -520,7 +520,7 @@ height:140px;
         <h2 class="fnt-50 l-3 col-8 col-md-12 px-0 clr-white fnt-800 data-scroll">
            <?php echo get_field('farmers_heading')?>
         </h2>
-        <p class="fnt-24 clr-white my-4 col-10 col-xl-9 data-scroll">
+        <p class="fnt-24 clr-white col-10 col-xl-9 data-scroll">
             <?php echo get_field('farmers_description')?>
         </p>
         <?php 
