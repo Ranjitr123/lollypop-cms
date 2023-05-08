@@ -232,6 +232,7 @@ cursor: pointer;
 }
 .hvr-line::after { right: 0 !important;}
 .hvr-line::after {left: inherit !important;}
+.li-disc-link::after{right:25px !important;}
 .service-width-prop {display: block !important;
     width: 100% !important;
     max-width: fit-content !important;}
@@ -457,7 +458,7 @@ if($locationVideo !=''){
 </li>
 <?php endwhile; endif; ?>
 </ul>
-	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
+	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none li-disc-link" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
 </div>

@@ -354,8 +354,8 @@
     background: #fff;
 }
 .secut {
-         right:70px !important;
-         top:50px !important;
+         right:100px !important;
+         /* top:50px !important; */
     }
  }
 
