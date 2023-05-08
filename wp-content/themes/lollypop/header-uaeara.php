@@ -524,13 +524,15 @@ margin-bottom:12px;
 header .default, header .menu-title {
     margin-right: -6px !important;
 }
-.header-container{justify-content: space-between;}
-}
 @media (min-width:320px) and (max-width: 768px){
 .secut {
     right: 110px !important;
     top: 30px !important;
 }
+}
+
+@media (max-width: 768px){
+.header-container{justify-content: space-between;}
 }
 
 .secut{

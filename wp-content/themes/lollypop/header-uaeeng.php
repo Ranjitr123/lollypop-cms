@@ -708,7 +708,7 @@ $header = new WP_Query( $args );
    <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
 	 <div class="dropdown-ver d-flex">
 			<a href="javascript:void(0)" onclick="myFunction()">
-			   <p class="" style="line-height:24px;">ARA</p>
+			   <p class="" style="line-height:24px;">ENG</p>
 		    </a>
 	 </div>
 	<div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
@@ -717,12 +717,12 @@ $header = new WP_Query( $args );
                 <div class="langue-container">
                     <form action="#">
                         <p style="margin-bottom: 0;">
-                            <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae-arabic/" checked>
+                            <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae-arabic/" >
                             <label for="test1">Arabic</label>
                         </p>
                         <div class="hr-1"></div>
                         <p style="margin-bottom: 0;">
-                            <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/" >
+                            <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/" checked>
                             <label for="test2">English</label>
                         </p>
                     </form>
