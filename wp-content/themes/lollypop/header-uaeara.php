@@ -524,25 +524,21 @@ margin-bottom:12px;
 header .default, header .menu-title {
     margin-right: -6px !important;
 }
+}
 @media (min-width:320px) and (max-width: 768px){
 .secut {
     right: 110px !important;
     top: 30px !important;
 }
-}
-
-@media (max-width: 768px){
-.header-container{justify-content: space-between;}
-}
 
 .secut{
     display:block;
 }
-/* @media (min-width: 375px) and (max-width: 420px){
-.lp-hamberg {
-    transform: translate(270px,-45%)!important;
 }
-} */
+@media (max-width: 767px){
+.header-container{justify-content: space-between !important;}
+}
+
 
 
 </style>

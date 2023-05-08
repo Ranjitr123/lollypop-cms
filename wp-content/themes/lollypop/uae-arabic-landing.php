@@ -445,7 +445,7 @@ if($locationVideo !=''){
 <li class="fnt-16 mb-2 service-width-prop">
 	<div class="d-flex flex-column">
 	<?php if(get_sub_field('content_url') !='') { ?>
-		<a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
+		<a class="serveice-a li-disc-link" href="<?php the_sub_field('content_url'); ?>">
                               <span class="d-inline-block"><?php the_sub_field('content'); ?></span>
                               
                            </a>
@@ -458,7 +458,7 @@ if($locationVideo !=''){
 </li>
 <?php endwhile; endif; ?>
 </ul>
-	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none li-disc-link" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
+	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
 </div>
