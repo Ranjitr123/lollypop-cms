@@ -147,6 +147,9 @@ cursor: pointer;
   .case-study-slider .hvr-line-re a {font-size: 14px;}
   .card-white-bg h6 {font-size:16px;}
   .flag-content:nth-child(4){margin-top:0rem!important;}
+  a.hvr-line.li-disc-link::after {
+    right: 25px !important;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -232,7 +235,6 @@ cursor: pointer;
 }
 .hvr-line::after { right: 0 !important;}
 .hvr-line::after {left: inherit !important;}
-.li-disc-link::after{right:25px !important;}
 .service-width-prop {display: block !important;
     width: 100% !important;
     max-width: fit-content !important;}
@@ -445,7 +447,7 @@ if($locationVideo !=''){
 <li class="fnt-16 mb-2 service-width-prop">
 	<div class="d-flex flex-column">
 	<?php if(get_sub_field('content_url') !='') { ?>
-		<a class="serveice-a li-disc-link" href="<?php the_sub_field('content_url'); ?>">
+		<a class="serveice-a" href="<?php the_sub_field('content_url'); ?>">
                               <span class="d-inline-block"><?php the_sub_field('content'); ?></span>
                               
                            </a>
@@ -458,7 +460,7 @@ if($locationVideo !=''){
 </li>
 <?php endwhile; endif; ?>
 </ul>
-	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
+	<a class="hvr-line clr-second fnt-14 data-scroll tab-sw-hd d-md-none li-disc-link" tab-id="#<?php the_sub_field('title'); ?>" href="<?php the_sub_field('learn_more_url'); ?>">تعلم المزيد</a>
 </div>
 
 </div>
