@@ -59,7 +59,7 @@
  
 <style>
 .secut{top:55px;}
-.header-container{justify-content:center;}
+/* .header-container{justify-content:center;} */
 @media (max-width: 768px){
 .secut {
     top: 28px;
@@ -460,7 +460,7 @@ margin-bottom:12px;
     }
 } */
 
-@media (min-width:661px) and (max-width: 767px){
+/* @media (min-width:661px) and (max-width: 767px){
     .lp-hamberg {
         transform: translate(360px,-100%)!important;
     }
@@ -519,11 +519,12 @@ margin-bottom:12px;
     .lp-hamberg {
         transform: translate(50px,-40%)!important;
     }
-}
+} */
 @media (min-width: 768px){
 header .default, header .menu-title {
     margin-right: -6px !important;
 }
+.header-container{justify-content: space-between;}
 }
 @media (min-width:320px) and (max-width: 768px){
 .secut {
@@ -535,11 +536,11 @@ header .default, header .menu-title {
 .secut{
     display:block;
 }
-@media (min-width: 375px) and (max-width: 420px){
+/* @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
     transform: translate(270px,-45%)!important;
 }
-}
+} */
 
 
 </style>
@@ -751,7 +752,7 @@ $header = new WP_Query( $args );
 </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
 </div>
 </div>
-<div class="col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
+<div class="col-md-7 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
 <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
 <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
@@ -781,12 +782,12 @@ $header = new WP_Query( $args );
                 <div class="langue-container">
                     <form action="#">
                         <p style="margin-bottom: 0;">
-                            <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ae-arabic/" checked>
+                            <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae-arabic/" checked>
                             <label for="test1">Arabic</label>
                         </p>
                         <div class="hr-1"></div>
                         <p style="margin-bottom: 0;">
-                            <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ae-new-page/" >
+                            <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/" >
                             <label for="test2">English</label>
                         </p>
                     </form>

@@ -33,90 +33,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-42458763-1');
-
 </script>
 <!-- End Google Tag Manager -->
-
-<!-- global button -->
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.global-dropdown-content');
-  var menu = $('.global-sec');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).ready(function() {
-  $(".global-sec").off("click").on("click", function() {
-    var dropdownContent = $(".global-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".global-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-</script>
-
-<script>
-
-$(window).scroll(function() {
- $('.scroll-hide').css('display', 'block');
-if ($(this).scrollTop()>50)
- {
-    $('.scroll-hide').fadeOut();
-    $('.scroll-hide').css('display', 'none');
- }
-else
- {
-  $('.scroll-hide').fadeIn();
-  $('.scroll-hide').css('display', 'block');
- }
-});
-
-</script>
-
-<!-- language convertor -->
-
-<script>
-$(document).off("mouseup").on("mouseup", function(e) {
-  var container = $('.lanuage-dropdown-content');
-  var menu = $('.language-sec');
-  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-$(document).ready(function() {
-  $(".language-sec").off("click").on("click", function() {
-    var dropdownContent = $(".lanuage-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    } else {
-      dropdownContent.show();
-    }
-  });
-
-  $(window).scroll(function() {
-    var dropdownContent = $(".lanuage-dropdown-content");
-    if (dropdownContent.is(":visible")) {
-      dropdownContent.hide();
-    }
-  });
-});
-
-</script>
  
-
 <!---css---------->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"></noscript>
@@ -139,9 +58,8 @@ $(document).ready(function() {
 
  
 <style>
-   
 .secut{top:55px;}
-.header-container{justify-content: space-around;}
+.header-container{justify-content:space-around;}
 @media (max-width: 768px){
 .secut {
     top: 28px;
@@ -164,6 +82,7 @@ $(document).ready(function() {
 		 line-height: 75px;
 		 letter-spacing: -2px;
 	}
+   
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -203,7 +122,9 @@ $(document).ready(function() {
 	color: #221429 !important;
    }
 .sec-last1{padding-bottom:25px!important;}
-
+.header-container {
+       justify-content: space-between;
+  }
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -232,7 +153,7 @@ $(document).ready(function() {
     position: absolute;
     right: -9px;
 }
-#myDIV, #myDIV1{
+#myDIV, #myDIV1 {
 	display:none;
 	position: absolute;
 	top: 30px;
@@ -258,8 +179,8 @@ $(document).ready(function() {
     padding: 10px;
     border-radius: 5px;
     width: 131px;
-	/* right: -50px; */
-	top: -4px;
+	right: -50px;
+	    top: -4px;
 }
 .triangle-4 {
     width: 0px;
@@ -412,7 +333,7 @@ $(document).ready(function() {
      font-size:12px;
 	 line-height:16px;
    }
-      type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+     [type="radio"]:not(:checked) + label:after {
     content: '';
     width:6px;
     height: 6px;
@@ -436,8 +357,8 @@ $(document).ready(function() {
     background: #fff;
 }
 .secut {
-         right:70px !important;
-         top:50px !important;
+         right:106px !important;
+         /* top:50px !important; */
     }
  }
 
@@ -451,7 +372,7 @@ $(document).ready(function() {
 		position:fixed;
 	}
 	#myDIV {
-		 left: 45px;
+		 left: -19px;
 		 width: 150px;
 	}
 	.triangle {
@@ -466,13 +387,12 @@ $(document).ready(function() {
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
     position: relative;
-    /* left: 67%; */
+    left: 67%;
 }
 }
 
 
 /* global button */
-/* .global-drop{position:fixed;} */
 .global-drop .dropdown-ver a ::after {
     background-image:url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
     left:47px !important;
@@ -534,102 +454,106 @@ margin-bottom:12px;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    top: 0;
+    top:0px;
     /* margin-left: 1rem; */
-}
-/* @media (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(0px,-100%)!important;
-    }
-} */
-
-@media (min-width:661px) and (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(360px,-100%)!important;
-    }
-}
-
-@media (min-width:320px) and (max-width:359px)
-{
-    .lp-hamberg {
-        transform: translate(140px,-40%)!important;
-    }
-}
-@media (min-width:360px) and (max-width:374px)
-{
-    .lp-hamberg {
-        transform: translate(140px,-40%)!important;
-    }
-}
-@media (min-width:375px) and (max-width:420px)
-{
-    .lp-hamberg {
-        transform: translate(150px,-40%)!important;
-    }
-}
-@media (min-width:421px) and (max-width:430px)
-{
-    .lp-hamberg {
-        transform: translate(180px,-40%)!important;
-    }
-}
-@media (min-width:431px) and (max-width:490px)
-{
-    .lp-hamberg {
-        transform: translate(195px,-40%)!important;
-    }
-}
-@media (min-width:491px) and (max-width:535px)
-{
-    .lp-hamberg {
-        transform: translate(205px,-40%)!important;
-    }
-}
-@media (min-width:536px) and (max-width:600px)
-{
-    .lp-hamberg {
-        transform: translate(220px,-40%)!important;
-    }
-}
-@media (min-width:601px) and (max-width:767px)
-{
-    .lp-hamberg {
-        transform: translate(240px,-40%)!important;
-    }
-}
-@media (min-width:767px) and (max-width:1024px)
-{
-    .lp-hamberg {
-        transform: translate(50px,-40%)!important;
-    }
-}
-@media (min-width: 768px){
-header .default, header .menu-title {
-    margin-right: -6px !important;
-}
-}
-@media (min-width:320px) and (max-width: 768px){
-.secut {
-    right: 110px !important;
-    top: 30px !important;
-}
 }
 
 .secut{
     display:block;
 }
-
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
-    transform: translate(271px,-45%)!important;
+    transform: translate(270px,-45%)!important;
 }
 }
-
-
-
-
 
 </style>
+
+<!-- global button -->
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.global-drop .dropdown-content');
+  var menu = $('.global-drop #drop-menu');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".global-drop #drop-menu").off("click").on("click", function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".global-drop .dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
+$(window).scroll(function() {
+ $('.scroll-hide').css('display', 'block');
+if ($(this).scrollTop()>50)
+ {
+    $('.scroll-hide').fadeOut();
+    $('.scroll-hide').css('display', 'none');
+ }
+else
+ {
+  $('.scroll-hide').fadeIn();
+  $('.scroll-hide').css('display', 'block');
+ }
+});
+
+</script>
+
+<!-- language convertor -->
+
+<script>
+$(document).off("mouseup").on("mouseup", function(e) {
+  var container = $('.lanuage-dropdown-content');
+  var menu = $('.language-sec');
+  if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
+
+$(document).ready(function() {
+  $(".language-sec").off("click").on("click", function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    } else {
+      dropdownContent.show();
+    }
+  });
+
+  $(window).scroll(function() {
+    var dropdownContent = $(".lanuage-dropdown-content");
+    if (dropdownContent.is(":visible")) {
+      dropdownContent.hide();
+    }
+  });
+});
+
+
+
+$(document).ready(function(){
+  $(".dropdown-item").click(function(){
+    var clickedItem = $(this).text();
+    $(".dropdown-toggle").text(clickedItem);
+  });
+});
+
+
+
+</script>
 
 </head>
 
@@ -656,32 +580,32 @@ $header = new WP_Query( $args );
         <div class="row ">
         <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
          <div class="global-drop col-4">
-            <div class="secut col-12 scroll-hide global-sec" id="drop-menu">
-                <div class="dropdown-ver d-flex global-dropdown" >
+            <div class="secut col-12 scroll-hide" id="drop-menu">
+                <div class="dropdown-ver d-flex" onclick="myFunction1()">
                         <a href="javascript:void(0)" >
-                        <p onclick="myFunction()">Global</p>
+                        <p class="selected-text" aria-haspopup="true">Global</p>
                         </a>
                 </div>
-                <div class="dropdown-content global-dropdown-content" id="myDIV1">
+                <div class="dropdown-content" id="myDIV1">
                     <div class="langue-container">
                         <ul>
-                            <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
-                                <h6>India</h6>
+                            <li><a href="https://localhost/cms/lollypop-cms/uae-new-landing">
+                                <h6 class="dropdown-item">India</h6>
                                 <p>Bangalore, Mumbai, Chennai,<br>Hyderabad</p></a>
                             </li>
                             <hr>
                             <li><a href="https://lollypop.design/ui-ux-design-agency-in-usa/">
-                                <h6>USA</h6>
+                                <h6 class="dropdown-item">USA</h6>
                                 <p>San Jose, Dallas, Salt Lake City</p></a>
                             </li>
                             <hr>
                             <li><a href="https://lollypop.design/ui-ux-design-agency-in-uae/">
-                                <h6>UAE</h6>
+                                <h6 class="dropdown-item">UAE</h6>
                                 <p>Dubai</p></a>
                             </li>
                             <hr>
-                            <li><a href="https://lollypop.design/ui-ux-design-agency-vietnam/">
-                                <h6>Vietnam</h6>
+                            <li><a href="https://localhost/cms/lollypop-cms/uae-new-landing">
+                                <h6  class="dropdown-item">Vietnam</h6>
                                 <p>Ho Chi Minh City</p></a>
                             </li>
                         </ul>
@@ -781,32 +705,31 @@ $header = new WP_Query( $args );
 </div>
 
  <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-  <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
-            <div class="dropdown-ver d-flex">
-                    <a href="javascript:void(0)" onclick="myFunction1()">
-                    <p class="" style="line-height:24px;">ENG</p>
-                    </a>
-            </div>
-            <div class="lanuage-dropdown-content drop-hide" id="myDIV">
-                <div class="">
-                        <div class="triangle triangle-4"></div>
-                        <div class="langue-container">
-                            <form action="#">
-                                <p style="margin-bottom: 0;">
-                                    <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ae-arabic/">
-                                    <label for="test1">Arabic</label>
-                                </p>
-                                <div class="hr-1"></div>
-                                <p style="margin-bottom: 0;">
-                                    <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ae-new-page/" checked>
-                                    <label for="test2">English</label>
-                                </p>
-                            </form>
-                        </div>
-                </div>
+   <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
+	 <div class="dropdown-ver d-flex">
+			<a href="javascript:void(0)" onclick="myFunction()">
+			   <p class="" style="line-height:24px;">ARA</p>
+		    </a>
+	 </div>
+	<div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
+        <div class="">
+            <div class="triangle triangle-4"></div>
+                <div class="langue-container">
+                    <form action="#">
+                        <p style="margin-bottom: 0;">
+                            <input type="radio" id="test1" name="radio-group"  value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae-arabic/" checked>
+                            <label for="test1">Arabic</label>
+                        </p>
+                        <div class="hr-1"></div>
+                        <p style="margin-bottom: 0;">
+                            <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/" >
+                            <label for="test2">English</label>
+                        </p>
+                    </form>
+                </div>   
           </div>
-	</div> 
-</div>
+	   </div> 
+    </div>
 </div>
 </div>
 </div>
@@ -928,4 +851,5 @@ $header = new WP_Query( $args );
 <div class="loader">
 <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
 </div>
+
 
