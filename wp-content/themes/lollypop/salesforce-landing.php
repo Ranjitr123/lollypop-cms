@@ -187,7 +187,7 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <ul class="col-md-8 col-lg-8 col-12 domians-card mx-auto">
+            <ul class="col-md-8 col-lg-8 col-12 domians-card mx-auto pt-5">
 				<?php if( have_rows('covered_repeater_sec_') ) : while( have_rows('covered_repeater_sec_') ): the_row(); ?>
                <li class="domains-card-list">
                   <figure>
