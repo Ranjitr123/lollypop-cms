@@ -83,7 +83,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-7 mx-auto">
-                    <p class="firstp"> Some of the stories we helped transform <?php echo get_field('titles')?></p>
+                    <p class="firstp"><?php echo get_field('titles')?></p>
                     <div class="row">
                         <?php while(have_rows('social_icons_section')){the_row();?>
                         <div class="col-md-3 col-6">
