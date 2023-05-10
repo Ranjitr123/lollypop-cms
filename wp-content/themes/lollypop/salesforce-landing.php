@@ -103,36 +103,21 @@ get_header();
       <div class="row">
          <div class="col-12 col-md-10 col-lg-9 offset-3 mx-auto">
             <div class="mb-90 data-scroll" style="opacity: 1; transform: translateY(0px);">
-               <h2 class="fnt-50 fnt-800 mb-16 col-md-6 col-lg-11">Why Companies Choose Lollypop for Salesforce Integration?</h2>
-               <p class="fnt-24 col-md-8 col-lg-8 px-0">With experience completing over 500 projects and a 97% client satisfaction rate, Lollypop is the right partner for many leading brands.</p>
+               <h2 class="fnt-50 fnt-800 mb-16 col-md-6 col-lg-11"><?php the_field('heading') ?></h2>
+               <p class="fnt-24 col-md-8 col-lg-8 px-0"><?php the_field('content') ?></p>
             </div>
          </div>
          <div class="col-12 col-md-10 col-lg-9 offset-3 mx-auto">
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
+				 <?php if( have_rows('content_section') ) : while( have_rows('content_section') ): the_row(); ?>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll">
                   <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Experienced Salesforce Partner</h3>
-                     <p class="mb-22 col-12 col-md-12">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
+                     <h3 class="fnt-22 fnt-800 mb-2"><?php the_sub_field('title'); ?></h3>
+                     <p class="mb-22 col-12 col-md-12"><?php the_sub_field('content'); ?></p>
                   </div>
                </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Experienced Salesforce Partner</h3>
-                     <p class="mb-22 col-12 col-md-12">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Experienced Salesforce Partner</h3>
-                     <p class="mb-22 col-12 col-md-12">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Experienced Salesforce Partner</h3>
-                     <p class="mb-22 col-12 col-md-12">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
+			   <?php endwhile; endif; ?>
+             
             </ul>
          </div>
       </div>
@@ -144,33 +129,22 @@ get_header();
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-12 col-lg-8 clr-white mx-auto">
-            <span class="d-block fnt-14 text-capitalize mb-2">Services and Solutions</span>
-            <h4 class="fnt-40 fnt-800 mb-3">What you get with our Salesforce Managed Services</h4>
-            <p class="col-md-7 col-lg-10 mb-5 fnt-24">We offer tailored managed services plans for Salesforce that  are specifically designed to provide the <br> appropriate expertise.</p>
+            <span class="d-block fnt-14 text-capitalize mb-2"><?php the_field('service_small_heading_sec') ?></span>
+            <h4 class="fnt-40 fnt-800 mb-3"><?php the_field('service_heading_sec') ?></h4>
+            <p class="col-md-7 col-lg-10 mb-5 fnt-24"><?php the_field('service_description_sec') ?></p>
         </div>
     </div>
     <ul class="col-md-8 col-lg-8 col-12 sales-cards mx-auto">
+		 <?php if( have_rows('service_repeater_sec') ) : while( have_rows('service_repeater_sec') ): the_row(); ?>
         <li style="background: #FFFFFF;">
            <figure>
-             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
+             <img src="<?php the_sub_field('service-icon'); ?>" alt="">
            </figure>
-            <figcaption class="fnt-800 fnt-20 text-center mb-2">Salesforce Consulting</figcaption>
-             <p>We Analyse Your Business Requirements And Suggest Solutions Using Salesforce.</p>
+            <figcaption class="fnt-800 fnt-20 text-center mb-2"><?php the_sub_field('service-title'); ?></figcaption>
+             <p><?php the_sub_field('service-content'); ?></p>
         </li>
-        <li style="background: #FFFFFF;">
-           <figure>
-             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-           </figure>
-            <figcaption class="fnt-800 fnt-20 text-center mb-2">Salesforce Implementation</figcaption>
-             <p>We Implement Salesforce Clouds Along With 3rd Party Apps Including Sales Cloud, Service Cloud.</p>
-        </li>
-        <li style="background: #FFFFFF;">
-           <figure>
-             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-           </figure>
-            <figcaption class="fnt-800 fnt-20 text-center mb-2">Salesforce Integration</figcaption>
-            <p>We Provide Seamless Integration Services Where Businesses Can Interconnect.</p>
-        </li>
+		<?php endwhile; endif; ?>
+       
     </ul>
 </div>
 
@@ -182,36 +156,20 @@ get_header();
       <div class="row">
          <div class="col-12 col-md-8 col-lg-8 mx-auto">
             <div class="mb-90 data-scroll" style="opacity: 1; transform: translateY(0px);">
-               <h2 class="fnt-50 fnt-800 mb-16 col-md-12">Benefits of Having a Salesforce for your Business</h2>
-               <p class="fnt-24 col-md-9 col-lg-9 col-12">With experience completing over 500 projects and a 97% client satisfaction rate, Lollypop is the right partner for many leading brands.</p>
+               <h2 class="fnt-50 fnt-800 mb-16 col-md-12"><?php the_field('service_heading') ?></h2>
+               <p class="fnt-24 col-md-9 col-lg-9 col-12"><?php the_field('service_content_sec') ?></p>
             </div>
          </div>
          <div class="col-12 col-md-8 col-lg-8 mx-auto">
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
+				 <?php if( have_rows('service_content_section') ) : while( have_rows('service_content_section') ): the_row(); ?>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
                   <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Ultimate Accessibility </h3>
-                     <p class="mb-22">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
+                     <h3 class="fnt-22 fnt-800 mb-2"><?php the_sub_field('service_title'); ?> </h3>
+                     <p class="mb-22"><?php the_sub_field('service_content'); ?></p>
                   </div>
                </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-9 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Better Time Management</h3>
-                     <p class="mb-22">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Increased Revenue</h3>
-                     <p class="mb-22">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Trusted Reporting</h3>
-                     <p class="mb-22">Experts in various Salesforce products and industry verticals combined with an experienced resource pool.</p>
-                  </div>
-               </li>
+               <?php endwhile; endif; ?>
             </ul>
             <a class="clr-second fnt-14 hvr-line data-scroll" href="https://lollypop.design/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Get in Touch</a>
          </div>
@@ -224,48 +182,20 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-8 col-12 mx-auto">
-               <h2 class="fnt-50 fnt-800 mb-16 col-md-12">We have covered all industries across the domain</h2>
-               <p class="fnt-24 col-md-9 col-lg-9 col-12">From startups to known brands we have many stories to tell</p>
+               <h2 class="fnt-50 fnt-800 mb-16 col-md-12"><?php the_field('covered_sec_title') ?></h2>
+               <p class="fnt-24 col-md-9 col-lg-9 col-12"><?php the_field('covered_sec_description') ?></p>
             </div>
         </div>
         <div class="row">
             <ul class="col-md-8 col-lg-8 col-12 domians-card mx-auto">
+				<?php if( have_rows('covered_repeater_sec_') ) : while( have_rows('covered_repeater_sec_') ): the_row(); ?>
                <li class="domains-card-list">
                   <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
+                    <img class="img-fluid" src="<?php the_sub_field('covered-icon'); ?>" alt="">
                   </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">Healthcare</figcaption>
+                  <figcaption class="fnt-800 fnt-20 mx-2"><?php the_sub_field('covered-title'); ?></figcaption>
                </li>
-               <li class="domains-card-list">
-                  <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-                  </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">Retail</figcaption>
-               </li>
-               <li class="domains-card-list">
-                  <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-                  </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">Manfacturing</figcaption>
-               </li>
-               <li class="domains-card-list">
-                  <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-                  </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">EdTech</figcaption>
-               </li>
-               <li class="domains-card-list">
-                  <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-                  </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">FinTech</figcaption>
-               </li>
-               <li class="domains-card-list">
-                  <figure>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/system.svg" alt="">
-                  </figure>
-                  <figcaption class="fnt-800 fnt-20 mx-2">Media</figcaption>
-               </li>
+               <?php endwhile; endif; ?>
             </ul>
         </div>
     </div>
