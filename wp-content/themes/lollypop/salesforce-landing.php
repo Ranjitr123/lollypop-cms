@@ -46,7 +46,9 @@ get_header();
         .sales-cards li {max-width:100%; margin-bottom:1rem; margin-right:0px;}
     }
   
-
+.need_data2 {
+    margin-top: 100px;
+}
 </style>
 <main class="main">
 <!-- 01 -->
