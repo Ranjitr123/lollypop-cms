@@ -57,11 +57,11 @@ get_header();
             <div class="row">
                <div class="col-12 col-md-11 offset-md-1">
                   <div class="page-head">
-                     <span class="d-block fnt-14 text-capitalize mb-2 clr-default">Salesforce Service</span>
+                     <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php the_field('small_title') ?></span>
                      <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0">
-                       Integrating Websites with Salesforce Services.
+                       <?php the_field('title1') ?>
                      </h1>
-                     <p class="fnt-24 col-md-10 col-lg-10">Driving transformational experiences for our clients, our commitment to innovation is reflected in our design.</p>
+                     <p class="fnt-24 col-md-10 col-lg-10"><?php the_field('description') ?></p>
                   </div>
                </div>
             </div>
@@ -70,9 +70,9 @@ get_header();
       <div class='col-12 col-lg-10 col-md-10 mx-auto'>
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
-                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
+                <div id="play2" data-plyr-provider="<?php echo get_field('video_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_template_directory_uri(); ?>/assets/images/salesforce/banner.svg">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('video_provider')?>" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_field('video_image')?>">
               </video>
             </div>
           </div>
