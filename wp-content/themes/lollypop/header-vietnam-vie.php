@@ -539,7 +539,7 @@ header .default, header .menu-title {
 }
 }
 
-.header-flexs{justify-content:space-evenly;}
+.header-flexs{justify-content:center;}
 
 </style>
 
@@ -685,7 +685,7 @@ $header = new WP_Query( $args );
 </div>
 </div>
 
-<div class="col-2 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+<div class="col-2 col-md-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
 <div class="d-flex align-items-center justify-content-md-end">
 <div class="navbar-list d-md-flex mb-0">
 <div class="nav-item clr-second">
