@@ -55,7 +55,7 @@ get_header();
 <section class="sec-pd pb-0 sec-bnr">
    <div class="container">
       <div class="row">
-         <div class="col-12 col-md-11 col-lg-11 mx-auto">
+         <div class="col-12 col-md-10 col-lg-10 mx-auto">
             <div class="row">
                <div class="col-12 col-md-11 offset-md-1">
                   <div class="page-head">
