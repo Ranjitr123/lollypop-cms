@@ -530,6 +530,7 @@ header .default, header .menu-title {
     right: 110px !important;
     top: 30px !important;
 }
+.header-flexs{justify-content:initial!important;}
 }
 
 
@@ -639,7 +640,7 @@ $header = new WP_Query( $args );
 <div class="container">
 <div class="row">
 <div class="col-12 col-lg-11 mx-auto d-flex header-flexs">
-<div class="col-6 d-block">
+<div class="col-6 d-block col-md-1">
 <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
    <!-- global dropdown -->
 <div class="row d-block d-md-none">
