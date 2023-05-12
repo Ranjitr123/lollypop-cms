@@ -54,6 +54,10 @@ get_header();
 .indutstry-list__item {
     margin-top: 48px;
 }}
+@media (min-width: 992px){
+.sec-pd.last {
+    padding-bottom: 100px;
+}}
 </style>
 <main class="main">
 <!-- 01 -->
