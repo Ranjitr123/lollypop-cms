@@ -49,6 +49,7 @@ get_header();
 .need_data2 {
     margin-top: 100px;
 }
+.mb-48{margin-bottom:48px;}
 </style>
 <main class="main">
 <!-- 01 -->
@@ -104,7 +105,7 @@ get_header();
    <div class="container">
       <div class="row">
          <div class="col-12 col-md-8 col-lg-8 offset-2 mx-auto">
-            <div class="mb-90 data-scroll" style="opacity: 1; transform: translateY(0px);">
+            <div class="mb-48 data-scroll" style="opacity: 1; transform: translateY(0px);">
                <h2 class="fnt-50 fnt-800 mb-16 col-md-12 col-lg-12"><?php the_field('heading') ?></h2>
                <p class="fnt-24 col-md-9 col-lg-9 px-0"><?php the_field('content') ?></p>
             </div>
