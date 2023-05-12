@@ -50,6 +50,10 @@ get_header();
     margin-top: 100px;
 }
 .mb-48{margin-bottom:48px;}
+@media (min-width: 992px){
+.indutstry-list__item {
+    margin-top: 48px;
+}}
 </style>
 <main class="main">
 <!-- 01 -->
