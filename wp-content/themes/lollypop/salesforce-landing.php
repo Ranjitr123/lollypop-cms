@@ -59,6 +59,10 @@ get_header();
     padding-bottom: 100px;
 }
 }
+
+.footmar {
+    margin-top: 100px;
+}
 </style>
 <main class="main">
 <!-- 01 -->
