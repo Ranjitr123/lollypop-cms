@@ -69,7 +69,7 @@ get_header();
             </div>
          </div>
       </div>
-      <div class='col-12 col-lg-10 col-md-10 mx-auto'>
+      <div class='col-12 col-lg-9 col-md-9 mx-auto'>
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
                 <div id="play2" data-plyr-provider="<?php echo get_field('video_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
