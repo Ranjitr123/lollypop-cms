@@ -58,7 +58,6 @@ get_header();
 .sec-pd.last {
     padding-bottom: 100px;
 }
-.domains-card-list:nth-last-child(4),.domains-card-list:nth-last-child(5),.domains-card-list:nth-last-child(6){margin-bottom:0px;}
 }
 </style>
 <main class="main">
