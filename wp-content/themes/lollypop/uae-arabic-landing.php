@@ -259,9 +259,7 @@ cursor: pointer;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 487px;
 	}
-	li.case-study-slider .case-slider-content:nth-child(1) {
-	left:65px !important;
-	}
+	.project-sec .slick-slider:first-child .award-info .case-slider-content{padding-left:172px !important;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
