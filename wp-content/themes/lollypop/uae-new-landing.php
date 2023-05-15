@@ -274,6 +274,25 @@ if($locationVideo !=''){
 
 </section>
 <!--02-->
+<!--<section class="project-sec">
+   <div class="col-md-11 mx-auto width-container">
+  <div class="case-study-container">
+	<?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+     <div>
+        <div class="case-study-slider lp-awards-list case-study-slider-<?php echo $count; ?>">
+			<img src="<?php the_sub_field('slider_image'); ?>" alt="logo">
+            <div class="case-slider-content">
+              <span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
+              <h6 style="color: #FFFFFF;"><?php the_sub_field('slider_subtitle'); ?></h6>
+              <div class="hvr-line-re fnt-14  d-inline-block"><a href="<?php the_sub_field('button_link'); ?>">View case study</a></div>
+            </div>
+        </div>
+     </div>
+	 <?php $count++; endwhile; endif; ?>
+  </div>
+  </div>
+</section>-->
+
 <section class="project-sec">
  <div class="col-md-11 mx-auto width-container">
           <div class="row">
@@ -371,6 +390,22 @@ if($locationVideo !=''){
       </div>
     </div>
    </div>
+    <!--<div class="col-md-11 mx-auto width-container">
+     <div class="arabic-sliders-container">
+		<?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
+       <div>
+          <div class="arabic-slider">
+              <figure>
+                <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
+                <figcaption><?php the_sub_field('image_title'); ?></figcaption>
+            </figure>
+          </div>
+       </div>
+	   <?php endwhile; endif; ?>
+     </div>
+    </div>-->
+	
+	
 	
  <div class="col-md-11 mx-auto width-container">
               <ul class="px-0 lp-awards-list d-flex four-card-slider arabic-sliders-container">
