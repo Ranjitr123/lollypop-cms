@@ -274,7 +274,7 @@ if($locationVideo !=''){
 
 </section>
 <!--02-->
-<section class="project-sec">
+<!--<section class="project-sec">
    <div class="col-md-11 mx-auto width-container">
   <div class="case-study-container">
 	<?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
@@ -291,9 +291,10 @@ if($locationVideo !=''){
 	 <?php $count++; endwhile; endif; ?>
   </div>
   </div>
-</section>
+</section>-->
 
- <div class="fluid-width">
+<section class="project-sec">
+ <div class="col-md-11 mx-auto width-container">
           <div class="row">
             <div class="col-12 px-md-0">
               <ul class="px-0 lp-awards-list d-flex four-card-slider case-study-slider">
@@ -312,7 +313,7 @@ if($locationVideo !=''){
             </div>
           </div>
         </div>
-
+</section>
 <!--03-->
 <section class="sec-pd sec-pb">
 <div class="container"> 
