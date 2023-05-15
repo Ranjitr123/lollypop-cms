@@ -296,9 +296,9 @@ if($locationVideo !=''){
  <div class="fluid-width">
           <div class="row">
             <div class="col-12 px-md-0">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider">
-               <?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg<?php echo $count;?>">
+              <ul class="px-0 lp-awards-list d-flex four-card-slider case-study-slider">
+               <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+                <li class="lp-awards-list__item newimg">
                   <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
                     <div class="case-slider-content">
 						<span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
@@ -307,7 +307,7 @@ if($locationVideo !=''){
 					</div>
                   </div>
                 </li>
-                  <?php $count++; endwhile; endif; ?>
+                  <?php  endwhile; endif; ?>
               </ul>
             </div>
           </div>
