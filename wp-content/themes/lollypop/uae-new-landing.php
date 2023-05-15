@@ -153,6 +153,7 @@ cursor: pointer;
  
 }
 .flag-content:nth-child(4){margin-top:0rem!important;}
+.flag-content:nth-child(3){margin-top:0rem!important;}
 @media screen and (min-width:768px) and (max-width:1023px){
   .card-white-bg{
       height:200px;
