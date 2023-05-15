@@ -147,6 +147,7 @@ cursor: pointer;
   .case-study-slider .hvr-line-re a {font-size: 14px;}
   .card-white-bg h6 {font-size:16px;}
   .flag-content:nth-child(4){margin-top:0rem!important;}
+  .flag-content:nth-child(3){margin-top:0rem!important;}
   a.hvr-line.li-disc-link::after {
     right: 25px !important;
   }
