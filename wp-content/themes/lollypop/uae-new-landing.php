@@ -295,6 +295,23 @@ if($locationVideo !=''){
   </div>
 </section>
 
+<div class="sec-pd sec-pt">
+  <div class="fluid-width">
+          <div class="row">
+            <div class="col-12 px-md-0">
+              <ul class="px-0 lp-awards-list d-flex four-card-slider">
+               <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+                <li class="lp-awards-list__item">
+                  <div class="award-info"><img class="mb-3 img-fluid" src="<?php the_sub_field('slider_image') ?>" alt="Image">
+                  </div>
+                </li>
+                  <?php endwhile; endif; ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
 <!--03-->
 <section class="sec-pd sec-pb">
 <div class="container"> 
