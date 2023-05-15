@@ -207,25 +207,18 @@ cursor: pointer;
     width: 100% !important;
     max-width: fit-content !important;}
 	
-	
-.slick-prev:before, .slick-next:before, .slick-prev, .slick-next {
-    content: ' ' !important;
-    display: block!important;
-    margin-left: 8px!important;
-    width: 15px!important;
-    height: 15px!important;
-    border-top: 2px solid #fd2e35!important;
-    border-left: 2px solid #fd2e35!important;
-    -webkit-transform: rotate(-45deg)!important;
-    -ms-transform: rotate(-45deg)!important;
-    transform: rotate(-45deg)!important;
-}
-.slick-arrow{-webkit-border-radius: 50%;
-    border-radius: 50%!important;
-    background-color: #fff!important;
-    -webkit-transform: translateY(-50%)!important;
-    -ms-transform: translateY(-50%)!important;
-    transform: translateY(-50%)!important;}
+	.lp-awards-list__item.newimg:nth-child(odd) .img {
+   min-height: 100%;
+    }
+	.lp-awards-list__item.newimg:nth-child(even) .img {
+    min-height: 100%;
+    }
+	.lp-awards-list__item.newimg:nth-child(odd) {
+    min-width: 100%;
+	}
+	.lp-awards-list__item.newimg:nth-child(even) {
+    min-width: 100%;
+	}
 
 	
 </style>
