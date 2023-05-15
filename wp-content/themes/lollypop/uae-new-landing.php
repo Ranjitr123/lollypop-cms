@@ -416,7 +416,6 @@ if($locationVideo !=''){
                 <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
                 <figcaption><?php the_sub_field('image_title'); ?></figcaption>
             </figure>
-                  </div>
                 </li>
                   <?php  endwhile; endif; ?>
               </ul>
