@@ -163,7 +163,7 @@
 
 .dropdown-ver{
 	align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .triangle {
