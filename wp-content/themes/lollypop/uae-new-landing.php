@@ -208,16 +208,16 @@ cursor: pointer;
     max-width: fit-content !important;}
 	
 	.lp-awards-list__item.newimg:nth-child(odd) .img {
-   min-height: 100%;
+   min-height: 100%!important;
     }
 	.lp-awards-list__item.newimg:nth-child(even) .img {
-    min-height: 100%;
+    min-height: 100%!important;
     }
 	.lp-awards-list__item.newimg:nth-child(odd) {
-    min-width: 100%;
+    min-width: 100%!important;
 	}
 	.lp-awards-list__item.newimg:nth-child(even) {
-    min-width: 100%;
+    min-width: 100%!important;
 	}
 
 	
