@@ -259,7 +259,7 @@ cursor: pointer;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 487px;
 	}
-	ul li.case-study-slider .case-slider-content:nth-child(1) {
+	li.case-study-slider .case-slider-content:nth-child(1) {
 	left:65px !important;
 	}
 </style>
