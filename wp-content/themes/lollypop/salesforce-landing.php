@@ -220,7 +220,7 @@ get_header();
 
 <!-- faq -->
 
-<section>
+<!--<section>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 col-lg-10 mx-auto">
@@ -251,7 +251,7 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section>-->
             
 
  <section class="sec-footer-trans footmar">
