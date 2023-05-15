@@ -207,7 +207,12 @@ cursor: pointer;
     width: 100% !important;
     max-width: fit-content !important;}
 	
-
+.slide_img{
+      height:60vh !important;
+      max-height:547px !important;
+      width:100% !important;
+      max-width:454px !important;
+    }
 	
 </style>
 <main class="main">
