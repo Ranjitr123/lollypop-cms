@@ -260,7 +260,7 @@ cursor: pointer;
     min-width: 487px;
 	}
 	.lp-awards-list__item.newimg:nth-child(1).case-study-slider .case-slider-content {
-	left:1%!important;
+	left:1% !important;
 	}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
