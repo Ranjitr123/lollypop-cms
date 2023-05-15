@@ -95,7 +95,7 @@ get_header();
    </div>
 </section>
 <!-- 02 -->
-  <section class="some_stories">
+  <!--<section class="some_stories">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-7 mx-auto">
@@ -111,7 +111,7 @@ get_header();
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 <!-- 03 -->
 <section class="sec-pd sec-md-pt" id="sixth">
