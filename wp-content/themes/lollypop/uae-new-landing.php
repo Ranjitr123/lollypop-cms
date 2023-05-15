@@ -259,7 +259,7 @@ if($locationVideo !=''){
   <div class="case-study-container">
 	<?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
      <div>
-        <div class="case-study-slider case-study-slider-<?php echo $count; ?>">
+        <div class="case-study-slider lp-awards-list case-study-slider-<?php echo $count; ?>">
 			<img src="<?php the_sub_field('slider_image'); ?>" alt="logo">
             <div class="case-slider-content">
               <span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
