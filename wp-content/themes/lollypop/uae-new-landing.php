@@ -639,7 +639,7 @@ $('.nav-dropdown-text').text(locas);
       slidesToShow:2.8,
       slidesToScroll: 1,
       dots: false,
-      arrows:false,
+      arrows:true,
       autoplay:0,
     
       responsive: [
@@ -680,7 +680,7 @@ $('.nav-dropdown-text').text(locas);
       slidesToShow: 2.5,
       slidesToScroll: 1,
       dots: false,
-      arrows:false,
+      arrows:true,
       autoplay:0,
       mobileFirst:false,
       centerMode: false,
