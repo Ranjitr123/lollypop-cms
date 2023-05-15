@@ -305,11 +305,11 @@ if($locationVideo !=''){
             </div>
           </div>
        </div>
-       <div class="row px-0">
-       <div class="col-12 col-md-8 col-lg-10 offset-md-2">
+       <div class="row px-0" style="justify-content:center;">
+       <div class="col-12 col-md-8 col-lg-8">
         <div class="row px-0 flag-container">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
-            <div class="col-xs-6 col-md-6 col-lg-4 mb-4 mb-md-0 flag-content">
+            <div class="col-xs-6 col-md-6 col-lg-6 mb-4 mb-md-0 flag-content">
                   <div class="card-white-bg">
                       <img  class="mb-3" src="<?php the_sub_field('flag_icon'); ?>" alt="flage">
                       <h6 class="fnt-800 fnt-18"><?php the_sub_field('heading'); ?></h6>
