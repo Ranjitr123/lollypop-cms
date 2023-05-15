@@ -148,10 +148,11 @@ cursor: pointer;
   .case-study-slider .hvr-line-re a {font-size: 14px;}
   .card-white-bg h6 {font-size:16px;}
   .flag-content:nth-child(4){margin-top:0rem!important;}
+   .flag-content:nth-child(3){margin-top:0rem!important;}
   .case-study-slider h6 { max-width:250px;}
  
 }
-
+.flag-content:nth-child(4){margin-top:0rem!important;}
 @media screen and (min-width:768px) and (max-width:1023px){
   .card-white-bg{
       height:200px;
@@ -309,7 +310,7 @@ if($locationVideo !=''){
        <div class="col-12 col-md-8 col-lg-8">
         <div class="row px-0 flag-container">
 				<?php if( have_rows('celebrating_years_section') ) : while( have_rows('celebrating_years_section') ): the_row(); ?>
-            <div class="col-xs-6 col-md-6 col-lg-6 mb-4 mb-md-0 flag-content">
+            <div class="col-xs-6 col-md-6 col-lg-6 mb-4 flag-content">
                   <div class="card-white-bg">
                       <img  class="mb-3" src="<?php the_sub_field('flag_icon'); ?>" alt="flage">
                       <h6 class="fnt-800 fnt-18"><?php the_sub_field('heading'); ?></h6>
