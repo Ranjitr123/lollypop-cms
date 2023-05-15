@@ -259,7 +259,9 @@ cursor: pointer;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 487px;
 	}
-	.project-sec .slick-slider:nth-child(1) .award-info .case-slider-content{padding-left:172px !important;}
+	.project-sec .case-study-slider .slick-list .slick-track li:first-child{
+  background: red;
+}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
