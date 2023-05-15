@@ -207,16 +207,16 @@ cursor: pointer;
     width: 100% !important;
     max-width: fit-content !important;}
 	
-	.lp-awards-list__item.newimg:nth-child(odd) .img {
+	.lp-awards-list__item.newimg:nth-child() .img {
    min-height: auto!important;
     }
-	.lp-awards-list__item.newimg:nth-child(even) .img {
+	.lp-awards-list__item.newimg:nth-child() .img {
     min-height: auto!important;
     }
-	.lp-awards-list__item.newimg:nth-child(odd) {
+	.lp-awards-list__item.newimg:nth-child() {
     min-width: auto!important;
 	}
-	.lp-awards-list__item.newimg:nth-child(even) {
+	.lp-awards-list__item.newimg:nth-child() {
     min-width: auto!important;
 	}
 
