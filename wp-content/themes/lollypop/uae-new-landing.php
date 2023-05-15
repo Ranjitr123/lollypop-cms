@@ -214,16 +214,16 @@ cursor: pointer;
       max-width:454px !important;
     }
 	.lp-awards-list__item.newimg:nth-child(odd) .img {
-    min-height: 471px;
+    min-height: 636px;
     }
 	.lp-awards-list__item.newimg:nth-child(even) .img {
-    min-height: 471px;
+    min-height: 636px;
     }
 	.lp-awards-list__item.newimg:nth-child(odd) {
-    min-width: 541px;
+    min-width: 487px;
 	}
 	.lp-awards-list__item.newimg:nth-child(even) {
-    min-width: 541px;
+    min-width: 487px;
 	}
 	
 </style>
