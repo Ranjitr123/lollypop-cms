@@ -208,7 +208,7 @@ cursor: pointer;
     max-width: fit-content !important;}
 	
 	
-.slick-prev:before, .slick-next:before {
+.slick-prev:before, .slick-next:before, .slick-prev, .slick-next {
     content: ' ' !important;
     display: block!important;
     margin-left: 8px!important;
