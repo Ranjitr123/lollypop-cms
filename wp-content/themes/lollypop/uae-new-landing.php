@@ -208,16 +208,16 @@ cursor: pointer;
     max-width: fit-content !important;}
 	
 	.lp-awards-list__item.newimg:nth-child() .img {
-   min-height: auto!important;
+   max-height: 100%!important;
     }
 	.lp-awards-list__item.newimg:nth-child() .img {
-    min-height: auto!important;
+    max-height: 100%!important;
     }
-	.lp-awards-list__item.newimg:nth-child() {
-    min-width: auto!important;
+	.lp-awards-list__item.newimg:nth-child(odd) {
+    max-width: 100%!important;
 	}
-	.lp-awards-list__item.newimg:nth-child() {
-    min-width: auto!important;
+	.lp-awards-list__item.newimg:nth-child(even) {
+    max-width: 100%!important;
 	}
 
 	
