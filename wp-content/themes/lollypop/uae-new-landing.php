@@ -206,6 +206,28 @@ cursor: pointer;
 .service-width-prop {display: block !important;
     width: 100% !important;
     max-width: fit-content !important;}
+	
+	
+.slick-prev:before, .slick-next {
+    content: ' ' !important;
+    display: block;
+    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fd2e35;
+    border-left: 2px solid #fd2e35;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.slick-arrow{-webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);}
+
+	
 </style>
 <main class="main">
 <!--01-->
