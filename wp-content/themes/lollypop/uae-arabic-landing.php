@@ -259,11 +259,9 @@ cursor: pointer;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 487px;
 	}
-	.lp-awards-list__item.newimg:nth-child(1).case-study-slider .case-slider-content {
-	left:1% !important;
+	ul li.case-study-slider .case-slider-content:nth-child(1) {
+	left:65px !important;
 	}
-	.case-study-slider-1 .award-info{position:relative;}
-	.case-study-slider-1 .case-slider-content{ position: absolute;right:30px !important;}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
