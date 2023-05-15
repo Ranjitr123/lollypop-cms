@@ -207,18 +207,6 @@ cursor: pointer;
     width: 100% !important;
     max-width: fit-content !important;}
 	
-	.lp-awards-list__item.newimg:nth-child() .img {
-   max-height: 100%!important;
-    }
-	.lp-awards-list__item.newimg:nth-child() .img {
-    max-height: 100%!important;
-    }
-	.lp-awards-list__item.newimg:nth-child(odd) {
-    max-width: 100%!important;
-	}
-	.lp-awards-list__item.newimg:nth-child(even) {
-    max-width: 100%!important;
-	}
 
 	
 </style>
@@ -288,14 +276,14 @@ if($locationVideo !=''){
   </div>
 </section>
 
-<div class="sec-pd sec-pt">
-  <div class="fluid-width">
+ <div class="fluid-width">
           <div class="row">
             <div class="col-12 px-md-0">
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
                <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
-                <li class="lp-awards-list__item">
-                  <div class="award-info"><img class="mb-3 img-fluid" src="<?php the_sub_field('slider_image') ?>" alt="Image">
+                <li class="lp-awards-list__item newimg">
+                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
+                    <div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
                   </div>
                 </li>
                   <?php endwhile; endif; ?>
@@ -303,7 +291,6 @@ if($locationVideo !=''){
             </div>
           </div>
         </div>
-      </div>
 
 <!--03-->
 <section class="sec-pd sec-pb">
