@@ -390,7 +390,7 @@ if($locationVideo !=''){
       </div>
     </div>
    </div>
-    <div class="col-md-11 mx-auto width-container">
+    <!--<div class="col-md-11 mx-auto width-container">
      <div class="arabic-sliders-container">
 		<?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
        <div>
@@ -403,7 +403,7 @@ if($locationVideo !=''){
        </div>
 	   <?php endwhile; endif; ?>
      </div>
-    </div>
+    </div>-->
 	
 	
 	
