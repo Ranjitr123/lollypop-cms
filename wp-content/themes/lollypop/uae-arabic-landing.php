@@ -240,6 +240,25 @@ cursor: pointer;
 .service-width-prop {display: block !important;
     width: 100% !important;
     max-width: fit-content !important;}
+	
+	.slide_img{
+      height:60vh !important;
+      max-height:547px !important;
+      width:100% !important;
+      max-width:454px !important;
+    }
+	.lp-awards-list__item.newimg:nth-child(odd) .img {
+    min-height: 636px;
+    }
+	.lp-awards-list__item.newimg:nth-child(even) .img {
+    min-height: 636px;
+    }
+	.lp-awards-list__item.newimg:nth-child(odd) {
+    min-width: 487px;
+	}
+	.lp-awards-list__item.newimg:nth-child(even) {
+    min-width: 487px;
+	}
 </style>
 <main class="main" dir="ltr" lang='ar' style="text-align:end; font-family: 'Manrope',sans-serif !important;">
 <!--01-->
@@ -287,7 +306,7 @@ if($locationVideo !=''){
 </div>
 </section>
 <!--02-->
-<section class="project-sec">
+<!--<section class="project-sec">
    <div class="col-md-11 mx-auto width-container">
   <div class="case-study-container">
 	<?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
@@ -304,6 +323,27 @@ if($locationVideo !=''){
 	 <?php $count++; endwhile; endif; ?>
   </div>
   </div>
+</section>-->
+<section class="project-sec">
+ <div class="col-md-11 mx-auto width-container">
+          <div class="row">
+            <div class="col-12 px-md-0">
+              <ul class="px-0 lp-awards-list d-flex four-card-slider case-study-slider">
+               <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+                <li class="lp-awards-list__item newimg">
+                  <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
+                    <div class="case-slider-content">
+						<span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
+							<h6 style="color: #FFFFFF;"><?php the_sub_field('slider_subtitle'); ?></h6>
+							<div class="hvr-line-re fnt-14  d-inline-block"><a href="<?php the_sub_field('button_link'); ?>">View case study</a></div>
+					</div>
+                  </div>
+                </li>
+                  <?php  endwhile; endif; ?>
+              </ul>
+            </div>
+          </div>
+        </div>
 </section>
 
 <!--03-->
@@ -384,7 +424,7 @@ if($locationVideo !=''){
       </div>
     </div>
    </div>
-    <div class="col-md-11 mx-auto width-container">
+    <!--<div class="col-md-11 mx-auto width-container">
      <div class="arabic-sliders-container">
 		<?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
        <div>
@@ -397,7 +437,22 @@ if($locationVideo !=''){
        </div>
 	   <?php endwhile; endif; ?>
      </div>
-    </div>
+    </div>-->
+	
+	 <div class="col-md-11 mx-auto width-container">
+              <ul class="px-0 lp-awards-list d-flex four-card-slider arabic-sliders-container">
+               <?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
+                <li class="lp-awards-list__item newimg arabic-slider">
+                  <!--<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">-->
+                    <figure class="award-info">
+                <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
+                <figcaption><?php the_sub_field('image_title'); ?></figcaption>
+            </figure>
+                </li>
+                  <?php  endwhile; endif; ?>
+              </ul>
+        </div>
+		
 	<?php endwhile; endif; ?>
 </section>
 <!--07-->

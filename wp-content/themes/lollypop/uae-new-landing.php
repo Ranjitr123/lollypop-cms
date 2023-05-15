@@ -411,6 +411,7 @@ if($locationVideo !=''){
               <ul class="px-0 lp-awards-list d-flex four-card-slider arabic-sliders-container">
                <?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
                 <li class="lp-awards-list__item newimg arabic-slider">
+                  <!--<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">-->
                     <figure class="award-info">
                 <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
                 <figcaption><?php the_sub_field('image_title'); ?></figcaption>
