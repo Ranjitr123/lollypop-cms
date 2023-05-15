@@ -213,6 +213,18 @@ cursor: pointer;
       width:100% !important;
       max-width:454px !important;
     }
+	.lp-awards-list__item.newimg:nth-child(odd) .img {
+    min-height: 471px;
+    }
+	.lp-awards-list__item.newimg:nth-child(even) .img {
+    min-height: 471px;
+    }
+	.lp-awards-list__item.newimg:nth-child(odd) {
+    min-width: 541px;
+	}
+	.lp-awards-list__item.newimg:nth-child(even) {
+    min-width: 541px;
+	}
 	
 </style>
 <main class="main">
