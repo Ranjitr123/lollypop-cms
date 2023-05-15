@@ -297,13 +297,17 @@ if($locationVideo !=''){
           <div class="row">
             <div class="col-12 px-md-0">
               <ul class="px-0 lp-awards-list d-flex four-card-slider">
-               <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg">
+               <?php $count = 1; if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
+                <li class="lp-awards-list__item newimg<?php echo $count;?>">
                   <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
-                    <div class="col-12 col-md-8 ps-lg-4"><span class="fnt-14 clr-white d-block mb-1"><?php the_sub_field('location_name') ?></span><span class="d-block mb-0 col-md-10 px-0 fnt-18 clr-white"><?php the_sub_field('content') ?></span></div>
+                    <div class="case-slider-content">
+						<span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
+							<h6 style="color: #FFFFFF;"><?php the_sub_field('slider_subtitle'); ?></h6>
+							<div class="hvr-line-re fnt-14  d-inline-block"><a href="<?php the_sub_field('button_link'); ?>">View case study</a></div>
+					</div>
                   </div>
                 </li>
-                  <?php endwhile; endif; ?>
+                  <?php $count++; endwhile; endif; ?>
               </ul>
             </div>
           </div>
