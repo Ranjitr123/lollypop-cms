@@ -180,7 +180,7 @@ get_header();
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
 				 <?php if( have_rows('service_content_section') ) : while( have_rows('service_content_section') ): the_row(); ?>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-9 px-0">
+                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-11 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2"><?php the_sub_field('service_title'); ?> </h3>
                      <p class="mb-22"><?php the_sub_field('service_content'); ?></p>
                   </div>
