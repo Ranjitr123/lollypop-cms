@@ -180,6 +180,13 @@ height:140px;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 541px;
 	}
+
+  @media (min-width:768px){
+  .common-list__item:nth-child(odd) {
+    z-index: 1 !important;
+  }
+}
+
 @media (min-width: 992px){
 .sec-pd:first-of-type {
     padding-top: 135px;
@@ -218,9 +225,70 @@ height:140px;
     transition: .3s ease-in-out;
     left:15px;
 }
-.serveice-a:hover h6 {
-    color: #fd2e35;
+
+
+@media (min-width: 768px) and (max-width:1024px){ .slider-pading {padding-left:90px !important;}}
+.h6-over-content {
+  position: relative;
+  display: inline-block;
 }
+
+.h6-over-content ul {
+  display: none;
+  right:0px;
+  top:-5px;
+  width:250px;
+ 
+}
+.over-content-list li{
+  list-style-type: disc;
+}
+.over-content-list li p{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 28px;
+color: #221429;
+margin-bottom:0px !important;
+}
+.h6-over-content ul:before {
+    content: "";
+    position: absolute;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent #FFFFFF transparent;
+    transform: rotate(270deg);
+    left: -28px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.h6-over-content:hover ul {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding-left: 35px;
+  padding-right: 23px;
+  padding-top: 1rem;
+  padding-bottom: 7px;
+  position: absolute;
+  z-index: 0;
+  transform: translateX(115%);
+
+  
+}
+.common-list__item {
+  position: relative;
+  
+}
+.serveice-a h6:before {left:0 !important;}
+.serveice-a h6:hover:before {width:100% !important;}
+.common-list__item:nth-child(3) .h6-over-content ul{
+  width:165px;
+}
+
 @media (max-width: 767px){
       .step-cards{
         flex-direction: column;
@@ -234,8 +302,38 @@ height:140px;
     .list-cards {padding-top: 0px;}
     .slider-pading {padding-left:20px !important;}
     .cards-slider-content img{width:200px;}
+    .h6-over-content ul{
+      top:40px !important;
+      left:0px !important;
+      transform: translateX(0%) !important;
+    }
+   
+  .common-list__item:nth-child(1) {
+    z-index: 1 !important;
+  }
+
+  .common-list__item:nth-child(2) {
+    z-index: -1 !important;
+  }
+
+  .common-list__item:nth-child(3) {
+    z-index: -2 !important;
+  }
+
+  .common-list__item:nth-child(4) {
+    z-index: -5 !important;
+  }
+
+  .common-list__item:nth-child(6) {
+    z-index: -7 !important;
+  }
+  .sec-pd-vedio2{
+    z-index: -9;
+    position: relative;
+  }
+
 }
-@media (min-width: 768px) and (max-width:1024px){ .slider-pading {padding-left:90px !important;}}
+
 </style>
 
 
@@ -486,10 +584,20 @@ height:140px;
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 my-45 mx-auto">
           <ul class="px-0 common-list row">
-            <li class="common-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);">
+            <li class="common-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px); ">
                 <div class="d-flex flex-column h-100">
                 <a class="serveice-a" href="#">
-                  <h6 class="fnt-800 mb-1">Brand Identity</h6>
+                <div class="h6-over-content">
+                  <h6 class="fnt-800 mb-1 d-inline-block h6-over">Brand Identity</h6>
+                  <ul class="over-content-list">
+                            <li><p>Tagline / Slogan</p></li>
+                            <li><p>Logo usage guidelines</p></li>
+                            <li><p>Brand colors and psychology</p></li>
+                            <li><p>Logo orientation and usage</p></li>
+                            <li><p>Logo concepts and design</p></li>
+                            <li><p>Incorrect logo usage</p></li>
+                         </ul>
+                </div>
                   <div class="">
                       <p class="col-11 col-lg-9 px-0">We assist brands in developing a distinct voice & personality that creates a lasting footprint and resonates with their target audience.</p>
                   </div>
@@ -499,7 +607,17 @@ height:140px;
             <li class="common-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);">
                 <div class="d-flex flex-column h-100">
                   <a class="serveice-a" href="">
-                      <h6 class="fnt-800 mb-1 d-inline-block">Visual Identity</h6>
+                    <div class="h6-over-content">
+                      <h6 class="fnt-800 mb-1 d-inline-block h6-over">Visual Identity</h6>
+                         <ul class="over-content-list">
+                            <li><p>Tagline / Slogan</p></li>
+                            <li><p>Logo usage guidelines</p></li>
+                            <li><p>Brand colors and psychology</p></li>
+                            <li><p>Logo orientation and usage</p></li>
+                            <li><p>Logo concepts and design</p></li>
+                            <li><p>Incorrect logo usage</p></li>
+                         </ul>
+                    </div>
                       <div class="">
                         <p class="col-11 col-lg-9 px-0">We construct guidelines for usage of brand colors, typography and other visual cues that reflect the brand’s identity.</p>
                       </div>
@@ -509,7 +627,15 @@ height:140px;
             <li class="common-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);">
                 <div class="d-flex flex-column h-100">
                   <a class="serveice-a" href="">
-                      <h6 class="fnt-800 mb-1 d-inline-block">Illustration & Motion Graphics</h6>
+                      <div class="h6-over-content">
+                      <h6 class="fnt-800 mb-1 d-inline-block h6-over">Illustration & Motion Graphics</h6>
+                         <ul class="over-content-list">
+                            <li><p>Illustrations</p></li>
+                            <li><p>Iconography</p></li>
+                            <li><p>Infographics</p></li>
+                            <li><p>Logo animation</p></li>
+                         </ul>
+                    </div>
                       <div class="">
                         <p class="col-11 col-lg-9 px-0">Our talented team of illustrators & animators specialize in creating infographics, icons and graphics specific to your business </p>
                       </div>
@@ -519,7 +645,14 @@ height:140px;
             <li class="common-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);">
                 <div class="d-flex flex-column h-100">
                 <a class="serveice-a" href="#">
-                  <h6 class="fnt-800 mb-1">Marketing Materials</h6>
+                  <div class="h6-over-content">
+                      <h6 class="fnt-800 mb-1 d-inline-block h6-over">Marketing Materials</h6>
+                         <ul class="over-content-list">
+                            <li><p>Brochures/Catalogs/Flyers</p></li>
+                            <li><p>Packaging / Store Graphics</p></li>
+                            <li><p>Sales kit/Marketing Materials</p></li>                          
+                         </ul>
+                    </div>
                   <div class="">
                       <p class="col-11 col-lg-9 px-0">We utilize our digital designs and graphics to produce marketing materials such as ads and posters for our clients.</p>
                   </div>
@@ -529,7 +662,25 @@ height:140px;
             <li class="common-list__item col-12 col-md-5 data-scroll">
                 <div class="d-flex flex-column h-100">
                 <a class="serveice-a" href="#">
-                  <h6 class="fnt-800 mb-1">Printed Collaterals</h6>
+                  <div class="h6-over-content">
+                      <h6 class="fnt-800 mb-1 d-inline-block h6-over">Printed Collaterals</h6>
+                         <ul class="over-content-list">
+                            <li><p>Brochures / Catalogs / Flyers</p></li>
+                            <li><p>Posters / Banners / Hoardings</p></li>
+                            <li><p>Exhibition Design / Booth Graphics</p></li>
+                            <li><p>Newsletters / Manuals</p></li>
+                            <li><p>Packaging / Store Graphics</p></li>
+                            <li><p>Manuals</p></li>
+                            <li><p>Direct Mailers</p></li>
+                            <li><p>Stickers / Wobblers</p></li>
+                            <li><p>Sales Kits / Marketing Materials</p></li>
+                            <li><p>Gifts / Wraps / Bags</p></li>
+                            <li><p>Awards / Trophies / Certificates</p></li>
+                            <li><p>Calendars / Greetings</p></li>
+                            <li><p>Book Covers / Coffee table books</p></li>
+                            <li><p>Folders / Holders</p></li>
+                         </ul>
+                    </div>
                   <div class="">
                       <p class="col-11 col-lg-9 px-0">We create efficient printed & digital collaterals that includes packaging, social media banners, e-books etc which delivers a lasting and compelling impact.</p>
                   </div>
@@ -539,7 +690,13 @@ height:140px;
             <li class="common-list__item col-12 col-md-5 data-scroll">
                 <div class="d-flex flex-column h-100">
                   <a class="serveice-a" href="#">
-                      <h6 class="fnt-800 mb-1 d-inline-block">Presentation Decks</h6>
+                      <div class="h6-over-content">
+                      <h6 class="fnt-800 mb-1 d-inline-block h6-over">Presentation Decks</h6>
+                         <ul class="over-content-list">
+                            <li><p>Presentation templates</p></li>
+                            <li><p>Pitch decks</p></li>                          
+                         </ul>
+                    </div>
                       <div class="">
                         <p class="col-11 col-lg-9 px-0">We design presentation decks that include customized graphics and data representations which fits within the visual language of the brand.</p>
                       </div>
