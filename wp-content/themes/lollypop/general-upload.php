@@ -25,7 +25,7 @@ $mail->Host = "smtp.gmail.com";
 // $mail->Username = "marketing@lollypop.design";
 // $mail->Password = "M@rketing@LL";
 $mail->Username = "hello@lollypop.design";
-$mail->Password = "L0!!6P0p@101";
+$mail->Password = "gTYHVFEDHWYmbdfjid %%@&6362";
 
 $mail->IsHTML(true);
 $mail->addAddress('hello@lollypop.design', 'Lollypop Design');
@@ -60,7 +60,7 @@ $mailReply->SMTPSecure = "tls";
 $mailReply->Port = 587;
 $mailReply->Host = "smtp.gmail.com";
 $mailReply->Username = "hello@lollypop.design";
-$mailReply->Password = "L0!!6P0p@101";
+$mailReply->Password = "gTYHVFEDHWYmbdfjid %%@&6362";
 
 $mailReply->IsHTML(true);
 $mailReply->addAddress($_POST['email'], $_POST['full_name']);
