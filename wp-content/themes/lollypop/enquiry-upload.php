@@ -51,7 +51,7 @@ if ($greater_data == "2") {
 		$mail->Port = 587;
 		$mail->Host = "smtp.gmail.com";
 		$mail->Username = "hello@lollypop.design";
-		$mail->Password = "gTYHVFEDHWYmbdfjid %%@&6362";
+		$mail->Password = "dcwmhskgofolbjpu";
 
 		$mail->IsHTML(true);
 		//Admin mails
@@ -100,7 +100,7 @@ if ($greater_data == "2") {
 			$mailReply->Port = 587;
 			$mailReply->Host = "smtp.gmail.com";
 			$mailReply->Username = "hello@lollypop.design";
-			$mailReply->Password = "gTYHVFEDHWYmbdfjid %%@&6362";
+			$mailReply->Password = "dcwmhskgofolbjpu";
 
 			$mailReply->IsHTML(true);
 			$mailReply->addAddress($_POST['email'], $_POST['full_name']);
