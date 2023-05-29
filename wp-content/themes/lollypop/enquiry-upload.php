@@ -11,6 +11,7 @@ require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/Excepti
 require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
 require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
 
+
 require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
 $file_name = "";
 $maxsize = 2097152;

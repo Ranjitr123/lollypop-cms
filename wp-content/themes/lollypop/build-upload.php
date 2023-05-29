@@ -25,6 +25,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->Username = "marketing@lollypop.design";
 $mail->Password = "HUidbvajanf*636288**7fj@#!";
 
+
 $mail->IsHTML(true);
 $mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
 $mail->addAddress('anil@lollypop.design', 'Anil');

@@ -62,6 +62,7 @@ $mailReply->Host = "smtp.gmail.com";
 $mailReply->Username = "hello@lollypop.design";
 $mailReply->Password = "gTYHVFEDHWYmbdfjid %%@&6362";
 
+
 $mailReply->IsHTML(true);
 $mailReply->addAddress($_POST['email'], $_POST['full_name']);
 $mailReply->SetFrom("hello@lollypop.design", "Lollypop Design");
