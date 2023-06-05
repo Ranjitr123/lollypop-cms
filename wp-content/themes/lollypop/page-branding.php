@@ -365,9 +365,9 @@ margin-bottom:0px !important;
 								
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
-                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
+                <div id="play2" data-plyr-provider="<?php echo get_field('researchbanner_video_provider')?>" data-plyr-embed-id="<?php echo get_field('researchbanner_video_link')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_template_directory_uri(); ?>/assets/images/branding/brand-vedio.svg">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('researchbanner_video_provider')?>" embed-id="<?php echo get_field('researchbanner_video_link')?>" poster="<?php echo get_template_directory_uri(); ?>/assets/images/branding/brand-vedio.svg">
               </video>
             </div>
 					<!--	<img class="img-fluid blog-d-img mb-0" src="<?php echo get_field('researchbanner_image')?>" alt="Image" width="1077" height="471" style="transform: translate(0px, 0px);">-->
@@ -385,29 +385,32 @@ margin-bottom:0px !important;
             <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
               <div class="col-md-10 col-lg-12 px-0 clr-white">
                 <div class="mb-35">
-                  <h2  style='max-width:736px;' class="fnt-800 fnt-50 mb-md-3">Our process of crafting brand assets</h2>
+                  <h2 style='max-width:736px;' class="fnt-800 fnt-50 mb-md-3"><?php echo get_field('steps_main_heading')?></h2>
                   <p class="fnt-24 col-md-10 col-lg-9 px-0 pb-30">
-                      Brand assets – be it logo, visual identity, colors, typography, graphic systems and brand collaterals, we leave no stone unturned in capturing the essence of your brand in all touchpoints.
+                      <?php echo get_field('steps_main_description')?>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-       
+			
+			<?php if( have_rows('steps_repeater') ): while( have_rows('steps_repeater') ): the_row(); ?>
               <div class="px-md-0 col-12 col-md-11 col-lg-10 mx-auto">
                 <ul class="px-0 lp-awards-list d-flex list-cards">
                     <li>
-                       <div class="clr-white fnt-16 fnt-400">Step 1</div>
-                       <span class="fnt-50 fnt-800 mb-3 data-scroll clr-white ">Discover</span>
-                       <p class="fnt-14 fnt-400 clr-white ">Its always is wise to take the right step. Before we embark on crafting your brand’s assets, a careful study of the existing brand system, its analysis or looking at your competition helps us discover what is required to do, and also what not to do.</p>
+                       <div class="clr-white fnt-16 fnt-400"><?php the_sub_field('point_number') ?></div>
+                       <span class="fnt-50 fnt-800 mb-3 data-scroll clr-white "><?php the_sub_field('title') ?></span>
+                       <p class="fnt-14 fnt-400 clr-white "><?php the_sub_field('decription') ?></p>
                         <ul class="d-flex px-0 step-cards col-md-12">
+						  <?php if( have_rows('image_slider_steps_section') ): while( have_rows('image_slider_steps_section') ): the_row(); ?>
                           <li class="col-md-4 col-12">
                             <figure>
-                               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/step-1-img-1.svg" alt="step-1-logo">
+                               <img class="img-fluid" src="<?php the_sub_field('slider_image') ?>" alt="step-1-logo">
                             </figure>
-                            <figcaption class="fnt-18 clr-white fnt-800 ">Logo questionnaire</figcaption>
+                            <figcaption class="fnt-18 clr-white fnt-800 "><?php the_sub_field('slider_title') ?></figcaption>
                           </li>
-                          <li class="col-md-4 col-12">
+						  <?php endwhile; endif; ?>
+                         <!-- <li class="col-md-4 col-12">
                              <figure>
                                 <img  class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/step-1-img-2.svg" alt="step-1-logo">
                               </figure>
@@ -418,13 +421,14 @@ margin-bottom:0px !important;
                                   <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/step-1-img-3.svg" alt="step-1-logo">
                               </figure>
                               <figcaption class="fnt-18 clr-white fnt-800">Research + Moodboard</figcaption>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
                 </ul>
               </div>
-
-              <div class="px-md-0 col-12 col-md-11 col-lg-10 mx-auto">
+			  <?php endwhile; endif; ?>
+			  
+             <!-- <div class="px-md-0 col-12 col-md-11 col-lg-10 mx-auto">
                 <ul class="px-0 lp-awards-list d-flex list-cards">
                     <li>
                        <div class="clr-white fnt-16 fnt-400">Step 2</div>
@@ -511,7 +515,7 @@ margin-bottom:0px !important;
                         </ul>
                     </li>
                 </ul>
-              </div>
+              </div>-->
          </div>
     </div>
 </section>
