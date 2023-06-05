@@ -548,7 +548,7 @@ margin-bottom:0px !important;
 				<?php if( have_rows('service_slider_image') ): while( have_rows('service_slider_image') ): the_row(); ?>
                   <div>
                     <div class="cards-slider-content">
-                        <img src="<?php the_sub_field('slider_image'); ?>" alt="" class="img-fluid">
+                        <img src="<?php the_sub_field('slider_image'); ?>" alt="" class="img-fluid" style="height:447px; width:550px;">
                     </div>
                   </div>
 				   <?php endwhile; endif; ?>
