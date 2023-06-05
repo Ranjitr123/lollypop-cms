@@ -529,10 +529,10 @@ margin-bottom:0px !important;
                <div class="row">
                   <div class="col-12 col-md-10 mb-4 mb-md-5 col-lg-10 mt-md-5">
                      <h2 style="color:#221429;" class="fnt-40 fnt-800 mb-2 mb-md-3">
-                     Here are some of the gems from our past
+                     <?php echo get_field('service_heading')?>
                      </h2>
                      <p style="max-width:765px;" class="fnt-24 fnt-mb-14 col-md-12 col-lg-11 col-xl-11 px-0 mb-0">
-                     A sneak peek of our favourite brand identities and allied works like illustrations, icons, collaterals,  so you know what is coming your way.
+                     <?php echo get_field('service_content')?>
                      </p>
                   </div>
                </div>
@@ -545,12 +545,13 @@ margin-bottom:0px !important;
         <div class="row">
            <div class="col-12 px-md-0">
               <div class="cards-sliders four-card-slider">
+			     <?php if( have_rows('service_slider_image') ): while( have_rows('service_slider_image') ): the_row(); ?>
                   <div>
                     <div class="cards-slider-content">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-1.svg" alt="" class="img-fluid">
+                        <img src="<?php the_sub_field('slider_image') ?>" alt="" class="img-fluid">
                     </div>
                   </div>
-                  <div>
+                  <!--<div>
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-2.svg" alt="" class="img-fluid">
                     </div>
@@ -559,7 +560,7 @@ margin-bottom:0px !important;
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-1.svg" alt="" class="img-fluid">
                     </div>
-                  </div>
+                  </div>-->
               </div>
            </div>
         </div>
@@ -721,10 +722,10 @@ margin-bottom:0px !important;
                <div class="row">
                   <div class="col-12 col-md-10 mb-4 mb-md-5 col-lg-10 mt-md-5">
                      <h2 style="color:#221429; max-width: 477px;" class="fnt-40 fnt-800 mb-2 mb-md-3">
-                          See our Branding in action from our designers
+                          <?php the_field('solution_title'); ?>
                      </h2>
                      <p style="max-width:765px;" class="fnt-24 fnt-mb-14 col-md-12 col-lg-11 col-xl-11 px-0 mb-0">
-                          Our designers are best at what they do. The below video scratches the surface of what our designers are capable of.
+                          <?php the_field('solution_description'); ?>
                      </p>
                   </div>
                </div>
@@ -737,9 +738,9 @@ margin-bottom:0px !important;
       <div class="reveal" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
          <div class="play-video-on-scroll">
             <div id="play2-out" style="display:none">
-               <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id=""></div>
+               <div id="play2" data-plyr-provider="<?php the_field('solution_video_provider'); ?>" data-plyr-embed-id=""></div>
             </div>
-            <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="https://player.vimeo.com/video/683673582" poster="http://localhost/cms/lollypop-cms/wp-content/themes/lollypop/assets/images/branding/vedio2.svg">
+            <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php the_field('solution_video_provider'); ?>" embed-id="<?php the_field('solution_video_link'); ?>" poster="<?php the_field('solution_video_poster'); ?>">
             </video>
          </div>
       </div>
