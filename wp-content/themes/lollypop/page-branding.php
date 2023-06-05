@@ -545,12 +545,14 @@ margin-bottom:0px !important;
         <div class="row">
            <div class="col-12 px-md-0">
               <div class="cards-sliders four-card-slider">
+				<?php if( have_rows('image_slider_steps_section') ): while( have_rows('image_slider_steps_section') ): the_row(); ?>
                   <div>
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-1.svg" alt="" class="img-fluid">
                     </div>
                   </div>
-                  <div>
+				   <?php endwhile; endif; ?>
+                  <!--<div>
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-2.svg" alt="" class="img-fluid">
                     </div>
@@ -559,7 +561,7 @@ margin-bottom:0px !important;
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-1.svg" alt="" class="img-fluid">
                     </div>
-                  </div>
+                  </div>-->
               </div>
            </div>
         </div>
