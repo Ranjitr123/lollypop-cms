@@ -551,6 +551,7 @@ margin-bottom:0px !important;
                         <img src="<?php the_sub_field('slider_image') ?>" alt="" class="img-fluid">
                     </div>
                   </div>
+				   <?php endwhile; endif; ?>
                   <!--<div>
                     <div class="cards-slider-content">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/slider-2.svg" alt="" class="img-fluid">
