@@ -146,6 +146,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
 	  
 	  <!------------new------------->
+	   <?php if (empty(get_sub_field('research_build_design_section')) === false): ?>
 	 <section class="sec-pd1 sec-top"> 
         <div class="container"> 
           <div class="row"> 
@@ -183,10 +184,11 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           </div>
         </div>
       </section>
-	
+	<?php endif; ?>
 	  <!------------------------->
 	  
-      <!--04-->      
+      <!--04-->  
+ <?php if (empty(get_sub_field('portfolio')) === false): ?>	  
       <section class="sec-pd" id="third">
         <div class="container"> 
           <div class="row"> 
@@ -220,7 +222,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           </div>
         </div>
       </section>
-      
+      <?php endif; ?>
       <!--05-->
       <?php if( have_rows('case_studies') ) : while( have_rows('case_studies') ): the_row(); ?>
       <?php $caseStudy = get_sub_field('title'); ?>
