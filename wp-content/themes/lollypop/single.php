@@ -132,7 +132,8 @@ get_header();
                     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
                       <li class="trending-blogs__item"> <a class="d-block" href="<?php the_permalink(); ?>">
                           <h3 class="fnt-22 fnt-800 mb-2"><?php the_title(); ?></h3>
-                          <div> <span class="fnt-12 me-4">By  <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?><?php the_sub_field('author'); ?>, <?php wp_reset_postdata(); endwhile; endif; ?> on  <?php the_time('j F, Y'); ?></span></div>
+                          <div> <span class="fnt-12 me-4">By  <?php if( have_rows('author_details') ) : while( have_rows('author_details') ): the_row(); ?>
+						  <?php the_sub_field('author'); ?>, <?php endwhile; endif; ?> on  <?php the_time('j F, Y'); ?></span></div>
                           </a></li>
                       <?php wp_reset_postdata(); endwhile; endif; ?>
                     </ul>
