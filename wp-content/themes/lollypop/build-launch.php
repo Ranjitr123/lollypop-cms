@@ -202,7 +202,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);
                 <div class="plyr__video-embed video">
                   <!-- <iframe src="https://player.vimeo.com/video/668559250?h=7180554c77" allowfullscreen allowtransparency allow="autoplay" hideControls="true" volume="1"></iframe>-->
 		 <!-- <iframe src="https://player.vimeo.com/video/668559250?h=7180554c77" allowfullscreen="" allowtransparency="" allow="autoplay" hidecontrols="true" volume="1"></iframe>-->
-<iframe src="https://player.vimeo.com/video/686995226?h=cfba80096a&autoplay=1&muted=0" allowfullscreen="" allowtransparency="" allow="autoplay" hidecontrols="true" volume="1"></iframe>
+<iframe src="https://www.youtube.com/watch?v=JGXYAL2Zg74" allowfullscreen="" allowtransparency="" allow="autoplay" hidecontrols="true" volume="1"></iframe>
                 </div>
               </div>
             </div>
