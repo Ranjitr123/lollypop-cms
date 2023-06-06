@@ -192,7 +192,12 @@ get_header();
                     <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll"><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-480 data-scroll"><?php the_field('design_studio_content'); ?></span>
                   </div>
 		  <div class="px-0 d-flex flex-wrap culture-slider-nav mb-35 data-scroll">
-<a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design/">India</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ae/">Dubai</a><a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a></div><a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo site_url(); ?>/about/">About Us</a>
+<a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design/">India</a>
+<a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a>
+<a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">UAE</a>
+<a class="culture-slider-nav__item hvr hvr--white fnt-16 fnt-400 clr-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a>
+</div>
+<a class="clr-second fnt-16 hvr-line d-inline-block data-scroll" href="<?php echo site_url(); ?>/about/">About Us</a>
                 </div>                
               </div>
             </div>

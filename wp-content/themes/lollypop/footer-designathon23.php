@@ -102,7 +102,7 @@ a.fnt-30.fnt-800.link-insta {
                 </div>
                 
                <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3"> 
-                <a class="d-block hvr-link-div text-center text-md-left alifot" href="<?php echo site_url(); ?>/ae/">
+                <a class="d-block hvr-link-div text-center text-md-left alifot" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
                     <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">UAE</h6>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Dubai</span></div>
                   </a>
