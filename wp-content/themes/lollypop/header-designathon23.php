@@ -546,7 +546,7 @@ $header = new WP_Query( $args );
 </div>
 <div class="main-links main-links--sub d-md-flex flex-column">
 <!-- For Desktop-->
-<div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between"> 
+<div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between sec-last1"> 
 <div class="d-md-flex hvr-m flex-column">
 <div>
 <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
@@ -563,7 +563,7 @@ $header = new WP_Query( $args );
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-<div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize " href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
 </div>
 </div>
 <!-- For mobile-->
