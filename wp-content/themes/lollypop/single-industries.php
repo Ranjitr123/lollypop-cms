@@ -284,7 +284,8 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           </div>
         </div>
       </section>
-	  <!-------ew----------------->
+	  <!-------new----------------->
+	  <?php if (empty(get_sub_field('specific_video_section')) === false): ?>
 	  <section class="sec-pd51">
         <div class="container"> 
           <div class="row">
@@ -305,6 +306,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           </div>
         </div>
       </section>
+	  <?php endif; ?>	
       <!--07-->
       <section class="sec-footer-trans">
         <div class="container z-1">
