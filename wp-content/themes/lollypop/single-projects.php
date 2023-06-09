@@ -22,6 +22,7 @@ get_header();
 	.Emaar_digital .col-md-4:nth-child(2) {
     margin-top: 60px;
 }
+.space311{margin-top:-51px;}
 </style>
 
 
@@ -113,7 +114,7 @@ get_header();
 					<?php endif; ?>												
           
 					<?php if (empty(get_sub_field('images_section1')) === false): ?>
-					<div class="row">
+					<div class="row space311">
 						<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
 						<div class="col-md-4">
 							<figure>
