@@ -89,7 +89,7 @@ get_header();
                 </div>    
 					<!--new section------------>
 				<?php if( have_rows('emaars_digital_booking') ) : while( have_rows('emaars_digital_booking') ): the_row();
-                   $digImage = get_sub_field('image');
+                  // $digImage = get_sub_field('image');
                 if($digImage !='') { ?>	
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
@@ -114,7 +114,7 @@ get_header();
 						<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
 						<div class="col-md-4">
 							<figure>
-								<img src="<?php the_sub_field('image');?>" class="img-fluid w-100" alt="Image">
+								<img src="<?php the_sub_field('image1');?>" class="img-fluid w-100" alt="Image">
 							</figure>
 						</div>
 						<?php endwhile; endif; ?>
@@ -127,7 +127,14 @@ get_header();
                     <img src="<?php the_sub_field('image');?>" class="img-fluid w-100" alt="Image">
                 </div>
 				<?php endwhile; endif; ?>
-            </div>          
+            </div>  
+				<div class="photo position-relative"><!-----------mobile resposive------------->
+				<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
+                <div class="card">
+                    <img src="<?php the_sub_field('image1');?>" class="img-fluid w-100" alt="Image">
+                </div>
+				<?php endwhile; endif; ?>
+            </div>  
         </div>
       
 					<div class="row approach_style">
