@@ -227,6 +227,10 @@ get_header();
                         <div class="col-12 col-md-4 mb-3 mb-md-0"><span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <?php the_sub_field('content'); ?>
+							<?php if (empty(get_sub_field('define_selected_image')) === false): ?>
+								<img class="img-fluid" src="<?php the_sub_field('define_selected_image'); ?>" alt="Image">
+							<?php endif; ?>		
+						  
                           <?php if(get_sub_field('cta_name') !=''){ ?>
                             <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
                           <?php } ?>
