@@ -89,7 +89,7 @@ get_header();
                 </div>    
 					<!--new section------------>
 				<?php if( have_rows('emaars_digital_booking') ) : while( have_rows('emaars_digital_booking') ): the_row();
-                   $digImage = get_sub_field('images_section');
+                   $digImage = get_sub_field('image');
                 if($digImage !='') { ?>	
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
@@ -109,9 +109,9 @@ get_header();
 					</div> 
 					<?php endif; ?>												
           
-					<?php if (empty(get_sub_field('images_section')) === false): ?>
+					<?php if (empty(get_sub_field('images_section1')) === false): ?>
 					<div class="row">
-						<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
+						<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
 						<div class="col-md-4">
 							<figure>
 								<img src="<?php the_sub_field('image');?>" class="img-fluid w-100" alt="Image">
