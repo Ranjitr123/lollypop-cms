@@ -89,7 +89,7 @@ get_header();
                 </div>    
 					<!--new section------------>
 				<?php if( have_rows('emaars_digital_booking') ) : while( have_rows('emaars_digital_booking') ): the_row();
-                   $digImage = get_sub_field('title');
+                   $digImage = get_sub_field('images_section');
                 if($digImage !='') { ?>	
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
