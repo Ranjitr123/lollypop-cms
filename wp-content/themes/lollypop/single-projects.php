@@ -153,7 +153,6 @@ get_header();
                 if($digImage1 !='') { ?>	
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
-					<?php if (empty(get_sub_field('images_section1')) === false): ?>
 						<div class="row">
 						<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
 						<div class="col-md-4">
@@ -163,8 +162,6 @@ get_header();
 						</div>
 						<?php endwhile; endif; ?>
 					</div>  
-					<?php endif; ?>	
-						
           
             <div class="photo position-relative"><!-----------mobile resposive------------->
 				<?php if( have_rows('images_section1') ) : while( have_rows('images_section1') ): the_row(); ?>
