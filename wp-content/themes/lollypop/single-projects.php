@@ -19,6 +19,9 @@ get_header();
     .conclustion p, .conclustion ul{margin-bottom: 20px !important;}
     .plyr__controls{display: none;}
 	.conclusion-pad{padding-top:80px;}
+	.Emaar_digital .col-md-4:nth-child(2) {
+    margin-top: 60px;
+}
 </style>
 
 
