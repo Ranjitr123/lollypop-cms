@@ -93,7 +93,9 @@ get_header();
                 if($digImage !='') { ?>	
 				<section class="Emaar_digital">
 					<div class="container head position-relative">
+						<?php if (empty(get_sub_field('title')) === false): ?>
 						<h2><?php the_sub_field('title'); ?></h2>
+						<?php endif; ?>	
 
 					<div class="row space3">
 						<?php if( have_rows('images_section') ) : while( have_rows('images_section') ): the_row(); ?>
