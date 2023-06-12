@@ -84,6 +84,15 @@ get_header();
          </div>
       </div>
       <div class='col-12 col-lg-9 col-md-9 mx-auto'>
+		<!----------only for image---------->
+		<?php $galImage = get_the_post_thumbnail_url(); ?>
+              <?php if($galImage !=''){ ?>
+              <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
+              <?php } ?>
+			  
+			  
+	   <?php $bannerVideo = get_field('video_link') ?>
+              <?php if($bannerVideo !=''){ ?>
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
                 <div id="play2" data-plyr-provider="<?php echo get_field('video_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
@@ -91,6 +100,7 @@ get_header();
               <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('video_provider')?>" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_field('video_image')?>">
               </video>
             </div>
+			<?php } ?>
           </div>
    </div>
 </section>
