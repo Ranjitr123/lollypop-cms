@@ -18,6 +18,9 @@ get_header();
     font-weight: 800;
     font-size: 16px;
 }
+.data-banner .hvr-line{
+  font-size:16px !important;
+}
 </style>
 
 <script type="application/ld+json">{
@@ -128,12 +131,15 @@ Cheers to Anil Reddy & Team..:)",
           <div class="row">
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row mb-80">
-                <div class="col-12 col-md-9 mx-auto d-flex flex-column align-items-center">
+                <div class="col-12 col-md-12 mx-auto d-flex flex-column align-items-center">
                   <div class="mb-50 text-center mx-auto mb-4">
                     <h1 class="fnt-50 fnt-800"> <span class="d-block"><?php echo get_field('title1')?></span>
                     <!--  <div class="quote d-flex justify-content-center flex-wrap"><span class="clr-second quote__item quotes">Strengthen your Brand</span><span class="clr-second quote__item quotes">In-depth Insight</span><span class="clr-second quote__item quotes">Better Positioning</span><span class="clr-second quote__item quotes">Increase your profits</span><span class="clr-second quote__item quotes">To Build Trust</span></div>-->
                     </h1>
                     <p class="fnt-24 mt-4"><?php echo get_field('description')?></p>
+                     <div class="data-banner">
+                        <a class="clr-second fnt-16 hvr-line data-scroll" href="https://lollypop.design/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a>
+                     </div>
                   </div>
                 </div>
               </div>
