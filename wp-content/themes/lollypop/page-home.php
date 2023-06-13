@@ -8,6 +8,43 @@ get_header();
 
 <style>
     .plyr__controls{display: none;}
+	.serveice-a:hover h3:before {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.serveice-a:hover h3{color: #fd2e35;}
+.serveice-a h3{position:relative;}
+.serveice-a h3:before{position: absolute;
+    content: "";
+    top: 32px;
+    left: 0;
+    width: 25%;
+    height: 2px;
+    background-color: #000;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;}
+.serveice-a:hover h3:before{position: absolute;
+    content: "";
+   top: 32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fd2e35;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
 	
 </style>
  <main class="main">
@@ -282,7 +319,7 @@ get_header();
               <ul class="indutstry-list px-0 mb-4 row justify-content-between"> 
                 <?php if( have_rows('industries') ) : while( have_rows('industries') ): the_row(); ?>
                 <li class="indutstry-list__item col-12 col-md-6 col-lg-5 data-scroll"> 
-                  <a href="<?php the_sub_field('url') ?>" class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0"> 
+                  <a class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0 serveice-a" href="<?php the_sub_field('url') ?>" > 
                     <h3 class="fnt-22 fnt-800 mb-2">
                        <?php the_sub_field('title') ?></h3>
                     <p class=""><?php the_sub_field('content') ?></p>
