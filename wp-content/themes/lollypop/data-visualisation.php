@@ -28,6 +28,7 @@ get_header();
   font-size: 50px;
   line-height: 64px;
   color: #FD2E35;
+  padding:0px !important;
 
 }
 </style>
@@ -204,7 +205,8 @@ Cheers to Anil Reddy & Team..:)",
 			  <div class="para">
 							<?php while(have_rows('bottom_section')){the_row();?>
 								<span class="data_red red-stroke red-stroke--small fnt-50"><?php echo get_sub_field('red_text1')?> </span>
-                <p><?php echo get_sub_field('black_text')?> <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/"> Get in Touch</a></strong></p>
+                <p class="mt-4 mb-4"><?php echo get_sub_field('black_text')?> </p>
+                <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/"> Get in Touch</a></strong>
 							<?php } ?> 	
               </div>
 			  
