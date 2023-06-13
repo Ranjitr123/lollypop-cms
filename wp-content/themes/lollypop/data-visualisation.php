@@ -21,6 +21,15 @@ get_header();
 .data-banner .hvr-line{
   font-size:16px !important;
 }
+.para .data_red{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 64px;
+  color: #FD2E35;
+
+}
 </style>
 
 <script type="application/ld+json">{
@@ -129,7 +138,7 @@ Cheers to Anil Reddy & Team..:)",
       <section class="sec-pd sec-bnr">
         <div class="container"> 
           <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+            <div class="col-12 col-md-11 col-lg-12 mx-auto">
               <div class="row mb-80">
                 <div class="col-12 col-md-12 mx-auto d-flex flex-column align-items-center">
                   <div class="mb-50 text-center mx-auto mb-4">
@@ -192,11 +201,12 @@ Cheers to Anil Reddy & Team..:)",
                 </li>
                 <?php } ?>
               </ul>
-			  <p class="para">
+			  <div class="para">
 							<?php while(have_rows('bottom_section')){the_row();?>
-								<span class="data_red"><?php echo get_sub_field('red_text1')?> </span><?php echo get_sub_field('black_text')?> <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/"> Get in Touch</a></strong>
+								<span class="data_red red-stroke red-stroke--small fnt-50"><?php echo get_sub_field('red_text1')?> </span>
+                <p><?php echo get_sub_field('black_text')?> <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/"> Get in Touch</a></strong></p>
 							<?php } ?> 	
-							</p>
+              </div>
 			  
             </div>
           </div>
