@@ -398,7 +398,7 @@ Cheers to Anil Reddy & Team..:)",
             </div>
         </div>
     </div>
-    <div class="sec-pd sec-pt">
+    <div class="sec-pd sec-pt1">
         <div class="fluid-width second-slider">
             <div class="row">
                 <div class="col-12 px-md-0">
