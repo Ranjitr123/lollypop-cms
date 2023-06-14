@@ -249,7 +249,7 @@ Cheers to Anil Reddy & Team..:)",
       </section>
       
       <!--07-->
-<section class="sec-pd sec-pt pb-0" id="fifth" style="background: #221429;">
+<section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
     <div class="container">
         <div class="row mt-4 mt-md-5 pt-md-5">
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
