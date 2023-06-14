@@ -228,7 +228,7 @@ Cheers to Anil Reddy & Team..:)",
               <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between"> 
 				<?php while(have_rows('content_section')){the_row();?>
                 <li class="indutstry-list__item col-12 col-md-6 data-scroll"> 
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-10 px-0"> 
+                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0"> 
                     <h3 class="fnt-22 fnt-800 mb-2"><?php echo get_sub_field('title')?></h3>
                     <p class="mb-22 col-12 col-md-9"><?php echo get_sub_field('content')?></p>
                   </div>
