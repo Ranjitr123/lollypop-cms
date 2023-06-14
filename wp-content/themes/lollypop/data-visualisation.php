@@ -29,7 +29,18 @@ get_header();
   line-height: 64px;
   color: #FD2E35;
   padding:0px !important;
-
+}
+.case-std__info{
+  position: absolute;
+  width: 306px;
+  height: 250px;
+  top: 40%;
+  left: 3%;
+  background: #FFFFFF;
+  padding:30px 35px 40px 30px;
+}
+.lp-awards-list__item:nth-child(even) .img {
+    min-height: 450px !important;
 }
 </style>
 
@@ -214,65 +225,98 @@ Cheers to Anil Reddy & Team..:)",
           </div>
         </div>
       </section>
-      <!--03-->
-      <section class="sec-pd sec-pt sec-pb" style="background: #221429;">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-              <div class="row"> 
-                <div class="col-12 col-md-6 clr-white mb-4 mb-md-0">
-                  <div class="sticky-desktop text-center text-md-left">
-					<?php while(have_rows('left_section')){the_row();?>
-                    <h3 class="fnt-40 fnt-800 mb-3 data-scroll"><?php echo get_sub_field('heading')?></h3>
-                    <p class="fnt-24 data-scroll col-md-10"><?php echo get_sub_field('description')?></p>
-					<?php } ?>
-				  </div>
+      
+      <!--07--><section class="sec-pd sec-pt pb-0" id="fifth" style="background: #221429;">
+    <div class="container">
+        <div class="row mt-4 mt-md-5 pt-md-5">
+            <div class="col-12 col-md-11 col-lg-9 mx-auto">
+                <div class="col-md-10 col-lg-12 px-0 clr-white">
+                    <div class="mb-35">
+                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">What are the Use Cases for Data Visualization</h3>
+                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4 offset-md-1 clr-white">
-                  <ul class="design-audit-step px-0 mb-0"> 
-					<?php while(have_rows('right_section')){the_row();?>
-                    <li class="design-audit-step__item data-scroll"> 
-                      <div class="da-step text-center text-md-left"> 
-						<img src="<?php echo get_sub_field('icon')?>" class="img-fluid pb-2 m-0">
-                        <h5 class="fnt-22 fnt-800 mb-2"><?php echo get_sub_field('title')?></h5>
-                        <p class="fnt-18 fnt-500 col-8 col-md-9 mx-auto mx-md-0 px-0"><?php echo get_sub_field('content')?></p>
-                      </div>
-                    </li>
-					<?php } ?>
-                  </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sec-pd sec-pt">
+        <div class="fluid-width">
+            <div class="row">
+                <div class="col-12 px-md-0">
+                    <ul class="px-0 lp-awards-list d-flex four-card-slider">
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg">
+                                <div class="case-std__info position-absolute">
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <div class="case-std__info position-absolute">
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <div class="case-std__info position-absolute">
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <div class="case-std__info position-absolute">
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <div class="case-std__info position-absolute">
+                                  <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lp-awards-list__item newimg">
+                            <div class="award-info position-relative">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <div class="case-std__info position-absolute">
+                                  <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                  <div class="mt-auto"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!--05-->
-     <section class="sec-pd sec-md-pt" >
-        <div class="container">
-          <div class="row"> 
-            <div class="col-12 col-md-10 col-lg-10 mx-auto">
-              <div class="mb-90 data-scroll">
-                <h2 class="fnt-50 fnt-800 mb-16 col-md-6"><?php echo get_field('service_heading')?></h2>
-                <!--<p class="fnt-24 col-md-9 col-lg-7 px-0">At Lollypop we have been building successful digital products for more than half-a-decade. We have experience in applying Usability Testing methodologies for clients, across different industries.</p>-->
-              </div>
-            </div>
-            <div class="col-12 col-md-10 col-lg-10 mx-auto">
-              <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between"> 
-				<?php while(have_rows('service_content_section')){the_row();?>
-                <li class="indutstry-list__item col-12 col-md-6 data-scroll"> 
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-8 px-0"> 
-                    <h3 class="fnt-22 fnt-800 mb-2"><?php echo get_sub_field('service_title')?></h3>
-                    <p class="mb-22"><?php echo get_sub_field('service_content')?></p>
-                  </div>
-                </li>
-				<?php } ?>
-                
-              </ul><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/">Get in Touch</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--07-->
+    </div>
+</section>
+
       <section class="sec-pd sec-pb">
         <div class="container"> 
           <div class="row">
@@ -322,8 +366,9 @@ Cheers to Anil Reddy & Team..:)",
         </div>
       </section>
     </main>
-	
-	
+
+  
+
 <?php
 get_footer();
 ?>
