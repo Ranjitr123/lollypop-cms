@@ -352,25 +352,25 @@ Cheers to Anil Reddy & Team..:)",
          <div class="col-12 col-md-10 mx-auto">
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-10 px-0">
+                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2">Dashboard optimisation</h3>
                      <p class="mb-22 col-12 col-md-9">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
                   </div>
                </li>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-10 px-0">
+                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2">Tableau to Power BI Migration</h3>
                      <p class="mb-22 col-12 col-md-9">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
                   </div>
                </li>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-10 px-0">
+                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2">Report Development</h3>
                      <p class="mb-22 col-12 col-md-9">Present your data graphically to understand different relationships and identify various patterns to point out the pain points affecting your business.</p>
                   </div>
                </li>
                <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-10 col-md-11 col-lg-10 col-xl-10 px-0">
+                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2">Power BI Services</h3>
                      <p class="mb-22 col-12 col-md-9">Showcase your data in visually appealing, impactful and highly insightful ways to the stakeholders. </p>
                   </div>
