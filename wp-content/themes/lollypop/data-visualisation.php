@@ -69,8 +69,7 @@ get_header();
     min-width: fit-content;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(even) {
-    min-width: fit-content;
-}
+    min-width: fit-content;}
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
 min-height: 450px !important;}
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
@@ -280,11 +279,11 @@ Cheers to Anil Reddy & Team..:)",
                     <ul class="px-0 lp-awards-list d-flex four-card-slider new-custom-slider">
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg">
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Frame-1707478700.webp">
                                 <div class="case-std__info position-absolute">
-                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
-                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
-                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/AI-Machine-learning-logo.webp" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Data Science</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Helps in facilitating intricate data analysis, enabling a deeper understanding of complex data sets and uncovering valuable trends.</p>
                                   <div class="mt-auto"></div>
                                 </div>
                             </div>
