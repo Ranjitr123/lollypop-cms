@@ -288,7 +288,7 @@ Cheers to Anil Reddy & Team..:)",
                                 </div>
                             </div>
                         </li>
-                        <li class="lp-awards-list__item newimg">
+                        <!--<li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Ecommerce.webp" alt=Image>
                                 <div class="case-std__info position-absolute">
@@ -342,7 +342,7 @@ Cheers to Anil Reddy & Team..:)",
                                   <div class="mt-auto"></div>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -356,18 +356,20 @@ Cheers to Anil Reddy & Team..:)",
       <div class="row">
          <div class="col-12 col-md-10  mx-auto">
             <div class="mb-90 data-scroll" style="opacity: 1; transform: translateY(0px);">
-               <h2 class="fnt-50 fnt-800 mb-16 col-md-6">What services do we provide?</h2>
+               <h2 class="fnt-50 fnt-800 mb-16 col-md-6"><?php echo get_field('service_heading')?></h2>
               </div>
          </div>
          <div class="col-12 col-md-10 mx-auto">
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
+               <?php while(have_rows('service_content_section')){the_row();?>
+			   <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
                   <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Dashboard optimisation</h3>
-                     <p class="mb-22 col-12 col-md-9">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                     <h3 class="fnt-22 fnt-800 mb-2"><?php echo get_sub_field('service_title')?></h3>
+                     <p class="mb-22 col-12 col-md-9"><?php echo get_sub_field('service_content')?></p>
                   </div>
                </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
+			   <?php } ?>
+              <!-- <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
                   <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
                      <h3 class="fnt-22 fnt-800 mb-2">Tableau to Power BI Migration</h3>
                      <p class="mb-22 col-12 col-md-9">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
@@ -384,10 +386,10 @@ Cheers to Anil Reddy & Team..:)",
                      <h3 class="fnt-22 fnt-800 mb-2">Power BI Services</h3>
                      <p class="mb-22 col-12 col-md-9">Showcase your data in visually appealing, impactful and highly insightful ways to the stakeholders. </p>
                   </div>
-               </li>
+               </li>-->
             </ul>
             <div class="para">
-               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="http://localhost/cms/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></strong>
+               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></strong>
             </div>
          </div>
       </div>
@@ -420,31 +422,7 @@ Cheers to Anil Reddy & Team..:)",
                             </div>
                         </li>
 						<?php } ?>
-                       <!-- <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Fintech-Dashboard.webp" alt=Image>
-                            </div>
-                        </li>
-                        <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Projects-Dashboard-2.webp" alt=Image>
-                              </div>
-                          </li>
-                        <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
-                            </div>
-                        </li>
-                        <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
-                            </div>
-                        </li>
-                        <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
-                            </div>
-                        </li>-->
+                       
                     </ul>
                     <div><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
                 </div>
