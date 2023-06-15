@@ -71,6 +71,10 @@ get_header();
 .new-custom-slider .lp-awards-list__item:nth-child(even) {
     min-width: fit-content;
 }
+.second-slider2 .lp-awards-list__item:nth-child(even) .img {
+min-height: 450px !important;}
+.second-slider2 .lp-awards-list__item:nth-child(odd) .img {
+min-height: 450px !important;}
 </style>
 
 <script type="application/ld+json">{
@@ -409,7 +413,7 @@ Cheers to Anil Reddy & Team..:)",
         <div class="fluid-width second-slider">
             <div class="row">
                 <div class="col-12 px-md-0">
-                    <ul class="px-0 lp-awards-list d-flex four-card-slider">
+                    <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg">
