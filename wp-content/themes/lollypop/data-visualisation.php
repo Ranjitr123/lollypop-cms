@@ -420,12 +420,12 @@ Cheers to Anil Reddy & Team..:)",
                         </li>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Fintech-Dashboard.webp" alt=Image>
                             </div>
                         </li>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Projects-Dashboard-2.webp" alt=Image>
                               </div>
                           </li>
                         <li class="lp-awards-list__item newimg">
