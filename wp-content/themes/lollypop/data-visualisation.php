@@ -265,9 +265,11 @@ Cheers to Anil Reddy & Team..:)",
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
                 <div class="col-md-10 col-lg-12 px-0 clr-white">
                     <div class="mb-35">
-                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">What are the Use Cases for Data Visualization</h3>
-                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.</p>
-                    </div>
+					<?php while(have_rows('top_section')){the_row();?>
+                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_sub_field('heading')?> </h3>
+                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_sub_field('description')?> </p>
+                    <?php } ?> 	
+					</div>
                 </div>
             </div>
         </div>
@@ -277,17 +279,19 @@ Cheers to Anil Reddy & Team..:)",
             <div class="row">
                 <div class="col-12 px-md-0">
                     <ul class="px-0 lp-awards-list d-flex four-card-slider new-custom-slider">
+						<?php while(have_rows('image_new_slider_section')){the_row();?>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Frame-1707478700.webp">
+                                <img class="img mb-3" src="<?php echo get_sub_field('background_main_image')?> ">
                                 <div class="case-std__info position-absolute">
-                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/AI-Machine-learning-logo.webp" alt="logo">
-                                  <h6 class="fnt-20 fnt-800 mb-1">Data Science</h6>
-                                  <p class="fnt-14 mb-0 fnt-mb-12">Helps in facilitating intricate data analysis, enabling a deeper understanding of complex data sets and uncovering valuable trends.</p>
+                                <img class="mb-3" src="<?php echo get_sub_field('icon')?>" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1"><?php echo get_sub_field('title')?></h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12"><?php echo get_sub_field('content')?></p>
                                   <div class="mt-auto"></div>
                                 </div>
                             </div>
                         </li>
+						 <?php } ?> 	
                         <!--<li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Ecommerce.webp" alt=Image>
