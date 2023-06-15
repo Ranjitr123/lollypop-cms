@@ -290,22 +290,22 @@ Cheers to Anil Reddy & Team..:)",
                         </li>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Ecommerce.webp" alt=Image>
                                 <div class="case-std__info position-absolute">
-                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
-                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
-                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/E-commerce-logo.webp" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">E-Commerce</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Identifies emerging consumer trends, providing rapid insights to attract new customers and drive growth in the dynamic realm of ecommerce.</p>
                                   <div class="mt-auto"></div>
                                 </div>
                             </div>
                         </li>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg" alt=Image>
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Ecommerce.webp" alt=Image>
                                 <div class="case-std__info position-absolute">
-                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1181278999.svg" alt="logo">
-                                  <h6 class="fnt-20 fnt-800 mb-1">Custom 3D Graphics</h6>
-                                  <p class="fnt-14 mb-0 fnt-mb-12">Creating customized 3D graphics which look real, we bring every 3D design to life that appeals to your brand’s stakeholders.</p>
+                                <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Financials-logo.webp" alt="logo">
+                                  <h6 class="fnt-20 fnt-800 mb-1">Financials</h6>
+                                  <p class="fnt-14 mb-0 fnt-mb-12">Emphasizes recent trends to devise better investment strategies, risk management, market analysis etc</p>
                                   <div class="mt-auto"></div>
                                 </div>
                             </div>
