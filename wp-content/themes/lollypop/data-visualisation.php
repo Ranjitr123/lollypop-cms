@@ -63,7 +63,14 @@ get_header();
 .lp-awards-list__item:nth-child(even) .img {
     min-height: 450px !important;
 }
-
+.lp-awards-list .img {
+    width: 450px!important;}
+	.lp-awards-list__item:nth-child(odd) {
+    min-width: fit-content;
+}
+.lp-awards-list__item:nth-child(even) {
+    min-width: fit-content;
+}
 </style>
 
 <script type="application/ld+json">{
