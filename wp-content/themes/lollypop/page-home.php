@@ -45,7 +45,10 @@ get_header();
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
-	
+	.serveice-a:hover h3 {
+    color: #fd2e35;
+    width: fit-content;
+}
 </style>
  <main class="main">
       <!--01-->
