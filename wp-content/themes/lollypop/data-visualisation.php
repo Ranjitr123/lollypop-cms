@@ -60,15 +60,15 @@ get_header();
   background: #FFFFFF;
   padding:30px 35px 40px 30px;
 }
-.lp-awards-list__item:nth-child(even) .img {
+.new-custom-slider .lp-awards-list__item:nth-child(even) .img {
     min-height: 450px !important;
 }
-.lp-awards-list .img {
+.new-custom-slider .lp-awards-list .img {
     width: 450px!important;}
 	.lp-awards-list__item:nth-child(odd) {
     min-width: fit-content;
 }
-.lp-awards-list__item:nth-child(even) {
+.new-custom-slider .lp-awards-list__item:nth-child(even) {
     min-width: fit-content;
 }
 </style>
@@ -273,7 +273,7 @@ Cheers to Anil Reddy & Team..:)",
         <div class="fluid-width second-slider">
             <div class="row">
                 <div class="col-12 px-md-0">
-                    <ul class="px-0 lp-awards-list d-flex four-card-slider">
+                    <ul class="px-0 lp-awards-list d-flex four-card-slider new-custom-slider">
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.svg">
