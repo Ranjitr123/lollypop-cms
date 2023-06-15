@@ -401,8 +401,8 @@ Cheers to Anil Reddy & Team..:)",
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
                 <div class="col-md-10 col-lg-12 px-0 clr-white">
                     <div class="mb-35">
-                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">Dashboard designs with Data Visualisation</h3>
-                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">Data visualization plays a crucial role in dashboard designs as it helps in presenting complex data in a simple and easy-to-understand manner.</p>
+                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('section_main_title')?></h3>
+                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('section_main_description')?></p>
                     </div>
                 </div>
             </div>
@@ -413,12 +413,14 @@ Cheers to Anil Reddy & Team..:)",
             <div class="row">
                 <div class="col-12 px-md-0">
                     <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
+						<?php while(have_rows('section_image_slider2')){the_row();?>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg">
+                                <img class="img mb-3" src="<?php echo get_sub_field('slider_image')?>">
                             </div>
                         </li>
-                        <li class="lp-awards-list__item newimg">
+						<?php } ?>
+                       <!-- <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Fintech-Dashboard.webp" alt=Image>
                             </div>
@@ -442,9 +444,9 @@ Cheers to Anil Reddy & Team..:)",
                             <div class="award-info position-relative">
                                 <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Dashboard-2.jpg" alt=Image>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
-                    <div><a class="clr-second fnt-14 hvr-line data-scroll" href="http://localhost/cms/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
+                    <div><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
                 </div>
             </div>
         </div>
