@@ -301,7 +301,7 @@ Cheers to Anil Reddy & Team..:)",
                         </li>
                         <li class="lp-awards-list__item newimg">
                             <div class="award-info position-relative">
-                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Ecommerce.webp" alt=Image>
+                                <img class="img mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/financials.webp" alt=Image>
                                 <div class="case-std__info position-absolute">
                                 <img class="mb-3" src="https://lollypop.design/wp-content/uploads/2023/06/Financials-logo.webp" alt="logo">
                                   <h6 class="fnt-20 fnt-800 mb-1">Financials</h6>
