@@ -39,7 +39,8 @@ a.fnt-30.fnt-800.link-insta {
 a.fnt-30.fnt-800.link-insta {
     margin-left: 0px!important; 
 }}
-
+.ft-social-links li:last-child{display: flex;
+    justify-content: flex-start;}
 </style>
 
 <footer class="footer">
