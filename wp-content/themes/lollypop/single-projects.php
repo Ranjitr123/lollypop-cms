@@ -23,6 +23,9 @@ get_header();
     margin-top: 60px;
 }
 .space311{margin-top:-51px;}
+.project-type span {
+    margin-right: 15px;
+}
 </style>
 
 
