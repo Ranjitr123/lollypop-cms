@@ -38,6 +38,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/illustrations/"/>
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualization/"/>
 	<link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/fintech"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/enabling-growth-in-edtech/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/telecom/"/>
+	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/projects/knowledgehut/"/>
 
 <!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
