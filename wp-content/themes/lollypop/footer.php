@@ -41,6 +41,7 @@ a.fnt-30.fnt-800.link-insta {
 }}
 .ft-social-links li:last-child{display: flex;
     justify-content: flex-start;
+	margin-left:0px!important;
 }
 </style>
 
