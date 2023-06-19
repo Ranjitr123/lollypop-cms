@@ -200,9 +200,9 @@ Cheers to Anil Reddy & Team..:)",
 		  <div class='col-12 '>
             <div class="play-video-on-scroll">
               <div id="play2-out" style="display:none">
-                <div id="play2" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
+                <div id="play2" data-plyr-provider="<?php echo get_field('video_link_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
               </div>
-              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" vimeo" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_field('image')?>">
+              <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('video_link_provider')?>" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_field('image')?>">
               </video>
             </div>
           </div>
