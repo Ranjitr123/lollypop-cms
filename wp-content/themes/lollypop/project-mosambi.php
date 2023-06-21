@@ -217,12 +217,12 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1">
-                  <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default">projects</span>
+                  <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php the_field('company_names'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
-                    <p class="fnt-24"><?php the_field('short_descriptions'); ?></p>                     
+                    <p class="fnt-24"><?php the_field('short_descriptionss'); ?></p>                     
                     <div class="project-type">
                         <?php if( have_rows('tags') ) : while( have_rows('tags') ): the_row(); ?> 
-                        <span class="fnt-14 clr-black354"><?php the_sub_field('list'); ?></span>
+                        <span class="fnt-14 clr-black354"><?php the_sub_field('lists'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
                   </div>
@@ -260,15 +260,15 @@ get_header();
                 <div class="col-md-10 px-0 mx-auto">
                   <div class="mb-r-80">
                     <div class="project-step">
-                      <?php if( have_rows('brief_descriptions') ) : while( have_rows('brief_descriptions') ): the_row(); ?> 
+                      <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
-                            <?php the_sub_field('content'); ?>
+                            <?php the_sub_field('contents'); ?>
                           </div>
-                          <?php if(get_sub_field('cta_name') !=''){ ?>
-                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
+                          <?php if(get_sub_field('cta_names') !=''){ ?>
+                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_urls');?>"><?php the_sub_field('cta_names');?></a>
                             <?php } ?>
                         </div>
                       </div>
