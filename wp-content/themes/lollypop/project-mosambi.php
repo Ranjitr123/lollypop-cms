@@ -221,7 +221,7 @@ get_header();
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
                     <p class="fnt-24"><?php the_field('short_descriptionss'); ?></p>                     
                     <div class="project-type">
-                        <?php if( have_rows('tags') ) : while( have_rows('tags') ): the_row(); ?> 
+                        <?php if( have_rows('tagss') ) : while( have_rows('tagss') ): the_row(); ?> 
                         <span class="fnt-14 clr-black354"><?php the_sub_field('lists'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
@@ -234,13 +234,13 @@ get_header();
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
               <?php } ?>
               
-               <?php $bannerVideo = get_field('banner_video_link') ?>
-              <?php if($bannerVideo !=''){ ?>
+               <?php $bannerVideos = get_field('banner_video_links') ?>
+              <?php if($bannerVideos !=''){ ?>
                 <div class="play-video-on-scroll">
                   <div id="play2-out" style="display:none">
-                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_provider');?>" data-plyr-embed-id="<?php the_field('banner_video_link');?>"></div>
+                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_providers');?>" data-plyr-embed-id="<?php the_field('banner_video_links');?>"></div>
                   </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_link');?>" provider="<?php the_field('banner_video_provider');?>" poster="<?php the_field('banner_video_poster');?>">
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_links');?>" provider="<?php the_field('banner_video_providers');?>" poster="<?php the_field('banner_video_posters');?>">
                   </video>
                 </div>
                <?php } ?>
