@@ -251,6 +251,39 @@ get_header();
     </section>
 
 <!-- second section -->
+      <!--02-->
+      <section class="p-r-80 pb-0 pare-define"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+              <div>
+                <div class="col-md-10 px-0 mx-auto">
+                  <div class="mb-r-80">
+                    <div class="project-step">
+                      <?php if( have_rows('brief_descriptions') ) : while( have_rows('brief_descriptions') ): the_row(); ?> 
+                      <div class="project-step__item row"> 
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
+                        <div class="col-12 col-md-8 project-step-disc">
+                          <div class="project-step-disc__item"> 
+                            <?php the_sub_field('content'); ?>
+                          </div>
+                          <?php if(get_sub_field('cta_name') !=''){ ?>
+                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
+                            <?php } ?>
+                        </div>
+                      </div>
+                       <?php endwhile; endif; ?>
+                    </div>
+                  </div>
+                </div>    	  
+                     
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+	  
 
 <!-- wireframe section -->
 <section calss="wireframe-sec">
