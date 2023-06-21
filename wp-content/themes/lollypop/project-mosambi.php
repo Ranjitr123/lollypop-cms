@@ -291,11 +291,11 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="wireframe-banner">
-                    <h3>Wireframes</h3>
-                    <p class="mt-md-4">Using the research as reference, we started created wireframes. Throughout the design process, we kept the the users in mind, ensuring that their objectives and challenges were taken into account.</p>
+                    <h3><?php the_field('wireframe_title'); ?></h3>
+                    <p class="mt-md-4"><?php the_field('wireframe_description'); ?></p>
                 </div>
                 <div class="wireframe-img">
-                    <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-2.webp" alt="logo">
+                    <img class="img-fluid" src="<?php the_field('wireframe_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -309,11 +309,11 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="wireframe-banner logo-banner">
-                    <h3>Logo</h3>
-                    <p class="mt-md-4">We adhered a consistent design language. Keeping the original version, we simplified it and created an abstract, visually appealing logo design.</p>
+                    <h3><?php the_field('logos_title'); ?></h3>
+                    <p class="mt-md-4"><?php the_field('logos_description'); ?></p>
                 </div>
                 <div class="wireframe-img logo-img">
-                    <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-3.webp" alt="logo">
+                    <img class="img-fluid" src="<?php the_field('logos_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -326,20 +326,20 @@ get_header();
         <div class="row justify-content-center ">
             <div class="col-md-10 col-lg-9 col-12 mobile-row">
                 <div class="wireframe-banner mobile-banner">
-                    <h3>Mobile UI</h3>
-                    <p class="mt-md-4">We created engaging and colorful UI screens for the Mosambee app, showcasing bars, graphs and other visuals which is easier and more impactful for the users.</p>
+                    <h3><?php the_field('mobile_ui_title'); ?></h3>
+                    <p class="mt-md-4"><?php the_field('mobile_ui_description'); ?></p>
                 </div>
                 <div class="wireframe-img mobile-img">
-                    <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-4.webp" alt="logo">
+                    <img class="img-fluid" src="<?php the_field('mobile_ui_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
         <div class="row justify-content-center ">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="compents-head">
-                    <h3>UI Components</h3>
+                    <h3><?php the_field('ui_components_title'); ?></h3>
                     <div class="compontent-img">
-                        <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-5.webp" alt="logo">
+                        <img class="img-fluid" src="<?php the_field('ui_components_image'); ?>" alt="logo">
                     </div>
                 </div>
         </div>
@@ -352,10 +352,10 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="wireframe-banner color-banner">
-                    <h3>Typeface</h3>
+                    <h3><?php the_field('typeface_title'); ?></h3>
                 </div>
                 <div class="wireframe-img logo-img">
-                    <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/Group-1171279521.svg" alt="logo">
+                    <img class="img-fluid" src="<?php the_field('typeface_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -368,11 +368,11 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12 mt-5">
                 <div class="wireframe-banner  color-banner">
-                    <h3>Colors</h3>
-                    <p>The color palette of the design we created matched with the one stop solution idea behind the app, interlinking the reliable, easy-to-use look and feel of Mosambee.</p>
+                    <h3><?php the_field('colors_title'); ?></h3>
+                    <p><?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-7.webp" alt="logo">
+                    <img class="mt-md-5 pb-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -384,16 +384,16 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12 mt-5">
                 <div class="wireframe-banner icon-banner color-banner">
-                    <h3>Iconography</h3>
-                    <p>We designed easy to understand icons for different features make the app more reliable for the users..</p>
+                    <h3><?php the_field('iconography_title'); ?></h3>
+                    <p><?php the_field('iconography_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-8.webp" alt="logo">
+                    <img class="mt-md-5 pb-md-5 img-fluid" src="<?php the_field('iconography_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
         <div class="mt-5 mx-auto icon-container">
-            <img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2023/06/image-9.webp" alt="logo">
+            <img class="img-fluid" src="<?php the_field('last_banner_image'); ?>" alt="logo">
         </div>
     </div>
 </section>
