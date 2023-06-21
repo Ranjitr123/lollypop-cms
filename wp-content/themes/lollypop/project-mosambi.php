@@ -217,7 +217,7 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1">
-                  <div class="mb-r-80 col-md-11 col-lg-11 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default">projects</span>
+                  <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default">projects</span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
                     <p class="fnt-24"><?php the_field('short_descriptions'); ?></p>                     
                     <div class="project-type">
