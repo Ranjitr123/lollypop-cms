@@ -398,6 +398,97 @@ get_header();
     </div>
 </section>
 
+<?php if( get_field('conclusion') !=''){?>
+          <section class="conclusion-pad sec-pt">
+        <div class="container"> 
+          <div class="row"> 
+          <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
+                <div class="col-md-10 px-0 mx-auto"> 
+                 <div>
+                <div class="col-md-10 px-0 mx-auto">
+                  <div class="mb-r-80">
+                    <div class="project-step">
+                      <div class="project-step__item row"> 
+                        <div class="col-12 mb-4"> <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block text-uppercase data-scroll">Conclusion</h3></div>
+                        <div class="col-12 col-md-10 project-step-disc">
+                          <div class="project-step-disc__item conclustion"> 
+                           <?php the_field('conclusion'); ?>
+                        
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+              </div>
+            </div>
+              </div>
+      </section>
+    <?php } ?>
+	<section class="sec-pd pt-0">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+              <div class="col-md-10 px-0 mx-auto">
+                <div class="projects-nav d-flex flex-column flex-md-row justify-content-between">
+                  <div class="projects-nav__prev">
+                     <div class="d-flex">
+                      <?php $nextPost = get_next_post();
+                            if($nextPost) { ?>
+                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-leftAr.svg" alt="Image"></div>
+                      <div class="ps-4">
+                        <?php
+                         $destination = get_field('company_name', $nextPost->ID);                               
+                         next_post_link( '%link', '                       
+                            <h4 class="fnt-28 fnt-800">'. $destination .'</h4> ' ); ?>                           
+                      </div>
+                      <?php }?>
+                      </div>
+                      </div>
+                      
+                      
+                  <div class="projects-nav__next">
+                      <div class="d-flex ms-auto">
+                      <?php 
+                  $prevPost = get_previous_post();
+                  if($prevPost) { ?>
+                      <div class="pe-4"> 
+                         
+                   <?php
+                        $destination = get_field('company_name', $prevPost->ID);
+                         previous_post_link( '%link',  ' <h4 class="fnt-28 fnt-800">'. $destination .'</h4>' );  ?>
+                      </div>
+                      <div class="pt-2"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/icons/icon-red-rightAr.svg" alt="Image"></div>
+                      <?php } ?>
+                      </div>
+                      </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+	  <section class="sec-footer-trans">
+        <div class="container z-1">
+          <div class="row"> 
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
+              <div class="py-70 px-3 data-scroll" style="background: #221429;">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="col-11 col-md-8 col-lg-7 px-0 d-inline-block clr-white text-center"> 
+                    <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Got An Idea?</span>
+                      <h2 class="fnt-50 fnt-800 clr-white">Let’s craft brilliance together!</h2>
+                    </div><a class="web-btn web-btn--red" href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 </main>
 
 
