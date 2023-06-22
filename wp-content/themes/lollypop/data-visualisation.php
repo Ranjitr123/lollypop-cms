@@ -80,7 +80,12 @@ get_header();
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
 min-height: 450px !important;}
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
-min-height: 450px !important;}
+min-height: 450px !important
+.visual-p{
+    max-width: 634px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 </style>
 
 <script type="application/ld+json">{
@@ -196,7 +201,7 @@ Cheers to Anil Reddy & Team..:)",
                     <h1 class="fnt-50 fnt-800"> <span class="d-block"><?php echo get_field('title1')?></span>
                     <!--  <div class="quote d-flex justify-content-center flex-wrap"><span class="clr-second quote__item quotes">Strengthen your Brand</span><span class="clr-second quote__item quotes">In-depth Insight</span><span class="clr-second quote__item quotes">Better Positioning</span><span class="clr-second quote__item quotes">Increase your profits</span><span class="clr-second quote__item quotes">To Build Trust</span></div>-->
                     </h1>
-                    <p class="fnt-24 mt-4"><?php echo get_field('description')?></p>
+                    <p class="fnt-24 mt-4 visual-p"><?php echo get_field('description')?></p>
                      <div class="data-banner">
                         <a class="clr-second fnt-16 hvr-line data-scroll" href="https://lollypop.design/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a>
                      </div>
