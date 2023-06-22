@@ -80,7 +80,7 @@ get_header();
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
 min-height: 450px !important;}
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
-min-height: 450px !important
+min-height: 450px !important}
 .visual-p{
     max-width: 634px;
     margin: 0 auto;
