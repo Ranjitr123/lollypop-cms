@@ -32,6 +32,13 @@ get_header();
         .second-slider{
           padding-left:0px !important;
         }
+			.new-custom-slider .lp-awards-list__item:nth-child(even) .img {
+		min-height: 446px;
+		}
+			.new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
+		min-height: 446px;
+	}
+	.lp-awards-list .img{height:446px;}
 
     }
 	.data_red {
