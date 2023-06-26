@@ -10,6 +10,7 @@
 	<?php wp_head(); ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="U1kNtBI9gtLLE0oKNQs894BlhWl-3ydQQdWZGQGVbVM" />
 <!--<link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/lollypop-logo.svg" alt="Image">-->
 <link rel="shortcut icon" type="image/svg" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/Path.svg" alt="Image">
 <link rel="shortcut icon" type="image/svg" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/Mobile-Favicon.png" alt="Image">
@@ -50,6 +51,7 @@ else
 });
 
 </script>
+
  <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
