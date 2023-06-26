@@ -26,6 +26,8 @@
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualisation/"/>
 	<link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
 
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8J8Y4T75L"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W8J8Y4T75L'); </script>
+	
 <!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>
