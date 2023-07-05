@@ -63,14 +63,16 @@ get_header();
     }
 
     .icons-p{
-        margin-left: 60px;
-        margin-bottom:20px;
+        margin: inherit !important;
+        margin-top:20px !important; 
+        margin-left: 60px !important;
+        margin-bottom:20px !important;
         font-size: 16px;
         font-family:'Montserrat', sans-serif !important;
         font-style: normal;
         font-weight: 400;
         line-height: 168%;
-        margin: inherit;
+        
     }
     .icon-img{
         margin-top: -139px;
@@ -80,12 +82,25 @@ get_header();
     /* media query */
     @media (max-width: 767px)
     {
-
+        .information-banner h3{
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.88px;
+        }
         .wireframe-banner p {
             max-width: 280px;
         }
         .wireframe-banner h3 {
            font-size: 24px;
+           line-height: 24px;
+           letter-spacing: 0.88px;
+        }
+        .icons-p {
+            margin:0 auto !important;
+        }
+        .icon-img {
+            margin-top: 0;
+            margin-left: 0;
         }
        
    
@@ -258,7 +273,7 @@ get_header();
     <div class="container">
         <div class="row justify-content-center ">
             <div class="col-md-10 col-lg-9 col-12 mobile-row">
-                <div class="wireframe-banner mobile-banner">
+                <div class="wireframe-banner mobile-banner pt-md-0 pt-5">
                     <h3>UI Design<?php the_field('mobile_ui_title'); ?></h3>
                     <p class="mt-md-4">We adhered to the design language that was consistent with Miko’s brand guidelines.We wanted the app to look bold, fun, playful and evoke a premium feel. We curated an intuitive and lively interface that helped users achieve their goals faster. 
                        <?php the_field('mobile_ui_description'); ?></p>
@@ -267,15 +282,6 @@ get_header();
                     <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279300-3.webp" alt="logo">
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center ">
-            <div class="col-md-10 col-lg-9 col-12">
-                <div class="compents-head">
-                    <h3><?php the_field('ui_components_title'); ?></h3>
-                    <div class="compontent-img">
-                        <img class="img-fluid" src="<?php the_field('ui_components_image'); ?>" alt="logo">
-                    </div>
-                </div>
         </div>
     </div>
 </section>
