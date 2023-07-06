@@ -262,11 +262,15 @@ Cheers to Anil Reddy & Team..:)",
                   <p class="fnt-24"><?php echo get_field('titles')?></p>
                 </div>
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
-					<?php while(have_rows('social_icons_section')){the_row();?>
                   <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php echo get_sub_field('image')?>" alt="Image" width="240" height="56"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Catalyst-Credit-Union.svg" alt="Image" width="240" height="56"></div>
                   </li>
-					<?php } ?> 
+                  <li class="clients-logo__item col-4 col-md-4 data-scroll">
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Cinemark-SVG.svg" alt="Image" width="240" height="56"></div>
+                  </li>
+                  <li class="clients-logo__item col-4 col-md-4 data-scroll">
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Pogo-SVG.svg" alt="Image" width="240" height="56"></div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -345,7 +349,7 @@ Cheers to Anil Reddy & Team..:)",
         <h3 class="service-tittle  mb-md-5 mb-4">What services do we provide?</h3>
           <div class="d-flex flex-wrap mb-md-5 pb-md-2">
                 <div class="me-md-5">
-                  <img src="https://lollypop.design/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
+                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-1.webp" alt="" width="230" height="210">
                 </div>
                 <div class="mxw-339">
                   <h5 class="mb-3 info-tittle">Dashboard optimisation</h5>
@@ -355,31 +359,31 @@ Cheers to Anil Reddy & Team..:)",
               
             <div class="d-flex flex-wrap mb-md-5 pb-md-2">
                 <div class="me-md-5">
-                  <img src="https://lollypop.design/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
+                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
                 </div>
                 <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Dashboard optimisation</h5>
-                  <p class="info-para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                  <h5 class="mb-3 info-tittle">Tableau to Power BI Migration</h5>
+                  <p class="info-para">Making data analytics accessible to everyone by delivering a low-code to no-code experience for all aspects of data analysis. Visually showcase complex datasets, identify relations and trends.</p>
                 </div>
             </div>
 
             <div class="d-flex flex-wrap mb-md-5 pb-md-2">
                 <div class="me-md-5">
-                  <img src="https://lollypop.design/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
+                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-3.webp" alt="" width="230" height="210">
                 </div>
                 <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Dashboard optimisation</h5>
-                  <p class="info-para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                  <h5 class="mb-3 info-tittle">Report Development</h5>
+                  <p class="info-para">Report development for all the teams, from analytics to the executive to the customer.</p>
                 </div>
             </div>
 
             <div class="d-flex flex-wrap mb-md-5 pb-md-2">
                 <div class="me-md-5">
-                  <img src="https://lollypop.design/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
+                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-4.webp" alt="" width="230" height="210">
                 </div>
                 <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Dashboard optimisation</h5>
-                  <p class="info-para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                  <h5 class="mb-3 info-tittle">Power BI Services</h5>
+                  <p class="info-para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
                 </div>
             </div>
 
@@ -448,38 +452,46 @@ Cheers to Anil Reddy & Team..:)",
 </section>
 
 <!-- 2 nd slider -->
-<section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
-    <div class="container">
-        <div class="row mt-4 mt-md-5 pt-md-5">
-            <div class="col-12 col-md-11 col-lg-9 mx-auto">
-                <div class="col-md-10 col-lg-12 px-0 clr-white">
-                    <div class="mb-35">
-                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('section_main_title')?></h3>
-                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('section_main_description')?></p>
-                    </div>
-                </div>
+<section class="sec-pd sec-pt1 pb-0" id=fifth style="background: #221429;">
+   <div class="container">
+      <div class="row mt-4 mt-md-5 pt-md-5">
+         <div class="col-12 col-md-11 col-lg-9 mx-auto px-0">
+            <div class="col-md-10 col-lg-12 px-0 clr-white">
+               <div class=mb-35>
+                  <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">Dashboard designs with Data Visualization</h3>
+                  <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">Data visualization plays a crucial role in dashboard designs as it helps in presenting complex data in a simple and easy-to-understand manner.</p>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="sec-pd sec-pt1">
-        <div class="fluid-width second-slider">
-            <div class="row">
-                <div class="col-12 px-md-0">
-                    <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
-						<?php while(have_rows('section_image_slider2')){the_row();?>
-                        <li class="lp-awards-list__item newimg">
-                            <div class="award-info position-relative">
-                                <img class="img mb-3" src="<?php echo get_sub_field('slider_image')?>">
-                            </div>
-                        </li>
-						<?php } ?>
-                       
-                    </ul>
-                    <div><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
-                </div>
+         </div>
+      </div>
+   </div>
+   <div class="sec-pd sec-pt1 pt-0">
+      <div class="fluid-width second-slider">
+         <div class=row>
+            <div class="col-12 px-md-0">
+               <div class="mb-5"><a class="clr-second fnt-14 hvr-line data-scroll" href=https://lollypop.design/project-enquiry/ style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
+               <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
+                  <li class="lp-awards-list__item newimg">
+                     <div class="award-info position-relative">
+                        <img class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-1.webp"alt="logo">
+                     </div>
+                  </li>
+                  <li class="lp-awards-list__item newimg">
+                     <div class="award-info position-relative">
+                        <img class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-2.webp" alt="logo">
+                     </div>
+                  </li>
+                  <li class="lp-awards-list__item newimg">
+                     <div class="award-info position-relative">
+                        <img
+                           class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp" alt="logo">
+                     </div>
+                  </li>
+               </ul>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </section>
 
       <section class="sec-pd sec-pb">
