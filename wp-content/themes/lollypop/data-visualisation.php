@@ -237,10 +237,10 @@ Cheers to Anil Reddy & Team..:)",
                 <div class="col-12 col-md-10 mx-auto d-flex flex-column align-items-center">
                   <div class="mb-50 mx-auto mb-4">
                   <span class="d-block fnt-14 text-capitalize mb-2 clr-default">Services / Data Visualization</span>
-                    <h1 class="fnt-40 fnt-800 red-stroke red-stroke--small13 px-md-0"> Our Data Visualization Services to Reveal Information Within Your Data</h1>
-                    <p class="fnt-24 mt-4 col-md-9">Become a storyteller by turning your data into visually compelling information.</p>
+                    <h1 class="fnt-40 fnt-800 red-stroke red-stroke--small13 px-md-0"> <?php echo get_field('title1')?></h1>
+                    <p class="fnt-24 mt-4 col-md-9"><?php echo get_field('description')?></p>
                      <div class="data-banner">
-                        <a class="clr-second fnt-16 hvr-line data-scroll" href="https://lollypop.design/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a>
+                        <a class="clr-second fnt-16 hvr-line data-scroll" href="<?php echo get_field('link_url')?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('link_text')?></a>
                      </div>
                   </div>
                 </div>
@@ -249,9 +249,9 @@ Cheers to Anil Reddy & Team..:)",
         <div class='col-12 col-md-11 mx-auto'>
               <div class="play-video-on-scroll">
                 <div id="play2-out" style="display:none">
-                  <div id="play2" data-plyr-provider="<?php echo get_field('video_link_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
+                  <div id="play2" data-plyr-provider="<?php echo get_field('video_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
                 </div>
-                <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('video_link_provider')?>" embed-id="<?php echo get_field('video_link')?>" poster="https://lollypop.design/wp-content/uploads/2023/05/Data-Visualizaton.webp">
+                <video class="playvid" autoplay="" muted="" loop="" playsinline="" provider=" <?php echo get_field('video_provider')?>" embed-id="<?php echo get_field('video_link')?>" poster="<?php echo get_field('video_image')?>">
                 </video>
               </div>
             </div>
@@ -262,15 +262,11 @@ Cheers to Anil Reddy & Team..:)",
                   <p class="fnt-24"><?php echo get_field('titles')?></p>
                 </div>
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
+				  <?php if( have_rows('social_icons_section') ): while( have_rows('social_icons_section') ): the_row(); ?>
                   <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Catalyst-Credit-Union.svg" alt="Image" width="240" height="56"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="Image" width="240" height="56"></div>
                   </li>
-                  <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Cinemark-SVG.svg" alt="Image" width="240" height="56"></div>
-                  </li>
-                  <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="https://lollypop.design/wp-content/uploads/2022/12/Pogo-SVG.svg" alt="Image" width="240" height="56"></div>
-                  </li>
+                  <?php endwhile; endif; ?> 
                 </ul>
               </div>
             </div>
@@ -286,8 +282,8 @@ Cheers to Anil Reddy & Team..:)",
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
                 <div class="col-md-10 col-lg-12 px-0 clr-white">
                     <div class="mb-35">
-                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">Why do we need Data Visualisation?</h3>
-                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">In the world of Big Data, data visualization is essential to analyze massive amounts of information and make meaningful decisions that are data driven.</p>
+                        <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('heading')?></h3>
+                        <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('content')?></p>
 					          </div>
                 </div>
             </div>
@@ -295,45 +291,20 @@ Cheers to Anil Reddy & Team..:)",
     </div>
     <div class="sec-pd sec-pt1">
       <div class="fluid-width second-slider">
-        <div class=row>
+        <div class="row">
             <div class="col-12 px-md-0">
               <ul class="px-0 lp-awards-list d-flex four-card-slider new-custom-slider">
+					<?php if( have_rows('content_section') ): while( have_rows('content_section') ): the_row(); ?>
                   <li class="lp-awards-list__item newimg">
                     <div class="award-info position-relative">
-                    <img class="img mb-3" src='http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Usecase-Image-1.webp' alt="logo">
+                    <img class="img mb-3" src='<?php the_sub_field('card_image') ?>' alt="logo">
                         <div class="case-std__info position-absolute">
-                          <h6 class="fnt-16 fnt-800 mb-1">Fast Conception of Information</h6>
-                          <p class="fnt-14 mb-0 fnt-mb-12">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
+                          <h6 class="fnt-16 fnt-800 mb-1"><?php the_sub_field('title') ?></h6>
+                          <p class="fnt-14 mb-0 fnt-mb-12"><?php the_sub_field('content') ?></p>
                         </div>
                     </div>
                   </li>
-                  <li class="lp-awards-list__item newimg">
-                    <div class="award-info position-relative">
-                    <img class="img mb-3" src='http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Usecase-Image-2.webp' alt="logo">
-                        <div class="case-std__info position-absolute">
-                          <h6 class="fnt-16 fnt-800 mb-1">Discover & Predict New Trends </h6>
-                          <p class="fnt-14 mb-0 fnt-mb-12">Discover new emerging trends in the market before the barriers stop decisive opportunities for growth and remove the noise from your data.</p>
-                        </div>
-                    </div>
-                  </li>
-                  <li class="lp-awards-list__item newimg">
-                    <div class="award-info position-relative">
-                        <img class="img mb-3" src='http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Usecase-Image-3.webp' alt="logo">
-                        <div class="case-std__info position-absolute">
-                          <h6 class="fnt-16 fnt-800 mb-1">Find out Relationships and Patterns</h6>
-                          <p class="fnt-14 mb-0 fnt-mb-12">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
-                        </div>
-                    </div>
-                  </li>
-                  <li class="lp-awards-list__item newimg">
-                    <div class="award-info position-relative">
-                        <img class="img mb-3" src='http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Usecase-image-4.webp' alt="logo">
-                        <div class="case-std__info position-absolute">
-                          <h6 class="fnt-16 fnt-800 mb-1">Present your Data</h6>
-                          <p class="fnt-14 mb-0 fnt-mb-12">Clearly communicate huge and complex data, including big data effectively & efficiently. Focus on other future success indicators by saving time here.</p>
-                        </div>
-                    </div>
-                  </li>
+				  <?php endwhile; endif; ?>                  
               </ul>
             </div>
         </div>
@@ -346,48 +317,18 @@ Cheers to Anil Reddy & Team..:)",
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-11 col-lg-9 mx-auto">
-        <h3 class="service-tittle  mb-md-5 mb-4">What services do we provide?</h3>
-          <div class="d-flex flex-wrap mb-md-5 pb-md-2">
+        <h3 class="service-tittle  mb-md-5 mb-4"><?php echo get_field('service_heading')?></h3>
+          <?php if( have_rows('service_content_section') ): while( have_rows('service_content_section') ): the_row(); ?>
+		  <div class="d-flex flex-wrap mb-md-5 pb-md-2">
                 <div class="me-md-5">
-                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-1.webp" alt="" width="230" height="210">
+                  <img src="<?php the_sub_field('service_image') ?>" alt="" width="230" height="210">
                 </div>
                 <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Dashboard optimisation</h5>
-                  <p class="info-para">Analytical dashboards tell a more complete story than simply displaying raw data, and are limitless in the breadth of data they can communicate in a single visual.Transforming data into information that is easily consumable and immediately actionable.</p>
+                  <h5 class="mb-3 info-tittle"><?php the_sub_field('service_title') ?></h5>
+                  <p class="info-para"><?php the_sub_field('service_content') ?></p>
                 </div>
             </div>
-              
-            <div class="d-flex flex-wrap mb-md-5 pb-md-2">
-                <div class="me-md-5">
-                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-2.webp" alt="" width="230" height="210">
-                </div>
-                <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Tableau to Power BI Migration</h5>
-                  <p class="info-para">Making data analytics accessible to everyone by delivering a low-code to no-code experience for all aspects of data analysis. Visually showcase complex datasets, identify relations and trends.</p>
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap mb-md-5 pb-md-2">
-                <div class="me-md-5">
-                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-3.webp" alt="" width="230" height="210">
-                </div>
-                <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Report Development</h5>
-                  <p class="info-para">Report development for all the teams, from analytics to the executive to the customer.</p>
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap mb-md-5 pb-md-2">
-                <div class="me-md-5">
-                  <img src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Service-Img-4.webp" alt="" width="230" height="210">
-                </div>
-                <div class="mxw-339">
-                  <h5 class="mb-3 info-tittle">Power BI Services</h5>
-                  <p class="info-para">Unify your disparate sources of data into coherent, visually immersive, and interactive insights.</p>
-                </div>
-            </div>
-
-            
+            <?php endwhile; endif; ?>                   
         </div>                    
     </div>
   </div>
@@ -399,52 +340,23 @@ Cheers to Anil Reddy & Team..:)",
       <div class="row">
          <div class="col-12 col-md-8  mx-auto">
             <div class="mb-5 data-scroll" style="opacity: 1; transform: translateY(0px);">
-               <h2 class="fnt-40 fnt-800 mb-16 col-md-8">What are the Use Cases for Data Visualization</h2>
-               <p class="fnt-24 col-lg-10 px-0 data-scroll">Data visualization in one of the processes in Data science pipeline, that enables the information to be represented in a visually compelling, easy to understand format.</p>
+               <h2 class="fnt-40 fnt-800 mb-16 col-md-8"><?php echo get_field('use_case_title')?></h2>
+               <p class="fnt-24 col-lg-10 px-0 data-scroll"><?php echo get_field('use_case_description')?></p>
               </div>
          </div>
          <div class="col-12 col-md-8 mx-auto">
             <ul class="indutstry-list px-0 ul-mb-60 row justify-content-between">
-              
+				 <?php if( have_rows('use_case_points_section') ): while( have_rows('use_case_points_section') ): the_row(); ?>
 			         <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
                   <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Data Science</h3>
-                     <p class="mb-22 col-12 col-md-11 mx-310">Helps in facilitating intricate data analysis, enabling a deeper understanding of complex data sets and uncovering valuable trends.</p>
+                     <h3 class="fnt-22 fnt-800 mb-2"><?php the_sub_field('point_title') ?></h3>
+                     <p class="mb-22 col-12 col-md-11 mx-310"><?php the_sub_field('point_content') ?></p>
                   </div>
                </li>
-              <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">E-Commerce</h3>
-                     <p class="mb-22 col-12 col-md-11 mx-310">Identifies emerging consumer trends, providing rapid insights to attract new customers and drive growth in the dynamic realm of ecommerce.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Financials</h3>
-                     <p class="mb-22 col-md-11 mx-310">Emphasizes recent trends to devise better investment strategies, risk management, market analysis etc</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Education</h3>
-                     <p class="mb-22 col-md-11 mx-310">Empowers inexperienced users in education to analyze data effortlessly, facilitating informed decision-making for meaningful outcomes.</p>
-                  </div>
-               </li>
-               <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">Business intelligence</h3>
-                     <p class="mb-22 col-md-11 mx-310">Standardized display of data and make it easier for the users to make more informed decisions. </p>
-                  </div>
-               </li>
-              <li class="indutstry-list__item col-12 col-md-6 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                  <div class="industry col-12 col-md-12 col-lg-12 col-xl-12 px-0">
-                     <h3 class="fnt-22 fnt-800 mb-2">AI & Machine Learning</h3>
-                     <p class="mb-22 col-md-11 mx-310">Analyze historical data to provide insights into business-critical incidents.</p>
-                  </div>
-               </li>
+              <?php endwhile; endif; ?>                   
             </ul>
             <div class="para">
-               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></strong>
+               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php the_sub_field('use_case_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php the_sub_field('use_case_bottom_text') ?></a></strong>
             </div>
          </div>
       </div>
@@ -452,14 +364,14 @@ Cheers to Anil Reddy & Team..:)",
 </section>
 
 <!-- 2 nd slider -->
-<section class="sec-pd sec-pt1 pb-0" id=fifth style="background: #221429;">
+<section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
          <div class="col-12 col-md-11 col-lg-9 mx-auto px-0">
             <div class="col-md-10 col-lg-12 px-0 clr-white">
-               <div class=mb-35>
-                  <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0">Dashboard designs with Data Visualization</h3>
-                  <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll">Data visualization plays a crucial role in dashboard designs as it helps in presenting complex data in a simple and easy-to-understand manner.</p>
+               <div class="mb-35">
+                  <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
+                  <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('dashboard_design_description') ?></p>
                </div>
             </div>
          </div>
@@ -467,26 +379,17 @@ Cheers to Anil Reddy & Team..:)",
    </div>
    <div class="sec-pd sec-pt1 pt-0">
       <div class="fluid-width second-slider">
-         <div class=row>
+         <div class="row">
             <div class="col-12 px-md-0">
-               <div class="mb-5"><a class="clr-second fnt-14 hvr-line data-scroll" href=https://lollypop.design/project-enquiry/ style="opacity: 1; transform: translateY(0px);"> Get in Touch</a></div>
+               <div class="mb-5"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_text') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_url') ?></a></div>
                <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
+				<?php if( have_rows('dashboard_design_slider') ): while( have_rows('dashboard_design_slider') ): the_row(); ?>
                   <li class="lp-awards-list__item newimg">
                      <div class="award-info position-relative">
-                        <img class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-1.webp"alt="logo">
+                        <img class="img mb-3" src="<?php the_sub_field('slider_image') ?>"alt="logo">
                      </div>
                   </li>
-                  <li class="lp-awards-list__item newimg">
-                     <div class="award-info position-relative">
-                        <img class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-2.webp" alt="logo">
-                     </div>
-                  </li>
-                  <li class="lp-awards-list__item newimg">
-                     <div class="award-info position-relative">
-                        <img
-                           class="img mb-3" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp" alt="logo">
-                     </div>
-                  </li>
+                  <?php endwhile; endif; ?> 
                </ul>
             </div>
          </div>
