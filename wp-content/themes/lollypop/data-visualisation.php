@@ -127,20 +127,23 @@ line-height: 24px; max-width:370px; margin:0 auto;}
     font-size:18px;
   }
   .second-slider2 .lp-awards-list__item:nth-child(even) .img {
-    min-height: fit-content;
+    min-height: fit-content!important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
-    min-height: fit-content;
+    min-height: fit-content!important;
 }
 .lp-awards-list__item {
     width: auto;
 }
-
+.services-provide {
+    padding-top: 50px;
+}
+.info-para {margin-bottom: 2rem;}
 }
 @media (min-width: 992px)
 {
 .lp-awards-list__item:nth-child(even) {
-    min-width: fit-content;
+    min-width: fit-content!important;
 }}
 
 </style>
