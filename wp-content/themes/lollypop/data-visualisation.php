@@ -115,12 +115,23 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 		.new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
 		   min-height: 446px;
 	   }
-	.lp-awards-list .img{height:446px;}
+	/*.lp-awards-list .img{height:446px;}*/
   .play-video-on-scroll{
       width:320px;
       height:100%;
   }
-
+.service-tittle{
+    font-size:24px;
+  }
+  .info-tittle{
+    font-size:18px;
+  }
+  .second-slider2 .lp-awards-list__item:nth-child(even) .img {
+    min-height: fit-content;
+}
+.second-slider2 .lp-awards-list__item:nth-child(odd) .img {
+    min-height: fit-content;
+}
 
 }
 @media (min-width: 992px)
