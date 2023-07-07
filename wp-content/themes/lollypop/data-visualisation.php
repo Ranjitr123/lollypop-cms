@@ -132,6 +132,9 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: fit-content;
 }
+.lp-awards-list__item {
+    width: auto;
+}
 
 }
 @media (min-width: 992px)
