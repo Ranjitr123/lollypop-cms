@@ -123,6 +123,11 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 
 
 }
+@media (min-width: 992px)
+{
+.lp-awards-list__item:nth-child(even) {
+    min-width: fit-content;
+}}
 
 </style>
 
@@ -356,7 +361,7 @@ Cheers to Anil Reddy & Team..:)",
               <?php endwhile; endif; ?>                   
             </ul>
             <div class="para">
-               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php the_sub_field('use_case_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php the_sub_field('use_case_bottom_text') ?></a></strong>
+               <strong><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php get_field('use_case_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php get_field('use_case_bottom_text') ?></a></strong>
             </div>
          </div>
       </div>
