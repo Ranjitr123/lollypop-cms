@@ -125,6 +125,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
   }
   .info-tittle{
     font-size:18px;
+	line-height:20px;
   }
   .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: fit-content!important;
