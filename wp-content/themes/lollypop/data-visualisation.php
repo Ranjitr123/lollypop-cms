@@ -116,9 +116,15 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 		   min-height: 446px;
 	   }
 	.lp-awards-list .img{height:446px;}
-  .play-video-on-scroll{
-      width:320px;
-      height:100%;
+    .play-video-on-scroll{
+        width:320px;
+        height:100%;
+    }
+  .service-tittle{
+    font-size:24px;
+  }
+  .info-tittle{
+    font-size:18px;
   }
 
 
@@ -543,9 +549,6 @@ Cheers to Anil Reddy & Team..:)",
         </div>
       </section>
     </main>
-
-  
-
 <?php
 get_footer();
 ?>
