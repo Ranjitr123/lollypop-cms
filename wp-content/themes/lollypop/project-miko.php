@@ -120,10 +120,10 @@ get_header();
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php echo the_field('mcompany_name'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
-                    <p class="fnt-24"><?php echo the_field('short_descriptionss'); ?></p>                     
+                    <p class="fnt-24"><?php echo the_field('m_short_descriptions'); ?></p>                     
                     <div class="project-type">
-                        <?php if( have_rows('tagss') ) : while( have_rows('tagss') ): the_row(); ?> 
-                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('lists'); ?></span>
+                        <?php if( have_rows('m_tagss') ) : while( have_rows('m_tagss') ): the_row(); ?> 
+                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('m_lists'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
                   </div>
@@ -135,13 +135,13 @@ get_header();
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
               <?php } ?>
               
-               <?php $bannerVideos = get_field('banner_video_links') ?>
+               <?php $bannerVideos = get_field('m_banner_video_links') ?>
               <?php if($bannerVideos !=''){ ?>
                 <div class="play-video-on-scroll">
                   <div id="play2-out" style="display:none">
-                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_providers');?>" data-plyr-embed-id="<?php the_field('banner_video_links');?>"></div>
+                    <div id="play2" data-plyr-provider="<?php the_field('m_banner_video_providers');?>" data-plyr-embed-id="<?php the_field('m_banner_video_links');?>"></div>
                   </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_links');?>" provider="<?php the_field('banner_video_providers');?>" poster="<?php the_field('banner_video_posters');?>">
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('m_banner_video_links');?>" provider="<?php the_field('m_banner_video_providers');?>" poster="<?php the_field('m_banner_video_posters');?>">
                   </video>
                 </div>
                <?php } ?>
@@ -161,7 +161,7 @@ get_header();
                 <div class="col-md-10 px-0 mx-auto">
                   <div class="mb-r-80">
                     <div class="project-step">
-                      <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
+                      <?php if( have_rows('m_brief_descriptionss') ) : while( have_rows('m_brief_descriptionss') ): the_row(); ?> 
                       <div class="project-step__item row"> 
                         <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
