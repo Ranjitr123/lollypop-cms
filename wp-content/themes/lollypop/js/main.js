@@ -246,7 +246,7 @@
 
         $(".second-slider2").slick({
             dots: false,
-            infinite: true,
+            infinite: false,
             speed: 800,
             slidesToShow: 2,
             slidesToScroll: 1,
