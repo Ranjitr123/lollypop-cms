@@ -123,7 +123,7 @@ get_header();
                     <p class="fnt-24"><?php echo the_field('m_short_descriptions'); ?></p>                     
                     <div class="project-type">
                         <?php if( have_rows('m_tags') ) : while( have_rows('m_tags') ): the_row(); ?> 
-                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('m_lists'); ?></span>
+                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('m_list'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
                   </div>
