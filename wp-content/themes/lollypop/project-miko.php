@@ -135,13 +135,13 @@ get_header();
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
               <?php } ?>
               
-               <?php $bannerVideos = get_field('m_banner_video_links') ?>
+               <?php $bannerVideos = get_field('m_banner_video_link') ?>
               <?php if($bannerVideos !=''){ ?>
                 <div class="play-video-on-scroll">
                   <div id="play2-out" style="display:none">
-                    <div id="play2" data-plyr-provider="<?php the_field('m_banner_video_providers');?>" data-plyr-embed-id="<?php the_field('m_banner_video_links');?>"></div>
+                    <div id="play2" data-plyr-provider="<?php the_field('m_banner_video_provider');?>" data-plyr-embed-id="<?php the_field('m_banner_video_links');?>"></div>
                   </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('m_banner_video_links');?>" provider="<?php the_field('m_banner_video_providers');?>" poster="<?php the_field('m_banner_video_posters');?>">
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('m_banner_video_link');?>" provider="<?php the_field('m_banner_video_provider');?>" poster="<?php the_field('m_banner_video_poster');?>">
                   </video>
                 </div>
                <?php } ?>
@@ -161,15 +161,15 @@ get_header();
                 <div class="col-md-10 px-0 mx-auto">
                   <div class="mb-r-80">
                     <div class="project-step">
-                      <?php if( have_rows('m_brief_descriptionss') ) : while( have_rows('m_brief_descriptionss') ): the_row(); ?> 
+                      <?php if( have_rows('m_brief_descriptions') ) : while( have_rows('m_brief_descriptions') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
-                            <?php the_sub_field('contents'); ?>
+                            <?php the_sub_field('content'); ?>
                           </div>
-                          <?php if(get_sub_field('cta_names') !=''){ ?>
-                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_urls');?>"><?php the_sub_field('cta_names');?></a>
+                          <?php if(get_sub_field('cta_name') !=''){ ?>
+                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
                             <?php } ?>
                         </div>
                       </div>
