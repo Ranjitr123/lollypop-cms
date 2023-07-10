@@ -122,7 +122,7 @@ get_header();
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
                     <p class="fnt-24"><?php echo the_field('m_short_descriptions'); ?></p>                     
                     <div class="project-type">
-                        <?php if( have_rows('m_tagss') ) : while( have_rows('m_tagss') ): the_row(); ?> 
+                        <?php if( have_rows('m_tags') ) : while( have_rows('m_tags') ): the_row(); ?> 
                         <span class="fnt-14 clr-black354"><?php echo the_sub_field('m_lists'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
