@@ -118,12 +118,12 @@ get_header();
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1">
-                  <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php the_field('mcompany_names'); ?></span>
+                  <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php echo the_field('mcompany_names'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
-                    <p class="fnt-24"><?php the_field('short_descriptionss'); ?></p>                     
+                    <p class="fnt-24"><?php echo the_field('short_descriptionss'); ?></p>                     
                     <div class="project-type">
                         <?php if( have_rows('tagss') ) : while( have_rows('tagss') ): the_row(); ?> 
-                        <span class="fnt-14 clr-black354"><?php the_sub_field('lists'); ?></span>
+                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('lists'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
                   </div>
