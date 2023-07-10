@@ -202,7 +202,7 @@ get_header();
                     <h3> Structuring the information</h3>
                 </div>
                 <div class="information-img text-center">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279291.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279291.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -220,7 +220,7 @@ get_header();
                     <p class="mt-md-4 text-center"> Using the information architecture as reference, we started created wireframes. Throughout the design process, we kept the personas in mind, ensuring that their objectives and challenges were taken into account. Once the wireframes were completed, we presented them to the client for feedback and ensured that we were aligned before proceeding with the visual design phase.<?php the_field('wireframe_description'); ?></p>
                 </div>
                 <div class="wireframe-img text-center mt-5">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279298.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279298.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -233,7 +233,7 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="wireframe-img logo-img">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/MIKO-typeface.png" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/MIKO-typeface.png" alt="logo">
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@ get_header();
                            While Dark green and black can be standard for text usage throughout the app.<?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
+                    <img class="mt-md-5 pb-md-5 img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -269,7 +269,7 @@ get_header();
                     <p class="icons-p">Keeping in mind the target users, we used Iconography to visually simplify the content of the App, making it instantly accessible to users.  Elegant & simple icons have the power to attract attention and keep users engaged. We created meaningful icons that help in reducing content and used it suitably to enhance usability.<?php the_field('iconography_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img  pb-md-5">
-                    <img class="pb-md-5 img-fluid icon-img" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279301.webp" alt="logo">
+                    <img class="pb-md-5 img-fluid icon-img" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279301.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -288,7 +288,7 @@ get_header();
                        <?php the_field('mobile_ui_description'); ?></p>
                 </div>
                 <div class="wireframe-img mobile-img">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279300-3.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279300-3.webp" alt="logo">
                 </div>
             </div>
         </div>
