@@ -79,6 +79,7 @@ get_header();
         margin-left: 20px;
     }
     
+	
     /* media query */
     @media (max-width: 767px)
     {
