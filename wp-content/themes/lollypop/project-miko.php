@@ -183,10 +183,18 @@ get_header();
             </div>
           </div>
         </div>
+		<div class="container">	
+                  <?php if( have_rows('m_web_image') ) : while( have_rows('m_web_image') ): the_row();
+                   $webImage = get_sub_field('m_project_gallery');
+                if($webImage !='') { ?>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
+                   <?php } ?>
+                   <?php endwhile; endif; ?>
+                </div>  
       </section>
 
 <!-- information structure -->
-<section calss="information-sec">
+<section class="information-sec">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 col-12 mx-auto">
