@@ -157,7 +157,7 @@
             dots: !1,
             infinite: !1,
             speed: 800,
-            slidesToShow: 2,
+            slidesToShow: 1.6,
             slidesToScroll: 1,
             variableWidth: !0,
             autoplay: !1,
