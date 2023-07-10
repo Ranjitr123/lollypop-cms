@@ -194,7 +194,7 @@ get_header();
       </section>
 
 <!-- information structure -->
-<section class="information-sec">
+<section class="information-sec pt-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 col-12 mx-auto">
