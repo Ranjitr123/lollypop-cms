@@ -121,7 +121,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
       height:100%;
   }
 .service-tittle{
-    font-size:24px;
+    font-size:24px; line-height: 35px;
   }
   .info-tittle{
     font-size:18px;
@@ -137,7 +137,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
     width: auto;
 }
 .services-provide {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .info-para {margin-bottom: 2rem;}
 .services-provide-wrap{justify-content:center;}
@@ -363,7 +363,7 @@ Cheers to Anil Reddy & Team..:)",
 </section>
 
 <!-- use cases section -->
-<section class="sec-pd sec-md-pt" id="sixth">
+<section class="sec-pd" id="sixth">
    <div class="container">
       <div class="row">
          <div class="col-12 col-md-8  mx-auto">
