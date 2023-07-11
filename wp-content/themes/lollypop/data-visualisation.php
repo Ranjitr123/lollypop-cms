@@ -412,21 +412,13 @@ Cheers to Anil Reddy & Team..:)",
                <div class="mb-5 px-2 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
                <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
 				
+                 <?php if( have_rows('dashboard_design_slider') ): while( have_rows('dashboard_design_slider') ): the_row(); ?>
                   <li class="lp-awards-list__item newimg">
                      <div class="award-info position-relative">
-                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
+                        <img class="img mb-3" src="<?php the_sub_field('slider_image') ?>"alt="logo">
                      </div>
                   </li>
-                  <li class="lp-awards-list__item newimg">
-                     <div class="award-info position-relative">
-                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
-                     </div>
-                  </li>
-                  <li class="lp-awards-list__item newimg">
-                     <div class="award-info position-relative">
-                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
-                     </div>
-                  </li>
+                  <?php endwhile; endif; ?>
                  
                </ul>
             </div>
