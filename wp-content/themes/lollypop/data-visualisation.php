@@ -479,3 +479,4 @@ Cheers to Anil Reddy & Team..:)",
 <?php
 get_footer();
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
