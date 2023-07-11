@@ -253,6 +253,7 @@
             variableWidth: true,
             autoplay: false,
 			touchThreshold:100,
+			grabCursor: true,
             nextArrow: '<div class="next-slide"><div class="ar"></div>',
             prevArrow: '<div class="prev-slide"><div class="ar"></div>',
             arrows: true,
