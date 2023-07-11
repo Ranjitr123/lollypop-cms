@@ -125,13 +125,13 @@ line-height: 24px; max-width:370px; margin:0 auto;}
   }
   .info-tittle{
     font-size:18px;
-	line-height:20px;
+	  line-height:20px;
   }
   .second-slider2 .lp-awards-list__item:nth-child(even) .img {
-    min-height: fit-content!important;
+    min-height: auto !important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
-    min-height: fit-content!important;
+    min-height: auto !important;
 }
 .lp-awards-list__item {
     width: auto;
@@ -140,12 +140,17 @@ line-height: 24px; max-width:370px; margin:0 auto;}
     padding-top: 50px;
 }
 .info-para {margin-bottom: 2rem;}
+.services-provide-wrap{justify-content:center;}
+
 }
+
+
 @media (min-width: 992px)
 {
-.lp-awards-list__item:nth-child(even) {
-    min-width: fit-content!important;
-}}
+    .lp-awards-list__item:nth-child(even) {
+        min-width: fit-content!important;
+    }
+}
 
 </style>
 
@@ -342,11 +347,11 @@ Cheers to Anil Reddy & Team..:)",
       <div class="col-12 col-md-11 col-lg-9 mx-auto">
         <h3 class="service-tittle  mb-md-5 mb-4"><?php echo get_field('service_heading')?></h3>
           <?php if( have_rows('service_content_section') ): while( have_rows('service_content_section') ): the_row(); ?>
-		  <div class="d-flex flex-wrap mb-md-5 pb-md-2">
+		        <div class="d-flex flex-wrap mb-md-5 pb-md-2 services-provide-wrap">
                 <div class="me-md-5">
                   <img src="<?php the_sub_field('service_image') ?>" alt="" width="230" height="210">
                 </div>
-                <div class="mxw-339">
+                <div class="mxw-339 mt-3 mt-md-0">
                   <h5 class="mb-3 info-tittle"><?php the_sub_field('service_title') ?></h5>
                   <p class="info-para"><?php the_sub_field('service_content') ?></p>
                 </div>
@@ -406,13 +411,23 @@ Cheers to Anil Reddy & Team..:)",
             <div class="col-12 px-md-0">
                <div class="mb-5 px-2 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
                <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
-				<?php if( have_rows('dashboard_design_slider') ): while( have_rows('dashboard_design_slider') ): the_row(); ?>
+				
                   <li class="lp-awards-list__item newimg">
                      <div class="award-info position-relative">
-                        <img class="img mb-3" src="<?php the_sub_field('slider_image') ?>"alt="logo">
+                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
                      </div>
                   </li>
-                  <?php endwhile; endif; ?> 
+                  <li class="lp-awards-list__item newimg">
+                     <div class="award-info position-relative">
+                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
+                     </div>
+                  </li>
+                  <li class="lp-awards-list__item newimg">
+                     <div class="award-info position-relative">
+                        <img class="img mb-3" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Dashboard-Img-3.webp"alt="logo">
+                     </div>
+                  </li>
+                 
                </ul>
             </div>
          </div>
