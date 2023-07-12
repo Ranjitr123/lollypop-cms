@@ -117,7 +117,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 	   }
 	/*.lp-awards-list .img{height:446px;}*/
   .play-video-on-scroll{
-      width:320px;
+      width:auto;
       height:100%;
   }
 .service-tittle{
@@ -140,8 +140,6 @@ line-height: 24px; max-width:370px; margin:0 auto;}
     padding-top: 40px;
 }
 .info-para {margin-bottom: 2rem;}
-.services-provide-wrap{justify-content:center;}
-
 }
 
 
@@ -151,7 +149,24 @@ line-height: 24px; max-width:370px; margin:0 auto;}
         min-width: fit-content!important;
     }
 }
-
+@supports (-webkit-touch-callout: none) {
+.second-slider2 .lp-awards-list__item:nth-child(odd) .img {
+    min-height: 200px !important;
+    width: 338px !important;
+}
+.second-slider2 .lp-awards-list__item:nth-child(even) .img {
+    min-height: 200px !important;
+    width: 338px !important;
+}
+.new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
+    min-height: 446px;
+    width: 338px !important;
+}
+.new-custom-slider .lp-awards-list__item:nth-child(even) .img {
+    min-height: 446px;
+    width: 338px !important;
+}
+}
 </style>
 
 <script type="application/ld+json">{
