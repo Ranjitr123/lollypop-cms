@@ -58,6 +58,11 @@ font-size: 16px;
     width: 450px!important;}
 	.lp-awards-list__item:nth-child(odd) {
     min-width: fit-content;
+	width:auto;
+}
+.lp-awards-list__item:nth-child(even) {
+    min-width: fit-content;
+	width:auto;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(even) {
     min-width: fit-content;}
