@@ -142,19 +142,19 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 .info-para {margin-bottom: 2rem;}
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: 200px !important;
-    width: 338px !important;
+    width: 400px !important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
-    width: 338px !important;
+    width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
     min-height: 446px;
-    width: 338px !important;
+    width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(even) .img {
     min-height: 446px;
-    width: 338px !important;
+    width: 400px !important;
 }
 }
 
@@ -168,19 +168,19 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 @supports (-webkit-touch-callout: none) {
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: 200px !important;
-    width: 338px !important;
+    width: 400px !important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
-    width: 338px !important;
+    width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
     min-height: 446px;
-    width: 338px !important;
+    width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(even) .img {
     min-height: 446px;
-    width: 338px !important;
+    width: 400px !important;
 }
 }
 </style>
