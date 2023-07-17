@@ -115,7 +115,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
      padding-left:0px !important;
     }
 		.new-custom-slider .lp-awards-list__item:nth-child(even) .img {
-		  min-height: 446px;
+		  min-height: 450px;
 		}
 		.new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
 		   min-height: 450px;
@@ -134,10 +134,11 @@ line-height: 24px; max-width:370px; margin:0 auto;}
   }
   .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
+    width: 400px !important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: 200px !important;
-    max-width:350px;
+    width:400px !important;
 }
 .lp-awards-list__item {
     width: auto;
@@ -433,7 +434,7 @@ Cheers to Anil Reddy & Team..:)",
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
          <div class="col-12 col-md-11 col-lg-9 mx-auto px-0">
-            <div class="col-md-10 col-lg-12 px-0 clr-white">
+            <div class="col-md-10 col-lg-12 px-3 clr-white">
                <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
                   <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('dashboard_design_description') ?></p>
@@ -446,7 +447,7 @@ Cheers to Anil Reddy & Team..:)",
       <div class="fluid-width second-slider">
          <div class="row">
             <div class="col-12 px-md-0">
-               <div class="mb-5 px-2 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
+               <div class="mb-5 px-3 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
                <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
 				
                  <?php if( have_rows('dashboard_design_slider') ): while( have_rows('dashboard_design_slider') ): the_row(); ?>
