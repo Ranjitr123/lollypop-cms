@@ -118,7 +118,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 		  min-height: 446px;
 		}
 		.new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
-		   min-height: 446px;
+		   min-height: 450px;
 	   }
 	/*.lp-awards-list .img{height:446px;}*/
   .play-video-on-scroll{
