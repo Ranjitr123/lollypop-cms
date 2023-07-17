@@ -137,6 +137,7 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 }
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: 200px !important;
+    max-width:350px;
 }
 .lp-awards-list__item {
     width: auto;
@@ -154,11 +155,11 @@ line-height: 24px; max-width:370px; margin:0 auto;}
     width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
-    min-height: 446px;
+    min-height: 450px;
     width: 400px !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(even) .img {
-    min-height: 446px;
+    min-height: 450px;
     width: 400px !important;
 }
 }
