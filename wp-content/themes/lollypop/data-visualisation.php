@@ -433,7 +433,7 @@ Cheers to Anil Reddy & Team..:)",
 <section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
-         <div class="col-12 col-md-11 col-lg-9 mx-auto px-0">
+         <div class="col-11 col-md-11 col-lg-9 mx-auto px-0">
             <div class="col-md-10 col-lg-12 px-3 clr-white">
                <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
@@ -447,8 +447,8 @@ Cheers to Anil Reddy & Team..:)",
       <div class="fluid-width second-slider">
          <div class="row">
             <div class="col-12 px-md-0">
-               <div class="mb-5 px-3 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
-               <ul class="px-0 lp-awards-list d-flex four-card-slider second-slider2">
+               <div class="mb-5 px-4 px-md-0"><a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo get_field('dashboard_design_bottom_url') ?>" style="opacity: 1; transform: translateY(0px);"> <?php echo get_field('dashboard_design_bottom_text') ?></a></div>
+               <ul class="px-2 px-md-0 lp-awards-list d-flex four-card-slider second-slider2">
 				
                  <?php if( have_rows('dashboard_design_slider') ): while( have_rows('dashboard_design_slider') ): the_row(); ?>
                   <li class="lp-awards-list__item newimg">
