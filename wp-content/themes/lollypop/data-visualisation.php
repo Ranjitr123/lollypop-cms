@@ -134,7 +134,8 @@ line-height: 24px; max-width:370px; margin:0 auto;}
   }
   .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
-    width: 400px !important;
+    max-width: 400px !important;
+    width:100% !important;
 }
 .second-slider2 .lp-awards-list__item:nth-child(odd) .img {
     min-height: 200px !important;
@@ -153,7 +154,8 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 }
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
-    width: 400px !important;
+    max-width: 400px !important;
+    width:100% !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
     min-height: 450px;
@@ -180,6 +182,8 @@ line-height: 24px; max-width:370px; margin:0 auto;}
 .second-slider2 .lp-awards-list__item:nth-child(even) .img {
     min-height: 200px !important;
     width: 400px !important;
+    max-width: 400px !important;
+    width:100% !important;
 }
 .new-custom-slider .lp-awards-list__item:nth-child(odd) .img {
     min-height: 446px;
