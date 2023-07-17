@@ -334,7 +334,7 @@ Cheers to Anil Reddy & Team..:)",
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
 				  <?php if( have_rows('social_icons_section') ): while( have_rows('social_icons_section') ): the_row(); ?>
                   <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="Image" width="240" height="56"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="Image" width="125" height="37"></div>
                   </li>
                   <?php endwhile; endif; ?> 
                 </ul>
