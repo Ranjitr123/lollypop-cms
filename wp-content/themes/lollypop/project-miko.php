@@ -120,10 +120,10 @@ get_header();
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php echo the_field('mcompany_name'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_title(); ?></h1>                 
-                    <p class="fnt-24"><?php echo the_field('short_descriptionss'); ?></p>                     
+                    <p class="fnt-24"><?php echo the_field('m_short_descriptions'); ?></p>                     
                     <div class="project-type">
-                        <?php if( have_rows('tagss') ) : while( have_rows('tagss') ): the_row(); ?> 
-                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('lists'); ?></span>
+                        <?php if( have_rows('m_tags') ) : while( have_rows('m_tags') ): the_row(); ?> 
+                        <span class="fnt-14 clr-black354"><?php echo the_sub_field('m_list'); ?></span>
                     <?php endwhile; endif; ?>
                   </div>
                   </div>
@@ -135,13 +135,13 @@ get_header();
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
               <?php } ?>
               
-               <?php $bannerVideos = get_field('banner_video_links') ?>
+               <?php $bannerVideos = get_field('m_banner_video_link') ?>
               <?php if($bannerVideos !=''){ ?>
                 <div class="play-video-on-scroll">
                   <div id="play2-out" style="display:none">
-                    <div id="play2" data-plyr-provider="<?php the_field('banner_video_providers');?>" data-plyr-embed-id="<?php the_field('banner_video_links');?>"></div>
+                    <div id="play2" data-plyr-provider="<?php the_field('m_banner_video_provider');?>" data-plyr-embed-id="<?php the_field('m_banner_video_links');?>"></div>
                   </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('banner_video_links');?>" provider="<?php the_field('banner_video_providers');?>" poster="<?php the_field('banner_video_posters');?>">
+                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('m_banner_video_link');?>" provider="<?php the_field('m_banner_video_provider');?>" poster="<?php the_field('m_banner_video_poster');?>">
                   </video>
                 </div>
                <?php } ?>
@@ -161,15 +161,15 @@ get_header();
                 <div class="col-md-10 px-0 mx-auto">
                   <div class="mb-r-80">
                     <div class="project-step">
-                      <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
+                      <?php if( have_rows('m_brief_descriptions') ) : while( have_rows('m_brief_descriptions') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
-                            <?php the_sub_field('contents'); ?>
+                            <?php the_sub_field('content'); ?>
                           </div>
-                          <?php if(get_sub_field('cta_names') !=''){ ?>
-                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_urls');?>"><?php the_sub_field('cta_names');?></a>
+                          <?php if(get_sub_field('cta_name') !=''){ ?>
+                            <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url');?>"><?php the_sub_field('cta_name');?></a>
                             <?php } ?>
                         </div>
                       </div>
@@ -183,10 +183,18 @@ get_header();
             </div>
           </div>
         </div>
+		<div class="container">	
+                  <?php if( have_rows('m_web_image') ) : while( have_rows('m_web_image') ): the_row();
+                   $webImage = get_sub_field('m_project_gallery');
+                if($webImage !='') { ?>
+                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
+                   <?php } ?>
+                   <?php endwhile; endif; ?>
+                </div>  
       </section>
 
 <!-- information structure -->
-<section calss="information-sec">
+<section class="information-sec pt-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 col-12 mx-auto">
@@ -194,7 +202,7 @@ get_header();
                     <h3> Structuring the information</h3>
                 </div>
                 <div class="information-img text-center">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279291.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279291.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -212,7 +220,7 @@ get_header();
                     <p class="mt-md-4 text-center"> Using the information architecture as reference, we started created wireframes. Throughout the design process, we kept the personas in mind, ensuring that their objectives and challenges were taken into account. Once the wireframes were completed, we presented them to the client for feedback and ensured that we were aligned before proceeding with the visual design phase.<?php the_field('wireframe_description'); ?></p>
                 </div>
                 <div class="wireframe-img text-center mt-5">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279298.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279298.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -225,7 +233,7 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
                 <div class="wireframe-img logo-img">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/MIKO-typeface.png" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/MIKO-typeface.png" alt="logo">
                 </div>
             </div>
         </div>
@@ -244,7 +252,7 @@ get_header();
                            While Dark green and black can be standard for text usage throughout the app.<?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
+                    <img class="mt-md-5 pb-md-5 img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -261,7 +269,7 @@ get_header();
                     <p class="icons-p">Keeping in mind the target users, we used Iconography to visually simplify the content of the App, making it instantly accessible to users.  Elegant & simple icons have the power to attract attention and keep users engaged. We created meaningful icons that help in reducing content and used it suitably to enhance usability.<?php the_field('iconography_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img  pb-md-5">
-                    <img class="pb-md-5 img-fluid icon-img" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279301.webp" alt="logo">
+                    <img class="pb-md-5 img-fluid icon-img" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279301.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -280,7 +288,7 @@ get_header();
                        <?php the_field('mobile_ui_description'); ?></p>
                 </div>
                 <div class="wireframe-img mobile-img">
-                    <img class="img-fluid" src="http://localhost/cms/lollypop-cms/wp-content/uploads/2023/07/Group-1171279300-3.webp" alt="logo">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279300-3.webp" alt="logo">
                 </div>
             </div>
         </div>
