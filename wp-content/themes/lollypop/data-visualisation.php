@@ -316,7 +316,7 @@ Cheers to Anil Reddy & Team..:)",
                 </div>
           </div>
 	      <div class="mb-70">
-        <div class='col-12 col-md-11 mx-auto'>
+        <div class='col-12 col-md-11 mx-auto d-flex justify-content-center'>
               <div class="play-video-on-scroll">
                 <div id="play2-out" style="display:none">
                   <div id="play2" data-plyr-provider="<?php echo get_field('video_provider')?>" data-plyr-embed-id="<?php echo get_field('video_link')?>"></div>
@@ -334,7 +334,7 @@ Cheers to Anil Reddy & Team..:)",
                 <ul class="px-0 mb-0 clients-logo row justify-content-center">
 				  <?php if( have_rows('social_icons_section') ): while( have_rows('social_icons_section') ): the_row(); ?>
                   <li class="clients-logo__item col-4 col-md-4 data-scroll">
-                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="Image" width="125" height="37"></div>
+                    <div class="cl-logo text-center h-100 d-flex align-items-center"><img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="Image" width="240" height="56"></div>
                   </li>
                   <?php endwhile; endif; ?> 
                 </ul>
@@ -437,7 +437,7 @@ Cheers to Anil Reddy & Team..:)",
 <section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
-         <div class="col-11 col-md-11 col-lg-9 mx-auto px-0">
+         <div class="col-11 col-md-11 col-lg-9 px-0">
             <div class="col-md-10 col-lg-12 px-3 clr-white">
                <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
