@@ -108,9 +108,9 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-12 offset-md-1">
-                  <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a>/Edtech<?php the_field('category_name'); ?></span>
-                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-12 col-lg-12 px-0">Enabling growth in <span class="d-inline-block clr-second"> Edtech </span> <br> through Exceptional Experiences<?php the_field('heading'); ?></h1>
-                    <p class="fnt-24 col-md-10 col-lg-8 px-0">We have consistently propelled the EdTech industry by elevating digital education, seamlessly integrating it with exceptional design, and making knowledge readily accessible.<?php the_field('short_title_description'); ?></p>
+                  <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a><?php the_field('category_name'); ?></span>
+                    <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-12 col-lg-12 px-0"><?php the_field('heading'); ?></h1>
+                    <p class="fnt-24 col-md-10 col-lg-8 px-0"><?php the_field('short_title_description'); ?></p>
 		        </div>
                 </div>
               </div>
