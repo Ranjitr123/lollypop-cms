@@ -182,28 +182,18 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
               <div class="mb-4 pb-md-2 col-md-11 px-0">
-                    <h3 class="fnt-50 fnt-800 mb-4 data-scroll" style="opacity: 1; transform: translateY(0px);">Revolutionizing Edtech with design-based solutions.</h3>
-                    <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);">We have extensive experience in designing dynamic e-learning systems that enable businesses to help individuals learn, teach, and enhance their knowledge in a rapidly evolving digital landscape.</p>
+                    <h3 class="fnt-50 fnt-800 mb-4 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_field('main_title'); ?></h3>
+                    <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_field('main_description'); ?></p>
                 </div>
                 <ul class="px-0 values-list row justify-content-between mb-0"> 
+					<?php if( have_rows('card_repeater') ): while( have_rows('card_repeater') ): the_row(); ?>
                     <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                    <h6 class="fnt-800 mb-1">Enabling a complete <span class="d-md-block"> digital Immersion </span></h6>
-                    <p class="col-11 col-lg-12 px-0 mb-0">Leveraging digital design and AI based learning to provide the best methods for engaging students.</p>
+                    <h6 class="fnt-800 mb-1"><?php the_sub_field('card_title') ?></h6>
+                    <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('card_content') ?></p>
                     </li>
-                    <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                    <h6 class="fnt-800 mb-1">Increasing accessibility <span class="d-md-block"> and usability</span></h6>
-                    <p class="col-11 col-lg-12 px-0 mb-0">Crafting platforms that are accessible anywhere and at any time, thereby enabling different learning styles.</p>
-                    </li>
-                    <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                    <h6 class="fnt-800 mb-1">Designing an engaging <span class="d-md-block"> simulation of a classroom</span></h6>
-                    <p class="col-11 col-lg-12 px-0 mb-0">Bringing together the different aspects of the classroom experience to make learning, sharing, and teaching fun in a digital learning environment.</p>
-                    </li>
-                    <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                    <h6 class="fnt-800 mb-1">Democratizing education</h6>
-                    <p class="col-11 col-lg-12 px-0 mb-0">Ensuring that students from all over the world have access to educational possibilities by providing them with endless opportunities.</p>
-                    </li>
+					<?php endwhile; endif; ?> 
                 </ul>
-                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="http://localhost/cms/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s Talk</a>
+                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s Talk</a>
             </div>
           </div>
         </div>
@@ -214,20 +204,13 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
                <div class="mb-4 pb-md-2 col-md-11 px-0">
-                    <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                   Organisations that <span class="d-md-block"> we’ve partnered with </span></h3>
-                   <p class="fnt-24 col-md-9 col-lg-8 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);">Prodigious leaders in EdTech who have collaborated with us to create magical digital experiences.</p>
+                    <h3 class="fnt-50 fnt-800 mb-4 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_field('section_title'); ?></h3>
+                   <p class="fnt-24 col-md-9 col-lg-8 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_field('section_description'); ?></p>
                 </div>
                 <ul class="px-0 logo-list logo-list--3 row">
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
-                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="https://lollypop.design/wp-content/uploads/2023/07/image-49.png" alt="Image"></li>
+					<?php if( have_rows('seaction_card_images') ): while( have_rows('seaction_card_images') ): the_row(); ?>
+                    <li class="logo-list__item col-4"><img class="img-fluid grayscale" src="<?php the_sub_field('section_images') ?>" alt="Image"></li>
+                    <?php endwhile; endif; ?> 
                 </ul>  
             </div>
           </div>
@@ -239,38 +222,27 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-8 mx-auto">
-                <h3 class="fnt-40 mb-md-4 mb-2">Our Recent Work</h3>
-                <p class="fnt-24 mb-4 pb-md-3">First hand insight into how our processes have been implemented in all the projects we’ve worked on.</p>
+                <h3 class="fnt-40 mb-md-4 mb-2"><?php the_field('work_title'); ?></h3>
+                <p class="fnt-24 mb-4 pb-md-3"><?php the_field('work_description'); ?></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-8 mx-auto">
                     <div class="row">
+						<?php if( have_rows('word_card_sections') ): while( have_rows('word_card_sections') ): the_row(); ?>
                         <div class="col-md-6 mb-4">
-                                <img src="../wp-content\themes\lollypop\img\industry\knowladgehut.png" alt="imge" class="mb-md-4 pb-md-2 mb-2 img-fluid data-scroll">
-                                <p class="knowladgepara mb-md-3 mb-2 data-scroll">Knowledge Hut</p>
+                                <img src="<?php the_sub_field('sec_image') ?>" alt="imge" class="mb-md-4 pb-md-2 mb-2 img-fluid data-scroll">
+                                <p class="knowladgepara mb-md-3 mb-2 data-scroll"><?php the_sub_field('small_title') ?></p>
                             <div class="mxw-356">
                                 <h4 class="knowldgetitle mb-md-3 mb-2 data-scroll">
-                                        E-learning just became a lot more exciting
+                                        <?php the_sub_field('title') ?>
                                 </h4>
-                                <p class="knldgepara mb-4 pb-md-3 data-scroll">A digital platform that helps professionals across domains, upskill and develop new expertise for recognition and growth in the global corporate environment.</p>
-                                <a class="clr-second d-inline-block fnt-14 data-scroll hvr-line" href="#" >View Projects </a>
+                                <p class="knldgepara mb-4 pb-md-3 data-scroll"><?php the_sub_field('content') ?></p>
+                                <a class="clr-second d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('link_url') ?>" > View Projects</a>
                             </div>
                             
                         </div>
-
-                        <div class="col-md-6">
-                                <img src="../wp-content\themes\lollypop\img\industry\knowladgehut.png" alt="imge" class="mb-md-4 pb-md-2 mb-2 img-fluid data-scroll">
-                                <p class="knowladgepara mb-md-3 mb-2 data-scroll">Mento</p>
-                            <div class="mxw-356">
-                                <h4 class="knowldgetitle mb-md-3 mb-2 data-scroll">
-                                India’s first alternative education platform
-                                </h4>
-                                <p class="knldgepara mb-4 pb-md-3 data-scroll">A learning platform that was designed to bridge the gap between degrees and skills.</p>
-                                <a class="clr-second d-inline-block fnt-14 data-scroll hvr-line" href="#" >View Projects</a>
-                            </div>
-                            
-                        </div>
+						<?php endwhile; endif; ?>
                     </div>
 
                     <div class="mt-5">
@@ -296,32 +268,14 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                    <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);">We provide meaningful and actionable data-driven designs that represent the voice of the users and resonate with your business objectives.</p>
                 </div>
                     <ul class="px-0 values-list row justify-content-between mb-0"> 
+						<?php if( have_rows('impactful_cards_repeater') ): while( have_rows('impactful_cards_repeater') ): the_row(); ?>
                         <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">AI-powered digital interaction</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">To make the digital experience for students as immersive as possible, we integrate the latest technologies to enable smarter learning platforms.</p>
+                            <h6 class="fnt-800 mb-1"><?php the_sub_field('impactful_card_title') ?></h6>
+                            <p class="col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('impactful_card_description') ?>.</p>
                         </li>
-                        <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">Multidimensional approach to learning</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">Crafting platforms that are accessible anywhere and at any time, thereby enabling different learning styles.</p>
-                        </li>
-                            <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">User psychology</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">Through intensive research, we leveraged user psychology to anticipate challenges faced by students and teachers on e-learning applications and designed platforms that suited their needs.</p>
-                        </li>
-                            <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">Minimizing overstimulation</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">By simplifying the visual design and minimizing clutter, we made the dissemination of information incredibly seamless.</p>
-                        </li>
-                        <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">Seamless journey through the platform</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">We facilitated easy navigation through platforms by incorporating detailed guides and highlighting the next stage in the learning path.</p>
-                        </li>
-                        <li class="values-list__item col-12 col-md-5 data-scroll" style="opacity: 1; transform: translateY(0px);"> 
-                            <h6 class="fnt-800 mb-1">Simplifying learning management systems</h6>
-                            <p class="col-11 col-lg-12 px-0 mb-0">The learning curve on LMS will always be high, so we focused on highlighting only relevant features in the Learning management systems based on the stage of learning that the users were in.</p>
-                        </li>        
+                        <?php endwhile; endif; ?>        
                    </ul>
-              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="http://localhost/cms/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s talk</a>
+              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s talk</a>
             </div>
           </div>
         </div>
