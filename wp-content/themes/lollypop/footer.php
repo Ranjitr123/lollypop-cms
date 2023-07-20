@@ -359,6 +359,60 @@ $(function() {
 	});
 
 });
+$(function() {
+	$("form#enquiry-form").submit(function(e) {
+		e.preventDefault();
+		var data = new FormData($(this)[0]);
+		var email = $('input[type="email"]').val();
+		var description = $('textarea[name="description"]').val();
+		var fullname = $('input[name="full_name"]').val();
+		var phone = $('input[name="phone"]').val();
+		if(email !='' && description !='' && fullname !='' && phone !=''){
+			$(".js-submit.data-scroll.web-btn").prop("disabled",true);
+
+			$(".format_message").hide();
+			$("#pageloader").fadeIn();
+			$.ajax({
+			type: "POST",
+				url: "<?php echo site_url(); ?>/edtech-upload/",
+				data: data,
+				processData: false,
+				contentType: false,
+				cache: false,
+				success: function(data) {
+					if (data.indexOf("True") >= 0) {
+						$("#pageloader").css("display", "none");
+						$('form#general-form')[0].reset();
+
+						$('.file-reset').addClass('d-none');
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+					window.location.href = "<?php echo site_url(); ?>/project-enquiry/thank-you/";
+					} else if (data.indexOf("False") >= 0) {
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+						return false;
+					}else if (data.indexOf("greater_mb") >= 0) {
+
+
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+						$("#pageloader").css("display", "none");
+					}
+					else if (data.indexOf("Invalid_doc") >= 0) {
+						$("#file-error").css("display", "block");
+						$("#pageloader").css("display", "none");
+						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+					}
+
+				},
+				error: function(data) {
+					$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+					return false;
+				}
+			});
+
+		}
+	});
+
+});
 
 $(function() {
 $("form#build-fast").submit(function(e) {
