@@ -264,8 +264,8 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
                <div class="mb-4 pb-md-2 col-md-12 px-0">
                     <h3 class="fnt-50 fnt-800 mb-4 data-scroll" style="opacity: 1; transform: translateY(0px);">
-                    Impactful solutions that drive growth</h3>
-                   <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);">We provide meaningful and actionable data-driven designs that represent the voice of the users and resonate with your business objectives.</p>
+                    <?php the_field('impactful_title'); ?></h3>
+                   <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_field('impactful_content'); ?></p>
                 </div>
                     <ul class="px-0 values-list row justify-content-between mb-0"> 
 						<?php if( have_rows('impactful_cards_repeater') ): while( have_rows('impactful_cards_repeater') ): the_row(); ?>
