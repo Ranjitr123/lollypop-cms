@@ -379,6 +379,9 @@ $(function() {
 				processData: false,
 				contentType: false,
 				cache: false,
+				beforeSend: function(){
+						 $('.js-submit').html("Please wait. We are submitting your query");
+						 },
 				success: function(data) {
 					if (data.indexOf("True") >= 0) {
 						$("#pageloader").css("display", "none");
