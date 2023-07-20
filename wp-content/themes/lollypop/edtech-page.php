@@ -116,7 +116,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
               </div>
             <div class="col-12 col-md-12 offset-md-1 position-relative">
 
-                <img class="wpdm-img" src=" https://lollypop.design/wp-content/uploads/2023/06/main-bannerimg1-1.png <?php the_field('banner'); ?>" alt="Image" style="height:660px;">
+                <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image" style="height:660px;">
             
 			  <div class="reveal-project">
                <!-- form start -->
