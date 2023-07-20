@@ -6,11 +6,11 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/Exception.php';
-require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
-require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
+require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/Exception.php';
+require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
+require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
 
-require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
+require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/vendor/autoload.php';
 
 
 if ($_POST['email'] !="") {
