@@ -10,6 +10,7 @@ require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/Exc
 require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
 require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
 
+
 require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/vendor/autoload.php';
 
 
@@ -97,8 +98,8 @@ $contact_data = [
 "phone" => $phone,
 "company" => $company,
 ];
-echo $contact_data;
-exit;
+//echo $contact_data;
+//exit;
 
 // $hapikey = "2688c174-6aa7-4622-8d21-16e0744d56ed";
 
