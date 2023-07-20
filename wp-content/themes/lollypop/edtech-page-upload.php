@@ -13,7 +13,7 @@ require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/PHPMailer/src/SMT
 require '/var/www/html/lollypop-cms/wp-content/themes/lollypop/vendor/autoload.php';
 
 
-if ($_POST['email'] !="") {
+//if ($_POST['email'] !="") {
 $mail = new PHPMailer();
 $mail->IsSMTP();
 
@@ -153,9 +153,10 @@ echo "True";
 }
 }
 }
-}else{
-	header("Location:".get_site_url());
-}
+//}
+//else{
+	//header("Location:".get_site_url());
+//}
 
 ?>
 
