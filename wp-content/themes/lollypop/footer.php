@@ -393,17 +393,18 @@ $(function() {
 					} else if (data.indexOf("False") >= 0) {
 						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 						return false;
-					}else if (data.indexOf("greater_mb") >= 0) {
+					}
+					//else if (data.indexOf("greater_mb") >= 0) {
 
 
-						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-						$("#pageloader").css("display", "none");
-					}
-					else if (data.indexOf("Invalid_doc") >= 0) {
-						$("#file-error").css("display", "block");
-						$("#pageloader").css("display", "none");
-						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
-					}
+					//	$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+					//	$("#pageloader").css("display", "none");
+					//}
+					//else if (data.indexOf("Invalid_doc") >= 0) {
+					//	$("#file-error").css("display", "block");
+					//	$("#pageloader").css("display", "none");
+					//	$(".js-submit.data-scroll.web-btn").prop("disabled",false);
+					//}
 
 				},
 				error: function(data) {
