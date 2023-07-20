@@ -121,7 +121,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 			  <div class="reveal-project">
                <!-- form start -->
 
-               <form id="enquiry-form" method="POST" data-parsley-validate="" novalidate="" data-hs-cf-bound="true">
+               <form id="edtech-form" method="POST" data-parsley-validate="" novalidate="" data-hs-cf-bound="true">
                         <div class="enquiry-form__item data-scroll" style="opacity: 1; transform: translateY(0px);">
                           <div class="mb-2">
                             <h3 class="fnt-28 fnt-800 mb-md-1 mb-4 ">Let’s talk </h3>

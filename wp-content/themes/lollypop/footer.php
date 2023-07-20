@@ -360,7 +360,7 @@ $(function() {
 
 });
 $(function() {
-	$("form#enquiry-form").submit(function(e) {
+	$("form#edtech-form").submit(function(e) {
 		e.preventDefault();
 		var data = new FormData($(this)[0]);
 		var email = $('input[type="email"]').val();
@@ -382,9 +382,9 @@ $(function() {
 				success: function(data) {
 					if (data.indexOf("True") >= 0) {
 						$("#pageloader").css("display", "none");
-						$('form#enquiry-form')[0].reset();
+						$('form#edtech-form')[0].reset();
 
-						$('.file-reset').addClass('d-none');
+						//$('.file-reset').addClass('d-none');
 						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
 					window.location.href = "<?php echo site_url(); ?>/project-enquiry/thank-you/";
 					} else if (data.indexOf("False") >= 0) {
