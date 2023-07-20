@@ -97,6 +97,8 @@ $contact_data = [
 "phone" => $phone,
 "company" => $company,
 ];
+echo $contact_data;
+exit;
 
 // $hapikey = "2688c174-6aa7-4622-8d21-16e0744d56ed";
 
