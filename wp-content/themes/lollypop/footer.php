@@ -382,7 +382,7 @@ $(function() {
 				success: function(data) {
 					if (data.indexOf("True") >= 0) {
 						$("#pageloader").css("display", "none");
-						$('form#general-form')[0].reset();
+						$('form#enquiry-form')[0].reset();
 
 						$('.file-reset').addClass('d-none');
 						$(".js-submit.data-scroll.web-btn").prop("disabled",false);
