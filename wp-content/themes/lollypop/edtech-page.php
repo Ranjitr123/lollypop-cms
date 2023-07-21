@@ -243,7 +243,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                                         <?php the_sub_field('title') ?>
                                 </h4>
                                 <p class="knldgepara mb-4 pb-md-3 data-scroll"><?php the_sub_field('content') ?></p>
-                                <a class="clr-second d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('link_url') ?>" > View Projects</a>
+                                <a class="clr-second d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('link_url') ?>" > View Project</a>
                             </div>
                             
                         </div>
