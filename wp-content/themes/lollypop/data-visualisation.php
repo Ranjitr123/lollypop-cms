@@ -7,9 +7,6 @@ get_header();
 ?>
 <style>
 .list-disk li{list-style: disc !important;}
-.second-slider{
-  padding-left:230px !important;
-  }
 
 .hvr-line::after {
   position: absolute;
