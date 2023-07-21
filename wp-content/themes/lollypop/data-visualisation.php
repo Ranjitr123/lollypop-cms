@@ -7,7 +7,7 @@ get_header();
 ?>
 <style>
 .list-disk li{list-style: disc !important;}
-
+.second-slider{padding-left:270px !important;}
 .hvr-line::after {
   position: absolute;
   content: "";
@@ -434,7 +434,7 @@ Cheers to Anil Reddy & Team..:)",
 <section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
-         <div class="col-11 col-md-11 col-lg-9 px-0">
+         <div class="col-11 col-md-11 col-lg-9 px-0 mx-auto">
             <div class="col-md-10 col-lg-12 px-3 clr-white">
                <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
