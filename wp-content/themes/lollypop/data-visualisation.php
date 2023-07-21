@@ -349,7 +349,7 @@ Cheers to Anil Reddy & Team..:)",
     <div class="container">
         <div class="row mt-4 mt-md-5 pt-md-5">
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
-                <div class="col-md-10 col-lg-12 px-0 clr-white">
+                <div class="col-md-10 col-lg-12 px-0 clr-white pd-1200">
                     <div class="mb-35">
                         <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('heading')?></h3>
                         <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('content')?></p>
