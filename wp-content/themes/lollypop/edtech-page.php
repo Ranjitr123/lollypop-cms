@@ -66,11 +66,16 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
     right: 20px;
     top: 5px;
     width: 428px;
-    height: 97%;
+    height: 95%;
     background: #F7F5F3;
     padding:1rem;
 }
-
+.input textarea {
+    min-height: 131px !important;
+}
+.mb-fld {
+    margin-bottom: 25px;
+}
 /* vinay section */
 
 .ourrescentwork{padding:40px 0;}
@@ -116,7 +121,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
               </div>
             <div class="col-12 col-md-12 offset-md-1 position-relative">
 
-                <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image" style="height:660px;">
+                <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image">
             
 			  <div class="reveal-project">
                <!-- form start -->
