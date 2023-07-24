@@ -133,6 +133,7 @@ get_header();
                <?php $galImage = get_the_post_thumbnail_url(); ?>
               <?php if($galImage !=''){ ?>
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
+              <!-- <img class="wpdm-img" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Miko-banner-1.gif" alt="Image"> -->
               <?php } ?>
               
                <?php $bannerVideos = get_field('m_banner_video_link') ?>
@@ -295,10 +296,18 @@ get_header();
     </div>
 </section>
 
-
-
-
-
+<!-- Miko Exciting animation -->
+<section calss="mobileui-sec">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-md-10 col-lg-9 col-12 mobile-row">
+                <div class="wireframe-img mobile-img">
+                    <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Exciting-animation-1.gif" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php if( get_field('conclusion') !=''){?>
           <section class="conclusion-pad sec-pt">
@@ -329,7 +338,7 @@ get_header();
               </div>
       </section>
     <?php } ?>
-	<section class="sec-pd pt-0">
+	<section class="sec-pd pt-2">
         <div class="container">
           <div class="row"> 
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
