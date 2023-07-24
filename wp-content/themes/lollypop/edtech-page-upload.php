@@ -157,7 +157,6 @@ echo "True";
 }else{
 	header("Location:".get_site_url());
 }
-
 ?>
 
 
