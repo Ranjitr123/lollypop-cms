@@ -313,14 +313,14 @@ get_header();
           <section class="conclusion-pad sec-pt">
         <div class="container"> 
           <div class="row"> 
-          <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
+          <div class="col-12 col-md-11 col-lg-10 mt-5"> 
                 <div class="col-md-10 px-0 mx-auto"> 
                  <div>
                 <div class="col-md-10 px-0 mx-auto">
                   <div class="mb-r-80">
                     <div class="project-step">
                       <div class="project-step__item row"> 
-                        <div class="col-12 mb-4"> <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block text-uppercase data-scroll">Conclusion</h3></div>
+                        <div class="col-12 mb-4"> <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">Conclusion</h3></div>
                         <div class="col-12 col-md-10 project-step-disc">
                           <div class="project-step-disc__item conclustion"> 
                            <?php the_field('conclusion'); ?>
