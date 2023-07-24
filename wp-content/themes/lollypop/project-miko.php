@@ -218,7 +218,7 @@ get_header();
             <div class="col-md-12 col-lg-12 col-12">
                 <div class="wireframe-banner text-center">
                     <h3>Wireframes<?php the_field('wireframe_title'); ?></h3>
-                    <p class="mt-md-4 text-center"> Using the information architecture as reference, we started created wireframes. Throughout the design process, we kept the personas in mind, ensuring that their objectives and challenges were taken into account. Once the wireframes were completed, we presented them to the client for feedback and ensured that we were aligned before proceeding with the visual design phase.<?php the_field('wireframe_description'); ?></p>
+                    <p class="mt-md-4 text-md-left"> Using the information architecture as reference, we started created wireframes. Throughout the design process, we kept the personas in mind, ensuring that their objectives and challenges were taken into account. Once the wireframes were completed, we presented them to the client for feedback and ensured that we were aligned before proceeding with the visual design phase.<?php the_field('wireframe_description'); ?></p>
                 </div>
                 <div class="wireframe-img text-center mt-5">
                     <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279298.webp" alt="logo">
