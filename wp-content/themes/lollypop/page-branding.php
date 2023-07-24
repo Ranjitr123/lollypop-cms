@@ -790,7 +790,7 @@ margin-bottom:0px !important;
                       <div class="col-12 col-md-3 mb-4 mb-md-0">
                         <div class="expert-member__img text-center">
                             <div class="data-scroll" style="opacity: 1; transform: translateY(0px);">
-                              <img class="img-fluid mb-2 pb-1 lazyloaded" src="https://lollypop.design/wp-content/uploads/2021/12/Rajesh.webp" alt="Image" data-ll-status="loaded">
+                              <img class="img-fluid mb-2 pb-1" src="https://lollypop.design/wp-content/uploads/2023/07/Rajesh.png" alt="Image">
                             </div>
                             <h6 class="fnt-22 fnt-800 clr-white mb-0">Rajesh Vasanth</h6>
                             <span class="fnt-14 clr-white d-inline-block">Creative Director</span>

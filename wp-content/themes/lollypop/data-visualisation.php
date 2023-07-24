@@ -7,10 +7,7 @@ get_header();
 ?>
 <style>
 .list-disk li{list-style: disc !important;}
-.second-slider{
-  padding-left:230px !important;
-  }
-
+.second-slider{padding-left:270px !important;}
 .hvr-line::after {
   position: absolute;
   content: "";
@@ -99,7 +96,9 @@ line-height: 24px; max-width:370px; margin:0 auto;}
   height: 521px;
 }
 
-
+@media only screen and (min-width: 1200px) and (max-width: 1365px){
+.pd-1200{padding-left: 61px !important;}
+}
 
 @media only screen and (min-width: 768px) {
     .cl-logo img {
@@ -350,7 +349,7 @@ Cheers to Anil Reddy & Team..:)",
     <div class="container">
         <div class="row mt-4 mt-md-5 pt-md-5">
             <div class="col-12 col-md-11 col-lg-9 mx-auto">
-                <div class="col-md-10 col-lg-12 px-0 clr-white">
+                <div class="col-md-10 col-lg-12 px-0 clr-white pd-1200">
                     <div class="mb-35">
                         <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('heading')?></h3>
                         <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('content')?></p>
@@ -437,11 +436,11 @@ Cheers to Anil Reddy & Team..:)",
 <section class="sec-pd sec-pt1 pb-0" id="fifth" style="background: #221429;">
    <div class="container">
       <div class="row mt-4 mt-md-5 pt-md-5">
-         <div class="col-11 col-md-11 col-lg-9 px-0">
-            <div class="col-md-10 col-lg-12 px-3 clr-white">
+         <div class="col-11 col-md-11 col-lg-9 px-0 mx-auto">
+            <div class="col-md-10 col-lg-12 px-3 clr-white pd-1200">
                <div class="mb-35">
                   <h3 class="fnt-50 fnt-800 clr-white mb-2 pb-md-1 data-scroll col-12 col-md-8 px-0"><?php echo get_field('dashboard_design_title') ?></h3>
-                  <p class="col-md-10 fnt-26 col-lg-8 px-0 data-scroll"><?php echo get_field('dashboard_design_description') ?></p>
+                  <p class="col-md-12 fnt-26 col-lg-10 px-0 data-scroll"><?php echo get_field('dashboard_design_description') ?></p>
                </div>
             </div>
          </div>
