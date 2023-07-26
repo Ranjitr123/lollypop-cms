@@ -11,10 +11,10 @@ get_header();
 <style>
     .wireframe-banner{
         background-image:url('https://lollypop.design/wp-content/uploads/2023/06/Group-1153.svg');
-        background-size: contain;
+        background-size: cover;
         position: relative;
         right: 0;
-        width: 876px;
+        width: 100%;
         height: 249.6px;
     }
     .wireframe-banner h3{
@@ -28,28 +28,7 @@ get_header();
         position: relative;
         z-index: 0;
     }
-    .wireframe-banner h3:before, .color-banner h3:before{
-        content:" ";
-        top: -7px;
-        background-size: contain;
-        left: -29px;
-        width: 92.3px;
-        height: 67.77px;
-        background-image:url('https://lollypop.design/wp-content/uploads/2023/06/Fill-29.svg');
-        position: absolute;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-    .wireframe-banner p{
-        max-width:531px;
-    }
-    .wireframe-img img{
-        width: 876px;
-        height:100%;
-    }
-
-    /* logo */
-    .logo-banner h3:before{
+    .wireframe-banner h3:before, .type-banner h3:before{
         content:" ";
         top: -7px;
         background-size: contain;
@@ -61,7 +40,28 @@ get_header();
         background-repeat: no-repeat;
         z-index: -1;
     }
-    .logo-banner, .mobile-banner, .color-banner{
+    .wireframe-banner p{
+        max-width:531px;
+    }
+    .wireframe-img img{
+        width: 100%;
+        height:100%;
+    }
+
+    /* logo */
+    .logo-banner h3:before{
+        content:" ";
+        top: -7px;
+        background-size: contain;
+        left: -29px;
+        width: 92.3px;
+        height: 67.77px;
+        background-image:url('https://lollypop.design/wp-content/uploads/2023/06/Fill-29.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .logo-banner, .mobile-banner, .type-banner{
         background-image:none;
     }
     /* mobile UI */
@@ -82,6 +82,7 @@ get_header();
         background: #F2F5F5;
         border-radius: 22px;
         margin-top: 138px;
+        /* width: auto; */
     }
     .mobile-banner p{
         position: relative;
@@ -113,17 +114,17 @@ get_header();
         justify-content: center;
     }
     .compontent-img{
-        max-width:876px;
+        width:auto;
         margin:0 auto;
     }
     .compontent-img img{
-        width:876px;
+        width:100%;
     }
     .type-banner{
         height: auto;
         padding-bottom: 2rem;
     }
-    .color-banner{
+    .type-banner{
         padding-top:154px;
     }
     
@@ -133,6 +134,9 @@ get_header();
     }
     .icon-banner h3:before{
         background-image:url('https://lollypop.design/wp-content/uploads/2023/06/Fill-31.svg');
+    }
+    .color-banner h3:before{
+        background-image:url('https://lollypop.design/wp-content/uploads/2023/06/Fill-29.svg');
     }
     .icon-banner p{
         font-family: 'Manrope';
@@ -144,12 +148,12 @@ get_header();
     }
 
     .icon-container{
-         max-width:950px;
+         max-width:1076px;
          padding-bottom:146px;
     }
     .icon-container img{
-        width: 924px;
-        height: 464px;
+        width: 1076px;
+        height: auto;
     }
 
     /* media query */
@@ -171,7 +175,7 @@ get_header();
         .wireframe-banner h3 {
            font-size: 24px;
         }
-        .logo-banner, .mobile-banner, .color-banner{
+        .logo-banner, .mobile-banner, .type-banner{
             background-image:none;
        }
        .mobile-banner h3:before {
@@ -190,7 +194,7 @@ get_header();
         .compents-head h3 {
             font-size: 24px;
         }
-        .color-banner {
+        .type-banner {
              padding-top: 0px;
        }
        .icon-container {
@@ -200,7 +204,7 @@ get_header();
             width: 100%;
             height: 100%;
         }
-        .icon-banner, .color-banner{
+        .icon-banner, .type-banner{
             height:auto;
         }
    
@@ -262,7 +266,7 @@ get_header();
                     <div class="project-step">
                       <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
                             <?php the_sub_field('contents'); ?>
@@ -289,8 +293,8 @@ get_header();
 <section calss="wireframe-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12">
-                <div class="wireframe-banner">
+            <div class="col-md-11 col-lg-10 col-12">
+                <div class="wireframe-banner color-banner ps-5">
                     <h3><?php the_field('wireframe_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('wireframe_description'); ?></p>
                 </div>
@@ -307,12 +311,12 @@ get_header();
 <section calss="logo-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12">
-                <div class="wireframe-banner logo-banner">
+            <div class="col-md-11 col-lg-10 col-12">
+                <div class="wireframe-banner type-banner mx-5 p-5">
                     <h3><?php the_field('logos_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('logos_description'); ?></p>
                 </div>
-                <div class="wireframe-img logo-img">
+                <div class="wireframe-img logo-img d-flex flex-column align-items-center">
                     <img class="img-fluid" src="<?php the_field('logos_image'); ?>" alt="logo">
                 </div>
             </div>
@@ -324,7 +328,7 @@ get_header();
 <section calss="mobileui-sec">
     <div class="container">
         <div class="row justify-content-center ">
-            <div class="col-md-10 col-lg-9 col-12 mobile-row">
+            <div class="col-md-11 col-lg-10 col-12 mobile-row">
                 <div class="wireframe-banner mobile-banner">
                     <h3><?php the_field('mobile_ui_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('mobile_ui_description'); ?></p>
@@ -335,7 +339,7 @@ get_header();
             </div>
         </div>
         <div class="row justify-content-center ">
-            <div class="col-md-10 col-lg-9 col-12">
+            <div class="col-md-11 col-lg-10 col-12">
                 <div class="compents-head">
                     <h3><?php the_field('ui_components_title'); ?></h3>
                     <div class="compontent-img">
@@ -350,11 +354,11 @@ get_header();
 <section calss="logo-sec type-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12">
-                <div class="wireframe-banner color-banner">
+            <div class="col-md-11 col-lg-10 col-12">
+                <div class="wireframe-banner type-banner ps-5 mx-5">
                     <h3><?php the_field('typeface_title'); ?></h3>
                 </div>
-                <div class="wireframe-img logo-img">
+                <div class="wireframe-img logo-img d-flex flex-column align-items-center ps-5 ms-5">
                     <img class="img-fluid" src="<?php the_field('typeface_image'); ?>" alt="logo">
                 </div>
             </div>
@@ -366,13 +370,13 @@ get_header();
 <section calss="logo-sec color-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12 mt-5">
-                <div class="wireframe-banner  color-banner">
+            <div class="col-md-11 col-lg-10 col-12 mt-5">
+                <div class="wireframe-banner type-banner color-banner ps-5 mx-5">
                     <h3><?php the_field('colors_title'); ?></h3>
                     <p><?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
+                    <img class="m-md-5 p-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -382,13 +386,13 @@ get_header();
 <section calss="icon-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12 mt-5">
-                <div class="wireframe-banner icon-banner color-banner">
+            <div class="col-md-11 col-lg-10 col-12 mt-5">
+                <div class="wireframe-banner type-banner icon-banner ps-5 ms-5">
                     <h3><?php the_field('iconography_title'); ?></h3>
                     <p><?php the_field('iconography_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="<?php the_field('iconography_image'); ?>" alt="logo">
+                    <img class="ms-5 ps-5 img-fluid" src="<?php the_field('iconography_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -409,7 +413,7 @@ get_header();
                   <div class="mb-r-80">
                     <div class="project-step">
                       <div class="project-step__item row"> 
-                        <div class="col-12 mb-4"> <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block text-uppercase data-scroll">Conclusion</h3></div>
+                        <div class="col-12 mb-4"> <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">Conclusion</h3></div>
                         <div class="col-12 col-md-10 project-step-disc">
                           <div class="project-step-disc__item conclustion"> 
                            <?php the_field('conclusion'); ?>
