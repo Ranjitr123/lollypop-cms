@@ -5,6 +5,11 @@
  */
 get_header();
 ?>
+<style>
+    .width-100{
+        width: 100% !important;
+    }
+</style>
 <main class="main">
   <!--01-->
   <!--Faq-->
@@ -16,7 +21,7 @@ get_header();
             <div class="row">
               <?php if (have_rows('client_banner_content')) : while (have_rows('client_banner_content')) : the_row(); ?>
                   <div class="col-12 col-md-10 col-lg-10 offset-md-1"><span class="d-block fnt-14 text-capitalize mb-2 clr-default ms-lg-1">Clients</span>
-                    <h1 class="fnt-78 fnt-800 mb-3 mb-md-4 pb-md-3 col-md-10 col-lg-10 col-xl-8 px-md-0 red-stroke red-stroke--small13 px-md-0"><?php the_sub_field('title'); ?></h1>
+                    <h1 class="width-100 fnt-78 fnt-800 mb-3 mb-md-4 pb-md-3 col-md-10 col-lg-10 col-xl-8 px-md-0 red-stroke red-stroke--small13 px-md-0"><?php the_sub_field('title'); ?></h1>
                     <h2 class="fnt-40 fnt-800 mb-3 mb-md-4 pb-md-3"><?php the_sub_field('shot_title'); ?></h2>
                     <p class="fnt-24"><?php the_sub_field('content'); ?></p><a class="hvr-line clr-second fnt-14" href="<?php echo site_url(); ?>/projects/">See our portfolio</a>
                   </div>
