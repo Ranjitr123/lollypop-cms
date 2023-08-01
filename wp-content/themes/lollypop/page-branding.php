@@ -780,7 +780,7 @@ margin-bottom:0px !important;
         </div>
     </section> 
 <!-- 07 -->
-  <section class="sec-footer-trans" id="nine">
+      <section class="sec-footer-trans" id="nine">
         <div class="container z-1">
           <div class="row"> 
             <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -790,17 +790,17 @@ margin-bottom:0px !important;
                       <div class="col-12 col-md-3 mb-4 mb-md-0">
                         <div class="expert-member__img text-center">
                             <div class="data-scroll" style="opacity: 1; transform: translateY(0px);">
-                              <img class="img-fluid mb-2 pb-1" src="https://lollypop.design/wp-content/uploads/2023/07/Rajesh.png" alt="Image">
+                              <img class="img-fluid mb-2 pb-1" src="<?php echo get_field('contact_avatar')?>" alt="Image">
                             </div>
-                            <h6 class="fnt-22 fnt-800 clr-white mb-0">Rajesh Vasanth</h6>
-                            <span class="fnt-14 clr-white d-inline-block">Creative Director</span>
+                            <h6 class="fnt-22 fnt-800 clr-white mb-0"><?php echo get_field('contact_name')?></h6>
+                            <span class="fnt-14 clr-white d-inline-block"><?php echo get_field('contact_title')?></span>
                         </div>
                       </div>
                       <div class="col-12 col-md-9">
                         <div class="ps-md-4 ps-lg-4 expert-member__info">
-                            <p class="fnt-16 clr-white pb-1">Want to elevate your brand?</p>
-                            <h3 class="fnt-40 clr-white fnt-800 mb-2">Lets discuss your brand <br>identity & design requirements</h3>
-                            <a class="web-btn web-btn--primary text-capitalize fnt-800imp" href="https://lollypop.design/project-enquiry/">Let's Talk</a>
+                            <p class="fnt-16 clr-white pb-1"><?php echo get_field('lets_heading')?></p>
+                            <h3 class="fnt-40 clr-white fnt-800 mb-2"><?php echo get_field('lets_title')?></h3>
+                            <a class="web-btn web-btn--primary text-capitalize fnt-800imp" href="<?php echo get_field('lets_title_link')?>"><?php echo get_field('lets_title_link_desc')?></a>
                         </div>
                       </div>
                   </div>
