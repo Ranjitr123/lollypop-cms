@@ -10,6 +10,9 @@ get_header();
 ?>
 <style>
    /* wireframe  */
+    .wireframe-banner-design {
+      text-align: center;
+    }
     .wireframe-banner h3{
         font-family: 'Manrope';
         font-style: normal;
@@ -24,7 +27,13 @@ get_header();
     .wireframe-banner p{
         max-width:737px;
         margin:0 auto;
+        text-align: left;
     }
+    /* second section */
+    .project-gallery{
+      max-width: 1076px;
+    }
+
     /* information structure */
 
     .information-banner h3{
@@ -77,10 +86,14 @@ get_header();
         margin-left: 20px;
     }
     
-    .project_gallery{
-      max-width: 1200px;
+    .img-fluid-color{
+      max-width: 65%;
+      height: 65%;
     }
 
+    li, ul {
+      list-style: outside;
+    }
     /* media query */
     @media (max-width: 767px)
     {
@@ -189,7 +202,7 @@ get_header();
                   <?php if( have_rows('m_web_image') ) : while( have_rows('m_web_image') ): the_row();
                    $webImage = get_sub_field('m_project_gallery');
                 if($webImage !='') { ?>
-                  <div class="mb-r-80 m-img emar project_gallery"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
+                  <div class="mb-r-80 m-img emar project-gallery"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
                    <?php } ?>
                    <?php endwhile; endif; ?>
                 </div>  
@@ -199,7 +212,7 @@ get_header();
 <section class="information-sec pt-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12 col-12 mx-auto">
+            <div class="col-md-12 col-lg-11 col-12 mx-auto">
                 <div class="information-banner mx-5">
                     <h3> Structuring the information</h3>
                 </div>
@@ -216,7 +229,7 @@ get_header();
 <section calss="wireframe-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12 col-12">
+            <div class="col-md-12 col-lg-11 col-12">
                 <div class="wireframe-banner text-center">
                     <h3>Wireframes<?php the_field('wireframe_title'); ?></h3>
                     <p class="mt-md-4 text-md-left"> Using the information architecture as reference, we started created wireframes. Throughout the design process, we kept the personas in mind, ensuring that their objectives and challenges were taken into account. Once the wireframes were completed, we presented them to the client for feedback and ensured that we were aligned before proceeding with the visual design phase.<?php the_field('wireframe_description'); ?></p>
@@ -233,7 +246,7 @@ get_header();
 <section calss="logo-sec type-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12">
+            <div class="col-md-10 col-lg-10 col-12">
                 <div class="wireframe-img logo-img">
                     <img class="img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/MIKO-typeface.png" alt="logo">
                 </div>
@@ -254,7 +267,7 @@ get_header();
                            While Dark green and black can be standard for text usage throughout the app.<?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="mt-md-5 pb-md-5 img-fluid" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
+                    <img class="mt-md-5 pb-md-5 img-fluid img-fluid-color" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Group-1171279265.webp" alt="logo">
                 </div>
             </div>
         </div>
@@ -265,8 +278,8 @@ get_header();
 <section calss="icon-sec">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9 col-12 mt-5">
-                <div class="wireframe-banner icon-div">
+            <div class="col-md-11 col-lg-10 col-12 mt-5">
+                <div class="wireframe-banner icon-div px-5">
                     <h3>Iconography<?php the_field('iconography_title'); ?></h3>
                     <p class="icons-p">Keeping in mind the target users, we used Iconography to visually simplify the content of the App, making it instantly accessible to users.  Elegant & simple icons have the power to attract attention and keep users engaged. We created meaningful icons that help in reducing content and used it suitably to enhance usability.<?php the_field('iconography_description'); ?></p>
                 </div>
@@ -283,8 +296,8 @@ get_header();
 <section calss="mobileui-sec">
     <div class="container">
         <div class="row justify-content-center ">
-            <div class="col-md-10 col-lg-9 col-12 mobile-row">
-                <div class="wireframe-banner mobile-banner pt-md-0 pt-5">
+            <div class="col-md-11 col-lg-11 col-12 mobile-row">
+                <div class="wireframe-banner mobile-banner wireframe-banner-design pt-md-0 pt-5">
                     <h3>UI Design<?php the_field('mobile_ui_title'); ?></h3>
                     <p class="mt-md-4">We adhered to the design language that was consistent with Miko’s brand guidelines.We wanted the app to look bold, fun, playful and evoke a premium feel. We curated an intuitive and lively interface that helped users achieve their goals faster. 
                        <?php the_field('mobile_ui_description'); ?></p>
