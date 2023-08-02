@@ -20,7 +20,6 @@ get_header();
         font-weight: 800;
         line-height: 140px;
         letter-spacing: -5.12px;
-        text-align:center;
     }
     .wireframe-banner p{
         max-width:737px;
@@ -36,7 +35,6 @@ get_header();
         font-weight: 800;
         line-height: 140px;
         letter-spacing: -5.12px;
-        text-align:center;
     }
     /* typo graphy */
     .type-sec-h3{
@@ -65,7 +63,7 @@ get_header();
     .icons-p{
         margin: inherit !important;
         margin-top:20px !important; 
-        margin-left: 60px !important;
+        /* margin-left: 60px !important; */
         margin-bottom:20px !important;
         font-size: 16px;
         font-family:'Montserrat', sans-serif !important;
@@ -79,7 +77,10 @@ get_header();
         margin-left: 20px;
     }
     
-	
+    .project_gallery{
+      max-width: 1200px;
+    }
+
     /* media query */
     @media (max-width: 767px)
     {
@@ -164,7 +165,7 @@ get_header();
                     <div class="project-step">
                       <?php if( have_rows('m_brief_descriptions') ) : while( have_rows('m_brief_descriptions') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
                             <?php the_sub_field('content'); ?>
@@ -188,7 +189,7 @@ get_header();
                   <?php if( have_rows('m_web_image') ) : while( have_rows('m_web_image') ): the_row();
                    $webImage = get_sub_field('m_project_gallery');
                 if($webImage !='') { ?>
-                  <div class="mb-r-80 m-img emar"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
+                  <div class="mb-r-80 m-img emar project_gallery"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('m_project_gallery'); ?>" alt="Image"></div>
                    <?php } ?>
                    <?php endwhile; endif; ?>
                 </div>  
@@ -199,7 +200,7 @@ get_header();
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 col-12 mx-auto">
-                <div class="information-banner">
+                <div class="information-banner mx-5">
                     <h3> Structuring the information</h3>
                 </div>
                 <div class="information-img text-center">
@@ -247,9 +248,9 @@ get_header();
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-9 col-12">
-                <div class="wireframe-banner  color-banner">
-                    <h3>Colors<?php the_field('colors_title'); ?></h3>
-                    <p>The combination is inherently aesthetically playful with red’s representation of life and energy, and blue’s representation of trust and calmness. The vibrant usage of secondary colours act as a support in accentuating the content of the application.
+                <div class="wireframe-banner color-banner">
+                    <h3 class=""mx-5>Colors<?php the_field('colors_title'); ?></h3>
+                    <p class="icons-p">The combination is inherently aesthetically playful with red’s representation of life and energy, and blue’s representation of trust and calmness. The vibrant usage of secondary colours act as a support in accentuating the content of the application.
                            While Dark green and black can be standard for text usage throughout the app.<?php the_field('colors_description'); ?></p>
                 </div>
                 <div class="wireframe-img color-img pt-md-5 pb-md-5">
@@ -297,7 +298,7 @@ get_header();
 </section>
 
 <!-- Miko Exciting animation -->
-<section calss="mobileui-sec">
+<!-- <section calss="mobileui-sec">
     <div class="container">
         <div class="row justify-content-center ">
             <div class="col-md-10 col-lg-9 col-12 mobile-row">
@@ -307,7 +308,7 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php if( get_field('conclusion') !=''){?>
           <section class="conclusion-pad sec-pt">
