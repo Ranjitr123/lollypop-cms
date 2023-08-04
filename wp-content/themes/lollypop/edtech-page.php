@@ -5,7 +5,7 @@
  * * @package WordPress
  * */
 
-get_header( );
+get_header('edtech-landing');
 ?>
 <style>
 section.sec-pd51.last {
