@@ -32,7 +32,7 @@ display: none;
 					
                   <div class="d-flex flex-wrap justify-content-center">
                    <?php if( have_rows('slide_content') ) : while( have_rows('slide_content') ): the_row(); ?>
-                  <span class="quotes fnt-50" style="color:#221429;">&nbsp;<?php the_sub_field('list'); ?></span>
+                  <h1 class="quotes fnt-78" style="color:#221429;">&nbsp;<?php the_sub_field('list'); ?></h1>
                    <?php endwhile; endif; ?>
                  
                   </div>
