@@ -310,17 +310,19 @@ get_header();
 </section>
 
 <!-- Miko Exciting animation -->
-<section calss="mobileui-sec">
-    <div class="container">
-        <div class="row justify-content-center ">
-            <div class="col-md-11 col-lg-10 col-12 mobile-row">
-                <div class="wireframe-img mobile-img">
-                  <img class="img-fluid" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Exciting-animation-1.gif" alt="logo">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php if (get_field('m_exciting_animation') != '') {?>
+  <section calss="mobileui-sec">
+      <div class="container">
+          <div class="row justify-content-center ">
+              <div class="col-md-11 col-lg-10 col-12 mobile-row">
+                  <div class="wireframe-img mobile-img">
+                    <img class="img-fluid" src="<?php the_field('m_exciting_animation'); ?>" alt="logo">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<?php }?>
 
 <?php if( get_field('conclusion') !=''){?>
           <section class="conclusion-pad sec-pt">
