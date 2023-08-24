@@ -29,7 +29,7 @@ $mail->Password = "nyznijsaknuacruk";
 $mail->IsHTML(true);
 $mail->addAddress('marketing@lollypop.design', 'Lollypop Design');
 $mail->addAddress('anil@lollypop.design', 'Anil');
-$mail->addAddress('anjali@lollypop.design', 'Anjali');
+//$mail->addAddress('anjali@lollypop.design', 'Anjali');
 
 $mail->SetFrom("marketing@lollypop.design", "Lollypop Design");
 $mail->AddReplyTo("marketing@lollypop.design", "Lollypop Design");
