@@ -247,9 +247,9 @@ get_header('designathon23');
   }
 
   .sec-countdown .item {
-    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Subtract.png") no-repeat;
-    height: 100px;
-    width: 140px;
+    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/countdown.png") no-repeat;
+    height: 90px;
+    width: 120px;
   }
 
   .img-flip {
@@ -273,7 +273,7 @@ get_header('designathon23');
   }
 
   .countdown-dot {
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .event-time {
@@ -352,10 +352,12 @@ get_header('designathon23');
     transition: all 0.3s ease;
     line-height: 25px;
   }
+
   .download-btn-item:hover {
     color: #FFDB00;
     background: #A30800;
   }
+
   .download-btn:hover {
     background: #FFDB00;
   }
@@ -577,7 +579,8 @@ get_header('designathon23');
     }
 
     .countdown-dot {
-      padding: 6px 15px;
+      padding: 5px 6px;
+      margin-bottom: 10px;
     }
 
     .sec-countdown .item {
@@ -823,13 +826,12 @@ get_header('designathon23');
         <div class="col-12 col-lg-12 text-center d-flex flex-column">
           <h6 class="fnt-header text-yellow text-yellow-white"> Không bây giờ thì bao giờ? </h6>
           <p class="text-white mb-5">Chớp ngay cơ hội tham gia cuộc thử sức nảy lửa để tôi luyện ngòi bút thiết kế</p>
-
           <div class="d-flex justify-content-center mt-5 mb-5">
             <div class="countdown-item ">
               <div class="item  d-flex align-items-center justify-content-center">
-                <h6 class="text-red fnt-header fnt-countdown">12</h6>
+                <h6 id="cdate" class="text-red fnt-header fnt-countdown">12</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center mt-3">
                 <h6 class="text-white fnt-header countdown-datetime">Ngày</h6>
               </div>
             </div>
@@ -838,9 +840,9 @@ get_header('designathon23');
             </div>
             <div class="countdown-item ">
               <div class="item  d-flex align-items-center justify-content-center">
-                <h6 class="text-red fnt-header fnt-countdown">22</h6>
+                <h6 id="chour" class="text-red fnt-header fnt-countdown">0</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center mt-3">
                 <h6 class="text-white fnt-header countdown-datetime">Giờ</h6>
               </div>
             </div>
@@ -849,10 +851,21 @@ get_header('designathon23');
             </div>
             <div class="countdown-item ">
               <div class="item  d-flex align-items-center justify-content-center">
-                <h6 class="text-red fnt-header fnt-countdown">09</h6>
+                <h6 id="cminute" class="text-red fnt-header fnt-countdown">09</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center mt-3">
                 <h6 class="text-white fnt-header countdown-datetime">Phút</h6>
+              </div>
+            </div>
+            <div class="countdown-dot d-flex align-items-center justify-content-center">
+              <span class="text-white fnt-header fnt-countdown mb-countdown">:</span>
+            </div>
+            <div class="countdown-item ">
+              <div class="item  d-flex align-items-center justify-content-center">
+                <h6 id="csecond" class="text-red fnt-header fnt-countdown">09</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center mt-3">
+                <h6 class="text-white fnt-header countdown-datetime">Giây</h6>
               </div>
             </div>
           </div>
@@ -1325,4 +1338,35 @@ get_footer('designathon23');
 
   //   });
   // });
+
+  // Set the date we're counting down to
+  var countDownDate = new Date("Sep 9, 2023 23:59:59").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("cdate").innerHTML = days;
+    document.getElementById("chour").innerHTML = hours;
+    document.getElementById("cminute").innerHTML = minutes;
+    document.getElementById("csecond").innerHTML = seconds;
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 </script>
