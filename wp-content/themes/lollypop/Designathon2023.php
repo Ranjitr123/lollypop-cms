@@ -352,6 +352,13 @@ get_header('designathon23');
     transition: all 0.3s ease;
     line-height: 25px;
   }
+  .download-btn-item:hover {
+    color: #FFDB00;
+    background: #A30800;
+  }
+  .download-btn:hover {
+    background: #FFDB00;
+  }
 
   .event-rule-img {
     width: 75%;
