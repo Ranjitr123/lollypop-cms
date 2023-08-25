@@ -53,10 +53,12 @@ get_header('designathon23');
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 25px;
+    width: 25%;
   }
 
   .btn-yellow:hover {
-    color: #fff;
+    color: #000;
+    background: #FFF;
     clip-path: polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
   }
 
@@ -79,6 +81,12 @@ get_header('designathon23');
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 25px;
+  }
+
+  .btn-red:hover {
+    color: #FFF;
+    background: #A30800;
+    clip-path: polygon(6.8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
   }
 
   .btn-yellow .white_arrow {
@@ -179,8 +187,6 @@ get_header('designathon23');
     margin-bottom: initial;
     margin-top: 24px;
   }
-
-  .fnt-bgk {}
 
   .sec-border::after {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/pattern.png") repeat-y left,
@@ -391,6 +397,7 @@ get_header('designathon23');
     gap: 48px;
   }
 
+
   @media screen and (max-width: 1536px) {
     .banner-side-img {
       margin-top: 125px;
@@ -400,6 +407,15 @@ get_header('designathon23');
       height: 130vh;
     }
 
+    .sec-faq {
+      height: 160vh;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .sec-faq {
+      height: 160vh;
+    }
   }
 
   @media screen and (max-width: 992px) {
@@ -1102,7 +1118,7 @@ get_header('designathon23');
       <div class="row text-center ">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-10 mb-5 d-flex flex-column sec-banner sec-event-rule has-tag">
           <h6 class="fnt-header text-white">Tìm hiểu thêm</h6>
-          <h6 class="text-red fnt-header mb-5"> <span class="text-yellow"> Quy định</span> <span class="text-white"> Designathon 2023 </span></h6>
+          <h6 class="text-red fnt-header"> <span class="text-yellow"> Quy định</span> <span class="text-white"> Designathon 2023 </span></h6>
 
           <div class="d-flex justify-content-center align-items-center mt-5">
             <div class="countdown-item ">
