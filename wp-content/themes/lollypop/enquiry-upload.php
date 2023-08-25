@@ -60,8 +60,8 @@ if ($greater_data == "2") {
 		$mail->addAddress('renil@terralogic.com', 'Renil');
         	$mail->addAddress('rama@terralogic.com', 'Rama');
         	$mail->addAddress('arvind@lollypop.design', 'Arvind');
-		$mail->addAddress('venkat@terralogic.com', 'Venkat');		
-		$mail->addAddress('anjali@lollypop.design','Anjali');
+		$mail->addAddress('venkat@terralogic.com', 'Venkat');
+//		$mail->addAddress('anjali@lollypop.design','Anjali');
 		$mail->addAddress('manoj@terralogic.com','Manoj');
 		$mail->addAddress('sukshith.bs@lollypop.design','Sukshith');
 
