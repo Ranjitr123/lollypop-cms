@@ -145,7 +145,7 @@ get_header('designathon23');
     width: 15%;
     padding-top: 5rem;
     margin-left: auto;
-    margin-right: -145px;
+    margin-right: -50px;
   }
 
 
@@ -395,7 +395,7 @@ get_header('designathon23');
   .sec-event-detail {
     margin-top: -45px;
     height: 285vh;
-    }
+  }
 
   .sec-event {
     margin-top: -2px !important;
@@ -412,8 +412,12 @@ get_header('designathon23');
       margin-top: 125px;
     }
 
+    .banner-side-logo {
+      margin-right: -50px;
+    }
+
     .sec-event-detail {
-      height: 130vh;
+      height: 325vh;
     }
 
     .sec-faq {
@@ -988,7 +992,7 @@ get_header('designathon23');
     </div>
   </section>-->
 
-  <!-- <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
+      <!-- <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 d-flex flex-column">
@@ -1081,243 +1085,243 @@ get_header('designathon23');
     </div>
   </section> -->
 
-  <!-- event-rule -->
-  <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
-    <!-- event-detail -->
-    <div class="container">
-      <div class="row event-rule">
-        <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
-          <div class="event-title">
-            <h6 class="fnt-header fnt-header-28">Thể lệ &nbsp;</h6>
-            <h6 class="text-red fnt-header fnt-header-28">Cuộc thi</h6>
-          </div>
-          <img class="img-fluid event-rule-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/two-poeple-computer.png" alt="logo">
-        </div>
-        <div class="col-12 col-md-12 col-lg-4 mt-5 d-flex flex-column">
-          <div class="row item-detail">
-            <h3>Hình thức tổ chức:</h3>
-            <div class="">
-              <p style="margin-bottom: initial;">Offline, 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
-              <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
+      <!-- event-rule -->
+      <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
+      <!-- event-detail -->
+      <div class="container">
+        <div class="row event-rule">
+          <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
+            <div class="event-title">
+              <h6 class="fnt-header fnt-header-28">Thể lệ &nbsp;</h6>
+              <h6 class="text-red fnt-header fnt-header-28">Cuộc thi</h6>
             </div>
+            <img class="img-fluid event-rule-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/two-poeple-computer.png" alt="logo">
           </div>
-
-          <div class="row item-detail">
-            <h3>Mở đơn đăng kí:</h3>
-            <div class="">
-              <p>Thời gian đăng ký: 26/08/2023 -10/09/2023</p>
-              <p>Vì số lượng tham dự có hạn nên sau khi xem xét portfolio, BTC sẽ ưu tiên chọn những thí sinh đăng ký sớm nhất và gửi email xác nhận đăng ký.</p>
-            </div>
-          </div>
-
-          <div class="row item-detail">
-            <h3>Đối tượng tham gia:</h3>
-            <div class="">
-              <p>Fresher, Designers có kinh nghiệm làm việc dưới 1 năm , Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
-            </div>
-          </div>
-
-          <div class="row item-detail">
-            <h3>Giải thưởng:</h3>
-            <div class="">
-              <p>Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="text-red">10 TRIỆU</span> đồng tiền mặt, <span class="text-red">Mentoring 1 - 1</span> với chuyên gia , <span class="text-red">Bộ quà tặng</span> (Limited Edition) & <span class="text-red">Certificate</span> đến từ Lollypop.</p>
-            </div>
-          </div>
-          <div class="row item-detail">
-            <p class="text-red">Bạn còn chần chờ gì nữa?</p>
-            <div class="register-btn">
-              <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
-
-    <div class="container">
-      <div class="row text-center ">
-        <div class="col-12 col-md-12 offset-lg-1 col-lg-10 mb-5 d-flex flex-column sec-banner sec-event-rule has-tag">
-          <h6 class="fnt-header text-white">Tìm hiểu thêm</h6>
-          <h6 class="text-red fnt-header"> <span class="text-yellow"> Quy định</span> <span class="text-white"> Designathon 2023 </span></h6>
-
-          <div class="d-flex justify-content-center align-items-center mt-5">
-            <div class="countdown-item ">
-              <div class="item  d-flex align-items-center justify-content-center">
-                <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+          <div class="col-12 col-md-12 col-lg-4 mt-5 d-flex flex-column">
+            <div class="row item-detail">
+              <h3>Hình thức tổ chức:</h3>
+              <div class="">
+                <p style="margin-bottom: initial;">Offline, 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
+                <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
               </div>
             </div>
-            <div class="countdown-dot d-flex align-items-center justify-content-center">
-              <div class="download-btn mb-countdown">
-                <a target="_blank" href="https://lollypop.design/wp-content/uploads/2023/04/Designathon-23_-Rules-Regs_compressed.pdf" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
+
+            <div class="row item-detail">
+              <h3>Mở đơn đăng kí:</h3>
+              <div class="">
+                <p>Thời gian đăng ký: 26/08/2023 -10/09/2023</p>
+                <p>Vì số lượng tham dự có hạn nên sau khi xem xét portfolio, BTC sẽ ưu tiên chọn những thí sinh đăng ký sớm nhất và gửi email xác nhận đăng ký.</p>
               </div>
             </div>
-            <div class="countdown-item ">
-              <div class="item  d-flex align-items-center justify-content-center">
-                <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+
+            <div class="row item-detail">
+              <h3>Đối tượng tham gia:</h3>
+              <div class="">
+                <p>Fresher, Designers có kinh nghiệm làm việc dưới 1 năm , Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
+              </div>
+            </div>
+
+            <div class="row item-detail">
+              <h3>Giải thưởng:</h3>
+              <div class="">
+                <p>Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="text-red">10 TRIỆU</span> đồng tiền mặt, <span class="text-red">Mentoring 1 - 1</span> với chuyên gia , <span class="text-red">Bộ quà tặng</span> (Limited Edition) & <span class="text-red">Certificate</span> đến từ Lollypop.</p>
+              </div>
+            </div>
+            <div class="row item-detail">
+              <p class="text-red">Bạn còn chần chờ gì nữa?</p>
+              <div class="register-btn">
+                <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
-    </div>
-    <!-- faq -->
-    <div class="container sec-faq">
-      <div class="row faq-info">
-        <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
-          <div class="event-title">
-            <h6 class="text-red fnt-header fnt-header-28">Câu hỏi</h6>
-            <h6 class="fnt-header fnt-header-28">Thường gặp</h6>
+
+      <!--  -->
+
+      <div class="container">
+        <div class="row text-center ">
+          <div class="col-12 col-md-12 offset-lg-1 col-lg-10 mb-5 d-flex flex-column sec-banner sec-event-rule has-tag">
+            <h6 class="fnt-header text-white">Tìm hiểu thêm</h6>
+            <h6 class="text-red fnt-header"> <span class="text-yellow"> Quy định</span> <span class="text-white"> Designathon 2023 </span></h6>
+
+            <div class="d-flex justify-content-center align-items-center mt-5">
+              <div class="countdown-item ">
+                <div class="item  d-flex align-items-center justify-content-center">
+                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+                </div>
+              </div>
+              <div class="countdown-dot d-flex align-items-center justify-content-center">
+                <div class="download-btn mb-countdown">
+                  <a target="_blank" href="https://lollypop.design/wp-content/uploads/2023/04/Designathon-23_-Rules-Regs_compressed.pdf" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
+                </div>
+              </div>
+              <div class="countdown-item ">
+                <div class="item  d-flex align-items-center justify-content-center">
+                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+                </div>
+              </div>
+            </div>
           </div>
-          <p> Những câu hỏi thường gặp để giải đáp những thắc mắc về cuộc thi Designathon.</p>
-          <img class="img-fluid faq-img d-none d-sm-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/faq-bird.png" alt="logo">
+
+
         </div>
-        <div class="col-12 col-md-12 col-lg-6 mt-5 d-flex flex-column">
-          <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
+      </div>
+      <!-- faq -->
+      <div class="container sec-faq">
+        <div class="row faq-info">
+          <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
+            <div class="event-title">
+              <h6 class="text-red fnt-header fnt-header-28">Câu hỏi</h6>
+              <h6 class="fnt-header fnt-header-28">Thường gặp</h6>
+            </div>
+            <p> Những câu hỏi thường gặp để giải đáp những thắc mắc về cuộc thi Designathon.</p>
+            <img class="img-fluid faq-img d-none d-sm-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/faq-bird.png" alt="logo">
           </div>
-          <div class="faq-el--athon">
-            <div class="faq-el__body">
-              <ul class="px-0 mb-0 faq-ac row justify-content-between">
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Đây là sự kiện Online hay Offline?</h6>
+          <div class="col-12 col-md-12 col-lg-6 mt-5 d-flex flex-column">
+            <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
+            </div>
+            <div class="faq-el--athon">
+              <div class="faq-el__body">
+                <ul class="px-0 mb-0 faq-ac row justify-content-between">
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Đây là sự kiện Online hay Offline?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Designathon 2023 là sự kiện offline được tổ chức tại văn phòng Lollypop Design Studio. Tất cả những gì bạn cần làm từ SÁNG đến TỐI đơn giản là: Eat-Design-Chill-Repeat. Những thứ khác đã có BTC lo hết!
+                        </p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Designathon 2023 là sự kiện offline được tổ chức tại văn phòng Lollypop Design Studio. Tất cả những gì bạn cần làm từ SÁNG đến TỐI đơn giản là: Eat-Design-Chill-Repeat. Những thứ khác đã có BTC lo hết!
-                      </p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Điều kiện tham gia là gì?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Đối tượng tham gia cuộc thi là các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Điều kiện tham gia là gì?</h6>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Thời gian và địa điểm tổ chức Designathon ở đâu?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Đây là cuộc thi tổ chức Offline, diễn ra từ ngày 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM).</p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Đối tượng tham gia cuộc thi là các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Tôi không phải là dân trong ngành thiết kế thì có thể tham gia được không?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Cuộc thi này chỉ dành cho các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Thời gian và địa điểm tổ chức Designathon ở đâu?</h6>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Tôi không sinh sống và làm việc tại TP.HCM thì có thể tham gia không?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Lollypop luôn chào đón tất cả sinh viên, Designer từ tất cả mọi nơi đến tham dự cuộc thi</p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Đây là cuộc thi tổ chức Offline, diễn ra từ ngày 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM).</p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có được hỗ trợ chi phí đi lại và lưu trú không?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Bạn sẽ tự chi trả chi phí di chuyển đến địa điểm tổ chức, sau đó chúng tôi sẽ hỗ trợ khu vực nghỉ ngơi trong suốt quá trình thi.</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Tôi không phải là dân trong ngành thiết kế thì có thể tham gia được không?</h6>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Quy trình Đăng ký như thế nào?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Để đăng ký, bạn cần điền vào Form đăng ký trên website. Nhấp vào nút Đăng ký ngay.</p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Cuộc thi này chỉ dành cho các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có phải trả tiền để tham gia cuộc thi không?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Không, cuộc thi Designathon 2023 hoàn toàn miễn phí cho tất cả mọi người.</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Tôi không sinh sống và làm việc tại TP.HCM thì có thể tham gia không?</h6>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Hạn chót đăng ký thi là khi nào?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Hạn chót đăng ký là 23 giờ 59 phút ngày 10 tháng 9.</p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Lollypop luôn chào đón tất cả sinh viên, Designer từ tất cả mọi nơi đến tham dự cuộc thi</p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0"> Tôi có cần chuẩn bị mang theo những gì khi đi thi?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Các thí sinh cần mang theo laptop cá nhân. Kết nối Wifi và các vật dụng khác (Bút chì, Tẩy, Giấy notes,...) đều đã được BTC chuẩn bị sẵn!</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Tôi có được hỗ trợ chi phí đi lại và lưu trú không?</h6>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0"> Tôi cần nộp bài thi thiết kế dưới định dạng gì?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Bạn sẽ được BTC phổ biến cụ thể về định dạng nộp bài và tiêu chí chấm điểm phần thi trước khi sự kiện bắt đầu</p>
+                      </div>
                     </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Bạn sẽ tự chi trả chi phí di chuyển đến địa điểm tổ chức, sau đó chúng tôi sẽ hỗ trợ khu vực nghỉ ngơi trong suốt quá trình thi.</p>
+                    <hr>
+                  </li>
+                  <li class=" col-12">
+                    <div class="f-accordion">
+                      <div class="f-accordion__head">
+                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có được nhận tiền thưởng cho đội chiến thắng của Designathon không?</h6>
+                      </div>
+                      <div class="f-accordion__body">
+                        <p class="fnt-18 mb-0">Đội chiến thắng sẽ nhận được giải thưởng tiền mặt hấp dẫn!</p>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Quy trình Đăng ký như thế nào?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Để đăng ký, bạn cần điền vào Form đăng ký trên website. Nhấp vào nút Đăng ký ngay.</p>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Tôi có phải trả tiền để tham gia cuộc thi không?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Không, cuộc thi Designathon 2023 hoàn toàn miễn phí cho tất cả mọi người.</p>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Hạn chót đăng ký thi là khi nào?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Hạn chót đăng ký là 23 giờ 59 phút ngày 10 tháng 9.</p>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0"> Tôi có cần chuẩn bị mang theo những gì khi đi thi?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Các thí sinh cần mang theo laptop cá nhân. Kết nối Wifi và các vật dụng khác (Bút chì, Tẩy, Giấy notes,...) đều đã được BTC chuẩn bị sẵn!</p>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0"> Tôi cần nộp bài thi thiết kế dưới định dạng gì?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Bạn sẽ được BTC phổ biến cụ thể về định dạng nộp bài và tiêu chí chấm điểm phần thi trước khi sự kiện bắt đầu</p>
-                    </div>
-                  </div>
-                  <hr>
-                </li>
-                <li class=" col-12">
-                  <div class="f-accordion">
-                    <div class="f-accordion__head">
-                      <h6 class="fnt-16 fnt-800 mb-0">Tôi có được nhận tiền thưởng cho đội chiến thắng của Designathon không?</h6>
-                    </div>
-                    <div class="f-accordion__body">
-                      <p class="fnt-18 mb-0">Đội chiến thắng sẽ nhận được giải thưởng tiền mặt hấp dẫn!</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
 
