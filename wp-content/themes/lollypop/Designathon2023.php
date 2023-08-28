@@ -53,7 +53,11 @@ get_header('designathon23');
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 25px;
-    width: 25%;
+    width: 40%;
+  }
+
+  .event-btn-yellow{
+    width: 25% !important;
   }
 
   .btn-yellow:hover {
@@ -418,9 +422,10 @@ get_header('designathon23');
       margin-top: 175px;
     }
 
-    .sec-countdown::before, .sec-countdown::after {
-    background-position: 35% 72%;
-    background-size: 225px 225px;
+    .sec-countdown::before,
+    .sec-countdown::after {
+      background-position: 35% 72%;
+      background-size: 225px 225px;
     }
 
     .banner-side-logo {
@@ -815,7 +820,7 @@ get_header('designathon23');
             </li>
           </ul>
           <div class="register-btn  banner-register-btn">
-            <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
+            <a id="banner_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
           </div>
         </div>
         <div class="col-3 col-md-3 col-lg-4">
@@ -953,7 +958,7 @@ get_header('designathon23');
           </div>
 
           <div class="register-btn countdown-register-btn mt-5 mb-5">
-            <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
+            <a id="countdown_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow event-btn-yellow">Đăng ký ngay</a>
           </div>
         </div>
 
@@ -1210,7 +1215,7 @@ get_header('designathon23');
           <div class="row item-detail">
             <p class="text-red">Bạn còn chần chờ gì nữa?</p>
             <div class="register-btn">
-              <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
+              <a id="event_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
             </div>
           </div>
         </div>
@@ -1455,17 +1460,26 @@ get_footer('designathon23');
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+    var second = seconds < 10 ? '0' + seconds : seconds;
     // Output the result in an element with id="demo"
     document.getElementById("cdate").innerHTML = days;
     document.getElementById("chour").innerHTML = hours;
     document.getElementById("cminute").innerHTML = minutes;
-    document.getElementById("csecond").innerHTML = seconds;
+    document.getElementById("csecond").innerHTML = second;
 
     // If the count down is over, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      document.getElementById("cdate").innerHTML = 00;
+      document.getElementById("chour").innerHTML = 00;
+      document.getElementById("cminute").innerHTML = 00;
+      document.getElementById("csecond").innerHTML = 00;
+      document.getElementById("banner_registration_form").innerHTML = "Kết thúc đăng ký"
+      document.getElementById("countdown_registration_form").innerHTML = "Kết thúc đăng ký"
+      document.getElementById("event_registration_form").innerHTML = "Kết thúc đăng ký"
+      document.getElementById("banner_registration_form").removeAttribute("href");
+      document.getElementById("countdown_registration_form").removeAttribute("href");
+      document.getElementById("event_registration_form").removeAttribute("href");
     }
   }, 1000);
 </script>
