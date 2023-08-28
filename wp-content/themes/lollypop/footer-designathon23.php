@@ -83,7 +83,7 @@ a.fnt-30.fnt-800.link-insta {
                
                <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3"> 
 
-                  <a class="d-block hvr-link-div text-center text-md-left alifot"  href="<?php echo site_url(); ?>/ui-ux-design/">
+                  <a class="d-block hvr-link-div text-center text-md-left alifot text-white"  href="<?php echo site_url(); ?>/ui-ux-design/">
                     <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">India</h6>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Bangalore</span></div>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Mumbai</span></div>
@@ -93,7 +93,7 @@ a.fnt-30.fnt-800.link-insta {
                 </div>
               
               <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                  <a class="d-block hvr-link-div text-center text-md-left alifot" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/"> 
+                  <a class="d-block hvr-link-div text-center text-md-left alifot text-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/"> 
                   <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">USA</h6>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">San Jose</span></div>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Dallas</span></div>
@@ -102,7 +102,7 @@ a.fnt-30.fnt-800.link-insta {
                 </div>
                 
                <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3"> 
-                <a class="d-block hvr-link-div text-center text-md-left alifot" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
+                <a class="d-block hvr-link-div text-center text-md-left alifot text-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
                     <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">UAE</h6>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Dubai</span></div>
                   </a>
@@ -110,7 +110,7 @@ a.fnt-30.fnt-800.link-insta {
                 
                 
                 <div class="footer-nav-links__item mt-2 pt-1 pt-md-0 mt-md-0 d-flex flex-column align-items-center col-3 col-md-3">
-                <a class="d-block hvr-link-div text-center text-md-left alifot" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
+                <a class="d-block hvr-link-div text-center text-md-left alifot text-white" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
                   <h6 class="fnt-16 fnt-800 mb-0 text-capitalize">Vietnam</h6>
                   <div><span class="fnt-14 d-inline-block fnt-400 text-capitalize">Ho Chi Minh City</span></div>
                 </a>
