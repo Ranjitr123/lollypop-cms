@@ -394,8 +394,8 @@ get_header('designathon23');
 
   .sec-event-detail {
     margin-top: -45px;
-    height: 125vh;
-  }
+    height: 285vh; 
+    }
 
   .sec-event {
     margin-top: -2px !important;
@@ -737,7 +737,7 @@ get_header('designathon23');
             </li>
           </ul>
           <div class="register-btn">
-            <a target="_blank" href="http://localhost/lollypop-cms/designathon-2023/" class="text-center btn-yellow ">Đăng ký ngay</a>
+            <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
           </div>
         </div>
         <div class="col-3 col-md-3 col-lg-4">
@@ -810,7 +810,7 @@ get_header('designathon23');
       </div>
       <div class="row mt-5">
         <div class="text-center col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
-          <a href="https://www.youtube.com/watch?v=2ZO_TVnvTBI&ab_channel=LollypopDesignStudio" data-fancybox="">
+          <a href="https://www.youtube.com/watch?v=o5qzJV9YGck" data-fancybox="">
             <img class="img-fluid lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/youtube.png" alt="video"></noscript>
           </a>
         </div>
@@ -871,7 +871,7 @@ get_header('designathon23');
           </div>
 
           <div class="register-btn mt-5 mb-5">
-            <a href="http://localhost/lollypop-cms/designathon-2023/" class="text-center btn-yellow ">Đăng ký ngay</a>
+            <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
           </div>
         </div>
 
@@ -936,7 +936,8 @@ get_header('designathon23');
         </div>
       </div>
       <!-- sec-bgk -->
-      <div class="sec-bgk">
+
+      <!-- <div class="sec-bgk">
         <div class="row">
           <div class="col-12 col-md-12 offset-lg-1 col-lg-5 mt-5 d-flex flex-column">
             <h6 class="fnt-header">Ban Giám khảo</h6>
@@ -983,11 +984,11 @@ get_header('designathon23');
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
-  </section>
+  </section>-->
 
-  <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
+  <!-- <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 d-flex flex-column">
@@ -1078,10 +1079,10 @@ get_header('designathon23');
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- event-rule -->
-  <section class="sec-event sec-border pt-lg-7 pb-2">
+  <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
     <!-- event-detail -->
     <div class="container">
       <div class="row event-rule">
@@ -1125,7 +1126,7 @@ get_header('designathon23');
           <div class="row item-detail">
             <p class="text-red">Bạn còn chần chờ gì nữa?</p>
             <div class="register-btn">
-              <a target="_blank" href="http://localhost/lollypop-cms/designathon-2023/" class="text-center btn-red ">Đăng ký ngay</a>
+              <a target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
             </div>
           </div>
         </div>
