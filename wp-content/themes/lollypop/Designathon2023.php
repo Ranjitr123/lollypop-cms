@@ -109,7 +109,7 @@ get_header('designathon23');
     background-repeat: no-repeat;
     background-size: cover;
     top: -40px;
-    height: auto;
+    height: 100vh;
   }
 
   .design23-head {
@@ -202,7 +202,7 @@ get_header('designathon23');
 
   .sec-reason-feel {
     margin-top: -2rem;
-    height: 100rem;
+    height: auto;
   }
 
   .sec-countdown {
@@ -273,7 +273,7 @@ get_header('designathon23');
   }
 
   .countdown-dot {
-    padding: 0 10px;
+    padding: 0 32px;
   }
 
   .event-time {
@@ -395,7 +395,6 @@ get_header('designathon23');
   .sec-event-detail {
     margin-top: -45px;
     height: auto;
-    margin-bottom: 15px;
   }
 
   .sec-event {
@@ -550,7 +549,7 @@ get_header('designathon23');
 
     .sec-reason-feel {
       margin-top: 0rem;
-      height: 98rem;
+      height: auto;
     }
 
     .banner-side-logo {
@@ -587,7 +586,7 @@ get_header('designathon23');
     }
 
     .sec-event-detail {
-      margin-top: 11rem;
+      margin-top: 1rem;
       height: auto;
       margin-bottom: 15px;
     }
@@ -597,13 +596,12 @@ get_header('designathon23');
     }
 
     .sec-countdown {
-      top: 125px;
       height: auto;
       background: none
     }
 
     .countdown-register-btn{
-      padding: 50px 0;
+      padding: 40px 0;
     }
     .sec-countdown::before {
       background: none;
@@ -642,7 +640,7 @@ get_header('designathon23');
     }
 
     .event-rule {
-      margin-top: 15vh;
+      margin-top: 8vh;
     }
 
     .event-rule-img {
@@ -683,7 +681,7 @@ get_header('designathon23');
 
     .sec-faq {
       height: auto;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
     }
 
     .fnt-24 {
@@ -708,7 +706,7 @@ get_header('designathon23');
 
     .sec-event-rule {
       margin-top: 100px;
-      height: 45vh !important;
+      height: auto !important;
       padding-top: 10vh;
       margin-bottom: 10vh;
       margin-top: 100px;
@@ -857,6 +855,10 @@ get_header('designathon23');
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
   </section>
 
   <!-- sec-countdown -->
@@ -1125,7 +1127,9 @@ get_header('designathon23');
       <!-- event-rule -->
       <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
       <!-- event-detail -->
-      <div class="container">
+      <!-- <div class="container"> -->
+        <br />
+        <br />
         <div class="row event-rule">
           <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
             <div class="event-title">
@@ -1172,7 +1176,7 @@ get_header('designathon23');
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 
       <!--  -->
 
@@ -1185,7 +1189,7 @@ get_header('designathon23');
             <div class="countdown-register-btn d-flex justify-content-center align-items-center mt-5">
               <div class="countdown-item ">
                 <div class="item  d-flex align-items-center justify-content-center">
-                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" >
                 </div>
               </div>
               <div class="countdown-dot d-flex align-items-center justify-content-center">
@@ -1195,7 +1199,7 @@ get_header('designathon23');
               </div>
               <div class="countdown-item ">
                 <div class="item  d-flex align-items-center justify-content-center">
-                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo" data-ll-status="loaded"><noscript><img class="img-fluid d-none d-sm-block" src="http://localhost/lollypop-cms/wp-content/themes/lollypop/assets/images/new-designathon23/Group72.png" alt="logo"></noscript>
+                  <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo">
                 </div>
               </div>
             </div>
@@ -1209,7 +1213,7 @@ get_header('designathon23');
         <div class="row faq-info">
           <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
             <div class="event-title">
-              <h6 class="text-red fnt-header fnt-header-28">Câu hỏi</h6>
+              <h6 class="text-red fnt-header fnt-header-28">Câu hỏi &nbsp;</h6>
               <h6 class="fnt-header fnt-header-28">Thường gặp</h6>
             </div>
             <p> Những câu hỏi thường gặp để giải đáp những thắc mắc về cuộc thi Designathon.</p>
@@ -1371,6 +1375,8 @@ get_header('designathon23');
           </div>
         </div>
       </div>
+      <br />
+      <br />
   </section>
 </main>
 
