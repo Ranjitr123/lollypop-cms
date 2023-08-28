@@ -59,11 +59,11 @@ a.fnt-30.fnt-800.link-insta {
       <div class="row">
         <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="row mb-60">
-            <h5 class="fnt-16 fnt-600 mb-22 text-center white">Catch us candid here</h5>
+            <!-- <h5 class="fnt-16 fnt-600 mb-22 text-center white">Catch us candid here</h5> -->
             <ul class="px-0 ft-social-links d-flex flex-wrap justify-content-center">
-              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"><a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a></li>
+              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"><a class="fnt-30 fnt-800 link-linkedin" href="https://www.linkedin.com/company/lollypop-vietnam" target="_blank">LinkedIn</a></li>
               <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-insta" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a></li>
-              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypop.india" target="_blank">Facebook</a></li>
+              <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-fb" href="https://www.facebook.com/lollypopvietnam" target="_blank">Facebook</a></li>
 			  <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-dribble" href="https://dribbble.com/lollypop_studio" target="_blank">Dribbble</a></li>              
 			  <li class="ft-social-links__item col-4 col-sm-2 col-md-2 mb-3 mb-sm-0 text-center"> <a class="fnt-30 fnt-800 link-twt" href="https://twitter.com/lollypop_studio" target="_blank">Twitter</a></li>
 			</ul>
