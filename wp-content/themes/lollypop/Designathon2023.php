@@ -418,6 +418,11 @@ get_header('designathon23');
       margin-top: 175px;
     }
 
+    .sec-countdown::before, .sec-countdown::after {
+    background-position: 35% 72%;
+    background-size: 225px 225px;
+    }
+
     .banner-side-logo {
       margin-right: -50px;
     }
@@ -1184,7 +1189,7 @@ get_header('designathon23');
           <div class="row item-detail">
             <h3>Mở đơn đăng kí:</h3>
             <div class="">
-              <p>Thời gian đăng ký: 26/08/2023 -10/09/2023</p>
+              <p>Thời gian đăng ký: 26/08/2023 -08/09/2023</p>
               <p>Vì số lượng tham dự có hạn nên sau khi xem xét portfolio, BTC sẽ ưu tiên chọn những thí sinh đăng ký sớm nhất và gửi email xác nhận đăng ký.</p>
             </div>
           </div>
