@@ -557,7 +557,7 @@ get_header('designathon23');
 
     .sec-event-detail {
       margin-top: 11rem;
-      height: 555vh;
+      height: 525vh;
     }
 
     .banner-side-img {
