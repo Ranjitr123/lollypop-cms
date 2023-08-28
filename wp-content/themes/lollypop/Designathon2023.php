@@ -808,7 +808,7 @@ get_header('designathon23');
             <li class="col-12 col-md-3 col-lg-4 pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Rectangle-34624211.png" alt="" />
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Giao lưu - tranh tài</h6>
@@ -817,7 +817,7 @@ get_header('designathon23');
             <li class="col-12 col-md-3 col-lg-4 pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Rectangle-34624211-1.png" alt="" />
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-1.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Học - Hỏi</h6>
@@ -827,7 +827,7 @@ get_header('designathon23');
             <li class="col-12 col-md-3 col-lg-4 col-sm-12 pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Rectangle-34624211-2.png" alt="" />
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-2.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Mentoring 1 - 1</h6>
