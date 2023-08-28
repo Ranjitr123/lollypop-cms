@@ -109,7 +109,7 @@ get_header('designathon23');
     background-repeat: no-repeat;
     background-size: cover;
     top: -40px;
-    height: 105vh;
+    height: auto;
   }
 
   .design23-head {
@@ -428,6 +428,29 @@ get_header('designathon23');
   }
 
   @media screen and (max-width: 1400px) {
+    .sec-faq {
+      height: 160vh;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .banner-side-img {
+      margin-top: 315px;
+    }
+
+    .btn-yellow {
+      width: 35%;
+    }
+
+    .banner-side-logo {
+      margin-right: -50px;
+    }
+
+    .sec-event-detail {
+      height: auto;
+      margin-bottom: 15px;
+    }
+
     .sec-faq {
       height: 160vh;
     }
