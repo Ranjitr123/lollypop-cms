@@ -391,8 +391,8 @@ get_header();
                     <h3><?php the_field('iconography_title'); ?></h3>
                     <p><?php the_field('iconography_description'); ?></p>
                 </div>
-                <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="ms-5 ps-5 img-fluid" src="<?php the_field('iconography_image'); ?>" alt="logo">
+                <div class="wireframe-img color-img pb-md-5 ps-5 ms-5">
+                    <img class="img-fluid" src="<?php the_field('iconography_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
@@ -409,7 +409,7 @@ get_header();
           <div class="col-12 col-md-11 col-lg-10 mx-auto"> 
                 <div class="col-md-10 px-0 mx-auto"> 
                  <div>
-                <div class="col-md-10 px-0 mx-auto">
+                <div class="col-md-12">
                   <div class="mb-r-80">
                     <div class="project-step">
                       <div class="project-step__item row"> 
