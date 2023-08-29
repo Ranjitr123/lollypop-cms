@@ -373,8 +373,8 @@ get_header();
                     <h3><?php the_field('colors_title'); ?></h3>
                     <p><?php the_field('colors_description'); ?></p>
                 </div>
-                <div class="wireframe-img color-img pb-md-5">
-                    <img class="m-md-5 p-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
+                <div class="wireframe-img color-img">
+                    <img class="mx-5 px-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
