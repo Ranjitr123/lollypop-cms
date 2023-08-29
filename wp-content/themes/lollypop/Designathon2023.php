@@ -1186,7 +1186,7 @@ get_header('designathon23');
           <div class="row item-detail">
             <h3>Hình thức tổ chức:</h3>
             <div class="">
-              <p style="margin-bottom: initial;">Offline, 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
+              <p style="margin-bottom: initial;">Offline, ngày 23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
               <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
             </div>
           </div>
