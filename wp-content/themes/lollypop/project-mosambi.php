@@ -123,9 +123,7 @@ get_header();
     .type-banner{
         height: auto;
         padding-bottom: 2rem;
-    }
-    .type-banner{
-        padding-top:154px;
+        padding-top:125px;
     }
     
     .color-img img{
@@ -149,7 +147,7 @@ get_header();
 
     .icon-container{
          max-width:1076px;
-         padding-bottom:146px;
+         padding-bottom:140px;
     }
     .icon-container img{
         width: 1076px;
@@ -209,7 +207,7 @@ get_header();
         }
    
     }
-    
+
 
 </style>
 
@@ -375,7 +373,7 @@ get_header();
                     <h3><?php the_field('colors_title'); ?></h3>
                     <p><?php the_field('colors_description'); ?></p>
                 </div>
-                <div class="wireframe-img color-img pt-md-5 pb-md-5">
+                <div class="wireframe-img color-img pb-md-5">
                     <img class="m-md-5 p-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
                 </div>
             </div>
@@ -383,11 +381,11 @@ get_header();
     </div>
 </section>
 <!-- icon sec -->
-<section calss="icon-sec">
+<section class="icon-sec">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-11 col-lg-10 col-12 mt-5">
-                <div class="wireframe-banner type-banner icon-banner ps-5 ms-5">
+                <div class="wireframe-banner icon-banner ps-5 ms-5">
                     <h3><?php the_field('iconography_title'); ?></h3>
                     <p><?php the_field('iconography_description'); ?></p>
                 </div>
