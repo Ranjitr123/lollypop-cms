@@ -1238,7 +1238,7 @@ get_header('designathon23');
               </div>
               <div class="countdown-dot d-flex align-items-center justify-content-center">
                 <div class="download-btn mb-countdown">
-                  <a target="_blank" href="https://drive.google.com/file/d/1FiH6dguFqrCfUcFsbVq1INh-5kZpvF6I/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
+                  <a target="_blank" href="https://drive.google.com/file/d/107pIkcDeLGBXBNuneHjhaFZ9jK8epmT0/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
                 </div>
               </div>
               <div class="countdown-item ">
