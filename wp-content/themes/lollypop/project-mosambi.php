@@ -163,15 +163,19 @@ get_header();
       padding-left: 30px;
     }
 
-    .pl-15{
-      padding-left: 15px;
+    .pl-25{
+      padding-left: 25px;
     }
     .pr-15 {
       padding-right: 15px;
     }
 
+    .pl-75 {
+      padding-left: 75px !important;
+    }
+
     .mobileui-px {
-      padding-left: 30px;
+      padding-left: 40px;
       padding-right: 15px;
     }
 
@@ -285,7 +289,7 @@ get_header();
                     <div class="project-step">
                       <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="pl-25 clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
                             <?php the_sub_field('contents'); ?>
@@ -311,9 +315,9 @@ get_header();
 <!-- wireframe section -->
 <section calss="wireframe-sec">
     <div class="container">
-        <div class="row justify-content-center pl-15">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
-                <div class="wireframe-banner color-banner ps-5">
+                <div class="wireframe-banner color-banner ps-5 pl-75">
                     <h3><?php the_field('wireframe_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('wireframe_description'); ?></p>
                 </div>
@@ -329,9 +333,9 @@ get_header();
 
 <section calss="logo-sec">
     <div class="container">
-        <div class="row justify-content-center pl-15">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
-                <div class="wireframe-banner type-banner mx-5 p-5">
+                <div class="wireframe-banner type-banner mx-4 p-5">
                     <h3><?php the_field('logos_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('logos_description'); ?></p>
                 </div>
@@ -357,7 +361,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center pl-15">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
                 <div class="compents-head">
                     <h3><?php the_field('ui_components_title'); ?></h3>
