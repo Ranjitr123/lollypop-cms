@@ -56,7 +56,7 @@ get_header('designathon23');
     width: 40%;
   }
 
-  .event-btn-yellow{
+  .event-btn-yellow {
     width: 25% !important;
   }
 
@@ -265,7 +265,15 @@ get_header('designathon23');
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-background.png") no-repeat;
     /* width: 325px; */
     padding: 20px;
-    background-size: 100%;
+    background-size: 92%;
+  }
+
+  .bg-frame>p {
+    width: 90%;
+  }
+
+  .img-reason {
+    max-width: 91% !important;
   }
 
   .bg-bgk {
@@ -413,7 +421,7 @@ get_header('designathon23');
   .row-slider {
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    gap: 20px;
+    gap: 15px;
     height: calc(100% + 50px);
   }
 
@@ -785,6 +793,19 @@ get_header('designathon23');
     .bg-frame {
       background-size: 100% 95%;
     }
+
+    .event-btn-yellow {
+      width: 50% !important;
+    }
+
+    .bg-frame>p {
+      width: 100%;
+    }
+
+    .img-reason {
+      max-width: 100% !important;
+    }
+
   }
 </style>
 
@@ -850,7 +871,7 @@ get_header('designathon23');
             <div class="column-slider pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Giao lưu - tranh tài</h6>
@@ -859,7 +880,7 @@ get_header('designathon23');
             <div class="column-slider pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-1.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-1.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Học - Hỏi</h6>
@@ -869,7 +890,7 @@ get_header('designathon23');
             <div class="column-slider col-sm-12 pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-2.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-2.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Mentoring 1 - 1</h6>
