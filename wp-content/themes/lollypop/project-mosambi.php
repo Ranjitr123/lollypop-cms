@@ -410,7 +410,7 @@ get_header();
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-11 col-lg-10 col-12 mt-5">
-                <div class="wireframe-banner type-banner ps-5 ms-5">
+                <div class="wireframe-banner type-banner icon-banner ps-5 ms-5">
                     <h3><?php the_field('iconography_title'); ?></h3>
                     <p><?php the_field('iconography_description'); ?></p>
                 </div>
