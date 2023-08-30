@@ -201,6 +201,7 @@ get_header('designathon23');
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #FFF9EC;
     z-index: -1;
   }
 
