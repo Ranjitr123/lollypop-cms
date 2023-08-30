@@ -426,6 +426,12 @@ get_header('designathon23');
     height: calc(100% + 50px);
   }
 
+  .faq-el--athon .f-accordion__head::before {
+    background-color: #000!important;
+}
+.faq-el--athon .f-accordion__head::after {
+    background-color: #000!important;
+}
   @media screen and (max-width: 1536px) {
     .banner-side-img {
       margin-top: 175px;
@@ -1293,11 +1299,11 @@ get_header('designathon23');
               <div class="faq-el__body">
                 <ul class="px-0 mb-0 faq-ac row justify-content-between">
                   <li class=" col-12">
-                    <div class="f-accordion">
+                    <div class="f-accordion active">
                       <div class="f-accordion__head">
                         <h6 class="fnt-16 fnt-800 mb-0">Đây là sự kiện Online hay Offline?</h6>
                       </div>
-                      <div class="f-accordion__body">
+                      <div class="f-accordion__body" style="display: block;">
                         <p class="fnt-18 mb-0">Designathon 2023 là sự kiện offline được tổ chức tại văn phòng Lollypop Design Studio. Tất cả những gì bạn cần làm từ SÁNG đến TỐI đơn giản là: Eat-Design-Chill-Repeat. Những thứ khác đã có BTC lo hết!
                         </p>
                       </div>
