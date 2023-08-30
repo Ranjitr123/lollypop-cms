@@ -154,6 +154,27 @@ get_header();
         height: auto;
     }
 
+    .mobile-banner h3:before{
+      top: -57px;
+      left: -54px;
+    }
+
+    .pl-30 {
+      padding-left: 30px;
+    }
+
+    .pl-15{
+      padding-left: 15px;
+    }
+    .pr-15 {
+      padding-right: 15px;
+    }
+
+    .mobileui-px {
+      padding-left: 30px;
+      padding-right: 15px;
+    }
+
     /* media query */
     @media (max-width: 767px)
     {
@@ -290,7 +311,7 @@ get_header();
 <!-- wireframe section -->
 <section calss="wireframe-sec">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-15">
             <div class="col-md-11 col-lg-10 col-12">
                 <div class="wireframe-banner color-banner ps-5">
                     <h3><?php the_field('wireframe_title'); ?></h3>
@@ -308,7 +329,7 @@ get_header();
 
 <section calss="logo-sec">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-15">
             <div class="col-md-11 col-lg-10 col-12">
                 <div class="wireframe-banner type-banner mx-5 p-5">
                     <h3><?php the_field('logos_title'); ?></h3>
@@ -325,7 +346,7 @@ get_header();
 <!-- mobile UI -->
 <section calss="mobileui-sec">
     <div class="container">
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center mobileui-px">
             <div class="col-md-11 col-lg-10 col-12 mobile-row">
                 <div class="wireframe-banner mobile-banner">
                     <h3><?php the_field('mobile_ui_title'); ?></h3>
@@ -336,7 +357,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center pl-15">
             <div class="col-md-11 col-lg-10 col-12">
                 <div class="compents-head">
                     <h3><?php the_field('ui_components_title'); ?></h3>
