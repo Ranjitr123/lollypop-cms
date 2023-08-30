@@ -671,6 +671,7 @@ get_header('designathon23');
 
     .fnt-countdown {
       font-size: 32px !important;
+      margin-bottom: 0.3rem !important;
     }
 
     .fnt-header {
@@ -1481,12 +1482,11 @@ get_footer('designathon23');
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var second = seconds < 10 ? '0' + seconds : seconds;
     // Output the result in an element with id="demo"
-    document.getElementById("cdate").innerHTML = days;
-    document.getElementById("chour").innerHTML = hours;
-    document.getElementById("cminute").innerHTML = minutes;
-    document.getElementById("csecond").innerHTML = second;
+    document.getElementById("cdate").innerHTML = days < 10 ? '0' + days : days;
+    document.getElementById("chour").innerHTML = hours < 10 ? '0' + hours : hours;
+    document.getElementById("cminute").innerHTML = minutes < 10 ? '0' + minutes : minutes;
+    document.getElementById("csecond").innerHTML = seconds < 10 ? '0' + seconds : seconds;
 
     // If the count down is over, write some text 
     if (distance < 0) {
