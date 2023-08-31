@@ -428,7 +428,7 @@ get_header('designathon23');
 
   .sec-event {
     margin-top: -2px !important;
-    height: 230vh !important;
+    height: auto !important;
   }
 
   .img-gap {
@@ -561,6 +561,14 @@ get_header('designathon23');
     padding-bottom: 80px;
   }
 
+  .fnt-media {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700
+  }
+
   @media screen and (max-width: 1536px) {
     .banner-side-img {
       margin-top: 175px;
@@ -584,6 +592,8 @@ get_header('designathon23');
     .sec-faq {
       height: auto;
     }
+
+    .partner-logos {}
   }
 
   @media screen and (max-width: 1400px) {
@@ -625,8 +635,9 @@ get_header('designathon23');
       background-size: 170px 170px;
     }
 
-
-
+    .partner-grid {
+      gap: 0px;
+    }
   }
 
   @media screen and (max-width: 992px) {
@@ -840,7 +851,8 @@ get_header('designathon23');
 
     .sec-event {
       margin-top: -45px !important;
-      height: 415vh !important;
+      height: auto !important;
+      padding-bottom: 50px;
     }
 
     .event-title {
@@ -942,7 +954,7 @@ get_header('designathon23');
     }
 
     .event-btn-yellow {
-      width: 50% !important;
+      width: 175px !important;
     }
 
     .bg-frame>p {
@@ -1006,6 +1018,11 @@ get_header('designathon23');
     .partner-logos {
       padding-bottom: 48px;
       padding-left: inherit;
+    }
+
+    .fnt-media {
+      font-size: 18px;
+      margin-top: 12px;
     }
   }
 </style>
@@ -1307,8 +1324,8 @@ get_header('designathon23');
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-12 col-md-12 col-lg-12 mx-auto partner-logos">
-              <h6 class="fnt-header text-white"> Media Partners</h6>
+            <div class="col-12 col-md-9 col-lg-10 mx-auto partner-logos">
+              <h6 class="fnt-media text-white"> Media Partners</h6>
               <ul class="row px-0 partner-grid">
                 <li>
                   <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-uxvn.png" alt="logo" />
