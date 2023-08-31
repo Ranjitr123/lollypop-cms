@@ -1545,7 +1545,7 @@ get_header('designathon23');
                     </div>
                     <hr>
                   </li>
-                  <li class=" col-12">
+                  <!-- <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
                         <h6 class="fnt-18 fnt-700 mb-0">Tôi có được hỗ trợ chi phí đi lại và lưu trú không?</h6>
@@ -1555,7 +1555,7 @@ get_header('designathon23');
                       </div>
                     </div>
                     <hr>
-                  </li>
+                  </li> 
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
@@ -1566,7 +1566,7 @@ get_header('designathon23');
                       </div>
                     </div>
                     <hr>
-                  </li>
+                  </li>-->
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
