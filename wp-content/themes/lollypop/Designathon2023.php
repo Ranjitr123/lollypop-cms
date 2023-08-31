@@ -546,6 +546,21 @@ get_header('designathon23');
     font-weight: 500;
   }
 
+  .even-timeline {
+    padding-bottom: 160px;
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 24px;
+    padding-top: 12px;
+  }
+
+  .partner-logos {
+    padding-bottom: 80px;
+  }
+
   @media screen and (max-width: 1536px) {
     .banner-side-img {
       margin-top: 175px;
@@ -881,7 +896,7 @@ get_header('designathon23');
     .sec-event-rule {
       margin-top: 100px;
       height: auto !important;
-      padding-top: 10vh;
+      padding-top: 48px;
       margin-bottom: 10vh;
       margin-top: 100px;
     }
@@ -903,7 +918,7 @@ get_header('designathon23');
     }
 
     .sec-partner {
-      margin-top: 155vh;
+      /* margin-top: 155vh; */
       background: none;
     }
 
@@ -974,7 +989,23 @@ get_header('designathon23');
     }
 
     .event-time {
-    height: fit-content;
+      height: fit-content;
+    }
+
+    .even-timeline {
+      padding-bottom: 96px;
+    }
+
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 0px;
+      padding-top: 12px;
+    }
+
+    .partner-logos {
+      padding-bottom: 48px;
+      padding-left: inherit;
     }
   }
 </style>
@@ -1026,7 +1057,7 @@ get_header('designathon23');
   <section class="sec-reason-feel sec-border pt-lg-7 pb-2">
     <!-- three-reason -->
     <div class="container mb-5">
-      <div class="row reason-info">
+      <div class="row">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-5 mt-5 d-flex flex-column">
           <h6 class="fnt-header">3 lý do không nên bỏ lỡ</h6>
           <h6 class="text-red fnt-header">Designathon 2023</h6>
@@ -1157,7 +1188,7 @@ get_header('designathon23');
   <section class="sec-event-detail sec-border pt-lg-7 pb-2">
     <!-- event-detail -->
     <div class="container">
-      <div class="row reason-info">
+      <div class="row even-timeline">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mb-4 d-flex flex-column">
           <div class="event-title">
             <h6 class="fnt-header fnt-header-28">Hơn cả &nbsp; </h6>
@@ -1172,7 +1203,7 @@ get_header('designathon23');
             <span class="event-time col-2">08:30</span> <span class="event-detail col-9">Checkin</span>
           </div>
           <div class="row d-flex mb-2">
-          <span class="col-2" style="margin-left: 10px; color: black;">|</span>
+            <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">09:00</span> <span class="event-detail col-9">Tập hợp đội hình</span>
@@ -1184,7 +1215,7 @@ get_header('designathon23');
             <span class="event-time col-2">09:30</span> <span class="event-detail col-9">Workshop cùng chuyên gia UI/UX</span>
           </div>
           <div class="row d-flex mb-2">
-          <span class="col-2" style="margin-left: 10px; color: black;">|</span>
+            <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">10:15</span> <span class="event-detail col-9">Khai mạc Designathon 2023</span>
@@ -1258,58 +1289,46 @@ get_header('designathon23');
             </ul>
           </div>
         </div>
-      </div> 
+      </div> -->
     </div>
-  </section>-->
+  </section>
 
-      <!-- <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
+  <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 d-flex flex-column">
           <div class="row">
             <div class="col-12 col-md-12 offset-lg-1 col-lg-5 d-flex flex-column">
-              <h6 class="fnt-header text-white"> Những đối tác </h6>
-              <h6 class="fnt-header text-yellow">đã hỗ trợ cuộc thi </h6>
+              <h6 class="fnt-header text-white"> Những <span class="text-yellow"> đối tác </span></h6>
+              <h6 class="fnt-header text-white">giá trị của cuộc thi </h6>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 d-flex flex-row mb-5">
-              <p class="text-white">Những Designers hàng đầu trong ngành hội tụ để đánh giá và chia sẻ kinh nghiệm.</p>
+            <div class="col-12 col-md-12 col-lg-4 d-flex flex-row">
+              <p class="text-white mt-24">Sự thành công của Designathon Vietnam 2023 phải kể đến sự hỗ trợ nhiệt tình của những đối tác uy tín.</p>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-12 col-md-9 col-lg-10 mx-auto">
-              <ul class="row px-0 d-flex justify-content-center">
-                <li class="col-6 col-md-3 col-lg-3">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+            <div class="col-12 col-md-12 col-lg-12 mx-auto partner-logos">
+              <h6 class="fnt-header text-white"> Media Partners</h6>
+              <ul class="row px-0 partner-grid">
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-uxvn.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-telos.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3 col-sm-12">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-design-school.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3 col-sm-12">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-remit.png" alt="logo" />
+                </li>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-heart.png" alt="logo" />
                 </li>
               </ul>
             </div>
           </div>
-          <div class="row mb-5">
+          <!-- <div class="row mb-5">
             <div class="col-12 col-md-9 col-lg-10 mx-auto">
               <ul class="row px-0 d-flex justify-content-start img-gap">
                 <li class="col-12 col-md-3 col-lg-3">
@@ -1349,16 +1368,15 @@ get_header('designathon23');
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-  </section> -->
-
-      <!-- event-rule -->
-      <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
-      <!-- event-detail -->
-      <!-- <div class="container"> -->
+  </section>
+  <!-- event-rule -->
+  <section class="sec-event sec-border pt-lg-7 pb-2">
+    <!-- event-detail -->
+    <div class="container">
       <div class="row event-rule">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
           <div class="event-title">
