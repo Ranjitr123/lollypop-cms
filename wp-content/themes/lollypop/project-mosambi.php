@@ -123,9 +123,7 @@ get_header();
     .type-banner{
         height: auto;
         padding-bottom: 2rem;
-    }
-    .type-banner{
-        padding-top:154px;
+        padding-top:125px;
     }
     
     .color-img img{
@@ -149,11 +147,36 @@ get_header();
 
     .icon-container{
          max-width:1076px;
-         padding-bottom:146px;
+         padding-bottom:140px;
     }
     .icon-container img{
         width: 1076px;
         height: auto;
+    }
+
+    .mobile-banner h3:before{
+      top: -57px;
+      left: -54px;
+    }
+
+    .pl-30 {
+      padding-left: 30px;
+    }
+
+    .pl-25{
+      padding-left: 25px;
+    }
+    .pr-15 {
+      padding-right: 15px;
+    }
+
+    .pl-75 {
+      padding-left: 75px !important;
+    }
+
+    .mobileui-px {
+      padding-left: 40px;
+      padding-right: 15px;
     }
 
     /* media query */
@@ -209,7 +232,7 @@ get_header();
         }
    
     }
-    
+
 
 </style>
 
@@ -266,7 +289,7 @@ get_header();
                     <div class="project-step">
                       <?php if( have_rows('brief_descriptionss') ) : while( have_rows('brief_descriptionss') ): the_row(); ?> 
                       <div class="project-step__item row"> 
-                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="pl-25 clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('titles'); ?></span></div>
                         <div class="col-12 col-md-8 project-step-disc">
                           <div class="project-step-disc__item"> 
                             <?php the_sub_field('contents'); ?>
@@ -292,9 +315,9 @@ get_header();
 <!-- wireframe section -->
 <section calss="wireframe-sec">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
-                <div class="wireframe-banner color-banner ps-5">
+                <div class="wireframe-banner color-banner ps-5 pl-75">
                     <h3><?php the_field('wireframe_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('wireframe_description'); ?></p>
                 </div>
@@ -310,9 +333,9 @@ get_header();
 
 <section calss="logo-sec">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
-                <div class="wireframe-banner type-banner mx-5 p-5">
+                <div class="wireframe-banner type-banner mx-4 p-5">
                     <h3><?php the_field('logos_title'); ?></h3>
                     <p class="mt-md-4"><?php the_field('logos_description'); ?></p>
                 </div>
@@ -327,7 +350,7 @@ get_header();
 <!-- mobile UI -->
 <section calss="mobileui-sec">
     <div class="container">
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center mobileui-px">
             <div class="col-md-11 col-lg-10 col-12 mobile-row">
                 <div class="wireframe-banner mobile-banner">
                     <h3><?php the_field('mobile_ui_title'); ?></h3>
@@ -338,7 +361,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center pl-25">
             <div class="col-md-11 col-lg-10 col-12">
                 <div class="compents-head">
                     <h3><?php the_field('ui_components_title'); ?></h3>
@@ -375,15 +398,15 @@ get_header();
                     <h3><?php the_field('colors_title'); ?></h3>
                     <p><?php the_field('colors_description'); ?></p>
                 </div>
-                <div class="wireframe-img color-img pt-md-5 pb-md-5">
-                    <img class="m-md-5 p-md-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
+                <div class="wireframe-img color-img">
+                    <img class="mx-5 px-5 img-fluid" src="<?php the_field('colors_image'); ?>" alt="logo">
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- icon sec -->
-<section calss="icon-sec">
+<section class="icon-sec">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-11 col-lg-10 col-12 mt-5">

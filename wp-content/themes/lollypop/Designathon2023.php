@@ -56,7 +56,7 @@ get_header('designathon23');
     width: 40%;
   }
 
-  .event-btn-yellow{
+  .event-btn-yellow {
     width: 25% !important;
   }
 
@@ -123,17 +123,19 @@ get_header('designathon23');
     font-size: 80px;
     font-style: normal;
     font-weight: 800;
+    line-height: 88px;
     letter-spacing: -0.8px;
   }
 
   .fnt-24 {
     font-size: 28px !important;
-    line-height: 24px !important;
+    line-height: 32px !important;
+    padding-top: 4px;
   }
 
   .fnt-20 {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
   }
 
   .clr-yel-92a {
@@ -163,23 +165,31 @@ get_header('designathon23');
   }
 
   .text-yellow {
-    color: #FFDB00;
+    color: #FFDB00 !important;
   }
 
   .fnt-header {
+    color: #221429;
     font-family: 'Manrope';
-    font-size: 28px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px
+    line-height: 32px;
+    padding-top: 4px;
   }
 
   .fnt-countdown {
     font-size: 56px !important;
+    color: #A30800;
+    text-align: center;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
   }
 
   .mb-countdown {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
 
@@ -201,19 +211,21 @@ get_header('designathon23');
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #FFF9EC;
     z-index: -1;
   }
 
   .sec-reason-feel {
     margin-top: -2.8rem;
     height: auto;
+    padding-bottom: 160px !important;
   }
 
   .sec-countdown {
     background-color: #A30800 !important;
     background-size: contain;
     top: -45px;
-    height: 40rem;
+    height: 45rem;
   }
 
   .sec-countdown {
@@ -229,8 +241,8 @@ get_header('designathon23');
     bottom: 0;
     left: 0;
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/human-hourglass.png") no-repeat;
-    background-position: 70% 72%;
-    background-size: 250px 250px;
+    background-position: 70% 79%;
+    background-size: 225px 225px;
     width: 33%;
     height: 100%;
     z-index: -10;
@@ -242,8 +254,8 @@ get_header('designathon23');
     bottom: 0;
     right: 0%;
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/human-hourglass.png") no-repeat;
-    background-position: 70% 72%;
-    background-size: 250px 250px;
+    background-position: 70% 79%;
+    background-size: 225px 225px;
     width: 33%;
     height: 100%;
     transform: scaleX(-1);
@@ -265,7 +277,15 @@ get_header('designathon23');
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-background.png") no-repeat;
     /* width: 325px; */
     padding: 20px;
-    background-size: 100%;
+    background-size: 92%;
+  }
+
+  .bg-frame>p {
+    width: 90%;
+  }
+
+  .img-reason {
+    max-width: 91% !important;
   }
 
   .bg-bgk {
@@ -285,16 +305,20 @@ get_header('designathon23');
     border-radius: 5px;
     color: white;
     margin-left: 10px;
+    font-size: 18px;
+    width: 75px;
   }
 
   .countdown-datetime {
     font-size: 24px !important;
+    font-weight: 700;
+    line-height: 120%;
   }
 
   .sec-event-rule {
     margin-top: 160px;
     height: auto !important;
-    padding-top: 10vh;
+    padding-top: 56px;
     margin-bottom: 10vh;
   }
 
@@ -399,11 +423,12 @@ get_header('designathon23');
   .sec-event-detail {
     margin-top: -45px;
     height: auto;
+    padding-top: 160px;
   }
 
   .sec-event {
     margin-top: -2px !important;
-    height: 230vh !important;
+    height: auto !important;
   }
 
   .img-gap {
@@ -413,8 +438,135 @@ get_header('designathon23');
   .row-slider {
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    gap: 20px;
+    gap: 15px;
     height: calc(100% + 50px);
+  }
+
+  .faq-el--athon .f-accordion__head::before {
+    background-color: #000 !important;
+  }
+
+  .faq-el--athon .f-accordion__head::after {
+    background-color: #000 !important;
+  }
+
+  .banner-desc-pt {
+    padding-top: 28px;
+  }
+
+  .fnt-16 {
+    line-height: 26px !important;
+    font-weight: 500;
+  }
+
+  .fnt-20 {
+    font-weight: 400;
+  }
+
+  .mt-48 {
+    margin-top: 40px;
+  }
+
+  .sec-feel {
+    display: flex;
+    justify-content: center;
+    margin-top: 112px !important;
+    margin-bottom: 56px !important;
+  }
+
+  .sec-video {
+    /* padding-bottom: 160px; */
+  }
+
+  .countdown-register-btn {
+    padding-top: 40px;
+  }
+
+  .event-rule-item {
+    color: #221429;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .item-detail {
+    margin-top: 32px;
+  }
+
+  .item-detail>p {
+    color: #221429;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .item-detail>span {
+    font-weight: 800;
+  }
+
+  .fnt-fdm {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 24px;
+  }
+
+  .download-btn-mb {
+    padding-bottom: 56px;
+  }
+
+  .sec-faq {
+    padding-top: 80px;
+  }
+
+  .fnt-18 {
+    color: #221429;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+  }
+
+  .fnt-700 {
+    font-weight: 700;
+  }
+
+  .event-detail {
+    color: #221429;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .even-timeline {
+    padding-bottom: 160px;
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 24px;
+    padding-top: 12px;
+  }
+
+  .partner-logos {
+    padding-bottom: 80px;
+  }
+
+  .fnt-media {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700
   }
 
   @media screen and (max-width: 1536px) {
@@ -440,6 +592,8 @@ get_header('designathon23');
     .sec-faq {
       height: auto;
     }
+
+    .partner-logos {}
   }
 
   @media screen and (max-width: 1400px) {
@@ -481,6 +635,9 @@ get_header('designathon23');
       background-size: 170px 170px;
     }
 
+    .partner-grid {
+      gap: 0px;
+    }
   }
 
   @media screen and (max-width: 992px) {
@@ -583,6 +740,8 @@ get_header('designathon23');
     .sec-reason-feel {
       margin-top: 0rem;
       height: auto;
+      /* padding-bottom: 96px !important; */
+
     }
 
     .banner-side-logo {
@@ -596,7 +755,7 @@ get_header('designathon23');
     }
 
     .banner-register-btn {
-      padding-bottom: 50px;
+      padding-bottom: 60px;
     }
 
     .btn-yellow {
@@ -611,17 +770,21 @@ get_header('designathon23');
 
     .mt-5 {
       margin: 0px !important;
+      padding-top: 1rem;
+
     }
 
     .design23-head {
       font-size: 48px;
       letter-spacing: -0.48px;
+      line-height: 56px;
     }
 
     .sec-event-detail {
       margin-top: 1rem;
       height: auto;
       margin-bottom: 15px;
+      padding-top: 48px;
     }
 
     .banner-side-img {
@@ -634,7 +797,8 @@ get_header('designathon23');
     }
 
     .countdown-register-btn {
-      padding: 40px 0;
+      padding-top: 40px;
+      padding-bottom: 48px;
     }
 
     .sec-countdown::before {
@@ -652,7 +816,7 @@ get_header('designathon23');
 
     .countdown-dot {
       padding: 5px 6px;
-      margin-bottom: 10px;
+      margin-bottom: 52px;
     }
 
     .sec-countdown .item {
@@ -663,10 +827,12 @@ get_header('designathon23');
 
     .fnt-countdown {
       font-size: 32px !important;
+      margin-bottom: 0.3rem !important;
     }
 
     .fnt-header {
-      font-size: 23px !important;
+      font-size: 24px !important;
+      margin-bottom: 0px !important;
     }
 
     .fnt-header-28 {
@@ -685,7 +851,8 @@ get_header('designathon23');
 
     .sec-event {
       margin-top: -45px !important;
-      height: 415vh !important;
+      height: auto !important;
+      padding-bottom: 50px;
     }
 
     .event-title {
@@ -705,13 +872,13 @@ get_header('designathon23');
       line-height: 28px;
     }
 
-    .item-detail>p {
+    /* .item-detail>p {
       color: #221429;
       font-family: Manrope;
       font-style: normal;
       font-weight: 500;
       line-height: 22px;
-    }
+    } */
 
     .sec-faq {
       height: auto;
@@ -722,7 +889,7 @@ get_header('designathon23');
       font-size: 20px !important;
       font-style: normal;
       font-weight: 700;
-      line-height: 28px;
+      line-height: 24px !important;
     }
 
     .text-yellow-white {
@@ -735,13 +902,13 @@ get_header('designathon23');
     }
 
     .register-btn a {
-      margin-top: 1rem;
+      margin-top: 0rem;
     }
 
     .sec-event-rule {
       margin-top: 100px;
       height: auto !important;
-      padding-top: 10vh;
+      padding-top: 48px;
       margin-bottom: 10vh;
       margin-top: 100px;
     }
@@ -763,7 +930,7 @@ get_header('designathon23');
     }
 
     .sec-partner {
-      margin-top: 155vh;
+      /* margin-top: 155vh; */
       background: none;
     }
 
@@ -785,6 +952,78 @@ get_header('designathon23');
     .bg-frame {
       background-size: 100% 95%;
     }
+
+    .event-btn-yellow {
+      width: 175px !important;
+    }
+
+    .bg-frame>p {
+      width: 100%;
+    }
+
+    .img-reason {
+      max-width: 100% !important;
+    }
+
+    .banner-desc-pt {
+      padding-top: 24px;
+    }
+
+    .fnt-16 {
+      line-height: 20px !important;
+    }
+
+    .mt-48 {
+      margin-top: 20px;
+    }
+
+    .sec-feel {
+      display: block;
+      margin-top: 80px !important;
+    }
+
+    .sec-reason-feel {
+      padding-bottom: 96px !important;
+    }
+
+    .event-rule-item {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .fnt-fdm {
+      font-size: 18px;
+      padding-bottom: 16px;
+    }
+
+    .sec-faq {
+      padding-top: 0px;
+    }
+
+    .event-time {
+      height: fit-content;
+    }
+
+    .even-timeline {
+      padding-bottom: 96px;
+    }
+
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 0px;
+      padding-top: 12px;
+    }
+
+    .partner-logos {
+      padding-bottom: 48px;
+      padding-left: inherit;
+    }
+
+    .fnt-media {
+      font-size: 18px;
+      margin-top: 12px;
+    }
   }
 </style>
 
@@ -800,26 +1039,26 @@ get_header('designathon23');
       <div class="row">
         <div class="col-12 col-md-9 col-lg-8 mx-auto">
           <div class="col-md-10 px-0">
-            <h2 class="mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head text-white">
-              Mở tư duy<span class="clr-yel-92a">.</span> </h2>
+            <span class="mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head text-white">
+              Mở tư duy<span class="clr-yel-92a">.</span> </span>
             <h2 class="mb-3 mb-lg-4 col-12 col-md-10 col-lg-9 px-0 design23-head text-white">Bật giải pháp<span class=" clr-yel-92a">.</span> </h2>
-            <p class="col-lg-11 col-xxl-10 px-0 fnt-16 design-content-p text-white">Với 3 mùa thành công vang dội tại đất nước “tỷ dân” - Ấn Độ, Lollypop Designathon đã chính thức có mặt tại Viêt Nam. Designathon hứa hẹn sẽ là một sân chơi bổ ích dành cho những Designer “tay mơ” thử sức 1 ngày hóa thân thành Designer “tay to” để giải quyết đề bài cân não thông qua thiết kế.</p>
+            <p class="col-lg-11 col-xxl-10 px-0 fnt-16 banner-desc-pt text-white">Với 3 mùa thành công vang dội tại đất nước “tỷ dân” - Ấn Độ, Lollypop Designathon đã chính thức có mặt tại Viêt Nam. Designathon hứa hẹn sẽ là một sân chơi bổ ích dành cho những Designer “tay mơ” thử sức 1 ngày hóa thân thành Designer “tay to” để giải quyết đề bài cân não thông qua thiết kế.</p>
           </div>
           <ul class="row px-0">
-            <li class="col-6 col-md-4 col-lg-4 mt-5">
-              <p class="fnt-20 text-white ">Ngày tham gia</p>
+            <li class="col-6 col-md-4 col-lg-4 mt-4">
+              <span class="fnt-20 text-white ">Ngày tham gia</span>
               <h6 class=" fnt-24 text-white">23/09/2023</h6>
             </li>
-            <li class="col-6 col-md-4 col-lg-4 mt-5">
-              <p class="fnt-20  text-white ">Thời gian</p>
+            <li class="col-6 col-md-4 col-lg-4 mt-4">
+              <span class="fnt-20  text-white ">Thời gian</span>
               <h6 class=" fnt-24 text-white">9AM - 9PM</h6>
             </li>
-            <li class="col-6 col-md-4 col-lg-4 mt-5">
-              <p class="fnt-20 text-white ">Designers</p>
+            <li class="col-6 col-md-4 col-lg-4 mt-4">
+              <span class="fnt-20 text-white ">Designers</span>
               <h6 class=" fnt-24 text-white">50+ thí sinh</h6>
             </li>
           </ul>
-          <div class="register-btn  banner-register-btn">
+          <div class="register-btn  banner-register-btn mt-5">
             <a id="banner_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow ">Đăng ký ngay</a>
           </div>
         </div>
@@ -835,22 +1074,22 @@ get_header('designathon23');
   <section class="sec-reason-feel sec-border pt-lg-7 pb-2">
     <!-- three-reason -->
     <div class="container mb-5">
-      <div class="row reason-info">
-        <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mx-auto mt-5 d-flex flex-column">
+      <div class="row">
+        <div class="col-12 col-md-12 offset-lg-1 col-lg-5 mt-5 d-flex flex-column">
           <h6 class="fnt-header">3 lý do không nên bỏ lỡ</h6>
           <h6 class="text-red fnt-header">Designathon 2023</h6>
         </div>
-        <div class="col-12 col-md-12 col-lg-4 mx-auto mt-5 d-flex flex-row">
+        <div class="col-12 col-md-12 col-lg-4 mx-auto mt-3 d-flex align-items-center">
           <p>Với 3 mùa thành công vang dội tại Ấn Độ, Designathon là sự kiện thiết kế thường niên do Lollypop tổ chức.</p>
         </div>
       </div>
-      <div class="row mt-5 mb-5">
+      <div class="row mt-48 mb-5">
         <div class="col-12 col-md-9 col-lg-10 mx-auto">
           <div class="row-slider px-0 img-gap">
             <div class="column-slider pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Giao lưu - tranh tài</h6>
@@ -859,7 +1098,7 @@ get_header('designathon23');
             <div class="column-slider pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-1.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-1.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Học - Hỏi</h6>
@@ -869,7 +1108,7 @@ get_header('designathon23');
             <div class="column-slider col-sm-12 pr-5 bg-frame">
               <div class="designation-slider">
                 <div class="slider-item">
-                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-2.png" alt="" />
+                  <img class="img-fluid img-reason mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Rectangle-34624211-2.png" alt="" />
                 </div>
               </div>
               <h6 class=" fnt-24 text-red">Mentoring 1 - 1</h6>
@@ -882,8 +1121,8 @@ get_header('designathon23');
     </div>
     <!-- sec-feel-->
     <div class="container">
-      <div class="row mt-5">
-        <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mx-auto mt-5 d-flex flex-column">
+      <div class="mt-5 sec-feel">
+        <div class="col-12 col-md-12 offset-lg-1 col-lg-5 mt-5 d-flex flex-column">
           <h6 class="fnt-header">Xem để cảm nhận sức nóng</h6>
           <h6 class="text-red fnt-header">Designathon India 2023</h6>
         </div>
@@ -891,7 +1130,7 @@ get_header('designathon23');
           <p>Hơn 1,200+ lượt đăng ký chỉ sau 24h mở đơn, Designathon - một cơn lốc thực thụ trong cộng đồng Designer khắp nước Ấn!</p>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="mt-4 sec-video">
         <div class="text-center col-12 col-md-11 col-lg-9 col-xl-10 mx-auto">
           <a href="https://www.youtube.com/watch?v=o5qzJV9YGck" data-fancybox="">
             <img class="img-fluid lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/youtube.png" alt="video"></noscript>
@@ -899,10 +1138,6 @@ get_header('designathon23');
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
   </section>
 
   <!-- sec-countdown -->
@@ -910,15 +1145,15 @@ get_header('designathon23');
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-lg-12 text-center d-flex flex-column">
-          <h6 class="fnt-header text-yellow text-yellow-white"> Không bây giờ thì bao giờ? </h6>
-          <p class="text-white mb-5">Chớp ngay cơ hội tham gia cuộc thử sức nảy lửa để tôi luyện ngòi bút thiết kế</p>
-          <div class="d-flex justify-content-center mt-5 mb-5">
+        <div class="col-12 col-lg-12 text-center mt-5 d-flex flex-column">
+          <h6 class="fnt-header text-yellow"> Không bây giờ thì bao giờ? </h6>
+          <p class="text-white mt-3 mb-5">Chớp ngay cơ hội tham gia cuộc thử sức nảy lửa để tôi luyện ngòi bút thiết kế</p>
+          <div class="d-flex justify-content-center mt-5">
             <div class="countdown-item ">
               <div class="item  d-flex align-items-center justify-content-center">
                 <h6 id="cdate" class="text-red fnt-header fnt-countdown">12</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center mt-3">
+              <div class="d-flex align-items-center justify-content-center mt-2">
                 <h6 class="text-white fnt-header countdown-datetime">Ngày</h6>
               </div>
             </div>
@@ -929,7 +1164,7 @@ get_header('designathon23');
               <div class="item  d-flex align-items-center justify-content-center">
                 <h6 id="chour" class="text-red fnt-header fnt-countdown">0</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center mt-3">
+              <div class="d-flex align-items-center justify-content-center mt-2">
                 <h6 class="text-white fnt-header countdown-datetime">Giờ</h6>
               </div>
             </div>
@@ -940,7 +1175,7 @@ get_header('designathon23');
               <div class="item  d-flex align-items-center justify-content-center">
                 <h6 id="cminute" class="text-red fnt-header fnt-countdown">09</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center mt-3">
+              <div class="d-flex align-items-center justify-content-center mt-2">
                 <h6 class="text-white fnt-header countdown-datetime">Phút</h6>
               </div>
             </div>
@@ -951,13 +1186,13 @@ get_header('designathon23');
               <div class="item  d-flex align-items-center justify-content-center">
                 <h6 id="csecond" class="text-red fnt-header fnt-countdown">09</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-center mt-3">
+              <div class="d-flex align-items-center justify-content-center mt-2">
                 <h6 class="text-white fnt-header countdown-datetime">Giây</h6>
               </div>
             </div>
           </div>
 
-          <div class="register-btn countdown-register-btn mt-5 mb-5">
+          <div class="register-btn countdown-register-btn">
             <a id="countdown_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-yellow event-btn-yellow">Đăng ký ngay</a>
           </div>
         </div>
@@ -970,8 +1205,8 @@ get_header('designathon23');
   <section class="sec-event-detail sec-border pt-lg-7 pb-2">
     <!-- event-detail -->
     <div class="container">
-      <div class="row reason-info">
-        <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 mb-5 d-flex flex-column">
+      <div class="row even-timeline">
+        <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mb-4 d-flex flex-column">
           <div class="event-title">
             <h6 class="fnt-header fnt-header-28">Hơn cả &nbsp; </h6>
             <h6 class="text-red fnt-header fnt-header-28">một cuộc thi</h6>
@@ -980,44 +1215,44 @@ get_header('designathon23');
           <p>Học hỏi - Giao lưu - Thiết kế - Tiệc tùng.</p>
         </div>
 
-        <div class="col-12 col-md-12 col-lg-4 mt-5 d-flex flex-column">
-          <div class="row d-flex mb-2">
+        <div class="col-12 col-md-12 col-lg-5 d-flex flex-column">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">08:30</span> <span class="event-detail col-9">Checkin</span>
           </div>
-          <div class="row d-flex  mb-2">
-            <span class="col-2" style="margin-left: 10px; color: black; height: 24px">|</span>
+          <div class="row d-flex mb-2">
+            <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex  mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">09:00</span> <span class="event-detail col-9">Tập hợp đội hình</span>
           </div>
           <div class="row d-flex  mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">09:30</span> <span class="event-detail col-9">Workshop cùng chuyên gia UI/UX</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">10:15</span> <span class="event-detail col-9">Khai mạc Designathon 2023</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">18:00</span> <span class="event-detail col-9">Trình làng giải pháp</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">20:00</span> <span class="event-detail col-9">Công bố & Trao thưởng</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
-          <div class="row d-flex mb-2">
+          <div class="row d-flex align-items-center mb-2">
             <span class="event-time col-2">20:30</span> <span class="event-detail col-9">Quẩy tới bến</span>
           </div>
         </div>
@@ -1071,58 +1306,46 @@ get_header('designathon23');
             </ul>
           </div>
         </div>
-      </div> 
+      </div> -->
     </div>
-  </section>-->
+  </section>
 
-      <!-- <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
+  <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 d-flex flex-column">
           <div class="row">
             <div class="col-12 col-md-12 offset-lg-1 col-lg-5 d-flex flex-column">
-              <h6 class="fnt-header text-white"> Những đối tác </h6>
-              <h6 class="fnt-header text-yellow">đã hỗ trợ cuộc thi </h6>
+              <h6 class="fnt-header text-white"> Những <span class="text-yellow"> đối tác </span></h6>
+              <h6 class="fnt-header text-white">giá trị của cuộc thi </h6>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 d-flex flex-row mb-5">
-              <p class="text-white">Những Designers hàng đầu trong ngành hội tụ để đánh giá và chia sẻ kinh nghiệm.</p>
+            <div class="col-12 col-md-12 col-lg-4 d-flex flex-row">
+              <p class="text-white mt-24">Sự thành công của Designathon Vietnam 2023 phải kể đến sự hỗ trợ nhiệt tình của những đối tác uy tín.</p>
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-12 col-md-9 col-lg-10 mx-auto">
-              <ul class="row px-0 d-flex justify-content-center">
-                <li class="col-6 col-md-3 col-lg-3">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+            <div class="col-12 col-md-9 col-lg-10 mx-auto partner-logos">
+              <h6 class="fnt-media text-white"> Media Partners</h6>
+              <ul class="row px-0 partner-grid">
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-uxvn.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-telos.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3 col-sm-12">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-design-school.png" alt="logo" />
                 </li>
-                <li class="col-6 col-md-3 col-lg-3 col-sm-12">
-                  <div class="designation-slider">
-                    <div class="slider-item">
-                      <img class="img-fluid mb-3" src="http://localhost/lollypop-cms/wp-content/uploads/2023/08/Frame-44.png" alt="" />
-                    </div>
-                  </div>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-remit.png" alt="logo" />
+                </li>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-heart.png" alt="logo" />
                 </li>
               </ul>
             </div>
           </div>
-          <div class="row mb-5">
+          <!-- <div class="row mb-5">
             <div class="col-12 col-md-9 col-lg-10 mx-auto">
               <ul class="row px-0 d-flex justify-content-start img-gap">
                 <li class="col-12 col-md-3 col-lg-3">
@@ -1162,18 +1385,15 @@ get_header('designathon23');
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-  </section> -->
-
-      <!-- event-rule -->
-      <!-- <section class="sec-event sec-border pt-lg-7 pb-2"> -->
-      <!-- event-detail -->
-      <!-- <div class="container"> -->
-      <br />
-      <br />
+  </section>
+  <!-- event-rule -->
+  <section class="sec-event sec-border pt-lg-7 pb-2">
+    <!-- event-detail -->
+    <div class="container">
       <div class="row event-rule">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
           <div class="event-title">
@@ -1183,16 +1403,16 @@ get_header('designathon23');
           <img class="img-fluid event-rule-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/two-poeple-computer.png" alt="logo">
         </div>
         <div class="col-12 col-md-12 col-lg-4 mt-5 d-flex flex-column">
-          <div class="row item-detail">
-            <h3>Hình thức tổ chức:</h3>
+          <div class="row">
+            <h3 class="event-rule-item">Hình thức tổ chức:</h3>
             <div class="">
-              <p style="margin-bottom: initial;">Offline, 22-23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
+              <p style="margin-bottom: initial;">Offline, ngày 23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
               <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
             </div>
           </div>
 
           <div class="row item-detail">
-            <h3>Mở đơn đăng kí:</h3>
+            <h3 class="event-rule-item">Mở đơn đăng kí:</h3>
             <div class="">
               <p>Thời gian đăng ký: 26/08/2023 -08/09/2023</p>
               <p>Vì số lượng tham dự có hạn nên sau khi xem xét portfolio, BTC sẽ ưu tiên chọn những thí sinh đăng ký sớm nhất và gửi email xác nhận đăng ký.</p>
@@ -1200,20 +1420,20 @@ get_header('designathon23');
           </div>
 
           <div class="row item-detail">
-            <h3>Đối tượng tham gia:</h3>
+            <h3 class="event-rule-item">Đối tượng tham gia:</h3>
             <div class="">
               <p>Fresher, Designers có kinh nghiệm làm việc dưới 1 năm , Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
             </div>
           </div>
 
           <div class="row item-detail">
-            <h3>Giải thưởng:</h3>
+            <h3 class="event-rule-item">Giải thưởng:</h3>
             <div class="">
               <p>Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="text-red">10 TRIỆU</span> đồng tiền mặt, <span class="text-red">Mentoring 1 - 1</span> với chuyên gia , <span class="text-red">Bộ quà tặng</span> (Limited Edition) & <span class="text-red">Certificate</span> đến từ Lollypop.</p>
             </div>
           </div>
           <div class="row item-detail">
-            <p class="text-red">Bạn còn chần chờ gì nữa?</p>
+            <span class="text-red" style="font-weight: 800;">Bạn còn chần chờ gì nữa?</span>
             <div class="register-btn">
               <a id="event_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
             </div>
@@ -1227,18 +1447,18 @@ get_header('designathon23');
       <div class="container container-event-rule">
         <div class="row text-center ">
           <div class="col-12 col-md-12 offset-lg-1 col-lg-10 mb-5 d-flex flex-column sec-banner sec-event-rule has-tag">
-            <h6 class="fnt-header text-white">Tìm hiểu thêm</h6>
+            <h6 class="fnt-fdm text-white">Tìm hiểu thêm</h6>
             <h6 class="text-red fnt-header"> <span class="text-yellow"> Quy định</span> <span class="text-white"> Designathon 2023 </span></h6>
 
-            <div class="countdown-register-btn d-flex justify-content-center align-items-center mt-5 mb-5">
+            <div class="countdown-register-btn download-btn-mb d-flex justify-content-center align-items-center mt-2">
               <div class="countdown-item ">
                 <div class="item  d-flex align-items-center justify-content-center">
                   <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo">
                 </div>
               </div>
-              <div class="countdown-dot d-flex align-items-center justify-content-center">
+              <div class=" d-flex align-items-center justify-content-center">
                 <div class="download-btn mb-countdown">
-                  <a target="_blank" href="https://drive.google.com/file/d/1FiH6dguFqrCfUcFsbVq1INh-5kZpvF6I/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
+                  <a target="_blank" href="https://drive.google.com/file/d/107pIkcDeLGBXBNuneHjhaFZ9jK8epmT0/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
                 </div>
               </div>
               <div class="countdown-item ">
@@ -1255,26 +1475,26 @@ get_header('designathon23');
       <!-- faq -->
       <div class="sec-faq">
         <div class="row faq-info">
-          <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 mt-5 d-flex flex-column">
+          <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 d-flex flex-column">
             <div class="event-title">
               <h6 class="text-red fnt-header fnt-header-28">Câu hỏi &nbsp;</h6>
               <h6 class="fnt-header fnt-header-28">Thường gặp</h6>
             </div>
             <p> Những câu hỏi thường gặp để giải đáp những thắc mắc về cuộc thi Designathon.</p>
-            <img class="img-fluid faq-img d-none d-sm-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/faq-bird.png" alt="logo">
+            <img class="img-fluid faq-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/faq-bird.png" alt="logo">
           </div>
-          <div class="col-12 col-md-12 col-lg-6 mt-5 d-flex flex-column">
+          <div class="col-12 col-md-12 col-lg-6 d-flex flex-column">
             <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
             </div>
             <div class="faq-el--athon">
               <div class="faq-el__body">
                 <ul class="px-0 mb-0 faq-ac row justify-content-between">
                   <li class=" col-12">
-                    <div class="f-accordion">
+                    <div class="f-accordion active">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Đây là sự kiện Online hay Offline?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Đây là sự kiện Online hay Offline?</h6>
                       </div>
-                      <div class="f-accordion__body">
+                      <div class="f-accordion__body" style="display: block;">
                         <p class="fnt-18 mb-0">Designathon 2023 là sự kiện offline được tổ chức tại văn phòng Lollypop Design Studio. Tất cả những gì bạn cần làm từ SÁNG đến TỐI đơn giản là: Eat-Design-Chill-Repeat. Những thứ khác đã có BTC lo hết!
                         </p>
                       </div>
@@ -1284,7 +1504,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Điều kiện tham gia là gì?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Điều kiện tham gia là gì?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Đối tượng tham gia cuộc thi là các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
@@ -1295,7 +1515,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Thời gian và địa điểm tổ chức Designathon ở đâu?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Thời gian và địa điểm tổ chức Designathon ở đâu?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Đây là cuộc thi tổ chức Offline, diễn ra từ 9:00 AM - 9:00 PM, 23/09/2023 tại Lollypop Design Studio Vietnam - 1/12 Hoàng Việt, P.4, Q.Tân Bình, TP.HCM.</p>
@@ -1306,7 +1526,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi không phải là dân trong ngành thiết kế thì có thể tham gia được không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi không phải là dân trong ngành thiết kế thì có thể tham gia được không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Cuộc thi này chỉ dành cho các bạn Fresher, Designers có kinh nghiệm làm việc dưới 1 năm hoặc mới chuyển ngành, Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
@@ -1317,7 +1537,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi không sinh sống và làm việc tại TP.HCM thì có thể tham gia không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi không sinh sống và làm việc tại TP.HCM thì có thể tham gia không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Lollypop luôn chào đón tất cả sinh viên, Designer từ tất cả mọi nơi đến tham dự cuộc thi</p>
@@ -1325,32 +1545,32 @@ get_header('designathon23');
                     </div>
                     <hr>
                   </li>
-                  <li class=" col-12">
+                  <!-- <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có được hỗ trợ chi phí đi lại và lưu trú không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi có được hỗ trợ chi phí đi lại và lưu trú không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Bạn sẽ tự chi trả chi phí di chuyển đến địa điểm tổ chức, sau đó chúng tôi sẽ hỗ trợ khu vực nghỉ ngơi trong suốt quá trình thi.</p>
                       </div>
                     </div>
                     <hr>
-                  </li>
+                  </li> 
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Quy trình Đăng ký như thế nào?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Quy trình Đăng ký như thế nào?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Để đăng ký, bạn cần điền vào Form đăng ký trên website. Nhấp vào nút Đăng ký ngay.</p>
                       </div>
                     </div>
                     <hr>
-                  </li>
+                  </li>-->
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có phải trả tiền để tham gia cuộc thi không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi có phải trả tiền để tham gia cuộc thi không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Không, cuộc thi Designathon 2023 hoàn toàn miễn phí cho tất cả mọi người.</p>
@@ -1361,7 +1581,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Hạn chót đăng ký thi là khi nào?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Hạn chót đăng ký thi là khi nào?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Hạn chót đăng ký là ngày 08/09/2023</p>
@@ -1372,7 +1592,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có có được phép tự lập đội tham gia không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi có có được phép tự lập đội tham gia không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Không, bạn bắt buộc phải đăng ký dưới hình thức dự thi cá nhân và bạn sẽ được BTC sắp xếp vào đội tại ngày diễn ra cuộc thi.</p>
@@ -1383,7 +1603,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0"> Tôi có cần chuẩn bị mang theo những gì khi đi thi?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0"> Tôi có cần chuẩn bị mang theo những gì khi đi thi?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Các thí sinh cần mang theo laptop cá nhân. Kết nối Wifi và các vật dụng khác (Bút chì, Tẩy, Giấy notes,...) đều đã được BTC chuẩn bị sẵn!</p>
@@ -1394,7 +1614,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0"> Tôi cần nộp bài thi thiết kế dưới định dạng gì?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0"> Tôi cần nộp bài thi thiết kế dưới định dạng gì?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Bạn sẽ được BTC phổ biến cụ thể về định dạng nộp bài và tiêu chí chấm điểm phần thi trước khi sự kiện bắt đầu</p>
@@ -1405,7 +1625,7 @@ get_header('designathon23');
                   <li class=" col-12">
                     <div class="f-accordion">
                       <div class="f-accordion__head">
-                        <h6 class="fnt-16 fnt-800 mb-0">Tôi có được nhận tiền thưởng cho đội chiến thắng của Designathon không?</h6>
+                        <h6 class="fnt-18 fnt-700 mb-0">Tôi có được nhận tiền thưởng cho đội chiến thắng của Designathon không?</h6>
                       </div>
                       <div class="f-accordion__body">
                         <p class="fnt-18 mb-0">Đội chiến thắng sẽ nhận được giải thưởng tiền mặt hấp dẫn!</p>
@@ -1460,12 +1680,11 @@ get_footer('designathon23');
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var second = seconds < 10 ? '0' + seconds : seconds;
     // Output the result in an element with id="demo"
-    document.getElementById("cdate").innerHTML = days;
-    document.getElementById("chour").innerHTML = hours;
-    document.getElementById("cminute").innerHTML = minutes;
-    document.getElementById("csecond").innerHTML = second;
+    document.getElementById("cdate").innerHTML = days < 10 ? '0' + days : days;
+    document.getElementById("chour").innerHTML = hours < 10 ? '0' + hours : hours;
+    document.getElementById("cminute").innerHTML = minutes < 10 ? '0' + minutes : minutes;
+    document.getElementById("csecond").innerHTML = seconds < 10 ? '0' + seconds : seconds;
 
     // If the count down is over, write some text 
     if (distance < 0) {
