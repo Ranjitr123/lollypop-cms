@@ -1459,7 +1459,7 @@ get_header('designathon23');
                   <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo">
                 </div>
               </div>
-              <div class=" d-flex align-items-center justify-content-center">
+              <div class=" d-flex align-items-center justify-content-center px-5">
                 <div class="download-btn mb-countdown">
                   <a target="_blank" href="https://drive.google.com/file/d/107pIkcDeLGBXBNuneHjhaFZ9jK8epmT0/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
                 </div>
