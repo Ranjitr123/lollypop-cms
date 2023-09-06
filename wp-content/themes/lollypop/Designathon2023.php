@@ -948,8 +948,8 @@ get_header('designathon23');
 
     .container-event-rule {
       position: relative;
-      width: calc(100vw + 28px);
-      left: -28px;
+      width: calc(100vw + 40px);
+      left: -40px;
     }
 
     .bg-frame {
