@@ -113,16 +113,30 @@ cursor: pointer;
 }
 
 .width-container{
-  width: calc(100% - 45px);
-  margin-left: 45px !important;
+  /*width: calc(100% - 45px);*/
+  /*margin-left: 45px !important;*/
 }
-
+.lp-awards-list{
+    padding-left: 0;
+    margin-left: -18px;
+}
+@media (min-width: 768px){
+.prev-slide {
+   left: 45px;
+}}
 .arabic-slider img{
    width:100%;
 }
  .slick-initialized .slick-slide {padding-left:19px !important; }
 
 @media(max-width:767px){
+    .prev-slide{
+        left: 32px;
+    }
+    .lp-awards-list{
+        padding-left: 0;
+        margin-left: 0;
+    }
    /* .arabic-slider{
     margin-right:1rem;
    } */
@@ -225,7 +239,6 @@ cursor: pointer;
 	.lp-awards-list__item.newimg:nth-child(even) {
     min-width: 487px;
 	}
-	
 </style>
 <main class="main">
 <!--01-->
@@ -297,9 +310,9 @@ if($locationVideo !=''){
  <div class="col-md-11 mx-auto width-container">
           <div class="row">
             <div class="col-12 px-md-0">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider case-study-slider">
+              <ul class="lp-awards-list case-study-slider">
                <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg">
+                <li>
                   <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
                     <div class="case-slider-content">
 						<span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
@@ -390,28 +403,10 @@ if($locationVideo !=''){
       </div>
     </div>
    </div>
-    <!--<div class="col-md-11 mx-auto width-container">
-     <div class="arabic-sliders-container">
-		<?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
-       <div>
-          <div class="arabic-slider">
-              <figure>
-                <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
-                <figcaption><?php the_sub_field('image_title'); ?></figcaption>
-            </figure>
-          </div>
-       </div>
-	   <?php endwhile; endif; ?>
-     </div>
-    </div>-->
-	
-	
-	
  <div class="col-md-11 mx-auto width-container">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider arabic-sliders-container">
+              <ul class="lp-awards-list arabic-sliders-container">
                <?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg arabic-slider">
-                  <!--<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">-->
+                <li class="arabic-slider">
                     <figure class="award-info">
                 <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
                 <figcaption><?php the_sub_field('image_title'); ?></figcaption>
@@ -694,18 +689,20 @@ $('.nav-dropdown-text').text(locas);
 
     $(".arabic-sliders-container").slick({
       infinite: false,
-      slidesToShow:2.8,
+      slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
       arrows:true,
-      autoplay:0,
-    
+      autoplay:false,
+        nextArrow: '<div class="next-slide"><div class="ar"></div>',
+        prevArrow: '<div class="prev-slide"><div class="ar"></div>',
       responsive: [
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1,
             slidesToScroll: 1,
+              autoplay: true,
           },
         },
 
@@ -724,30 +721,31 @@ $('.nav-dropdown-text').text(locas);
         {
           breakpoint: 1400,
           settings:{
-            slidesToShow: 2.8,
+            slidesToShow: 3,
             slidesToScroll: 1,
           },
         },
 
       ],
-    
+
     });
 
-    $(".case-study-container").slick({
+    $(".case-study-slider").slick({
       infinite: false,
-      slidesToShow: 2.5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
       arrows:true,
       autoplay:0,
       mobileFirst:false,
       centerMode: false,
-
+        nextArrow: '<div class="next-slide"><div class="ar"></div>',
+        prevArrow: '<div class="prev-slide"><div class="ar"></div>',
       responsive: [
         {
           breakpoint: 1400,
           settings:{
-            slidesToShow:2.5,
+            slidesToShow:3,
             slidesToScroll: 1,
           },
         },
@@ -763,7 +761,7 @@ $('.nav-dropdown-text').text(locas);
 
         {
           breakpoint: 991,
-          settings: { slidesToShow:2, slidesToScroll: 1, },
+          settings: { slidesToShow: 1.6, slidesToScroll: 1, },
         },
        
         {

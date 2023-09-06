@@ -111,19 +111,41 @@ cursor: pointer;
 }
 
 .width-container{
-  width: calc(100% - 45px);
-  margin-left: 45px !important;
+  /*width: calc(100% - 45px);*/
+  /*margin-left: 45px !important;*/
+}
+.lp-awards-list{
+    padding-left: 0;
+    margin-left: -18px;
+}
+.award-info{
+    position: relative;
 }
 
+.award-info .case-slider-content{
+    right: 0px;
+}
+@media (min-width: 768px){
+    .prev-slide {
+        left: 45px;
+    }}
 .arabic-slider img{
    width:100%;
 }
  .slick-initialized .slick-slide {padding-left:19px !important; }
 
 @media(max-width:767px){
-   /* .arabic-slider{
-    margin-right:1rem;
-   } */
+    .prev-slide{
+        left: 32px;
+    }
+    .lp-awards-list{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    /* .arabic-slider{
+     margin-right:1rem;
+    } */
    .width-container {
     width: auto;
     margin-left:0px !important;
@@ -332,9 +354,9 @@ if($locationVideo !=''){
  <div class="col-md-11 mx-auto width-container">
           <div class="row">
             <div class="col-12 px-md-0">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider case-study-slider">
+              <ul class="lp-awards-list case-study-slider">
                <?php if( have_rows('new_case_studies_slider_section') ) : while( have_rows('new_case_studies_slider_section') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg">
+                <li>
                   <div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">
                     <div class="case-slider-content">
 						<span style="color: #FFFFFF;"><?php the_sub_field('slider_title'); ?></span>
@@ -444,9 +466,9 @@ if($locationVideo !=''){
     </div>-->
 	
 	 <div class="col-md-11 mx-auto width-container">
-              <ul class="px-0 lp-awards-list d-flex four-card-slider arabic-sliders-container">
+              <ul class="lp-awards-list arabic-sliders-container">
                <?php if( have_rows('section_slider_image') ) : while( have_rows('section_slider_image') ): the_row(); ?>
-                <li class="lp-awards-list__item newimg arabic-slider">
+                <li class="arabic-slider">
                   <!--<div class="award-info"><img class="img mb-3" src="<?php the_sub_field('slider_image') ?>" alt="Image">-->
                     <figure class="award-info">
                 <img class="img-fluid" src="<?php the_sub_field('image_slide'); ?>" alt="arabic-slider">
@@ -721,90 +743,93 @@ $('.nav-dropdown-text').text(locas);
 <script>
   $(document).ready(function () {
 
-    $(".arabic-sliders-container").slick({
-      infinite: false,
-      slidesToShow:2.8,
-      slidesToScroll: 1,
-      dots: false,
-      arrows:false,
-      autoplay:0,
-    
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1.2,
-            slidesToScroll: 1,
-          },
-        },
+      $(".arabic-sliders-container").slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows:true,
+          autoplay:false,
+          nextArrow: '<div class="next-slide"><div class="ar"></div>',
+          prevArrow: '<div class="prev-slide"><div class="ar"></div>',
+          responsive: [
+              {
+                  breakpoint: 767,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      autoplay: true,
+                  },
+              },
 
-        {
-          breakpoint: 991,
-          settings: { slidesToShow: 1.6, slidesToScroll: 1, },
-        },
+              {
+                  breakpoint: 991,
+                  settings: { slidesToShow: 1.6, slidesToScroll: 1, },
+              },
 
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 1400,
-          settings:{
-            slidesToShow: 2.8,
-            slidesToScroll: 1,
-          },
-        },
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                  },
+              },
+              {
+                  breakpoint: 1400,
+                  settings:{
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                  },
+              },
 
-      ],
-    
-    });
+          ],
 
-    $(".case-study-container").slick({
-      infinite: false,
-      slidesToShow: 2.5,
-      slidesToScroll: 1,
-      dots: false,
-      arrows:false,
-      autoplay:0,
-      mobileFirst:false,
-      centerMode: false,
+      });
 
-      responsive: [
-        {
-          breakpoint: 1400,
-          settings:{
-            slidesToShow:2.5,
-            slidesToScroll: 1,
-          },
-        },
+      $(".case-study-slider").slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows:true,
+          autoplay:0,
+          mobileFirst:false,
+          centerMode: false,
+          nextArrow: '<div class="next-slide"><div class="ar"></div>',
+          prevArrow: '<div class="prev-slide"><div class="ar"></div>',
+          responsive: [
+              {
+                  breakpoint: 1400,
+                  settings:{
+                      slidesToShow:3,
+                      slidesToScroll: 1,
+                  },
+              },
 
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-           
-          },
-        },
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
 
-        {
-          breakpoint: 991,
-          settings: { slidesToShow:2, slidesToScroll: 1, },
-        },
-       
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    
-    });
+                  },
+              },
+
+              {
+                  breakpoint: 991,
+                  settings: { slidesToShow: 1.6, slidesToScroll: 1, },
+              },
+
+              {
+                  breakpoint: 767,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                  },
+              },
+          ],
+
+      });
 
   });
 </script>
