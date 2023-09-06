@@ -93,11 +93,11 @@ get_header();
         left: 4%;
     }
     .mobile-img img{
-        width:734px;
+        width:auto;
     }
 
     .mobile-img {
-        max-width: 734px;
+        max-width: auto;
         margin:0 auto;
     }
 
@@ -155,7 +155,7 @@ get_header();
     }
 
     .mobile-banner h3:before{
-      top: -57px;
+      top: -73px;
       left: -54px;
     }
 
