@@ -85,6 +85,7 @@ get_header('designathon23');
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 25px;
+    width: 275px;
   }
 
   .btn-red:hover {
@@ -429,6 +430,7 @@ get_header('designathon23');
   .sec-event {
     margin-top: -2px !important;
     height: auto !important;
+    padding-top: 51px;
   }
 
   .img-gap {
@@ -524,6 +526,7 @@ get_header('designathon23');
 
   .sec-faq {
     padding-top: 80px;
+    padding-bottom: 100px;
   }
 
   .fnt-18 {
@@ -1073,7 +1076,7 @@ get_header('designathon23');
   <!-- three-reason-and-feel -->
   <section class="sec-reason-feel sec-border pt-lg-7 pb-2">
     <!-- three-reason -->
-    <div class="container mb-5">
+    <div class="container mb-5 pt-5">
       <div class="row">
         <div class="col-12 col-md-12 offset-lg-1 col-lg-5 mt-5 d-flex flex-column">
           <h6 class="fnt-header">3 lý do không nên bỏ lỡ</h6>
@@ -1402,7 +1405,7 @@ get_header('designathon23');
           </div>
           <img class="img-fluid event-rule-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/two-poeple-computer.png" alt="logo">
         </div>
-        <div class="col-12 col-md-12 col-lg-4 mt-5 d-flex flex-column">
+        <div class="col-12 col-md-12 col-lg-6 mt-5 d-flex flex-column">
           <div class="row">
             <h3 class="event-rule-item">Hình thức tổ chức:</h3>
             <div class="">
