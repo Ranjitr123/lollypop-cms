@@ -94,8 +94,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  <noscript><link rel='stylesheet' id='swifer-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/swiper-bundle.min.css?ver=5.9' type='text/css' media='all' /> </noscript>
  <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/aos.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='aos-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/aos.css?ver=5.9' type='text/css' media='all' /></noscript>
-<link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel='stylesheet' id='main-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9' type='text/css' media='all' /> </noscript>
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel='stylesheet' id='main-css'  href="<?php echo get_template_directory_uri(); ?>/css/main.css" type='text/css' media='all' /> </noscript>
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='plyr-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9' type='text/css' media='all' /> </noscript>
 <link rel="preload" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
