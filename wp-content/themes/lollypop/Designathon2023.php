@@ -355,7 +355,7 @@ get_header('designathon23');
 
   .download-btn {
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 280px;
     background-color: #fff;
     clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
     padding: 1px;
@@ -380,6 +380,7 @@ get_header('designathon23');
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 25px;
+    width: 277px;
   }
 
   .download-btn-item:hover {
@@ -561,7 +562,11 @@ get_header('designathon23');
   }
 
   .partner-logos {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+  }
+
+  .pt-80 {
+    padding-top: 80px;
   }
 
   .fnt-media {
@@ -669,7 +674,7 @@ get_header('designathon23');
     }
 
     .btn-yellow {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 19px;
       height: 43px;
     }
@@ -762,13 +767,17 @@ get_header('designathon23');
     }
 
     .btn-yellow {
-      width: -webkit-fill-available;
       clip-path: polygon(5% 0%, 100% 0%, 100% 0%, 100% 75%, 95% 100%, 0 100%, 0 100%, 0 25%);
+      width: -webkit-fill-available !important;
+      height: 56px;
+      padding-top: 18px;
     }
 
     .btn-red {
       width: -webkit-fill-available;
       clip-path: polygon(5% 0%, 100% 0%, 100% 0%, 100% 75%, 95% 100%, 0 100%, 0 100%, 0 25%);
+      height: 56px;
+      padding-top: 16px;
     }
 
     .mt-5 {
@@ -918,7 +927,6 @@ get_header('designathon23');
 
     .download-btn {
       margin: 0 auto;
-      max-width: 200px;
       background-color: #fff;
       clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 75%, 92% 100%, 0 100%, 0 100%, 0 25%);
       padding: 1px;
@@ -957,7 +965,9 @@ get_header('designathon23');
     }
 
     .event-btn-yellow {
-      width: 175px !important;
+      width: -webkit-fill-available !important;
+      height: 56px;
+      padding-top: 16px;
     }
 
     .bg-frame>p {
@@ -1026,6 +1036,13 @@ get_header('designathon23');
     .fnt-media {
       font-size: 18px;
       margin-top: 12px;
+    }
+
+    .pb-12 {
+      padding-bottom: 12px;
+    }
+    .download-btn-item {
+      padding-bottom: 15px;
     }
   }
 </style>
@@ -1313,11 +1330,11 @@ get_header('designathon23');
     </div>
   </section>
 
-  <section class="sec-partner pt-lg-7 pb-2 pt-5 position-relative">
+  <section class="sec-partner pt-lg-7 pb-2  position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12 d-flex flex-column">
-          <div class="row">
+          <div class="row pt-80">
             <div class="col-12 col-md-12 offset-lg-1 col-lg-5 d-flex flex-column">
               <h6 class="fnt-header text-white"> Những <span class="text-yellow"> đối tác </span></h6>
               <h6 class="fnt-header text-white">giá trị của cuộc thi </h6>
@@ -1436,7 +1453,7 @@ get_header('designathon23');
             </div>
           </div>
           <div class="row item-detail">
-            <span class="text-red" style="font-weight: 800;">Bạn còn chần chờ gì nữa?</span>
+            <span class="text-red pb-12" style="font-weight: 800;">Bạn còn chần chờ gì nữa?</span>
             <div class="register-btn">
               <a id="event_registration_form" target="_blank" href="https://forms.gle/nzvzYhCCMve6eAoJ7" class="text-center btn-red ">Đăng ký ngay</a>
             </div>
@@ -1459,7 +1476,7 @@ get_header('designathon23');
                   <img class="img-fluid d-none d-sm-block lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Group72.png" alt="logo">
                 </div>
               </div>
-              <div class=" d-flex align-items-center justify-content-center px-5">
+              <div class=" d-flex align-items-center justify-content-center px-4">
                 <div class="download-btn mb-countdown">
                   <a target="_blank" href="https://drive.google.com/file/d/107pIkcDeLGBXBNuneHjhaFZ9jK8epmT0/view" class="text-center download-btn-item" style="background: #A30800;margin: 0;">Tải xuống PDF</a>
                 </div>
