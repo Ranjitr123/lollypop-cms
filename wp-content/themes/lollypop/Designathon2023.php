@@ -226,7 +226,7 @@ get_header('designathon23');
     background-color: #A30800 !important;
     background-size: contain;
     top: -45px;
-    height: 45rem;
+    height: 41rem;
   }
 
   .sec-countdown {
@@ -242,7 +242,7 @@ get_header('designathon23');
     bottom: 0;
     left: 0;
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/human-hourglass.png") no-repeat;
-    background-position: 70% 79%;
+    background-position: 70% 77%;
     background-size: 225px 225px;
     width: 33%;
     height: 100%;
@@ -255,7 +255,7 @@ get_header('designathon23');
     bottom: 0;
     right: 0%;
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/human-hourglass.png") no-repeat;
-    background-position: 70% 79%;
+    background-position: 70% 77%;
     background-size: 225px 225px;
     width: 33%;
     height: 100%;
@@ -1168,7 +1168,7 @@ get_header('designathon23');
         <div class="col-12 col-lg-12 text-center mt-5 d-flex flex-column">
           <h6 class="fnt-header text-yellow"> Không bây giờ thì bao giờ? </h6>
           <p class="text-white mt-3 mb-5">Chớp ngay cơ hội tham gia cuộc thử sức nảy lửa để tôi luyện ngòi bút thiết kế</p>
-          <div class="d-flex justify-content-center mt-5">
+          <div class="d-flex justify-content-center">
             <div class="countdown-item ">
               <div class="item  d-flex align-items-center justify-content-center">
                 <h6 id="cdate" class="text-red fnt-header fnt-countdown">12</h6>
