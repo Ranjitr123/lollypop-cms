@@ -25,9 +25,13 @@
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/illustrations/"/>
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualisation/"/>
 	<link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/fintech"/>
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/enabling-growth-in-edtech/"/>
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/telecom/"/>
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/projects/knowledgehut/"/>
 
 	<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8J8Y4T75L"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W8J8Y4T75L'); </script>
-	
+
 <!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>
@@ -60,8 +64,8 @@
  <noscript><link rel='stylesheet' id='swifer-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/swiper-bundle.min.css?ver=5.9' type='text/css' media='all' /> </noscript>
  <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/aos.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='aos-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/aos.css?ver=5.9' type='text/css' media='all' /></noscript>
-<link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel='stylesheet' id='main-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9' type='text/css' media='all' /> </noscript>
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel='stylesheet' id='main-css' href="<?php echo get_template_directory_uri(); ?>/css/main.css" type='text/css' media='all' /> </noscript>
 <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel='stylesheet' id='plyr-css'  href='https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9' type='text/css' media='all' /> </noscript>
 <link rel="preload" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -71,7 +75,7 @@
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom-css.css">
 
- 
+
 <style>
 .secut{top:55px;}
 .header-container{justify-content:space-around;}
@@ -97,7 +101,7 @@
 		 line-height: 75px;
 		 letter-spacing: -2px;
 	}
-   
+
 }
  @media (min-width: 992px) {
 	 .fnt-100 {
@@ -125,11 +129,11 @@
 		 letter-spacing: -2px;
 	}
 
-	
+
 }
 /* dropdown */
 @media(max-width:768px)
-{ 
+{
 	.secut {
 		 display:none;
 	}
@@ -186,7 +190,7 @@
   margin: 0 5px;
   vertical-align: middle;
    box-sizing: border-box;
-  
+
 }
 .langue-container {
     background-color: #FFFFFF;
@@ -286,9 +290,9 @@
 	}
 	.triangle {
     margin: 0 15px;
-	
+
 		}
-		
+
  .triangle-4 {
     width: 0px;
     height: 0px;
@@ -393,7 +397,7 @@
 	.triangle {
     margin: 0 15px;
 		}
-		
+
  .triangle-4 {
     width: 0px;
     height: 0px;
@@ -424,7 +428,7 @@
     color: #FD2E35;
 }
 .global-drop .langue-container {
-    
+
     position: relative;
     padding: 16px;
     border-radius: 5px;
@@ -475,6 +479,11 @@ margin-bottom:12px;
 
 .secut{
     display:block;
+}
+@media (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(0px,-100%)!important;
+    }
 }
 @media (min-width: 375px) and (max-width: 420px){
 .lp-hamberg {
@@ -573,7 +582,7 @@ $(document).ready(function(){
 </head>
 
 
-<?php 
+<?php
 $args = array(
 	'post_type'=>'header',
 	'posts_per_page' => 1,
@@ -625,7 +634,7 @@ $header = new WP_Query( $args );
                             </li>
                         </ul>
                     </div>
-            </div> 
+            </div>
          </div>
         </div>
     </div>
@@ -659,7 +668,7 @@ $header = new WP_Query( $args );
 <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
 </div>
 </a>
-</div>              
+</div>
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
 <div class="location">
@@ -741,9 +750,9 @@ $header = new WP_Query( $args );
                             <label for="test2">English</label>
                         </p>
                     </form>
-                </div>   
+                </div>
           </div>
-	   </div> 
+	   </div>
     </div>
 </div>
 </div>
@@ -774,12 +783,12 @@ $header = new WP_Query( $args );
 </div>
 <div class="main-links main-links--sub d-md-flex flex-column">
 <!-- For Desktop-->
-<div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between"> 
+<div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between">
 <div class="d-md-flex hvr-m flex-column justify-content-end">
 <div>
 <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 </div>
-<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a></div> 
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/careers/">Careers</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/blogs/">Blogs</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/whitepapers/">White Papers</a></div>
