@@ -226,13 +226,13 @@ get_header('designathon23');
     background-color: #A30800 !important;
     background-size: contain;
     top: -45px;
-    height: 41rem;
+    height: 655px;
   }
 
   .sec-countdown {
     position: relative;
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/coundown-bottom.png") repeat-x bottom;
-    background-position-y: 90%;
+    background-position-y: 555px;
     z-index: 1;
   }
 
@@ -577,6 +577,15 @@ get_header('designathon23');
     font-weight: 700
   }
 
+  .partner-item {
+    padding-top: 48px;
+  }
+
+  .arena-img {
+    width: 90%;
+    height: 90%;
+  }
+
   @media screen and (max-width: 1536px) {
     .banner-side-img {
       margin-top: 175px;
@@ -584,7 +593,7 @@ get_header('designathon23');
 
     .sec-countdown::before,
     .sec-countdown::after {
-      background-position: 35% 72%;
+      background-position: 85px 325px;
       background-size: 225px 225px;
     }
 
@@ -601,7 +610,10 @@ get_header('designathon23');
       height: auto;
     }
 
-    .partner-logos {}
+    .sec-countdown {
+      height: 645px;
+      background-position-y: 550px;
+    }
   }
 
   @media screen and (max-width: 1400px) {
@@ -639,13 +651,27 @@ get_header('designathon23');
 
     .sec-countdown::before,
     .sec-countdown::after {
-      background-position: 30% 72%;
+      background-position: 60px 328px;
       background-size: 170px 170px;
     }
 
     .partner-grid {
       gap: 0px;
     }
+
+    .sec-countdown {
+      height: 570px;
+      background-position-y: 498px;
+    }
+
+    .countdown-register-btn {
+      padding-top: 30px;
+    }
+
+    .mt-5 {
+      margin-top: 1rem !important;
+    }
+
   }
 
   @media screen and (max-width: 992px) {
@@ -1041,6 +1067,7 @@ get_header('designathon23');
     .pb-12 {
       padding-bottom: 12px;
     }
+
     .download-btn-item {
       padding-bottom: 15px;
     }
@@ -1075,7 +1102,7 @@ get_header('designathon23');
             </li>
             <li class="col-6 col-md-4 col-lg-4 mt-4">
               <span class="fnt-20 text-white ">Designers</span>
-              <h6 class=" fnt-24 text-white">50+ thí sinh</h6>
+              <h6 class=" fnt-24 text-white">40+ thí sinh</h6>
             </li>
           </ul>
           <div class="register-btn  banner-register-btn mt-5">
@@ -1100,7 +1127,7 @@ get_header('designathon23');
           <h6 class="text-red fnt-header">Designathon 2023</h6>
         </div>
         <div class="col-12 col-md-12 col-lg-4 mx-auto mt-3 d-flex align-items-center">
-          <p>Với 3 mùa thành công vang dội tại Ấn Độ, Designathon là sự kiện thiết kế thường niên do Lollypop tổ chức.</p>
+          <p class="me-5">Một cuộc thi thiết kế “chất”, dành riêng cho Designers</p>
         </div>
       </div>
       <div class="row mt-48 mb-5">
@@ -1237,43 +1264,43 @@ get_header('designathon23');
 
         <div class="col-12 col-md-12 col-lg-5 d-flex flex-column">
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">08:30</span> <span class="event-detail col-9">Checkin</span>
+            <span class="event-time col-2">07:30</span> <span class="event-detail col-9">Check-in</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">09:00</span> <span class="event-detail col-9">Tập hợp đội hình</span>
+            <span class="event-time col-2">08:30</span> <span class="event-detail col-9">Nhận đề thi</span>
           </div>
           <div class="row d-flex  mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">09:30</span> <span class="event-detail col-9">Workshop cùng chuyên gia UI/UX</span>
+            <span class="event-time col-2">09:00</span> <span class="event-detail col-9">Bắt đầu làm bài</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">10:15</span> <span class="event-detail col-9">Khai mạc Designathon 2023</span>
+            <span class="event-time col-2">17:00</span> <span class="event-detail col-9">Nộp bài dự thi</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">18:00</span> <span class="event-detail col-9">Trình làng giải pháp</span>
+            <span class="event-time col-2">17:15</span> <span class="event-detail col-9">Thuyết trình giải pháp</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">20:00</span> <span class="event-detail col-9">Công bố & Trao thưởng</span>
+            <span class="event-time col-2">20:30</span> <span class="event-detail col-9">Công bố kết quả và trao giải</span>
           </div>
           <div class="row d-flex mb-2">
             <span class="col-2" style="margin-left: 10px; color: black;">|</span>
           </div>
           <div class="row d-flex align-items-center mb-2">
-            <span class="event-time col-2">20:30</span> <span class="event-detail col-9">Quẩy tới bến</span>
+            <span class="event-time col-2">21:00</span> <span class="event-detail col-9">Ăn uống và giao lưu</span>
           </div>
         </div>
       </div>
@@ -1343,9 +1370,26 @@ get_header('designathon23');
               <p class="text-white mt-24">Sự thành công của Designathon Vietnam 2023 phải kể đến sự hỗ trợ nhiệt tình của những đối tác uy tín.</p>
             </div>
           </div>
+
+          <div class="row partner-item">
+            <div class="col-12 col-md-12 offset-lg-1 col-lg-4 mb-4 d-flex flex-column">
+              <div class="event-title">
+                <h6 class="fnt-media text-white">Nhà tài trợ</h6>
+              </div>
+              <img class="img-fluid arena-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/arena.png" alt="logo" />
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 d-flex justify-contents-center">
+              <div class="row d-flex align-items-center pt-3">
+                <p class="text-white"> Arena Multimedia là thương hiệu đào tạo Chuyên gia Mỹ thuật Đa phương tiện số 1 tại châu Á, là một trong các sản phẩm đào tạo của tập đoàn APTECH - nhà cung cấp dịch vụ đào tạo Công nghệ thông tin hàng đầu thế giới cấp chứng chỉ quốc tế.</p>
+                <p class="text-white">Với hơn 27 năm kinh nghiệm (thành lập 1996 tại Mumbai, Ấn Độ), Arena Multimedia đã xây dựng hệ thống hàng trăm trung tâm đào tạo với hơn 450.000 sinh viên đang theo học trên 20 quốc gia.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="row mt-5">
             <div class="col-12 col-md-9 col-lg-10 mx-auto partner-logos">
-              <h6 class="fnt-media text-white"> Media Partners</h6>
+              <h6 class="fnt-media text-white">Đối tác truyền thông</h6>
               <ul class="row px-0 partner-grid">
                 <li>
                   <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-uxvn.png" alt="logo" />
@@ -1361,6 +1405,12 @@ get_header('designathon23');
                 </li>
                 <li>
                   <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-heart.png" alt="logo" />
+                </li>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-DHQGHCM.png" alt="logo" />
+                </li>
+                <li>
+                  <img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-Onlinica.png" alt="logo" />
                 </li>
               </ul>
             </div>
@@ -1426,7 +1476,7 @@ get_header('designathon23');
           <div class="row">
             <h3 class="event-rule-item">Hình thức tổ chức:</h3>
             <div class="">
-              <p style="margin-bottom: initial;">Offline, ngày 23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
+              <p>Offline, ngày 23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
               <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
             </div>
           </div>
