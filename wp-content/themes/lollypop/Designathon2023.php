@@ -1098,7 +1098,7 @@ get_header('designathon23');
             </li>
             <li class="col-6 col-md-4 col-lg-4 mt-4">
               <span class="fnt-20  text-white ">Thời gian</span>
-              <h6 class=" fnt-24 text-white">9AM - 9PM</h6>
+              <h6 class=" fnt-24 text-white">9 AM - 9 PM</h6>
             </li>
             <li class="col-6 col-md-4 col-lg-4 mt-4">
               <span class="fnt-20 text-white ">Designers</span>
@@ -1174,7 +1174,7 @@ get_header('designathon23');
           <h6 class="text-red fnt-header">Designathon India 2023</h6>
         </div>
         <div class="col-12 col-md-12 col-lg-4 mx-auto mt-5 d-flex flex-row">
-          <p>Hơn 1,200+ lượt đăng ký chỉ sau 24h mở đơn, Designathon - một cơn lốc thực thụ trong cộng đồng Designer khắp nước Ấn!</p>
+          <p>Hơn 1,200+ lượt đăng ký chỉ sau 24h mở đơn, Designathon - một cơn lốc thực thụ trong cộng đồng Designer khắp nước Ấn Độ!</p>
         </div>
       </div>
       <div class="mt-4 sec-video">
@@ -1474,7 +1474,7 @@ get_header('designathon23');
         </div>
         <div class="col-12 col-md-12 col-lg-6 mt-5 d-flex flex-column">
           <div class="row">
-            <h3 class="event-rule-item">Hình thức tổ chức:</h3>
+            <h3 class="event-rule-item">Hình thức tổ chức</h3>
             <div class="">
               <p>Offline, ngày 23/09/2023 tại MG Building (1/12 Hoàng Việt, Phường 4, Tân Bình, TP. HCM)</p>
               <p>Mỗi đội sẽ có 12h để lên ý tưởng và hoàn thành giải pháp thiết kế theo đề bài BTC đưa ra.</p>
@@ -1482,7 +1482,7 @@ get_header('designathon23');
           </div>
 
           <div class="row item-detail">
-            <h3 class="event-rule-item">Mở đơn đăng kí:</h3>
+            <h3 class="event-rule-item">Thời gian đăng kí</h3>
             <div class="">
               <p>Thời gian đăng ký: 26/08/2023 -08/09/2023</p>
               <p>Vì số lượng tham dự có hạn nên sau khi xem xét portfolio, BTC sẽ ưu tiên chọn những thí sinh đăng ký sớm nhất và gửi email xác nhận đăng ký.</p>
@@ -1490,14 +1490,14 @@ get_header('designathon23');
           </div>
 
           <div class="row item-detail">
-            <h3 class="event-rule-item">Đối tượng tham gia:</h3>
+            <h3 class="event-rule-item">Đối tượng tham gia</h3>
             <div class="">
               <p>Fresher, Designers có kinh nghiệm làm việc dưới 1 năm , Sinh viên của các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước.</p>
             </div>
           </div>
 
           <div class="row item-detail">
-            <h3 class="event-rule-item">Giải thưởng:</h3>
+            <h3 class="event-rule-item">Giải thưởng</h3>
             <div class="">
               <p>Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="text-red">10 TRIỆU</span> đồng tiền mặt, <span class="text-red">Mentoring 1 - 1</span> với chuyên gia , <span class="text-red">Bộ quà tặng</span> (Limited Edition) & <span class="text-red">Certificate</span> đến từ Lollypop.</p>
             </div>
