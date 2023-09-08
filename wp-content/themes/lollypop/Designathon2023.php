@@ -635,10 +635,6 @@ get_header('designathon23');
       background-position-y: 550px;
     }
 
-    .sponsor-logo {
-      right: 242px !important;
-    }
-
   }
 
   @media screen and (max-width: 1400px) {
@@ -695,10 +691,6 @@ get_header('designathon23');
 
     .mt-5 {
       margin-top: 1rem !important;
-    }
-
-    .sponsor-logo {
-      right: 218px !important;
     }
 
   }
@@ -1130,13 +1122,6 @@ get_header('designathon23');
       text-align: left !important;
       padding-left: 20px;
     }
-
-    .sponsor-logo {
-      height: 35px !important;
-      width: 100px !important;
-      margin-top: -33px !important;
-      right: 10% !important;
-    }
   }
 
   .main-slash>div:first-child {
@@ -1161,16 +1146,6 @@ get_header('designathon23');
     position: relative;
     z-index: 1;
   }
-
-  .sponsor-logo {
-    height: 70px;
-    width: 110px;
-    /* border: aliceblue solid; */
-    margin-top: 220px;
-    position: absolute;
-    right: 280px;
-    z-index: 10;
-  }
 </style>
 
 <main class="main">
@@ -1187,7 +1162,7 @@ get_header('designathon23');
     </div>
 
     <div class="container">
-      <a class="sponsor-logo" target="_blank" href=" https://www.arena-multimedia.vn/"></a>
+      <!-- <a class="sponsor-logo" target="_blank" href=" https://www.arena-multimedia.vn/"></a> -->
       <div class="row">
         <div class="col-12 col-md-9 col-lg-8 mx-auto">
           <div class="col-md-10 px-0">
@@ -1431,7 +1406,7 @@ get_header('designathon23');
               <div class="event-title">
                 <h6 class="fnt-media text-white"><?php the_field('sponsor_heading') ?></h6>
               </div>
-              <img class="img-fluid arena-img" src="<?php the_field('sponsor_image'); ?>" alt="logo" />
+              <a target="_blank" href="https://www.arena-multimedia.vn/"><img class="img-fluid arena-img" src="<?php the_field('sponsor_image'); ?>" alt="logo" /> </a>
             </div>
 
             <div class="col-12 col-md-12 col-lg-6 d-flex justify-contents-center">
