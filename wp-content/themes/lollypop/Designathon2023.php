@@ -118,7 +118,7 @@ get_header('designathon23');
   }
 
   .sec-banner::after {
-    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/logo.png") no-repeat right;
+    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Logo.png") no-repeat right;
     content: "";
     position: absolute;
     top: 0;
