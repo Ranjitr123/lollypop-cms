@@ -1154,9 +1154,9 @@ get_header('designathon23');
 
       <?php $current_slug = add_query_arg(array(), $wp->request);
       if ($current_slug == 'designathonvn-2023') { ?>
-        <a href="http://localhost/lollypop-cms/designathonvn-2023-eng/"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-ENG.png" alt="logo"> </a>
+        <a href="<?php echo get_site_url()?>/designathonvn-2023-eng/"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-ENG.png" alt="logo"> </a>
       <?php } else { ?>
-        <a href="http://localhost/lollypop-cms/designathonvn-2023/"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-VIE.png" alt="logo"> </a>
+        <a href="<?php echo get_site_url()?>/designathonvn-2023/"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/new-designathon23/Frame-VIE.png" alt="logo"> </a>
       <?php } ?>
     </div>
     <div class="container">
