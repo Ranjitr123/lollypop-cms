@@ -283,6 +283,10 @@ get_header();
       width: 100%;
     }
 
+    .final-title-item h3 {
+      font-size: 28px;
+    }
+
     .color-pallet-banner h3,
     .typography-banner h3,
     .ui-direction-banner h3 {
