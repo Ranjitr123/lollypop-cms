@@ -51,8 +51,11 @@ get_header();
   ol>li:first-child {
     padding-top: 16px;
   }
-
-  .color-pallet-banner h3 {
+  
+  .color-pallet-banner h3,
+  .typography-banner h3,
+  .ui-direction-banner h3
+  {
     color: #181636;
     text-align: center;
     font-family: Manrope;
@@ -64,7 +67,9 @@ get_header();
     opacity: 0.1;
   }
 
-  .color-pallet-banner h6 {
+  .color-pallet-banner h6,
+  .typography-banner h6,
+  .ui-direction-banner h6{
     color: #111;
     text-align: center;
     font-family: Manrope;
@@ -77,42 +82,6 @@ get_header();
     margin-top: -50px;
   }
 
-  .typography-banner h3 {
-    color: #181636;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 138px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 93.5%;
-    letter-spacing: -4.14px;
-    opacity: 0.1;
-  }
-
-  .typography-banner h6 {
-    color: #111;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    z-index: 1;
-    position: relative;
-    margin-top: -50px;
-  }
-
-  .ui-direction-banner h3 {
-    color: #181636;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 138px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 93.5%;
-    letter-spacing: -4.14px;
-    opacity: 0.1;
-  }
 
   .ui-direction-banner h6 {
     color: #111;
@@ -320,12 +289,19 @@ get_header();
     }
 
     .final-title-bg04.final-title-item.final-title-item-right {
-      right: 7% !important;
+      right: 7%;
     }
   }
 
 
   @media only screen and (max-width: 884px) and (min-width: 768px) {
+
+    .typography-banner h3,
+    .color-pallet-banner h3,
+    .ui-direction-banner h3 {
+      font-size: 90px;
+    }
+
     .iot-title {
       width: 100%;
     }
@@ -340,7 +316,7 @@ get_header();
   }
 
   /* media query */
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 428px) and (min-width: 320px) {
 
     .iot-title {
       width: 100%;
@@ -485,9 +461,12 @@ get_header();
     }
 
     .final-title-bg02.final-title-item.final-title-item-right {
-      right: -182px !important;
+      right: -130px !important;
     }
 
+    .final-title-bg04.final-title-item.final-title-item-right {
+      right: -90px !important;
+    }
     .final-title-bg03 h3::before {
       left: -22px !important;
     }
@@ -495,33 +474,30 @@ get_header();
     .fn-sec-03 {
       left: 23px;
     }
-
-    .final-title-item-right {
-      right: -110px;
-    }
   }
 
-  @media only screen and (max-width: 320px) {
-    .final-title-bg02 h3::before {
-      background-size: 135px 135px;
-      width: 135px;
-      height: 135px;
-      top: -40px;
-      right: -40px;
-    }
-
+  @media only screen and (max-width: 428px) {
     .final-title-bg02.final-title-item.final-title-item-right {
-      right: -77px !important;
+      right: -177px !important;
     }
 
-    .final-title-item-right {
-      right: -5px;
-    }
-
-    .final-title-item-right {
-      right: -5px;
+    .final-title-bg04.final-title-item.final-title-item-right {
+      right: -145px !important;
     }
   }
+
+  @media only screen and (max-width: 390px) {
+    .final-title-bg02.final-title-item.final-title-item-right {
+      right: -145px !important;
+    }
+
+    .final-title-bg04.final-title-item.final-title-item-right {
+      right: -105px !important;
+    }
+  }
+
+
+
 </style>
 
 <main class="main" style="background:#ffffff;">
@@ -610,7 +586,7 @@ get_header();
   <section class="color-pallet">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-8 col-12 mx-auto">
+        <div class="col-md-10 col-lg-8 col-12 mx-auto">
           <div class="color-pallet-banner mx-5">
             <h3><?php echo the_field('color_pallet_title') ?></h3>
             <h6><?php echo the_field('color_pallet_title') ?></h6>
@@ -646,7 +622,7 @@ get_header();
   <section class="typography">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-8 col-12 mx-auto">
+        <div class="col-md-10 col-lg-8 col-12 mx-auto">
           <div class="typography-banner mx-5">
             <h3><?php echo the_field('typography_title') ?></h3>
             <h6><?php echo the_field('typography_title') ?></h6>
@@ -682,7 +658,7 @@ get_header();
   <section class="ui-direction">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-10 col-12 mx-auto">
+        <div class="col-md-11 col-lg-10 col-12 mx-auto">
           <div class="ui-direction-banner mx-5">
             <h3><?php echo the_field('ui-direction_title') ?></h3>
             <h6><?php echo the_field('ui-direction_title') ?></h6>
