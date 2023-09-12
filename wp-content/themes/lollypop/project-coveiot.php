@@ -890,7 +890,7 @@ get_header();
                   </div>
                   <div class="project-step__item row">
                     <div class="col-12 col-md-12 mb-3 mb-md-0 fn-title fn-title-left">
-                      <h4>solid minimalist</h4>
+                    <h4><?php the_sub_field('section_heading_2') ?></h4>
                     </div>
                     <div class="col-12 col-md-12 project-step-disc">
                       <div class="project-step-disc__item fn-image-left d-flex justify-content-start">
