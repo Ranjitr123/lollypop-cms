@@ -311,26 +311,15 @@ get_header();
   }
 
   /* media query */
-  @media screen and (max-width: 428px) {
+  @media only screen and (max-width: 428px) {
+
+    .iot-title {
+      width: 100%;
+    }
+
     .mx-5 {
       margin-right: 0rem !important;
       margin-left: 0rem !important;
-    }
-
-    .color-pallet-banner h3 {
-      font-size: 75px;
-    }
-
-    .ui-direction-banner h3 {
-      font-size: 75px;
-    }
-
-    .typography-banner h3 {
-      font-size: 75px;
-    }
-
-    .final-ui-banner h3 {
-      font-size: 75px;
     }
 
     .pl-150 {
@@ -341,9 +330,83 @@ get_header();
       padding-right: 10px;
     }
 
+    .pt-80 {
+      padding-top: 20px;
+    }
+
+    .pt-140 {
+      padding-top: 48px;
+    }
+
+    .mb-3 {
+      margin-bottom: 0.5rem !important;
+    }
+
+
     .flex-mobile {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+
+    .project-step__item {
+      margin-bottom: 23px;
+    }
+
+    .color-pallet,
+    .typography,
+    .ui-direction {
+      padding-top: 29px;
+      padding-bottom: 29px;
+    }
+
+    .color-pallet-banner h3 {
+      font-size: 55px;
+    }
+
+    .color-pallet-banner h6 {
+      font-size: 25px;
+      margin-top: -35px;
+    }
+
+    .ui-direction-banner h3 {
+      font-size: 55px;
+    }
+
+    .ui-direction-banner h6 {
+      font-size: 25px;
+      margin-top: -35px;
+    }
+
+    .typography-banner h3 {
+      font-size: 55px;
+    }
+
+    .typography-banner h6 {
+      font-size: 25px;
+      margin-top: -35px;
+    }
+
+    .final-title-item h3 {
+      font-size: 32px;
+    }
+
+    .fn-title h4 {
+      font-size: 21px;
+    }
+
+    .final-ui-banner h3 {
+      font-size: 55px;
+    }
+
+    .final-ui-banner h6 {
+      font-size: 25px;
+      margin-top: -35px;
+    }
+
+    .final-ui-bg {
+      padding-top: 32px;
+      padding-bottom: 64px;
     }
 
     .fn-image-left,
@@ -352,40 +415,82 @@ get_header();
       gap: 5px;
     }
 
+    .final-title-item {
+      height: 185px;
+    }
+
+    .final-title-item-left {
+      left: 30px;
+    }
 
     .final-title-bg01 h3::before {
-      left: -22px !important;
+      background-size: 156px 156px;
+      width: 156px;
+      height: 156px;
+      top: -55px;
+      left: -30px !important;
+    }
+
+    .final-title-bg02 h3::before {
+      background-size: 135px 135px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      right: -40px;
+    }
+
+    .final-title-bg03 h3::before {
+      background-size: 156px 156px;
+      width: 156px;
+      height: 156px;
+      top: -55px;
+      left: -30px !important;
+    }
+
+    .final-title-bg04 h3::before {
+      background-size: 135px 135px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      right: -40px;
+    }
+
+    .final-title-bg02.final-title-item.final-title-item-right {
+      right: -182px !important;
     }
 
     .final-title-bg03 h3::before {
       left: -22px !important;
     }
 
+    .fn-sec-03 {
+      left: 23px;
+    }
+    
     .final-title-item-right {
-      right: -45px;
+      right: -110px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .final-title-bg02 h3::before {
+      background-size: 135px 135px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      right: -40px;
     }
 
     .final-title-bg02.final-title-item.final-title-item-right {
-      right: -110px !important;
+      right: -77px !important;
     }
 
-    .color-pallet,
-    .typography,
-    .ui-direction {
-      padding-top: 58px;
-      padding-bottom: 58px;
+    .final-title-item-right {
+      right: -5px;
     }
 
-    .project-step__item {
-      margin-bottom: 23px;
-    }
-
-    .pt-80 {
-      padding-top: 56px;
-    }
-
-    .pt-140 {
-      padding-top: 96px;
+    .final-title-item-right {
+      right: -5px;
     }
   }
 </style>
@@ -709,7 +814,7 @@ get_header();
             <?php if (have_rows('section_3')) : while (have_rows('section_3')) : the_row(); ?>
                 <div class="project-step pt-140">
                   <div class="row">
-                    <div class="col-12 col-md-4 mb-3 mb-md-0  final-title-bg03 final-title-item final-title-item-left">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0  final-title-bg03 final-title-item final-title-item-left fn-sec-03">
                       <h3><?php the_sub_field('section_title') ?></h3>
                     </div>
                     <div class="col-12 col-md-8 project-step-disc pl-150 d-flex align-items-center">
