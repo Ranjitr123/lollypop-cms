@@ -51,11 +51,10 @@ get_header();
   ol>li:first-child {
     padding-top: 16px;
   }
-  
+
   .color-pallet-banner h3,
   .typography-banner h3,
-  .ui-direction-banner h3
-  {
+  .ui-direction-banner h3 {
     color: #181636;
     text-align: center;
     font-family: Manrope;
@@ -69,7 +68,7 @@ get_header();
 
   .color-pallet-banner h6,
   .typography-banner h6,
-  .ui-direction-banner h6{
+  .ui-direction-banner h6 {
     color: #111;
     text-align: center;
     font-family: Manrope;
@@ -284,9 +283,47 @@ get_header();
       width: 100%;
     }
 
-    .final-title-bg02.final-title-item.final-title-item-right {
-      right: 5% !important;
+    .color-pallet-banner h3,
+    .typography-banner h3,
+    .ui-direction-banner h3 {
+      font-size: 118px;
     }
+
+    .final-title-bg01 h3::before {
+      background-size: 156px 156px;
+      width: 156px;
+      height: 156px;
+      top: -55px;
+      left: -30px !important;
+    }
+
+    .final-title-bg02 h3::before {
+      background-size: 135px 135px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      right: -40px;
+    }
+
+    .final-title-bg03 h3::before {
+      background-size: 156px 156px;
+      width: 156px;
+      height: 156px;
+      top: -55px;
+      left: -30px !important;
+    }
+
+    .final-title-bg04 h3::before {
+      background-size: 135px 135px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      right: -40px;
+    }
+
+    /* .final-title-bg02.final-title-item.final-title-item-right {
+      right: 0% !important;
+    } */
 
     .final-title-bg04.final-title-item.final-title-item-right {
       right: 7%;
@@ -467,6 +504,7 @@ get_header();
     .final-title-bg04.final-title-item.final-title-item-right {
       right: -90px !important;
     }
+
     .final-title-bg03 h3::before {
       left: -22px !important;
     }
@@ -495,9 +533,6 @@ get_header();
       right: -105px !important;
     }
   }
-
-
-
 </style>
 
 <main class="main" style="background:#ffffff;">
@@ -890,7 +925,7 @@ get_header();
                   </div>
                   <div class="project-step__item row">
                     <div class="col-12 col-md-12 mb-3 mb-md-0 fn-title fn-title-left">
-                    <h4><?php the_sub_field('section_heading_2') ?></h4>
+                      <h4><?php the_sub_field('section_heading_2') ?></h4>
                     </div>
                     <div class="col-12 col-md-12 project-step-disc">
                       <div class="project-step-disc__item fn-image-left d-flex justify-content-start">
