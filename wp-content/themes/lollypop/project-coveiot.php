@@ -192,7 +192,7 @@ get_header();
   }
 
   .final-title-item-right {
-    right: 5%;
+    right: 2%;
     position: relative;
   }
 
@@ -308,6 +308,35 @@ get_header();
 
   .project-step-disc__item ul li {
     list-style: outside;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .iot-title {
+      width: 100%;
+    }
+
+    .final-title-bg02.final-title-item.final-title-item-right {
+      right: 5% !important;
+    }
+
+    .final-title-bg04.final-title-item.final-title-item-right {
+      right: 7% !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 884px) and (min-width: 768px) {
+    .iot-title {
+      width: 100%;
+    }
+
+    .final-title-bg02.final-title-item.final-title-item-right {
+      right: 16% !important;
+    }
+
+    .final-title-bg04.final-title-item.final-title-item-right {
+      right: 19% !important;
+    }
   }
 
   /* media query */
@@ -466,7 +495,7 @@ get_header();
     .fn-sec-03 {
       left: 23px;
     }
-    
+
     .final-title-item-right {
       right: -110px;
     }
