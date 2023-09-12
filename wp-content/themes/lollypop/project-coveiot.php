@@ -284,7 +284,7 @@ get_header();
     }
 
     .final-title-item h3 {
-      font-size: 28px;
+      font-size: 36px;
     }
 
     .color-pallet-banner h3,
