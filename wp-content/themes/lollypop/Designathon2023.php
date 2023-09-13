@@ -981,10 +981,12 @@ get_header('designathon23');
 
     .sec-event-rule.has-tag:before {
       background: none;
+      right: 0px;
     }
 
     .sec-event-rule.has-tag:after {
       background: none;
+      left: 0px;
     }
 
     .sec-partner {
@@ -1122,6 +1124,12 @@ get_header('designathon23');
       text-align: left !important;
       padding-left: 20px;
     }
+
+    .sec-event-rule.has-tag:before {
+      right: 0px;
+    }
+
+
   }
 
   .main-slash>div:first-child {
