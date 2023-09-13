@@ -502,6 +502,7 @@ get_header();
     .final-title-item-right {
       display: flex;
       justify-content: flex-end;
+      right: 0px !important;
     }
 
     .final-title-bg03 h3::before {
@@ -513,15 +514,6 @@ get_header();
     }
   }
 
-  @media only screen and (max-width: 390px) {
-    /* .final-title-bg02.final-title-item.final-title-item-right {
-      right: -145px !important;
-    } */
-
-    /* .final-title-bg04.final-title-item.final-title-item-right {
-      right: -105px !important;
-    } */
-  }
 
 </style>
 
