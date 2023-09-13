@@ -549,7 +549,7 @@ get_header();
 
             <?php // $galImage = get_the_post_thumbnail_url(); ?>
             <?php // if ($galImage != '') { ?>
-              <!-- <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image"> -->
+              <!-- <img class="wpdm-img" src="<?php // echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image"> -->
             <?php // } ?>
 
             <?php $bannerVideos = get_field('iot_banner_video_link') ?>
