@@ -546,19 +546,19 @@ get_header();
             </div>
           </div>
           <div class="reveal-project">
-            <?php $galImage = get_the_post_thumbnail_url(); ?>
-            <?php if ($galImage != '') { ?>
-              <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image">
-              <!-- <img class="wpdm-img" src="https://staging.terralogic.com/lollypop-cms/wp-content/uploads/2023/07/Miko-banner-1.gif" alt="Image"> -->
-            <?php } ?>
+
+            <?php // $galImage = get_the_post_thumbnail_url(); ?>
+            <?php // if ($galImage != '') { ?>
+              <!-- <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image"> -->
+            <?php // } ?>
 
             <?php $bannerVideos = get_field('iot_banner_video_link') ?>
             <?php if ($bannerVideos != '') { ?>
               <div class="play-video-on-scroll">
                 <div id="play2-out" style="display:none">
-                  <div id="play2" data-plyr-provider="<?php the_field('iot_banner_video_provider'); ?>" data-plyr-embed-id="<?php the_field('m_banner_video_links'); ?>"></div>
+                  <div id="play2" data-plyr-provider="<?php the_field('iot_banner_video_provider'); ?>" data-plyr-embed-id="<?php the_field('iot_banner_video_link'); ?>"></div>
                 </div>
-                <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('m_banner_video_link'); ?>" provider="<?php the_field('m_banner_video_provider'); ?>" poster="<?php the_field('iot_banner_video_poster'); ?>">
+                <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_field('iot_banner_video_link'); ?>" provider="<?php the_field('iot_banner_video_provider'); ?>" poster="<?php the_field('iot_banner_video_poster'); ?>">
                 </video>
               </div>
             <?php } ?>
