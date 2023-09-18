@@ -146,7 +146,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
       </section>
 	  
 	  <!------------new------------->
-	   <?php if (empty(get_sub_field('research_build_design_section')) === false): ?>
+	   <?php if (have_rows('research_build_design_section')): ?>
 	 <section class="sec-pd1 sec-top"> 
         <div class="container"> 
           <div class="row"> 
@@ -188,7 +188,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 	  <!------------------------->
 	  
       <!--04-->  
- <?php if (empty(get_sub_field('portfolio')) === false): ?>	  
+ <?php if (have_rows('portfolio')): ?>
       <section class="sec-pd" id="third">
         <div class="container"> 
           <div class="row"> 
@@ -287,7 +287,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
         </div>
       </section>
 	  <!-------new----------------->
-	  <?php if (empty(get_sub_field('specific_video_section')) === false): ?>
+	  <?php if (have_rows('specific_video_section')): ?>
 	  <section class="sec-pd51">
         <div class="container"> 
           <div class="row">
