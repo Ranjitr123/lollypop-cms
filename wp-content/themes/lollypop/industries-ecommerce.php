@@ -307,7 +307,7 @@ get_header();
             <?php if (have_rows('story_items')) : while (have_rows('story_items')) : the_row(); ?>
                 <div class="story_item col-12 col-md-12 col-lg-12 row mt-5">
                   <div class="col-12 col-md-3 d-flex align-items-center  justify-content-center data-scroll">
-                    <img class="img-fluid" src="<?php the_sub_field('image'); ?>" alt="logo">
+                    <img class="img-fluid" src="<?php the_sub_field('item_image'); ?>" alt="logo">
                   </div>
                   <div class="col-12 col-md-8 pl-40 data-scroll">
                     <span class="fnt-sub-heading d-block fnt-14 text-capitalize mb-2 clr-default"><?php the_sub_field('sub_heading') ?></span>
