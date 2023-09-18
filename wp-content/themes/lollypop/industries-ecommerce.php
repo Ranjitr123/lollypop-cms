@@ -316,7 +316,7 @@ get_header();
                     <p class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0  "> Publish on: <?php the_sub_field('publish_date'); ?></p>
                   </div>
                 </div>
-                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">View all Whitepapers</a>
+                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('whitepapers_link') ?>">View all Whitepapers</a>
             <?php endwhile;
             endif; ?>
           </div>
