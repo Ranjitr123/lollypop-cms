@@ -1,5 +1,7 @@
 <?php
 /**
+ * The template for displaying maintain pages
+ * 
  * Template Name: Maintain
  */
 get_header();
@@ -32,8 +34,8 @@ get_header();
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
-              <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_field('title'); ?></h1>
-              <p class="fnt-24 pr-70"><?php the_field('content');?></p>
+              <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0"><?php the_field('mt_title'); ?></h1>
+              <p class="fnt-24 pr-70"><?php the_field('mt_content');?></p>
             </div>
           </div>
         </div>
