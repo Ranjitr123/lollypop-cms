@@ -55,6 +55,44 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 .pb-5 {
     padding-bottom: 4rem!important;
 }
+.cta_box{
+    display: flex;
+    width: 846px;
+    height: 188px;
+    padding: 19px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-left: 4px solid #FD2E35;
+    background: linear-gradient(90deg, #F1EDEA -0.84%, rgba(247, 245, 243, 0.00) 91.2%);
+}
+.cta-text{
+    color: #221429;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 36.4px */
+    letter-spacing: -1.12px;
+}
+.cta-des{
+    color: #221429;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.96px;
+}
+.cta-link{
+    color: #FD2E35;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    text-transform: capitalize;
+}
 </style>
 
 <main class="main">
@@ -67,7 +105,12 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                 <div class="col-12 col-md-11 offset-md-1">
                   <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a>/<?php the_field('category_name'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0"><?php the_field('heading'); ?></h1>
-                    <p class="fnt-24 col-md-10 col-lg-8 px-0"><?php the_field('short_title_description'); ?></p>
+                    <p class="fnt-24 col-md-10 col-lg-10 px-0"><?php the_field('short_title_description'); ?></p>
+                      <div class="cta_box col-lg-10">
+                          <span class="cta-text"><?php the_field('cta_heading'); ?></span>
+                          <span class="cta-des"><?php the_field('cta_short_title_description'); ?></span>
+                          <a class="clr-second  d-inline-block fnt-14 data-scroll hvr-line cta-link" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
+                      </div>
 		  </div>
                 </div>
               </div>
@@ -260,55 +303,55 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
         </div>
       </section>
       <?php } ?>
-      <!--06-->
-      <section class="sec-pd sec-pb"> 
-        <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-md-10 col-lg-8 mx-auto">
-              <div class="mb-4 pb-md-2 col-md-11 px-0">
-                <?php if( have_rows('our_clients_descrptions') ) : while( have_rows('our_clients_descrptions') ): the_row(); ?>
-                <h3 class="fnt-50 fnt-800 mb-4 data-scroll">
-                  <?php the_sub_field('title'); ?></h3>
-                <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
-                <?php endwhile; endif; ?>
-              </div>
-              <ul class="px-0 values-list row justify-content-between mb-0"> 
-                <?php if( have_rows('our_client_list') ) : while( have_rows('our_client_list') ): the_row(); ?>
-                <li class="values-list__item col-12 col-md-5 data-scroll"> 
-                  <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
-                  <p class="col-11 col-lg-11 px-0 mb-0"><?php the_sub_field('content'); ?></p>
-                </li>
-                <?php endwhile; endif; ?>
-               
-              </ul>
-              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo get_site_url(); ?>/project-enquiry/">Let’s talk</a>
-            </div>
-          </div>
-        </div>
-      </section>
 	  <!-------new----------------->
-	  <?php if (have_rows('specific_video_section')): ?>
-	  <section class="sec-pd51">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 mx-auto">
-			 <div class="reveal-project">              
-                <div class="play-video-on-scroll">
-				<?php if( have_rows('specific_video_section') ) : while( have_rows('specific_video_section') ): the_row(); ?>
-                  <div id="play2-out" style="display:none">
-                    <div id="play2" data-plyr-provider="<?php the_sub_field('video_provider');?>" data-plyr-embed-id="<?php the_sub_field('video_link');?>"></div>
-                  </div>
-                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="<?php the_sub_field('video_link');?>" provider="<?php the_sub_field('video_provider');?>" poster="<?php the_sub_field('video_poster');?>">
-                  </video>
-				  <?php endwhile; endif; ?>
+<!--	  --><?php //if (have_rows('specific_video_section')): ?>
+<!--	  <section class="sec-pd51">-->
+<!--        <div class="container"> -->
+<!--          <div class="row">-->
+<!--            <div class="col-12 col-md-11 col-lg-10 mx-auto">-->
+<!--			 <div class="reveal-project">              -->
+<!--                <div class="play-video-on-scroll">-->
+<!--				--><?php //if( have_rows('specific_video_section') ) : while( have_rows('specific_video_section') ): the_row(); ?>
+<!--                  <div id="play2-out" style="display:none">-->
+<!--                    <div id="play2" data-plyr-provider="--><?php //the_sub_field('video_provider');?><!--" data-plyr-embed-id="--><?php //the_sub_field('video_link');?><!--"></div>-->
+<!--                  </div>-->
+<!--                  <video class="playvid" autoplay="" muted="" loop="" playsinline="" embed-id="--><?php //the_sub_field('video_link');?><!--" provider="--><?php //the_sub_field('video_provider');?><!--" poster="--><?php //the_sub_field('video_poster');?><!--">-->
+<!--                  </video>-->
+<!--				  --><?php //endwhile; endif; ?>
+<!--                </div>-->
+<!--              </div>  -->
+<!--			  -->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </section>-->
+<!--	  --><?php //endif; ?>
+    <!--06-->
+    <section class="sec-pd sec-pb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4 pb-md-2 col-md-11 px-0">
+                        <?php if( have_rows('our_clients_descrptions') ) : while( have_rows('our_clients_descrptions') ): the_row(); ?>
+                            <h3 class="fnt-50 fnt-800 mb-4 data-scroll">
+                                <?php the_sub_field('title'); ?></h3>
+                            <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
+                        <?php endwhile; endif; ?>
+                    </div>
+                    <ul class="px-0 values-list row justify-content-between mb-0">
+                        <?php if( have_rows('our_client_list') ) : while( have_rows('our_client_list') ): the_row(); ?>
+                            <li class="values-list__item col-12 col-md-5 data-scroll">
+                                <h6 class="fnt-800 mb-1"><?php the_sub_field('title'); ?></h6>
+                                <p class="col-11 col-lg-11 px-0 mb-0"><?php the_sub_field('content'); ?></p>
+                            </li>
+                        <?php endwhile; endif; ?>
+
+                    </ul>
+                    <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo get_site_url(); ?>/project-enquiry/">Let’s talk</a>
                 </div>
-              </div>  
-			  
             </div>
-          </div>
         </div>
-      </section>
-	  <?php endif; ?>	
+    </section>
       <!--07-->
       <section class="sec-footer-trans">
         <div class="container z-1">
