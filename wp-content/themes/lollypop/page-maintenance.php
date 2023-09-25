@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying maintain pages
+ * The template for displaying maintenance pages
  * 
- * Template Name: Maintain
+ * Template Name: Maintenance
  */
-get_header();
+get_header('maintenance');
 ?>
 <style>
   .pr-70 {
@@ -46,4 +46,4 @@ get_header();
   
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer('maintenance'); ?>
