@@ -286,6 +286,7 @@ get_header();
 
     .final-title-item h3 {
       font-size: 36px;
+      padding-left: 0px;
     }
 
     .color-pallet-banner h3,
@@ -309,7 +310,7 @@ get_header();
       width: 135px;
       height: 135px;
       top: -40px;
-      right: -56px;
+      right: 0px;
     }
 
     .final-title-bg04 h3::before {
@@ -327,6 +328,7 @@ get_header();
 
     .final-title-bg04.final-title-item.final-title-item-right h3 {
       right: 30px;
+      padding-right: 0px;
     }
   }
 
