@@ -160,6 +160,12 @@ get_header();
 
   .final-title-item-right {
     position: relative;
+    text-align: -webkit-right;
+  }
+
+  .final-title-item-right h3 {
+    padding-left: 0px;
+    padding-right: 35px;
   }
 
   .final-title-bg01 h3::before {
@@ -171,7 +177,7 @@ get_header();
     height: 235px;
     z-index: -1;
     top: -90px;
-    left: -50px;
+    left: 0px;
   }
 
   .final-title-bg02 h3::before {
@@ -183,7 +189,7 @@ get_header();
     height: 235px;
     z-index: -1;
     top: -90px;
-    right: -75px;
+    /* right: -75px; */
   }
 
 
@@ -197,7 +203,7 @@ get_header();
     height: 235px;
     z-index: -1;
     top: -90px;
-    left: -50px;
+    left: 0px;
   }
 
   .final-title-bg04 h3::before {
@@ -209,7 +215,7 @@ get_header();
     height: 235px;
     z-index: -1;
     top: -90px;
-    right: -50px;
+    right: -5px;
   }
 
   .final-title-item h3 {
@@ -225,6 +231,7 @@ get_header();
     position: relative;
     z-index: 0;
     width: max-content;
+    padding-left: 45px;
   }
 
   .fn-title h4 {
@@ -547,10 +554,14 @@ get_header();
           </div>
           <div class="reveal-project">
 
-            <?php // $galImage = get_the_post_thumbnail_url(); ?>
-            <?php // if ($galImage != '') { ?>
-              <!-- <img class="wpdm-img" src="<?php // echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Image"> -->
-            <?php // } ?>
+            <?php // $galImage = get_the_post_thumbnail_url(); 
+            ?>
+            <?php // if ($galImage != '') { 
+            ?>
+            <!-- <img class="wpdm-img" src="<?php // echo the_post_thumbnail_url('post_thumbnail') 
+                                            ?>" alt="Image"> -->
+            <?php // } 
+            ?>
 
             <?php $bannerVideos = get_field('iot_banner_video_link') ?>
             <?php if ($bannerVideos != '') { ?>
@@ -797,10 +808,10 @@ get_header();
             <?php if (have_rows('section_2')) : while (have_rows('section_2')) : the_row(); ?>
                 <div class="project-step pt-140">
                   <div class="row flex-mobile">
-                    <div class="col-12 col-md-8 project-step-disc pr-150 d-flex align-items-center">
+                    <div class="col-12 col-md-7 project-step-disc pr-150 d-flex align-items-center">
                       <p class="text-white"><?php the_sub_field('section_content') ?></p>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0 final-title-bg02 final-title-item final-title-item-right">
+                    <div class="col-12 col-md-5 mb-3 mb-md-0 final-title-bg02 final-title-item final-title-item-right">
                       <h3><?php the_sub_field('section_title') ?></h3>
                     </div>
                   </div>
@@ -890,10 +901,10 @@ get_header();
             <?php if (have_rows('section_4')) : while (have_rows('section_4')) : the_row(); ?>
                 <div class="project-step pt-140">
                   <div class="row flex-mobile">
-                    <div class="col-12 col-md-8 project-step-disc pr-150 d-flex align-items-center">
+                    <div class="col-12 col-md-7 project-step-disc pr-150 d-flex align-items-center">
                       <p class="text-white"><?php the_sub_field('section_content') ?></p>
                     </div>
-                    <div class="col-12 col-md-4 mb-3 mb-md-0 final-title-bg04 final-title-item final-title-item-right">
+                    <div class="col-12 col-md-5 mb-3 mb-md-0 final-title-bg04 final-title-item final-title-item-right">
                       <h3><?php the_sub_field('section_title') ?></h3>
                     </div>
 
