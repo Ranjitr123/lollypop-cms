@@ -165,7 +165,7 @@ get_header();
 
   .final-title-item-right h3 {
     padding-left: 0px;
-    padding-right: 35px;
+    padding-right: 45px;
   }
 
   .final-title-bg01 h3::before {
@@ -189,7 +189,7 @@ get_header();
     height: 235px;
     z-index: -1;
     top: -90px;
-    /* right: -75px; */
+    right: 0px;
   }
 
 
@@ -318,7 +318,7 @@ get_header();
       width: 135px;
       height: 135px;
       top: -40px;
-      right: -45px;
+      right: 0px;
     }
 
     .final-title-bg01.final-title-item h3,
@@ -326,9 +326,13 @@ get_header();
       left: 30px;
     }
 
-    .final-title-bg04.final-title-item.final-title-item-right h3 {
+    /* .final-title-bg04.final-title-item.final-title-item-right h3 {
       right: 30px;
-      padding-right: 0px;
+      padding-right: 30px;
+    } */
+
+    .final-title-item-right h3 {
+padding-right: 30px;
     }
   }
 
