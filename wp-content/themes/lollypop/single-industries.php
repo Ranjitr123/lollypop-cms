@@ -21,7 +21,7 @@ border-left: 5px solid #FD2E35;
 background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
 }
 .sec-pd1{padding-bottom:40px;}
-.sec-top{padding-top:40px;}}
+.sec-top{padding-top:40px;}
 .sec-pd1 .approach_style {
     width: 100%;
     max-width: 845px;
@@ -106,7 +106,7 @@ background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
                   <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a>/<?php the_field('category_name'); ?></span>
                     <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0"><?php the_field('heading'); ?></h1>
                     <p class="fnt-24 col-md-10 col-lg-10 px-0"><?php the_field('short_title_description'); ?></p>
-                      <div class="cta_box col-lg-10">
+                      <div class="col-lg-10">
                           <span class="cta-text"><?php the_field('cta_heading'); ?></span>
                           <span class="cta-des"><?php the_field('cta_short_title_description'); ?></span>
                           <a class="clr-second  d-inline-block fnt-14 data-scroll hvr-line cta-link" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
