@@ -72,6 +72,10 @@ get_header();
     padding-bottom: 4rem !important;
   }
 
+  .pb-70 {
+    padding-bottom: 70px;
+  }
+  
   /* Our Client */
 
   .client-logo {
@@ -128,6 +132,10 @@ get_header();
 
   .pl-40 {
     padding-left: 40px;
+  }
+
+  .text-upper {
+    text-transform: uppercase !important;
   }
 
   @media(max-width:767px) {
@@ -249,15 +257,20 @@ get_header();
   <section class="sec-designing pb-0">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-8 mx-auto">
           <div class="reveal-project">
             <img class="wpdm-img" src="<?php the_field('designing_image'); ?>" alt="Image">
           </div>
-          <div class="row mt-5 justify-content-end mx-auto">
-            <div class="mb-4 pb-md-2 col-md-8 px-0 pr-60">
-              <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
-              <p class="fnt-24 fnt-clr  col-md-10 col-lg-11 px-0 data-scroll"><?php the_field('designing_content') ?></p>
-              <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="http://localhost/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s Talk</a>
+          <div class="row mt-5 mx-auto">
+            <div class="mb-4 pb-md-2 col-md-12 d-flex px-0">
+              <div class="mb-4 pb-md-2 col-md-4 px-0 text-center">
+                <p>Zudio</p>
+              </div>
+              <div class="mb-4 pb-md-2 col-md-8 px-0">
+                <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
+                <p class="fnt-24 fnt-clr  col-md-10 col-lg-11 px-0 data-scroll"><?php the_field('designing_content') ?></p>
+                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="http://localhost/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s Talk</a>
+              </div>
             </div>
           </div>
         </div>
@@ -292,33 +305,70 @@ get_header();
   </section>
 
   <!-- Our Stories -->
-  <section class="sec-story">
+  <section class="sec-pd sec-pb" id="seventh">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-11 col-lg-8 mx-auto">
-          <div class="row">
-            <div class="col-lg-12 col-md-8 mx-auto">
-              <h3 class="fnt-40 fnt-clr fnt-800 mb-4 data-scroll"><?php the_field('story_title') ?></h3>
+      <div class="pb-md-4 pb-lg-5 mb-lg-5">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto">
+            <div class="mb-50 data-scroll">
+              <h2 class="fnt-50 fnt-800 mb-16"><?php the_field('story_title') ?></h2>
               <p class="fnt-24 fnt-clr col-md-10 col-lg-8 px-0 data-scroll"><?php the_field('story_content') ?></p>
             </div>
-          </div>
+            <!-- White papers-->
+            <ul class="px-0 home-artical-list">
+              <?php if (have_rows('story_whitepaper')) : while (have_rows('story_whitepaper')) : the_row(); ?>
+                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_sub_field('whitepaper_url'); ?>">
+                      <div class="row">
+                        <div class="col-12 col-md-3 col-lg-5">
+                          <div class="revealnone h-100">
+                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_sub_field('image') ?> 500w, 
+                            <?php the_sub_field('image') ?> 343w" sizes="(max-width: 600px) 500px, 343px" src="<?php the_sub_field('image') ?>" alt="Whitepaper Images">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                          <div class="px-lg-4">
+                            <span class="fnt-sub-heading d-block fnt-14 text-upper mb-2 clr-default">white paper</span>
+                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?> </h3>
+                            <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php the_sub_field('content') ?></p>
+                            <span class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0">Published on: <?php the_sub_field('published_date') ?></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+              <?php endwhile;
+              endif; ?>
+            </ul>
+            <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/whitepapers/">View all Whitepapers</a>
 
-          <div class="col-12 col-md-12 col-lg-12">
-            <?php if (have_rows('story_items')) : while (have_rows('story_items')) : the_row(); ?>
-                <div class="story_item col-12 col-md-12 col-lg-12 row mt-5">
-                  <div class="col-12 col-md-3 d-flex align-items-center  justify-content-center data-scroll">
-                    <img class="img-fluid" src="<?php the_sub_field('item_image'); ?>" alt="logo">
-                  </div>
-                  <div class="col-12 col-md-8 pl-40 data-scroll">
-                    <span class="fnt-sub-heading d-block fnt-14 text-capitalize mb-2 clr-default"><?php the_sub_field('sub_heading') ?></span>
-                    <h6 class="fnt-clr fnt-800 fnt-30 mb-1"><?php the_sub_field('title'); ?></h6>
-                    <p class="fnt-clr fnt-14 pd-12 col-11 col-lg-12 px-0 mb-0"><?php the_sub_field('content'); ?></p>
-                    <p class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0  "> Publish on: <?php the_sub_field('publish_date'); ?></p>
-                  </div>
-                </div>
-                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_sub_field('whitepapers_link') ?>">View all Whitepapers</a>
-            <?php endwhile;
-            endif; ?>
+            <!-- Blogs -->
+            <ul class="px-0 home-artical-list pb-70">
+              <?php if (have_rows('story_blog')) : while (have_rows('story_blog')) : the_row(); ?>
+                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_sub_field('blog_url'); ?>">
+                      <div class="row">
+                        <div class="col-12 col-md-3 col-lg-5">
+                          <div class="revealnone h-100">
+                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_sub_field('image') ?> 500w, 
+                            <?php the_sub_field('image') ?> 343w" sizes="(max-width: 600px) 500px, 343px" xsrc="<?php the_sub_field('image') ?>" alt="Blog Images">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                          <div class="px-lg-4">
+                            <span class="fnt-sub-heading d-block fnt-14 text-upper mb-2 clr-default">Blog</span>
+                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?> </h3>
+                            <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php the_sub_field('content'); ?></p>
+                            <!-- <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php // echo wp_trim_words(get_sub_field('content'), 35); 
+                                                                                        ?></p> -->
+                            <span class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0">Published on: <?php the_sub_field('published_date') ?></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+              <?php endwhile;
+              endif; ?>
+            </ul>
+            <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/blogs/">View all blogs</a>
           </div>
         </div>
       </div>
