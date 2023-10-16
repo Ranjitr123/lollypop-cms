@@ -75,7 +75,7 @@ get_header();
   .pb-70 {
     padding-bottom: 70px;
   }
-  
+
   /* Our Client */
 
   .client-logo {
@@ -342,33 +342,40 @@ get_header();
             <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/whitepapers/">View all Whitepapers</a>
 
             <!-- Blogs -->
-            <ul class="px-0 home-artical-list pb-70">
-              <?php if (have_rows('story_blog')) : while (have_rows('story_blog')) : the_row(); ?>
-                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_sub_field('blog_url'); ?>">
+            <ul class="px-0 home-artical-list pb-4 pb-md-5 mb-md-3 whitFetext">
+              <?php
+              $args = array(
+                'post_type' => 'post', // Your post type name
+                'posts_per_page' => 1,
+                'orderby' => 'post_date',
+                'order' => 'DESC'
+              );
+              $blog = new WP_Query($args);
+              if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post(); ?>
+
+                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_permalink(); ?>">
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
                           <div class="revealnone h-100">
-                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_sub_field('image') ?> 500w, 
-                            <?php the_sub_field('image') ?> 343w" sizes="(max-width: 600px) 500px, 343px" xsrc="<?php the_sub_field('image') ?>" alt="Blog Images">
+                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url('post_thumbnail') ?> 500w, <?php echo the_post_thumbnail_url('post_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
+            343px" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Blog Images">
                           </div>
                         </div>
                         <div class="col-12 col-md-7">
-                          <div class="px-lg-4">
-                            <span class="fnt-sub-heading d-block fnt-14 text-upper mb-2 clr-default">Blog</span>
-                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?> </h3>
-                            <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php the_sub_field('content'); ?></p>
-                            <!-- <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php // echo wp_trim_words(get_sub_field('content'), 35); 
-                                                                                        ?></p> -->
-                            <span class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0">Published on: <?php the_sub_field('published_date') ?></span>
+                          <div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">blog</span>
+                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_title(); ?></h3>
+                            <p class="clr-gray col-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php the_field('short_descriptions') ?></p><span class="d-block fnt-12">By <?php if (have_rows('author_details')) : while (have_rows('author_details')) : the_row(); ?><?php the_sub_field('author'); ?> <?php endwhile;
+                                                                                                                                                                                                                                                                                        endif; ?>
+                          on <?php the_time('j F, Y'); ?></span>
                           </div>
                         </div>
                       </div>
-                    </a>
-                  </li>
-              <?php endwhile;
+                    </a></li>
+              <?php wp_reset_postdata();
+                endwhile;
               endif; ?>
             </ul>
-            <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/blogs/">View all blogs</a>
+            <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/blogs/">View All Blogs</a>
           </div>
         </div>
       </div>

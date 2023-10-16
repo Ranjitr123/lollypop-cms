@@ -6,7 +6,7 @@
  * * @package WordPress
  * */
 
-get_header();
+get_header('japanese');
 
 ?>
 
@@ -25,6 +25,34 @@ get_header();
   @media (min-width: 992px) {
     .sec-pd2:first-of-type {
       padding-top: 135px;
+    }
+
+    .sec-pd.pd-50 {
+      padding-bottom: 120px;
+    }
+
+    .sec-pd.sec-pt {
+      padding-bottom: 0px;
+    }
+
+    .pb-120 {
+      padding-bottom: 120px;
+    }
+
+    .sec-achive {
+      padding: 120px 0px;
+    }
+
+    .sec-ichie {
+      padding: 120px 0px;
+    }
+
+    .sec-story {
+      padding: 120px 0px;
+    }
+
+    .sec-pd.sec-pt {
+      padding-bottom: 120px;
     }
   }
 
@@ -150,8 +178,7 @@ get_header();
   }
 
   .design-studio-sec {
-    padding-top: 68px !important;
-    padding-bottom: 124px !important;
+    padding-top: 64px !important;
   }
 
   .poco-sec {
@@ -174,6 +201,14 @@ get_header();
   .pt-136 {
     padding-top: 136px;
   }
+
+  .info-list__item {
+    width: fit-content;
+  }
+
+  .pb-12 {
+    padding-bottom: 12px;
+  }
 </style>
 <main class="main">
   <!--01 Banner-->
@@ -185,7 +220,7 @@ get_header();
             <div class="col-12 col-md-12">
               <div class="mb-r-80 col-lg-10 px-0 mx-auto"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;"><?php the_field('locations'); ?></span>
                 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
-                <div class="fnt-24 col-md-10 col-lg-12"><?php the_field('short_description'); ?></div>
+                <div class="fnt-24 col-md-10 col-lg-10"><?php the_field('short_description'); ?></div>
               </div>
             </div>
 
@@ -210,7 +245,7 @@ get_header();
       </div>
     </div>
   </section>
-  <section class="sec-pd">
+  <section class="sec-pd pd-50">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-9 col-lg-8 mx-auto">
@@ -227,7 +262,6 @@ get_header();
                       <!--<p class="fnt-16 clr-black-354 data-scroll"></p>-->
                     </div>
                     <div>
-
                       <a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('cta_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('cta_name'); ?></a>
                     </div>
                   </div>
@@ -266,11 +300,8 @@ get_header();
             <div class="col-md-9 col-12 col-lg-9 mx-auto">
               <div class="why-coastrika">
                 <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
-                <p class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
+                <p class="fnt-24 clr-white my-4 col-lg-9 col-md-9 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
               </div>
-              <!-- <div class="mt-5">
-                <img class="img-fluid" src="<?php the_sub_field('section_image') ?>" alt="img">
-              </div> -->
             </div>
         <?php endwhile;
         endif; ?>
@@ -282,33 +313,48 @@ get_header();
   <section class="sec-pb design-studio-sec" style="background: #221429;">
     <div class="container">
       <div class="row">
-        <?php if (have_rows('love_to_know_section')) : while (have_rows('love_to_know_section')) : the_row(); ?>
-            <div class="offset-md-2 offset-lg-2 col-md-7 col-12 col-lg-8">
-              <div class="why-coastrika">
-                <h2 class="fnt-40 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="offset-md-2 offset-lg-2 col-lg-11 col-md-10 card-know sec-pd50">
-                <div class="row">
-                  <?php if (have_rows('section_repeater')) : while (have_rows('section_repeater')) : the_row(); ?>
-                      <div class=" col-lg-4 col-md-4 card-know">
-                        <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll"><?php the_sub_field('card_title') ?></h4>
-                        <p class="fnt-16 l-3 clr-white fnt-400 data-scroll"><?php the_sub_field('card_content') ?></p>
-                      </div>
-                  <?php endwhile;
-                  endif; ?>
+        <div class="col-md-9 col-12 col-lg-9 mx-auto">
+          <div class="row">
+            <?php if (have_rows('love_to_know_section')) : while (have_rows('love_to_know_section')) : the_row(); ?>
+                <div class="col-lg-6 col-md-4">
+                  <div class="hover-img">
+                    <img class="reveal team-profile-img" src="<?php the_sub_field('image') ?>" alt="" />
+                  </div>
+                  <ul class="awrad-list px-0 mb-0 mt-5 mb-5 row">
+                    <?php if (have_rows('lollypop_info')) : while (have_rows('lollypop_info')) : the_row(); ?>
+                        <li class="info-list__item data-scroll">
+                          <div class="award">
+                            <div class="award__name">
+                              <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
+                              <p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
+                            </div>
+                          </div>
+                        </li>
+                    <?php endwhile;
+                    endif; ?>
+                  </ul>
+                  <a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('button_url') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('button_text') ?></a>
                 </div>
-                <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php the_sub_field('button_url') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('button_text') ?></a>
-              </div>
-            </div>
-        <?php endwhile;
-        endif; ?>
+                <div class="col-lg-6 col-md-6">
+                  <div class="row d-flex flex-column px-lg-4">
+                    <?php if (have_rows('section_repeater')) : while (have_rows('section_repeater')) : the_row(); ?>
+                        <div class=" col-lg-12 col-md-12">
+                          <h4 class="fnt-24 l-3 clr-white fnt-800 data-scroll"><?php the_sub_field('card_title') ?></h4>
+                          <p class="fnt-16 l-3 clr-white fnt-400 data-scroll"><?php the_sub_field('card_content') ?></p>
+                        </div>
+                    <?php endwhile;
+                    endif; ?>
+                  </div>
+                </div>
+            <?php endwhile;
+            endif; ?>
+          </div>
+        </div>
       </div>
   </section>
 
   <!-- achivements sec -->
-  <section class="sec-pd" style="background: #221429;">
+  <section class="sec-achive" style="background: #221429;">
     <div class="container z-1">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
@@ -339,18 +385,18 @@ get_header();
   </section>
 
 
-  <!-- 06 pura vida -->
-  <section class="sec-pd">
+  <!-- 06 ichi-e ichi-go -->
+  <section class="sec-ichie">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto">
           <?php if (have_rows('pura_vida_section')) : while (have_rows('pura_vida_section')) : the_row(); ?>
-              <div class="lp-our-services mb-50">
+              <div class="lp-our-services">
                 <h2 class="fnt-50 fnt-800 mb-2 pb-lg-1 data-scroll" style="opacity: 1; transform: translateY(0px);"> <?php the_sub_field('section_main_heading') ?></h2>
-                <span class="fnt-24 col-md-11 col-lg-10 px-0 d-block data-scroll" style="opacity: 1; transform: translateY(0px);">
+                <span class="fnt-24 col-md-11 col-lg-11 px-0 d-block data-scroll" style="opacity: 1; transform: translateY(0px);">
                   <?php the_sub_field('section_contents') ?>
                 </span>
-                <img class="img-fluid mt-5 mb-5 poco-img" src=" <?php the_sub_field('section_image') ?>" alt="logo">
+                <img class="img-fluid mt-5 poco-img" src=" <?php the_sub_field('section_image') ?>" alt="logo">
               </div>
           <?php endwhile;
           endif; ?>
@@ -365,7 +411,7 @@ get_header();
         <?php if (have_rows('our_services')) : while (have_rows('our_services')) : the_row(); ?>
             <div class="col-12 col-md-11 col-lg-8 mx-auto">
 
-              <h5 class="fnt-40 fnt-800 data-scroll px-0"><?php the_sub_field('title'); ?></h5>
+              <h5 class="fnt-40 fnt-800 data-scroll px-0 col-lg-9 col-md-9"><?php the_sub_field('title'); ?></h5>
               <p class="fnt-24 data-scroll col-md-11 col-lg-11 px-0"><?php the_sub_field('content'); ?></p>
 
             </div>
@@ -425,7 +471,8 @@ get_header();
           <div class="row mb-45">
             <div class="col-md-10 col-lg-12">
               <div class="lp-awards__left">
-                <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll "><?php the_field('design_studio_heading'); ?></h2><span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll"><?php the_field('design_studio_content'); ?></span>
+                <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll col-lg-8 col-md-8"><?php the_field('design_studio_heading'); ?></h2>
+                <span class="fnt-24 clr-white my-4 d-block max-width-580 data-scroll col-lg-8 col-md-8"><?php the_field('design_studio_content'); ?></span>
                 <a class="web-btn web-btn--primary data-scroll" href="<?php the_field('design_studio_content_button_text_url'); ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('design_studio_content_button_text'); ?></a>
               </div>
 
@@ -452,7 +499,7 @@ get_header();
   </section>
 
   <!--07 our stores-->
-  <section class="sec-pd sec-pb">
+  <section class="sec-story">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
@@ -490,31 +537,47 @@ get_header();
             endif; ?>
           </ul>
           <!-- Blogs-->
-          <ul class="px-0 home-artical-list">
-            <?php if (have_rows('blogs')) : while (have_rows('blogs')) : the_row(); ?>
-                <li class="home-artical-list__item"> <a class="home-artical" href="<?php the_sub_field('url'); ?>">
+
+          <ul class="px-0 home-artical-list pb-4 pb-md-5 mb-md-3 whitFetext">
+            <?php
+            $args = array(
+              'post_type' => 'post', // Your post type name
+              'posts_per_page' => 1,
+              'orderby' => 'post_date',
+              'order' => 'DESC'
+            );
+            $blog = new WP_Query($args);
+            if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post(); ?>
+
+                <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_permalink(); ?>">
                     <div class="row">
                       <div class="col-12 col-md-3 col-lg-5">
-                        <div class="revealnone  h-100"><img class="home-artical-img mb-3 mb-md-0" src="<?php the_sub_field('blog_image'); ?>" alt="Image"></div>
+                        <div class="revealnone h-100">
+                          <img class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url('post_thumbnail') ?> 500w, <?php echo the_post_thumbnail_url('post_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
+            343px" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Blog Images">
+                        </div>
                       </div>
                       <div class="col-12 col-md-7">
                         <div class="px-lg-4"><span class="text-uppercase d-block mb-2 fnt-12 fnt-800">blog</span>
-                          <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?></h3>
-                          <p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php the_sub_field('content'); ?></p><span class="d-block fnt-12">By
-                            <?php the_sub_field('author'); ?> on <?php the_sub_field('date'); ?></span>
+                          <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_title(); ?></h3>
+                          <p class="clr-gray col-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php the_field('short_descriptions') ?></p><span class="d-block fnt-12">By <?php if (have_rows('author_details')) : while (have_rows('author_details')) : the_row(); ?><?php the_sub_field('author'); ?> <?php endwhile;
+                                                                                                                                                                                                                                                                                      endif; ?>
+                        on <?php the_time('j F, Y'); ?></span>
                         </div>
                       </div>
                     </div>
                   </a></li>
-                <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/blogs/">View All Blogs</a>
-            <?php endwhile;
+            <?php wp_reset_postdata();
+              endwhile;
             endif; ?>
           </ul>
+          <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/blogs/">View All Blogs</a>
+
         </div>
       </div>
     </div>
   </section>
-  
+
   <!--08 get in touch-->
   <section class="sec-footer-trans">
     <div class="container z-1">
@@ -545,6 +608,7 @@ get_header();
   var locas = $('.locations_name').text();
   $('.nav-dropdown-text').text(locas);
 </script>
+
 <?php
 get_footer();
 ?>
