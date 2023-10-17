@@ -290,11 +290,13 @@ get_header('japanese');
       </div>
     </div>
   </section>
+
+  <!-- Lollypop Vietnam -->
   <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
     <div class="container">
       <div class="row">
         <?php if (have_rows('new_slider_section_with_content')) : while (have_rows('new_slider_section_with_content')) : the_row(); ?>
-            <div class="col-md-9 col-12 col-lg-9 mx-auto">
+            <div class="col-md-9 col-12 col-lg-8 mx-auto">
               <div class="why-coastrika">
                 <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
                 <p class="fnt-24 clr-white my-4 col-lg-9 col-md-9 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
@@ -304,13 +306,11 @@ get_header('japanese');
         endif; ?>
       </div>
     </div>
-  </section>
-
-  <!-- Lollypop Vietnam -->
-  <section class="sec-pb design-studio-sec" style="background: #221429;">
-    <div class="container">
+    <!-- </section> -->
+    <!-- <section class="sec-pb design-studio-sec" style="background: #221429;"> -->
+    <div class="container sec-pb design-studio-sec">
       <div class="row">
-        <div class="col-md-9 col-12 col-lg-9 mx-auto">
+        <div class="col-md-9 col-12 col-lg-8 mx-auto">
           <div class="row">
             <?php if (have_rows('love_to_know_section')) : while (have_rows('love_to_know_section')) : the_row(); ?>
                 <div class="col-lg-6 col-md-4">
@@ -348,35 +348,35 @@ get_header('japanese');
           </div>
         </div>
       </div>
-  </section>
-  <section class="sec-pd pd-50" style="background: #221429;">
-    <div class="container z-1">
-      <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 mx-auto mb-md-0 pb-md-0">
-          <div class="row mb-45 justify-content-between">
-            <div class="col-md-9 mb-4 mb-md-0 fluid-offset">
-              <div class="lp-awards__left">
-                <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
-                </span>
+      <!-- </section> -->
+      <!-- <section class="sec-pd pd-50" style="background: #221429;"> -->
+      <div class="z-1 sec-pd pd-50 pb-md-0">
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8 mx-auto mb-md-0 pb-md-0">
+            <div class="row mb-45 justify-content-between">
+              <div class="col-md-9 mb-4 mb-md-0 fluid-offset">
+                <div class="lp-awards__left">
+                  <h2 class="fnt-50 l-3 mb-2 clr-white fnt-800 data-scroll"><?php the_field('achievements_heading'); ?></h2><span class="fnt-24 clr-white d-block max-width-480 data-scroll"><?php the_field('achievements_content'); ?>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <ul class="awrad-list px-0 mb-0 row">
-            <?php if (have_rows('winners')) : while (have_rows('winners')) : the_row(); ?>
-                <li class="awrad-list__item col-6 col-md-4 data-scroll">
-                  <div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
-                    <div class="award__name">
-                      <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
-                      <p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
+            <ul class="awrad-list px-0 mb-0 row">
+              <?php if (have_rows('winners')) : while (have_rows('winners')) : the_row(); ?>
+                  <li class="awrad-list__item col-6 col-md-4 data-scroll">
+                    <div class="award text-center"><img class="icon-awards mx-auto mb-2 pb-1" src="<?php the_sub_field('image') ?>" alt="Image">
+                      <div class="award__name">
+                        <h6 class="fnt-18 fnt-800 clr-white mb-1"><?php the_sub_field('title') ?></h6>
+                        <p class="fnt-12 clr-white mb-0"><?php the_sub_field('content') ?></p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-            <?php endwhile;
-            endif; ?>
-          </ul>
+                  </li>
+              <?php endwhile;
+              endif; ?>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
 
