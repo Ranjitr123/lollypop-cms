@@ -269,7 +269,7 @@ get_header('japanese');
             <?php endwhile;
             endif; ?>
           </div>
-          <div class="row pt-136">
+          <div class="row py-5 pt-md-5">
             <?php if (have_rows('client_logos_section')) : while (have_rows('client_logos_section')) : the_row(); ?>
                 <div class="col-lg-12 col-md-12 mx-auto">
                   <div class="mb-5">
@@ -290,9 +290,6 @@ get_header('japanese');
       </div>
     </div>
   </section>
-
-  <!--03 Lollypop Vietname-->
-
   <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
     <div class="container">
       <div class="row">
@@ -309,7 +306,7 @@ get_header('japanese');
     </div>
   </section>
 
-  <!--love to know -->
+  <!-- Lollypop Vietnam -->
   <section class="sec-pb design-studio-sec" style="background: #221429;">
     <div class="container">
       <div class="row">
@@ -335,7 +332,7 @@ get_header('japanese');
                   </ul>
                   <a class="web-btn web-btn--primary data-scroll mt-1" href="<?php the_sub_field('button_url') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('button_text') ?></a>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 py-4 py-md-0">
                   <div class="row d-flex flex-column px-lg-4">
                     <?php if (have_rows('section_repeater')) : while (have_rows('section_repeater')) : the_row(); ?>
                         <div class=" col-lg-12 col-md-12">
@@ -352,12 +349,10 @@ get_header('japanese');
         </div>
       </div>
   </section>
-
-  <!-- achivements sec -->
-  <section class="sec-achive" style="background: #221429;">
+  <section class="sec-pd pd-50" style="background: #221429;">
     <div class="container z-1">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 mx-auto mb-4 pb-2 mb-md-0 pb-md-0">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto mb-md-0 pb-md-0">
           <div class="row mb-45 justify-content-between">
             <div class="col-md-9 mb-4 mb-md-0 fluid-offset">
               <div class="lp-awards__left">
@@ -385,8 +380,8 @@ get_header('japanese');
   </section>
 
 
-  <!-- 06 ichi-e ichi-go -->
-  <section class="sec-ichie">
+  <!-- Ichi-go Ichi-e -->
+  <section class="sec-pd pb-md-0 pb-0">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto">
@@ -404,7 +399,6 @@ get_header('japanese');
       </div>
     </div>
   </section>
-
   <section class="sec-pd sec-pt">
     <div class="container">
       <div class="row  mb-4 pb-md-3 mb-lg-5 pb-lg-0">
@@ -420,7 +414,7 @@ get_header('japanese');
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-8 mx-auto">
+        <div class="col-12 col-md-11 col-lg-8 mx-auto pb-5 pb-md-0">
           <?php if (have_rows('our_services')) : while (have_rows('our_services')) : the_row(); ?>
               <ul class="mb-0 services-list px-0">
                 <?php if (have_rows('our_services_list')) : while (have_rows('our_services_list')) : the_row(); ?>
@@ -462,8 +456,7 @@ get_header('japanese');
   </section>
 
 
-  <!-- scales business-->
-
+  <!-- We are a culture-driven-->
   <section class="sec-pd sec-pt" id="fifth" style="background: #221429;">
     <div class="container">
       <div class="row">
@@ -498,8 +491,8 @@ get_header('japanese');
       </div>
   </section>
 
-  <!--07 our stores-->
-  <section class="sec-story">
+  <!-- Our Stories-->
+  <section class="sec-pd">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
@@ -578,7 +571,7 @@ get_header('japanese');
     </div>
   </section>
 
-  <!--08 get in touch-->
+  <!--Get in touch-->
   <section class="sec-footer-trans">
     <div class="container z-1">
       <div class="row">
