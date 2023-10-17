@@ -178,7 +178,7 @@ get_header('japanese');
   }
 
   .design-studio-sec {
-    padding-top: 64px !important;
+    padding-top: 32px !important;
   }
 
   .poco-sec {
