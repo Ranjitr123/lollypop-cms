@@ -254,6 +254,15 @@
             }
         }
 
+        @media (max-width: 420px) {
+
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                top: 4px !important;
+                left: 4px !important;
+            }
+        }
+
         .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
             background-color: #fff !important;
         }
@@ -985,9 +994,9 @@ $header = new WP_Query($args);
                                             <div class="hr-1"></div>
                                             <p style="margin-bottom: 0;">
                                                 <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-japan-jp/" <?php $current_slug = add_query_arg(array(), $wp->request);
-                                                                                                                                                                    if ($current_slug == 'ui-ux-design-agency-in-japan-jp') {
-                                                                                                                                                                        echo "checked";
-                                                                                                                                                                    } ?>>
+                                                                                                                                                                        if ($current_slug == 'ui-ux-design-agency-in-japan-jp') {
+                                                                                                                                                                            echo "checked";
+                                                                                                                                                                        } ?>>
                                                 <label for="test2">Japanese</label>
                                             </p>
                                         </form>
