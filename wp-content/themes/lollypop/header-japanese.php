@@ -971,7 +971,7 @@ $header = new WP_Query($args);
                                     <a href="javascript:void(0)" onclick="myFunction()">
                                         <p class="">
                                             <?php $current_slug = add_query_arg(array(), $wp->request);
-                                            if ($current_slug == 'ui-ux-design-agency-in-japan') { ?>
+                                            if ($current_slug == 'ui-ux-design-studio-in-japan') { ?>
                                                 ENG
                                             <?php } else { ?>
                                                 JP
@@ -985,16 +985,16 @@ $header = new WP_Query($args);
                                     <div class="langue-container">
                                         <form action="#">
                                             <p style="margin-bottom: 0;">
-                                                <input type="radio" id="test1" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-japan/" <?php $current_slug = add_query_arg(array(), $wp->request);
-                                                                                                                                                                    if ($current_slug == 'ui-ux-design-agency-in-japan') {
+                                                <input type="radio" id="test1" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan/" <?php $current_slug = add_query_arg(array(), $wp->request);
+                                                                                                                                                                    if ($current_slug == 'ui-ux-design-studio-in-japan') {
                                                                                                                                                                         echo "checked";
                                                                                                                                                                     } ?>>
                                                 <label for="test1">English</label>
                                             </p>
                                             <div class="hr-1"></div>
                                             <p style="margin-bottom: 0;">
-                                                <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-japan-jp/" <?php $current_slug = add_query_arg(array(), $wp->request);
-                                                                                                                                                                        if ($current_slug == 'ui-ux-design-agency-in-japan-jp') {
+                                                <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan-jp/" <?php $current_slug = add_query_arg(array(), $wp->request);
+                                                                                                                                                                        if ($current_slug == 'ui-ux-design-studio-in-japan-jp') {
                                                                                                                                                                             echo "checked";
                                                                                                                                                                         } ?>>
                                                 <label for="test2">Japanese</label>
