@@ -1,7 +1,7 @@
 <?php
 
 /**
- * * Template Name: Japanese Landing Page
+ * * Template Name: Japanese JP Landing Page
  * *
  * * @package WordPress
  * */
@@ -20,6 +20,11 @@ get_header('japanese');
     .logo-list__item img {
       max-width: 100% !important;
     }
+
+    .rm-spacing {
+      letter-spacing: 0 !important;
+    }
+
   }
 
   @media (min-width: 992px) {
@@ -54,6 +59,8 @@ get_header('japanese');
     .sec-pd.sec-pt {
       padding-bottom: 120px;
     }
+
+
   }
 
   @media(max-width:767px) {
@@ -66,7 +73,6 @@ get_header('japanese');
     .swiper_pad {
       padding-left: 0px !important;
     }
-
   }
 
   .swiper {
@@ -209,6 +215,14 @@ get_header('japanese');
   .pb-12 {
     padding-bottom: 12px;
   }
+
+  .fnt-18.fnt-800,
+  .fnt-28.fnt-800,
+  .fnt-24.fnt-800,
+  .fnt-40.fnt-800,
+  .fnt-50.fnt-800 {
+    letter-spacing: normal !important;
+  }
 </style>
 <main class="main">
   <!--01 Banner-->
@@ -219,7 +233,7 @@ get_header('japanese');
           <div class="row">
             <div class="col-12 col-md-12">
               <div class="mb-r-80 col-lg-10 px-0 mx-auto"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;"><?php the_field('locations'); ?></span>
-                <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
+                <h1 class="fnt-50 fnt-800 spc-0 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
                 <div class="fnt-24 col-md-10 col-lg-10"><?php the_field('short_description'); ?></div>
               </div>
             </div>
@@ -298,7 +312,7 @@ get_header('japanese');
         <?php if (have_rows('new_slider_section_with_content')) : while (have_rows('new_slider_section_with_content')) : the_row(); ?>
             <div class="col-md-9 col-12 col-lg-8 mx-auto">
               <div class="why-coastrika">
-                <h2 class="fnt-50 l-3 clr-white fnt-800 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
+                <h2 class="fnt-50 fnt-800 l-3 clr-white data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('main_heading') ?></h2>
                 <p class="fnt-24 clr-white my-4 col-lg-9 col-md-9 d-block max-width-580 data-scroll" style="opacity: 1; transform: translateY(0px);"><?php the_sub_field('description') ?></p>
               </div>
             </div>

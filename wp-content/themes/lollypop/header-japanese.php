@@ -162,13 +162,6 @@
             top: 60px;
         }
 
-        @media (max-width: 768px) {
-            .secut {
-                top: 28px;
-                right: 7% !important;
-            }
-        }
-
         .fnt-100 {
             font-size: 32px;
             line-height: 42px;
@@ -182,86 +175,12 @@
             left: 41px !important;
         }
 
-        @media (min-width: 768px) {
-            .fnt-100 {
-                font-size: 70px;
-                line-height: 75px;
-                letter-spacing: -2px;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .fnt-100 {
-                font-size: 80px;
-                line-height: 85px;
-                letter-spacing: -4px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .fnt-100 {
-                font-size: 100px;
-                line-height: 104px;
-                letter-spacing: -4px;
-            }
-        }
-
         .fnt-100 {
             font-size: 32px;
             line-height: 42px;
             letter-spacing: -2px;
         }
 
-        @media (min-width: 768px) {
-            .fnt-100 {
-                font-size: 70px;
-                line-height: 75px;
-                letter-spacing: -2px;
-            }
-
-
-        }
-
-        /* dropdown */
-        @media(max-width:768px) {
-            .secut {
-                display: none;
-            }
-
-            .secut-res label {
-                color: #221429 !important;
-            }
-
-            .sec-last1 {
-                padding-bottom: 25px !important;
-            }
-
-        }
-
-        @media (min-width: 992px) {
-            .fnt-100 {
-                font-size: 80px;
-                line-height: 85px;
-                letter-spacing: -4px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .fnt-100 {
-                font-size: 100px;
-                line-height: 104px;
-                letter-spacing: -4px;
-            }
-        }
-
-        @media (max-width: 420px) {
-
-            [type="radio"]:checked+label:after,
-            [type="radio"]:not(:checked)+label:after {
-                top: 4px !important;
-                left: 4px !important;
-            }
-        }
 
         .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
             background-color: #fff !important;
@@ -402,119 +321,6 @@
             margin-top: 6px;
         }
 
-        @media (max-width: 768px) {
-            #myDIV {
-                left: 8px;
-                width: 150px;
-            }
-
-            .triangle {
-                margin: 0 15px;
-
-            }
-
-            .triangle-4 {
-                width: 0px;
-                height: 0px;
-                bottom: 6px;
-                border-bottom: solid 15px #FFFFFF;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                position: relative;
-                left: 3%;
-            }
-
-            .button-up,
-            .button-down {
-                position: absolute;
-                padding: 5px;
-                margin: 30px auto;
-                background: rgba(255, 255, 255, 0.8);
-                height: 35px !important;
-                width: 35px !important;
-                border-radius: 50%;
-                transition: all 0.2s linear;
-                top: 21% !important;
-            }
-
-            .button-up::after,
-            .button-down::after {
-                content: "";
-                position: absolute;
-                left: 0px;
-                z-index: 11;
-                display: block;
-                width: 11px !important;
-                height: 11px !important;
-                border-top: 2px solid #FD2E35;
-                border-left: 2px solid #FD2E35;
-            }
-
-            .button-up::after {
-                top: 12px !important;
-                transform: rotate(135deg);
-                left: 11px !important;
-            }
-
-            .button-down::after {
-                top: 12px !important;
-                transform: rotate(-45deg);
-                left: 14px !important;
-            }
-
-            .vitanam-slider h4 {
-                line-height: 38px;
-                font-size: 22px !important;
-            }
-
-            .langue-container {
-                background-color: #FFFFFF;
-                position: relative;
-                border-radius: 5px;
-                margin-top: -15px;
-                padding: 10px;
-                width: 104px;
-                left: -5px;
-            }
-
-            .langue-container form label {
-                font-size: 12px;
-                line-height: 16px;
-            }
-
-            type="radio"]:checked+label:after,
-            [type="radio"]:not(:checked)+label:after {
-                content: '';
-                width: 6px;
-                height: 6px;
-                background: black;
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                border-radius: 100%;
-                -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease;
-            }
-
-            [type="radio"]:checked+label:before,
-            [type="radio"]:not(:checked)+label:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 16px;
-                height: 16px;
-                border: 2px solid #221429;
-                border-radius: 100%;
-                background: #fff;
-            }
-
-            .secut {
-                right: 70px !important;
-                top: 50px !important;
-            }
-        }
-
         .secut {
             position: fixed;
         }
@@ -528,33 +334,6 @@
             opacity: 0 !important;
             pointer-events: none;
         }
-
-        @media only screen and (min-width: 1024px) {
-            .secut {
-                position: fixed;
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                width: 0px;
-                height: 0px;
-                bottom: 0px;
-                border-bottom: solid 15px #FFFFFF;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                position: relative;
-                left: 67%;
-            }
-        }
-
 
         /* global button */
         .global-drop .dropdown-ver a ::after {
@@ -643,11 +422,199 @@
             /* margin-left: 1rem; */
         }
 
-        /* @media (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(0px,-100%)!important;
-    }
-} */
+        .header-flexs {
+            justify-content: center;
+        }
+
+        /* dropdown */
+        @media (min-width: 768px) {
+
+            header .default,
+            header .menu-title {
+                margin-right: -6px !important;
+            }
+
+            .fnt-100 {
+                font-size: 70px;
+                line-height: 75px;
+                letter-spacing: -2px;
+            }
+
+            .lang-mob {
+                transform: translate(75px, 10px);
+            }
+
+        }
+
+        @media (min-width: 992px) {
+            .fnt-100 {
+                font-size: 80px;
+                line-height: 85px;
+                letter-spacing: -4px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .fnt-100 {
+                font-size: 100px;
+                line-height: 104px;
+                letter-spacing: -4px;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                top: 4px !important;
+                left: 4px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #myDIV {
+                left: 8px;
+                width: 100px;
+            }
+
+            .triangle {
+                margin: 0 15px;
+            }
+
+            .triangle-4 {
+                width: 0px;
+                height: 0px;
+                bottom: 8px;
+                border-bottom: solid 15px #FFFFFF;
+                border-left: solid 15px transparent;
+                border-right: solid 15px transparent;
+                position: relative;
+                left: 0%;
+            }
+
+            .button-up,
+            .button-down {
+                position: absolute;
+                padding: 5px;
+                margin: 30px auto;
+                background: rgba(255, 255, 255, 0.8);
+                height: 35px !important;
+                width: 35px !important;
+                border-radius: 50%;
+                transition: all 0.2s linear;
+                top: 21% !important;
+            }
+
+            .button-up::after,
+            .button-down::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                z-index: 11;
+                display: block;
+                width: 11px !important;
+                height: 11px !important;
+                border-top: 2px solid #FD2E35;
+                border-left: 2px solid #FD2E35;
+            }
+
+            .button-up::after {
+                top: 12px !important;
+                transform: rotate(135deg);
+                left: 11px !important;
+            }
+
+            .button-down::after {
+                top: 12px !important;
+                transform: rotate(-45deg);
+                left: 14px !important;
+            }
+
+            .vitanam-slider h4 {
+                line-height: 38px;
+                font-size: 22px !important;
+            }
+
+            .langue-container {
+                background-color: #FFFFFF;
+                position: relative;
+                border-radius: 5px;
+                margin-top: -15px;
+                padding: 10px;
+                width: 104px;
+                left: -50px;
+            }
+
+            .langue-container form label {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: black;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 16px;
+                height: 16px;
+                border: 2px solid #221429;
+                border-radius: 100%;
+                background: #fff;
+            }
+
+            .secut-res label {
+                color: #221429 !important;
+            }
+
+            .sec-last1 {
+                padding-bottom: 25px !important;
+            }
+
+
+        }
+
+
+
+        @media only screen and (min-width: 1024px) {
+            .secut {
+                position: fixed;
+            }
+
+            #myDIV {
+                left: -19px;
+                width: 150px;
+            }
+
+            .triangle {
+                margin: 0 15px;
+            }
+
+            .triangle-4 {
+                width: 0px;
+                height: 0px;
+                bottom: 0px;
+                border-bottom: solid 15px #FFFFFF;
+                border-left: solid 15px transparent;
+                border-right: solid 15px transparent;
+                position: relative;
+                left: 67%;
+            }
+        }
 
         @media (min-width:661px) and (max-width: 767px) {
             .lp-hamberg {
@@ -709,14 +676,6 @@
             }
         }
 
-        @media (min-width: 768px) {
-
-            header .default,
-            header .menu-title {
-                margin-right: -6px !important;
-            }
-        }
-
         @media (min-width:320px) and (max-width: 768px) {
             .secut {
                 right: 110px !important;
@@ -734,10 +693,6 @@
                 transform: translate(270px, -45%) !important;
             }
         }
-
-        .header-flexs {
-            justify-content: center;
-        }
     </style>
 
     <!-- global button -->
@@ -752,7 +707,7 @@
 
         $(document).ready(function() {
             $(".global-drop #drop-menu").off("click").on("click", function() {
-                var dropdownContent = $(".global-drop .global-content");
+                var dropdownContent = $(".global-drop .dropdown-content");
                 if (dropdownContent.is(":visible")) {
                     dropdownContent.hide();
                 } else {
@@ -761,7 +716,7 @@
             });
 
             $(window).scroll(function() {
-                var dropdownContent = $(".global-drop .global-content");
+                var dropdownContent = $(".global-drop .dropdown-content");
                 if (dropdownContent.is(":visible")) {
                     dropdownContent.hide();
                 }
@@ -829,7 +784,7 @@ $header = new WP_Query($args);
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-11 mx-auto d-flex header-flexs">
-                <div class="col-6 d-block col-md-1">
+                <div class="row col-md-1">
                     <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
                     <!-- global dropdown -->
                     <div class="row d-block d-md-none">
@@ -843,7 +798,7 @@ $header = new WP_Query($args);
                                                 <p class="">Global</p>
                                             </a>
                                         </div>
-                                        <div class="dropdown-content global-content" id="myDIV">
+                                        <div class="dropdown-content" id="myDIV">
                                             <div class="langue-container">
                                                 <ul>
                                                     <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
@@ -879,7 +834,7 @@ $header = new WP_Query($args);
                     </div>
                 </div>
 
-                <div class="col-2 col-md-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+                <div class="js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
                     <div class="d-flex align-items-center justify-content-md-end">
                         <div class="navbar-list d-md-flex mb-0">
                             <div class="nav-item clr-second">
@@ -948,7 +903,7 @@ $header = new WP_Query($args);
                         </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
                     </div>
                 </div>
-                <div class="col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
+                <div class="col-md-7 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
                     <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
                         <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
                         <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
@@ -969,10 +924,10 @@ $header = new WP_Query($args);
                             <div class="secut col-1 scroll-hide language-sec" id="drop-menu">
                                 <div class="dropdown-ver d-flex">
                                     <a href="javascript:void(0)" onclick="myFunction()">
-                                        <p class="">
+                                        <p class="" style="line-height:24px;">
                                             <?php $current_slug = add_query_arg(array(), $wp->request);
                                             if ($current_slug == 'ui-ux-design-studio-in-japan') { ?>
-                                                ENG
+                                                EN
                                             <?php } else { ?>
                                                 JP
                                             <?php } ?>
@@ -980,7 +935,7 @@ $header = new WP_Query($args);
                                         </p>
                                     </a>
                                 </div>
-                                <div class="dropdown-content drop-hide  lanuage-dropdown-content" id="myDIV">
+                                <div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
                                     <div class="triangle triangle-4"></div>
                                     <div class="langue-container">
                                         <form action="#">
@@ -1073,7 +1028,7 @@ $header = new WP_Query($args);
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-ftr d-done d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg">
+                        <div class="menu-ftr d-none d-md-block mt-md-4 mt-lg-auto mb-4 mb-md-0 menu-ftr-pos menu-ftr-pos--redbg">
                             <div class="menu-ftr__links hvr-div d-md-flex flex-wrap">
                                 <a class="d-inline-block fnt-18" href="https://www.linkedin.com/company/lollypop-studio/" target="_blank">LinkedIn</a>
                                 <a class="d-inline-block fnt-18" href="https://www.instagram.com/lollypop.design/" target="_blank">Instagram</a>
