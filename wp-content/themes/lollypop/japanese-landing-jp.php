@@ -231,7 +231,7 @@ get_header('japanese');
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row">
-            <div class="col-12 col-md-12">
+            <div class="col-12 col-md-11">
               <div class="mb-r-80 col-lg-10 px-0 mx-auto"> <span class="d-block fnt-28 fnt-800 text-capitalize mb-2 clr-default locations" style="color: #FD2E35;"><?php the_field('locations'); ?></span>
                 <h1 class="fnt-50 fnt-800 spc-0 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-10 col-lg-12"><?php the_field('heading'); ?></h1>
                 <div class="fnt-24 col-md-10 col-lg-10"><?php the_field('short_description'); ?></div>

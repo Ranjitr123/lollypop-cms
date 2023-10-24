@@ -50,6 +50,7 @@
 
         gtag('config', 'UA-42458763-1');
     </script>
+    <!-- End Google Tag Manager -->
 
     <!-- Hotjar Tracking Code for https://lollypop.design/ -->
     <script>
@@ -69,59 +70,6 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '915531313044482');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=915531313044482&ev=PageView
-&noscript=1" />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-
-
-    <script type="text/javascript">
-        _linkedin_partner_id = "4891892";
-        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script>
-    <script type="text/javascript">
-        (function(l) {
-            if (!l) {
-                window.lintrk = function(a, b) {
-                    window.lintrk.q.push([a, b])
-                };
-                window.lintrk.q = []
-            }
-            var s = document.getElementsByTagName("script")[0];
-            var b = document.createElement("script");
-            b.type = "text/javascript";
-            b.async = true;
-            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-            s.parentNode.insertBefore(b, s);
-        })(window.lintrk);
-    </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4891892&fmt=gif" /> </noscript>
-
-
     <!---css---------->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -137,9 +85,9 @@
     <noscript>
         <link rel='stylesheet' id='aos-css' href='https://lollypop.design/wp-content/themes/lollypop/css/aos.css?ver=5.9' type='text/css' media='all' />
     </noscript>
-    <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel='stylesheet' id='main-css' href='https://lollypop.design/wp-content/themes/lollypop/css/main.css?ver=5.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='main-css' href="<?php echo get_template_directory_uri(); ?>/css/main.css" type='text/css' media='all' />
     </noscript>
     <link rel="preload" href="https://lollypop.design/wp-content/themes/lollypop/css/plyr.css?ver=5.9" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -155,11 +103,18 @@
 
     <style>
         .secut {
-            display: block;
+            top: 55px;
         }
 
-        .secut {
-            top: 60px;
+        @media (max-width: 768px) {
+            .secut {
+                top: 28px;
+                right: 7% !important;
+            }
+
+            .header-container {
+                justify-content: flex-end;
+            }
         }
 
         .fnt-100 {
@@ -175,12 +130,86 @@
             left: 41px !important;
         }
 
+        @media (min-width: 768px) {
+            .fnt-100 {
+                font-size: 70px;
+                line-height: 75px;
+                letter-spacing: -2px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .fnt-100 {
+                font-size: 80px;
+                line-height: 85px;
+                letter-spacing: -4px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .fnt-100 {
+                font-size: 100px;
+                line-height: 104px;
+                letter-spacing: -4px;
+            }
+        }
+
         .fnt-100 {
             font-size: 32px;
             line-height: 42px;
             letter-spacing: -2px;
         }
 
+        @media (min-width: 768px) {
+            .fnt-100 {
+                font-size: 70px;
+                line-height: 75px;
+                letter-spacing: -2px;
+            }
+
+            [type="radio"]:checked+label:after {
+                top: 4px !important;
+                left: 4px !important;
+            }
+
+        }
+
+        /* dropdown */
+        @media(max-width:768px) {
+
+            .lang-mob {
+                transform: translate(63px, 10px);
+            }
+
+            .secut {
+                display: none;
+            }
+
+            .secut-res label {
+                color: #221429 !important;
+            }
+
+            .sec-last1 {
+                padding-bottom: 25px !important;
+            }
+
+        }
+
+        @media (min-width: 992px) {
+            .fnt-100 {
+                font-size: 80px;
+                line-height: 85px;
+                letter-spacing: -4px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .fnt-100 {
+                font-size: 100px;
+                line-height: 104px;
+                letter-spacing: -4px;
+            }
+        }
 
         .lp-mainheader--white .header-nav .nav-item:last-of-type a::after {
             background-color: #fff !important;
@@ -211,7 +240,7 @@
 
         .dropdown-ver {
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
         }
 
         .triangle {
@@ -228,7 +257,7 @@
             padding: 10px;
             border-radius: 5px;
             width: 131px;
-            right: -50px;
+            right: -100px;
             top: -4px;
         }
 
@@ -239,7 +268,7 @@
             border-left: solid 15px transparent;
             border-right: solid 15px transparent;
             position: relative;
-            left: 35%;
+            left: 115%;
         }
 
         [type="radio"]:checked,
@@ -321,6 +350,119 @@
             margin-top: 6px;
         }
 
+        @media (max-width: 768px) {
+
+            #myDIV {
+                left: 8px;
+                width: 20px;
+            }
+
+            .triangle {
+                margin: 0 15px;
+
+            }
+
+            .triangle-4 {
+                width: 0px;
+                height: 0px;
+                bottom: 6px;
+                border-bottom: solid 15px #FFFFFF;
+                border-left: solid 15px transparent;
+                border-right: solid 15px transparent;
+                position: relative;
+                left: -45%;
+            }
+
+            .button-up,
+            .button-down {
+                position: absolute;
+                padding: 5px;
+                margin: 30px auto;
+                background: rgba(255, 255, 255, 0.8);
+                height: 35px !important;
+                width: 35px !important;
+                border-radius: 50%;
+                transition: all 0.2s linear;
+                top: 21% !important;
+            }
+
+            .button-up::after,
+            .button-down::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                z-index: 11;
+                display: block;
+                width: 11px !important;
+                height: 11px !important;
+                border-top: 2px solid #FD2E35;
+                border-left: 2px solid #FD2E35;
+            }
+
+            .button-up::after {
+                top: 12px !important;
+                transform: rotate(135deg);
+                left: 11px !important;
+            }
+
+            .button-down::after {
+                top: 12px !important;
+                transform: rotate(-45deg);
+                left: 14px !important;
+            }
+
+            .vitanam-slider h4 {
+                line-height: 38px;
+                font-size: 22px !important;
+            }
+
+            .langue-container {
+                background-color: #FFFFFF;
+                position: relative;
+                border-radius: 5px;
+                margin-top: -15px;
+                padding: 10px;
+                width: 104px;
+                left: -65px;
+            }
+
+            .langue-container form label {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            [type="radio"]:not(:checked)+label:after {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: black;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 16px;
+                height: 16px;
+                border: 2px solid #221429;
+                border-radius: 100%;
+                background: #fff;
+            }
+
+            .secut {
+                right: 100px !important;
+                /* top:50px !important; */
+            }
+        }
+
         .secut {
             position: fixed;
         }
@@ -333,6 +475,88 @@
         .menu-open .lang-mob {
             opacity: 0 !important;
             pointer-events: none;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+            .secut {
+                position: fixed;
+            }
+
+            #myDIV {
+                left: -19px;
+                width: 150px !important;
+            }
+
+            .triangle {
+                margin: 0 15px;
+            }
+
+            .triangle-4 {
+                width: 0px;
+                height: 0px;
+                bottom: 0px;
+                border-bottom: solid 15px #FFFFFF;
+                border-left: solid 15px transparent;
+                border-right: solid 15px transparent;
+                position: relative;
+                left: 80%;
+            }
+
+            .langue-container {
+                right: -50px;
+            }
+
+            [type="radio"]:checked+label:after {
+                top: 5px !important;
+                left: 5px !important;
+            }
+        }
+
+        @media only screen and (min-width: 1920px) {
+            .secut {
+                position: fixed;
+            }
+
+            #myDIV {
+                left: -19px;
+                width: 150px !important;
+            }
+
+            .triangle {
+                margin: 0 15px;
+            }
+
+            .triangle-4 {
+                left: 115% !important;
+            }
+
+            .langue-container {
+                right: -100px !important;
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .secut {
+                position: fixed;
+            }
+
+            #myDIV {
+                left: -19px;
+                width: 150px !important;
+            }
+
+            .triangle {
+                margin: 0 15px;
+            }
+
+            .triangle-4 {
+                left: 95%;
+            }
+
+            .langue-container {
+                right: -70px;
+            }
         }
 
         /* global button */
@@ -399,10 +623,12 @@
             background: #F7F5F3;
         }
 
-        .global-drop #myDIV {
+        .global-drop #myDIV1 {
             width: inherit;
             background-color: unset;
-            left: inherit;
+            left: 0;
+            position: absolute;
+            top: 30px;
         }
 
         .global-drop .secut {
@@ -422,11 +648,91 @@
             /* margin-left: 1rem; */
         }
 
-        .header-flexs {
-            justify-content: center;
+        @media (min-width:320px) and (max-width:430px) {
+            .lang-mob {
+                transform: none
+            }
+
+            #myDIV {
+                left: -19px;
+                width: 150px !important;
+            }
+
+            .langue-container {
+                left: -10px;
+            }
+
+            .triangle-4 {
+                left: 32%;
+            }
+
+            [type="radio"]:checked+label:after {
+                top: 4px !important;
+                left: 4px !important;
+            }
         }
 
-        /* dropdown */
+        /* @media (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(0px,-100%)!important;
+    }
+} */
+
+        /* @media (min-width:661px) and (max-width: 767px){
+    .lp-hamberg {
+        transform: translate(360px,-100%)!important;
+    }
+}
+
+
+@media (min-width:360px) and (max-width:374px)
+{
+    .lp-hamberg {
+        transform: translate(140px,-40%)!important;
+    }
+}
+@media (min-width:375px) and (max-width:420px)
+{
+    .lp-hamberg {
+        transform: translate(150px,-40%)!important;
+    }
+}
+@media (min-width:421px) and (max-width:430px)
+{
+    .lp-hamberg {
+        transform: translate(180px,-40%)!important;
+    }
+}
+@media (min-width:431px) and (max-width:490px)
+{
+    .lp-hamberg {
+        transform: translate(195px,-40%)!important;
+    }
+}
+@media (min-width:491px) and (max-width:535px)
+{
+    .lp-hamberg {
+        transform: translate(205px,-40%)!important;
+    }
+}
+@media (min-width:536px) and (max-width:600px)
+{
+    .lp-hamberg {
+        transform: translate(220px,-40%)!important;
+    }
+}
+@media (min-width:601px) and (max-width:767px)
+{
+    .lp-hamberg {
+        transform: translate(240px,-40%)!important;
+    }
+}
+@media (min-width:767px) and (max-width:1024px)
+{
+    .lp-hamberg {
+        transform: translate(50px,-40%)!important;
+    }
+} */
         @media (min-width: 768px) {
 
             header .default,
@@ -434,246 +740,7 @@
                 margin-right: -6px !important;
             }
 
-            .fnt-100 {
-                font-size: 70px;
-                line-height: 75px;
-                letter-spacing: -2px;
-            }
 
-            .lang-mob {
-                transform: translate(75px, 10px);
-            }
-
-        }
-
-        @media (min-width: 992px) {
-            .fnt-100 {
-                font-size: 80px;
-                line-height: 85px;
-                letter-spacing: -4px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .fnt-100 {
-                font-size: 100px;
-                line-height: 104px;
-                letter-spacing: -4px;
-            }
-        }
-
-        @media (max-width: 420px) {
-
-            [type="radio"]:checked+label:after,
-            [type="radio"]:not(:checked)+label:after {
-                top: 4px !important;
-                left: 4px !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #myDIV {
-                left: 8px;
-                width: 100px;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                width: 0px;
-                height: 0px;
-                bottom: 8px;
-                border-bottom: solid 15px #FFFFFF;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                position: relative;
-                left: 0%;
-            }
-
-            .button-up,
-            .button-down {
-                position: absolute;
-                padding: 5px;
-                margin: 30px auto;
-                background: rgba(255, 255, 255, 0.8);
-                height: 35px !important;
-                width: 35px !important;
-                border-radius: 50%;
-                transition: all 0.2s linear;
-                top: 21% !important;
-            }
-
-            .button-up::after,
-            .button-down::after {
-                content: "";
-                position: absolute;
-                left: 0px;
-                z-index: 11;
-                display: block;
-                width: 11px !important;
-                height: 11px !important;
-                border-top: 2px solid #FD2E35;
-                border-left: 2px solid #FD2E35;
-            }
-
-            .button-up::after {
-                top: 12px !important;
-                transform: rotate(135deg);
-                left: 11px !important;
-            }
-
-            .button-down::after {
-                top: 12px !important;
-                transform: rotate(-45deg);
-                left: 14px !important;
-            }
-
-            .vitanam-slider h4 {
-                line-height: 38px;
-                font-size: 22px !important;
-            }
-
-            .langue-container {
-                background-color: #FFFFFF;
-                position: relative;
-                border-radius: 5px;
-                margin-top: -15px;
-                padding: 10px;
-                width: 104px;
-                left: -50px;
-            }
-
-            .langue-container form label {
-                font-size: 12px;
-                line-height: 16px;
-            }
-
-            [type="radio"]:checked+label:after,
-            [type="radio"]:not(:checked)+label:after {
-                content: '';
-                width: 6px;
-                height: 6px;
-                background: black;
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                border-radius: 100%;
-                -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease;
-            }
-
-            [type="radio"]:checked+label:before,
-            [type="radio"]:not(:checked)+label:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 16px;
-                height: 16px;
-                border: 2px solid #221429;
-                border-radius: 100%;
-                background: #fff;
-            }
-
-            .secut-res label {
-                color: #221429 !important;
-            }
-
-            .sec-last1 {
-                padding-bottom: 25px !important;
-            }
-
-
-        }
-
-
-
-        @media only screen and (min-width: 1024px) {
-            .secut {
-                position: fixed;
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                width: 0px;
-                height: 0px;
-                bottom: 0px;
-                border-bottom: solid 15px #FFFFFF;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                position: relative;
-                left: 67%;
-            }
-        }
-
-        @media (min-width:661px) and (max-width: 767px) {
-            .lp-hamberg {
-                transform: translate(360px, -100%) !important;
-            }
-        }
-
-        @media (min-width:320px) and (max-width:359px) {
-            .lp-hamberg {
-                transform: translate(140px, -40%) !important;
-            }
-        }
-
-        @media (min-width:360px) and (max-width:374px) {
-            .lp-hamberg {
-                transform: translate(140px, -40%) !important;
-            }
-        }
-
-        @media (min-width:375px) and (max-width:420px) {
-            .lp-hamberg {
-                transform: translate(150px, -40%) !important;
-            }
-        }
-
-        @media (min-width:421px) and (max-width:430px) {
-            .lp-hamberg {
-                transform: translate(180px, -40%) !important;
-            }
-        }
-
-        @media (min-width:431px) and (max-width:490px) {
-            .lp-hamberg {
-                transform: translate(195px, -40%) !important;
-            }
-        }
-
-        @media (min-width:491px) and (max-width:535px) {
-            .lp-hamberg {
-                transform: translate(205px, -40%) !important;
-            }
-        }
-
-        @media (min-width:536px) and (max-width:600px) {
-            .lp-hamberg {
-                transform: translate(220px, -40%) !important;
-            }
-        }
-
-        @media (min-width:601px) and (max-width:767px) {
-            .lp-hamberg {
-                transform: translate(240px, -40%) !important;
-            }
-        }
-
-        @media (min-width:767px) and (max-width:1024px) {
-            .lp-hamberg {
-                transform: translate(50px, -40%) !important;
-            }
         }
 
         @media (min-width:320px) and (max-width: 768px) {
@@ -682,15 +749,14 @@
                 top: 30px !important;
             }
 
-            .header-flexs {
-                justify-content: initial !important;
+            .secut {
+                display: block;
             }
         }
 
-
-        @media (min-width: 375px) and (max-width: 420px) {
-            .lp-hamberg {
-                transform: translate(270px, -45%) !important;
+        @media (max-width: 767px) {
+            .header-container {
+                justify-content: space-between !important;
             }
         }
     </style>
@@ -783,9 +849,9 @@ $header = new WP_Query($args);
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-11 mx-auto d-flex header-flexs">
-                <div class="row col-md-1">
-                    <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+            <div class="col-12 col-lg-11 mx-auto d-flex header-container">
+                <div class="row d-block col-md-2">
+                    <div class="col-8 offset-sm-0 offset-lg-6 col-md-12 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
                     <!-- global dropdown -->
                     <div class="row d-block d-md-none">
                         <div class="col-12 col-lg-11 mx-auto">
@@ -793,12 +859,12 @@ $header = new WP_Query($args);
                                 <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
                                 <div class="global-drop col-4">
                                     <div class="secut col-12 scroll-hide" id="drop-menu">
-                                        <div class="dropdown-ver d-flex" onclick="myFunction()">
+                                        <div class="dropdown-ver d-flex" onclick="myFunction1()">
                                             <a href="javascript:void(0)">
                                                 <p class="">Global</p>
                                             </a>
                                         </div>
-                                        <div class="dropdown-content" id="myDIV">
+                                        <div class="dropdown-content" id="myDIV1">
                                             <div class="langue-container">
                                                 <ul>
                                                     <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
@@ -921,7 +987,7 @@ $header = new WP_Query($args);
                         </div>
 
                         <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-                            <div class="secut col-1 scroll-hide language-sec" id="drop-menu">
+                            <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
                                 <div class="dropdown-ver d-flex">
                                     <a href="javascript:void(0)" onclick="myFunction()">
                                         <p class="" style="line-height:24px;">
@@ -931,30 +997,31 @@ $header = new WP_Query($args);
                                             <?php } else { ?>
                                                 JP
                                             <?php } ?>
-
                                         </p>
                                     </a>
                                 </div>
                                 <div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
-                                    <div class="triangle triangle-4"></div>
-                                    <div class="langue-container">
-                                        <form action="#">
-                                            <p style="margin-bottom: 0;">
-                                                <input type="radio" id="test1" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan/" <?php $current_slug = add_query_arg(array(), $wp->request);
+                                    <div class="">
+                                        <div class="triangle triangle-4"></div>
+                                        <div class="langue-container">
+                                            <form action="#">
+                                                <p style="margin-bottom: 0;">
+                                                    <input type="radio" id="test1" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan-jp/" <?php $current_slug = add_query_arg(array(), $wp->request);
+                                                                                                                                                                            if ($current_slug == 'ui-ux-design-studio-in-japan-jp') {
+                                                                                                                                                                                echo "checked";
+                                                                                                                                                                            } ?>>
+                                                    <label for="test1">Japanese</label>
+                                                </p>
+                                                <div class="hr-1"></div>
+                                                <p style="margin-bottom: 0;">
+                                                    <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan/" <?php $current_slug = add_query_arg(array(), $wp->request);
                                                                                                                                                                     if ($current_slug == 'ui-ux-design-studio-in-japan') {
                                                                                                                                                                         echo "checked";
                                                                                                                                                                     } ?>>
-                                                <label for="test1">English</label>
-                                            </p>
-                                            <div class="hr-1"></div>
-                                            <p style="margin-bottom: 0;">
-                                                <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-studio-in-japan-jp/" <?php $current_slug = add_query_arg(array(), $wp->request);
-                                                                                                                                                                        if ($current_slug == 'ui-ux-design-studio-in-japan-jp') {
-                                                                                                                                                                            echo "checked";
-                                                                                                                                                                        } ?>>
-                                                <label for="test2">Japanese</label>
-                                            </p>
-                                        </form>
+                                                    <label for="test2">English</label>
+                                                </p>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
