@@ -350,11 +350,11 @@ padding-right: 30px;
     }
 
     .final-title-bg02.final-title-item.final-title-item-right {
-      right: 16% !important;
+      right: 0% !important;
     }
 
     .final-title-bg04.final-title-item.final-title-item-right {
-      right: 19% !important;
+      right: 5% !important;
     }
   }
 
@@ -462,7 +462,7 @@ padding-right: 30px;
 
     .final-ui-banner h6 {
       font-size: 25px;
-      margin-top: -35px;
+      margin-top: -95px;
     }
 
     .final-ui-bg {
