@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Industries Ecommerce
+ * Template Name: E-commerce
  * Template post type: industries
  */
 
