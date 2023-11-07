@@ -170,9 +170,12 @@ get_header();
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
-              <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default"><a href="<?php echo site_url(); ?>/industries/">Industries</a>/<?php the_field('category_name'); ?></span>
-                <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-10 px-0"><?php the_field('heading'); ?></h1>
-                <p class="fnt-24 col-md-10 col-lg-8 px-0"><?php the_field('short_title_description'); ?></p>
+              <div class="page-head"><span class="d-block fnt-14 text-capitalize mb-2 clr-default">
+                  <!-- <a href="<?php echo site_url(); ?>/industries/">Industries</a>/ -->
+                  <?php the_field('category_name'); ?>
+                </span>
+                <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-9 px-0"><?php the_field('heading'); ?></h1>
+                <p class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_field('short_title_description'); ?></p>
               </div>
             </div>
           </div>
@@ -207,7 +210,7 @@ get_header();
         <div class="col-12 col-md-10 col-lg-8 mx-auto">
           <div class="mb-4 pb-md-2 col-md-11 px-0">
             <?php if (have_rows('our_expertise')) : while (have_rows('our_expertise')) : the_row(); ?>
-                <h3 class="fnt-50 fnt-800 fnt-clr mb-4 data-scroll">
+                <h3 class="col-md-9 fnt-50 fnt-800 fnt-clr mb-4 data-scroll">
                   <?php the_sub_field('title'); ?></h3>
                 <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
             <?php endwhile;
@@ -257,14 +260,14 @@ get_header();
   <section class="sec-designing pb-0">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-8 mx-auto">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="reveal-project">
             <img class="wpdm-img" src="<?php the_field('designing_image'); ?>" alt="Image">
           </div>
           <div class="row mt-5 mx-auto">
             <div class="mb-4 pb-md-2 col-md-12 d-flex px-0">
               <div class="mb-4 pb-md-2 col-md-4 px-0 text-center">
-                <p>Zudio</p>
+                <p><?php the_field('small_title')?></p>
               </div>
               <div class="mb-4 pb-md-2 col-md-8 px-0">
                 <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
@@ -315,28 +318,34 @@ get_header();
               <p class="fnt-24 fnt-clr col-md-10 col-lg-8 px-0 data-scroll"><?php the_field('story_content') ?></p>
             </div>
             <!-- White papers-->
-            <ul class="px-0 home-artical-list">
-              <?php if (have_rows('story_whitepaper')) : while (have_rows('story_whitepaper')) : the_row(); ?>
-                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_sub_field('whitepaper_url'); ?>">
+            <ul class="px-0 home-artical-list mt-">
+              <?php
+              $args = array(
+                'post_type' => 'whitepapers', // Your post type name
+                'posts_per_page' => 1,
+              );
+              $whitepaper = new WP_Query($args);
+
+              if ($whitepaper->have_posts()) : while ($whitepaper->have_posts()) : $whitepaper->the_post(); ?>
+
+                  <li class="home-artical-list__item data-scroll"> <a class="home-artical" href="<?php the_permalink(); ?>">
                       <div class="row">
                         <div class="col-12 col-md-3 col-lg-5">
                           <div class="revealnone h-100">
-                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_sub_field('image') ?> 500w, 
-                            <?php the_sub_field('image') ?> 343w" sizes="(max-width: 600px) 500px, 343px" src="<?php the_sub_field('image') ?>" alt="Whitepaper Images">
+                            <img class="home-artical-img mb-3 mb-md-0" srcset="<?php the_field('home_page_thumbnail') ?> 500w, <?php the_field('home_page_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
+              343px" src="<?php the_field('home_page_thumbnail') ?>" alt="Blog Images">
                           </div>
                         </div>
                         <div class="col-12 col-md-7">
-                          <div class="px-lg-4">
-                            <span class="fnt-sub-heading d-block fnt-14 text-upper mb-2 clr-default">white paper</span>
-                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_sub_field('title'); ?> </h3>
-                            <p class="col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3 fnt-14"><?php the_sub_field('content') ?></p>
-                            <span class="fnt-clr fnt-12 col-11 col-lg-12 px-0 mb-0">Published on: <?php the_sub_field('published_date') ?></span>
+                          <div class="px-lg-4"><span class="text-uppercase mb-2 d-block fnt-12 fnt-800">white paper</span>
+                            <h3 class="fnt-30 fnt-800 mb-2 pb-lg-1"><?php the_title(); ?> </h3>
+                            <p class="clr-gray col-lg-11 mt-1 mt-md-0 mb-1 mb-md-3"><?php echo wp_trim_words(get_field('landing_content'), 35); ?></p><span class="d-block fnt-12">Posted on <?php the_field('date') ?></span>
                           </div>
                         </div>
                       </div>
-                    </a>
-                  </li>
-              <?php endwhile;
+                    </a></li>
+              <?php wp_reset_postdata();
+                endwhile;
               endif; ?>
             </ul>
             <a class="clr-second fnt-14 hvr-line data-scroll" href="<?php echo site_url() ?>/whitepapers/">View all Whitepapers</a>
@@ -358,7 +367,7 @@ get_header();
                         <div class="col-12 col-md-3 col-lg-5">
                           <div class="revealnone h-100">
                             <img class="home-artical-img mb-3 mb-md-0" srcset="<?php echo the_post_thumbnail_url('post_thumbnail') ?> 500w, <?php echo the_post_thumbnail_url('post_thumbnail') ?> 343w" sizes="(max-width: 600px) 500px,
-            343px" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Blog Images">
+              343px" src="<?php echo the_post_thumbnail_url('post_thumbnail') ?>" alt="Blog Images">
                           </div>
                         </div>
                         <div class="col-12 col-md-7">
