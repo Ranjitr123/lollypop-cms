@@ -64,6 +64,7 @@ $lollypop->addAddress('renil@terralogic.com', 'Renil');
 $lollypop->addAddress('rama@terralogic.com', 'Rama');
 $lollypop->addAddress('arvind@lollypop.design', 'Arvind');
 $lollypop->addAddress('venkat@terralogic.com', 'Venkat');
+$lollypop->addAddress('tony.nguyen@terralogic.com', 'Tony Nguyen');
 //$lollypop->addAddress('ravikiran.pellakuru@terralogic.com','For Test');
 //$lollypop->addAddress('hello@lollypop.design','For Test');
 //$lollypop->addAddress('satyagvns@shainfotech.com','For Test');
