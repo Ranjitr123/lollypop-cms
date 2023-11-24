@@ -244,7 +244,7 @@ get_header();
           </div>
 
           <div class="px-0 client-logo row">
-            <?php if (have_rows('our_client_logo_list')) : while (have_rows('our_client_logo_list')) : the_row(); ?>
+            <?php if (have_rows('client_logo_list')) : while (have_rows('client_logo_list')) : the_row(); ?>
                 <div class="client-logo__item"><img class="img-fluid" src="<?php the_sub_field('client_logo'); ?>" alt="logo"></div>
             <?php endwhile;
             endif; ?>
@@ -299,7 +299,6 @@ get_header();
             <?php endwhile;
             endif; ?>
           </div>
-
           <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Get in Touch</a>
         </div>
       </div>
