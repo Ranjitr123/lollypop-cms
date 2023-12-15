@@ -67,7 +67,7 @@ get_header();
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 45px;
   }
 
   .personas-item {
@@ -78,7 +78,7 @@ get_header();
 
   .personas-item .personas-content {
     position: absolute;
-    left: 24px;
+    left: 12px;
     bottom: 0;
     z-index: 1;
     color: #fff;
@@ -94,7 +94,7 @@ get_header();
   .personas-item .personas-content h5 {
     font-size: 14px;
     color: rgba(222, 158, 121, 1);
-    margin-bottom: 36px;
+    margin-bottom: 28px;
   }
 
   .personas-item .personas-content p {
@@ -149,6 +149,10 @@ get_header();
   @media only screen and (max-width: 1320px) {
     .iot-title {
       width: 100%;
+    }
+
+    .personas {
+      gap: 35px;
     }
 
     .personas img {
@@ -215,6 +219,9 @@ get_header();
       margin-bottom: 0.5rem !important;
     }
 
+    .img-main {
+      width: 100%;
+    }
 
     .flex-mobile {
       display: flex;
@@ -230,17 +237,31 @@ get_header();
       padding-top: 29px;
       padding-bottom: 29px;
     }
+
+    .personas-item .personas-content {
+      left: 24px;
+      right: 24px;
+      bottom: 21px;
+    }
+
+    .personas-item .personas-content h3 {
+      font-size: 18px;
+    }
+
+    .personas-item .personas-content h5 {
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+
+    .personas-item .personas-content p {
+      font-size: 16px;
+    }
   }
 
   @media only screen and (max-width: 428px) {
     .personas {
       display: flex;
       flex-direction: column;
-    }
-
-    .img-main {
-      width: 100%;
-      height: 65vh;
     }
   }
 </style>
@@ -335,14 +356,20 @@ get_header();
   <!-- Four Personas -->
   <section class="sec-bnr">
     <div class="container">
+      <!-- title -->
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-11 mx-auto">
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
           <div class="col-12 col-md-11 offset-md-1">
             <div class="mb-r-80 col-md-12 col-lg-12 px-0">
               <h1 class="fnt-40 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 iot-title"><?php the_field('personas_title'); ?></h1>
             </div>
           </div>
-          <div class="project-step__item row">
+        </div>
+      </div>
+      <!-- 4 image -->
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-10">
+          <div class="col-12 col-md-11 offset-md-1">
             <div class="personas">
               <?php if (have_rows('personas_images')) : while (have_rows('personas_images')) : the_row(); ?>
                   <div class="personas-item col-md-3 col-12">
@@ -366,7 +393,11 @@ get_header();
               endif; ?>
             </div>
           </div>
-          <!-- four personas is here -->
+        </div>
+      </div>
+
+      <div class="row pt-56">
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
           <div class="project-step">
             <?php if (have_rows('shukria_brief_descriptions')) : while (have_rows('shukria_brief_descriptions')) : the_row(); ?>
                 <div class="project-step__item row">
@@ -383,14 +414,17 @@ get_header();
                 </div>
             <?php endwhile;
             endif; ?>
-            <div class="project-step__item row">
-              <img class="img-fluid" src="<?php the_field('personas_image') ?>" alt="logo">
-            </div>
           </div>
 
         </div>
       </div>
+      <div class="pt-80 text-center">
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+          <img class="img-fluid" src="<?php the_field('personas_image') ?>" alt="logo">
+        </div>
+      </div>
     </div>
+
     <div class="container">
       <?php if (have_rows('m_web_image')) : while (have_rows('m_web_image')) : the_row();
           $webImage = get_sub_field('m_project_gallery');
@@ -401,7 +435,7 @@ get_header();
       endif; ?>
     </div>
   </section>
-  
+
   <!-- TYPOGRAPHY -->
   <section class="ui-direction">
     <div class="container">
@@ -428,7 +462,9 @@ get_header();
           </div>
         </div>
         <div class="pt-80 text-center">
-          <img class="img-fluid" src="<?php the_field('typography_image') ?>" alt="logo">
+          <div class="col-12 col-md-10 col-lg-10 mx-auto">
+            <img class="img-fluid" src="<?php the_field('typography_image') ?>" alt="logo">
+          </div>
         </div>
       </div>
     </div>
@@ -461,7 +497,9 @@ get_header();
           </div>
         </div>
         <div class="pt-56 text-center">
-          <img class="img-fluid" src="<?php the_field('colors_image') ?>" alt="logo">
+          <div class="col-12 col-md-10 col-lg-10 mx-auto">
+            <img class="img-fluid" src="<?php the_field('colors_image') ?>" alt="logo">
+          </div>
         </div>
       </div>
     </div>
@@ -494,7 +532,9 @@ get_header();
         </div>
         <?php if (have_rows('ui_images')) : while (have_rows('ui_images')) : the_row(); ?>
             <div class="pt-80 text-center">
-              <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+              <div class="col-12 col-md-10 col-lg-10 mx-auto">
+                <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+              </div>
             </div>
         <?php endwhile;
         endif; ?>
