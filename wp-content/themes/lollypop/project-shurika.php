@@ -11,7 +11,6 @@ get_header();
 <style>
   .ui-direction {
     padding-top: 96px;
-    padding-bottom: 96px;
   }
 
   .pt-56 {
@@ -63,9 +62,91 @@ get_header();
     list-style: outside;
   }
 
+  .personas {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
+  .personas-item {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+  }
 
-  @media only screen and (max-width: 1280px) {
+  .personas-item .personas-content {
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .personas-item .personas-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    width: 60%;
+  }
+
+  .personas-item .personas-content h5 {
+    font-size: 14px;
+    color: rgba(222, 158, 121, 1);
+    margin-bottom: 36px;
+  }
+
+  .personas-item .personas-content p {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .img-main {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .img-bg-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .img-bg-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 24px 24px;
+
+  }
+
+  .fnt-red {
+    color: #FD2E35;
+  }
+
+  @media only screen and (max-width: 1320px) {
     .iot-title {
       width: 100%;
     }
@@ -73,8 +154,28 @@ get_header();
     .personas img {
       height: 90% !important;
     }
+
+    .personas-item .personas-content h3 {
+      font-size: 14px;
+    }
+
+    .personas-item .personas-content h5 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .personas-item .personas-content p {
+      font-size: 12px;
+    }
   }
 
+
+
+  @media (min-width: 992px) {
+    .sec-bnr {
+      padding-top: 80px !important;
+    }
+  }
 
   @media only screen and (max-width: 884px) and (min-width: 768px) {
     .iot-title {
@@ -131,77 +232,6 @@ get_header();
     }
   }
 
-
-
-
-
-  .personas {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  .personas-item {
-    position: relative;
-    border-radius: 24px;
-    overflow: hidden;
-  }
-
-  .personas-item .personas-content {
-    position: absolute;
-    left: 24px;
-    bottom: 0;
-    z-index: 1;
-    color: #fff;
-  }
-
-  .personas-item .personas-content h3 {
-    font-size: 22px;
-    font-weight: 700;
-  }
-
-  .img-main {
-    width: 100%;
-    height: auto;
-  }
-
-  .img-main img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .img-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .img-bg-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .img-bg-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .img-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 0 24px 24px;
-
-  }
-
   @media only screen and (max-width: 428px) {
     .personas {
       display: flex;
@@ -223,7 +253,7 @@ get_header();
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
-              <div class="mb-r-80 col-md-12 col-lg-12 px-0">
+              <div class="mb-r-80 col-md-10 col-lg-10 px-0">
                 <span class="d-block fnt-14 text-capitalize mb-2 clr-default">
                   <?php echo the_field('shukria_company_name'); ?>
                 </span>
@@ -246,8 +276,7 @@ get_header();
             ?>
               <img class="wpdm-img" src="<?php echo the_post_thumbnail_url('post_thumbnail')
                                           ?>" alt="Image">
-            <?php  }
-            ?>
+            <?php  } ?>
 
             <?php $bannerVideos = get_field('shukria_banner_video_link') ?>
             <?php if ($bannerVideos != '') { ?>
@@ -269,7 +298,7 @@ get_header();
   <section class="p-r-80 pb-0 pare-define">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
             <div class="project-step">
               <?php if (have_rows('shukria_brief_descriptions')) : while (have_rows('shukria_brief_descriptions')) : the_row(); ?>
@@ -307,7 +336,7 @@ get_header();
   <section class="sec-bnr">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="col-12 col-md-11 offset-md-1">
             <div class="mb-r-80 col-md-12 col-lg-12 px-0">
               <h1 class="fnt-40 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 iot-title"><?php the_field('personas_title'); ?></h1>
@@ -372,13 +401,12 @@ get_header();
       endif; ?>
     </div>
   </section>
-
+  
   <!-- TYPOGRAPHY -->
   <section class="ui-direction">
     <div class="container">
-
       <div class="row pt-56">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
             <div class="project-step">
               <?php if (have_rows('typography_brief_descriptions')) : while (have_rows('typography_brief_descriptions')) : the_row(); ?>
@@ -399,7 +427,7 @@ get_header();
             </div>
           </div>
         </div>
-        <div class="pt-56 text-center">
+        <div class="pt-80 text-center">
           <img class="img-fluid" src="<?php the_field('typography_image') ?>" alt="logo">
         </div>
       </div>
@@ -411,7 +439,7 @@ get_header();
     <div class="container">
 
       <div class="row pt-56">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
             <div class="project-step">
               <?php if (have_rows('colors_brief_descriptions')) : while (have_rows('colors_brief_descriptions')) : the_row(); ?>
@@ -443,7 +471,7 @@ get_header();
   <section class="ui-direction">
     <div class="container">
       <div class="row pt-56">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
             <div class="project-step">
               <?php if (have_rows('ui_brief_descriptions')) : while (have_rows('ui_brief_descriptions')) : the_row(); ?>
@@ -465,7 +493,7 @@ get_header();
           </div>
         </div>
         <?php if (have_rows('ui_images')) : while (have_rows('ui_images')) : the_row(); ?>
-            <div class="pt-56 text-center">
+            <div class="pt-80 text-center">
               <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
             </div>
         <?php endwhile;
@@ -476,7 +504,7 @@ get_header();
 
   <!-- Conclusion -->
   <?php if (get_field('conclusion') != '') {  ?>
-    <section class="conclusion-pad sec-pt">
+    <section class="conclusion-pad sec-pt pt-80">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-11 col-lg-12 mt-5">
