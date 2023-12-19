@@ -398,7 +398,7 @@ get_header();
       <div class="row pt-56">
         <div class="col-12 col-md-10 col-lg-10 mx-auto">
           <div class="project-step">
-            <?php if (have_rows('shukria_brief_descriptions')) : while (have_rows('shukria_brief_descriptions')) : the_row(); ?>
+            <?php if (have_rows('personas_brief_descriptions')) : while (have_rows('personas_brief_descriptions')) : the_row(); ?>
                 <div class="project-step__item row">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more">
