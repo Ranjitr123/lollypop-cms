@@ -241,7 +241,7 @@ get_header();
     .personas-item .personas-content {
       left: 24px;
       right: 24px;
-      bottom: 21px;
+      bottom: 35px;
     }
 
     .personas-item .personas-content h3 {
