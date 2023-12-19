@@ -383,10 +383,9 @@ get_header();
                       <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/shukria/img-header.png" alt="logo">
                     </div>
                     <div class="personas-content">
-                      <h3>Radhika Poddar &
-                        Colleagues</h3>
-                      <h5>20 Years | Kolkata</h5>
-                      <p>“I want to view a collection of products that are priced similarly, enabling a comparison of options.”</p>
+                      <h3><?php the_sub_field('heading_1') ?></h3>
+                      <h5><?php the_sub_field('heading_2') ?></h5>
+                      <p><?php the_sub_field('description') ?></p>
                     </div>
                   </div>
               <?php endwhile;
