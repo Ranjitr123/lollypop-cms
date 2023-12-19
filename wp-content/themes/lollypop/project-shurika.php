@@ -173,14 +173,6 @@ get_header();
     }
   }
 
-
-
-  @media (min-width: 992px) {
-    .sec-bnr {
-      padding-top: 80px !important;
-    }
-  }
-
   @media only screen and (max-width: 884px) and (min-width: 768px) {
     .iot-title {
       width: 100%;
@@ -274,15 +266,15 @@ get_header();
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
-              <div class="mb-r-80 col-md-10 col-lg-10 px-0">
+              <div class="mb-r-80 col-md-12 col-lg-12 px-0"> 
                 <span class="d-block fnt-14 text-capitalize mb-2 clr-default">
                   <?php echo the_field('shukria_company_name'); ?>
                 </span>
                 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 iot-title"><?php the_title(); ?></h1>
                 <p class="fnt-24"><?php echo the_field('short_description'); ?></p>
                 <div class="project-type">
-                  <?php if (have_rows('shukria_tags')) : while (have_rows('shukria_tags')) : the_row(); ?>
-                      <span class="fnt-14 clr-black354"><?php echo the_sub_field('tag'); ?></span>
+                  <?php if (have_rows('iot_tags')) : while (have_rows('iot_tags')) : the_row(); ?>
+                      <span class="fnt-14 clr-black354"><?php echo the_sub_field('tag_list'); ?></span>
                   <?php endwhile;
                   endif; ?>
                 </div>
