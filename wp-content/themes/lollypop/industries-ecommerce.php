@@ -244,7 +244,7 @@ get_header();
           </div>
 
           <div class="px-0 client-logo row">
-            <?php if (have_rows('our_client_logo_list')) : while (have_rows('our_client_logo_list')) : the_row(); ?>
+            <?php if (have_rows('client_logo_list')) : while (have_rows('client_logo_list')) : the_row(); ?>
                 <div class="client-logo__item"><img class="img-fluid" src="<?php the_sub_field('client_logo'); ?>" alt="logo"></div>
             <?php endwhile;
             endif; ?>
@@ -271,7 +271,7 @@ get_header();
               <div class="mb-4 pb-md-2 col-md-8 px-0">
                 <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
                 <p class="fnt-24 fnt-clr  col-md-10 col-lg-11 px-0 data-scroll"><?php the_field('designing_content') ?></p>
-                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="http://localhost/lollypop-cms/project-enquiry/" style="opacity: 1; transform: translateY(0px);">Let’s Talk</a>
+                <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_field('designing_cta_link') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('designing_cta_text') ?></a>
               </div>
             </div>
           </div>
@@ -299,7 +299,6 @@ get_header();
             <?php endwhile;
             endif; ?>
           </div>
-
           <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php echo site_url(); ?>/project-enquiry/">Get in Touch</a>
         </div>
       </div>
