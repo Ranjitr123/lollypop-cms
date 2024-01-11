@@ -61,7 +61,7 @@ a.fnt-30.fnt-800.link-insta {
             <div class="col-12 col-md-4 mb-4 mb-md-0 order-2 order-md-1 text-center text-md-left"><a class="clr-second d-inline-block fnt-24 lp-link--red fnt-800 mb-4 mb-md-2 col-8 col-lg-6 px-0" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lollypop_logo1.svg" style="width:100%" alt="Image"></a>
               <p class="fnt-14 fnt-400 clr-primary mb-0 pb-1 mb-md-3 mb-lg-4 pb-lg-0 px-0 mt-2">A&nbsp;<a href="https://www.terralogic.com/" class="fnt-800 hvr-link fnt-16 d-inline-block">Terralogic</a>&nbsp;company crafting meaningful experiences through Research, Design and Development.</p>
               <ul class="mt-5 mt-md-0 footer-logo-links fnt-400 fnt-14 d-flex justify-content-center justify-content-md-start flex-wrap px-0 mb-0">
-                <li class="footer-logo-links__item col-12 px-0"><div class="fnt-12">© 2022 Lollypop - A Terralogic     company</div></li>
+                <li class="footer-logo-links__item col-12 px-0"><div class="fnt-12">© 2024 Lollypop - A Terralogic     company</div></li>
                  <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/frequently-ask-questions/">FAQs</a></li>
                 <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a></li>
                 <li class="footer-logo-links__item"> <a class="fnt-12" href="<?php echo site_url(); ?>/terms-of-use/">Terms of Use</a></li>
