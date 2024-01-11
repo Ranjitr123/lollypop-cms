@@ -273,8 +273,8 @@ get_header();
                 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 iot-title"><?php the_title(); ?></h1>
                 <p class="fnt-24"><?php echo the_field('short_description'); ?></p>
                 <div class="project-type">
-                  <?php if (have_rows('iot_tags')) : while (have_rows('iot_tags')) : the_row(); ?>
-                      <span class="fnt-14 clr-black354"><?php echo the_sub_field('tag_list'); ?></span>
+                  <?php if (have_rows('shukria_tags')) : while (have_rows('shukria_tags')) : the_row(); ?>
+                      <span class="fnt-14 clr-black354"><?php echo the_sub_field('tag'); ?></span>
                   <?php endwhile;
                   endif; ?>
                 </div>
