@@ -40,6 +40,10 @@ a.fnt-30.fnt-800.link-insta {
 	a.fnt-30 {
 		font-size: 16px;
 	}
+	.ft-social-links li:last-child {
+		display: flex;
+		justify-content: center;
+	}
 }
 @media (min-device-width:320px) and (max-device-width:766px){
 a.fnt-30.fnt-800.link-insta {
