@@ -13,6 +13,7 @@ get_header();
   .pb-54 {
     padding-bottom: 54px;
   }
+
   .project-step__item {
     margin-bottom: 56px;
   }
@@ -71,9 +72,10 @@ get_header();
   }
 
   /* section Research and Insights */
-  .sec-research-insight{
+  .sec-research-insight {
     margin-top: 100px;
   }
+
   .bg-black {
     background: #1B1B1B;
     border-radius: 48px;
@@ -82,12 +84,17 @@ get_header();
 
   .research-title {
     color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
     padding-bottom: 54px;
+
   }
 
   .research-heading {
     color: #FFF;
     padding-bottom: 36px;
+    font-weight: 700;
+    font-size: 24px;
   }
 
   .content-title {
@@ -108,7 +115,7 @@ get_header();
     height: 207px;
     width: 207px;
     margin-bottom: 20px;
-    align-self: center;
+    align-self: self-end;
   }
 
   .right-item>p {
@@ -116,6 +123,66 @@ get_header();
     font-size: 13.77px;
   }
 
+  /* PERSONAS */
+  .personas-title {
+    color: #FD2E35;
+    font-size: 18px;
+    font-weight: 700px;
+    word-spacing: 10%;
+  }
+
+  .personas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .img-main>img {
+    border-radius: 32px;
+  }
+
+  .personas-1,
+  .personas-2,
+  .personas-3 {
+    width: 336px;
+    height: auto;
+    position: relative;
+    border-radius: 41px;
+  }
+
+  .img-quotes {
+    position: absolute;
+    top: -30px;
+  }
+
+  .personas-content {
+    padding: 0 24px;
+  }
+
+  .fnt-white {
+    color: #FFF;
+  }
+
+  .personas-content>h5 {
+    size: 20px;
+    font-weight: 800;
+  }
+
+  .personas-content>p {
+    size: 18px;
+    font-weight: 400;
+  }
+
+  .personas-1 {
+    background-color: #2A444D;
+  }
+
+  .personas-2 {
+    background-color: #957D5F;
+  }
+  .personas-3 {
+    background-color: #84A580;
+  }
   @media only screen and (max-width: 1280px) {
     .iot-title {
       width: 100%;
@@ -254,7 +321,7 @@ get_header();
                     </div>
                     <div class="col-11">
                       <h6 class="content-title"><?php the_sub_field('title') ?><h6>
-                      <p class="content-desc"><?php the_sub_field('description') ?></p>
+                          <p class="content-desc"><?php the_sub_field('description') ?></p>
                     </div>
                   </div>
               <?php endwhile;
@@ -273,12 +340,101 @@ get_header();
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- PERSONAS -->
+  <section class="p-r-80 pb-0 sec-personas">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+          <div class="row text-center mt-5 mb-5">
+            <h3 class="personas-title"><?php the_field('personas_title') ?></h3>
+          </div>
+        </div>
 
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+          <div class="col-4 col-md-4">
+            <div class="personas">
+              <?php if (have_rows('personas_1')) : while (have_rows('personas_1')) : the_row(); ?>
+                  <div class="personas-1 col-md-3 col-12">
+                    <div class="img-quotes">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
+                    </div>
+                    <div class="img-main">
+                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                    </div>
+                    <div class="personas-content">
+                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+
+              <!-- 2 -->
+              <?php if (have_rows('personas_2')) : while (have_rows('personas_2')) : the_row(); ?>
+                  <div class="personas-2 col-md-3 col-12">
+                    <div class="img-quotes">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
+                    </div>
+                    <div class="img-main">
+                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                    </div>
+                    <div class="personas-content">
+                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+
+              <!-- 3 -->
+              <?php if (have_rows('personas_3')) : while (have_rows('personas_3')) : the_row(); ?>
+                  <div class="personas-3 col-md-3 col-12">
+                    <div class="img-quotes">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
+                    </div>
+                    <div class="img-main">
+                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                    </div>
+                    <div class="personas-content">
+                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div>
+            <div class="col-md-10 px-0 mx-auto">
+              <div class="project-step">
+                <?php if (have_rows('iot_brief_descriptions')) : while (have_rows('iot_brief_descriptions')) : the_row(); ?>
+                    <div class="project-step__item row">
+                      <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
+                      <div class="col-12 col-md-8 project-step-disc">
+                        <div class="project-step-disc__item">
+                          <?php the_sub_field('descr_content'); ?>
+                        </div>
+                      </div>
+                    </div>
+                <?php endwhile;
+                endif; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Conclusion -->
   <?php if (get_field('iot_conclusion') != '') {  ?>
     <section class="conclusion-pad sec-pt">
