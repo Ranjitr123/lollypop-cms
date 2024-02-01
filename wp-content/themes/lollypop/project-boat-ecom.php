@@ -14,6 +14,14 @@ get_header();
     padding-bottom: 54px;
   }
 
+  .pt-120 {
+    padding-top: 120px;
+  }
+
+  .pt-64 {
+    padding-top: 64px;
+  }
+
   .project-step__item {
     margin-bottom: 56px;
   }
@@ -124,11 +132,17 @@ get_header();
   }
 
   /* PERSONAS */
+
+  .sec-personas {
+    padding-top: 120px;
+  }
+
   .personas-title {
     color: #FD2E35;
     font-size: 18px;
     font-weight: 700px;
-    word-spacing: 10%;
+    letter-spacing: 10%;
+    padding-bottom: 64px;
   }
 
   .personas {
@@ -180,9 +194,43 @@ get_header();
   .personas-2 {
     background-color: #957D5F;
   }
+
   .personas-3 {
     background-color: #84A580;
   }
+
+  .typography-image>img {
+    border-radius: 40px;
+  }
+
+  /* Metropolis */
+
+  .metropolis-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #1D1D1D;
+  }
+
+  .metropolis-heading {
+    font-size: 24px;
+    font-weight: 200;
+    color: #1D1D1D;
+  }
+  .colours {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 16px;
+  }
+
+  .color-item>img {
+    width: 112px;
+    height: auto;
+  }
+
+  .uidesign-image>img {
+    margin-bottom: -2px;
+  }
+
   @media only screen and (max-width: 1280px) {
     .iot-title {
       width: 100%;
@@ -248,24 +296,22 @@ get_header();
     <div class="container pb-5">
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
-          <div>
-            <div class="col-md-10 px-0 mx-auto">
-              <div class="project-step">
-                <?php if (have_rows('iot_brief_descriptions')) : while (have_rows('iot_brief_descriptions')) : the_row(); ?>
-                    <div class="project-step__item row">
-                      <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
-                      <div class="col-12 col-md-8 project-step-disc">
-                        <div class="project-step-disc__item">
-                          <?php the_sub_field('descr_content'); ?>
-                        </div>
-                        <?php if (get_sub_field('cta_name') != '') { ?>
-                          <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url'); ?>"><?php the_sub_field('cta_name'); ?></a>
-                        <?php } ?>
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('iot_brief_descriptions')) : while (have_rows('iot_brief_descriptions')) : the_row(); ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <?php the_sub_field('descr_content'); ?>
                       </div>
+                      <?php if (get_sub_field('cta_name') != '') { ?>
+                        <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url'); ?>"><?php the_sub_field('cta_name'); ?></a>
+                      <?php } ?>
                     </div>
-                <?php endwhile;
-                endif; ?>
-              </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
             </div>
           </div>
         </div>
@@ -353,7 +399,7 @@ get_header();
             <h3 class="personas-title"><?php the_field('personas_title') ?></h3>
           </div>
         </div>
-
+        <!-- 3 Personas -->
         <div class="col-12 col-md-10 col-lg-10 mx-auto">
           <div class="col-4 col-md-4">
             <div class="personas">
@@ -408,23 +454,105 @@ get_header();
               endif; ?>
             </div>
           </div>
+        </div>
+        <!-- Personas Description -->
+        <div class="col-12 col-md-11 col-lg-10 mx-auto pt-120">
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('personas_brief_descriptions')) : while (have_rows('personas_brief_descriptions')) : the_row(); ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <?php the_sub_field('descr_content'); ?>
+                      </div>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+            </div>
+          </div>
+        </div>
+        <!-- Typography Image -->
+        <div class="col-12 col-md-10 col-lg-10 mx-auto pt-120">
+          <div class="row text-center typography-image">
+            <img src="<?php the_field('typography_image') ?>" alt="Image">
+          </div>
+        </div>
+        <!-- Typography Description -->
+        <div class="col-12 col-md-11 col-lg-10 mx-auto pt-120">
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('typography_brief_descriptions')) : while (have_rows('typography_brief_descriptions')) : the_row(); ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <?php the_sub_field('descr_content'); ?>
+                      </div>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Metropolis -->
+  <section class="p-r-80 pb-0 sec-metropolis">
+    <div class="container">
+      <div class="row">
+        <!-- Title -->
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+          <div class="row d-flex justify-content-center">
+            <div class="col-6">
+              <img src="<?php the_field('metropolis_image') ?>" alt="metropolis" />
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+              <h3 class="metropolis-title"><?php the_field('metropolis_title') ?></h3>
+              <h3 class="metropolis-heading"><?php the_field('metropolis_heading') ?></h3>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Colours Description -->
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
-          <div>
-            <div class="col-md-10 px-0 mx-auto">
-              <div class="project-step">
-                <?php if (have_rows('iot_brief_descriptions')) : while (have_rows('iot_brief_descriptions')) : the_row(); ?>
-                    <div class="project-step__item row">
-                      <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
-                      <div class="col-12 col-md-8 project-step-disc">
-                        <div class="project-step-disc__item">
-                          <?php the_sub_field('descr_content'); ?>
-                        </div>
+        <div class="col-12 col-md-11 col-lg-10 mx-auto pt-120">
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('metropolis_descriptions')) : while (have_rows('metropolis_descriptions')) : the_row(); ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                      <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more">
+                        <?php the_sub_field('title'); ?>
+                      </span>
+                    </div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <?php the_sub_field('content'); ?>
                       </div>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colours Items -->
+      <div class="row pt-64">
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-10 col-lg-10">
+              <div class="colours">
+                <?php if (have_rows('metropolis_image_colours')) : while (have_rows('metropolis_image_colours')) : the_row(); ?>
+                    <div class="color-item">
+                      <img class="img-fluid" src="<?php the_sub_field('colours') ?>" alt="logo">
                     </div>
                 <?php endwhile;
                 endif; ?>
@@ -433,11 +561,44 @@ get_header();
           </div>
         </div>
       </div>
+
+      <!-- UIDesign Description -->
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto pt-120">
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('metropolis_ui_descriptions')) : while (have_rows('metropolis_ui_descriptions')) : the_row(); ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('descr_title'); ?></span></div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <?php the_sub_field('descr_content'); ?>
+                      </div>
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif; ?>
+            </div>
+          </div>
+        </div>
+
+        <!-- UiDesign Image -->
+        <div class="col-12 col-md-10 col-lg-10 mx-auto pt-64">
+          <div class="row text-center uidesign-image">
+            <?php if (have_rows('metropolis_uidesign_images')) : while (have_rows('metropolis_uidesign_images')) : the_row(); ?>
+                <img src="<?php the_sub_field('image') ?>" alt="Image">
+            <?php endwhile;
+            endif; ?>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+
   <!-- Conclusion -->
   <?php if (get_field('iot_conclusion') != '') {  ?>
-    <section class="conclusion-pad sec-pt">
+    <section class="conclusion-pad sec-pt pt-120">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-11 col-lg-12 mt-5">
