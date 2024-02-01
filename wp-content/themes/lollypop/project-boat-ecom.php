@@ -94,7 +94,7 @@ get_header();
     color: #FFF;
     font-size: 40px;
     font-weight: 800;
-    padding-bottom: 54px;
+    padding-bottom: 28px;
 
   }
 
@@ -140,8 +140,7 @@ get_header();
   .personas-title {
     color: #FD2E35;
     font-size: 18px;
-    font-weight: 700px;
-    letter-spacing: 10%;
+    font-weight: 700;
     padding-bottom: 64px;
   }
 
@@ -216,6 +215,7 @@ get_header();
     font-weight: 200;
     color: #1D1D1D;
   }
+
   .colours {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -237,11 +237,56 @@ get_header();
     }
   }
 
+  @media (max-width: 768px) {
+    .pb-54 {
+      padding-bottom: 27px;
+    }
 
+    .pt-120 {
+      padding-top: 60px;
+    }
 
+    .pt-64 {
+      padding-top: 32px;
+    }
 
+    .item-wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
 
-  @media only screen and (max-width: 884px) and (min-width: 768px) {}
+    .right-item {
+      width: 280px;
+      align-self: center;
+    }
+
+    .personas {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+
+    .metropolis-image>img {
+      width: 100%;
+    }
+
+    .colours {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      grid-gap: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .research-title {
+      padding-bottom: 0px;
+    }
+  }
 </style>
 
 <main class="main" style="background:#F7F5F3;">
@@ -362,10 +407,10 @@ get_header();
               <h4 class="research-heading"><?php the_field('research_heading') ?></h4>
               <?php if (have_rows('left_content')) : while (have_rows('left_content')) : the_row(); ?>
                   <div class="row pb-54">
-                    <div class="col-1">
+                    <div class="col-2 col-lg-1">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/right-arrow.svg" alt="" />
                     </div>
-                    <div class="col-11">
+                    <div class="col-10 col-lg-11">
                       <h6 class="content-title"><?php the_sub_field('title') ?><h6>
                           <p class="content-desc"><?php the_sub_field('description') ?></p>
                     </div>
@@ -391,7 +436,7 @@ get_header();
   </section>
 
   <!-- PERSONAS -->
-  <section class="p-r-80 pb-0 sec-personas">
+  <section class="p-r-80 pb-0 pt-120">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-10 mx-auto">
@@ -502,16 +547,18 @@ get_header();
   </section>
 
   <!-- Metropolis -->
-  <section class="p-r-80 pb-0 sec-metropolis">
+  <section class="p-r-80 pb-0 pt-64">
     <div class="container">
       <div class="row">
         <!-- Title -->
         <div class="col-12 col-md-10 col-lg-10 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-6">
-              <img src="<?php the_field('metropolis_image') ?>" alt="metropolis" />
+            <div class="col-12 col-lg-6">
+              <div class="metropolis-image">
+                <img src="<?php the_field('metropolis_image') ?>" alt="metropolis" />
+              </div>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
               <h3 class="metropolis-title"><?php the_field('metropolis_title') ?></h3>
               <h3 class="metropolis-heading"><?php the_field('metropolis_heading') ?></h3>
             </div>
@@ -614,7 +661,6 @@ get_header();
                         <div class="col-12 col-md-10 project-step-disc">
                           <div class="project-step-disc__item conclustion">
                             <?php the_field('iot_conclusion'); ?>
-
                           </div>
                         </div>
                       </div>
@@ -649,15 +695,12 @@ get_header();
                   <?php } ?>
                 </div>
               </div>
-
-
               <div class="projects-nav__next">
                 <div class="d-flex ms-auto">
                   <?php
                   $prevPost = get_previous_post();
                   if ($prevPost) { ?>
                     <div class="pe-4">
-
                       <?php
                       $destination = get_field('company_name', $prevPost->ID);
                       previous_post_link('%link',  ' <h4 class="fnt-28 fnt-800">' . $destination . '</h4>');  ?>
