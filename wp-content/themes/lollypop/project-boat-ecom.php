@@ -236,6 +236,13 @@ get_header();
     .iot-title {
       width: 100%;
     }
+
+    .personas-1,
+    .personas-2,
+    .personas-3 {
+      width: 282px;
+    }
+
   }
 
   @media (max-width: 768px) {
@@ -447,58 +454,56 @@ get_header();
         </div>
         <!-- 3 Personas -->
         <div class="col-12 col-md-10 col-lg-10 mx-auto">
-          <div class="col-4 col-md-4">
-            <div class="personas">
-              <?php if (have_rows('personas_1')) : while (have_rows('personas_1')) : the_row(); ?>
-                  <div class="personas-1 col-md-3 col-12">
-                    <div class="img-quotes">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
-                    </div>
-                    <div class="img-main">
-                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
-                    </div>
-                    <div class="personas-content">
-                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
-                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
-                    </div>
+          <div class="personas">
+            <?php if (have_rows('personas_1')) : while (have_rows('personas_1')) : the_row(); ?>
+                <div class="personas-1 col-md-3 col-12">
+                  <div class="img-quotes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
                   </div>
-              <?php endwhile;
-              endif; ?>
+                  <div class="img-main">
+                    <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                  </div>
+                  <div class="personas-content">
+                    <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                    <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                  </div>
+                </div>
+            <?php endwhile;
+            endif; ?>
 
-              <!-- 2 -->
-              <?php if (have_rows('personas_2')) : while (have_rows('personas_2')) : the_row(); ?>
-                  <div class="personas-2 col-md-3 col-12">
-                    <div class="img-quotes">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
-                    </div>
-                    <div class="img-main">
-                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
-                    </div>
-                    <div class="personas-content">
-                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
-                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
-                    </div>
+            <!-- 2 -->
+            <?php if (have_rows('personas_2')) : while (have_rows('personas_2')) : the_row(); ?>
+                <div class="personas-2 col-md-3 col-12">
+                  <div class="img-quotes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
                   </div>
-              <?php endwhile;
-              endif; ?>
+                  <div class="img-main">
+                    <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                  </div>
+                  <div class="personas-content">
+                    <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                    <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                  </div>
+                </div>
+            <?php endwhile;
+            endif; ?>
 
-              <!-- 3 -->
-              <?php if (have_rows('personas_3')) : while (have_rows('personas_3')) : the_row(); ?>
-                  <div class="personas-3 col-md-3 col-12">
-                    <div class="img-quotes">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
-                    </div>
-                    <div class="img-main">
-                      <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
-                    </div>
-                    <div class="personas-content">
-                      <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
-                      <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
-                    </div>
+            <!-- 3 -->
+            <?php if (have_rows('personas_3')) : while (have_rows('personas_3')) : the_row(); ?>
+                <div class="personas-3 col-md-3 col-12">
+                  <div class="img-quotes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/new-boat/quotes.svg" alt="" />
                   </div>
-              <?php endwhile;
-              endif; ?>
-            </div>
+                  <div class="img-main">
+                    <img class="img-fluid" src="<?php the_sub_field('image') ?>" alt="logo">
+                  </div>
+                  <div class="personas-content">
+                    <h5 class="mt-4 mb-5 fnt-white"><?php the_sub_field('bio') ?></h5>
+                    <p class="pb-4 fnt-white"><?php the_sub_field('role') ?></p>
+                  </div>
+                </div>
+            <?php endwhile;
+            endif; ?>
           </div>
         </div>
         <!-- Personas Description -->
