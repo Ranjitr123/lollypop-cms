@@ -861,7 +861,7 @@ $header = new WP_Query($args);
                                     <div class="secut col-12 scroll-hide" id="drop-menu">
                                         <div class="dropdown-ver d-flex" onclick="myFunction1()">
                                             <a href="javascript:void(0)">
-                                                <p class="">Global</p>
+                                                <p class="">Vietnam</p>
                                             </a>
                                         </div>
                                         <div class="dropdown-content" id="myDIV1">

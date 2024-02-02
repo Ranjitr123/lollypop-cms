@@ -5,7 +5,7 @@
  * * @package WordPress
  * */
 
-get_header();
+get_header('india');
 ?>
 <!-- <style>
 @media (max-width:767px){
