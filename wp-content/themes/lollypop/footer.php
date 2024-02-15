@@ -270,7 +270,7 @@ function setCookie(name,value,days) {
 					$("#pageloader").fadeIn();
 					$.ajax({
 						 type: "POST",
-						 url: "<?php echo site_url(); ?>/enquiry-upload/",
+						 url: "<?php echo site_url(); ?>/enquiry-uploads/",
 						 data: data,
 						 processData: false,
 						 contentType: false,
