@@ -51,7 +51,8 @@ if ($greater_data == "2") {
 		$mail->Port = 587;
 		$mail->Host = "smtp.gmail.com";
 		$mail->Username = "hello@lollypop.design";
-		$mail->Password = "dcwmhskgofolbjpu";
+		$mail->Password = "npnl txrm faxc peac";
+		// $mail->Password = "dcwmhskgofolbjpu";
 
 		$mail->IsHTML(true);
 		//Admin mails
