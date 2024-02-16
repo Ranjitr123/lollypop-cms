@@ -61,7 +61,7 @@ $mailReply->SMTPSecure = "tls";
 $mailReply->Port = 587;
 $mailReply->Host = "smtp.gmail.com";
 $mailReply->Username = "hello@lollypop.design";
-$mailReply->Password = "dcwmhskgofolbjpu";
+$mailReply->Password = "npnl txrm faxc peac";
 
 
 $mailReply->IsHTML(true);
