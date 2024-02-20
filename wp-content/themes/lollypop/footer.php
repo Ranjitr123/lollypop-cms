@@ -35,6 +35,15 @@ a.fnt-30.fnt-800.link-insta {
 .alifot{text-align:start!important;}
 .alifot .fnt-14{font-size:11px;}
 }
+
+@media (max-width:430px){
+	a.fnt-30 {
+		font-size: 16px;
+	}
+	.ft-social-links li:last-child {
+		justify-content: center !important;
+	}
+}
 @media (min-device-width:320px) and (max-device-width:766px){
 a.fnt-30.fnt-800.link-insta {
     margin-left: 0px!important; 

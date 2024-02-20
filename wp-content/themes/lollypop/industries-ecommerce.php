@@ -263,12 +263,12 @@ get_header();
           <div class="reveal-project">
             <img class="wpdm-img" src="<?php the_field('designing_image'); ?>" alt="Image">
           </div>
-          <div class="row mt-5 mx-auto">
-            <div class="mb-4 pb-md-2 col-md-12 d-flex px-0">
-              <div class="mb-4 pb-md-2 col-md-4 px-0 text-center">
+          <div class="row mt-5 mx-auto ms-3">
+            <div class="mb-4 pb-md-2 row d-flex px-0">
+              <div class="mb-md-4 mb-0 pb-md-2 col-md-4 col-12 px-0 text-md-center">
                 <p><?php the_field('small_title')?></p>
               </div>
-              <div class="mb-4 pb-md-2 col-md-8 px-0">
+              <div class="mb-4 pb-md-2 col-md-8 col-12 px-0">
                 <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
                 <p class="fnt-24 fnt-clr  col-md-10 col-lg-11 px-0 data-scroll"><?php the_field('designing_content') ?></p>
                 <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_field('designing_cta_link') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('designing_cta_text') ?></a>

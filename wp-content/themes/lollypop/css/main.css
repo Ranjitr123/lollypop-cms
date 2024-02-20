@@ -17675,9 +17675,16 @@ body li, body p {
 
 .fnt-78.h1, .lp-sudo-right__textchange, h1.fnt-78 {
     font-size: 32px !important;
-    line-height: 72px !important;
+    line-height: 72px;
     letter-spacing: -1px !important
 }
+
+@media (max-width: 768px) { 
+    h1.fnt-78 {
+        line-height: 55px;
+    }
+}
+
 
 @media (min-width: 768px) {
     .fnt-78.h1, h1.fnt-78 {

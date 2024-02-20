@@ -2,6 +2,61 @@
 <html lang="en" data-page="home">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8J8Y4T75L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-W8J8Y4T75L');
+    </script>
+
+    <!-- Google Tag Manager -->
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-TQBBF4Z');
+    </script>
+
+    <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://lollypop.design/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3603345,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
     <?php if (get_field('keywords')) : ?>
         <meta name="keywords" content="<?php the_field('keywords') ?>">
     <?php endif; ?>
@@ -23,20 +78,12 @@
     <link rel="alternate" hreflang="en-us" href="https://lollypop.design/usability-testing/" />
     <link rel="alternate" hreflang="en-us" href="https://lollypop.design/ux-research/" />
     <link rel="alternate" hreflang="en-us" href="https://lollypop.design/illustrations/" />
-    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualisation/" />
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/data-visualization/" />
     <link rel="alternate" hreflang="en-us" rel="alternate" href="https://lollypop.design/ui-ux-design-agency-in-usa/" hreflang="en-us">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8J8Y4T75L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-W8J8Y4T75L');
-    </script>
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/fintech" />
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/enabling-growth-in-edtech/" />
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/telecom/" />
+    <link rel="alternate" hreflang="en-us" href="https://lollypop.design/projects/knowledgehut/" />
 
     <!-- Google new tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
@@ -52,23 +99,22 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Hotjar Tracking Code for https://lollypop.design/ -->
     <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 3603345,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        var menu = document.getElementById('drop-menu');
+
+        // Add an event listener to the document
+        document.addEventListener('click', function(event) {
+
+            // Check if the clicked element is outside of the menu
+            if (!menu.contains(event.target)) {
+                // If so, hide the menu
+                menu.style.display = 'none';
+            }
+        });
     </script>
+
+    <!-- translate button end -->
+
 
     <!---css---------->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -102,32 +148,10 @@
 
 
     <style>
-        .secut {
-            top: 55px;
-        }
-
-        @media (max-width: 768px) {
-            .secut {
-                top: 28px;
-                right: 7% !important;
-            }
-
-            .header-container {
-                justify-content: flex-end;
-            }
-        }
-
         .fnt-100 {
             font-size: 32px;
             line-height: 42px;
             letter-spacing: -2px;
-        }
-
-        .dropdown-ver a ::after {
-            width: 20px;
-            height: 100%;
-            width: 100%;
-            left: 41px !important;
         }
 
         @media (min-width: 768px) {
@@ -135,6 +159,10 @@
                 font-size: 70px;
                 line-height: 75px;
                 letter-spacing: -2px;
+            }
+
+            .sec-last1 {
+                padding-bottom: 25px !important;
             }
         }
 
@@ -167,20 +195,11 @@
                 letter-spacing: -2px;
             }
 
-            [type="radio"]:checked+label:after {
-                top: 4px !important;
-                left: 4px !important;
-            }
 
         }
 
         /* dropdown */
         @media(max-width:768px) {
-
-            .lang-mob {
-                transform: translate(63px, 10px);
-            }
-
             .secut {
                 display: none;
             }
@@ -257,7 +276,7 @@
             padding: 10px;
             border-radius: 5px;
             width: 131px;
-            right: -100px;
+            right: -50px;
             top: -4px;
         }
 
@@ -268,7 +287,7 @@
             border-left: solid 15px transparent;
             border-right: solid 15px transparent;
             position: relative;
-            left: 115%;
+            left: 35%;
         }
 
         [type="radio"]:checked,
@@ -282,7 +301,7 @@
             position: relative;
             padding-left: 28px;
             cursor: pointer;
-            line-height: 15px;
+            line-height: 20px;
             display: inline-block;
             color: black;
         }
@@ -351,10 +370,9 @@
         }
 
         @media (max-width: 768px) {
-
             #myDIV {
                 left: 8px;
-                width: 20px;
+                width: 150px;
             }
 
             .triangle {
@@ -370,7 +388,7 @@
                 border-left: solid 15px transparent;
                 border-right: solid 15px transparent;
                 position: relative;
-                left: -45%;
+                left: -2%;
             }
 
             .button-up,
@@ -423,7 +441,7 @@
                 margin-top: -15px;
                 padding: 10px;
                 width: 104px;
-                left: -65px;
+                left: -5px;
             }
 
             .langue-container form label {
@@ -431,6 +449,7 @@
                 line-height: 16px;
             }
 
+            type="radio"]:checked+label:after,
             [type="radio"]:not(:checked)+label:after {
                 content: '';
                 width: 6px;
@@ -458,13 +477,14 @@
             }
 
             .secut {
-                right: 100px !important;
-                /* top:50px !important; */
+                top: 4% !important;
+                right: 28% !important;
             }
         }
 
         .secut {
             position: fixed;
+            top: 10%;
         }
 
         .hr-1 {
@@ -472,100 +492,13 @@
             padding: 2px;
         }
 
-        .menu-open .lang-mob {
-            opacity: 0 !important;
-            pointer-events: none;
-        }
 
-
-        @media only screen and (min-width: 1024px) {
-            .secut {
-                position: fixed;
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px !important;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                width: 0px;
-                height: 0px;
-                bottom: 0px;
-                border-bottom: solid 15px #FFFFFF;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                position: relative;
-                left: 80%;
-            }
-
-            .langue-container {
-                right: -50px;
-            }
-
-            [type="radio"]:checked+label:after {
-                top: 5px !important;
-                left: 5px !important;
-            }
-        }
-
-        @media only screen and (min-width: 1920px) {
-            .secut {
-                position: fixed;
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px !important;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                left: 115% !important;
-            }
-
-            .langue-container {
-                right: -100px !important;
-            }
-        }
-
-        @media (min-width: 1536px) {
-            .secut {
-                position: fixed;
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px !important;
-            }
-
-            .triangle {
-                margin: 0 15px;
-            }
-
-            .triangle-4 {
-                left: 95%;
-            }
-
-            .langue-container {
-                right: -70px;
-            }
-        }
 
         /* global button */
         .global-drop .dropdown-ver a ::after {
             background-image: url('https://lollypop.design/wp-content/uploads/2023/04/chevron1.svg');
-            left: 47px !important;
+            left: 60px !important;
             background-size: 10px 10px !important;
-            width: 20px !important;
-            height: 25px !important;
         }
 
         .global-drop .dropdown-ver a p {
@@ -575,6 +508,7 @@
             font-size: 14px;
             line-height: 19px;
             color: #FD2E35;
+            padding-left: 12px;
         }
 
         .global-drop .langue-container {
@@ -586,7 +520,7 @@
             top: 20px;
             border-radius: 10px;
             right: inherit;
-            left: 0px;
+            left: 10px;
         }
 
         .global-drop .langue-container ul {
@@ -623,12 +557,15 @@
             background: #F7F5F3;
         }
 
-        .global-drop #myDIV1 {
+        .global-drop .dropdown-ver {
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .global-drop #myDIV {
             width: inherit;
             background-color: unset;
-            left: 0;
-            position: absolute;
-            top: 30px;
+            left: inherit;
         }
 
         .global-drop .secut {
@@ -636,128 +573,15 @@
             top: inherit !important;
         }
 
-        .global-drop {
-            margin-left: 1rem;
-        }
-
-        .global-drop .dropdown-ver {
-            align-items: center;
-            justify-content: flex-end;
-            position: absolute;
-            top: 0px;
-            /* margin-left: 1rem; */
-        }
-
-        @media (min-width:320px) and (max-width:430px) {
-            .lang-mob {
-                transform: none
-            }
-
-            #myDIV {
-                left: -19px;
-                width: 150px !important;
-            }
-
-            .langue-container {
-                left: -10px;
-            }
-
-            .triangle-4 {
-                left: 32%;
-            }
-
-            [type="radio"]:checked+label:after {
-                top: 4px !important;
-                left: 4px !important;
-            }
-        }
-
-        /* @media (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(0px,-100%)!important;
-    }
-} */
-
-        /* @media (min-width:661px) and (max-width: 767px){
-    .lp-hamberg {
-        transform: translate(360px,-100%)!important;
-    }
-}
-
-
-@media (min-width:360px) and (max-width:374px)
-{
-    .lp-hamberg {
-        transform: translate(140px,-40%)!important;
-    }
-}
-@media (min-width:375px) and (max-width:420px)
-{
-    .lp-hamberg {
-        transform: translate(150px,-40%)!important;
-    }
-}
-@media (min-width:421px) and (max-width:430px)
-{
-    .lp-hamberg {
-        transform: translate(180px,-40%)!important;
-    }
-}
-@media (min-width:431px) and (max-width:490px)
-{
-    .lp-hamberg {
-        transform: translate(195px,-40%)!important;
-    }
-}
-@media (min-width:491px) and (max-width:535px)
-{
-    .lp-hamberg {
-        transform: translate(205px,-40%)!important;
-    }
-}
-@media (min-width:536px) and (max-width:600px)
-{
-    .lp-hamberg {
-        transform: translate(220px,-40%)!important;
-    }
-}
-@media (min-width:601px) and (max-width:767px)
-{
-    .lp-hamberg {
-        transform: translate(240px,-40%)!important;
-    }
-}
-@media (min-width:767px) and (max-width:1024px)
-{
-    .lp-hamberg {
-        transform: translate(50px,-40%)!important;
-    }
-} */
-        @media (min-width: 768px) {
-
-            header .default,
-            header .menu-title {
-                margin-right: -6px !important;
-            }
-
-
-        }
-
-        @media (min-width:320px) and (max-width: 768px) {
-            .secut {
-                right: 110px !important;
-                top: 30px !important;
-            }
-
-            .secut {
-                display: block;
-            }
-        }
-
+        /* .global-drop{margin-left:1rem;} */
         @media (max-width: 767px) {
-            .header-container {
-                justify-content: space-between !important;
+            .lp-hamberg {
+                transform: translate(0px, -100%) !important;
             }
+        }
+
+        .secut {
+            display: block;
         }
     </style>
 
@@ -788,9 +612,7 @@
                 }
             });
         });
-    </script>
 
-    <script>
         $(window).scroll(function() {
             $('.scroll-hide').css('display', 'block');
             if ($(this).scrollTop() > 50) {
@@ -803,37 +625,9 @@
         });
     </script>
 
-    <!-- language convertor -->
-
-    <script>
-        $(document).off("mouseup").on("mouseup", function(e) {
-            var container = $('.lanuage-dropdown-content');
-            var menu = $('.language-sec');
-            if (!menu.is(e.target) && menu.has(e.target).length === 0 && !container.is(e.target) && container.has(e.target).length === 0) {
-                container.hide();
-            }
-        });
-
-        $(document).ready(function() {
-            $(".language-sec").off("click").on("click", function() {
-                var dropdownContent = $(".lanuage-dropdown-content");
-                if (dropdownContent.is(":visible")) {
-                    dropdownContent.hide();
-                } else {
-                    dropdownContent.show();
-                }
-            });
-
-            $(window).scroll(function() {
-                var dropdownContent = $(".lanuage-dropdown-content");
-                if (dropdownContent.is(":visible")) {
-                    dropdownContent.hide();
-                }
-            });
-        });
-    </script>
-
 </head>
+
+
 
 
 <?php
@@ -848,23 +642,25 @@ $header = new WP_Query($args);
 
 <header class="header">
     <div class="container">
+
         <div class="row">
-            <div class="col-12 col-lg-11 mx-auto d-flex header-container">
-                <div class="row d-block col-md-2">
-                    <div class="col-8 offset-sm-0 offset-lg-6 col-md-12 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+            <div class="col-12 col-lg-11 mx-auto">
+                <div class="row justify-content-end">
+                    <div class="col-8 col-md-1 js-toggle d-flex align-items-center d-none d-md-block"> <a class="logo-header pz-2 d-flex align-items-center" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
+
                     <!-- global dropdown -->
-                    <div class="row d-block d-md-none">
-                        <div class="col-12 col-lg-11 mx-auto">
+                    <div class="row d-block d-md-none p-0">
+                        <div class="col-12 col-lg-11 mx-auto p-0">
                             <div class="row ">
                                 <div class="col-1 col-md-1"> <a class="logo-header pz-2 d-flex align-items-center js-toggle" href="<?php echo site_url(); ?>"><i class="icon-lollypop"></i></a></div>
                                 <div class="global-drop col-4">
-                                    <div class="secut col-12 scroll-hide" id="drop-menu">
-                                        <div class="dropdown-ver d-flex" onclick="myFunction1()">
-                                            <a href="javascript:void(0)">
-                                                <p class="">UAE</p>
+                                    <div class="secut col-sm-12 scroll-hide" id="drop-menu">
+                                        <div class="dropdown-ver d-flex">
+                                            <a href="javascript:void(0)" onclick="myFunction()">
+                                                <p class="">India</p>
                                             </a>
                                         </div>
-                                        <div class="dropdown-content" id="myDIV1">
+                                        <div class="dropdown-content" id="myDIV">
                                             <div class="langue-container">
                                                 <ul>
                                                     <li><a href="https://lollypop.design/ui-ux-design-company-in-india/">
@@ -898,63 +694,62 @@ $header = new WP_Query($args);
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
-                    <div class="d-flex align-items-center justify-content-md-end">
-                        <div class="navbar-list d-md-flex mb-0">
-                            <div class="nav-item clr-second">
-                                <div class="js-location-dropdown  js-nav-dropdown lp-dropdown-wrap">
-                                    <div class="d-flex align-items-center js-location-dropdown__ar position-relative" style="cursor: pointer;">
-                                        <div class="default nav-dropdown-text pe-2">Global</div>
-                                        <div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg" alt="Image" width="10" height="7"></div>
-                                        <div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg" alt="Image" width="10" height="7"></div>
-                                    </div>
-                                    <div class="menu menu--location transition hidden lp-dropdownmenu lp-dropdownmenu--lg">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-12 col-md-11 col-lg-10 d-md-flex justify-content-center mx-auto">
-                                                    <div class="row w-100">
-                                                        <div class="col-12 justify-content-center d-md-flex flex-wrap w-100">
-                                                            <div class="row justify-content-centerw-100 location-drop-list location-slider dots-red">
-                                                                <div class="col-3 location-drop-list__item">
-                                                                    <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">
-                                                                        <div class="location">
-                                                                            <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/india.webp" alt="Image" />
-                                                                            <h6 class="fnt-22 fnt-800 mb-1 mt-3">India</h6>
-                                                                            <p class="fnt-16 mb-0">Bangalore, Mumbai,</p>
-                                                                            <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-3 location-drop-list__item">
-                                                                    <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
-                                                                        <div class="location">
-                                                                            <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/US-Female-at-Pizzas-new.webp" alt="Image" />
-                                                                            <h6 class="fnt-22 fnt-800 mb-1 mt-3">USA</h6>
-                                                                            <p class="fnt-16 mb-0">San Jose, Dallas</p>
-                                                                            <!--p class="fnt-16 mb-0">Dallas,</p-->
-                                                                            <p class="fnt-16 mb-0">Salt Lake City</p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-3 location-drop-list__item">
-                                                                    <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
-                                                                        <div class="location">
-                                                                            <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/UAE.webp" alt="Image" />
-                                                                            <h6 class="fnt-22 fnt-800 mb-1 mt-3">UAE</h6>
-                                                                            <p class="fnt-16 mb-0">Dubai</p>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-3 location-drop-list__item">
-                                                                    <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">
-                                                                        <div class="location">
-                                                                            <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/vietnam.webp" alt="Image" />
-                                                                            <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
-                                                                            <p class="fnt-16 mb-0">Ho Chi Minh City</p>
-                                                                        </div>
-                                                                    </a>
+                    <div class="col-4 js-toggle d-none d-md-flex align-items-center justify-content-start h-li-nav">
+                        <div class="d-flex align-items-center justify-content-md-end">
+                            <div class="navbar-list d-md-flex mb-0">
+                                <div class="nav-item clr-second">
+                                    <div class="js-location-dropdown  js-nav-dropdown lp-dropdown-wrap">
+                                        <div class="d-flex align-items-center js-location-dropdown__ar position-relative" style="cursor: pointer;">
+                                            <div class="default nav-dropdown-text pe-2">USA</div>
+                                            <div class="drop-clr"> <img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown.svg" alt="Image" width="10" height="7"></div>
+                                            <div class="drop-white"><img class="drop-ar" src="<?php echo get_template_directory_uri(); ?>/img/icons/dropdown-white.svg" alt="Image" width="10" height="7"></div>
+                                        </div>
+                                        <div class="menu menu--location transition hidden lp-dropdownmenu lp-dropdownmenu--lg">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-11 col-lg-10 d-md-flex justify-content-center mx-auto">
+                                                        <div class="row w-100">
+                                                            <div class="col-12 justify-content-center d-md-flex flex-wrap w-100">
+                                                                <div class="row justify-content-centerw-100 location-drop-list location-slider dots-red">
+                                                                    <div class="col-3 location-drop-list__item">
+                                                                        <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">
+                                                                            <div class="location">
+                                                                                <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/india.webp" alt="Image" />
+                                                                                <h6 class="fnt-22 fnt-800 mb-1 mt-3">India</h6>
+                                                                                <p class="fnt-16 mb-0">Bangalore, Mumbai,</p>
+                                                                                <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-3 location-drop-list__item">
+                                                                        <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">
+                                                                            <div class="location">
+                                                                                <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/US-Female-at-Pizzas-new.webp" alt="Image" />
+                                                                                <h6 class="fnt-22 fnt-800 mb-1 mt-3">USA</h6>
+                                                                                <p class="fnt-16 mb-0">San Jose, Dallas</p>
+                                                                                <!--p class="fnt-16 mb-0">Dallas,</p-->
+                                                                                <p class="fnt-16 mb-0">Salt Lake City</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-3 location-drop-list__item">
+                                                                        <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">
+                                                                            <div class="location">
+                                                                                <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/UAE.webp" alt="Image" />
+                                                                                <h6 class="fnt-22 fnt-800 mb-1 mt-3">UAE</h6>
+                                                                                <p class="fnt-16 mb-0">Dubai</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-3 location-drop-list__item">
+                                                                        <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">
+                                                                            <div class="location">
+                                                                                <img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/vietnam.webp" alt="Image" />
+                                                                                <h6 class="fnt-22 fnt-800 mb-1 mt-3">Vietnam</h6>
+                                                                                <p class="fnt-16 mb-0">Ho Chi Minh City</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -962,62 +757,33 @@ $header = new WP_Query($args);
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                        </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
+                            </div><span class="menu-title d-inline-block ps-3">UX UI Design Studio </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
-                    <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
-                        <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
-                        <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
-                        <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/process/" data-hovermenu="Process">Process</a></li>
-                        <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
-                        <li class="nav-item menus mb-0"><a class=" nav-link fnt-14 hvr-line clr-second text-nowrap" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
-                    </ul>
-
-                    <div>
-                        <div class="lp-hamberg ms-auto">
-                            <div class="lp-hamberg__item position-relative">
-                                <div id="progress"></div>
-                                <div class="lines end"><span class="lp-hamberg__line"></span><span class="lp-hamberg__line"></span></div>
-                            </div>
-                        </div>
-
-                        <div class="d-md-flex hvr-m flex-column justify-content-end lang-mob">
-                            <div class="secut col-1 scroll-hide language-sec" id="drop-menu1">
-                                <div class="dropdown-ver d-flex">
-                                    <a href="javascript:void(0)" onclick="myFunction()">
-                                        <p class="" style="line-height:24px;">EN</p>
-                                    </a>
-                                </div>
-                                <div class="dropdown-content drop-hide lanuage-dropdown-content" id="myDIV">
-                                    <div class="">
-                                        <div class="triangle triangle-4"></div>
-                                        <div class="langue-container">
-                                            <form action="#">
-                                                <p style="margin-bottom: 0;">
-                                                    <input type="radio" id="test1" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae-arabic/" >
-                                                    <label for="test1">Arabic</label>
-                                                </p>
-                                                <div class="hr-1"></div>
-                                                <p style="margin-bottom: 0;">
-                                                    <input type="radio" id="test2" name="radio-group" value="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/" checked>
-                                                    <label for="test2">English</label>
-                                                </p>
-                                            </form>
-                                        </div>
-                                    </div>
+                    <div class="col-4 col-md-6 pz-2 d-md-flex align-items-center justify-content-md-end position-relative h-li-nav">
+                        <ul class="js-toggle d-none header-nav ps-0 col-md-12 m-0 d-md-flex align-items-center justify-content-md-end ps-0">
+                            <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/services/" data-hovermenu="Services">Services</a></li>
+                            <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/projects/">Projects</a></li>
+                            <li class="nav-item menus mb-0"><a class="nav-link fnt-14 " aria-current="page" href="<?php echo site_url(); ?>/process/" data-hovermenu="Process">Process</a></li>
+                            <li class="nav-item menus mb-0"><a class="nav-link fnt-14" href="<?php echo site_url(); ?>/industries/">Industries</a></li>
+                            <li class="nav-item menus mb-0"><a class=" nav-link fnt-14 hvr-line clr-second text-nowrap" href="<?php echo site_url(); ?>/project-enquiry/">Let's Talk</a></li>
+                        </ul>
+                        <div>
+                            <div class="lp-hamberg ms-auto">
+                                <div class="lp-hamberg__item position-relative">
+                                    <div id="progress"></div>
+                                    <div class="lines end"><span class="lp-hamberg__line"></span><span class="lp-hamberg__line"></span></div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </header>
 
@@ -1041,8 +807,8 @@ $header = new WP_Query($args);
                                     </div>
                                     <div class="main-links main-links--sub d-md-flex flex-column">
                                         <!-- For Desktop-->
-                                        <div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between">
-                                            <div class="d-md-flex hvr-m flex-column justify-content-end">
+                                        <div class="hvr-div mt-md-auto mb-lg-1 d-none d-md-flex ps-xl-4 justify-content-between sec-last1">
+                                            <div class="d-md-flex hvr-m flex-column">
                                                 <div>
                                                     <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
                                                 </div>
@@ -1076,7 +842,7 @@ $header = new WP_Query($args);
                                             <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
                                             <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
                                             <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
-                                            <div> <a class="fnt-18 text-capitalize sec-last1" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+                                            <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1118,7 +884,7 @@ $header = new WP_Query($args);
                                 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">India</a>
                                 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-usa/">USA</a>
                                 <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-in-uae/">UAE</a>
-                                <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam-vie/">Vietnam</a>
+                                <a class="d-inline-block fnt-18" href="<?php echo site_url(); ?>/ui-ux-design-agency-vietnam/">Vietnam</a>
                             </div>
                         </div>
                     </div>
@@ -1129,6 +895,12 @@ $header = new WP_Query($args);
 </div>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQBBF4Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="bd-brd"></div>
     <div class="loader">
         <div class="loader__item"><img defer src="https://lollypop.design/wp-content/uploads/2022/09/logoanimated100.gif" alt="Image"></div>
