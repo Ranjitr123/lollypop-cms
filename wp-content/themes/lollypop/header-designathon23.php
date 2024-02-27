@@ -467,7 +467,7 @@ $header = new WP_Query( $args );
 <div class="col-3 location-drop-list__item">
 <a class="item d-block w-100" href="<?php echo site_url(); ?>/ui-ux-design-company-in-india/">
 <div class="location">
-<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2022/10/india.webp" alt="Image" />
+<img class="img-fluid" src="<?php echo site_url(); ?>/wp-content/uploads/2023/10/2.webp" alt="Image" />
 <h6 class="fnt-22 fnt-800 mb-1 mt-3">India</h6>
 <p class="fnt-16 mb-0">Bangalore, Mumbai,</p>
 <p class="fnt-16 mb-0">Chennai, Hyderabad</p>
