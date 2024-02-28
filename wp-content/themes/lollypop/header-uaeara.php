@@ -1055,8 +1055,7 @@ $header = new WP_Query($args);
                                             <div class="d-md-flex hvr-m flex-column justify-content-end">
                                                 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
                                                 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
-                                                <!-- <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div> -->
-                                                <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
+                                                <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
                                                 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
                                                 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
                                                 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
@@ -1075,8 +1074,7 @@ $header = new WP_Query($args);
                                         <div class="d-md-flex hvr-m flex-column justify-content-end d-md-none d-none">
                                             <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
                                             <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
-                                            <!-- <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div> -->
-                                            <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
+                                            <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
                                             <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
                                             <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
                                             <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
