@@ -780,14 +780,16 @@ $header = new WP_Query( $args );
 <div class="d-md-flex hvr-m flex-column justify-content-end">
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
-<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
+<!-- <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div> -->
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/real-estate/">Real Estate</a></div>
 </div>
 </div>
 <!-- For mobile-->
-<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none">
+<div class="hvr-div mt-lg-auto hvr-m hvr-m--mb d-flex flex-column justify-content-end d-md-none me-5">
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/process/">Process</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/clients/">Clients</a>
 <a class="fnt-16 text-capitalize" href="<?php echo site_url(); ?>/careers">Careers</a>
@@ -798,10 +800,12 @@ $header = new WP_Query( $args );
 <div class="d-md-flex hvr-m flex-column justify-content-end d-md-none d-none">
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/telecom/">Telecom</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enabling-growth-in-edtech/">Edtech</a></div>
-<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div>
+<!-- <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/fintech/">Fintech</a></div> -->
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/real-estate/">Real Estate</a></div>
 </div>
 </div>
 </div>
