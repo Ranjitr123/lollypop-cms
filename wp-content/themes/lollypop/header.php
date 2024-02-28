@@ -784,6 +784,7 @@ $header = new WP_Query( $args );
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/real-estate/">Real Estate</a></div>
 </div>
 </div>
@@ -803,6 +804,7 @@ $header = new WP_Query( $args );
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/healthcare/">Healthcare</a></div>
 <div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/agriculture/">Agriculture</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/enterprise/">Enterprise</a></div>
+<div><a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/e-commerce/">E-commerce</a></div>
 <div> <a class="fnt-18 text-capitalize" href="<?php echo site_url(); ?>/industries/real-estate/">Real Estate</a></div>
 </div>
 </div>
