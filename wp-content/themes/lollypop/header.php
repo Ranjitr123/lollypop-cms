@@ -57,6 +57,75 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/industries/telecom/"/>
 	<link rel="alternate" hreflang="en-us" href="https://lollypop.design/projects/knowledgehut/"/>
 
+  <!-- HuyenLe (Alice.Le) request -->
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2023/november/top-5-cong-ty-thiet-ke-website-chuyen-nghiep-tai-viet-nam/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2023/november/lam-the-nao-de-thiet-ke-website-chuan-seo/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2023/december/8-xu-huong-thiet-ke-website-2024-du-doan-se-lam-mua-lam-gio/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2023/december/responsive-design-la-gi-toi-uu-thiet-ke-web-responsive-ra-sao/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2024/january/design-audit-la-gi-quy-trinh-design-audit-gom-nhung-buoc-nao/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2024/january/ui-ux-design-la-gi-khai-niem-va-quy-trinh-thiet-ke-ux-ui-linh-hoat/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://lollypop.design/blog/2024/january/10-chrome-extensions-dac-luc-cho-designer-2024/" />
+
+  <link rel="alternate" hreflang="ja-jp" href="https://lollypop.design/blog/2024/january/2024%E5%B9%B4%E5%A4%A7%E3%81%8D%E3%81%8F%E6%B3%A8%E7%9B%AE%E4%BA%88%E6%83%B3%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B8%E3%81%A4%E3%81%AEweb%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AC/" />
+  <link rel="alternate" hreflang="ja-jp" href="https://lollypop.design/blog/2024/january/ui-ux%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%B9%E3%82%BF%E3%83%87%E3%82%A3%E3%81%AB%E3%82%88%E3%82%8B%E5%AE%9A%E7%BE%A9%E3%81%A8%E3%83%87%E3%82%B6%E3%82%A4/" />
+  <link rel="alternate" hreflang="ja-jp" href="https://lollypop.design/blog/2024/february/%E6%97%A5%E6%9C%AC%E5%B8%82%E5%A0%B4%E3%81%A7%E3%81%AE%E7%9F%A5%E5%90%8D%E5%BA%A6%E3%81%8C%E3%81%82%E3%82%8Bui-ux%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E4%BC%9A%E7%A4%BE10%E9%81%B8/" />
+  <link rel="alternate" hreflang="ja-jp" href="https://lollypop.design/ui-ux-design-studio-in-japan-jp/" />
+  <link rel="alternate" hreflang="en-jp" href="https://lollypop.design/ui-ux-design-studio-in-japan/" />
+  <link rel="alternate" hreflang="en-jp" href="https://lollypop.design/ui-ux-design-studio-in-japan/" />
+
+  <!-- Sagar Kumar Sahu request -->
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/telecom/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/telecom/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/telecom/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/enabling-growth-in-edtech/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/enabling-growth-in-edtech/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/enabling-growth-in-edtech/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/fintech/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/fintech/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/fintech/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/healthcare/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/healthcare/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/healthcare/"/>
+ 
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/agriculture/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/agriculture/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/agriculture/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/industries/enterprise/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/industries/enterprise/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/industries/enterprise/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/data-visualization/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/data-visualization/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/data-visualization/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/illustrations/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/illustrations/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/illustrations/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/projects/emaar/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/projects/emaar/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/projects/emaar/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/projects/hukoomi/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/projects/hukoomi/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/projects/hukoomi/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/projects/tradingleagues/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/projects/tradingleagues/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/projects/tradingleagues/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/projects/knowledgehut/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/projects/knowledgehut/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/projects/knowledgehut/"/>
+
+  <link rel="alternate" hreflang="ar-ae" href="https://lollypop.design/ui-ux-design-agency-in-uae/"/>
+  <link rel="alternate" hreflang="ar-SA" href="https://lollypop.design/ui-ux-design-agency-in-uae/"/>
+  <link rel="alternate" hreflang="ar-QA" href="https://lollypop.design/ui-ux-design-agency-in-uae/"/>
+
 <!-- Google new tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42458763-1"></script>
 <script>

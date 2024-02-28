@@ -38,18 +38,26 @@ get_header();
                <?php $banner = get_field('banner_image');
                      if($banner !=''){ ?>
               <div class="position-relative">
-				<div class="reveal"> <!---desktop-->         
-					<div class="d-none d-lg-block" style="height:405px; width:100%; background-size:cover; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
-				</div> 
-					
-				<div class="reveal"> <!----mobile---->         
-					<div class="d-md-none d-sm-none" style="height:195px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
-				</div> 
-				
-				<div class="reveal"><!----ipad---->          
-					<div class="d-none d-lg-none d-md-block" style="height:285px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
-				</div> 
-				
+
+              <div class="reveal">      
+                <img src="<?php the_field('banner_image') ?>" alt="logo" />    
+              </div>
+   
+            <!---desktop-->
+            <!-- <div class="reveal">         
+              <div class="d-none d-lg-block" style="height:405px; width:100%; background-size:cover; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+            </div>  -->
+              
+            <!----mobile---->         
+            <!-- <div class="reveal"> 
+              <div class="d-md-none d-sm-none" style="height:195px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+            </div> 
+              -->
+            <!----ipad---->          
+            <!-- <div class="reveal">
+              <div class="d-none d-lg-none d-md-block" style="height:285px; width:100%; background-size:contain; background-repeat:no-repeat; background-image: url(<?php the_field('banner_image') ?>) "></div>
+            </div>  -->
+    
 			 </div>
               <?php } ?>
 			  
