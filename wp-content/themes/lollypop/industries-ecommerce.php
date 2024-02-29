@@ -220,11 +220,13 @@ get_header();
                 </span>
                 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-9 px-0"><?php the_field('heading'); ?></h1>
                 <p class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_field('short_title_description'); ?></p>
-                <div class="cta_box col-lg-10">
-                  <span class="cta-text"><?php the_field('cta_heading'); ?></span>
-                  <span class="cta-des"><?php the_field('cta_short_title_description'); ?></span>
-                  <a class="clr-second  d-inline-block fnt-14 data-scroll hvr-line cta-link" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
-                </div>
+                <?php if (get_field('cta_heading')) : ?>
+                  <div class="cta_box col-lg-10">
+                    <span class="cta-text"><?php the_field('cta_heading'); ?></span>
+                    <span class="cta-des"><?php the_field('cta_short_title_description'); ?></span>
+                    <a class="clr-second  d-inline-block fnt-14 data-scroll hvr-line cta-link" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
+                  </div>
+                <?php endif ?>
               </div>
             </div>
           </div>
@@ -256,10 +258,10 @@ get_header();
   <section class="sec-pd">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 mx-auto">
+        <div class="col-12 col-md-10 col-lg-7 mx-auto">
           <div class="mb-4 pb-md-2 col-md-11 px-0">
             <?php if (have_rows('our_expertise')) : while (have_rows('our_expertise')) : the_row(); ?>
-                <h3 class="col-md-9 fnt-50 fnt-800 fnt-clr mb-4 data-scroll">
+                <h3 class="col-md-12 fnt-50 fnt-800 fnt-clr mb-4 data-scroll">
                   <?php the_sub_field('title'); ?></h3>
                 <p class="fnt-24 col-md-10 col-lg-11 px-0 data-scroll"><?php the_sub_field('content'); ?></p>
             <?php endwhile;
@@ -318,9 +320,9 @@ get_header();
               <div class="mb-md-4 mb-0 pb-md-2 col-md-4 col-12 px-0 text-md-center">
                 <p><?php the_field('small_title') ?></p>
               </div>
-              <div class="mb-4 pb-md-2 col-md-8 col-12 px-0">
-                <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
-                <p class="fnt-24 fnt-clr  col-md-10 col-lg-11 px-0 data-scroll"><?php the_field('designing_content') ?></p>
+              <div class="mb-4 pb-md-2 col-md-7 col-12 px-0">
+                <h3 class="fnt-40 fnt-800 fnt-clr mb-4 col-11 data-scroll"><?php the_field('designing_title') ?></h3>
+                <p class="fnt-clr  col-md-8 col-lg-8 px-0 data-scroll"><?php the_field('designing_content') ?></p>
                 <a class="clr-second mt-4 mt-md-5 d-inline-block fnt-14 data-scroll hvr-line" href="<?php the_field('designing_cta_link') ?>" style="opacity: 1; transform: translateY(0px);"><?php the_field('designing_cta_text') ?></a>
               </div>
             </div>
@@ -334,8 +336,8 @@ get_header();
   <section class="sec-pd sec-research">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 mx-auto">
-          <div class="mb-4 pb-md-2 col-md-11 px-0">
+        <div class="col-12 col-md-10 col-lg-7 mx-auto">
+          <div class="mb-4 pb-md-2 col-md-9 px-0">
             <h3 class="fnt-50 fnt-800 fnt-clr mb-4 data-scroll">
               <?php the_field('research_title'); ?></h3>
           </div>
