@@ -205,6 +205,10 @@ get_header();
     }
 
   }
+
+  .pd-210 {
+    padding-top: 210px;
+  }
 </style>
 
 <main class="main">
@@ -231,7 +235,7 @@ get_header();
             </div>
           </div>
           <!-- <div class=""><img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image"></div> -->
-          <div class="reveal-project">
+          <div class="reveal-project <?php if (!get_field('cta_heading')) : echo "pd-210"; endif ?> ">
             <?php $galImage = get_field('banner'); ?>
             <?php if ($galImage != '') { ?>
               <img class="wpdm-img" src="<?php the_field('banner'); ?>" alt="Image">
