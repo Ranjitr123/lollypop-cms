@@ -25,6 +25,51 @@ get_header();
     background: linear-gradient(90deg, #F1EDEA 0%, #F7F5F3 100%);
   }
 
+  .cta_box {
+    display: flex;
+    width: 846px;
+    height: 188px;
+    padding: 19px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-left: 4px solid #FD2E35;
+    background: linear-gradient(90deg, #F1EDEA -0.84%, rgba(247, 245, 243, 0.00) 91.2%);
+  }
+
+  .cta-text {
+    color: #221429;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    /* 36.4px */
+    letter-spacing: -1.12px;
+  }
+
+  .cta-des {
+    color: #221429;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 31.2px */
+    letter-spacing: -0.96px;
+  }
+
+  .cta-link {
+    color: #FD2E35;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 22.4px */
+    text-transform: capitalize;
+  }
+
   .sec-pd1 {
     padding-bottom: 40px;
   }
@@ -175,6 +220,11 @@ get_header();
                 </span>
                 <h1 class="fnt-50 fnt-800 mb-3 mb-md-4 red-stroke red-stroke--small13 px-md-0 col-md-11 col-lg-9 px-0"><?php the_field('heading'); ?></h1>
                 <p class="fnt-24 col-md-10 col-lg-9 px-0"><?php the_field('short_title_description'); ?></p>
+                <div class="cta_box col-lg-10">
+                  <span class="cta-text"><?php the_field('cta_heading'); ?></span>
+                  <span class="cta-des"><?php the_field('cta_short_title_description'); ?></span>
+                  <a class="clr-second  d-inline-block fnt-14 data-scroll hvr-line cta-link" href="<?php echo site_url(); ?>/project-enquiry/">Let’s Talk</a>
+                </div>
               </div>
             </div>
           </div>
@@ -266,7 +316,7 @@ get_header();
           <div class="row mt-5 mx-auto ms-3">
             <div class="mb-4 pb-md-2 row d-flex px-0">
               <div class="mb-md-4 mb-0 pb-md-2 col-md-4 col-12 px-0 text-md-center">
-                <p><?php the_field('small_title')?></p>
+                <p><?php the_field('small_title') ?></p>
               </div>
               <div class="mb-4 pb-md-2 col-md-8 col-12 px-0">
                 <h3 class="fnt-40 fnt-800 fnt-clr mb-4 data-scroll"><?php the_field('designing_title') ?></h3>
