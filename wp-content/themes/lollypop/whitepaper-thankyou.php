@@ -32,7 +32,7 @@ if ($_COOKIE['email'] !="" && $_COOKIE['firstname'] !="") {
 	$mailReply->Port = 587;
 	$mailReply->Host = "smtp.gmail.com";
 	$mailReply->Username = "hello@lollypop.design";
-	$mailReply->Password = "L0!!6P0p@101";
+	$mailReply->Password = "npnl txrm faxc peac";
 
 	$mailReply->IsHTML(true);
 	$mailReply->addAddress($_COOKIE['email'], $_COOKIE['firstname']);
