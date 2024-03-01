@@ -17681,7 +17681,7 @@ body li, body p {
 
 @media (max-width: 768px) { 
     h1.fnt-78 {
-        line-height: 55px;
+        line-height: 55px !important;
     }
 }
 
