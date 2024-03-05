@@ -58,7 +58,7 @@ get_header();
     color: #181636;
     text-align: center;
     font-family: Manrope;
-    font-size: 128px;
+    font-size: 138px;
     font-style: normal;
     font-weight: 800;
     line-height: 93.5%;
@@ -628,7 +628,7 @@ padding-right: 30px;
   <section class="color-pallet">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8 col-12 mx-auto">
+        <div class="col-md-10 col-lg-9 col-12 mx-auto">
           <div class="color-pallet-banner mx-5">
             <h3><?php echo the_field('color_pallet_title') ?></h3>
             <h6><?php echo the_field('color_pallet_title') ?></h6>
