@@ -58,7 +58,7 @@ get_header();
     color: #181636;
     text-align: center;
     font-family: Manrope;
-    font-size: 138px;
+    font-size: 128px;
     font-style: normal;
     font-weight: 800;
     line-height: 93.5%;

@@ -189,14 +189,17 @@ get_header();
 
   .personas-1 {
     background-color: #2A444D;
+    /* box-shadow: 0px 100px 163px -70px #2A444D; */
   }
 
   .personas-2 {
     background-color: #957D5F;
+    /* box-shadow: 0px 100px 163px -70px #957D5F; */
   }
 
   .personas-3 {
     background-color: #84A580;
+    /* box-shadow: 0px 100px 163px -70px #84A580; */
   }
 
   .typography-image>img {
@@ -242,6 +245,18 @@ get_header();
     .personas-3 {
       width: 282px;
     }
+
+    .personas-1 {
+    box-shadow: 0px 100px 163px -70px #2A444D;
+  }
+
+  .personas-2 {
+    box-shadow: 0px 100px 163px -70px #957D5F;
+  }
+
+  .personas-3 {
+    box-shadow: 0px 100px 163px -70px #84A580;
+  }
 
   }
 
