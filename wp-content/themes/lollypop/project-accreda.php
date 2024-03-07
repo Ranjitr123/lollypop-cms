@@ -83,6 +83,10 @@ get_header();
   .bg-yellow-brown {
     padding: 24px;
   }
+
+  .mb-r-12 {
+    padding-bottom: 12px;
+  }
 </style>
 
 
@@ -262,7 +266,55 @@ get_header();
     </div>
   </section>
 
+  <!-- Atul Sharma  -->
+
+  <!-- Wireframes for Web -->
+  <section class="sec-pd sec-bnr p-r-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-5">
+              <div class="mb-r-12 col-12 col-md-12 col-lg-12">
+                <span class="mb-2 mt-5 clr-second d-inline-block fnt-22 fnt-500 text-uppercase  data-scroll disc-head">
+                  Wireframes for Web
+                </span>
+                <p>
+                  Using the research as reference, we started creating wireframes.
+                  Throughout the design process, we kept the users in mind,
+                  ensuring that their objectives and challenges were taken into account.
+                  Low-fidelity wireframes and high-fidelity prototypes were created to
+                  visualize the user interface and gather feedback. Take a look at the
+                  wireframes created by our UX tribe.
+                </p>
+              </div>
+              <div class="col-12 col-md-12 col-lg-12">
+                <?php if (have_rows('left_images')) : while (have_rows('left_images')) : the_row(); ?>
+                    <img class="mt-3" src="<?php the_sub_field('image'); ?>" alt="logo" />
+                <?php endwhile;
+                endif; ?>
+              </div>
+              <div class="blur-white col-12 col-md-12 col-lg-12">
+                blur-white
+              </div>
+            </div>
+            <div class="col-6 col-md-5">
+              <div class="col-12 col-md-12 col-lg-12">
+                <?php if (have_rows('right_images')) : while (have_rows('right_images')) : the_row(); ?>
+                    <img class="mt-3" src="<?php the_sub_field('image'); ?>" alt="logo" />
+                <?php endwhile;
+                endif; ?>
+              </div>
+              <div class="blur-white col-12 col-md-12 col-lg-12">
+                blur-white
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
   <!--05-->
   <section class="sec-footer-trans">
     <div class="container z-1">
