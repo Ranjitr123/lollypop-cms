@@ -256,12 +256,33 @@ get_header('designathon23');
 
   .participate-content {
     position: absolute;
-    bottom: 115px;
+    bottom: 125px;
+    z-index: 10;
   }
 
   .participate-content>p {
     width: 90%;
     text-align: center;
+  }
+
+  .participate-bg {
+    position: absolute;
+    bottom: 50px;
+    height: 175px;
+    width: 91.7%;
+    background: linear-gradient(180deg, rgba(0,0,0,0), black);
+    z-index: 1;
+    border-radius: 16px;
+  }
+
+  .participate-bg::after {
+    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/bg-participate.svg") no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position-y: bottom;
   }
 </style>
 
@@ -381,22 +402,18 @@ get_header('designathon23');
             </div>
 
             <div class="participate-item">
-              <div class="image">
-                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/prize.png" alt="logo" />
-              </div>
+              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/prize.png" style="background-color: #011517;" alt="logo" />
               <div class="participate-content">
-                <p class="fnt-32 fnt-600 clr-white">Collaborate & network with <span class="clr-orange">budding designers</span></p>
+                <p class="fnt-32 fnt-600 clr-white">Win cash prizes of up to <span class="clr-orange">Rs. 2,00,000 </span></p>
               </div>
               <div class="participate-bg">
               </div>
             </div>
 
             <div class="participate-item">
-              <div class="image">
-                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/pioneer.png" alt="logo" />
-              </div>
+              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/pioneer.png" alt="logo" />
               <div class="participate-content">
-                <p class="fnt-32 fnt-600 clr-white">Collaborate & network with <span class="clr-orange">budding designers</span></p>
+                <p class="fnt-32 fnt-600 clr-white">Get mentored by top <span class="clr-orange">industry pioneers!</span></p>
               </div>
               <div class="participate-bg">
               </div>
