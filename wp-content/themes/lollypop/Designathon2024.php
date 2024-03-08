@@ -9,6 +9,7 @@ get_header('designathon23');
 <style>
   body {
     padding-bottom: 0 !important;
+    background: #FFF;
   }
 
   .js-page-scroll-top,
@@ -232,7 +233,7 @@ get_header('designathon23');
     padding-left: 32px;
   }
 
-  /*  */
+  /* Participate */
 
   .fnt-56 {
     font-size: 56px;
@@ -291,6 +292,29 @@ get_header('designathon23');
     height: 100%;
     background-size: contain;
     background-position-y: bottom;
+  }
+
+  /* Event details */
+  .event-bg {
+    background: #FAF5EF;
+    border-radius: 24px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .fnt-28 {
+    font-size: 28px;
+  }
+
+  .rule {
+    border-bottom: 1px solid #F45B01;
+    opacity: 40%;
+    margin: 20px 0;
+  }
+
+  .btn-event {
+    width: 288px;
+    margin-top: 20px;
   }
 </style>
 
@@ -438,7 +462,78 @@ get_header('designathon23');
   </section>
 
   <!-- Evvent Details -->
-  
+  <section class="section-event pt-120">
+    <div class="container">
+      <div class="row event-bg d-flex justify-content-center">
+        <div class="col-6 px-0 d-flex flex-column">
+          <div class=" row d-flex justify-content-center">
+            <div class="col-6 event-wrapper">
+              <h3 class="fnt-56 fnt-700 clr-darkblue text-uppercase fnt-clash">Event Details</h3>
+              <p>Unlock all the details about Designathon right here, right now! It's a must-know, so don't even think about skipping it!</p>
+            </div>
+          </div>
+          <div class="img-event">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/event-vector.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="col-6 px-0 d-flex flex-column">
+          <div class="row">
+            <div class="col-8 event-details">
+              <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">01</h3>
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">registration process</h3>
+              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+            </div>
+          </div>
+
+          <div class="row pt-56">
+            <div class="col-8 event-details">
+              <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">02</h3>
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Date and Time</h3>
+              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Mark your calendars for Designathon happening on the 26th-27th of April, 2024. Buckle up for a non-stop 24-hour ride through the world of design!</p>
+            </div>
+          </div>
+
+          <div class="row pt-56">
+            <div class="col-8 event-details">
+              <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">03</h3>
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Location Preference</h3>
+              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">You will be allotted your team and the problem statement on the 26th of April, the same day you arrive at the venue.</p>
+            </div>
+          </div>
+
+          <div class="row pt-56">
+            <div class="col-8 event-details">
+              <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">04</h3>
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Team Allocation</h3>
+              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 27th April.</p>
+            </div>
+          </div>
+
+          <div class="row pt-56">
+            <div class="col-8 event-details">
+              <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">05</h3>
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Awards</h3>
+              <p class="fnt-switzer  fnt-400 clr-darkblue mb-0">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+            </div>
+          </div>
+
+          <div class="row pt-56">
+            <div class="col-8 event-details">
+              <div class="rule"></div>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-24 fnt-600 mb-0">So what are you waiting for?</h3>
+              <a target="_blank" href="<?php the_field('banner_button_url') ?>" class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white">Register Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FAQ -->
   <section class="sec-event sec-border pt-lg-7 pb-2">
