@@ -234,6 +234,14 @@ get_header('designathon23');
 
   /*  */
 
+  .fnt-56 {
+    font-size: 56px;
+  }
+
+  .pt-160 {
+    padding-top: 160px;
+  }
+
   .participate-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
@@ -270,7 +278,7 @@ get_header('designathon23');
     bottom: 50px;
     height: 175px;
     width: 91.7%;
-    background: linear-gradient(180deg, rgba(0,0,0,0), black);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
     z-index: 1;
     border-radius: 16px;
   }
@@ -386,9 +394,14 @@ get_header('designathon23');
     </div>
   </section>
   <!-- Why Participate? -->
-  <section class="section-04cities pt-120">
+  <section class="section-04cities pt-160">
     <div class="container">
       <div class="row d-flex justify-content-center">
+        <div class="col-12 text-center">
+          <h3 class="fnt-56 fnt-700 fnt-clash text-uppercase">Why Participate?</h3>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center pt-56">
         <div class="col-12 col-md-12 col-lg-12 mx-auto">
           <div class="participate-wrapper">
 
@@ -424,6 +437,10 @@ get_header('designathon23');
     </div>
   </section>
 
+  <!-- Evvent Details -->
+  
+
+  <!-- FAQ -->
   <section class="sec-event sec-border pt-lg-7 pb-2">
     <div class="container">
       <div class="sec-faq">
