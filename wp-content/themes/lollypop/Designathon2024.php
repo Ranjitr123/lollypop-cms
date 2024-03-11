@@ -320,18 +320,29 @@ get_header('designathon23');
   /* Rule */
   .rule-wrapper {
     position: relative;
+
   }
 
   .rule-info {
     position: absolute;
-    top: 65px;
-    left: 100px;
+    top: 40px;
+    left: 165px;
   }
 
   .rule-wrapper>img {
     width: 100%;
     height: auto;
     border-radius: 24px;
+  }
+  /* Sponsor"> */
+  .sponsor-item {
+    border: 1px solid #E6CFAD99;
+    border-radius: 16px;
+    padding: 40px 32px;
+  }
+
+  .mt-64 {
+    margin-top: 64px;
   }
 </style>
 
@@ -578,9 +589,11 @@ get_header('designathon23');
   <section class="section-rule pt-120">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="rule-wrapper">
-          <div class="col-12 text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
+        <div class="rule-wrapper d-flex justify-content-center">
+          <div class="col-10 text-center">
+            <div class="row">
+              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
+            </div>
           </div>
           <div class="rule-info">
             <div class="row d-flex flex-column">
@@ -594,6 +607,44 @@ get_header('designathon23');
     </div>
   </section>
   <!-- OUR SPONSORS -->
+  <section class="section-rule pt-120">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-10 text-center">
+          <div class="row">
+            <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue">OUR SPONSORS</h3>
+          </div>
+        </div>
+        <div class="sponsor-info mt-64">
+          <div class="row d-flex justify-content-center">
+            <div class="col-6">
+              <div class="sponsor-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstock.png" alt="upstock" />
+                <p class="fnt-400 clr-darkblue pt-32">
+                  Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone.
+                  <br><br>
+                  Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding.
+                  <br><br>The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="sponsor-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/creditvidya.png" alt="creditvidya" />
+                <p class="fnt-400 clr-darkblue pt-32">
+                  Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers.
+                  <br><br>With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost.
+                  <br><br>Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="sec-event sec-border pt-lg-7 pb-2">
     <div class="container">
@@ -601,7 +652,7 @@ get_header('designathon23');
         <div class="row faq-info">
           <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 d-flex flex-column">
             <div class="event-title">
-              <h6 class="text-red fnt-header fnt-header-28"><?php the_field('faq_red_heading') ?> &nbsp;</h6>
+              <h6 class="text-red fnt-header fnt-header-28">WHEN IN DOUBT, ALWAYS ASK</h6>
               <h6 class="fnt-header fnt-header-28"><?php the_field('faq_black_heading') ?></h6>
             </div>
             <p><?php the_field('faq_description') ?></p>
@@ -624,7 +675,6 @@ get_header('designathon23');
                           <div class="f-accordion__body" style="<?php if ($i == 0) {
                                                                   echo "display: block;";
                                                                 } ?>">
-                            <!-- <p class="fnt-18 mb-0"></p> -->
                             <?php the_sub_field('faq_answer') ?>
                           </div>
                         </div>
