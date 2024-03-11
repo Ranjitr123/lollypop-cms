@@ -316,6 +316,22 @@ get_header('designathon23');
     width: 288px;
     margin-top: 20px;
   }
+
+  /* Rule */
+  .rule-wrapper {
+    position: relative;
+  }
+
+  .rule-info {
+    position: absolute;
+    top: 65px;
+    left: 100px;
+  }
+
+  .rule-wrapper>img {
+    width: 100%;
+    height: auto;
+  }
 </style>
 
 <main class="main">
@@ -535,6 +551,48 @@ get_header('designathon23');
     </div>
   </section>
 
+  <!-- Designathon’23 -->
+  <section class="section-04cities pt-120">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 text-center">
+          <h3 class="fnt-56 fnt-700 clr-darkblue fnt-clash text-uppercase">Here is a sneak peak of Designathon’23</h3>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center pt-32">
+        <div class="col-12 col-md-12 col-lg-12 mx-auto">
+          <div class="mt-4 sec-video">
+            <div class="text-center col-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+              <a href="https://www.youtube.com/watch?v=o5qzJV9YGck" data-fancybox="">
+                <img class="img-fluid lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2023.png" alt="video"></noscript>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rule -->
+  <section class="section-rule pt-120">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="rule-wrapper">
+          <div class="col-12 text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule.png" alt="rule">
+          </div>
+          <div class="rule-info">
+            <div class="row d-flex flex-column">
+              <p class="fnt-switzer" style="color: #FFFAF1; font-weight: 400;">Keen to know more?</p>
+              <h3 class="col-8 fnt-32 fnt-600 clr-white">Rules and regulations to get you started</h3>
+              <a target="_blank" href="<?php the_field('banner_button_url') ?>" class="text-center btn-orange text-uppercase fnt-switzer clr-white ms-3 mt-3">Download Pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OUR SPONSORS -->
   <!-- FAQ -->
   <section class="sec-event sec-border pt-lg-7 pb-2">
     <div class="container">
