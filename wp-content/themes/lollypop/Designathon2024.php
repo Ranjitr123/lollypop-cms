@@ -331,6 +331,7 @@ get_header('designathon23');
   .rule-wrapper>img {
     width: 100%;
     height: auto;
+    border-radius: 24px;
   }
 </style>
 
@@ -579,7 +580,7 @@ get_header('designathon23');
       <div class="row d-flex justify-content-center">
         <div class="rule-wrapper">
           <div class="col-12 text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule.png" alt="rule">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
           </div>
           <div class="rule-info">
             <div class="row d-flex flex-column">
