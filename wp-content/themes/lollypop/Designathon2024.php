@@ -110,7 +110,7 @@ get_header('designathon23');
     top: 0;
     left: 0;
     width: 100%;
-    height: 780px;
+    height: auto;
   }
 
   .fnt-title {
@@ -325,8 +325,8 @@ get_header('designathon23');
 
   .rule-info {
     position: absolute;
-    top: 40px;
-    left: 165px;
+    top: 66px;
+    left: 64px;
   }
 
   .rule-wrapper>img {
@@ -334,6 +334,7 @@ get_header('designathon23');
     height: auto;
     border-radius: 24px;
   }
+
   /* Sponsor"> */
   .sponsor-item {
     border: 1px solid #E6CFAD99;
@@ -344,11 +345,22 @@ get_header('designathon23');
   .mt-64 {
     margin-top: 64px;
   }
+
+  .mt-80 {
+    margin-top: 80px;
+  }
+
+  /* footer */
+  .img-footer{
+    background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/footer.svg") no-repeat;
+    background-size: 100%;
+    padding-top: 112px;
+  }
 </style>
 
 <main class="main">
   <!-- 01 -->
-  <section class="sec-banner pt-lg-7 pb-2 position-relative">
+  <section class="sec-banner pt-lg-7 position-relative">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 text-center pt-56">
@@ -590,7 +602,7 @@ get_header('designathon23');
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="rule-wrapper d-flex justify-content-center">
-          <div class="col-10 text-center">
+          <div class="col-12 text-center">
             <div class="row">
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
             </div>
@@ -646,56 +658,49 @@ get_header('designathon23');
   </section>
 
   <!-- FAQ -->
-  <section class="sec-event sec-border pt-lg-7 pb-2">
+  <section class="sec-faq pt-160">
     <div class="container">
-      <div class="sec-faq">
-        <div class="row faq-info">
-          <div class=" faq-head col-12 col-md-12 offset-lg-1 col-lg-4 d-flex flex-column">
-            <div class="event-title">
-              <h6 class="text-red fnt-header fnt-header-28">WHEN IN DOUBT, ALWAYS ASK</h6>
-              <h6 class="fnt-header fnt-header-28"><?php the_field('faq_black_heading') ?></h6>
-            </div>
-            <p><?php the_field('faq_description') ?></p>
-          </div>
-          <div class="col-12 col-md-12 col-lg-6 d-flex flex-column">
-            <div class="d-athon-mision row mb-5 mb-md-0 justify-content-center">
-            </div>
-            <div class="faq-el--athon">
-              <div class="faq-el__body">
-                <ul class="px-0 mb-0 faq-ac row justify-content-between">
-                  <?php if (have_rows('qa')) : $i = 0;
-                    while (have_rows('qa')) : the_row(); ?>
-                      <li class=" col-12">
-                        <div class="f-accordion <?php if ($i == 0) {
-                                                  echo " active";
-                                                } ?>">
-                          <div class="f-accordion__head">
-                            <h6 class="fnt-18 fnt-700 mb-0"><?php the_sub_field('faq_question') ?></h6>
-                          </div>
-                          <div class="f-accordion__body" style="<?php if ($i == 0) {
-                                                                  echo "display: block;";
-                                                                } ?>">
-                            <?php the_sub_field('faq_answer') ?>
-                          </div>
+      <div class=" faq-head col-12 text-center">
+        <h6 class="fnt-56 fnt-700 clr-darkblue">WHEN IN DOUBT, ALWAYS ASK</h6>
+      </div>
+      <div class="row d-flex justify-content-center mt-80">
+        <div class="col-12 col-md-7 col-lg-7 d-flex flex-column px-0">
+          <div class="faq-el--athon">
+            <div class="faq-el__body">
+              <ul class="px-0 mb-0 faq-ac row justify-content-between">
+                <?php if (have_rows('qa')) : $i = 0;
+                  while (have_rows('qa')) : the_row(); ?>
+                    <li class=" col-12">
+                      <div class="f-accordion <?php if ($i == 0) {
+                                                echo " active";
+                                              } ?>">
+                        <div class="f-accordion__head">
+                          <h6 class="fnt-20 fnt-600 clr-darkblue mb-0"><?php the_sub_field('faq_question') ?></h6>
                         </div>
-                        <hr>
-                      </li>
-                  <?php $i++;
-                    endwhile;
-                  endif; ?>
-                </ul>
-              </div>
+                        <div class="f-accordion__body clr-darkblue fnt-400" style="<?php if ($i == 0) {
+                                                                                      echo "display: block;";
+                                                                                    } ?>">
+                          <?php the_sub_field('faq_answer') ?>
+                        </div>
+                      </div>
+                      <hr>
+                    </li>
+                <?php $i++;
+                  endwhile;
+                endif; ?>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
+  </section>
+  <section class="section-footer pt-120">
+    <div class="img-footer"></div>
   </section>
 </main>
 
 <?php
-get_footer('designathon23');
+get_footer('designathon2024');
 ?>
 
 <script>
