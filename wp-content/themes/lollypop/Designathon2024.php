@@ -482,6 +482,12 @@ get_header('designathon23');
       padding-bottom: 50px;
     }
 
+    .event-register {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .mt-64 {
       margin-top: 32px;
     }
@@ -669,7 +675,7 @@ get_header('designathon23');
           </div>
 
           <div class="row mx-auto pt-56">
-            <div class="col-12 col-lg-8 event-details">
+            <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">02</h3>
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Date and Time</h3>
@@ -678,7 +684,7 @@ get_header('designathon23');
           </div>
 
           <div class="row mx-auto pt-56">
-            <div class="col-12 col-lg-8 event-details">
+            <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">03</h3>
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Location Preference</h3>
@@ -687,7 +693,7 @@ get_header('designathon23');
           </div>
 
           <div class="row mx-auto pt-56">
-            <div class="col-12 col-lg-8 event-details">
+            <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">04</h3>
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Team Allocation</h3>
@@ -696,7 +702,7 @@ get_header('designathon23');
           </div>
 
           <div class="row mx-auto pt-56">
-            <div class="col-12 col-lg-8 event-details">
+            <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">05</h3>
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Awards</h3>
@@ -705,7 +711,7 @@ get_header('designathon23');
           </div>
 
           <div class="row mx-0 pt-56">
-            <div class="col-12 col-lg-8 text-center event-details">
+            <div class="col-12 col-lg-8 event-register">
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-24 fnt-600 mb-0">So what are you waiting for?</h3>
               <a target="_blank" href="<?php the_field('button_register') ?>" class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white">Register Now</a>
