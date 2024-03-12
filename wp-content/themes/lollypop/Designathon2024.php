@@ -518,7 +518,7 @@ get_header('designathon23');
           </p>
         </div>
         <div class="col-8 col-lg-3 text-center d-flex justify-content-center pt-32">
-          <a id="banner_registration_form" target="_blank" href="<?php the_field('banner_button_url') ?>" class="text-center btn-orange text-uppercase fnt-switzer clr-white">Register Now</a>
+          <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>" class="text-center btn-orange text-uppercase fnt-switzer clr-white">Register Now</a>
         </div>
         <div class="row d-flex justify-content-center pt-56">
           <div class="col-12 col-lg-7">
@@ -708,7 +708,7 @@ get_header('designathon23');
             <div class="col-12 col-lg-8 text-center event-details">
               <div class="rule"></div>
               <h3 class="fnt-clash clr-darkblue text-capitalize fnt-24 fnt-600 mb-0">So what are you waiting for?</h3>
-              <a target="_blank" href="<?php the_field('banner_button_url') ?>" class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white">Register Now</a>
+              <a target="_blank" href="<?php the_field('button_register') ?>" class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white">Register Now</a>
             </div>
           </div>
 
@@ -753,7 +753,7 @@ get_header('designathon23');
             <div class="row d-flex flex-column">
               <p class="fnt-switzer rule-info__faq" style="color: #FFFAF1; font-weight: 400;">Keen to know more?</p>
               <h3 class="col-8 fnt-32 fnt-600 clr-white rule-info__heading">Rules and regulations to get you started</h3>
-              <a target="_blank" href="<?php the_field('banner_button_url') ?>" class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-3 ms-0 mt-0">Download Pdf</a>
+              <a target="_blank" href="<?php the_field('button_download') ?>" class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-3 ms-0 mt-0">Download Pdf</a>
             </div>
           </div>
         </div>
