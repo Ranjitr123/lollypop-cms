@@ -101,6 +101,9 @@ get_header('designathon23');
     margin-top: 124px;
   }
 
+  .fnt-20 {
+    line-height: 32px;
+}
   /* Bannder */
   .sec-banner {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/banner-vector.svg") no-repeat;
@@ -202,7 +205,7 @@ get_header('designathon23');
   .city-bengaluru {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/bengaluru.svg") no-repeat;
     background-size: auto;
-    background-color: #E6CFAD;
+    background-color: #F8F1E7;
     background-position-x: right;
     background-position-y: bottom;
   }
@@ -210,7 +213,7 @@ get_header('designathon23');
   .city-mumbai {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/mumbai.svg") no-repeat;
     background-size: auto;
-    background-color: #E6CFAD;
+    background-color: #F8F1E7;
     background-position-x: right;
     background-position-y: bottom;
   }
@@ -218,7 +221,7 @@ get_header('designathon23');
   .city-chennai {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/chennai.svg") no-repeat;
     background-size: auto;
-    background-color: #E6CFAD;
+    background-color: #F8F1E7;
     background-position-x: right;
     background-position-y: bottom;
   }
@@ -226,7 +229,7 @@ get_header('designathon23');
   .city-hyderabad {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/hyderabad.svg") no-repeat;
     background-size: auto;
-    background-color: #E6CFAD;
+    background-color: #F8F1E7;
     background-position-x: right;
     background-position-y: bottom;
   }
@@ -243,9 +246,11 @@ get_header('designathon23');
 
   .participate-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
     height: calc(100% + 50px);
+    place-items: center;
+    padding: 0px 80px;
   }
 
   .participate-item>img {
@@ -263,21 +268,21 @@ get_header('designathon23');
 
   .participate-content {
     position: absolute;
-    bottom: 125px;
+    bottom: 80px;
     z-index: 10;
-    width: 92%;
+    width: 100%;
   }
 
   .participate-content>p {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 
   .participate-bg {
     position: absolute;
-    bottom: 50px;
-    height: 175px;
-    width: 91.7%;
+    height: 100%;
+    top: 0;
+    width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
     z-index: 1;
     border-radius: 16px;
@@ -358,14 +363,9 @@ get_header('designathon23');
   .img-footer {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/footer.svg") no-repeat;
     background-size: 100%;
-    padding-top: 112px;
+    padding-top: 135px;
   }
 
-  @media (max-width: 1536px) {
-    .participate-item>img {
-      width: 92%;
-    }
-  }
 
   @media (max-width: 768px) {
 
@@ -504,6 +504,11 @@ get_header('designathon23');
   li:last-child>hr {
     display: none;
   }
+
+  .mt-32 {
+    margin-top: 32px;
+  }
+  
 </style>
 
 <main class="main">
@@ -512,7 +517,7 @@ get_header('designathon23');
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 text-center pt-56 px-0">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/logo.png" alt="logo" />
+          <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
         </div>
         <div class="col-12 text-center d-flex justify-content-center pt-56">
           <h3 class="col-12 col-lg-7  fnt-60 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
@@ -570,34 +575,34 @@ get_header('designathon23');
         </div>
       </div>
       <div class="row d-flex justify-content-center mt-124">
-        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column mt-lg-5 mt-3">
+        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column pt-32 px-auto pe-3">
           <div class="city-bengaluru">
             <div class="city-info">
-              <h3>ಬೆಂಗಳೂರು</h3>
-              <p class="mb-2 mb-lg-3">Lollypop Design Studio</p>
+              <h3 class="fnt-32 fnt-700 clr-orange">ಬೆಂಗಳೂರು</h3>
+              <p class="mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
               <h3 class="pb-98">Bengaluru</h3>
             </div>
           </div>
-          <div class="city-mumbai mt-md-4 mt-lg-4 mt-lg-4 mt-3">
+          <div class="city-mumbai mt-32">
             <div class="city-info">
-              <h3>मुंबई</h3>
-              <p class="mb-2 mb-lg-3">Lollypop Design Studio</p>
+              <h3 class="fnt-32 fnt-700 clr-orange mb-0">मुंबई</h3>
+              <p class="mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
               <h3 class="pb-98">Mumbai</h3>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column mt-3">
+        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column px-auto ps-3">
           <div class="city-chennai">
             <div class="city-info">
-              <h3>சென்னை</h3>
-              <p class="mb-2 mb-lg-3">Lollypop Design Studio</p>
+              <h3 class="fnt-32 fnt-700 clr-orange mb-0">சென்னை</h3>
+              <p class="mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
               <h3 class="pb-98">Chennai</h3>
             </div>
           </div>
-          <div class="city-hyderabad mt-md-4 mt-lg-4 mt-3">
+          <div class="city-hyderabad mt-32">
             <div class="city-info">
-              <h3>హైదరాబాద్</h3>
-              <p class="mb-2 mb-lg-3">Lollypop Design Studio</p>
+              <h3 class="fnt-32 fnt-700 clr-orange mb-0">హైదరాబాద్</h3>
+              <p class="mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
               <h3 class="pb-98">Hyderabad</h3>
             </div>
           </div>
@@ -733,7 +738,7 @@ get_header('designathon23');
       </div>
       <div class="row d-flex justify-content-center pt-32">
         <div class="col-12 col-md-12 col-lg-12 mx-auto">
-          <div class="mt-4 sec-video">
+          <div class="sec-video">
             <div class="text-center col-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
               <a href="https://www.youtube.com/watch?v=o5qzJV9YGck" data-fancybox="">
                 <img class="img-fluid lazyloaded" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2023.png" alt="video"></noscript>
@@ -777,10 +782,10 @@ get_header('designathon23');
         </div>
         <div class="sponsor-info mt-64">
           <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-6">
-              <div class="sponsor-item">
+            <div class="col-12 col-lg-6 px-0">
+              <div class="sponsor-item me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstock.png" alt="upstock" />
-                <p class="fnt-400 clr-darkblue pt-32">
+                <p class=" fnt-switzer fnt-400 clr-darkblue pt-32">
                   Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone.
                   <br><br>
                   Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding.
@@ -788,10 +793,10 @@ get_header('designathon23');
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-6 mt-lg-0 mt-3">
-              <div class="sponsor-item">
+            <div class="col-12 col-lg-6 px-0">
+              <div class="sponsor-item ms-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/creditvidya.png" alt="creditvidya" />
-                <p class="fnt-400 clr-darkblue pt-32">
+                <p class="fnt-switzer fnt-400 clr-darkblue pt-32">
                   Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers.
                   <br><br>With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost.
                   <br><br>Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.
