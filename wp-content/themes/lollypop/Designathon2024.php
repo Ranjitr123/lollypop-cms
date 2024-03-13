@@ -168,7 +168,7 @@ get_header('designathon23');
   }
 
   .fnt-clash {
-    font-family: 'Clash Grotesk';
+    font-family: Clash Grotesk;
   }
 
   .fnt-cities {
