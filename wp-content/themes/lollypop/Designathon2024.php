@@ -60,6 +60,10 @@ get_header('designathon23');
     font-weight: 400;
   }
 
+  .mt-20 {
+    margin-top: 20px;
+  }
+
   .btn-register {
     background-color: #F45B01;
     height: 50px;
@@ -69,12 +73,20 @@ get_header('designathon23');
     border-radius: 6px;
   }
 
+  .mt-title {
+    margin-top: 56px;
+  }
+
   .pt-56 {
     padding-top: 56px;
   }
 
-  .pt-24 {
-    padding-top: 24px;
+  .mt-content {
+    margin-top: 24px;
+  }
+
+  .mt-btn {
+    margin-top: 32px;
   }
 
   .pt-32 {
@@ -93,17 +105,14 @@ get_header('designathon23');
     color: #02323E;
   }
 
-  .pt-120 {
-    padding-top: 120px;
-  }
-
   .mt-124 {
     margin-top: 124px;
   }
 
   .fnt-20 {
     line-height: 32px;
-}
+  }
+
   /* Bannder */
   .sec-banner {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/banner-vector.svg") no-repeat;
@@ -116,7 +125,12 @@ get_header('designathon23');
     height: auto;
   }
 
+  .logo {
+    margin-top: 56px;
+  }
+
   .fnt-title {
+    font-size: 60px;
     font-family: Clash Grotesk;
     letter-spacing: -2px;
     line-height: 64px;
@@ -133,7 +147,6 @@ get_header('designathon23');
     padding: 12px 36px;
     background: #F45B01;
     font-size: 18px;
-    font-weight: 700;
     position: relative;
     height: 50px;
     -moz-transition: all 0.3s ease;
@@ -159,12 +172,20 @@ get_header('designathon23');
 
   /* 04 Cities */
 
+  .section-04cities {
+    margin-top: 120px;
+  }
+
   .fnt-130 {
     font-size: 130px;
   }
 
   .pb-98 {
     padding-bottom: 98px;
+  }
+
+  .mt-32 {
+    margin-top: 32px;
   }
 
   .fnt-clash {
@@ -176,13 +197,19 @@ get_header('designathon23');
     font-size: 98px;
   }
 
+  .cities-height {
+    height: 180px;
+  }
+
   .cities-wrapper {
-    position: absolute;
+    position: relative;
   }
 
   .cities {
-    position: relative;
-    top: -115px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .cities-sm {
@@ -240,15 +267,15 @@ get_header('designathon23');
     font-size: 56px;
   }
 
-  .pt-160 {
-    padding-top: 160px;
+  .section-participate {
+    margin-top: 120px;
   }
 
   .participate-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    height: calc(100% + 50px);
+    height: 100%;
     place-items: center;
     padding: 0px 80px;
   }
@@ -271,6 +298,7 @@ get_header('designathon23');
     bottom: 80px;
     z-index: 10;
     width: 100%;
+    padding: 0 24px;
   }
 
   .participate-content>p {
@@ -313,6 +341,7 @@ get_header('designathon23');
 
   .fnt-28 {
     font-size: 28px;
+    line-height: 28px;
   }
 
   .rule {
@@ -326,7 +355,17 @@ get_header('designathon23');
     margin-top: 20px;
   }
 
+  /* Designathon23 */
+  .section-designathon23 {
+    margin-top: 120px;
+  }
+
   /* Rule */
+
+  .section-rule {
+    margin-top: 120px;
+  }
+
   .rule-wrapper {
     position: relative;
 
@@ -345,6 +384,11 @@ get_header('designathon23');
   }
 
   /* Sponsor"> */
+
+  .sec-sponsor {
+    margin-top: 160px;
+  }
+
   .sponsor-item {
     border: 1px solid #E6CFAD99;
     border-radius: 16px;
@@ -359,18 +403,48 @@ get_header('designathon23');
     margin-top: 80px;
   }
 
+  /* FAQ */
+  .sec-faq {
+    margin-top: 160px;
+  }
+
   /* footer */
+  .section-footer {
+    margin-top: 120px;
+  }
+
   .img-footer {
     background: url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/footer.svg") no-repeat;
     background-size: 100%;
     padding-top: 135px;
   }
 
+  @media (max-width: 1536px) {
+    .rule-info {
+      top: 15%;
+    }
+  }
 
   @media (max-width: 768px) {
 
+    .section-04cities {
+      margin-top: 56px;
+    }
+
+    .section-event {
+      padding-top: 0;
+    }
+
+    .section-event,
+    .section-designathon23,
+    .sec-sponsor,
+    .section-rule,
+    .section-participate {
+      margin-top: 64px;
+    }
+
     .pt-120 {
-      padding-top: 60px;
+      padding-top: 56px;
     }
 
     .fnt-60 {
@@ -378,29 +452,71 @@ get_header('designathon23');
     }
 
     .fnt-56 {
-      font-size: 40px;
+      font-size: 36px;
     }
 
     .mt-124 {
-      margin-top: 0px;
+      margin-top: 28px;
     }
 
-    .pt-160 {
-      padding-top: 80px;
+    .mt-sm-20,
+    .mt-32 {
+      margin-top: 20px;
+    }
+
+    .mt-title {
+      margin-top: 44px;
+    }
+
+    .mt-content {
+      margin-top: 12px;
+    }
+
+    .mt-btn {
+      margin-top: 20px;
     }
 
     .pt-56 {
       padding-top: 28px;
     }
 
+    .fnt-32 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .logo {
+      margin-top: 48px;
+    }
+
+    .fnt-title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .fnt-content {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
     .banner_duration {
       width: 80%;
-      align-self: center;
+      align-self: start;
+    }
+
+    .v-line {
+      align-self: start;
+    }
+
+    .cities-height {
+      height: fit-content;
+      flex-direction: column-reverse;
+      margin-bottom: 45px;
     }
 
     .citi-desc {
-      margin-top: 200px;
-      width: 85%;
+      margin-top: 0px;
+      align-items: center;
     }
 
     .city-bengaluru,
@@ -420,7 +536,13 @@ get_header('designathon23');
 
     .participate-wrapper {
       grid-template-columns: repeat(1, 100%);
-      height: calc(100% + 150px);
+      height: 100%;
+      padding: 0;
+      gap: 20px;
+    }
+
+    .participate-content {
+      padding: 0 12px;
     }
 
     .participate-content {
@@ -441,32 +563,49 @@ get_header('designathon23');
     }
 
     .event-wrapper>h3 {
-      width: 50%;
+      font-size: 36px;
+      line-height: 44px;
     }
 
     .rule-info {
-      top: 2px;
-      left: 18px;
+      top: 24px;
+      left: 36px;
+      width: 90%;
     }
 
     .rule-info__faq {
-      font-size: 10px;
+      font-size: 14px;
       margin-bottom: 0px;
       line-height: 16px;
     }
 
     .rule-info__heading {
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 4px;
+      margin-bottom: 20px;
     }
 
     .rule-info__btn {
-      padding: 0px 0px;
-      font-size: 10px;
+      padding: 10px 0px;
+      font-size: 16px;
       font-weight: 500;
-      height: 24px;
-      width: 100px;
+      height: 46px;
+      width: 194px;
       left: 12px;
+    }
+
+    .rule {
+      margin: 16px 0;
+    }
+
+    .fnt-rule {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .event-details {
+      margin-top: 32px;
     }
 
     .sponsor-item {
@@ -485,10 +624,25 @@ get_header('designathon23');
     .event-register {
       display: flex;
       flex-direction: column;
-      align-items: center;
+    }
+
+    .fnt-28 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .fnt-24 {
+      font-size: 20px;
+    }
+
+    .btn-event {
+      width: 100%;
     }
 
     .mt-64 {
+      margin-top: 32px;
+    }
+    .mt-sm-32 {
       margin-top: 32px;
     }
   }
@@ -504,11 +658,6 @@ get_header('designathon23');
   li:last-child>hr {
     display: none;
   }
-
-  .mt-32 {
-    margin-top: 32px;
-  }
-  
 </style>
 
 <main class="main">
@@ -516,35 +665,35 @@ get_header('designathon23');
   <section class="sec-banner pt-lg-7 position-relative">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-12 text-center pt-56 px-0">
+        <div class="col-12 text-center logo px-0">
           <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
         </div>
-        <div class="col-12 text-center d-flex justify-content-center pt-56">
-          <h3 class="col-12 col-lg-7  fnt-60 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
+        <div class="col-12 text-center d-flex justify-content-center mt-title">
+          <h3 class="col-12 col-lg-7 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
         </div>
-        <div class="col-12 text-center d-flex justify-content-center pt-24">
+        <div class="col-12 text-center d-flex justify-content-center mt-content">
           <p class="col-12 col-lg-7 clr-white fnt-400 fnt-switzer fnt-content mb-0">
             Unleash your inner design passion at our action-packed design hackathon!
             Meet fellow creative minds, ignite ideas, and conquer real-world challenges — all within a mere 24 hours!
           </p>
         </div>
-        <div class="col-8 col-lg-3 text-center d-flex justify-content-center pt-32">
-          <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>" class="text-center btn-orange text-uppercase fnt-switzer clr-white">Register Now</a>
+        <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn">
+          <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>" class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
         </div>
         <div class="row d-flex justify-content-center pt-56">
           <div class="col-12 col-lg-7">
             <div class="row">
-              <div class="col-4 text-center d-flex flex-column justify-content-center">
+              <div class="col-4 d-flex flex-column text-lg-center text-start">
                 <p class="clr-orange text-uppercase fnt-14 fnt-600 fnt-switzer lh-0">Date</p>
                 <p class="clr-white text-uppercase fnt-20 fnt-700 fnt-switzer">26 - 27th April</p>
                 <div class="v-line"></div>
               </div>
-              <div class="col-4 text-center d-flex flex-column justify-content-center">
+              <div class="col-4 d-flex flex-column text-lg-center text-start">
                 <p class="clr-orange text-uppercase fnt-14 fnt-600 lh-0 fnt-switzer">Duration</p>
                 <p class="clr-white text-uppercase fnt-20 fnt-700 fnt-switzer banner_duration">24 Hours</p>
                 <div class="v-line"></div>
               </div>
-              <div class="col-4 text-center d-flex flex-column justify-content-center">
+              <div class="col-4 d-flex flex-column text-lg-center text-start">
                 <p class="clr-orange text-uppercase fnt-14 fnt-600 lh-0 fnt-switzer">Designers</p>
                 <p class="clr-white text-uppercase fnt-20 fnt-700 fnt-switzer">200+ Participants</p>
                 <div class="v-line"></div>
@@ -556,9 +705,9 @@ get_header('designathon23');
     </div>
   </section>
   <!-- 4 Cities -->
-  <section class="section-04cities pt-120">
+  <section class="section-04cities">
     <div class="container">
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center cities-height">
         <div class="col-12 col-md-5 col-lg-5 text-center d-flex flex-column">
           <div class="cities-wrapper">
             <h3 class="fnt-cities text-uppercase fnt-clash fnt-700">Cities</h3>
@@ -568,7 +717,7 @@ get_header('designathon23');
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column mt-lg-5 citi-desc">
+        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center citi-desc">
           <p class="fnt-20 fnt-500 fnt-switzer clr-darkblue mb-0">After last year's success in Bangalore, </p>
           <p class="fnt-20 fnt-500 fnt-switzer clr-darkblue mb-0">Chennai and Hyderabad, we're amping it up! </p>
           <p class="fnt-20 fnt-500 fnt-switzer clr-darkblue mb-0">Designathon is now hitting Mumbai too!</p>
@@ -591,7 +740,7 @@ get_header('designathon23');
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column px-auto ps-3">
+        <div class="col-12 col-md-5 col-lg-5 d-flex flex-column px-auto ps-3 mt-sm-20">
           <div class="city-chennai">
             <div class="city-info">
               <h3 class="fnt-32 fnt-700 clr-orange mb-0">சென்னை</h3>
@@ -611,11 +760,11 @@ get_header('designathon23');
     </div>
   </section>
   <!-- Why Participate? -->
-  <section class="section-04cities pt-160">
+  <section class="section-participate">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 text-center">
-          <h3 class="fnt-56 fnt-700 fnt-clash text-uppercase">Why Participate?</h3>
+          <h3 class="fnt-56 fnt-700 clr-darkblue fnt-clash text-uppercase mb-0">Why Participate?</h3>
         </div>
       </div>
       <div class="row d-flex justify-content-center pt-56">
@@ -662,11 +811,11 @@ get_header('designathon23');
           <div class=" row d-flex justify-content-center mx-auto">
             <div class="col-12 col-lg-6 event-wrapper">
               <h3 class="fnt-56 fnt-700 clr-darkblue text-uppercase fnt-clash">Event Details</h3>
-              <p>Unlock all the details about Designathon right here, right now! It's a must-know, so don't even think about skipping it!</p>
+              <p class="fnt-switzer clr-darkblue mb-0">Unlock all the details about Designathon right here, right now! It's a must-know, so don't even think about skipping it!</p>
             </div>
           </div>
           <div class="img-event">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/event-vector.svg" alt="logo" />
+            <img class="img-fluid d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/event-vector.svg" alt="logo" />
           </div>
         </div>
         <div class="col-12 col-lg-6 px-0 d-flex flex-column">
@@ -674,8 +823,8 @@ get_header('designathon23');
             <div class="col-12 col-lg-8 event-details">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">01</h3>
               <div class="rule"></div>
-              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">registration process</h3>
-              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">registration process</h3>
+              <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
             </div>
           </div>
 
@@ -683,8 +832,8 @@ get_header('designathon23');
             <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">02</h3>
               <div class="rule"></div>
-              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Date and Time</h3>
-              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Mark your calendars for Designathon happening on the 26th-27th of April, 2024. Buckle up for a non-stop 24-hour ride through the world of design!</p>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Date and Time</h3>
+              <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20">Mark your calendars for Designathon happening on the 26th-27th of April, 2024. Buckle up for a non-stop 24-hour ride through the world of design!</p>
             </div>
           </div>
 
@@ -692,8 +841,8 @@ get_header('designathon23');
             <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">03</h3>
               <div class="rule"></div>
-              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Location Preference</h3>
-              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">You will be allotted your team and the problem statement on the 26th of April, the same day you arrive at the venue.</p>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Location Preference</h3>
+              <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20">You will be allotted your team and the problem statement on the 26th of April, the same day you arrive at the venue.</p>
             </div>
           </div>
 
@@ -701,8 +850,8 @@ get_header('designathon23');
             <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">04</h3>
               <div class="rule"></div>
-              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Team Allocation</h3>
-              <p class="fnt-switzer  fnt-400 clr-darkblue  mb-0">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 27th April.</p>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Team Allocation</h3>
+              <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 27th April.</p>
             </div>
           </div>
 
@@ -710,8 +859,8 @@ get_header('designathon23');
             <div class="col-12 col-lg-8">
               <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">05</h3>
               <div class="rule"></div>
-              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600">Awards</h3>
-              <p class="fnt-switzer  fnt-400 clr-darkblue mb-0">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+              <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Awards</h3>
+              <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
             </div>
           </div>
 
@@ -729,7 +878,7 @@ get_header('designathon23');
   </section>
 
   <!-- Designathon’23 -->
-  <section class="section-04cities pt-120">
+  <section class="section-designathon23">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-lg-8 text-center">
@@ -751,19 +900,20 @@ get_header('designathon23');
   </section>
 
   <!-- Rule -->
-  <section class="section-rule pt-120">
+  <section class="section-rule">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="rule-wrapper d-flex justify-content-center">
           <div class="col-12 text-center">
             <div class="row">
-              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
+              <img class="img-fluid d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/rule1.png" alt="rule">
+              <img class="img-fluid d-xl-none d-lg-none d-xl-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/sm-rule.png" alt="rule">
             </div>
           </div>
           <div class="rule-info">
             <div class="row d-flex flex-column">
               <p class="fnt-switzer rule-info__faq" style="color: #FFFAF1; font-weight: 400;">Keen to know more?</p>
-              <h3 class="col-8 fnt-32 fnt-600 clr-white rule-info__heading">Rules and regulations to get you started</h3>
+              <h3 class="col-11 fnt-32 fnt-600 clr-white rule-info__heading">Rules and regulations to get you started</h3>
               <a target="_blank" href="<?php the_field('button_download') ?>" class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-3 ms-0 mt-0">Download Pdf</a>
             </div>
           </div>
@@ -772,7 +922,7 @@ get_header('designathon23');
     </div>
   </section>
   <!-- OUR SPONSORS -->
-  <section class="section-rule pt-120">
+  <section class="sec-sponsor">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-10 text-center">
@@ -783,7 +933,7 @@ get_header('designathon23');
         <div class="sponsor-info mt-64">
           <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-6 px-0">
-              <div class="sponsor-item me-3">
+              <div class="sponsor-item me-lg-3 ms-lg-0 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstock.png" alt="upstock" />
                 <p class=" fnt-switzer fnt-400 clr-darkblue pt-32">
                   Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone.
@@ -793,8 +943,8 @@ get_header('designathon23');
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-6 px-0">
-              <div class="sponsor-item ms-3">
+            <div class="col-12 col-lg-6 px-0 mt-sm-32">
+              <div class="sponsor-item me-lg-0 ms-lg-3 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/creditvidya.png" alt="creditvidya" />
                 <p class="fnt-switzer fnt-400 clr-darkblue pt-32">
                   Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers.
@@ -807,11 +957,9 @@ get_header('designathon23');
         </div>
       </div>
     </div>
-    </div>
   </section>
-
   <!-- FAQ -->
-  <section class="sec-faq pt-160">
+  <section class="sec-faq">
     <div class="container">
       <div class=" faq-head col-12 text-center">
         <h6 class="fnt-56 fnt-700 clr-darkblue">WHEN IN DOUBT, ALWAYS ASK</h6>
@@ -847,7 +995,8 @@ get_header('designathon23');
         </div>
       </div>
   </section>
-  <section class="section-footer pt-120">
+  <!-- Footer -->
+  <section class="section-footer">
     <div class="img-footer"></div>
   </section>
 </main>
