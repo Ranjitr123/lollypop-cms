@@ -927,7 +927,7 @@ get_header('designathon23');
       <div class="row d-flex justify-content-center">
         <div class="col-10 text-center">
           <div class="row">
-            <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue">OUR SPONSORS</h3>
+            <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue mb-0">OUR SPONSORS</h3>
           </div>
         </div>
         <div class="sponsor-info mt-64">
