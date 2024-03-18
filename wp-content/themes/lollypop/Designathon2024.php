@@ -722,6 +722,7 @@ get_header('designathon23');
 
   .f-accordion__body {
     padding-top: 20px;
+    padding-bottom: 0px;
   }
 
   li:last-child>hr {
@@ -735,8 +736,12 @@ get_header('designathon23');
     z-index: 1;
   }
 
-  hr {
-    margin: 40px 0;
+  .mt-40 {
+    margin-top: 40px;
+  }
+
+  .mb-40 {
+    margin-top: 40px;
   }
 </style>
 
@@ -1078,7 +1083,7 @@ get_header('designathon23');
                           <?php the_sub_field('faq_answer') ?>
                         </div>
                       </div>
-                      <hr>
+                      <hr class="mt-40 mb-40">
                     </li>
                 <?php $i++;
                   endwhile;
