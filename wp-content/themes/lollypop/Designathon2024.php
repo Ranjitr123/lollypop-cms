@@ -452,6 +452,15 @@ get_header('designathon23');
   .lh-56 {
     line-height: 56px;
   }
+
+  .mt-40 {
+    margin-top: 40px;
+  }
+
+  .mb-40 {
+    margin-top: 40px;
+  }
+
   @media (max-width: 1536px) {
     .rule-info {
       top: 15%;
@@ -710,6 +719,14 @@ get_header('designathon23');
     .mt-sm-32 {
       margin-top: 32px;
     }
+
+    .mt-40 {
+      margin-top: 32px;
+    }
+
+    .mb-40 {
+      margin-top: 32px;
+    }
   }
 
   .faq-el--athon .f-accordion__head::after {
@@ -734,14 +751,6 @@ get_header('designathon23');
     left: 36px;
     position: absolute;
     z-index: 1;
-  }
-
-  .mt-40 {
-    margin-top: 40px;
-  }
-
-  .mb-40 {
-    margin-top: 40px;
   }
 </style>
 
