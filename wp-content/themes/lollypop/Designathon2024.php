@@ -473,6 +473,15 @@ get_header('designathon23');
 
   @media (max-width: 768px) {
 
+    .langual {
+      padding-top: 18px !important;
+      left: 6px !important;
+    }
+
+    .logo-img {
+      width: 60%;
+    }
+
     .fnt-banner-14 {
       font-size: 12px;
       line-height: 20px;
