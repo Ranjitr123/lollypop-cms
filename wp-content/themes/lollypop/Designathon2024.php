@@ -7,6 +7,8 @@
 get_header('designathon23');
 ?>
 <style>
+  @import url('https://fonts.cdnfonts.com/css/switzer');
+
   body {
     padding-bottom: 0 !important;
     background: #FFF;
@@ -195,6 +197,7 @@ get_header('designathon23');
   .fnt-cities {
     opacity: 30%;
     font-size: 98px;
+    color: #E6CFAD;
   }
 
   .cities-height {
@@ -207,7 +210,7 @@ get_header('designathon23');
 
   .cities {
     position: absolute;
-    top: 20px;
+    top: 17px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1052,7 +1055,7 @@ get_header('designathon23');
             <div class="col-12 col-lg-6 px-0">
               <div class="sponsor-item me-lg-3 ms-lg-0 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstock.png" alt="upstock" />
-                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32">
+                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32" style="opacity: 70%;">
                   Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone.
                   <br><br>
                   Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding.
@@ -1063,7 +1066,7 @@ get_header('designathon23');
             <div class="col-12 col-lg-6 px-0 mt-sm-32">
               <div class="sponsor-item me-lg-0 ms-lg-3 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/creditvidya.png" alt="creditvidya" />
-                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32">
+                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32" style="opacity: 70%;">
                   Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers.
                   <br><br>With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost.
                   <br><br>Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.
@@ -1079,7 +1082,7 @@ get_header('designathon23');
   <section class="sec-faq">
     <div class="container">
       <div class=" faq-head col-12 text-center">
-        <h6 class="fnt-56 fnt-700 clr-darkblue">WHEN IN DOUBT, ALWAYS ASK</h6>
+        <h6 class="fnt-56 fnt-700 fnt-clash clr-darkblue">WHEN IN DOUBT, ALWAYS ASK</h6>
       </div>
       <div class="row d-flex justify-content-center mt-80 mx-0">
         <div class="col-12 col-md-7 col-lg-7 d-flex flex-column px-0">
