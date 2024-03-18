@@ -268,7 +268,7 @@ get_header('designathon23');
   }
 
   .section-participate {
-    margin-top: 120px;
+    margin-top: 160px;
   }
 
   .participate-wrapper {
@@ -375,6 +375,7 @@ get_header('designathon23');
   .rule-info {
     position: absolute;
     top: 66px;
+    bottom: 66px;
     left: 64px;
   }
 
@@ -444,6 +445,13 @@ get_header('designathon23');
     line-height: 20px;
   }
 
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-56 {
+    line-height: 56px;
+  }
   @media (max-width: 1536px) {
     .rule-info {
       top: 15%;
@@ -712,6 +720,10 @@ get_header('designathon23');
     background-color: #02323E !important;
   }
 
+  .f-accordion__body {
+    padding-top: 20px;
+  }
+
   li:last-child>hr {
     display: none;
   }
@@ -723,6 +735,9 @@ get_header('designathon23');
     z-index: 1;
   }
 
+  hr {
+    margin: 40px 0;
+  }
 </style>
 
 <main class="main">
@@ -799,7 +814,7 @@ get_header('designathon23');
           <p class="fnt-20 fnt-500 lh-26 fnt-switzer clr-darkblue mb-0">Designathon is now hitting Mumbai too!</p>
         </div>
       </div>
-      <div class="row d-flex justify-content-center mt-124">
+      <div class="row d-flex justify-content-center pt-56">
         <div class="col-12 col-md-5 col-lg-5 d-flex flex-column pt-32 px-auto pe-3">
           <div class="city-bengaluru">
             <div class="city-info">
@@ -1014,7 +1029,7 @@ get_header('designathon23');
             <div class="col-12 col-lg-6 px-0">
               <div class="sponsor-item me-lg-3 ms-lg-0 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstock.png" alt="upstock" />
-                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue pt-32">
+                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32">
                   Upstox is one of India's biggest digital investment platforms, with a mission of making financial investing simple, equitable, and accessible to everyone.
                   <br><br>
                   Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding.
@@ -1025,7 +1040,7 @@ get_header('designathon23');
             <div class="col-12 col-lg-6 px-0 mt-sm-32">
               <div class="sponsor-item me-lg-0 ms-lg-3 ms-3 me-3">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/creditvidya.png" alt="creditvidya" />
-                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue pt-32">
+                <p class="fnt-switzer fnt-400 fnt-sm-14 clr-darkblue lh-24 pt-32">
                   Introducing Prefr(originally Creditvidya) an embedded lending-as-a-service platform that utilizes AI-driven underwriting to provide accessible unsecured loans for underserved customers.
                   <br><br>With a decade of experience in credit scoring, Prefr empowers internet platforms to acquire, engage, and monetize users, while partnering with lenders to expand their reach at a marginal cost.
                   <br><br>Together, they are bridging the financial gap for those earning under 50k and driving the future of inclusive lending.
