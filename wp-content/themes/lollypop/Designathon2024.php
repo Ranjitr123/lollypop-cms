@@ -715,15 +715,34 @@ get_header('designathon23');
   li:last-child>hr {
     display: none;
   }
+
+  .langual {
+    padding-top: 56px;
+    left: 36px;
+    position: absolute;
+    z-index: 1;
+  }
+
 </style>
 
 <main class="main">
   <!-- 01 -->
   <section class="sec-banner pt-lg-7 position-relative">
+    <div class="row langual mx-0">
+      <a href="<?php echo get_site_url() ?>">
+        <img class="img-fluid logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/llp.svg" alt="logo">
+      </a>
+    </div>
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 text-center logo px-0">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg" alt="logo" />
+        </div>
+        <div class="col-12 text-center px-0">
           <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
+        </div>
+        <div class="col-12 text-center px-0">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstox-act.svg" alt="logo" />
         </div>
         <div class="col-12 text-center d-flex justify-content-center mt-title">
           <h3 class="col-12 col-lg-7 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
