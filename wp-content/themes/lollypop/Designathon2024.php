@@ -435,7 +435,7 @@ get_header('designathon23');
   }
 
   .fnt-city {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 24px;
   }
 
@@ -466,6 +466,10 @@ get_header('designathon23');
 
   .op-70 {
     opacity: 70%;
+  }
+
+  .op-80 {
+    opacity: 80%;
   }
   @media (max-width: 1536px) {
     .rule-info {
@@ -782,8 +786,8 @@ get_header('designathon23');
         <div class="col-12 text-center logo px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg" alt="logo" />
         </div>
-        <div class="col-12 text-center px-0">
-          <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
+        <div class="col-3 text-center px-0">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2024.gif" alt="logo" />
         </div>
         <div class="col-12 text-center px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstox-act.svg" alt="logo" />
@@ -792,7 +796,7 @@ get_header('designathon23');
           <h3 class="col-12 col-lg-7 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
         </div>
         <div class="col-12 text-center d-flex justify-content-center mt-content">
-          <p class="col-12 col-lg-7 clr-white fnt-400 fnt-switzer fnt-content mb-0">
+          <p class="col-12 col-lg-7 clr-white fnt-400 fnt-switzer fnt-content mb-0 op-80">
             Unleash your inner design passion at our action-packed design hackathon!
             Meet fellow creative minds, ignite ideas, and conquer real-world challenges — all within a mere 24 hours!
           </p>
@@ -848,15 +852,15 @@ get_header('designathon23');
           <div class="city-bengaluru">
             <div class="city-info">
               <h3 class="fnt-32 fnt-700 clr-orange">ಬೆಂಗಳೂರು</h3>
-              <p class="fnt-llp mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
-              <h3 class="pb-98 fnt-city">Bengaluru</h3>
+              <p class="fnt-llp mb-2 mb-lg-3 mt-2 op-80 clr-darkblue">Lollypop Design Studio</p>
+              <h3 class="pb-98 fnt-city fnt-600 fnt-clash clr-darkblue">Bengaluru</h3>
             </div>
           </div>
           <div class="city-mumbai mt-32">
             <div class="city-info">
               <h3 class="fnt-32 fnt-700 clr-orange mb-0">मुंबई</h3>
-              <p class="fnt-llp mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
-              <h3 class="pb-98 fnt-city">Mumbai</h3>
+              <p class="fnt-llp mb-2 mb-lg-3 mt-2 op-80 clr-darkblue">Lollypop Design Studio</p>
+              <h3 class="pb-98 fnt-city fnt-600 fnt-clash clr-darkblue">Mumbai</h3>
             </div>
           </div>
         </div>
@@ -864,15 +868,15 @@ get_header('designathon23');
           <div class="city-chennai">
             <div class="city-info">
               <h3 class="fnt-32 fnt-700 clr-orange mb-0">சென்னை</h3>
-              <p class="fnt-llp mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
-              <h3 class="pb-98 fnt-city">Chennai</h3>
+              <p class="fnt-llp mb-2 mb-lg-3 mt-2 op-80 clr-darkblue">Lollypop Design Studio</p>
+              <h3 class="pb-98 fnt-city fnt-600 fnt-clash clr-darkblue">Chennai</h3>
             </div>
           </div>
           <div class="city-hyderabad mt-32">
             <div class="city-info">
               <h3 class="fnt-32 fnt-700 clr-orange mb-0">హైదరాబాద్</h3>
-              <p class="fnt-llp mb-2 mb-lg-3 mt-2">Lollypop Design Studio</p>
-              <h3 class="pb-98 fnt-city">Hyderabad</h3>
+              <p class="fnt-llp mb-2 mb-lg-3 mt-2 op-80 clr-darkblue">Lollypop Design Studio</p>
+              <h3 class="pb-98 fnt-city fnt-600 fnt-clash clr-darkblue">Hyderabad</h3>
             </div>
           </div>
         </div>
@@ -1035,7 +1039,7 @@ get_header('designathon23');
           </div>
           <div class="rule-info">
             <div class="row d-flex flex-column">
-              <p class="fnt-switzer rule-info__faq" style="color: #FFFAF1; font-weight: 400;">Keen to know more?</p>
+              <p class="fnt-switzer rule-info__faq op-70" style="color: #FFFAF1; font-weight: 400;">Keen to know more?</p>
               <h3 class="col-11 col-lg-8 fnt-32 fnt-600 clr-white rule-info__heading">Rules and regulations to get you started</h3>
               <a target="_blank" href="<?php the_field('button_download') ?>" class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-4 ms-0 mt-0">Download Pdf</a>
             </div>
@@ -1102,8 +1106,8 @@ get_header('designathon23');
                           <h6 class="fnt-20 fnt-600 clr-darkblue fnt-switzer mb-0"><?php the_sub_field('faq_question') ?></h6>
                         </div>
                         <div class="f-accordion__body clr-darkblue fnt-400 fnt-switzer op-70" style="<?php if ($i == 0) {
-                                                                                      echo "display: block;";
-                                                                                    } ?>">
+                                                                                                        echo "display: block;";
+                                                                                                      } ?>">
                           <?php the_sub_field('faq_answer') ?>
                         </div>
                       </div>
