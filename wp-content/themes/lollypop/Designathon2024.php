@@ -488,6 +488,17 @@ get_header('designathon23');
     margin-top: 12px;
   }
 
+  .logo-img {
+    width: 65%;
+  }
+
+  .langual {
+    padding-top: 56px;
+    left: 36px;
+    position: absolute;
+    z-index: 1;
+  }
+
   @media (max-width: 1536px) {
     .rule-info {
       top: 15%;
@@ -510,7 +521,7 @@ get_header('designathon23');
     }
 
     .langual {
-      padding-top: 18px !important;
+      padding-top: 32px !important;
       left: 6px !important;
     }
 
@@ -791,12 +802,7 @@ get_header('designathon23');
     display: none;
   }
 
-  .langual {
-    padding-top: 56px;
-    left: 36px;
-    position: absolute;
-    z-index: 1;
-  }
+
 </style>
 
 <main class="main">
@@ -812,7 +818,7 @@ get_header('designathon23');
         <div class="col-12 text-center logo px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg" alt="logo" />
         </div>
-        <div class="col-3 text-center mb-3 mt-3 px-0">
+        <div class="col-12 col-lg-3 text-center mb-3 mt-3 px-0">
           <!-- <img class="img-fluid" src="<?php //echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2024.gif" alt="logo" /> -->
           <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
         </div>
