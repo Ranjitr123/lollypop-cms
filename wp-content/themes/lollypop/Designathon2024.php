@@ -812,7 +812,7 @@ get_header('designathon23');
         <div class="col-12 text-center logo px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg" alt="logo" />
         </div>
-        <div class="col-3 text-center px-0">
+        <div class="col-3 text-center mb-3 mt-3 px-0">
           <!-- <img class="img-fluid" src="<?php //echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2024.gif" alt="logo" /> -->
           <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
         </div>
