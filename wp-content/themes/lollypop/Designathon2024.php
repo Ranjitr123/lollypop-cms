@@ -1095,6 +1095,7 @@ get_header('designathon23');
                   <br><br>
                   Upstox transforms the digital brokerage market with cutting-edge technological innovations, empowering Indians to engage comfortably in the equity market and create generational wealth through the power of compounding.
                   <br><br>The tech-enabled platform equips investors with an easy-to-use interface, handpicked market insights, and a wide range of investment choices.
+                  <br><br>
                 </p>
               </div>
             </div>
