@@ -131,12 +131,20 @@ get_header();
     margin-top: 48px;
   }
 
+  .mt-40 {
+    margin-top: 40px;
+  }
+
   .item-img:nth-child(2) {
     width: 100px;
   }
 
   .mt-30 {
     margin-top: 30px;
+  }
+
+  .mt-28 {
+    margin-top: 28px;
   }
 
   /* development */
@@ -176,6 +184,15 @@ get_header();
 
   .mt-32 {
     margin-top: 32px;
+  }
+
+  .mt-28 {
+    margin-top: 28px;
+  }
+
+  .clr-strategies {
+    color: #EEAAE5;
+    opacity: 80%;
   }
 
   @media(max-width:768px) {
@@ -233,7 +250,7 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
-            <div class="mb-r-80">
+            <div class="mb-r-120">
               <div class="project-step">
                 <?php if (have_rows('brief_descriptions')) : while (have_rows('brief_descriptions')) : the_row(); ?>
                     <div class="project-step__item row">
@@ -260,11 +277,11 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
-            <div class="mb-r-80">
+            <div class="mb-r-120">
               <div class="project-step">
                 <?php if (have_rows('project_scope')) : while (have_rows('project_scope')) : the_row(); ?>
                     <div class="project-step__item row">
-                      <div class="col-12 col-md-6 mb-3 mb-md-0">
+                      <div class="col-12 col-md-6 mb-3 mb-md-0 px-0">
                         <img src="<?php the_sub_field('image'); ?>" alt="logo" />
                       </div>
                       <div class="col-12 col-md-6 project-step-disc">
@@ -290,22 +307,22 @@ get_header();
               <div class="col-md-11 px-0 mx-auto">
                 <div class="mb-r-80">
                   <div class="project-step">
-                    <div class="row mb-3">
+                    <div class="row">
                       <div class="col-12 col-md-12 d-flex justify-content-center project-step-disc">
                         <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head">
                           <?php the_sub_field('title'); ?>
                         </span>
                       </div>
                     </div>
-                    <div class="project-step__item row">
+                    <div class="project-step__item row mt-32">
                       <?php if (have_rows('key_1')) : while (have_rows('key_1')) : the_row(); ?>
                           <div class="col-12 col-md-6 project-step-disc">
                             <div class="bg-purple">
                               <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
                                 <?php the_sub_field('heading'); ?>
                               </span>
-                              <div class="project-step-disc__item fnt-14 fnt-400 clr-purple">
-                                <?php the_sub_field('content'); ?>
+                              <div class="project-step-disc__item">
+                                <p class="fnt-14 fnt-400 clr-strategies"><?php the_sub_field('content'); ?> </p>
                               </div>
                             </div>
                           </div>
@@ -318,7 +335,7 @@ get_header();
                                 <?php the_sub_field('heading'); ?>
                               </span>
                               <div class="project-step-disc__item fnt-14 fnt-400 clr-yellow-brown">
-                                <?php the_sub_field('content'); ?>
+                                <p class="fnt-14 fnt-400 clr-yellow-brown"><?php the_sub_field('content'); ?> </p>
                               </div>
                             </div>
                           </div>
@@ -330,8 +347,8 @@ get_header();
                               <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
                                 <?php the_sub_field('heading'); ?>
                               </span>
-                              <div class="project-step-disc__item fnt-14 fnt-400 clr-yellow-brown">
-                                <?php the_sub_field('content'); ?>
+                              <div class="project-step-disc__item">
+                                <p class="fnt-14 fnt-400 clr-yellow-brown"><?php the_sub_field('content'); ?> </p>
                               </div>
                             </div>
                           </div>
@@ -345,7 +362,7 @@ get_header();
                                 <?php the_sub_field('heading'); ?>
                               </span>
                               <div class="project-step-disc__item fnt-14 fnt-400 clr-purple">
-                                <?php the_sub_field('content'); ?>
+                                <p class="fnt-14 fnt-400 clr-strategies"><?php the_sub_field('content'); ?></p>
                               </div>
                             </div>
                           </div>
@@ -372,7 +389,7 @@ get_header();
           <div class="row justify-content-center">
             <div class="col-12 col-md-5 wf-wrapper">
               <div class="mb-r-12 col-12 col-md-12 col-lg-12">
-                <span class="mb-2 mt-5 clr-second d-inline-block fnt-22 fnt-500 text-uppercase  data-scroll disc-head">
+                <span class="mb-2 mt-28 clr-second d-inline-block fnt-22 fnt-500 text-uppercase  data-scroll disc-head">
                   Wireframes for Web
                 </span>
                 <p>
@@ -384,19 +401,23 @@ get_header();
                   wireframes created by our UX tribe.
                 </p>
               </div>
-              <div class="col-12 col-md-12 col-lg-12">
-                <?php if (have_rows('left_images')) : while (have_rows('left_images')) : the_row(); ?>
-                    <img class="img-fluid mt-3" src="<?php the_sub_field('image'); ?>" alt="logo" />
-                <?php endwhile;
+              <div class="col-12 col-md-12 col-lg-12 mt-40">
+                <?php if (have_rows('left_images')) : $i = 0;
+                  while (have_rows('left_images')) : the_row(); ?>
+                    <img class="img-fluid <?php echo $i > 0 ? 'mt-2' : '' ?>" src="<?php the_sub_field('image'); ?>" alt="logo" />
+                <?php $i++;
+                  endwhile;
                 endif; ?>
               </div>
               <div class="blur-white col-12 col-md-12 col-lg-12"></div>
             </div>
             <div class="col-12 col-md-5 wf-wrapper">
               <div class="col-12 col-md-12 col-lg-12">
-                <?php if (have_rows('right_images')) : while (have_rows('right_images')) : the_row(); ?>
-                    <img class="img-fluid mt-3" src="<?php the_sub_field('image'); ?>" alt="logo" />
-                <?php endwhile;
+                <?php if (have_rows('right_images')) : $i = 0;
+                  while (have_rows('right_images')) : the_row(); ?>
+                    <img class="img-fluid <?php echo $i > 0 ? 'mt-2' : '' ?>" src="<?php the_sub_field('image'); ?>" alt="logo" />
+                <?php $i++;
+                  endwhile;
                 endif; ?>
               </div>
               <div class="blur-white col-12 col-md-12 col-lg-12"></div>
@@ -410,9 +431,9 @@ get_header();
   <section class="sec-typo mt-120">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+        <div class="col-12 col-md-11 col-lg-11 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-11 col-lg-10 typography-bg ms-lg-3 ms-0">
+            <div class="col-11 col-lg-10 typography-bg ms-0">
               <div class="row">
                 <div class="col-12 col-md-5 px-0">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/typography-vector.svg" alt="typo" />
@@ -472,7 +493,7 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-10 ">
+            <div class="col-11">
               <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-12 px-0">
                   <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('ui_title'); ?></h3>
@@ -483,7 +504,7 @@ get_header();
               </div>
 
               <div class="row mt-48">
-                <div class="col-12 ui-items">
+                <div class="col-12 d-flex flex-column justify-content-center px-0 ui-items ">
                   <?php if (have_rows('ui_images')) : while (have_rows('ui_images')) : the_row(); ?>
                       <img class="img-fluid" src="<?php the_sub_field('image_1'); ?>" alt="typo" />
                       <img class="img-fluid" src="<?php the_sub_field('image_2'); ?>" alt="typo" />
@@ -507,7 +528,7 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-10 ">
+            <div class="col-11">
               <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-12 px-0">
                   <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('dev_title'); ?></h3>
@@ -521,7 +542,7 @@ get_header();
                       <h3 class="dev-title">Development Process:</h3>
                     </div>
                   </div>
-                  
+
                   <div class="row mt-2 mt-lg-4">
                     <div class="col-5">
                       <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
@@ -591,7 +612,7 @@ get_header();
   </section>
 
   <!-- Comlcusion -->
-  <?php if (get_field('conclusion') != '') {  ?>
+  <?php if (get_field('accreda_conclusion') != '') {  ?>
     <section class="conclusion-pad sec-pt">
       <div class="container">
         <div class="row">
@@ -607,7 +628,7 @@ get_header();
                         </div>
                         <div class="col-12 col-md-10 project-step-disc">
                           <div class="project-step-disc__item conclustion">
-                            <?php the_field('conclusion'); ?>
+                            <?php the_field('accreda_conclusion'); ?>
                           </div>
                         </div>
                       </div>
