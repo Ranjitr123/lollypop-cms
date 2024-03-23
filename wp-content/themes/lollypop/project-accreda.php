@@ -531,56 +531,52 @@ get_header();
             <div class="col-11">
               <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-12 px-0">
-                  <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('dev_title'); ?></h3>
+                  <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('development_heading'); ?></h3>
                 </div>
               </div>
-              <div class="row mt-32">
-                <div class="col-12 dev-bg">
-                  <div class="row mt-2 mt-lg-4">
-                    <div class="col-6">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
-                      <h3 class="dev-title">Development Process:</h3>
+              <?php if (have_rows('development_process')) : while (have_rows('development_process')) : the_row(); ?>
+                  <div class="row mt-32">
+                    <div class="col-12 dev-bg">
+                      <div class="row mt-2 mt-lg-4">
+                        <div class="col-6">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
+                          <h3 class="dev-title"><?php the_sub_field('devvelopment_heading') ?></h3>
+                        </div>
+                      </div>
+                      <div class="row mt-2 mt-lg-4">
+                        <?php if (have_rows('development_items')) : $i = 0;
+                          while (have_rows('development_items')) : the_row(); ?>
+                            <div class="col-5 <?php echo $i > 0 ? 'pe-0' : '' ?>">
+                              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
+                              <p class="dev-heading"><?php the_sub_field('title') ?></p>
+                              <p class="dev-content"><?php the_sub_field('description') ?></p>
+                            </div>
+                        <?php $i++;
+                          endwhile;
+                        endif; ?>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 mt-3 mt-lg-4">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
+                          <h3 class="dev-title"><?php the_sub_field('challenges_and_solutions_heading') ?></h3>
+                        </div>
+                      </div>
+                      <div class="row mt-2 mt-lg-4">
+                        <?php if (have_rows('chanllenges_and_solutions')) :
+                          while (have_rows('chanllenges_and_solutions')) : the_row(); ?>
+                            <div class="col-4">
+                              <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
+                              <p class="dev-heading"><?php the_sub_field('title') ?></p>
+                              <p class="dev-content"><?php the_sub_field('description') ?></p>
+                            </div>
+                        <?php
+                          endwhile;
+                        endif; ?>
+                      </div>
                     </div>
                   </div>
-
-                  <div class="row mt-2 mt-lg-4">
-                    <div class="col-5">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
-                      <p class="dev-heading">Agile Methodology</p>
-                      <p class="dev-content">Accreda embraces Agile development for iterative, adaptive processes, ensuring quick adaptation to changing needs and enhancing search visibility.</p>
-                    </div>
-                    <div class="col-5 pe-0">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
-                      <p class="dev-heading">Testing & Quality Assurance</p>
-                      <p class="dev-content">Thorough testing occurs at every development stage to guarantee the platform's reliability, security, and performance. This approach aims to streamline</p>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-6 mt-3 mt-lg-4">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
-                      <h3 class="dev-title">Challenges and Solutions:</h3>
-                    </div>
-                  </div>
-                  <div class="row mt-2 mt-lg-4">
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
-                      <p class="dev-heading">Scalability</p>
-                      <p class="dev-content">To ensure scalability, microservices architecture implemented, load-balancing techniques were employed.</p>
-                    </div>
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
-                      <p class="dev-heading">Performance Optimisation:</p>
-                      <p class="dev-content">Caching mechanisms were used to optimise the platform's performance to optimisation </p>
-                    </div>
-                    <div class="col-4">
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
-                      <p class="dev-heading">Security</p>
-                      <p class="dev-content">Best practices for web application security implemented, including encryption, secure coding practices, regular security audits.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php endwhile;
+              endif; ?>
             </div>
           </div>
         </div>
