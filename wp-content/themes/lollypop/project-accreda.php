@@ -195,6 +195,23 @@ get_header();
     opacity: 80%;
   }
 
+  .fnt-key-detail__title {
+    margin-bottom: 6px;
+    line-height: 27px;
+  }
+
+  .pd-bt-12 {
+    padding-bottom: 12px;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  .sec-wireframe {
+    margin-top: 120px;
+  }
+
   @media(max-width:768px) {
     .typography-bg {
       padding: 32px;
@@ -381,8 +398,52 @@ get_header();
 
   <!-- Atul Sharma  -->
 
+  <section class="p-r-80 pb-0 pare-define">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div class="col-md-10 px-0 mx-auto">
+            <div class="project-step">
+              <?php if (have_rows('key_descriptions')) : while (have_rows('key_descriptions')) : the_row();
+              ?>
+                  <div class="project-step__item row">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                      <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more">
+                        <?php the_sub_field('title'); ?>
+                      </span>
+                    </div>
+                    <div class="col-12 col-md-8 project-step-disc">
+                      <div class="project-step-disc__item">
+                        <p class="pd-bt-12"><?php the_sub_field('key_info'); ?></p>
+                        <div class="row">
+                          <?php if (have_rows('details')) : while (have_rows('details')) : the_row();
+                          ?>
+                              <div class="col-12 col-lg-6 mt-20">
+                                <h3 class="fnt-20 fnt-800 fnt-key-detail__title"><?php the_sub_field('title'); ?></h3>
+                                <p class="fnt-14"><?php the_sub_field('description'); ?></p>
+                              </div>
+                          <?php endwhile;
+                          endif;
+                          ?>
+                        </div>
+                      </div>
+                      <!-- <?php if (get_sub_field('cta_name') != '') { ?>
+                          <a class="hvr-line fnt-14 clr-second mt-4 d-inline-block data-scroll" href="<?php the_sub_field('cta_url'); ?>"><?php the_sub_field('cta_name'); ?></a>
+                        <?php } ?> -->
+                    </div>
+                  </div>
+              <?php endwhile;
+              endif;
+              ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Wireframes for Web -->
-  <section class="sec-pd sec-bnr p-r-80">
+  <section class="sec-wireframe">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-11 col-lg-11 mx-auto">
@@ -390,15 +451,10 @@ get_header();
             <div class="col-12 col-md-5 wf-wrapper">
               <div class="mb-r-12 col-12 col-md-12 col-lg-12">
                 <span class="mb-2 mt-28 clr-second d-inline-block fnt-22 fnt-500 text-uppercase  data-scroll disc-head">
-                  Wireframes for Web
+                  <?php the_field('wfr_title') ?>
                 </span>
                 <p>
-                  Using the research as reference, we started creating wireframes.
-                  Throughout the design process, we kept the users in mind,
-                  ensuring that their objectives and challenges were taken into account.
-                  Low-fidelity wireframes and high-fidelity prototypes were created to
-                  visualize the user interface and gather feedback. Take a look at the
-                  wireframes created by our UX tribe.
+                  <?php the_field('wfr_content') ?>
                 </p>
               </div>
               <div class="col-12 col-md-12 col-lg-12 mt-40">
