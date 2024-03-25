@@ -499,6 +499,28 @@ get_header('designathon23');
     z-index: 1;
   }
 
+  
+  .faq-el--athon .f-accordion__head::after {
+    background-color: #02323E !important;
+  }
+
+  .faq-el--athon .f-accordion__head::before {
+    background-color: #02323E !important;
+  }
+
+  .f-accordion__body {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  li:last-child>hr {
+    display: none;
+  }
+
+  .lotti-logo {
+    width: 100% !important;
+    height: auto !important;
+  }
   @media (max-width: 1536px) {
     .rule-info {
       top: 15%;
@@ -785,23 +807,6 @@ get_header('designathon23');
     }
   }
 
-  .faq-el--athon .f-accordion__head::after {
-    background-color: #02323E !important;
-  }
-
-  .faq-el--athon .f-accordion__head::before {
-    background-color: #02323E !important;
-  }
-
-  .f-accordion__body {
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
-
-  li:last-child>hr {
-    display: none;
-  }
-
 
 </style>
 
@@ -818,9 +823,11 @@ get_header('designathon23');
         <div class="col-12 text-center logo px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg" alt="logo" />
         </div>
-        <div class="col-12 col-lg-3 text-center mb-3 mt-3 px-0">
+        <div class="col-10 col-lg-5 text-center mb-3 mt-3 px-0">
           <!-- <img class="img-fluid" src="<?php //echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon2024.gif" alt="logo" /> -->
-          <img class="img-fluid" src="<?php the_field('logo') ?>" alt="logo" />
+          <!-- <img class="img-fluid" src="<?php //the_field('logo') ?>" alt="logo" /> -->
+          <lottie-player class="lotti-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/designathon.json"  
+          background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
         </div>
         <div class="col-12 text-center px-0">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstox-act.svg" alt="logo" />
@@ -1166,6 +1173,7 @@ get_header('designathon23');
 <?php
 get_footer('designathon2024');
 ?>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script>
   // $(document).ready(function() {
