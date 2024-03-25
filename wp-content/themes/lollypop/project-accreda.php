@@ -400,6 +400,15 @@ get_header();
 
   <section class="p-r-80 pb-0 pare-define">
     <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div class="col-md-12 px-0 mx-auto">
+            <div class="project-step">
+              <img class="img-fluid" src="<?php the_field('atul_lavleen')?>" alt="" />
+            </div>
+          </div>
+        </div>
+    </div>
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
