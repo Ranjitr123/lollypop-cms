@@ -9,24 +9,8 @@
 get_header();
 ?>
 <style>
-  .define {
-    margin-top: 30px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    .define {
-      margin-top: 60px;
-    }
-  }
-
-  @media only screen and (min-width: 992px) {
-    .projects-sec-pd {
-      padding-top: 70px
-    }
-
-    .define {
-      margin-top: 80px;
-    }
+  .fnt-playfair {
+    font-family: 'Playfair Display';
   }
 
   .li-disc {
@@ -355,9 +339,9 @@ get_header();
                       <?php if (have_rows('key_1')) : while (have_rows('key_1')) : the_row(); ?>
                           <div class="col-12 col-md-6 project-step-disc">
                             <div class="bg-purple">
-                              <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
+                              <h3 class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head fnt-playfair">
                                 <?php the_sub_field('heading'); ?>
-                              </span>
+                              </h3>
                               <div class="project-step-disc__item">
                                 <p class="fnt-14 fnt-400 clr-strategies"><?php the_sub_field('content'); ?> </p>
                               </div>
@@ -368,9 +352,9 @@ get_header();
                       <?php if (have_rows('key_2')) : while (have_rows('key_2')) : the_row(); ?>
                           <div class="col-12 col-md-6 mt-md-0 mt-4 project-step-disc">
                             <div class="bg-yellow-brown">
-                              <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
+                              <h3 class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head fnt-playfair">
                                 <?php the_sub_field('heading'); ?>
-                              </span>
+                              </h3>
                               <div class="project-step-disc__item fnt-14 fnt-400 clr-yellow-brown">
                                 <p class="fnt-14 fnt-400 clr-yellow-brown"><?php the_sub_field('content'); ?> </p>
                               </div>
@@ -381,9 +365,9 @@ get_header();
                       <?php if (have_rows('key_3')) : while (have_rows('key_3')) : the_row(); ?>
                           <div class="col-12 col-md-6 mt-4 project-step-disc">
                             <div class="bg-yellow-brown">
-                              <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
+                              <h3 class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head fnt-playfair">
                                 <?php the_sub_field('heading'); ?>
-                              </span>
+                              </h3>
                               <div class="project-step-disc__item">
                                 <p class="fnt-14 fnt-400 clr-yellow-brown"><?php the_sub_field('content'); ?> </p>
                               </div>
@@ -395,9 +379,9 @@ get_header();
 
                           <div class="col-12 col-md-6 mt-4 project-step-disc">
                             <div class="bg-purple">
-                              <span class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head">
+                              <h3 class="clr-second d-inline-block fnt-22 fnt-500 clr-white data-scroll disc-head fnt-playfair">
                                 <?php the_sub_field('heading'); ?>
-                              </span>
+                              </h3>
                               <div class="project-step-disc__item fnt-14 fnt-400 clr-purple">
                                 <p class="fnt-14 fnt-400 clr-strategies"><?php the_sub_field('content'); ?></p>
                               </div>
