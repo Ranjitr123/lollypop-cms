@@ -212,9 +212,29 @@ get_header();
     margin-top: 120px;
   }
 
+  .prj-scope {
+    text-align: left;
+  }
+
   @media(max-width:768px) {
     .typography-bg {
       padding: 32px;
+    }
+
+    .dev-bg {
+      padding: 50px 54px 42px 20px;
+    }
+
+    .prj-scope {
+      text-align: center;
+    }
+
+    .sec-wireframe {
+      margin-top: 48px;
+    }
+
+    .mt-120 {
+      margin-top: 60px;
     }
   }
 </style>
@@ -298,7 +318,7 @@ get_header();
               <div class="project-step">
                 <?php if (have_rows('project_scope')) : while (have_rows('project_scope')) : the_row(); ?>
                     <div class="project-step__item row">
-                      <div class="col-12 col-md-6 mb-3 mb-md-0 px-0">
+                      <div class="col-12 col-md-6 mb-3 mb-md-0 px-0 prj-scope">
                         <img src="<?php the_sub_field('image'); ?>" alt="logo" />
                       </div>
                       <div class="col-12 col-md-6 project-step-disc">
@@ -400,15 +420,15 @@ get_header();
 
   <section class="p-r-80 pb-0 pare-define">
     <div class="container">
-    <div class="row">
+      <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="col-md-12 px-0 mx-auto">
             <div class="project-step">
-              <img class="img-fluid" src="<?php the_field('atul_lavleen')?>" alt="" />
+              <img class="img-fluid" src="<?php the_field('atul_lavleen') ?>" alt="" />
             </div>
           </div>
         </div>
-    </div>
+      </div>
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="col-md-10 px-0 mx-auto">
@@ -513,7 +533,7 @@ get_header();
                 </div>
               </div>
               <div class="row">
-                <div class="col-10 px-0">
+                <div class="col-12 col-lg-10 px-0">
                   <img class="img-fluid" src="<?php the_field('typo_img'); ?>" alt="typo" />
                 </div>
               </div>
@@ -530,7 +550,7 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="row">
                 <div class="col-12 col-md-12 px-0">
                   <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('color_title'); ?></h3>
@@ -603,7 +623,7 @@ get_header();
                   <div class="row mt-32">
                     <div class="col-12 dev-bg">
                       <div class="row mt-2 mt-lg-4">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
                           <h3 class="dev-title"><?php the_sub_field('devvelopment_heading') ?></h3>
                         </div>
@@ -611,7 +631,7 @@ get_header();
                       <div class="row mt-2 mt-lg-4">
                         <?php if (have_rows('development_items')) : $i = 0;
                           while (have_rows('development_items')) : the_row(); ?>
-                            <div class="col-5 <?php echo $i > 0 ? 'pe-0' : '' ?>">
+                            <div class="col-12 col-lg-5  <?php echo $i > 0 ? 'pe-0' : '' ?>">
                               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
                               <p class="dev-heading"><?php the_sub_field('title') ?></p>
                               <p class="dev-content"><?php the_sub_field('description') ?></p>
@@ -621,7 +641,7 @@ get_header();
                         endif; ?>
                       </div>
                       <div class="row">
-                        <div class="col-6 mt-3 mt-lg-4">
+                        <div class="col-12 col-lg-6 mt-3 mt-lg-4">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-vector.svg" alt="" />
                           <h3 class="dev-title"><?php the_sub_field('challenges_and_solutions_heading') ?></h3>
                         </div>
@@ -629,7 +649,7 @@ get_header();
                       <div class="row mt-2 mt-lg-4">
                         <?php if (have_rows('chanllenges_and_solutions')) :
                           while (have_rows('chanllenges_and_solutions')) : the_row(); ?>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/accreda/dev-bullet.svg" alt="" />
                               <p class="dev-heading"><?php the_sub_field('title') ?></p>
                               <p class="dev-content"><?php the_sub_field('description') ?></p>
@@ -654,7 +674,7 @@ get_header();
       <div class="row">
         <div class="col-12 col-md-11 col-lg-10 mx-auto">
           <div class="row d-flex justify-content-center">
-            <div class="col-10 ">
+            <div class="col-12 col-lg-10 ">
               <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-12 px-0">
                   <h3 class="clr-second text-uppercase text-center fnt-18 fnt-700"><?php the_field('architecture_title'); ?></h3>
