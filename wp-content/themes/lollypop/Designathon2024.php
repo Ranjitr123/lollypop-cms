@@ -1305,7 +1305,7 @@ get_header('designathon23');
                             <div class="apply-left-title"><span class="apply-left-title-fix">Early Bird</span> Registrations</div>
                             <div class="apply-left-sub-title mt-2">8 - 10th APRIL</div>
                             <div class="apply-left-content">INR <span class="apply-left-content-fix">699</span> per person</div>
-                            <div class="text-center d-flex justify-content-center mt-btn">
+                            <div class="text-center d-flex justify-content-center mt-btn" style="z-index: 999;">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
                                    class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
                             </div>
