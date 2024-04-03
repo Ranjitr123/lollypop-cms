@@ -1107,6 +1107,9 @@ get_header('designathon23');
             z-index: 999;
             width: 100%;
         }
+        .btn-mobile-none{
+            display: none !important;
+        }
     }
 </style>
 
@@ -1150,7 +1153,7 @@ get_header('designathon23');
                         24 hours!
                     </p>
                 </div>
-                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn d-sm-block d-sm-none d-md-block d-lg-block">
+                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-none">
                     <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
                        class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
                 </div>
