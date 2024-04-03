@@ -19,7 +19,6 @@ get_header('designathon23');
         display: none;
     }
 
-
     .plyr__control--overlaid {
         opacity: 0;
     }
@@ -27,6 +26,9 @@ get_header('designathon23');
     .athon-header .h-li-nav {
         opacity: 0;
         pointer-events: none !important;
+    }
+    .btn-mobile-res{
+        display: none;
     }
 
     .jury__img::after {
@@ -173,7 +175,7 @@ get_header('designathon23');
     .v-line {
         height: 32px;
         width: 1px;
-        border: 2px solid #F45B01;
+        border: 1px solid #F45B01;
         align-self: center;
     }
 
@@ -293,10 +295,10 @@ get_header('designathon23');
     .participate-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
+        gap: 24px;
         height: 100%;
         place-items: center;
-        padding: 0px 80px;
+        padding: 0px 30px;
     }
 
     .participate-item > img {
@@ -314,10 +316,11 @@ get_header('designathon23');
 
     .participate-content {
         position: absolute;
-        bottom: 80px;
+        bottom: 88px;
         z-index: 10;
         width: 100%;
         padding: 0 24px;
+        max-height: 50%;
     }
 
     .participate-content > p {
@@ -534,6 +537,254 @@ get_header('designathon23');
 
     li:last-child > hr {
         display: none;
+    }
+    .apply-sub-title{
+        align-self: stretch;
+        color: var(--Green, #02323E);
+        text-align: center;
+        font-family: Switzer;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        opacity: 0.7;
+        width: 600px;
+    }
+    .apply-sub-div{
+        width: 600px;
+    }
+    .apply-card-right{
+        width: 320px;
+        height: 288px;
+        display: flex;
+        padding: 40px 46px 48px 46px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        border-radius: 0px 20px 20px 0px;
+        background: #F7F1E6;
+        backdrop-filter: blur(21px);
+    }
+    .apply-card-left{
+        border-radius: 20px;
+        background: #02323E;
+        backdrop-filter: blur(21px);
+        width: 502px;
+        height: 368px;
+        flex-shrink: 0;
+        padding: 48px;
+    }
+    .apply-left-title-fix{
+        color: var(--Orange, #F45B01);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px; /* 118.75% */
+        letter-spacing: -0.16px;
+    }
+    .apply-left-title{
+        color: var(--Peach, #E6CFAD);
+        font-family: "Clash Grotesk";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: -0.16px;
+    }
+    .apply-left-sub-title{
+        color: var(--Peach, #E6CFAD);
+        text-align: center;
+        font-family: Switzer;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 18px */
+        letter-spacing: -0.09px;
+    }
+    .apply-left-content{
+        color: var(--Peach, #E6CFAD);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 18px */
+        margin-top: 40px;
+    }
+    .apply-left-content-fix{
+        color: var(--Peach, #E6CFAD);
+        font-family: "Clash Grotesk";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .apply-card-left .mt-btn{
+        margin-top: 48px;
+    }
+    .logo-fix{
+        height: 190px;
+        width: auto;
+    }
+    .apply-card-right-title{
+        color: var(--Green, #02323E);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 118.182% */
+        letter-spacing: -0.11px;
+    }
+    .apply-card-right-title-sub{
+        color: var(--Green, #02323E);
+        text-align: center;
+        font-family: Switzer;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+        letter-spacing: -0.06px;
+    }
+    .card-enable{
+        opacity: 1;
+    }
+    .card-disable{
+        opacity: 0.4;
+    }
+    .card-disable .mt-btn{
+        pointer-events: none;
+    }
+    .height-100{
+        height: 100%;
+    }
+    .apply-card-right-content{
+        color: var(--Green, #02323E);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 14px */
+        padding: 32px 0;
+    }
+    .apply-card-right-content-fix{
+        color: var(--Green, #02323E);
+        font-family: "Clash Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+    .apply-card-right .mt-btn{
+        margin-top: 0;
+    }
+    .position-sticky-fix{
+        position: sticky;
+        top: 60px;
+    }
+    .img-event{
+        margin-left: -20px;
+    }
+    .img-event img{
+        height: 380px;
+    }
+    .participate-title{
+        color: var(--White, #FFFAF1);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px; /* 112.5% */
+        letter-spacing: -0.16px;
+    }
+    .participate-title-sub{
+        display: none;
+    }
+    .participate-item:hover .participate-title-sub{
+        display: block !important;
+    }
+    .participate-item:hover .participate-content{
+        height: 100%;
+        max-height: 100%;
+        transition: max-height 0.25s ease;
+        background: linear-gradient(345deg, rgba(0, 26, 33, 0.95) 6.85%, rgba(2, 74, 92, 0.85) 96.37%);
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 16px;
+    }
+    .top-line{
+        display: flex;
+        width: max-content;
+        height: 56px;
+        justify-content: flex-end;
+        align-items: center;
+        flex-shrink: 0;
+        background: var(--Peach, #E6CFAD);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        overflow: hidden;
+    }
+    .text-top-line{
+        color: var(--Green, #02323E);
+        text-align: center;
+        font-family: "Clash Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.32px;
+        padding: 0 0 0 32px
+    }
+    .text-top-line-fix{
+        color: var(--Green, #02323E);
+        font-family: "Clash Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+    .leftToRight {
+        display: flex;
+        gap: 24px;
+        will-change: transform;
+        animation: moveSlideshow 30s linear infinite;
+    }
+    @keyframes moveSlideshow {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .top-item-text{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .img-top-line{
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+    }
+    .top-banner{
+        overflow: hidden;
+        width: 100%;
+        /*position: relative;*/
+    }
+    .apply-box{
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0 15px;
+        }
     }
 
     .lotti-logo {
@@ -828,159 +1079,34 @@ get_header('designathon23');
         .mb-40 {
             margin-top: 32px;
         }
-    }
-    .apply-sub-title{
-        align-self: stretch;
-        color: var(--Green, #02323E);
-        text-align: center;
-        font-family: Switzer;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; /* 150% */
-        opacity: 0.7;
-        width: 600px;
-    }
-    .apply-sub-div{
-        width: 600px;
-    }
-    .apply-card-right{
-        width: 320px;
-        height: 288px;
-        display: flex;
-        padding: 40px 46px 48px 46px;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-        border-radius: 0px 20px 20px 0px;
-        background: #F7F1E6;
-        backdrop-filter: blur(21px);
-    }
-    .apply-card-left{
-        border-radius: 20px;
-        background: #02323E;
-        backdrop-filter: blur(21px);
-        width: 502px;
-        height: 368px;
-        flex-shrink: 0;
-        padding: 48px;
-    }
-    .apply-left-title-fix{
-        color: var(--Orange, #F45B01);
-        text-align: center;
-        font-family: "Clash Grotesk";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 38px; /* 118.75% */
-        letter-spacing: -0.16px;
-    }
-    .apply-left-title{
-        color: var(--Peach, #E6CFAD);
-        font-family: "Clash Grotesk";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 38px;
-        letter-spacing: -0.16px;
-    }
-    .apply-left-sub-title{
-        color: var(--Peach, #E6CFAD);
-        text-align: center;
-        font-family: Switzer;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 18px */
-        letter-spacing: -0.09px;
-    }
-    .apply-left-content{
-        color: var(--Peach, #E6CFAD);
-        text-align: center;
-        font-family: "Clash Grotesk";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 18px */
-        margin-top: 40px;
-    }
-    .apply-left-content-fix{
-        color: var(--Peach, #E6CFAD);
-        font-family: "Clash Grotesk";
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-    }
-    .apply-card-left .mt-btn{
-        margin-top: 48px;
-    }
-    .logo-fix{
-        height: 190px;
-        width: auto;
-    }
-    .apply-card-right-title{
-        color: var(--Green, #02323E);
-        text-align: center;
-        font-family: "Clash Grotesk";
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 26px; /* 118.182% */
-        letter-spacing: -0.11px;
-    }
-    .apply-card-right-title-sub{
-        color: var(--Green, #02323E);
-        text-align: center;
-        font-family: Switzer;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px; /* 150% */
-        letter-spacing: -0.06px;
-    }
-    .card-enable{
-        opacity: 1;
-    }
-    .card-disable{
-        opacity: 0.4;
-    }
-    .card-disable .mt-btn{
-        pointer-events: none;
-    }
-    .height-100{
-        height: 100%;
-    }
-    .apply-card-right-content{
-        color: var(--Green, #02323E);
-        text-align: center;
-        font-family: "Clash Grotesk";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 14px */
-        padding: 32px 0;
-    }
-    .apply-card-right-content-fix{
-        color: var(--Green, #02323E);
-        font-family: "Clash Grotesk";
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-    }
-    .apply-card-right .mt-btn{
-        margin-top: 0;
-    }
-    .position-sticky-fix{
-        position: sticky;
-        top: 60px;
-    }
-    .img-event{
-        margin-left: -20px;
-    }
-    .img-event img{
-        height: 380px;
+        .apply-card-left{
+            width: 100%;
+        }
+        .apply-sub-div{
+            width: 100%;
+            padding: 0 15px;
+        }
+        .apply-left-title{
+         font-size: 26px;
+            text-align: center;
+        }
+        .apply-card-left{
+            padding: 44px 23px;
+        }
+        .citi-desc{
+            text-align: center;
+        }
+        .txt-flex-mobile{
+            display: flex;
+            flex-direction: column;
+        }
+        .btn-mobile-res{
+            display: block;
+            position: sticky;
+            bottom: 16px;
+            z-index: 999;
+            width: 100%;
+        }
     }
 </style>
 
@@ -1001,12 +1127,12 @@ get_header('designathon23');
                          alt="logo"/>
                 </div>
                 <div class="col-10 col-lg-5 text-center mb-3 mt-3 px-0">
-                     <img class="img-fluid logo-fix" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/logo_designathon24.png" alt="logo" />
+                    <img class="img-fluid logo-fix" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/logo_designathon24.png" alt="logo" />
                     <!-- <img class="img-fluid" src="<?php //the_field('logo') ?>" alt="logo" /> -->
-<!--                    <lottie-player class="lotti-logo"-->
-<!--                                   src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/designathon2024/designathon.json"-->
-<!--                                   background="transparent" speed="1" style="width: 300px; height: 300px;" loop-->
-<!--                                   autoplay></lottie-player>-->
+                    <!--                    <lottie-player class="lotti-logo"-->
+                    <!--                                   src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/designathon2024/designathon.json"-->
+                    <!--                                   background="transparent" speed="1" style="width: 300px; height: 300px;" loop-->
+                    <!--                                   autoplay></lottie-player>-->
                 </div>
                 <div class="col-12 text-center px-0">
                     <img class="img-fluid"
@@ -1024,7 +1150,7 @@ get_header('designathon23');
                         24 hours!
                     </p>
                 </div>
-                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn">
+                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn d-sm-block d-sm-none d-md-block d-lg-block">
                     <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
                        class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
                 </div>
@@ -1035,7 +1161,7 @@ get_header('designathon23');
                             <div class="col-4 d-flex flex-column text-lg-center text-start">
                                 <p class="clr-orange text-uppercase fnt-banner-14 fnt-600 fnt-switzer lh-0 mb-2">
                                     Date</p>
-                                <p class="clr-white fnt-banner-20 fnt-700 fnt-switzer">3rd - 4th <span
+                                <p class="clr-white fnt-banner-20 fnt-700 fnt-switzer txt-flex-mobile">3rd - 4th <span
                                             class="text-uppercase fnt-sm-14">May</span></p>
                                 <div class="v-line"></div>
                             </div>
@@ -1059,6 +1185,30 @@ get_header('designathon23');
             </div>
         </div>
     </section>
+    <div class="top-banner">
+        <div class="top-line">
+            <div class="leftToRight">
+                <?php for ($i = 0; $i < 10; ++$i) { ?>
+                    <div class="top-item-text">
+                        <img class="img-fluid d-sm-block d-md-block d-lg-block img-top-line"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
+                             alt="logo"/>
+                        <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="leftToRight" style="padding-left: 32px">
+                <?php for ($i = 0; $i < 10; ++$i) { ?>
+                    <div class="top-item-text">
+                        <img class="img-fluid d-sm-bloc d-md-block d-lg-block img-top-line"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
+                             alt="logo"/>
+                        <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
     <!-- 2 Cities -->
     <section class="section-04cities">
         <div class="container">
@@ -1122,6 +1272,19 @@ get_header('designathon23');
         </div>
     </section>
     <!-- Apply right away! -->
+    <?php
+        $date = date('Y-m-d');
+        $targetDate = '2024-04-11';
+        $leftClass = '';
+        $rightClass = '';
+        if($date >= $targetDate){
+            $leftClass = 'card-disable';
+            $rightClass = 'card-enable';
+        }else{
+            $leftClass = 'card-enable';
+            $rightClass = 'card-disable';
+        }
+    ?>
     <section class="section-apply">
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -1133,9 +1296,9 @@ get_header('designathon23');
                 </div>
             </div>
             <div class="row d-flex justify-content-center pt-56">
-                <div class="mx-auto d-flex justify-content-center align-items-center">
+                <div class="mx-auto justify-content-center align-items-center apply-box">
                     <div class="apply-card-left">
-                        <div class="align-items-center d-flex justify-content-center flex-column height-100 card-enable">
+                        <div class="align-items-center d-flex justify-content-center flex-column height-100 <?php echo $leftClass ?>">
                             <div class="apply-left-title"><span class="apply-left-title-fix">Early Bird</span> Registrations</div>
                             <div class="apply-left-sub-title mt-2">8 - 10th APRIL</div>
                             <div class="apply-left-content">INR <span class="apply-left-content-fix">699</span> per person</div>
@@ -1144,9 +1307,14 @@ get_header('designathon23');
                                    class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
                             </div>
                         </div>
+                        <div class="img-event" style="position: absolute; bottom: 0">
+                            <img class="img-fluid d-sm-block  d-md-block  d-lg-block"
+                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/apply-bg.svg"
+                                 alt="logo"/>
+                        </div>
                     </div>
                     <div class="apply-card-right">
-                        <div class="align-items-center d-flex justify-content-center flex-column height-100 card-disable">
+                        <div class="align-items-center d-flex justify-content-center flex-column height-100 <?php echo $rightClass ?>">
                             <div class="apply-card-right-title">Regular Registrations</div>
                             <div class="apply-card-right-title-sub">11 - 14th APRIL</div>
                             <div class="apply-card-right-content">INR <span class="apply-card-right-content-fix">999</span> per person</div>
@@ -1178,11 +1346,9 @@ get_header('designathon23');
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/budding.png"
                                  alt="logo"/>
                             <div class="participate-content">
-                                <p class="fnt-32 fnt-600 clr-white">Collaborate & network with <span class="clr-orange">budding designers</span>
+                                <p class="fnt-32 fnt-600 clr-white participate-title">Collaborate & network with <span class="clr-orange">budding designers</span>
                                 </p>
-                                <p class="fnt-sm-14 clr-white lh-20 d-xl-none d-lg-none d-xl-block">Cater to your
-                                    curiosity and discover how the design industry works in the real world, chat with
-                                    the top leaders, and lay the groundwork for your dream career.</p>
+                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Ready to design your destiny? Team up with the some of the coolest talents, spark collaboration, and scheme to rule the design industry together!</p>
                             </div>
                             <div class="participate-bg">
                             </div>
@@ -1193,11 +1359,9 @@ get_header('designathon23');
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/prize.png"
                                  style="background-color: #011517;" alt="logo"/>
                             <div class="participate-content">
-                                <p class="fnt-32 fnt-600 clr-white">Win cash prizes of up to <span class="clr-orange">Rs. 2,00,000 </span>
+                                <p class="fnt-32 fnt-600 clr-white participate-title">Win cash prizes of up to <span class="clr-orange">Rs. 2,00,000 </span>
                                 </p>
-                                <p class="fnt-sm-14 clr-white lh-20 d-xl-none d-lg-none d-xl-block">Cater to your
-                                    curiosity and discover how the design industry works in the real world, chat with
-                                    the top leaders, and lay the groundwork for your dream career.</p>
+                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Win cash prizes up to Rs. 2,00,000! Team up, compete against other teams, make your mark and seize exciting rewards!</p>
                             </div>
                             <div class="participate-bg">
                             </div>
@@ -1208,11 +1372,9 @@ get_header('designathon23');
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/pioneer.png"
                                  alt="logo"/>
                             <div class="participate-content">
-                                <p class="fnt-32 fnt-600 clr-white">Get mentored by top <span class="clr-orange">industry pioneers!</span>
+                                <p class="fnt-32 fnt-600 clr-white participate-title">Get mentored by top <span class="clr-orange">industry pioneers!</span>
                                 </p>
-                                <p class="fnt-sm-14 clr-white lh-20 d-xl-none d-lg-none d-xl-block">Cater to your
-                                    curiosity and discover how the design industry works in the real world, chat with
-                                    the top leaders, and lay the groundwork for your dream career. </p>
+                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Cater to your curiosity and discover how the design industry works in the real world, chat with the top leaders, and lay the groundwork for your dream career.</p>
                             </div>
                             <div class="participate-bg">
                             </div>
@@ -1378,7 +1540,7 @@ get_header('designathon23');
             <div class="row d-flex justify-content-center">
                 <div class="col-10 text-center">
                     <div class="row">
-                        <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue lh-56 mb-0">OUR SPONSORS</h3>
+                        <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue lh-56 mb-0">IN PARTNERSHIP WITH</h3>
                     </div>
                 </div>
                 <div class="sponsor-info mt-64">
@@ -1460,6 +1622,10 @@ get_header('designathon23');
 <?php
 get_footer('designathon2024');
 ?>
+<div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-res">
+    <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
+       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
+</div>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script>
