@@ -127,6 +127,8 @@ get_header('designathon23');
         left: 0;
         width: 100%;
         height: auto;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
     }
 
     .logo {
@@ -726,8 +728,6 @@ get_header('designathon23');
         align-items: center;
         flex-shrink: 0;
         background: var(--Peach, #E6CFAD);
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
         overflow: hidden;
     }
     .text-top-line{
@@ -777,6 +777,8 @@ get_header('designathon23');
     .top-banner{
         overflow: hidden;
         width: 100%;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
         /*position: relative;*/
     }
     .apply-box{
@@ -791,7 +793,17 @@ get_header('designathon23');
         width: 100% !important;
         height: auto !important;
     }
-
+    .partner-sub{
+        color: var(--Green, #02323E);
+        font-family: "Clash Grotesk";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 24px */
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-top: 12px;
+    }
     @media (max-width: 1536px) {
         .rule-info {
             top: 15%;
@@ -1109,6 +1121,12 @@ get_header('designathon23');
         }
         .btn-mobile-none{
             display: none !important;
+        }
+        .top-banner{
+            border-radius: unset;
+        }
+        .sec-banner{
+            border-radius: unset;
         }
     }
 </style>
@@ -1543,7 +1561,8 @@ get_header('designathon23');
             <div class="row d-flex justify-content-center">
                 <div class="col-10 text-center">
                     <div class="row">
-                        <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue lh-56 mb-0">IN PARTNERSHIP WITH</h3>
+                        <h3 class="fnt-56 fnt-700 fnt-clash clr-darkblue lh-56 mb-0">DESIGNATHON MUMBAI</h3>
+                        <p class="partner-sub">IN PARTNERSHIP WITH</p>
                     </div>
                 </div>
                 <div class="sponsor-info mt-64">
