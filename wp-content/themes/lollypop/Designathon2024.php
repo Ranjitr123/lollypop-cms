@@ -28,7 +28,7 @@ get_header('designathon23');
         pointer-events: none !important;
     }
     .btn-mobile-res{
-        display: none;
+        display: none !important;
     }
 
     .jury__img::after {
@@ -804,6 +804,20 @@ get_header('designathon23');
         text-transform: uppercase;
         margin-top: 12px;
     }
+    .header-btn{
+        background: #F45B01;
+    }
+    .header-btn:hover{
+        background: #E6CFAD;
+        transition: background-color .25s step-start;
+    }
+    .dl-btn{
+        background: #F45B01;
+    }
+    .dl-btn:hover{
+        background: #02323E;
+        transition: background-color .25s step-start;
+    }
     @media (max-width: 1536px) {
         .rule-info {
             top: 15%;
@@ -1113,7 +1127,7 @@ get_header('designathon23');
             flex-direction: column;
         }
         .btn-mobile-res{
-            display: block;
+            display: flex !important;
             position: sticky;
             bottom: 16px;
             z-index: 999;
@@ -1173,7 +1187,7 @@ get_header('designathon23');
                 </div>
                 <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-none">
                     <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
+                       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
                 </div>
 
                 <div class="row d-flex justify-content-center pt-56">
@@ -1325,7 +1339,7 @@ get_header('designathon23');
                             <div class="apply-left-content">INR <span class="apply-left-content-fix">699</span> per person</div>
                             <div class="text-center d-flex justify-content-center mt-btn" style="z-index: 999;">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
+                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
                             </div>
                         </div>
                         <div class="img-event" style="position: absolute; bottom: 0">
@@ -1341,7 +1355,7 @@ get_header('designathon23');
                             <div class="apply-card-right-content">INR <span class="apply-card-right-content-fix">999</span> per person</div>
                             <div class="text-center d-flex justify-content-center mt-btn">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
+                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white dl-btn">Register Now</a>
                             </div>
                         </div>
                     </div>
@@ -1490,7 +1504,7 @@ get_header('designathon23');
                             <h3 class="fnt-clash clr-darkblue fnt-24 lh-24 fnt-600 mb-0">So what are you waiting
                                 for?</h3>
                             <a target="_blank" href="<?php the_field('button_register') ?>"
-                               class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white">Register
+                               class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white dl-btn">Register
                                 Now</a>
                         </div>
                     </div>
@@ -1547,7 +1561,7 @@ get_header('designathon23');
                             <h3 class="col-11 col-lg-8 fnt-32 fnt-600 clr-white rule-info__heading">Rules and
                                 regulations to get you started</h3>
                             <a target="_blank" href="<?php the_field('button_download') ?>"
-                               class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-4 ms-0 mt-0">Download
+                               class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-4 ms-0 mt-0 header-btn">Download
                                 Pdf</a>
                         </div>
                     </div>
@@ -1646,7 +1660,7 @@ get_footer('designathon2024');
 ?>
 <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-res">
     <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white">Register Now</a>
+       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
 </div>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
