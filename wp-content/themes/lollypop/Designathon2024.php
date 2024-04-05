@@ -810,6 +810,7 @@ get_header('designathon23');
     .header-btn:hover{
         background: #E6CFAD;
         transition: background-color .25s step-start;
+        color: #F45B01;
     }
     .dl-btn{
         background: #F45B01;
