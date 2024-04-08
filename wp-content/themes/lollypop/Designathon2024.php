@@ -78,7 +78,7 @@ get_header('designathon23');
     }
 
     .mt-title {
-        margin-top: 56px;
+        margin-top: 46px;
     }
 
     .pt-56 {
@@ -184,7 +184,7 @@ get_header('designathon23');
     /* 04 Cities */
 
     .section-04cities {
-        margin-top: 120px;
+        margin-top: 100px;
     }
 
     .fnt-130 {
@@ -920,7 +920,7 @@ get_header('designathon23');
         }
 
         .mt-title {
-            margin-top: 44px;
+            margin-top: 36px;
         }
 
         .mt-content {
@@ -1162,7 +1162,7 @@ get_header('designathon23');
                          src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/lollypop.svg"
                          alt="logo"/>
                 </div>
-                <div class="col-10 col-lg-5 text-center mb-3 mt-3 px-0">
+                <div class="col-10 col-lg-5 text-center mt-3 px-0">
                     <img class="img-fluid logo-fix" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/logo_designathon24.png" alt="logo" />
                     <!-- <img class="img-fluid" src="<?php //the_field('logo') ?>" alt="logo" /> -->
                     <!--                    <lottie-player class="lotti-logo"-->
@@ -1170,11 +1170,11 @@ get_header('designathon23');
                     <!--                                   background="transparent" speed="1" style="width: 300px; height: 300px;" loop-->
                     <!--                                   autoplay></lottie-player>-->
                 </div>
-                <div class="col-12 text-center px-0">
-                    <img class="img-fluid"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/upstox-act.svg"
-                         alt="logo"/>
-                </div>
+<!--                <div class="col-12 text-center px-0">-->
+<!--                    <img class="img-fluid"-->
+<!--                         src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/designathon2024/upstox-act.svg"-->
+<!--                         alt="logo"/>-->
+<!--                </div>-->
                 <div class="col-12 text-center d-flex justify-content-center mt-title">
                     <h3 class="col-12 col-lg-7 fnt-700 fnt-title text-uppercase clr-yellow-brown mb-0">The <span
                                 class="clr-orange">ULTIMATE</span> Design Hackathon is back!</h3>
@@ -1187,8 +1187,8 @@ get_header('designathon23');
                     </p>
                 </div>
                 <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-none">
-                    <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
+<!--                    <a id="banner_registration_form" target="_blank" href="--><?php //the_field('button_register') ?><!--"-->
+<!--                       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>-->
                 </div>
 
                 <div class="row d-flex justify-content-center pt-56">
@@ -1395,9 +1395,9 @@ get_header('designathon23');
                                  src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/prize.png"
                                  style="background-color: #011517;" alt="logo"/>
                             <div class="participate-content">
-                                <p class="fnt-32 fnt-600 clr-white participate-title">Win cash prizes of up to <span class="clr-orange">Rs. 2,00,000 </span>
+                                <p class="fnt-32 fnt-600 clr-white participate-title">Win cash prizes of up to <span class="clr-orange">Rs. 3,00,000 </span>
                                 </p>
-                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Win cash prizes up to Rs. 2,00,000! Team up, compete against other teams, make your mark and seize exciting rewards!</p>
+                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Win cash prizes up to Rs. 3,00,000! Team up, compete against other teams, make your mark and seize exciting rewards!</p>
                             </div>
                             <div class="participate-bg">
                             </div>
