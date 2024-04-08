@@ -650,6 +650,14 @@ get_header('designathon23');
         line-height: 18px; /* 150% */
         letter-spacing: -0.06px;
     }
+    .rule-info__heading {
+        color: var(--White, #FFFAF1);
+        font-family: "Clash Grotesk";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+    }
     .card-enable{
         opacity: 1;
     }
@@ -1036,6 +1044,11 @@ get_header('designathon23');
             line-height: 32px;
             margin-top: 4px;
             margin-bottom: 20px;
+            color: var(--White, #FFFAF1);
+            font-family: "Clash Grotesk";
+            font-style: normal;
+            font-weight: 600;
+
         }
 
         .rule-info__btn {
@@ -1186,7 +1199,7 @@ get_header('designathon23');
                         24 hours!
                     </p>
                 </div>
-                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-none">
+                <div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn">
 <!--                    <a id="banner_registration_form" target="_blank" href="--><?php //the_field('button_register') ?><!--"-->
 <!--                       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>-->
                 </div>
@@ -1448,9 +1461,7 @@ get_header('designathon23');
                             <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">registration
                                 process</h3>
-                            <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Limited seats,
-                                big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you
-                                are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+                            <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Limited seats, big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you are the chosen one. Registrations start on 8th April and closes on 14th April.</p>
                         </div>
                     </div>
 
@@ -1459,9 +1470,7 @@ get_header('designathon23');
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">02</h3>
                             <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Date and Time</h3>
-                            <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Mark your
-                                calendars for Designathon happening on the 26th-27th of April, 2024. Buckle up for a
-                                non-stop 24-hour ride through the world of design!</p>
+                            <p class="fnt-rule fnt-switzer fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Mark your calendars for Designathon happening on the 3rd-4th of May, 2024. Buckle up for a non-stop 24-hour ride through the world of design!</p>
                         </div>
                     </div>
 
@@ -1469,11 +1478,8 @@ get_header('designathon23');
                         <div class="col-12 col-lg-8">
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">03</h3>
                             <div class="rule"></div>
-                            <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Location
-                                Preference</h3>
-                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">You will be
-                                allotted your team and the problem statement on the 26th of April, the same day you
-                                arrive at the venue.</p>
+                            <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Pricing details</h3>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Snag your spot at the biggest design event of the country at just INR 699 when you register within the first three days of registering. Any day later than that, you will be required to pay INR 999.</p>
                         </div>
                     </div>
 
@@ -1481,10 +1487,9 @@ get_header('designathon23');
                         <div class="col-12 col-lg-8">
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">04</h3>
                             <div class="rule"></div>
-                            <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Team Allocation</h3>
-                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Drumroll
-                                please!! The award ceremony will take place after the final presentation to the jury
-                                members, on 27th April.</p>
+                            <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Location
+                                Preference</h3>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">When registering, simply pick the city you'd like to participate in, and we'll work to make it happen. If your preferred city choice is full, you'll have to participate from the other location.</p>
                         </div>
                     </div>
 
@@ -1492,10 +1497,17 @@ get_header('designathon23');
                         <div class="col-12 col-lg-8">
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">05</h3>
                             <div class="rule"></div>
+                            <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Team Allocation</h3>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">You will be allotted your team and the problem statement on the 26th of April, the same day you arrive at the venue.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto pt-56">
+                        <div class="col-12 col-lg-8">
+                            <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">06</h3>
+                            <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Awards</h3>
-                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Limited seats,
-                                big dreams! It's like winning the lottery. Stay tuned for that email confirmation if you
-                                are the chosen one. Registrations start on 4th April and closes on 9th April.</p>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 27th April.</p>
                         </div>
                     </div>
 
