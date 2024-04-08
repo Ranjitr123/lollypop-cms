@@ -1272,9 +1272,7 @@ get_header('designathon23');
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 d-flex flex-column justify-content-center citi-desc">
-                    <p class="fnt-20 fnt-500 lh-26 fnt-switzer clr-darkblue mb-0">Designathon returns with a bang, hitting the City of</p>
-                    <p class="fnt-20 fnt-500 lh-26 fnt-switzer clr-darkblue mb-0">Dreams, Mumbai for the very first time this year!</p>
-                    <p class="fnt-20 fnt-500 lh-26 fnt-switzer clr-darkblue mb-0">Mumbai and Bengaluru, get ready for a creative storm!</p>
+                    <p class="fnt-20 fnt-500 lh-26 fnt-switzer clr-darkblue mb-0">Designathon returns with a bang, hitting the City of Dreams, Mumbai for the very first time this year! Mumbai and Bengaluru, get ready for a creative storm!</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center pt-56">
