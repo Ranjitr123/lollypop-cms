@@ -1233,7 +1233,7 @@ get_header('designathon23');
                     </div>
                 <?php } ?>
             </div>
-            <div class="leftToRight" style="padding-left: 32px">
+            <div class="leftToRight" style="margin-left: 32px">
                 <?php for ($i = 0; $i < 10; ++$i) { ?>
                     <div class="top-item-text">
                         <img class="img-fluid d-sm-bloc d-md-block d-lg-block img-top-line"
