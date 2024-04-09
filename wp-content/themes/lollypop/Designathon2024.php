@@ -1395,7 +1395,7 @@ get_header('designathon23');
                             <div class="participate-content">
                                 <p class="fnt-32 fnt-600 clr-white participate-title">Collaborate & network with <span class="clr-orange">budding designers</span>
                                 </p>
-                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Ready to design your destiny? Team up with the some of the coolest talents, spark collaboration, and scheme to rule the design industry together!</p>
+                                <p class="fnt-sm-14 clr-white lh-20 participate-title-sub">Ready to design your destiny? Team up with some of the coolest talents, spark collaboration, and scheme to rule the design industry together!</p>
                             </div>
                             <div class="participate-bg">
                             </div>
@@ -1496,7 +1496,7 @@ get_header('designathon23');
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">05</h3>
                             <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Team Allocation</h3>
-                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">You will be allotted your team and the problem statement on the 26th of April, the same day you arrive at the venue.</p>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">You will be allotted your team and the problem statement on the 3rd of May, the same day you arrive at the venue.</p>
                         </div>
                     </div>
 
@@ -1505,7 +1505,7 @@ get_header('designathon23');
                             <h3 class="fnt-20  fnt-600 clr-orange text-uppercase fnt-clash">06</h3>
                             <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue text-capitalize fnt-28 fnt-600 mb-0">Awards</h3>
-                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 27th April.</p>
+                            <p class="fnt-rule fnt-switzer  fnt-400 clr-darkblue mb-0 mt-20 lh-24 op-70">Drumroll please!! The award ceremony will take place after the final presentation to the jury members, on 4th May.</p>
                         </div>
                     </div>
 
