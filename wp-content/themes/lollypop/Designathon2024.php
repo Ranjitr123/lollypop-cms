@@ -1158,7 +1158,13 @@ get_header('designathon23');
         }
     }
 </style>
-
+<!-- Apply right away! -->
+<?php
+date_default_timezone_set("Asia/Kolkata");
+$date = date('Y-m-d');
+$targetDate = '2024-04-11';
+$outOfEarly = $date >= $targetDate;
+?>
 <main class="main">
     <!-- 01 -->
     <section class="sec-banner pt-lg-7 position-relative">
@@ -1237,22 +1243,30 @@ get_header('designathon23');
     <div class="top-banner">
         <div class="top-line">
             <div class="leftToRight">
-                <?php for ($i = 0; $i < 10; ++$i) { ?>
+                <?php for ($i = 0; $i < 8; ++$i) { ?>
                     <div class="top-item-text">
                         <img class="img-fluid d-sm-block d-md-block d-lg-block img-top-line"
                              src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
                              alt="logo"/>
-                        <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                        <?php if ($outOfEarly) { ?>
+                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span>
+                        <?php } else { ?>
+                            <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>
             <div class="leftToRight" style="margin-left: 32px">
-                <?php for ($i = 0; $i < 10; ++$i) { ?>
+                <?php for ($i = 0; $i < 8; ++$i) { ?>
                     <div class="top-item-text">
                         <img class="img-fluid d-sm-bloc d-md-block d-lg-block img-top-line"
                              src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
                              alt="logo"/>
-                        <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                        <?php if ($outOfEarly) { ?>
+                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span>
+                        <?php } else { ?>
+                            <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>
@@ -1320,11 +1334,9 @@ get_header('designathon23');
     </section>
     <!-- Apply right away! -->
     <?php
-        $date = date('Y-m-d');
-        $targetDate = '2024-04-11';
         $leftClass = '';
         $rightClass = '';
-        if($date >= $targetDate){
+        if($outOfEarly){
             $leftClass = 'card-disable';
             $rightClass = 'card-enable';
         }else{
@@ -1351,7 +1363,12 @@ get_header('designathon23');
                             <div class="apply-left-content">INR <span class="apply-left-content-fix">699</span> per person</div>
                             <div class="text-center d-flex justify-content-center mt-btn" style="z-index: 999;">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
+                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn"><?php if($outOfEarly) {
+                                       echo 'Now closed!';
+                                   }
+                                   else {
+                                       echo 'Register Now';
+                                   } ?></a>
                             </div>
                         </div>
                         <div class="img-event" style="position: absolute; bottom: 0">
