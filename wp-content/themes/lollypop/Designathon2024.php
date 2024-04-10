@@ -627,7 +627,7 @@ get_header('designathon23');
         margin-top: 48px;
     }
     .logo-fix{
-        height: 190px;
+        height: 100%;
         width: auto;
     }
     .apply-card-right-title{
@@ -766,10 +766,10 @@ get_header('designathon23');
     }
     @keyframes moveSlideshow {
         from {
-            transform: translateX(-100%);
+            transform: translateX(0);
         }
         to {
-            transform: translateX(0);
+            transform: translateX(-100%);
         }
     }
     .top-item-text{
