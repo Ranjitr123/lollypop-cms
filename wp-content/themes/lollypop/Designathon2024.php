@@ -1121,6 +1121,17 @@ get_header('designathon23');
             margin-top: 32px;
         }
         .apply-card-left{
+            width: 80%;
+            border-radius: 20px 20px 0 0;
+            height: auto;
+        }
+        .apply-card-left .mt-btn{
+            margin-top: 20px;
+        }
+        .apply-left-content{
+            margin-top: 20px;
+        }
+        .apply-card-right{
             width: 100%;
         }
         .apply-sub-div{
@@ -1128,10 +1139,17 @@ get_header('designathon23');
             padding: 0 15px;
         }
         .apply-left-title{
-         font-size: 26px;
+         font-size: 18px;
+            text-align: center;
+        }
+        .apply-card-right-title{
+            font-size: 26px;
             text-align: center;
         }
         .apply-card-left{
+            padding: 20px 23px;
+        }
+        .apply-card-right{
             padding: 44px 23px;
         }
         .citi-desc{
