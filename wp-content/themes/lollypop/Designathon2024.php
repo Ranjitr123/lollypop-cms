@@ -556,43 +556,43 @@ get_header('designathon23');
         width: 600px;
     }
     .apply-card-right{
-        width: 320px;
-        height: 288px;
+        width: 502px;
+        height: 368px;
         display: flex;
         padding: 40px 46px 48px 46px;
         flex-direction: column;
         align-items: center;
         gap: 32px;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 20px;
         background: #F7F1E6;
         backdrop-filter: blur(21px);
     }
     .apply-card-left{
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;;
         background: #02323E;
         backdrop-filter: blur(21px);
-        width: 502px;
-        height: 368px;
+        width: 320px;
+        height: 288px;
         flex-shrink: 0;
-        padding: 48px;
+        padding: 40px 30px;
     }
     .apply-left-title-fix{
         color: var(--Orange, #F45B01);
         text-align: center;
         font-family: "Clash Grotesk";
-        font-size: 32px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 600;
-        line-height: 38px; /* 118.75% */
+        line-height: 26px; /* 118.75% */
         letter-spacing: -0.16px;
     }
     .apply-left-title{
         color: var(--Peach, #E6CFAD);
         font-family: "Clash Grotesk";
-        font-size: 32px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 600;
-        line-height: 38px;
+        line-height: 26px;
         letter-spacing: -0.16px;
     }
     .apply-left-sub-title{
@@ -609,7 +609,7 @@ get_header('designathon23');
         color: var(--Peach, #E6CFAD);
         text-align: center;
         font-family: "Clash Grotesk";
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%; /* 18px */
@@ -618,7 +618,7 @@ get_header('designathon23');
     .apply-left-content-fix{
         color: var(--Peach, #E6CFAD);
         font-family: "Clash Grotesk";
-        font-size: 64px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -627,24 +627,25 @@ get_header('designathon23');
         margin-top: 48px;
     }
     .logo-fix{
-        height: 100%;
+        height: 190px;
         width: auto;
+        object-fit: cover;
     }
     .apply-card-right-title{
         color: var(--Green, #02323E);
         text-align: center;
         font-family: "Clash Grotesk";
-        font-size: 22px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 26px; /* 118.182% */
+        line-height: 38px; /* 118.182% */
         letter-spacing: -0.11px;
     }
     .apply-card-right-title-sub{
         color: var(--Green, #02323E);
         text-align: center;
         font-family: Switzer;
-        font-size: 12px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 18px; /* 150% */
@@ -674,7 +675,7 @@ get_header('designathon23');
         color: var(--Green, #02323E);
         text-align: center;
         font-family: "Clash Grotesk";
-        font-size: 14px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%; /* 14px */
@@ -683,7 +684,7 @@ get_header('designathon23');
     .apply-card-right-content-fix{
         color: var(--Green, #02323E);
         font-family: "Clash Grotesk";
-        font-size: 40px;
+        font-size: 64px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
