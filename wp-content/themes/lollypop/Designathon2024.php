@@ -71,7 +71,7 @@ get_header('designathon23');
     .btn-register {
         background-color: #F45B01;
         height: 50px;
-        width: 228px;
+        min-width: 228px;
         text-align: center;
         padding-top: 11px;
         border-radius: 6px;
@@ -155,7 +155,7 @@ get_header('designathon23');
     .btn-orange {
         display: inline-block;
         text-decoration: none;
-        padding: 12px 36px;
+        padding: 12px 20px;
         background: #F45B01;
         font-size: 18px;
         position: relative;
@@ -165,7 +165,7 @@ get_header('designathon23');
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease;
         line-height: 25px;
-        width: 228px;
+        min-width: 228px;
         text-align: center;
         border-radius: 6px;
     }
@@ -668,6 +668,9 @@ get_header('designathon23');
     .card-disable .mt-btn{
         pointer-events: none;
     }
+    .card-disable .header-btn{
+        pointer-events: none;
+    }
     .height-100{
         height: 100%;
     }
@@ -827,6 +830,9 @@ get_header('designathon23');
     .dl-btn:hover{
         background: #02323E;
         transition: background-color .25s step-start;
+    }
+    .rule-info__btn {
+        width: 228px;
     }
     @media (max-width: 1536px) {
         .rule-info {
@@ -1180,9 +1186,15 @@ get_header('designathon23');
 <!-- Apply right away! -->
 <?php
 date_default_timezone_set("Asia/Kolkata");
-$date = date('Y-m-d');
-$targetDate = '2024-04-11';
-$outOfEarly = $date >= $targetDate;
+$date = date('Y-m-d H:i:s');
+$targetDate = '2024-04-14 18:00:00';
+$outOfDate = $date >= $targetDate;
+$registerClass = '';
+if ($outOfDate) {
+    $registerClass = 'card-disable';
+} else {
+    $registerClass = 'card-enable';
+}
 ?>
 <main class="main">
     <!-- 01 -->
@@ -1267,10 +1279,10 @@ $outOfEarly = $date >= $targetDate;
                         <img class="img-fluid d-sm-block d-md-block d-lg-block img-top-line"
                              src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
                              alt="logo"/>
-                        <?php if ($outOfEarly) { ?>
-                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span>
+                        <?php if ($outOfDate) { ?>
+                            <span class="text-top-line">Registration closed April 14!</span>
                         <?php } else { ?>
-                            <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span>
                         <?php } ?>
                     </div>
                 <?php } ?>
@@ -1281,10 +1293,10 @@ $outOfEarly = $date >= $targetDate;
                         <img class="img-fluid d-sm-bloc d-md-block d-lg-block img-top-line"
                              src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon2024/check_top.svg"
                              alt="logo"/>
-                        <?php if ($outOfEarly) { ?>
-                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span>
+                        <?php if ($outOfDate) { ?>
+                            <span class="text-top-line">Registration closed April 14!</span>
                         <?php } else { ?>
-                            <span class="text-top-line">Early bird registrations starting at <span class="text-top-line-fix">INR 699!</span></span>
+                            <span class="text-top-line">Hurry up! Registrations closing on 14th April!</span></span>
                         <?php } ?>
                     </div>
                 <?php } ?>
@@ -1355,12 +1367,12 @@ $outOfEarly = $date >= $targetDate;
     <?php
         $leftClass = '';
         $rightClass = '';
-        if($outOfEarly){
+        if($outOfDate){
+            $leftClass = 'card-disable';
+            $rightClass = 'card-disable';
+        }else{
             $leftClass = 'card-disable';
             $rightClass = 'card-enable';
-        }else{
-            $leftClass = 'card-enable';
-            $rightClass = 'card-disable';
         }
     ?>
     <section class="section-apply">
@@ -1382,11 +1394,11 @@ $outOfEarly = $date >= $targetDate;
                             <div class="apply-left-content">INR <span class="apply-left-content-fix">699</span> per person</div>
                             <div class="text-center d-flex justify-content-center mt-btn" style="z-index: 999;">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn"><?php if($outOfEarly) {
-                                       echo 'Now closed!';
+                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn"><?php if($outOfDate) {
+                                       echo 'Registration closed!';
                                    }
                                    else {
-                                       echo 'Register Now';
+                                       echo 'Now closed!';
                                    } ?></a>
                             </div>
                         </div>
@@ -1403,7 +1415,12 @@ $outOfEarly = $date >= $targetDate;
                             <div class="apply-card-right-content">INR <span class="apply-card-right-content-fix">999</span> per person</div>
                             <div class="text-center d-flex justify-content-center mt-btn">
                                 <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white dl-btn">Register Now</a>
+                                   class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white dl-btn"><?php if($outOfDate) {
+                                        echo 'Registration closed!';
+                                    }
+                                    else {
+                                        echo 'Register Now';
+                                    } ?></a>
                             </div>
                         </div>
                     </div>
@@ -1550,9 +1567,15 @@ $outOfEarly = $date >= $targetDate;
                             <div class="rule"></div>
                             <h3 class="fnt-clash clr-darkblue fnt-24 lh-24 fnt-600 mb-0">So what are you waiting
                                 for?</h3>
-                            <a target="_blank" href="<?php the_field('button_register') ?>"
-                               class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white dl-btn">Register
-                                Now</a>
+                            <div class="<?php echo $registerClass?>">
+                                <a target="_blank" href="<?php the_field('button_register') ?>"
+                                   class="text-center btn-orange btn-event text-uppercase fnt-switzer clr-white dl-btn mt-btn"><?php if($outOfDate) {
+                                        echo 'Registration closed!';
+                                    }
+                                    else {
+                                        echo 'Register Now';
+                                    } ?></a>
+                            </div>
                         </div>
                     </div>
 
@@ -1608,7 +1631,7 @@ $outOfEarly = $date >= $targetDate;
                             <h3 class="col-11 col-lg-8 fnt-32 fnt-600 clr-white rule-info__heading">Rules and
                                 regulations to get you started</h3>
                             <a target="_blank" href="<?php the_field('button_download') ?>"
-                               class="rule-info__btn text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-4 ms-0 mt-0 header-btn">Download
+                               class="text-center btn-orange text-uppercase fnt-switzer clr-white ms-lg-3 mt-lg-4 ms-0 mt-0 header-btn rule-info__btn">Download
                                 Pdf</a>
                         </div>
                     </div>
@@ -1705,10 +1728,17 @@ $outOfEarly = $date >= $targetDate;
 <?php
 get_footer('designathon2024');
 ?>
-<div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-res">
+<?php if(!$outOfDate) {?>
+<div class="col-8 col-lg-3 text-center d-flex justify-content-center mt-btn btn-mobile-res <?php echo $registerClass?>">
     <a id="banner_registration_form" target="_blank" href="<?php the_field('button_register') ?>"
-       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn">Register Now</a>
+       class="text-center btn-orange text-uppercase fnt-600 fnt-switzer clr-white header-btn"><?php if($outOfDate) {
+            echo 'Registration closed!';
+        }
+        else {
+            echo 'Register Now';
+        } ?></a>
 </div>
+<?php } ?>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script>
