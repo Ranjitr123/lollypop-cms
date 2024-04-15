@@ -91,7 +91,7 @@ get_header();
       height: 65%;
     }
 
-    li, ul {
+   .conclustion li, ul {
       list-style: outside;
     }
     /* media query */
