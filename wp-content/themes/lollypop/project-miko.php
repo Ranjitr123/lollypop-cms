@@ -317,12 +317,20 @@ get_header();
     <div class="container">
       <div class="row justify-content-center ">
         <div class="col-md-11 col-lg-10 col-12 mobile-row">
-          <div class="wireframe-banner mobile-banner wireframe-banner-design pt-md-0 pt-5">
+          <div class="wireframe-banner mobile-banner wireframe-banner-design pt-md-0 pt-5 mb-md-4">
             <h3><?php the_field('m_mobile_ui_title'); ?></h3>
             <p class="mt-md-4"><?php the_field('m_mobile_ui_description'); ?></p>
           </div>
-          <div class="wireframe-img mobile-img">
-            <img class="img-fluid" src="<?php the_field('m_mobile_ui_image'); ?>" alt="logo">
+          <div class="wireframe-img mobile-img mt-md-4">
+            <?php
+            $m_mobile = get_field('m_mobile_ui_image');
+
+            if (!empty($m_mobile)) {
+              foreach ($m_mobile as $image) {
+                echo '<img  class="img-fluid w-100" src="' . $image . '" alt="Image">';
+              }
+            }
+            ?>
 
           </div>
         </div>
