@@ -163,7 +163,11 @@ get_header();
         background-color: #0A244F;
     }
 
-    .conclusion li,
+    .conclusions {
+        background-color: unset;
+    }
+
+    .conclusions li,
     ul {
         list-style: outside;
     }
@@ -186,6 +190,10 @@ get_header();
         .wireframe__title {
             font-size: 28px;
             font-weight: 700;
+        }
+
+        .design__img {
+            padding: 2rem 0;
         }
     }
 </style>
@@ -524,7 +532,7 @@ get_header();
     <section class="conclusion-pad sec-pt">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-11 col-lg-10 mt-5">
+                <div class="col-md-12 mt-5">
                     <div class="col-md-10 px-0 mx-auto">
                         <div>
                             <div class="col-md-10 px-0 mx-auto">
@@ -534,8 +542,8 @@ get_header();
                                             <div class="col-12">
                                                 <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">Conclusion</h3>
                                             </div>
-                                            <div class="col-12 col-md-10 project-step-disc">
-                                                <div class="project-step-disc__item conclusion">
+                                            <div class="col-md-12 project-step-disc">
+                                                <div class="project-step-disc__item conclusions">
                                                     <?php echo the_field('conclusions'); ?>
                                                 </div>
                                             </div>
