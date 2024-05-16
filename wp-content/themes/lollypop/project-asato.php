@@ -238,7 +238,7 @@ get_header();
                                             <div class="project-step__item row">
                                                 <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                                                 <div class="col-12 col-md-8 project-step-disc">
-                                                    <div class="project-step-disc__item">
+                                                    <div class="project-step-disc__item data-scroll">
                                                         <?php the_sub_field('content'); ?>
                                                     </div>
                                                 </div>
@@ -258,12 +258,12 @@ get_header();
     <?php while (have_rows('key_objectives')) : the_row(); ?>
         <section class="container">
             <div class="row justify-content-center mb-5 g-0">
-                <div class="col-md-8 px-0 mx-auto mx-auto">
-                    <p><strong><?php echo the_sub_field('title') ?></strong></p>
+                <div class="col-md-8 px-0 mx-auto mx-auto ">
+                    <p class="data-scroll"><strong><?php echo the_sub_field('title') ?></strong></p>
                     <div class="row gx-4 gy-2">
                         <?php while (have_rows('content')) : the_row(); ?>
                             <div class="col-md-4">
-                                <div class="keyObjectives">
+                                <div class="keyObjectives data-scroll">
                                     <div class="keyObjectives__title"><?php echo the_sub_field('position') ?>
                                     </div>
                                     <div class="keyObjectives__content"><?php echo the_sub_field('mission') ?></div>
@@ -280,11 +280,11 @@ get_header();
         <section class=" container">
             <div class="row justify-content-center mb-5 g-0">
                 <div class="col-md-8 px-0 mx-auto mx-auto">
-                    <p><strong><?php echo the_sub_field('title') ?></strong></p>
+                    <p class="data-scroll"><strong><?php echo the_sub_field('title') ?></strong></p>
                     <div class="row gx-4 gy-2">
                         <?php while (have_rows('content')) : the_row(); ?>
                             <div class="col-md-4">
-                                <div class="userPersona">
+                                <div class="userPersona data-scroll">
                                     <img class="coma_icon mb-3" src="<?php echo get_template_directory_uri(); ?>/img/icons/coma.png" alt='coma_icon' />
                                     <div class=" userPersona__statement"><?php echo the_sub_field('statement') ?>
                                     </div>
@@ -302,10 +302,10 @@ get_header();
     <section class="container">
         <div class="row justify-content-center mb-5 g-0">
             <div class="col-md-8 px-0 mx-auto mx-auto">
-                <p><strong><?php echo the_field('user_journey_title') ?></strong></p>
+                <p class="data-scroll"><strong><?php echo the_field('user_journey_title') ?></strong></p>
                 <div class="row gx-4 gy-2">
                     <?php while (have_rows('user_journey_content')) : the_row(); ?>
-                        <div class="col-md-12">
+                        <div class="col-md-12 data-scroll">
                             <p><strong><?php echo the_sub_field('position') ?></strong></p>
                             <div class="journey">
                                 <?php while (have_rows('content')) : the_row(); ?>
@@ -335,7 +335,7 @@ get_header();
                                                 <div class="project-step__item row">
                                                     <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                                                     <div class="col-12 col-md-8 project-step-disc">
-                                                        <div class="project-step-disc__item">
+                                                        <div class="project-step-disc__item data-scroll">
                                                             <?php the_sub_field('content'); ?>
                                                         </div>
                                                     </div>
@@ -353,7 +353,7 @@ get_header();
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                        <div class="wireframe__title"><?php the_sub_field('title'); ?>
+                        <div class="wireframe__title data-scroll"><?php the_sub_field('title'); ?>
                         </div>
                         <div class="row g-4 pt-4">
 
@@ -363,7 +363,7 @@ get_header();
                                 foreach ($images as $image) {
                             ?>
                                     <div class="col-md-6">
-                                        <img class="w-100" src="<?php echo $image; ?>" alt="wireframe image">
+                                        <img class="w-100 data-scroll" src="<?php echo $image; ?>" alt="wireframe image">
                                     </div>
                             <?php
                                 }
@@ -387,7 +387,7 @@ get_header();
                                             <div class="project-step__item row">
                                                 <div class="col-12 col-md-4 mb-3 mb-md-0"> <span class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd--more"><?php the_sub_field('title'); ?></span></div>
                                                 <div class="col-12 col-md-8 project-step-disc">
-                                                    <div class="project-step-disc__item">
+                                                    <div class="project-step-disc__item data-scroll">
                                                         <?php the_sub_field('content'); ?>
                                                     </div>
                                                 </div>
@@ -404,8 +404,7 @@ get_header();
     <?php while (have_rows('color_&_typeface')) : the_row(); ?>
         <div class="container">
             <div class="row">
-
-                <div class="wireframe__title text--red"><?php the_sub_field('title'); ?>
+                <div class="wireframe__title text--red data-scroll"><?php the_sub_field('title'); ?>
                 </div>
             </div>
         </div>
@@ -417,7 +416,7 @@ get_header();
             ?>
                     <div class=" design__img">
                         <div class="container">
-                            <img class=" w-100" src="<?php echo $image; ?>" alt="design image">
+                            <img class=" w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                         </div>
                     </div>
             <?php
@@ -430,7 +429,7 @@ get_header();
 
     <?php while (have_rows('website_ui')) : the_row(); ?>
         <div class="container">
-            <div class="wireframe__title text--red pt-5"><?php the_sub_field('title'); ?>
+            <div class="wireframe__title text--red pt-5 data-scroll"><?php the_sub_field('title'); ?>
                 <div class="row g-5 pt-5">
                     <div class="col-md-6">
                         <div class="row g-5">
@@ -440,7 +439,7 @@ get_header();
                                 foreach ($images as $image) {
                             ?>
                                     <div class="col-md-12">
-                                        <img class=" w-100" src="<?php echo $image; ?>" alt="design image">
+                                        <img class=" w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                                     </div>
                             <?php
                                 }
@@ -456,7 +455,7 @@ get_header();
                                 foreach ($images as $image) {
                             ?>
                                     <div class="col-md-12">
-                                        <img class="w-100" src="<?php echo $image; ?>" alt="design image">
+                                        <img class="w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                                     </div>
                             <?php
                                 }
@@ -470,7 +469,7 @@ get_header();
     <?php endwhile; ?>
     <?php while (have_rows('product_ui')) : the_row(); ?>
         <div class="container">
-            <div class="wireframe__title text--red pt-5"><?php the_sub_field('title'); ?>
+            <div class="wireframe__title text--red pt-5 data-scroll"><?php the_sub_field('title'); ?>
             </div>
             <div class="row g-5 pt-5">
                 <div class="col-md-6">
@@ -481,7 +480,7 @@ get_header();
                             foreach ($images as $image) {
                         ?>
                                 <div class="col-md-12">
-                                    <img class=" w-100" src="<?php echo $image; ?>" alt="design image">
+                                    <img class=" w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                                 </div>
                         <?php
                             }
@@ -497,7 +496,7 @@ get_header();
                             foreach ($images as $image) {
                         ?>
                                 <div class="col-md-12">
-                                    <img class="w-100" src="<?php echo $image; ?>" alt="design image">
+                                    <img class="w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                                 </div>
                         <?php
                             }
@@ -510,7 +509,7 @@ get_header();
     <?php endwhile; ?>
     <?php while (have_rows('responsive_ui')) : the_row(); ?>
         <div class="container">
-            <div class="wireframe__title text--red pt-5"><?php the_sub_field('title'); ?>
+            <div class="wireframe__title text--red pt-5 data-scroll"><?php the_sub_field('title'); ?>
             </div>
             <div class="row g-5 pt-5">
                 <?php
@@ -519,7 +518,7 @@ get_header();
                     foreach ($images as $image) {
                 ?>
                         <div class="col-md-4">
-                            <img class=" w-100" src="<?php echo $image; ?>" alt="design image">
+                            <img class=" w-100 data-scroll" src="<?php echo $image; ?>" alt="design image">
                         </div>
                 <?php
                     }
@@ -528,23 +527,24 @@ get_header();
             </div>
         </div>
     <?php endwhile; ?>
-
-    <section class="conclusion-pad sec-pt">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mt-5">
-                    <div class="col-md-10 px-0 mx-auto">
-                        <div>
-                            <div class="col-md-10 px-0 mx-auto">
-                                <div class="mb-r-80">
-                                    <div class="project-step">
-                                        <div class="project-step__item row">
-                                            <div class="col-12">
-                                                <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">Conclusion</h3>
-                                            </div>
-                                            <div class="col-md-12 project-step-disc">
-                                                <div class="project-step-disc__item conclusions">
-                                                    <?php echo the_field('conclusions'); ?>
+    <?php if (get_field('conclusions') != '') { ?>
+        <section class="conclusion-pad sec-pt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-5">
+                        <div class="col-md-10 px-0 mx-auto">
+                            <div>
+                                <div class="col-md-10 px-0 mx-auto">
+                                    <div class="mb-r-80">
+                                        <div class="project-step">
+                                            <div class="project-step__item row">
+                                                <div class="col-12">
+                                                    <h3 class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">Conclusion</h3>
+                                                </div>
+                                                <div class="col-md-12 project-step-disc">
+                                                    <div class="project-step-disc__item conclusions data-scroll">
+                                                        <?php echo the_field('conclusions'); ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -554,9 +554,9 @@ get_header();
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
-    <!-- <section class="sec-pd pt-2">
+        </section>
+    <?php } ?>
+    <section class="sec-pd pt-2">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -576,15 +576,12 @@ get_header();
                                     <?php } ?>
                                 </div>
                             </div>
-
-
                             <div class="projects-nav__next">
                                 <div class="d-flex ms-auto">
                                     <?php
                                     $prevPost = get_previous_post();
                                     if ($prevPost) { ?>
                                         <div class="pe-4">
-
                                             <?php
                                             $destination = get_field('company_name', $prevPost->ID);
                                             previous_post_link('%link',  ' <h4 class="fnt-28 fnt-800">' . $destination . '</h4>');  ?>
@@ -599,7 +596,7 @@ get_header();
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="sec-footer-trans">
         <div class="container z-1">
             <div class="row">
