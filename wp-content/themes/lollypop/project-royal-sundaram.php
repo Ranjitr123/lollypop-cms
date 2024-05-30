@@ -80,10 +80,10 @@ get_header();
         top: 0;
     }
 
-    .conclusions li,
+    /* .conclusions li,
     ul {
         list-style: outside;
-    }
+    } */
 
     @media (max-width: 768px) {
         .titleSection {
