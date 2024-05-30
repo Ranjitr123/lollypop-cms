@@ -80,6 +80,11 @@ get_header();
         top: 0;
     }
 
+    .wireframe_images {
+        display: flex;
+        gap: 1rem;
+    }
+
     /* .conclusions li,
     ul {
         list-style: outside;
@@ -101,6 +106,11 @@ get_header();
 
         .titleSection__subtitle {
             text-align: center;
+        }
+
+        .wireframe_images {
+            flex-direction: column;
+            gap: 1rem;
         }
 
     }
@@ -236,21 +246,21 @@ get_header();
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
                     <div class="titleSection data-scroll"><span class="titleBlue"><?php echo the_sub_field('title') ?></span></div>
                     <div class="col-md-19 mx-auto text-center mb-5 data-scroll"><span class="titleSection__subtitle"><?php echo the_sub_field('subtitle') ?></span></div>
-                    <div class="row gx-4 gy-5">
-                        <?php
-                        $images = get_sub_field('images');
-                        if ($images) {
-                            foreach ($images as $image) {
-                        ?>
-                                <div class="col-md-12">
-                                    <img class="w-100 data-scroll" src="<?php echo $image; ?>" alt="information image">
-                                </div>
-                        <?php
-                            }
-                        }
-                        ?>
-                    </div>
                 </div>
+            </div>
+            <div class="wireframe_images">
+                <?php
+                $images = get_sub_field('images');
+                if ($images) {
+                    foreach ($images as $image) {
+                ?>
+                        <div class="">
+                            <img class="w-100 data-scroll" src="<?php echo $image; ?>" alt="information image">
+                        </div>
+                <?php
+                    }
+                }
+                ?>
             </div>
         </section>
     <?php endwhile; ?>
