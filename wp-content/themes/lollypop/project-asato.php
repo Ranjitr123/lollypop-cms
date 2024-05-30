@@ -616,5 +616,12 @@ get_header();
     </section>
 
 </main>
-
+<script>
+    $("h4").addClass("fnt-28 fnt-800 mb-2 data-scroll");
+    $('.bd-brd').css('border-color', '#f7f4f2');
+    $(".project-step-disc__item h4").addClass('fnt-28 fnt-800 mb-2 data-scroll')
+    $(".project-step-disc__item ul").addClass('m-0')
+    $(".project-step-disc ul").addClass('li-disc m-4')
+    $(".project-step-disc__item ul li").addClass('fnt-16 clr-black-354 data-scroll my-4')
+</script>
 <?php get_footer(); ?>
