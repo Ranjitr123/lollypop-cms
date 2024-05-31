@@ -62,10 +62,32 @@ get_header();
         gap: 1rem;
     }
 
-    /* .conclusions li,
-    ul {
-        list-style: outside;
-    } */
+    .colour_title {
+        font-family: "Rubik";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.44px;
+        color: #1F0702;
+    }
+
+    .colour_text {
+        font-family: "Rubik";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.96px;
+        text-align: center;
+        color: #4B3834;
+        margin-bottom: 0.5rem;
+    }
+
+    .colour_color {
+        font-family: "Rubik";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.59px;
+        text-align: center;
+        color: #6F605D;
+    }
 
     @media (max-width: 768px) {
         .titleSection {
@@ -255,11 +277,11 @@ get_header();
                     <div class="row g-3">
                         <?php while (have_rows('details')) : the_row(); ?>
                             <div class="col d-flex flex-column align-items-center" style="gap:1rem;">
-                                <div><?php echo the_sub_field('title') ?></div>
+                                <div class="colour_title"><?php echo the_sub_field('title') ?></div>
                                 <image src='<?php echo the_sub_field('image') ?>' class="w-100" alt='' />
                                 <div>
-                                    <div><?php echo the_sub_field('text') ?></div>
-                                    <div><?php echo the_sub_field('color') ?></div>
+                                    <div class="colour_text"><?php echo the_sub_field('text') ?></div>
+                                    <div class="colour_color"><?php echo the_sub_field('color') ?></div>
                                 </div>
                             </div>
                         <?php endwhile; ?>
