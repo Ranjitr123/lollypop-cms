@@ -117,7 +117,7 @@ get_header();
     .has-hover {
         width: 100%;
         height: 100%;
-        transition: opacity 1s ease;
+        transition: opacity 1s ease-in-out;
     }
 
     .has-hover.hidden {
@@ -125,6 +125,8 @@ get_header();
         position: absolute;
         top: 0;
         left: 0;
+        transition: opacity 1s ease-in-out;
+        pointer-events: none;
     }
 
     .has-hover.hidden svg {
@@ -138,6 +140,7 @@ get_header();
 
     .hover:hover .has-hover.hidden {
         opacity: 1;
+        pointer-events: auto;
     }
 
     .ui_component::before {
