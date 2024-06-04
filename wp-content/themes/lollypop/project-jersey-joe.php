@@ -594,22 +594,18 @@ get_header();
                                 <div class="col-4">
                                     <div class='row g-3'>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/2.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/2.png" />
                                         </div>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/3.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/3.png" />
                                         </div>
                                         <div class="col-12 hover" style="position: relative;">
                                             <div class="has-hover fullSize p-3">
-                                                <?php
-                                                $svg_file5  = get_template_directory() . '/img/jersey-joe/1.svg';
-                                                include $svg_file5
-                                                ?></div>
+                                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/1.png" />
+                                            </div>
                                             <div class="has-hover hidden">
-                                                <?php
-                                                $svg_file15  = get_template_directory() . '/img/jersey-joe/15.svg';
-                                                include $svg_file15
-                                                ?></div>
+                                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/15.png" />
+                                            </div>
                                         </div>
 
                                         <div class="col-12 fullSize">
@@ -623,7 +619,7 @@ get_header();
                                 <div class="col-4">
                                     <div class='row'>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/11.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/11.png" />
                                         </div>
                                         <div class="col-12 fullSize">
                                             <?php
@@ -631,24 +627,24 @@ get_header();
                                             include $svg_file9
                                             ?></div>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/6.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/6.png" />
                                         </div>
 
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/12.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/12.png" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class='row g-3'>
                                         <div class="col-12 mb-3 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/8.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/8.png" />
                                         </div>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/10.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/10.png" />
                                         </div>
                                         <div class="col-12 fullSize">
-                                            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/14.png" />
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/14.png" />
                                         </div>
 
                                     </div>
@@ -690,7 +686,7 @@ get_header();
                                 ?>
                             </div>
                             <div class="mobileScroll">
-                                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
                             </div>
                         </div>
                         <div class="col-12 fullSize ui_design" style="position: relative;">
@@ -719,27 +715,27 @@ get_header();
                                 ?>
                             </div>
                             <div class="mobileScroll7">
-                                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
                             </div>
                         </div>
                         <div class="col-12 fullSize ui_design" style="position: relative;">
                             <div class='p-5' style="background: rgba(253, 203, 137, 0.4);">
                                 <div style="background-color: #44140A;">
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/33.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/33.png" />
                                     <?php
                                     $svg_file34  = get_template_directory() . '/img/jersey-joe/34.svg';
                                     include $svg_file34
                                     ?>
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/35.png" />
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/36.png" />
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/37.png" />
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/38.png" />
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/39.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/35.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/36.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/37.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/38.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/39.png" />
                                     <?php
                                     $svg_file40  = get_template_directory() . '/img/jersey-joe/40.svg';
                                     include $svg_file40
                                     ?>
-                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/41.png" />
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/41.png" />
                                 </div>
                             </div>
                         </div>
