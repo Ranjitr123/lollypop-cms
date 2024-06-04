@@ -725,39 +725,21 @@ get_header();
                         <div class="col-12 fullSize ui_design" style="position: relative;">
                             <div class='p-5' style="background: rgba(253, 203, 137, 0.4);">
                                 <div style="background-color: #44140A;">
-                                    <?php
-                                    $svg_file33  = get_template_directory() . '/img/jersey-joe/33.svg';
-                                    include $svg_file33
-                                    ?>
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/33.png" />
                                     <?php
                                     $svg_file34  = get_template_directory() . '/img/jersey-joe/34.svg';
                                     include $svg_file34
                                     ?>
-                                    <?php
-                                    $svg_file35  = get_template_directory() . '/img/jersey-joe/35.svg';
-                                    include $svg_file35
-                                    ?>
-                                    <?php
-                                    $svg_file36  = get_template_directory() . '/img/jersey-joe/36.svg';
-                                    include $svg_file36
-                                    ?>
-
-                                    <?php
-                                    $svg_file38 = get_template_directory() . '/img/jersey-joe/38.svg';
-                                    include $svg_file38
-                                    ?>
-                                    <?php
-                                    $svg_file39  = get_template_directory() . '/img/jersey-joe/39.svg';
-                                    include $svg_file39
-                                    ?>
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/35.png" />
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/36.png" />
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/37.png" />
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/38.png" />
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/39.png" />
                                     <?php
                                     $svg_file40  = get_template_directory() . '/img/jersey-joe/40.svg';
                                     include $svg_file40
                                     ?>
-                                    <?php
-                                    $svg_file41  = get_template_directory() . '/img/jersey-joe/41.svg';
-                                    include $svg_file41
-                                    ?>
+                                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/41.png" />
                                 </div>
                             </div>
                         </div>
