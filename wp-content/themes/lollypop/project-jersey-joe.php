@@ -186,9 +186,9 @@ get_header();
     .mobileScroll2 {
         position: absolute;
         content: '';
-        left: 75.9%;
+        left: 75.7%;
         width: 18.5%;
-        height: 73%;
+        height: 66.8%;
         border-radius: 0 0 10px 10px;
         z-index: 2;
         bottom: -10.5%;
@@ -584,10 +584,7 @@ get_header();
                             </div>
                             <div class='row'>
                                 <div class="col-12 fullSize">
-                                    <?php
-                                    $svg_file2  = get_template_directory() . '/img/jersey-joe/7.svg';
-                                    include $svg_file2
-                                    ?>
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/7.png" />
                                 </div>
                             </div>
                             <div class='row gx-3'>
@@ -668,22 +665,13 @@ get_header();
                     <div class="row gx-4 gy-5">
                         <div class="col-12 fullSize ui_design" style="position: relative;">
                             <div>
-                                <?php
-                                $svg_file15  = get_template_directory() . '/img/jersey-joe/23.svg';
-                                include $svg_file15
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/23.png" />
                             </div>
                             <div class="mobileScroll1">
-                                <?php
-                                $svg_file16  = get_template_directory() . '/img/jersey-joe/24.svg';
-                                include $svg_file16
-                                ?>
+                                <img class="w-100 h-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/24.png" />
                             </div>
                             <div class="mobileScroll2">
-                                <?php
-                                $svg_file17  = get_template_directory() . '/img/jersey-joe/25.svg';
-                                include $svg_file17
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/25.png" />
                             </div>
                             <div class="mobileScroll">
                                 <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
@@ -691,28 +679,16 @@ get_header();
                         </div>
                         <div class="col-12 fullSize ui_design" style="position: relative;">
                             <div>
-                                <?php
-                                $svg_file25  = get_template_directory() . '/img/jersey-joe/18.svg';
-                                include $svg_file25
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/18.png" />
                             </div>
                             <div class="mobileScroll4">
-                                <?php
-                                $svg_file26  = get_template_directory() . '/img/jersey-joe/19.svg';
-                                include $svg_file26
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/19.png" />
                             </div>
                             <div class="mobileScroll5">
-                                <?php
-                                $svg_file27  = get_template_directory() . '/img/jersey-joe/20.svg';
-                                include $svg_file27
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/20.png" />
                             </div>
                             <div class="mobileScroll6">
-                                <?php
-                                $svg_file28  = get_template_directory() . '/img/jersey-joe/21.svg';
-                                include $svg_file28
-                                ?>
+                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/21.png" />
                             </div>
                             <div class="mobileScroll7">
                                 <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/22.png" />
