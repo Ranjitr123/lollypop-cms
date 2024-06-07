@@ -9,6 +9,261 @@
 get_header();
 ?>
 <style>
+    .bestSeller {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bestSeller-bg {
+        position: absolute;
+        width: 32%;
+        top: 28%;
+        left: 35%;
+        z-index: 1;
+        transform: rotate(-4deg);
+        transition: all .65s ease-out;
+    }
+
+    .bestSeller-bg.active {
+        transform: rotate(-184deg);
+    }
+
+    .bestSeller-banner {
+        position: absolute;
+        width: 24%;
+        top: 35%;
+        right: 13%;
+        z-index: 3;
+        opacity: 0;
+        display: none;
+        transition: all .65s ease-out;
+    }
+
+    .bestSeller-banner.active {
+        display: block;
+        opacity: 1;
+        transition: all .65s ease-out;
+    }
+
+    .bestSeller-slide {
+        position: absolute;
+        width: 33%;
+        top: 28%;
+        z-index: 2;
+        transition: all .65s ease-out;
+    }
+
+
+    .bestSeller-slide.left {
+        right: unset;
+        left: -100%;
+        transition: all .65s ease-out;
+    }
+
+    .bestSeller-slide.right {
+        right: unset;
+        top: 41%;
+        left: 100%;
+        transition: left .65s ease-out;
+    }
+
+    .bestSeller-slide.active {
+        left: 21%;
+        transition: all .65s ease-out;
+    }
+
+
+    .bestSeller-menu {
+        position: absolute;
+        left: 0%;
+        z-index: 900;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 23%;
+    }
+
+    .bestSeller-dot {
+        cursor: pointer;
+        font-family: "Rubik";
+        display: inline-block;
+        font-size: 0.8vw;
+        font-weight: 400;
+        color: #73382A;
+        padding-inline: 12px;
+        border-right: 1px solid rgba(31, 7, 2, 0.12);
+        transition: all .3s ease;
+    }
+
+    .bestSeller-menu::after {
+        content: '';
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 0%;
+        top: 0;
+        background: linear-gradient(90deg, #FCF1E3 34.38%, rgba(252, 241, 227, 0.2) 100%);
+    }
+
+    .bestSeller-menu::before {
+        position: absolute;
+        content: '';
+        width: 20%;
+        height: 100%;
+        right: 0%;
+        top: 0;
+        background: linear-gradient(270deg, #FCF1E3 34.38%, rgba(252, 241, 227, 0.2) 100%);
+
+    }
+
+    .bestSeller-dot.active {
+        font-weight: 600;
+        font-size: 1vw;
+        color: rgba(92, 38, 26, 1)
+    }
+
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        height: 50vh;
+    }
+
+    .slideshow2 {
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .customSlider2 {
+        position: absolute;
+        top: 25%;
+        left: 100%;
+        width: 70%;
+        transition: left 0s .75s;
+        /* display: none; */
+    }
+
+    .customSlider2.left {
+        transition: left .65s ease-out;
+        left: -100%;
+    }
+
+    .customSlider2.right {
+        transition: left .65s ease-out;
+        left: 100%;
+    }
+
+    .customSlider2.active {
+        left: 15%;
+        transition: left .65s ease-out;
+    }
+
+    .slick-menu {
+        position: absolute;
+        left: 0;
+        z-index: 900;
+        width: 100%;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .slick-menu div {
+        cursor: pointer;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        border-radius: 50px;
+        transition: all .3s ease;
+
+    }
+
+    .slick-menu div.active {
+        width: 10px;
+        transition: all .3s ease;
+    }
+
+    .btn-viewMenu {
+        background-color: #FFFFFF;
+        box-shadow: 0px 6px 10px 0px rgba(251, 168, 59, 0.24);
+        color: #44140A;
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 0.9vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 32px;
+        transition: transform 0.7s ease, background-color 0.5s ease;
+
+    }
+
+    .btn-viewMenu:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 6px 8px 0px rgba(251, 168, 59, 0.24);
+    }
+
+
+    .btn-move {
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        top: 49%;
+        left: unset;
+        right: 5%;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .btn-move.btn-left {
+        left: 5%;
+        right: unset;
+        transform: rotate(180deg);
+    }
+
+    .customSlider {
+        position: absolute;
+        width: 40%;
+        top: 25%;
+        height: auto;
+        opacity: 0.8;
+        z-index: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .customSlider.active {
+        opacity: 1;
+        z-index: 1;
+        width: 60%;
+        top: 10%;
+        left: 20%;
+
+    }
+
+    .customSlider img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-right {
+        left: unset;
+        right: 15%;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .slider-left {
+        right: unset;
+        left: 15%;
+        transition: all 0.5s ease-in-out;
+    }
+
     .branding {
         background-color: #FCF1E3;
         padding: 2rem;
@@ -89,16 +344,39 @@ get_header();
         color: #6F605D;
     }
 
-    .btn-jersey {
+    /* .btn-jersey {
         position: relative;
         z-index: 2;
         transition: transform 0.5s ease, background-color 0.5s ease;
+    } */
+    .btn-jersey {
+        background-color: rgba(252, 185, 98, 1);
+        box-shadow: 0px 6px 10px 0px rgba(251, 168, 59, 0.24);
+        color: rgba(68, 20, 10, 1);
+        font-family: "Rubik";
+        font-weight: 700;
+        font-size: 0.9vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 32px;
+        transition: transform 0.5s ease, background-color 0.5s ease;
+
     }
 
     .btn-jersey:hover {
         transform: translateY(-3px);
         box-shadow: 0px 6px 8px 0px rgba(251, 168, 59, 0.24);
+        background-color: #FBA83B;
+    }
 
+    .btn-submit {
+        position: absolute;
+        top: 27%;
+        right: 8%;
+        width: 15%;
+        height: 35%
     }
 
     .bg-color {
@@ -141,6 +419,7 @@ get_header();
     .hover:hover .has-hover.hidden {
         opacity: 1;
         pointer-events: auto;
+        z-index: 2;
     }
 
     .ui_component::before {
@@ -151,7 +430,8 @@ get_header();
         width: 100%;
         height: 325px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.64) 72.63%);
-        pointer-events: none
+        pointer-events: none;
+        z-index: 1;
     }
 
     .ui_design {}
@@ -315,6 +595,8 @@ get_header();
     }
 
     @media (max-width: 768px) {
+
+
         .titleSection {
             font-size: 24px;
             line-height: 30px;
@@ -575,11 +857,9 @@ get_header();
                     <div class="row gx-4 gy-5 ui_component">
                         <div class="col-12">
                             <div class='row justify-content-start'>
-                                <div class="col-md-8 col-12 fullSize">
-                                    <?php
-                                    $svg_file1  = get_template_directory() . '/img/jersey-joe/5.svg';
-                                    include $svg_file1
-                                    ?>
+                                <div class="col-md-8 col-12 fullSize" style="position: relative;">
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/5.png" />
+                                    <div class='btn-jersey btn-submit'>SUBMIT</div>
                                 </div>
                             </div>
                             <div class='row'>
@@ -605,11 +885,10 @@ get_header();
                                             </div>
                                         </div>
 
-                                        <div class="col-12 fullSize">
-                                            <?php
-                                            $svg_file6  = get_template_directory() . '/img/jersey-joe/4.svg';
-                                            include $svg_file6
-                                            ?>
+                                        <div class="col-12 fullSize" style="position: relative;">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/4.png" />
+                                            <div class="btn-jersey" style="position: absolute;width: 50%;height: 12%;z-index: 0;bottom: 12%;left: 23%;">
+                                                VIEW FULL MENU</div>
                                         </div>
                                     </div>
                                 </div>
@@ -618,11 +897,11 @@ get_header();
                                         <div class="col-12 fullSize">
                                             <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/11.png" />
                                         </div>
-                                        <div class="col-12 fullSize">
-                                            <?php
-                                            $svg_file9  = get_template_directory() . '/img/jersey-joe/13.svg';
-                                            include $svg_file9
-                                            ?></div>
+                                        <div class="col-12 p-4 fullSize" style="position: relative;">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/13.png" />
+                                            <div class="btn-jersey" style="position: absolute;width: 31%;height: 15%;z-index: 0;bottom: 12%;left: 57%;">
+                                                ORDER NOW</div>
+                                        </div>
                                         <div class="col-12 fullSize">
                                             <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/6.png" />
                                         </div>
@@ -681,11 +960,22 @@ get_header();
                             <div>
                                 <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/18.png" />
                             </div>
+                            <div style="position: absolute;width: 25%;height: 15%;z-index: 0;bottom: 12%;left: 4%;">
+                                <div style="position: relative;">
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/13.png" />
+                                    <div class="btn-jersey" style="position: absolute;width: 39%;height: 20%;z-index: 0;bottom: 4%;left: 57%;">
+                                        ORDER NOW</div>
+                                </div>
+                            </div>
                             <div class="mobileScroll4">
                                 <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/19.png" />
                             </div>
                             <div class="mobileScroll5">
-                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/20.png" />
+                                <div style="position: relative;">
+                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/20.png" />
+                                    <div class="btn-jersey" style="position: absolute;width: 54%;height: 15%;z-index: 0;bottom: 15%;left: 24%;">
+                                        VIEW FULL MENU</div>
+                                </div>
                             </div>
                             <div class="mobileScroll6">
                                 <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/21.png" />
@@ -703,10 +993,81 @@ get_header();
                                     include $svg_file34
                                     ?>
                                     <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/35.png" />
-                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/36.png" />
-                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/37.png" />
+                                    <div class="bestSeller">
+                                        <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/36.png" />
+                                        <div class="bestSeller-bg active">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/28.png" />
+                                        </div>
+                                        <div class="bestSeller-slide left active">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/27.png" />
+                                        </div>
+                                        <div class="bestSeller-slide right">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/26.png" />
+
+                                        </div>
+                                        <div class="bestSeller-banner left active" style="pointer-events: none;">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/29.png" />
+                                            <div class="btn-jersey" style="position: absolute;width: 56%;height: 15%;z-index: 4;bottom: 13%;left: 24%; pointer-events: auto;">
+                                                VIEW FULL MENU</div>
+                                        </div>
+                                        <div class="bestSeller-banner right" style="pointer-events: none;">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/30.png" />
+                                            <div class="btn-jersey" style="position: absolute;width: 56%;height: 15%;z-index: 4;bottom: 13%;left: 24%;pointer-events: auto;">
+                                                VIEW FULL MENU</div>
+                                        </div>
+                                        <div class="btn-move btn-left" onclick="plusDivs1(-1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                        <div class="btn-move" onclick="plusDivs1(1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                        <div class="bestSeller-menu">
+                                            <div class="bestSeller-dot">DESSERT</div>
+                                            <div class="bestSeller-dot">SANDWICHES</div>
+                                            <div class="bestSeller-dot">FRIES</div>
+                                            <div class="bestSeller-dot left active">BURGERS</div>
+                                            <div class="bestSeller-dot right">CHEESESTEAKS</div>
+                                            <div class="bestSeller-dot">SIDES</div>
+                                            <div class="bestSeller-dot">SALAD</div>
+                                            <div class="bestSeller-dot">BEVERAGES</div>
+                                            <div class="bestSeller-dot">BEVERAGES</div>
+                                            <div class="bestSeller-dot">DESSERT</div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow-container">
+                                        <div class="customSlider slider-left">
+                                            <div style="position: relative;"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/slide1.png" />
+                                                <div class="btn-viewMenu" style="position: absolute; bottom: 10%; left:10%; width:20%;height:14%;">VIEW MENU</div>
+                                            </div>
+                                        </div>
+                                        <div class="customSlider active">
+                                            <div style="position: relative;">
+                                                <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/slide2.png" />
+                                                <div class="btn-viewMenu" style="position: absolute; bottom: 10%; left:10%; width:20%;height:14%;">VIEW MENU</div>
+                                            </div>
+                                        </div>
+                                        <div class="customSlider slider-right">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/slide3.png" />
+                                        </div>
+                                        <div class="btn-move btn-left" onclick="plusDivs(-1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                        <div class="btn-move" onclick="plusDivs(1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                    </div>
+
+
                                     <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/38.png" />
-                                    <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/39.png" />
+                                    <div class="slideshow2">
+                                        <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/39.png" />
+                                        <div class="customSlider2 left active">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/slider4.png" />
+                                        </div>
+                                        <div class="customSlider2 right">
+                                            <img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/slider5.png" />
+                                        </div>
+                                        <div class="btn-move btn-left btn-left2" onclick="plusDivs2(-1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                        <div class="btn-move btn-right2" onclick="plusDivs2(1)"><img class="w-100" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/jersey-joe/btn-move.png" /></div>
+                                        <div class="slick-menu">
+                                            <div class="slick-dot active"></div>
+                                            <div class="slick-dot"></div>
+                                            <div class="slick-dot"></div>
+                                            <div class="slick-dot"></div>
+                                        </div>
+                                    </div>
                                     <?php
                                     $svg_file40  = get_template_directory() . '/img/jersey-joe/40.svg';
                                     include $svg_file40
@@ -818,5 +1179,109 @@ get_header();
     $(".project-step-disc__item ul").addClass('m-0')
     $(".project-step-disc ul").addClass('li-disc')
     $(".project-step-disc__item ul li").addClass('fnt-16 clr-black-354 mt-4 data-scroll')
+</script>
+<script>
+    function plusDivs1(n) {
+        showDivs1(n);
+    }
+
+    function showDivs1(n) {
+        let slides_left = document.querySelector(".bestSeller-slide.left");
+        let slides_right = document.querySelector(".bestSeller-slide.right");
+        let slider_bg = document.querySelector(".bestSeller-bg")
+        let slider_bannerLeft = document.querySelector(".bestSeller-banner.left")
+        let slider_bannerRight = document.querySelector(".bestSeller-banner.right")
+        let dotLeft = document.querySelector(".bestSeller-dot.left")
+        let dotRight = document.querySelector(".bestSeller-dot.right")
+        slides_left.classList.remove('active')
+        slides_right.classList.remove('active')
+        slider_bannerLeft.classList.remove('active')
+        slider_bannerRight.classList.remove('active')
+        dotLeft.classList.remove('active')
+        dotRight.classList.remove('active')
+        if (n > 0) {
+            slides_right.classList.add('active')
+            slider_bg.classList.remove('active')
+            slider_bannerRight.classList.add('active')
+            dotRight.classList.add('active')
+        } else {
+            slides_left.classList.add('active')
+            slider_bg.classList.add('active')
+            slider_bannerLeft.classList.add('active')
+            dotLeft.classList.add('active')
+        }
+
+    }
+
+    function plusDivs(n) {
+        showDivs(n);
+    }
+
+    function showDivs(n) {
+        let slides_active = document.querySelector(".customSlider.active");
+        let slides_left = document.querySelector(".customSlider.slider-left");
+        let slides_right = document.querySelector(".customSlider.slider-right");
+
+        if (n > 0) {
+            slides_active.classList.remove('active')
+            slides_active.classList.add('slider-left')
+            slides_right.classList.remove('slider-right')
+            slides_right.classList.add('active')
+            slides_left.classList.remove('slider-left')
+            slides_left.classList.add('slider-right')
+        } else {
+            slides_left.classList.remove('slider-left')
+            slides_right.classList.remove('slider-right')
+            slides_active.classList.remove('active')
+            slides_left.classList.add('active')
+            slides_right.classList.add('slider-left')
+            slides_active.classList.add('slider-right')
+        }
+
+    }
+
+
+    var slideIndex2 = 1;
+    showDivs2(slideIndex2);
+
+    function plusDivs2(n) {
+        showDivs2(slideIndex2 += n);
+    }
+
+    function currentDiv2(n) {
+        showDivs2(slideIndex2 = n);
+    }
+
+    function showDivs2(n) {
+        if (n > 2) {
+            slideIndex2 = 2
+            return;
+        }
+        var i;
+        var x = document.getElementsByClassName("customSlider2");
+        var dots = document.getElementsByClassName("slick-dot");
+        var arrowLeft = document.querySelector(".btn-left2")
+        if (n > x.length) {
+            slideIndex2 = 1
+        }
+        if (n < 1) {
+            slideIndex2 = x.length
+        }
+        if (n == 1) {
+            arrowLeft.style.display = "none";
+        } else {
+            arrowLeft.style.display = "block";
+
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].classList.remove('active')
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove('active')
+        }
+        // x[slideIndex2 - 1].style.display = "block";
+        x[slideIndex2 - 1].classList.add('active');
+        dots[slideIndex2 - 1].classList.add('active');
+    }
 </script>
 <?php get_footer(); ?>
