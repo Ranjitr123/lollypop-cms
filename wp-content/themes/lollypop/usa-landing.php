@@ -183,9 +183,9 @@ if($locationVideo !=''){
           <div class="row"> 
             <div class="col-12 col-md-10 col-lg-8 mx-auto">
               <div class="mb-100"> 
-                <h2 class="fnt-50 fnt-800 mb-3 mb-md-4 data-scroll">Get rid of the lengthy design and development process, don't get trapped into an unending loop of iterations!</h2>
+                <h2 class="fnt-50 fnt-800 mb-3 mb-md-4 data-scroll">It's time to escape from the loop of utterances with our captivating design solutions.</h2>
                 <div class="col-12 col-md-10 px-0">
-                  <p class="fnt-24 data-scroll">There's a need for your product in the market and there is a time when you need to hit the market. You need to do it right because if you don't do it, your competitors will do it and will own the market! </p>
+                  <p class="fnt-24 data-scroll">Increase your product's demand and value in the market by launching it at the perfect time. Outshine your competitors by transforming your ideas into reality with our unique approach!</p>
                 </div>
               </div>
               <div>
