@@ -470,7 +470,6 @@ get_header();
                                                                 src="<?php the_sub_field('images'); ?>" alt="Image"></div>
                                                     <?php } ?>
                                                 <?php endwhile; endif; ?>
-
                                         </div>
                                     <?php endwhile;
                                 endif; ?>
