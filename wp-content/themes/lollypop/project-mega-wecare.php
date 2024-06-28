@@ -350,7 +350,7 @@ get_header();
         }
     }
 
-    .project-step {
+    .step-between {
         >div:first-of-type {
             margin: 0;
         }
@@ -367,6 +367,10 @@ get_header();
         /* img {
             transform: scaleX(1.05) translateY(0px) !important;
         } */
+    }
+
+    .li-auto {
+        list-style: auto !important;
     }
 </style>
 <main class="main" style="background:#FFFFFF;">
@@ -415,7 +419,7 @@ get_header();
                                         <div class="project-step__item row">
                                             <div class="col-12 col-md-4 mb-3 mb-md-0">
                                                 <span
-                                                    class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span>
+                                                    class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more w-100 align-items-start d-flex"><?php the_sub_field('title'); ?></span>
                                             </div>
                                             <div class="col-12 col-md-8 project-step-disc">
                                                 <div class="project-step-disc__item">
@@ -445,14 +449,14 @@ get_header();
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
                     <div class="col-md-10 px-0 mx-auto">
                         <div class="mb-r-120">
-                            <div class="project-step">
+                            <div class="project-step step-between">
                                 <?php if (have_rows('define_descriptions')):
                                     while (have_rows('define_descriptions')):
                                         the_row(); ?>
                                         <div class="project-step__item row define-content">
                                             <div class="col-12 col-md-4 mb-3 mb-md-0">
                                                 <span
-                                                    class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span>
+                                                    class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more w-100 align-items-start d-flex"><?php the_sub_field('title'); ?></span>
                                             </div>
                                             <div class="col-12 col-md-8 project-step-disc ">
                                                 <div class="project-step-disc__item">
@@ -553,6 +557,8 @@ get_header();
     $('.bd-brd').css('border-color', '#f7f4f2');
     $(".project-step-disc__item h4").addClass('fnt-28 fnt-800 mb-2 data-scroll')
     $(".project-step-disc__item ul").addClass('m-0')
+    $(".project-step-disc__item ol").addClass('mb-0 mt-4')
+    $(".project-step-disc__item ol li").addClass('li-auto')
     $(".project-step-disc ul").addClass('li-disc')
     $(".project-step-disc__item overview2 ul li").addClass('fnt-16 clr-black-354 mt-4 data-scroll')
     $(".project-step-disc__item conclusions ul li").addClass('fnt-16 clr-black-354 data-scroll')
