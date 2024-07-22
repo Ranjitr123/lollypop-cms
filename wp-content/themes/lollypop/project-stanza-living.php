@@ -360,15 +360,6 @@ get_header();
         margin-top: 80px;
     }
 
-    .img-fullW {
-        display: block;
-        width: 100%;
-
-        /* img {
-            transform: scaleX(1.05) translateY(0px) !important;
-        } */
-    }
-
     .li-auto {
         list-style: auto !important;
     }
@@ -377,9 +368,8 @@ get_header();
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 80px 0;
-        padding: 0 56px;
         gap: 22px;
+        margin-top: 80px;
 
         h2 {
             font-size: 48px;
@@ -395,9 +385,85 @@ get_header();
 
     .albert_img {
         width: 498px;
+        padding-top: 80px;
     }
 
-    .img-wireframes {}
+    .wireframes {
+        width: 100%;
+    }
+
+    .define_desc {
+        >div:nth-child(2) {
+            margin-top: 40px;
+
+            >div:last-of-type {
+                display: flex;
+
+                >div:first-of-type {
+                    display: none !important;
+                }
+
+                >div:last-of-type {
+                    display: flex !important;
+                    width: 100% !important;
+
+                    >div {
+                        max-width: 924px;
+                        width: auto;
+                        display: flex;
+                        gap: 20px;
+                        margin-block: 80px;
+                    }
+                }
+            }
+        }
+
+        >div:nth-child(6) {
+            >div:last-of-type {
+                display: flex;
+
+                >div:first-of-type {
+                    display: none !important;
+                }
+
+                >div:last-of-type {
+                    display: flex !important;
+                    width: 100% !important;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 376px;
+                        height: 462px;
+                    }
+
+                }
+            }
+        }
+
+        >div:nth-child(7) {
+            margin-bottom: 0;
+        }
+    }
+
+    .defined-img {
+        margin-top: 40px;
+    }
+
+    .img-fullW {
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .wrapper-img {
+        margin-top: 80px;
+        padding: 0;
+    }
 </style>
 <main class="main" style="background:#FFFFFF;">
     <!-- Section Project Info -->
@@ -437,7 +503,7 @@ get_header();
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
                     <div class="col-md-10 px-0 mx-auto">
-                        <div class="mb-r-120">
+                        <div>
                             <div class="project-step">
                                 <?php if (have_rows('brief_descriptions')):
                                     while (have_rows('brief_descriptions')):
@@ -474,56 +540,66 @@ get_header();
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
                     <div class="col-md-10 px-0 mx-auto">
-                        <div class="mb-r-120">
-                            <div class="project-step step-between">
-                                <?php if (have_rows('define_descriptions')):
-                                    while (have_rows('define_descriptions')):
-                                        the_row(); ?>
+                        <div class="project-step define_desc">
+                            <?php if (have_rows('define_descriptions')):
+                                while (have_rows('define_descriptions')):
+                                    the_row(); ?>
+                                    <div class="project-step__item row">
+                                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                            <span
+                                                class="clr-second fnt-18 d-inline-block fnt-700 text-start text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span>
+                                        </div>
+                                        <div class="col-12 col-md-8 project-step-disc ">
+                                            <div class="project-step-disc__item">
+                                                <?php the_sub_field('content'); ?>
+                                            </div>
+                                        </div>
+
+
+                                        <?php if (have_rows('list_content')):
+                                            while (have_rows('list_content')):
+                                                the_row();
+                                                $content = get_sub_field('content');
+                                                if ($content != '') { ?>
+                                                    <div class="make_diff">
+                                                        <h2 class="fs-1 fw-bolder mbm-3"><?php the_sub_field('title'); ?></h2>
+                                                        <p class="fnt-16 col-lg-10 px-0 mb-0 text-center"><?php the_sub_field('content'); ?>
+                                                        </p>
+                                                    </div>
+                                                <?php } ?>
+                                            <?php endwhile;
+                                        endif; ?>
+
+
+                                        <?php
+                                        $image = get_sub_field('define_selected_image');
+                                        if ($image != '') { ?>
+                                            <div class="wrapper-img m-img emar"><img class="img-project-dtl data-scroll lazyloaded"
+                                                    src="<?php the_sub_field('define_selected_image'); ?>" alt="Image"></div>
+                                        <?php } ?>
+
+
                                         <div class="project-step__item row">
                                             <div class="col-12 col-md-4 mb-3 mb-md-0">
-                                                <span
-                                                    class="clr-second fnt-18 d-inline-block fnt-700 text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span>
                                             </div>
                                             <div class="col-12 col-md-8 project-step-disc ">
                                                 <div class="project-step-disc__item">
-                                                    <?php the_sub_field('content'); ?>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <?php
-                                                $image = get_sub_field('define_selected_image');
-                                                if ($image != '') { ?>
-
-                                                    <div class="albert_img"><img class="img-project-dtl data-scroll"
-                                                            src="<?php the_sub_field('define_selected_image'); ?>" alt="Image">
-                                                    <?php } ?>
+                                                    <?php if (have_rows('web_image')):
+                                                        while (have_rows('web_image')):
+                                                            the_row();
+                                                            $webImage = get_sub_field('images');
+                                                            if ($webImage != '') { ?>
+                                                                <div class="defined-img"><img class="img-project-dtl data-scroll"
+                                                                        src="<?php the_sub_field('images'); ?>" alt="Image"></div>
+                                                            <?php } ?>
+                                                        <?php endwhile;
+                                                    endif; ?>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="d-flex flex-column align-items-center"> -->
-                                        <?php if (have_rows('list_content')):
-                                            while (have_rows('list_content')):
-                                                the_row(); ?>
-                                                <div class="make_diff">
-                                                    <h2 class="fs-1 fw-bolder mbm-3"><?php the_sub_field('title'); ?></h2>
-                                                    <p class="fnt-16 col-lg-10 px-0 mb-0 text-center"><?php the_sub_field('content'); ?>
-                                                    </p>
-                                                </div>
-                                            <?php endwhile; endif; ?>
-                                        <div class="d-flex justify-content-end gap-4">
-                                            <?php if (have_rows('web_image')):
-                                                while (have_rows('web_image')):
-                                                    the_row();
-                                                    $webImage = get_sub_field('images');
-                                                    if ($webImage != '') { ?>
-                                                        <div class="albert_img"><img class="img-project-dtl data-scroll"
-                                                                src="<?php the_sub_field('images'); ?>" alt="Image"></div>
-                                                    <?php } ?>
-                                                <?php endwhile; endif; ?>
-                                        </div>
-                                    <?php endwhile;
-                                endif; ?>
-                            </div>
+                                    </div>
+                                <?php endwhile;
+                            endif; ?>
                         </div>
                     </div>
                 </div>
@@ -531,85 +607,16 @@ get_header();
         </div>
     </section>
 
-    <!-- Section Approach -->
-
-    <?php if (have_rows('emaars_digital_booking')):
-        while (have_rows('emaars_digital_booking')):
-            the_row();
-            ?>
-            <div class="container head position-relative d-flex align-items-center flex-column">
-                <?php if (have_rows('approach_section')):
-                    while (have_rows('approach_section')):
-                        the_row(); ?>
-                        <div class="">
-                            <p class="text-uppercase data-scroll disc-head"><?php the_sub_field('title'); ?></p>
-                        </div>
-                        <div class="">
-                            <p><?php the_sub_field('content'); ?></p>
-
-                            <div class="row space1 ">
-                                <?php if (have_rows('card_section')):
-                                    while (have_rows('card_section')):
-                                        the_row(); ?>
-                                        <div class="col-md-6 ">
-                                            <?php if (have_rows('detail_card')):
-                                                while (have_rows('detail_card')):
-                                                    the_row(); ?>
-                                                    <div class="space2 position-relative">
-                                                        <h3 class="pb-1 "><?php the_sub_field('title'); ?></h3>
-                                                        <p class="pb-5"><?php the_sub_field('content'); ?></p>
-                                                    </div>
-                                                <?php endwhile; endif; ?>
-                                        </div>
-                                    <?php endwhile; endif; ?>
-                            </div>
-                        </div>
-                    <?php endwhile; endif; ?>
-            </div>
-        <?php endwhile;
-    endif; ?>
-
-
-
-
-    <!-- Section Emaars image -->
-
-    <?php if (have_rows('emaars_digital_booking')):
-        while (have_rows('emaars_digital_booking')):
-            the_row();
-            ?>
-            <section class="Emaar_digital">
-                <div class="container head position-relative">
-                    <!-- <?php if (empty(get_sub_field('title')) === false): ?>
-                        <h2><?php the_sub_field('title'); ?></h2>
-                    <?php endif; ?> -->
-                    <?php if (empty(get_sub_field('images_section')) === false): ?>
-                        <div class="row space3">
-                            <?php if (have_rows('images_section')):
-                                while (have_rows('images_section')):
-                                    the_row(); ?>
-                                    <div class="col-md-4">
-                                        <figure>
-                                            <img src="<?php the_sub_field('image'); ?>" class="img-fluid w-100" alt="Image">
-                                        </figure>
-                                    </div>
-                                <?php endwhile; endif; ?>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            </section>
-        <?php endwhile;
-    endif; ?>
 
     <!-- Section Web Image -->
 
-    <section class="col-12 col-md-11 col-lg-10 mx-auto d-flex justify-content-center">
+    <section class="p-r-80 pb-0">
         <?php if (have_rows('web_image')):
             while (have_rows('web_image')):
                 the_row();
                 $webImage = get_sub_field('project_gallery');
                 if ($webImage != '') { ?>
-                    <div class="mb-r-80 m-img"><img width="843" class="data-scroll" src="<?php the_sub_field('project_gallery'); ?>"
+                    <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('project_gallery'); ?>"
                             alt="Image"></div>
                 <?php } ?>
             <?php endwhile; endif; ?>
