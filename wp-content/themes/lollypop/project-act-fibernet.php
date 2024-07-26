@@ -172,107 +172,6 @@ get_header();
         display: none;
     }
 
-    .mobileScroll {
-        position: absolute;
-        content: '';
-        top: 53.5%;
-        right: 6.27%;
-        width: 17.5%;
-        height: 50%;
-        overflow: scroll;
-        border-radius: 0 0 10px 10px;
-        z-index: 3;
-    }
-
-    .mobileScroll1 {
-        position: absolute;
-        content: '';
-        top: 11%;
-        left: 15.3%;
-        width: 72%;
-        height: 73%;
-        border-radius: 0 0 10px 10px;
-        z-index: 1;
-    }
-
-    .mobileScroll2 {
-        position: absolute;
-        content: '';
-        left: 75.7%;
-        width: 18.5%;
-        height: 66.8%;
-        border-radius: 0 0 10px 10px;
-        z-index: 2;
-        bottom: -10.5%;
-    }
-
-    .mobileScroll3 {
-        position: absolute;
-        content: '';
-        top: 50.6%;
-        left: 11.9%;
-        width: auto;
-        height: auto;
-        border-radius: 0 0 10px 10px;
-        z-index: 2;
-    }
-
-    .mobileScroll4 {
-        position: absolute;
-        content: '';
-        top: 52.5%;
-        left: 11.9%;
-        width: 21%;
-        height: auto;
-        border-radius: 0 0 10px 10px;
-        z-index: 2;
-    }
-
-    .mobileScroll5 {
-        position: absolute;
-        content: '';
-        top: 14%;
-        left: 9.9%;
-        width: 25%;
-        height: auto;
-        border-radius: 0 0 10px 10px;
-        z-index: 2;
-    }
-
-    .mobileScroll6 {
-        position: absolute;
-        content: '';
-        top: 34.7%;
-        left: 65.9%;
-        width: 19%;
-        height: auto;
-        border-radius: 0 0 10px 10px;
-        z-index: 2;
-    }
-
-    .mobileScroll7 {
-        position: absolute;
-        content: '';
-        top: 17.4%;
-        left: 31.3%;
-        width: 37.8%;
-        height: 77%;
-        border-radius: 0 0 12px 12px;
-        z-index: 1;
-        overflow: scroll;
-    }
-
-    .mobileScroll7 svg,
-    .mobileScroll svg {
-        height: auto;
-    }
-
-    .mobileScroll7::-webkit-scrollbar,
-    .mobileScroll::-webkit-scrollbar {
-        display: none;
-    }
-
-
     .zoomBg {
         transition: transform 0.3s ease-in-out;
     }
@@ -392,60 +291,6 @@ get_header();
         width: 100%;
     }
 
-    .define_desc {
-        >div:nth-child(2) {
-            margin-top: 40px;
-
-            >div:last-of-type {
-                display: flex;
-
-                >div:first-of-type {
-                    display: none !important;
-                }
-
-                >div:last-of-type {
-                    display: flex !important;
-                    width: 100% !important;
-
-                    >div {
-                        max-width: 924px;
-                        width: auto;
-                        display: flex;
-                        gap: 20px;
-                        margin-block: 80px;
-                    }
-                }
-            }
-        }
-
-        >div:nth-child(6) {
-            >div:last-of-type {
-                display: flex;
-
-                >div:first-of-type {
-                    display: none !important;
-                }
-
-                >div:last-of-type {
-                    display: flex !important;
-                    width: 100% !important;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        width: 376px;
-                        height: 462px;
-                    }
-
-                }
-            }
-        }
-
-        >div:nth-child(7) {
-            margin-bottom: 0;
-        }
-    }
-
     .defined-img {
         margin-top: 40px;
     }
@@ -464,8 +309,207 @@ get_header();
         margin-top: 80px;
         padding: 0;
     }
+
+    .brief_row {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .class1 {
+        max-width: 956px;
+        width: 100%;
+        height: auto;
+    }
+
+    .define_desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 112px;
+
+        >div:first-of-type {
+            >div:last-of-type {
+                margin-bottom: -166px;
+            }
+        }
+
+        >div:last-of-type {
+            >div:last-of-type {
+                text-align: start;
+            }
+        }
+    }
+
+    .define_desc__item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .title-desc {
+        font-size: 120px;
+        font: Alatsi;
+        background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .sub-title {
+        margin-top: 40px;
+        font-size: 16px;
+        text-align: center;
+
+        >div:nth-child(2) {
+            text-align: start;
+        }
+    }
+
+    .define_web_image {
+        margin-top: 40px;
+    }
+
+    .list_content {
+        margin-top: 80px;
+    }
+
+    .content_img {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 1168px) {
+        .sub-title {
+            font-size: 14px;
+        }
+
+    }
+
+    @media (max-width: 900px) {
+        .title-desc {
+            font-size: 90px;
+        }
+
+        .sub-title {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .title-desc {
+            font-size: 80px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .title-desc {
+            font-size: 64px;
+        }
+    }
+
+    .emaars {
+        position: relative;
+        margin-bottom: 146px;
+
+        >div:first-of-type {
+            margin-top: 0;
+            padding-top: 0;
+
+            img {
+                width: 100%;
+                height: 900px;
+                transform: rotate(-4deg);
+            }
+        }
+
+        >div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 280px;
+
+            img {
+                width: 983px;
+                height: 868px;
+
+            }
+        }
+
+        >div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 200px;
+
+            img {
+                width: 1160px;
+                height: 2880px;
+
+            }
+        }
+    }
+
+    .conclusion-title {
+        font: Alatsi;
+        font-size: 120px;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    @media (max-width: 1168px) {
+
+        .conclusion-title {
+            font-size: 86px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .conclusion-title {
+            font-size: 68px;
+        }
+    }
+
+    .web-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        >div:first-of-type {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        >div:last-of-type {
+            position: absolute;
+            width: 380px;
+            top: -25px;
+            right: 303px;
+
+            img {
+                width: 380px;
+                height: 250px;
+            }
+        }
+    }
 </style>
-<main class="main" style="background:#FFFFFF;">
+
+<main class="main" style="background:#F7F5F3;
+;">
     <!-- Section Project Info -->
     <section class="sec-pd sec-bnr p-r-80">
         <div class="container">
@@ -500,7 +544,7 @@ get_header();
 
     <section class="p-r-80 pb-0 pare-define">
         <div class="container">
-            <div class="row">
+            <div class="row brief_row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
                     <div class="col-md-10 px-0 mx-auto">
                         <div>
@@ -538,69 +582,61 @@ get_header();
     <section class="p-r-80 pb-0 pare-define">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                    <div class="col-md-10 px-0 mx-auto">
-                        <div class="project-step define_desc">
-                            <?php if (have_rows('define_descriptions')):
-                                while (have_rows('define_descriptions')):
-                                    the_row(); ?>
-                                    <div class="project-step__item row">
-                                        <div class="col-12 col-md-4 mb-3 mb-md-0">
-                                            <span
-                                                class="clr-second fnt-18 d-inline-block fnt-700 text-start text-uppercase data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title'); ?></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 project-step-disc ">
-                                            <div class="project-step-disc__item">
-                                                <?php the_sub_field('content'); ?>
-                                            </div>
-                                        </div>
+                <div class="col-12 col-md-11 col-lg-10 mx-auto p-0 class1">
+                    <div class="define_desc">
+                        <?php if (have_rows('define_descriptions')):
+                            while (have_rows('define_descriptions')):
+                                the_row(); ?>
+                                <div class="define_desc__item">
+                                    <!-- Title -->
+                                    <div class="col-12 text-center">
+                                        <span class="data-scroll title-desc"><?php the_sub_field('title'); ?></span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="col-12 sub-title">
+                                        <?php the_sub_field('content'); ?>
+                                    </div>
+                                    <!-- Content IMG -->
+                                    <?php
+                                    $image = get_sub_field('define_selected_image');
+                                    if ($image != '') { ?>
+                                        <div class="w-100 content_img"><img class="img-project-dtl data-scroll lazyloaded"
+                                                src="<?php the_sub_field('define_selected_image'); ?>" alt="Image"></div>
+                                    <?php } ?>
 
-
-                                        <?php if (have_rows('list_content')):
-                                            while (have_rows('list_content')):
-                                                the_row();
-                                                $content = get_sub_field('content');
-                                                if ($content != '') { ?>
-                                                    <div class="make_diff">
-                                                        <h2 class="fs-1 fw-bolder mbm-3"><?php the_sub_field('title'); ?></h2>
-                                                        <p class="fnt-16 col-lg-10 px-0 mb-0 text-center"><?php the_sub_field('content'); ?>
+                                    <!-- Web IMG -->
+                                    <?php if (have_rows('web_image')):
+                                        while (have_rows('web_image')):
+                                            the_row();
+                                            $webImage = get_sub_field('images');
+                                            if ($webImage != '') { ?>
+                                                <div class="w-100 define_web_image"><img class="img-project-dtl data-scroll"
+                                                        src="<?php the_sub_field('images'); ?>" alt="Image"></div>
+                                            <?php } ?>
+                                        <?php endwhile;
+                                    endif; ?>
+                                    <!-- List content -->
+                                    <?php if (have_rows('list_content')):
+                                        while (have_rows('list_content')):
+                                            the_row();
+                                            $content = get_sub_field('content');
+                                            if ($content != '') { ?>
+                                                <div class="row list_content m-t-80">
+                                                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                                        <h2 class="fs-1 fw-bolder mbm-3 title-desc"><?php the_sub_field('title'); ?></h2>
+                                                    </div>
+                                                    <div class="col-12 col-md-8">
+                                                        <p class="col-lg-10 px-0 mb-0"><?php the_sub_field('content'); ?>
                                                         </p>
                                                     </div>
-                                                <?php } ?>
-                                            <?php endwhile;
-                                        endif; ?>
 
-
-                                        <?php
-                                        $image = get_sub_field('define_selected_image');
-                                        if ($image != '') { ?>
-                                            <div class="wrapper-img m-img emar"><img class="img-project-dtl data-scroll lazyloaded"
-                                                    src="<?php the_sub_field('define_selected_image'); ?>" alt="Image"></div>
-                                        <?php } ?>
-
-
-                                        <div class="project-step__item row">
-                                            <div class="col-12 col-md-4 mb-3 mb-md-0">
-                                            </div>
-                                            <div class="col-12 col-md-8 project-step-disc ">
-                                                <div class="project-step-disc__item">
-                                                    <?php if (have_rows('web_image')):
-                                                        while (have_rows('web_image')):
-                                                            the_row();
-                                                            $webImage = get_sub_field('images');
-                                                            if ($webImage != '') { ?>
-                                                                <div class="defined-img"><img class="img-project-dtl data-scroll"
-                                                                        src="<?php the_sub_field('images'); ?>" alt="Image"></div>
-                                                            <?php } ?>
-                                                        <?php endwhile;
-                                                    endif; ?>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endwhile;
-                            endif; ?>
-                        </div>
+                                            <?php } ?>
+                                        <?php endwhile;
+                                    endif; ?>
+                                </div>
+                            <?php endwhile;
+                        endif; ?>
                     </div>
                 </div>
             </div>
@@ -608,7 +644,7 @@ get_header();
     </section>
 
     <!-- Emaars sections -->
-    <section class="p-r-80 pb-0">
+    <section class="p-r-80 pb-0 pare-define emaars">
         <?php if (have_rows('emaars_digital_booking')):
             while (have_rows('emaars_digital_booking')):
                 the_row();
@@ -635,14 +671,14 @@ get_header();
                                 <div class="col-md-10 px-0 mx-auto">
                                     <div class="mb-r-80">
                                         <div class="project-step">
-                                            <div class="project-step__item row">
+                                            <div class="project-step__item row text-center">
                                                 <div class="col-12">
-                                                    <h3
-                                                        class="clr-second fnt-40 text-left fnt-800 d-inline-block data-scroll">
+                                                    <h3 class="data-scroll conclusion-title">
                                                         Conclusion</h3>
                                                 </div>
                                                 <div class="col-md-12 project-step-disc mt-4">
-                                                    <div class="project-step-disc__item conclusions data-scroll">
+                                                    <div
+                                                        class="project-step-disc__item conclusions data-scroll conclusion-subtitle">
                                                         <?php echo the_field('conclusion'); ?>
                                                     </div>
                                                 </div>
@@ -659,7 +695,7 @@ get_header();
 
     <!-- Section Web Image -->
 
-    <section class="p-r-80 pb-0">
+    <section class="p-r-80 pb-0 web-img">
         <?php if (have_rows('web_image')):
             while (have_rows('web_image')):
                 the_row();
