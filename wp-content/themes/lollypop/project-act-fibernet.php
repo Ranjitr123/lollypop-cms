@@ -420,7 +420,9 @@ get_header();
 
             img {
                 width: 100%;
-                height: 900px;
+                /* height: 900px; */
+                height: 675px;
+
                 transform: rotate(-4deg);
             }
         }
@@ -431,12 +433,14 @@ get_header();
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 280px;
+            /* top: 280px; */
+            top: 200px;
+
 
             img {
-                width: 983px;
-                height: 868px;
-
+                max-width: 983px;
+                width: 100%;
+                height: 100%
             }
         }
 
@@ -446,14 +450,22 @@ get_header();
             justify-content: center;
             align-items: center;
             position: relative;
-            top: 200px;
+            /* top: 200px; */
+            top: 350px;
+
 
             img {
-                width: 1160px;
-                height: 2880px;
-
+                max-width: 1160px;
+                width: 100%;
+                /* height: 2880px; */
+                height: 100%;
             }
         }
+    }
+
+    .conclusion {
+        margin-top: 254px;
+        background-color: #F7F5F3;
     }
 
     .conclusion-title {
@@ -470,13 +482,13 @@ get_header();
     @media (max-width: 1168px) {
 
         .conclusion-title {
-            font-size: 86px;
+            font-size: 74px;
         }
     }
 
     @media (max-width: 576px) {
         .conclusion-title {
-            font-size: 68px;
+            font-size: 62px;
         }
     }
 
@@ -498,7 +510,8 @@ get_header();
             position: absolute;
             width: 380px;
             top: -25px;
-            right: 303px;
+            right: calc(14%);
+            ;
 
             img {
                 width: 380px;
@@ -663,7 +676,7 @@ get_header();
 
     <?php if (get_field('conclusion') != '') { ?>
         <section class="conclusion-pad sec-pt">
-            <div class="container">
+            <div class="container conclusion">
                 <div class="row">
                     <div class="col-md-12 mt-5">
                         <div class="col-md-10 px-0 mx-auto">
