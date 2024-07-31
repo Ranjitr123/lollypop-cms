@@ -547,7 +547,24 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <img class="wpdm-img" src="<?php the_field('thumbnail_image') ?>" alt="Image">
+                    <!-- <img class="wpdm-img" src="<?php the_field('thumbnail_image') ?>" alt="Image"> -->
+
+                    <?php $bannerVideo = get_field('banner_video_link'); ?>
+                    <?php if ($bannerVideo != '') { ?>
+                        <div class="reveal-project">
+                            <div class="play-video-on-scroll">
+                                <div id="play2-out" style="display:none">
+                                    <div id="play2" data-plyr-provider="youtube"
+                                        data-plyr-embed-id="<?php the_field('banner_video_link'); ?>"></div>
+                                </div>
+                                <video class="playvid" controls autoplay muted loop playsinline
+                                    embed-id="<?php the_field('banner_video_link'); ?>"
+                                    provider="<?php the_field('banner_video_provider'); ?>"
+                                    poster="<?php the_field('banner_video_poster'); ?>"></video>
+                                </video>
+                            </div>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
