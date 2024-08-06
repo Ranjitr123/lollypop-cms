@@ -6,7 +6,7 @@
 get_header();
 ?>
 <style>
-    @import url('https://fonts.cdnfonts.com/css/switzer');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1279,6 +1279,12 @@ table {
             bottom:22%;
             top:auto;
         }
+        .banner-designathon24{
+            height:172vh;
+        }
+        .banner-designathon24 .block-sticky{
+            position:absolute;
+        }
         .banner-designathon24 .dragon-right .body-dragon{
             width:37.3vw;
             top:-51%;
@@ -1313,6 +1319,9 @@ table {
         .banner-designathon24 .container .block-content-0 .image-talent img{
             width:91.38vw;
             height:23.8vw;
+        }
+        .banner-designathon24 .container .block-content-1{
+            padding-top:16.72vw;
         }
         .banner-designathon24 .wave .wa{
             bottom:-80% !important;
