@@ -164,6 +164,9 @@ table {
     footer:not(.footer-designathon){
         display:none;
     }
+    .js-page-scroll-top{
+        display:none;
+    }
     body {
         padding-bottom: 0 !important;
         background: #FFF;
@@ -180,8 +183,104 @@ table {
     .blue-color{
         color:#300375;
     }
+    .yellow-color{
+        color:#FFF742;
+    }
     .font-dfvn-float{
         font-family: "DFVN Float";
+    }
+    .heading-1{
+        font-size:72px;
+        line-height:80px;
+    }
+    .heading-2{
+        font-size:54px;
+        line-height:64px;
+    }
+    .heading-3{
+        font-size:40px;
+        line-height:48px;
+    }
+    .title-1{
+        font-size:36px;
+        line-height:40px;
+    }
+    .title-2{
+        font-size:32px;
+        line-height:36px;
+    }
+    .subtitle-1{
+        font-size:24px;
+        line-height:36px;
+    }
+    @media (max-width: 1280px) {
+        .heading-1{
+            font-size:60px !important;
+            line-height:68px !important;
+        }
+        .heading-2{
+            font-size:48px !important;
+            line-height:54px !important;
+        }
+        .heading-3{
+            font-size:36px !important;
+            line-height:40px !important;
+        }
+        .title-1{
+            font-size:32px !important;
+            line-height:36px !important;
+        }
+        .title-2{
+            font-size:28px !important;
+            line-height:32px !important;
+        }
+        .subtitle-1{
+            font-size:20px !important;
+            line-height:32px !important;
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: calc(100% - 80px);
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: calc(100% - 80px);
+        }
+        .noHover{
+            pointer-events: none;
+        }
+        .heading-1{
+            font-size:36px !important;
+            line-height:40px !important;
+        }
+        .heading-2{
+            font-size:32px !important;
+            line-height:36px !important;
+        }
+        .heading-3{
+            font-size:28px !important;
+            line-height:32px !important;
+        }
+        .title-1{
+            font-size:24px !important;
+            line-height:26px !important;
+        }
+        .title-2{ 
+            font-size:20px !important;
+            line-height:22px !important;
+        }
+        .subtitle-1{
+            font-size:18px !important;
+            line-height:20px !important;
+        }
+    }
+    @media (max-width: 576px) {
+        .container, .container-sm {
+            max-width: calc(100% - 40px);
+        }
     }
     .banner-designathon24{
     
@@ -201,7 +300,7 @@ table {
     }
     .banner-designathon24 .change-lang{
         position:absolute;
-        top:2%;
+        top:3.68vw;
         right:5%;
         width:fit-content;
         height:fit-content;
@@ -215,7 +314,7 @@ table {
     }
     .banner-designathon24 .change-lang span{
         padding:4px 12px;
-        font-size:16px;
+        font-size: clamp(14px, 1.1vw, 1rem); 
         line-height:24px;
         font-weight:500;
         color:#AEAEB2;
@@ -226,7 +325,8 @@ table {
         color:#fff;
         padding:4px 12px;
         border-radius:48px;
-        font-size:16px;
+        font-size: clamp(14px, 1.1vw, 1rem); 
+
         line-height:24px;
         font-weight:500;
     }
@@ -265,6 +365,7 @@ table {
         top:0;
         width:26.56vw;
         height:21.6vw;
+        overflow:hidden;
     }
     .banner-designathon24 .dragon-left{
         position:absolute;
@@ -334,14 +435,21 @@ table {
     .banner-designathon24 .container .block-content-0 .image-sponsor,.banner-designathon24 .container .block-content-0 .image-talent {
         display:flex;
         justify-content:center;
+        width:66.3vw;
+        height:auto;
+        margin:0 auto;
     }
     .banner-designathon24 .container .block-content-0 .image-talent img{
-        width:74.3vw;
-        height:15.833vw;
+        width:100%;
+        height:100%;
         object-fit:contain;
     }
     .banner-designathon24 .container .block-content-0 .image-sponsor{
         margin-bottom:40px;
+    }
+    .banner-designathon24 .container .block-content-0 h2{
+        font-size:72px;
+        text-align:center;
     }
     .banner-designathon24 .container .block-content-1{
         position:relative;
@@ -380,55 +488,58 @@ table {
     .banner-designathon24 .wave .human.human-1{
         position:absolute;
 
-        bottom:-55px;
-        width:336px;
-        height:325px;
-        left:20%;
+        bottom:-40% !important;
+        width:100%;
+        height:100%;
+        left:0;
         z-index:3;
-        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-1.png");
+        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-1.svg");
         animation:1.8s linear 0.1s infinite alternate-reverse animateHuman;
-        background-size:17.5vw 12.76vw;
+        background-size:100% 100%;
         background-repeat:no-repeat;
 
     }
     .banner-designathon24 .wave .human.human-2{
         position:absolute;
-        bottom:-10vh;
-        width:336px;
-        height:325px;
-        left:47%;
+        bottom:-40% !important;
+        width:100%;
+        height:100%;
+        left:0;
         transform:translateX(-50%);
         z-index:3;
-        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-2.png");
+        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-2.svg");
         animation:1.8s linear 0.1s infinite alternate-reverse animateHuman;
-        background-size:13.38vw 8.43vw;
+        background-size:100%;
         background-repeat:no-repeat;
+        background-position:0;
     }
     .banner-designathon24 .wave .human.human-3{
         position:absolute;
-        bottom:-95px;
-        width:336px;
-        height:325px;
-        left:64.5%;
+        bottom:-40% !important;
+        width:100%;
+        height:100%;
+        left:0;
         transform:translateX(-50%);
         z-index:-1;
-        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-3.png");
+        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-3.svg");
         animation:1.8s linear 0s infinite alternate-reverse animateHuman2;
-        background-size:10.4vw 8.125vw;
+        background-size:100%;
         background-repeat:no-repeat;
+        background-position:0;
+
     }
     .banner-designathon24 .wave .human.human-4{
         position:absolute;
-        bottom:-29px;
-        width:336px;
-        height:325px;
-        left:80%;
+        bottom:-40% !important;
+        width:100%;
+        height:100%;
+        left:0;
         z-index:-1;
-        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-4.png");
+        background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/human-4.svg");
         animation:1.8s linear 0.2s infinite alternate-reverse animateHuman;
-        background-size:7.239vw 7.39vw;
+        background-size:100%;
         background-repeat:no-repeat;
-        background-position:center;
+        background-position:0 53%;
     }
     .banner-designathon24 .wave .wa{
         position:absolute;
@@ -525,7 +636,8 @@ table {
         cursor:pointer;
         position:relative;
         z-index:1;
-        border:none;
+        border:1px solid transparent;
+
         transition:all 0.3s ease-in-out;
     }
     .button-designathon:hover{
@@ -540,10 +652,12 @@ table {
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/Illust.png"), url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/Illust-right.png");
         color:#E0349E !important;
         background-color:#fff;
+        border:1px solid #E0349E !important;
+
     }
     /* Section Cant miss */
     .section-cant-miss{
-        padding-top:12%;
+        padding-top:17%;
     }
     .section-cant-miss .block-content .block-item h2{
         font-size:54px;
@@ -738,7 +852,7 @@ table {
     .section-timeline-schedule{
         padding:240px 0 140px;
         position:relative;
-  
+        
     }
     .wrapper-timelime-bg{
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/bg-wrap-timeline.svg");
@@ -759,9 +873,11 @@ table {
         /* background-color:rgba(0,0,0,0.2); */
     }
     .section-timeline-schedule .block-timeline{
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        column-gap:20px;
+        display:flex;
+        gap:20px;
+    }
+    .section-timeline-schedule .block-timeline .timeline-item{
+        width:33.33%;
     }
     .section-timeline-schedule .block-timeline .timeline-item:first-child h2{
         font-size:54px;
@@ -781,7 +897,7 @@ table {
         display:none;
     }
     .section-timeline-schedule .block-timeline .timeline-item:not(.first){
-        background-color:#311c56;
+        /* background-color: rgba(#311c56,0.6); */
         border:1.5px solid #fff;
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/iilust-timeline-1.svg");
         background-size:cover;
@@ -820,6 +936,7 @@ table {
         align-items:center;
         gap:20px;
         margin-bottom:24px;
+        font-weight:700;
     }
     /* Section rules */
     .section-rules{
@@ -836,9 +953,28 @@ table {
     .section-rules .grid-rules{
         display:flex;
         justify-content:space-between;
+        gap:37px;
     }
-    .section-rules .grid-rules-mobile{
-        display:none;
+    .section-rules .grid-rules .rule-item{
+        width:30%;
+        border-left:3px solid #BD9CEB;
+        height:fit-content;
+    }
+    .section-rules .grid-rules .rule-item .inner-rule{
+        padding-left:19px;
+    }
+    .section-rules .grid-rules .rule-item .image-rule-icon{
+        margin-bottom:40px;
+    }
+    .section-rules .grid-rules .rule-item h3{
+        font-size:36px;
+        line-height:40px;
+        margin-bottom:16px;
+        width:80%;
+    }
+    .section-rules .grid-rules .rule-item p{
+        margin-bottom:16px;
+        font-weight:500;
     }
     .section-rules .grid-rules .rule-item:nth-child(2){
         margin-top:50px;
@@ -849,7 +985,7 @@ table {
     /* section More */
     .section-research-more{
         padding:80px 0 104px;
-
+        overflow:hidden;
     }
     .section-research-more .container .block{
         width:73.8vw;
@@ -867,10 +1003,11 @@ table {
         position:absolute;
         bottom:-9%;
         right:-8%;
-        width:478px;
-        height:457px;
+        width:33.2vw;
+        height:31.73vw;
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/layer-human-full.svg");
         background-repeat:no-repeat;
+        background-size:cover;
 
     }
     .section-research-more .container .block h5{
@@ -888,6 +1025,39 @@ table {
     }
     .section-partner{
         padding:80px 0 100px;
+        overflow:hidden;
+    }
+    .section-partner .grid-partner{
+        gap:160px;
+    }
+ 
+    .section-partner .grid-partner .grid-item{
+        width:50%;
+        text-align:center;
+        position:relative;
+    }
+    .section-partner .grid-partner .grid-item:first-child:before{
+        content:'';
+        position:absolute;
+        top:0;
+        right:-80px;
+        width:2px;
+        height:100%;
+        background-color:#300375;
+    }
+    .section-partner .grid-partner .grid-item h3{
+        font-size:32px;
+        line-height:36px;
+        font-weight:700;
+        margin-bottom:32px;
+    }
+    .section-partner .grid-partner .grid-item .list-image .wrapper-image{
+        width:100%;
+        height:auto;
+    }
+    .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+        width:100%;
+        height:auto;
     }
     .section-partner h2{
         font-size:54px;
@@ -906,6 +1076,7 @@ table {
     }
     .section-partner .image-mobile{
         display:none;
+
     }
     /* section video */
     .section-video{
@@ -1098,6 +1269,7 @@ table {
         padding:32px;
         display:flex;
         justify-content:space-between;
+        align-items:center;
     }
     .section-common-question .contact-now .inner-contact h4{
         font-size:24px;
@@ -1150,7 +1322,7 @@ table {
     footer.footer-designathon:before{
         content:'';
         position:absolute;
-        top:-43%;
+        bottom:47%;
         left:0;
         width:100%;
         height:100%;
@@ -1171,6 +1343,7 @@ table {
         line-height:56px;
         margin-bottom:64px;
         color:#fff;
+        font-weight:500;
     }
     footer.footer-designathon .block-item:first-child{
         width:25%;
@@ -1272,126 +1445,280 @@ table {
             top:-58%;
         }
     }
-    /* mobile */
-    @media(max-width:768px){
-        .banner-designathon24 .dragon-right {
-            width:55.27vw;
-            bottom:22%;
-            top:auto;
+    @media (max-width:1280px){
+        .banner-designathon24 .dragon-right{
+            right: 7px;
+            top: -4px;
+            width: 26.56vw;
         }
-        .banner-designathon24{
-            height:172vh;
+        .banner-designathon24 .dragon-right .head-dragon{
+            right: 0;
+            top: -31%;
+        }
+        .banner-designathon24 .dragon-right .body-dragon{
+            width: 19.47vw;
+        }
+        .banner-designathon24 .dragon-left{
+            width: 27.2vw;
+        }
+        .banner-designathon24 .dragon-left .leg-dragon{
+            width: 12.7vw;
+            left: 24%;
+            top: 39%;
+        }
+        .banner-designathon24 .container{
+            max-width:100%;
+        }
+        .section-slide-card .list-card .card-item{
+            flex-basis: 27.38vw;
+        }
+        .section-cant-miss .block-content{
+            display:block;
+        }
+        .section-cant-miss .block-content .block-item{
+            width:100%;
+        }
+        .section-cant-miss .block-content .block-item p{
+            width:100%;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child .timeline-image{
+            width:100%;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child h2{
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item {
+            padding: 30px;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item .head h3 {
+            font-size: 8.3vw;
+            line-height: 116%;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child h2 {
+            font-size: 3.75vw;
+            line-height: 110%;
+        }
+        .section-research-more .container .block h2{
+            font-size:3.75vw;
+            line-height:100%;
+        }
+        .section-research-more .container .block h5{
+            font-size:20px;
+            line-height:100%;
+        }
+        .section-research-more .container .block button{
+            padding:14px 36px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        footer.footer-designathon:before{
+            bottom: 31%;
+        }
+    }
+    /* tablet */
+
+    @media(max-width:1024px){
+        .banner-designathon24 .dragon-right{
+            width: 30.56vw;
+            height: 25.6vw;
+        }
+        .banner-designathon24 .dragon-right .body-dragon{
+            width: 24.2vw;
+        }
+        .banner-designathon24 .dragon-left{
+            width: 29.2vw;
+        }
+        .banner-designathon24 .dragon-left .leg-dragon{
+            width: 12.7vw;
+            left: 21%;
+            top: 38%;
+        }
+        .banner-designathon24 .container .block-content-0{
+            padding-top: 5.68vw;
+        }
+        .banner-designathon24 .container .block-content-1{
+            justify-content:center;
+            padding-top:0;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent{
+            width: 75.3vw;
+        }
+        .banner-designathon24 .wave .human.human-1{
+            background-size: 120%;
+            background-position: 22% 50%;
+        }
+        .banner-designathon24 .wave .human.human-2{
+            background-size: 120%;
+            background-position: 55%;
+        }
+        .banner-designathon24 .wave .human.human-3{
+            background-size: 120%;
+            background-position: 57%;
+        }
+        .banner-designathon24 .wave .human.human-4{
+            background-size: 120%;
+            background-position: 80%;
+        }
+        .section-slide-card .list-card .card-item{
+            flex-basis: 36.38vw;
+        }
+        .section-slide-card .list-card .card-item:hover{
+            flex-basis: 38.38vw;
+
+        }
+        .section-rules .grid-rules .rule-item h3{
+            width:100%;
+        }
+    }
+    @media screen and  (max-width:1024px) and (min-height:1080px){
+        .banner-designathon24 .container .block-content-0{
+            padding-top: 19.68vw;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent {
+            width: 90.3vw;
+        }
+    }
+    @media(max-width:992px){
+        .section-timeline-schedule .block-timeline{
+            flex-wrap:wrap;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child{
+            width:100%;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child .timeline-image{
+            display:none;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:not(:first-child){
+            flex:1;
+        }
+        .section-timeline-schedule .block-timeline .timeline-item:first-child h2{
+            text-align:center;
+        }
+        .section-rules h2{
+            font-size:3.75vw;
+            line-height:110%;
+        }
+        .section-rules .grid-rules .rule-item{
+            width:50%;
+            margin-top:0;
+            margin-bottom:40px;
+        }
+        .section-rules .grid-rules{
+            gap:0;
+            flex-wrap:wrap;
+        }
+        .section-rules .grid-rules .rule-item:nth-child(2),.section-rules .grid-rules .rule-item:nth-child(4){
+            margin-top:0;
+        }
+        .section-rules .grid-rules .rule-item:nth-child(2n + 1) .inner-rule{
+            padding-right:32px;
+        }
+        .section-rules .grid-rules .rule-item h3{
+            font-size:24px;
+            line-height:26.4px;
+            margin-bottom:8px;
+        }
+        .section-rules .grid-rules .rule-item .image-rule-icon{
+            width:60px;
+            height:60px;
+            margin-bottom:16px;
+        }
+       
+        .section-rules .grid-rules .rule-item p{
+            font-size:14px;
+            line-height:18px;
+            margin-bottom:8px;
+        }
+        .section-rules .grid-rules .rule-item .inner-rule{
+            padding-left:16px;
+        }
+        .section-rules .grid-rules .rule-item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+        .section-timeline-schedule .timeline-image-mobile{
+            display: block;
+        }
+        .section-research-more .container .block button {
+            padding: 10px 30px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .section-timeline-schedule .timeline-image-mobile{
+            width:58.8vw;
         }
         .banner-designathon24 .block-sticky{
             position:absolute;
         }
+        footer.footer-designathon:before{
+            bottom:19%;
+        }
+    }
+    @media(max-width:768px){
+        .banner-designathon24 .dragon-right{
+            width: 42.27vw;
+            top:1%;
+            bottom:auto;
+            height: 34.6vw;
+        }
         .banner-designathon24 .dragon-right .body-dragon{
-            width:37.3vw;
-            top:-51%;
+            width: 31.3vw;
+            top: 0%;
+            
         }
         .banner-designathon24 .dragon-left{
-            width:58vw;
-            height:42.5vw;
+            width: 51vw;
+            height: 42.5vw;
+            
         }
         .banner-designathon24 .dragon-left .body-dragon{
-            left:-37%;
+            left: -23%;
+            
         }
         .banner-designathon24 .dragon-left .leg-dragon{
-            width: 29vw;
-            height: 20.27vw;
-            left: -19%;
-            top: 42%;
+            width: 40vw;
+            height: 18.27vw;
+            left: -35%;
+            top: 35%;
         }
         .banner-designathon24 .container .block-content-0 .image-sponsor img{
-            width:54.1vw;
+            width: 28.1vw;
         }
-        .banner-designathon24 .container .block-content-0{
-            padding-top:16.67%;
-        }
-        .banner-designathon24 .change-lang span{
-            font-size:14px !important;
-            line-height:18px !important;
-            padding:4px 8px !important;
-        }
-        .banner-designathon24 .change-lang{
-            top:16px;
-        }
-        .banner-designathon24 .container .block-content-0 .image-talent img{
-            width:91.38vw;
-            height:23.8vw;
-        }
-        .banner-designathon24 .container .block-content-1{
-            padding-top:16.72vw;
-        }
-        .banner-designathon24 .wave .wa{
-            bottom:-80% !important;
-            background-size:200%;
-        }
-        .banner-designathon24 .wave{
-            z-index:1;
+        .banner-designathon24 .container .block-content-0 h2 {
+            font-size: 60px;
+            line-height: 80px;
         }
         .banner-designathon24 .wave .human.human-1{
-            background-size:43.46vw 31.6vw;
-            width:43.46vw;
-            height:31.6vw;
-            bottom: -2%;
-            left: 6%;
+            background-position: 28% -4%;
+            background-size: 200%;
         }
         .banner-designathon24 .wave .human.human-2{
-            background-size:33.88vw 21.38vw;
-            width:33.88vw;
-            height:21.38vw;
-            bottom: 2%;
-            left: 45%;
+            background-size: 200%;
+            background-position: 45% -7%;
         }
         .banner-designathon24 .wave .human.human-3{
-            background-size:28.88vw 22.22vw;
-            width:28.88vw;
-            height:22.22vw;
-            bottom: 4%;
-            left: 73%;
+            background-position: 43% -11%;
+            background-size: 200%;
+        }
+        .banner-designathon24 .wave .wa{
+            background-size:150%;
+        }
+        .banner-designathon24 .wave{
+            top:33%;
         }
         .banner-designathon24 .wave .human.human-4{
             display:none;
         }
-        .banner-designathon24 .container .block-content-0 .image-sponsor{
-            margin-bottom:28px;
+        .banner-designathon24 .container .block-content-0{
+            padding-top: 23.68vw;
         }
-        .banner-designathon24 h1{
-            font-size:32px;
-            line-height:36px;
+        .banner-designathon24 .container .block-content-0 .image-talent {
+            width: 91.3vw;
         }
-        .banner-designathon24 .container .description{
-            font-size:14px;
-            line-height:18px;
-            width:100%;
-        }
-        .banner-designathon24 .container .block-detail{
-            display:block;
-        }
-        .banner-designathon24 .container .block-detail .block-item{
-            margin-bottom:16px;
-        }
-        .banner-designathon24 .container .block-detail .block-item h3{
-            font-size:18px;
-            line-height:20px;
-        }
-        .banner-designathon24 .container .block-detail .block-item h2{
-            font-size:28px;
-            line-height:32px;
-        }
-        .button-designathon{
-            padding:10px 38.5px;
-            font-size:16px;
-            line-height:24px;
-        }
-        .button-designathon-active{
-            padding:10px 38.5px;
-            font-size:16px;
-            line-height:24px;
-        }
-        /* section cant miss */
-        .section-cant-miss{
+               /* section cant miss */
+               .section-cant-miss{
             padding-top:90px;
             position:relative;
             z-index:1;
@@ -1478,7 +1805,7 @@ table {
             top:-38vw;
         }
         .section-timeline-schedule .block-timeline{
-            display:block;
+            display:flex;
         }
         .section-timeline-schedule .block-timeline .timeline-item:first-child h2{
             font-size:32px;
@@ -1500,6 +1827,7 @@ table {
             font-size:14px;
             line-height:18px;
             margin-bottom:16px;
+            gap:8px;
         }
         .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item ul li:last-child{
             margin-bottom:0;
@@ -1509,37 +1837,58 @@ table {
         }
         .section-timeline-schedule .block-timeline .timeline-item{
             margin-bottom:16px;
+            width:100%;
         }
         .section-timeline-schedule .block-timeline .timeline-item:first-child .timeline-image{
             display:none;
         }
         .section-timeline-schedule .timeline-image-mobile{
             display:block;
-            width:85vw;
+            width:58vw;
             height:auto;
+        }
+        .section-rules{
+            padding:60px 0 80px;
         }
         .section-rules h2{
             font-size:32px;
             line-height:36px;
+            margin-bottom:40px;
         }
         .section-rules .grid-rules{
-            display:block;
+            display:flex;
         }
         .section-rules .grid-rules .rule-item{
-            width:91.11vw;
-            height:444px;
+            width:50%;
+            margin-bottom:32px;
+            margin-top:0 !important;
+        }
+        .section-rules .grid-rules .rule-item .image-rule-icon{
+            width:60px;
+            height:60px;
+            margin-bottom:16px;
+        }
+        .section-rules .grid-rules .rule-item h3{
+            font-size:24px;
+            line-height:26.4px;
+            margin-bottom:8px;
+            width:100%;
+        }
+        .section-rules .grid-rules .rule-item p{
+            font-size:14px;
+            line-height:18px;
+            margin-bottom:8px;
+        }
+        .section-rules .grid-rules .rule-item .inner-rule{
+            padding-left:16px;
         }
         .section-rules .grid-rules .rule-item img{
             width:100%;
             height:100%;
             object-fit:cover;
         }
-        .section-rules .grid-rules{
-            display:none;
-        }
-        .section-rules .grid-rules-mobile{
-            display:block;
-        }
+        
+        
         .section-rules .grid-rules-mobile .rule-item{
             margin-bottom:32px;
         }
@@ -1564,10 +1913,10 @@ table {
             line-height:36px;
         }
         .section-research-more .container .block:before{
-            width:81.05vw;
-            height:81.4vw;
-            background-size:80.05vw 77.4vw;
-            bottom: -5%;
+            width: 58.05vw;
+            height: 53.4vw;
+            background-size: cover;
+            bottom: 1%;
             right: -10%;
         }
         .section-research-more .container .block button{
@@ -1586,15 +1935,28 @@ table {
             width:100%;
             margin-bottom:40px;
         }
-        .section-partner .image-mobile{
-            display:block;
+       
+        .section-partner .grid-partner{
+            display:block !important;
         }
+        .section-partner .grid-partner .grid-item{
+            width:100%;
+            margin-bottom:16px;
+        }
+       
+        .section-partner .grid-partner .grid-item:first-child:before{
+            content:none;
+        }
+        .section-partner .grid-partner .grid-item h3{
+            font-size:20px;
+            line-height:22px;
+            margin-bottom:16px;
+        }
+        
         .section-partner .image-mobile{
             margin:0 auto;
         }
-        .section-partner .image-desktop{
-            display:none;
-        }
+        
         .section-partner{
             padding:80px 0 85px;
         }
@@ -1624,7 +1986,11 @@ table {
             overflow:hidden;
             padding:60px 0;
         }
-
+        .section-old-candidate .container{
+            padding:0 !important;
+            margin:0 !important;
+            margin-left:36px !important;
+        }
         .section-old-candidate h4{
             font-size:20px;
             line-height:22px;
@@ -1750,9 +2116,7 @@ table {
 
         }
         footer.footer-designathon:before{
-            top:-28%;
-            background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/footer-illust-mobile.svg');
-
+            top:-24%;
         }
         footer.footer-designathon h5{
             font-size:12px;
@@ -1804,6 +2168,180 @@ table {
             line-height:19.12px;
         }
     }
+    /* mobile */
+  
+    @media(max-width:520px){
+        .container{
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+        }
+        .banner-designathon24 .dragon-right {
+            width:55.27vw;
+            bottom:13%;
+            top:auto;
+            height: 51.6vw;
+        }
+        .banner-designathon24 .dragon-right .head-dragon{
+            top: -1%;
+
+        }
+        .banner-designathon24{
+            height:200vh;
+            overflow:hidden;
+        }
+        .banner-designathon24 .block-sticky{
+            position:absolute;
+            overflow:visible;
+        }
+        .banner-designathon24 .dragon-right .body-dragon{
+            width:37.3vw;
+            top: 20%;
+        }
+        .banner-designathon24 .dragon-left{
+            width:58vw;
+            height:42.5vw;
+        }
+        .banner-designathon24 .dragon-left .body-dragon{
+            left:-37%;
+        }
+        .banner-designathon24 .dragon-left .leg-dragon{
+            width: 29vw;
+            height: 20.27vw;
+            left: -19%;
+            top: 42%;
+        }
+        .banner-designathon24 .container .block-content-0 .image-sponsor img{
+            width:41.1vw;
+        }
+        .banner-designathon24 .container .block-content-0{
+            padding-top:21.67%;
+        }
+        .banner-designathon24 .container .block-content-0 h2{
+            font-size:36px;
+            line-height:40px;
+        }
+        .banner-designathon24 .change-lang span{
+            font-size:14px !important;
+            line-height:18px !important;
+            padding:4px 8px !important;
+        }
+        .banner-designathon24 .change-lang{
+            top:16px;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent img{
+            width:91.38vw;
+            height:auto;
+        }
+        .banner-designathon24 .container .block-content-1{
+            padding-top:33.72vw;
+        }
+        .banner-designathon24 .wave .wa{
+            bottom:-80% !important;
+            background-size:200%;
+        }
+        .banner-designathon24 .wave{
+            z-index:1;
+            top:0;
+        }
+        .banner-designathon24 .wave .human.human-1{
+            background-size:270%;
+            width:100%;
+            height:100%;
+            bottom: -80% !important;
+            left: 0;
+            background-position: 23% -4%;
+        }
+        .banner-designathon24 .wave .human.human-2{
+            background-size:240%;
+            width:100%;
+            height:100%;
+            bottom: -80% !important;
+            left: 0;
+            background-position: 40% -5%;
+        }
+        .banner-designathon24 .wave .human.human-3{
+            background-size:240%;
+            width:100%;
+            height:100%;
+            bottom: -80% !important;
+            left: 0;
+            background-position: 44% -6%;
+        }
+        .banner-designathon24 .wave .human.human-4{
+            display:none;
+        }
+        .banner-designathon24 .container .block-content-0 .image-sponsor{
+            margin-bottom:28px;
+        }
+        .banner-designathon24 h1{
+            font-size:32px;
+            line-height:36px;
+        }
+        .banner-designathon24 .container .description{
+            font-size:14px;
+            line-height:18px;
+            width:100%;
+        }
+        .banner-designathon24 .container .block-detail{
+            display:block;
+        }
+        .banner-designathon24 .container .block-detail .block-item{
+            margin-bottom:16px;
+        }
+        .banner-designathon24 .container .block-detail .block-item h3{
+            font-size:18px;
+            line-height:20px;
+        }
+        .banner-designathon24 .container .block-detail .block-item h2{
+            font-size:28px;
+            line-height:32px;
+        }
+        .button-designathon{
+            padding:10px 38.5px;
+            font-size:16px;
+            line-height:24px;
+        }
+        .button-designathon-active{
+            padding:10px 38.5px;
+            font-size:16px;
+            line-height:24px;
+        }
+        .section-timeline-schedule .block-timeline{
+            display:block;
+        }
+        .section-rules .grid-rules{
+            display:block;
+        }
+        .section-rules .grid-rules .rule-item{
+            width:100%;
+        }
+        footer.footer-designathon:before{
+            top:-28%;
+            background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/footer-illust-mobile.svg');
+        }
+    }
+    @media(max-width:390px){
+        .banner-designathon24{
+            height:218vh;
+        }
+    }
+    @media(max-width:375px){
+        .banner-designathon24 .dragon-right{
+            bottom:13%;
+        }
+    }
+    @media(max-width:374px){
+        .banner-designathon24{
+            height:275vh;
+        }
+    }
+    @media(max-width:320px){
+        .banner-designathon24 .dragon-right{
+            display:none;
+        }
+        .banner-designathon24 .dragon-left{
+        }
+    }
 </style>
 <!-- Apply right away! -->
 
@@ -1845,32 +2383,33 @@ table {
     <div class="container">
         <div class="block-content block-content-0">
             <div class="image-sponsor">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/sponsor.png" alt=""/>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/sponsor.svg" alt=""/>
             </div>
+            <h2 class="font-dfvn-float white-color text-limit heading-1">phá giới hạn</h2>
             <div class="image-talent">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/text-talent.png" alt=""/>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/text-talent.svg" alt=""/>
             </div>
         </div>
         <div class="block-content block-content-1">
         <div class="block position-relative"> 
-            <h1 class="text-center white-color font-dfvn-float">Lollypop Designathon Việt Nam</h1>
-            <h1 class="text-center pink-color font-dfvn-float">Chính Thức Trở Lại!!</h1>
+            <h1 class="text-center white-color font-dfvn-float heading-2">Lollypop Designathon Việt Nam</h1>
+            <h1 class="text-center pink-color font-dfvn-float heading-2">Chính Thức Trở Lại!!</h1>
         </div>
         <p class="text-center white-color description">
         Tiếp nối thành công rực rỡ của Designathon 2023, Designathon 2024 đã chính thức trở lại với phiên bản mới hoành tráng và thú vị hơn. Đây là cơ hội vàng để cho các Designer tài năng được thử sức và toả sáng.
         </p>
         <div class="block-detail">
             <div class="block-item">
-                <h3 class="text-center white-color">Số lượng</h3>
-                <h2 class="text-center white-color font-dfvn-float">100+ thí sinh</h2>
+                <h3 class="text-center white-color subtitle-1">Số lượng</h3>
+                <h2 class="text-center white-color font-dfvn-float heading-3">100+ thí sinh</h2>
             </div>
             <div class="block-item">
-                <h3 class="text-center white-color">Thời gian giải đề</h3>
-                <h2 class="text-center white-color font-dfvn-float">24 giờ</h2>
+                <h3 class="text-center white-color subtitle-1">Thời gian giải đề</h3>
+                <h2 class="text-center white-color font-dfvn-float heading-3">24 giờ</h2>
             </div>
             <div class="block-item">
-                <h3 class="text-center white-color">Ngày thi đấu</h3>
-                <h2 class="text-center white-color font-dfvn-float">21-22/09/2024</h2>
+                <h3 class="text-center white-color subtitle-1">Ngày thi đấu</h3>
+                <h2 class="text-center white-color font-dfvn-float heading-3">21-22/09/2024</h2>
             </div>
         </div>
         <a class="pink-color mx-auto" href="https://forms.gle/DreCF31xKDsyzgTV8" target="_blank"><button class="button-designathon pink-color">Đăng Ký Ngay</button></a>
@@ -1883,68 +2422,68 @@ table {
     <div class="container">
        <div class="block-content">
         <div class="block-item">
-            <h2 class="blue-color font-dfvn-float">
+            <h2 class="blue-color font-dfvn-float heading-2">
             Sân chơi dành riêng <br/> cho <span class="pink-color">Thiết kế UI/UX</span>
             </h2>
         </div>
         <div class="block-item">
-            <p>Lollypop Designathon là một trong những cuộc thi lớn nhất Việt Nam, nơi nảy mầm các giải pháp thiết kế UI/UX. Trải qua 24 giờ căng thẳng nhưng đầy thú vị, thí sinh sẽ được học - hỏi và phát huy tối đa kỹ năng nghiên cứu, thiết kế, phản biện dưới sự cố vấn của các chuyên gia hàng đầu.</p>
+            <p>Lollypop Designathon là một trong những cuộc thi lớn tại Việt Nam, nơi nảy mầm các giải pháp thiết kế UI/UX. Trải qua 24 giờ căng thẳng nhưng đầy thú vị, thí sinh sẽ được học - hỏi và phát huy tối đa kỹ năng nghiên cứu, thiết kế, phản biện dưới sự cố vấn của các chuyên gia hàng đầu.</p>
         </div>
        </div> 
     </div>
    </section>
    <section class="section-slide-card">
         <div class="list-card">
-            <div class="card-item">
+            <div class="card-item noHover">
                 <div class="inner-card-item">
-                    <h3 class="font-dfvn-float blue-color">Nhân tài <br/> hội tụ</h3>
+                    <h3 class="font-dfvn-float blue-color title-1">Nhân tài <br/> hội tụ</h3>
                     <p class="blue-color">Kết nối - Hợp tác cùng các tài năng thiết kế toàn quốc, nâng cao kỹ năng chuyên môn và mở rộng các mối quan hệ trong cộng đồng thiết kế.</p>
                     <div class="wrapper-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-1.png" alt=""/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-1.jpg" alt=""/>
                     </div>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item noHover">
                 <div class="inner-card-item">
-                    <h3 class="font-dfvn-float blue-color">24 giờ <br/>
+                    <h3 class="font-dfvn-float blue-color title-1">24 giờ <br/>
                     thử thách</h3>
                     <p class="blue-color">Ăn - Ngủ cùng cuộc thi xuyên suốt 24 giờ, mang đến giải pháp sáng tạo đột phá giúp giải quyết vấn đề hóc búa đến từ đề thi. </p>
 
                     <div class="wrapper-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-2.png" alt=""/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-2.jpg" alt=""/>
                     </div>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item noHover">
                 <div class="inner-card-item">
-                    <h3 class="font-dfvn-float blue-color">Cố vấn<br/>
+                    <h3 class="font-dfvn-float blue-color title-1">Cố vấn<br/>
                     chuyên môn</h3>
                     <p class="blue-color">Sáng tạo dưới sự dẫn dắt từ dàn cố vấn chuyên môn từ Lollypop và UEH, tiếp thu kinh nghiệm đắt giá và phát triển định hướng sự nghiệp.</p>
 
                     <div class="wrapper-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-3.png" alt=""/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-3.jpg" alt=""/>
                     </div>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item noHover">
                 <div class="inner-card-item">
-                    <h3 class="font-dfvn-float blue-color">UI/UX Design <br/>     
+                    <h3 class="font-dfvn-float blue-color title-1">UI/UX Design <br/>     
                     Framework</h3>
                     <p class="blue-color">Tham gia buổi Workshop chuyên biệt và học hỏi UI/UX Design Framework đã giúp Lollypop chinh phục hàng trăm dự án thành công.</p>
 
                     <div class="wrapper-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-4.png" alt=""/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-4.jpg" alt=""/>
                     </div>
                 </div>
             </div>
-            <div class="card-item">
+            <div class="card-item noHover">
                 <div class="inner-card-item">
-                    <h3 class="font-dfvn-float blue-color">Cơ hội <br/>
+                    <h3 class="font-dfvn-float blue-color title-1">Cơ hội <br/>
                     thực tập</h3>
                     <p class="blue-color">Cơ hội học tập và rèn giũa phát triển kỹ năng thiết kế giải pháp tại Lollypop Design Studio - Top UI/UX Design Studio hàng đầu APAC.</p>
 
                     <div class="wrapper-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-5.png" alt=""/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-5.jpg" alt=""/>
                     </div>
                 </div>
             </div>
@@ -1953,37 +2492,37 @@ table {
    <!-- Section countdown -->
    <section class="section-countdown">
     <div class="container">
-        <h3 class="font-dfvn-float blue-color">“Rồng Rắn Lên Mây”</h3>
-        <h2 class="font-dfvn-float pink-color">Đến Đây Thử Thách!</h2>
+        <h3 class="font-dfvn-float blue-color title-2">“Rồng Rắn Lên Mây”</h3>
+        <h2 class="font-dfvn-float pink-color heading-2">Đến Đây Thử Thách!</h2>
         <p>Nắm bắt cơ hội tham gia Designathon 2024 để cùng 100 nhà thiết kế sáng giá “chinh phục thử thách, phá bỏ giới hạn và mở khóa tiềm năng!”</p>
         <div class="block-countdown">
             <div class="time-item">
                 <span class="circle"></span>
-                <h4 id="date" class="font-dfvn-float">00</h4>
+                <h4 id="date" class="font-dfvn-float heading-2">00</h4>
                 <span class="circle right"></span>
             </div>
             <div class="time-item">
                 <span class="circle"></span>
-                <h4 id="hour" class="font-dfvn-float">00</h4>
+                <h4 id="hour" class="font-dfvn-float heading-2">00</h4>
                 <span class="circle right"></span>
             </div>
             <div class="time-item">
                 <span class="circle"></span>
-                <h4 id="minute" class="font-dfvn-float">00</h4>
+                <h4 id="minute" class="font-dfvn-float heading-2">00</h4>
                 <span class="circle right"></span>
             </div>
             <div class="time-item">
                 <span class="circle"></span>
-                <h4 id="second" class="font-dfvn-float">00</h4>
+                <h4 id="second" class="font-dfvn-float heading-2">00</h4>
                 <span class="circle right"></span>
             </div>
             
         </div>
         <div class="block-title">
-            <h4 class="blue-color">Ngày</h4>
-            <h4 class="blue-color">Giờ</h4>
-            <h4 class="blue-color">Phút</h4>
-            <h4 class="blue-color">Giây</h4>
+            <h4 class="blue-color subtitle-1">Ngày</h4>
+            <h4 class="blue-color subtitle-1">Giờ</h4>
+            <h4 class="blue-color subtitle-1">Phút</h4>
+            <h4 class="blue-color subtitle-1">Giây</h4>
         </div>
         <div class="button-designathon-register text-center">
         <a class="pink-color mx-auto" href="https://forms.gle/DreCF31xKDsyzgTV8" target="_blank"><button class="button-designathon-active white-color">Đăng Ký Ngay</button></a>
@@ -1997,11 +2536,11 @@ table {
             <div class="block-timeline">
                 <div class="timeline-item position-relative first">
                     <div class="timeline-inner-item">
-                        <h2 class="font-dfvn-float pink-color">
+                        <h2 class="font-dfvn-float pink-color heading-2">
                         Mốc Thời Gian<br/>
                         <span class="white-color">& Lịch Trình</span>
                         </h2>
-                        <img class="timeline-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/timeline-image.png" alt=""/>
+                        <img class="timeline-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/timeline-image.svg" alt=""/>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -2038,40 +2577,53 @@ table {
                 
             </div>
        </div>
-    <img class="timeline-image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/timeline-image.png" alt=""/>
+    <img class="timeline-image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/timeline-image.svg" alt=""/>
     </section>
 <!-- Section Rules -->
  <section class="section-rules">
     <div class="container position-relative">
-        <h2 class="font-dfvn-float pink-color">Thể Lệ <span class="white-color">Cuộc Thi</span></h2>
+        <h2 class="font-dfvn-float pink-color heading-2">Thể Lệ <span class="white-color">Cuộc Thi</span></h2>
         <div class="grid-rules">
             <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.png" alt=""/>
+                <div class="inner-rule">
+                    <div class="image-rule-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.svg" alt="rule-1"/>
+                    </div>
+                    <h3 class="font-dfvn-float pink-color title-1">Hình thức tổ chức</h3>
+                    <p class="white-color">Offline trong 2 ngày 21 - 22/09/2024 tại <span class="yellow-color"> trường đại học Kinh Tế TPHCM </span> - 200 Nguyễn Tri Phương, Phường 7, Quận 10.</p>
+                    <p class="white-color">Mỗi đội sẽ có 24h để lên ý tưởng, nghiên cứu và hoàn thành giải pháp theo đề bài BTC đưa ra.</p>
+                </div>
             </div>
             <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-2.png" alt=""/>
+                <div class="inner-rule">
+                    <div class="image-rule-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-2.svg" alt="rule-1"/>
+                    </div>
+                    <h3 class="font-dfvn-float pink-color title-1">Thời gian đăng ký</h3>
+                    <p class="white-color">Thời gian đăng ký: <span class="yellow-color">09/08/2024 - 29/08/2024.</span></p>
+                    <p class="white-color">Vì số lượng thí sinh có hạn, BTC sẽ ưu tiên đánh giá và lựa chọn những thí sinh đăng ký sớm và phù hợp nhất. Kết quả sẽ được gửi đến từng thí sinh thông qua email.</p>
+                </div>
             </div>
             <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-3.png" alt=""/>
+                <div class="inner-rule">
+                    <div class="image-rule-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-3.svg" alt="rule-1"/>
+                    </div>
+                    <h3 class="font-dfvn-float pink-color title-1">Đối tượng tham gia</h3>
+                    <p class="white-color">Các sinh viên / học viên đang theo học thiết kế tại các trường Đại học, Cao đẳng, Học viện, Trung tâm trên cả nước, hoặc người đã đi làm với chuyên môn thiết kế dưới 1 năm kinh nghiệm.</p>
+                </div>
             </div>
             <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4.png" alt=""/>
+                <div class="inner-rule">
+                    <div class="image-rule-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4.svg" alt="rule-1"/>
+                    </div>
+                    <h3 class="font-dfvn-float pink-color title-1">Giải thưởng</h3>
+                    <p class="white-color">Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="yellow-color">30 TRIỆU</span> tiền mặt, Cố vấn 1 - 1 với chuyên gia, Bộ quà tặng & Giấy chứng nhận độc quyền đến từ Lollypop.</p>
+                </div>
             </div>
         </div>
-        <div class="grid-rules-mobile">
-            <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1-mobile.svg" alt=""/>
-            </div>
-            <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-2-mobile.svg" alt=""/>
-            </div>
-            <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-3-mobile.svg" alt=""/>
-            </div>
-            <div class="rule-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4-mobile.svg" alt=""/>
-            </div>
-        </div>
+        
     </div>
  </section>
    </div>
@@ -2081,7 +2633,7 @@ table {
     <div class="container">
         <div class="block">
               
-            <h5 class="white-color text-center">Tìm hiểu thêm</h5>
+            <h5 class="white-color text-center subtitle-1">Tìm hiểu thêm</h5>
             <h2 class="font-dfvn-float pink-color text-center">Quy định <span class="white-color">Designathon 2024</span></h2>
             <div class="d-flex justify-content-center">
          <button class="button-designathon pink-color">Tải Xuống PDF</button>
@@ -2092,35 +2644,49 @@ table {
   <!-- Section Partner -->
     <section class="section-partner">
         <div class="container">
-            <h2 class="font-dfvn-float pink-color text-center">Nhà tài trợ <span class="blue-color">& Đối tác</span></h2>
+            <h2 class="font-dfvn-float pink-color text-center heading-2">Nhà tài trợ <span class="blue-color">& Đối tác</span></h2>
             <p class="text-center">Để Designathon 2024 thực sự hoành tráng và đầy giá trị, sự đồng hành của các Nhà tài trợ và Đối tác uy tín là yếu tố không thể thiếu xuyên suốt hành trình tổ chức cuộc thi.</p>
-            <div class="wrapper-image">
-            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/image-partner.png" alt=""/>
-            <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/image-partner-mobile.svg" alt=""/>
+            <div class="grid-partner d-flex">
+                <div class="grid-item">
+                    <h3 class="blue-color title-2">Nhà tài trợ hiện vật</h3>
+                    <div class="image-partner">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/coolmate.svg" alt=""/>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="blue-color title-2">Đối tác truyền thông</h3>
+                    <div class="list-image">
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-sponsor.svg" alt=""/>
+                        </div>
+                       
+                    </div>
+                </div>
             </div>
+         
         </div>
     </section>
      <!-- Section Video -->
      <section class="section-video">
         <div class="container">
-            <h2 class="font-dfvn-float pink-color text-center"><span class="white-color">Cùng nhìn lại “sức nóng"</span>
+            <h2 class="font-dfvn-float pink-color text-center heading-2"><span class="white-color">Cùng nhìn lại “sức nóng"</span>
             <br/><span class="pink-color">Designathon Việt Nam 2023</span></h2>
             <div class="wrapper-video">
 
             <iframe width="848" height="477" id="video-designathon" src="https://www.youtube.com/embed/F5qvBLJbx6M?si=8PPSwZzGVAiJNcOt&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <ul>
-                <li class="white-color"><span class="pink-color font-dfvn-float">50</span> thí sinh tài năng</li>
-                <li class="white-color"><span class="pink-color font-dfvn-float">8</span> giờ phát triển giải pháp</li>
-                <li class="white-color">Trải nghiệm có <span class="pink-color font-dfvn-float">1-0-2</span></li>
+                <li class="white-color"><span class="pink-color font-dfvn-float heading-3">50</span> thí sinh tài năng</li>
+                <li class="white-color"><span class="pink-color font-dfvn-float heading-3">8</span> giờ phát triển giải pháp</li>
+                <li class="white-color">Trải nghiệm có <span class="pink-color font-dfvn-float heading-3">1-0-2</span></li>
             </ul>
         </div>
     </section>
     <!-- Section Old Candidate -->
      <section class="section-old-candidate">
         <div class="container">
-            <h4 class="font-dfvn-float blue-color">Cựu thí sinh nói gì về</h4>
-            <h2 class="font-dfvn-float pink-color">Designathon Việt Nam?</h2>
+            <h4 class="font-dfvn-float blue-color title-2">Cựu thí sinh nói gì về</h4>
+            <h2 class="font-dfvn-float pink-color heading-2">Designathon Việt Nam?</h2>
             <div class="d-flex grid">
                 <div class="column">
                     <div class="post-item">
@@ -2175,7 +2741,7 @@ table {
                 </div>
                 <div class="column">
                     <div class="post-item">
-                    <a href="https://www.linkedin.com/posts/vohoangvy_lollypopdesignathon2023-activity-7112418320657645568-me81?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <a href="https://www.linkedin.com/posts/dieu-thi-nguyen-ngoc-bion-14b82821a_designathon2023-lollypopstudio-uiuxdesign-activity-7112775920960106496-0xTe?utm_source=share&utm_medium=member_desktop" target="_blank">
                         <div class="post-inner-item">
                             <div class="post-header">
                                 <div class="block-info">
@@ -2297,7 +2863,7 @@ table {
      <!-- Section Common Question -->
      <section class="section-common-question">
         <div class="container">
-            <h2 class="font-dfvn-float pink-color text-center">Câu Hỏi <span class="blue-color">Thường Gặp</span></h2>
+            <h2 class="font-dfvn-float pink-color text-center heading-2">Câu Hỏi <span class="blue-color">Thường Gặp</span></h2>
             <div class="accordion" id="accordionExample">
                 <div class="grid-question">
                     <div class="block-item">
@@ -2415,7 +2981,7 @@ table {
             <div class="contact-now">
                 <div class="inner-contact">
                     <div class="item">
-                        <h4 class="white-color">Vẫn còn băn khoăn?</h4>
+                        <h4 class="white-color subtitle-1">Vẫn còn băn khoăn?</h4>
                         <p class="white-color">Không tìm thấy thông tin bạn cần? Liên hệ ngay với BTC để được hỗ trợ kịp thời!</p>
                     </div>
                     <a class="pink-color" href="https://www.messenger.com/t/103174649365111" target="_blank"><button class="button-designathon pink-color">Liên Hệ Ngay</button></a>
@@ -2426,8 +2992,8 @@ table {
      <!-- Section register -->
       <section class="section-register">
         <div class="container">
-            <h3 class="blue-color font-dfvn-float text-center">“Rồng Rắn Lên Mây”</h3>
-            <h2 class="pink-color font-dfvn-float text-center">Cùng Xây Giải Pháp</h2>
+            <h3 class="blue-color font-dfvn-float text-center title-2">“Rồng Rắn Lên Mây”</h3>
+            <h2 class="pink-color font-dfvn-float text-center heading-2">Cùng Xây Giải Pháp</h2>
             <p class="text-center">Tham gia Designathon 2024 ngay để nhận <span class="pink-color">những giá trị thực!</span >
             Giải quyết đề bài thực tế, học hỏi từ chuyên gia thực chiến, và chiến thắng giải thưởng thực sự hấp dẫn! Đăng ký ngay hôm nay và bứt phá mọi giới hạn!</p>
             <div class="d-flex justify-content-center">
@@ -2449,16 +3015,22 @@ table {
                 <div class="block-item">
                     <ul>
                         <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-linkedin.svg" alt=""/>
-                            <h6><a href=''>LinkedIn</a></h6>
+                            <a href="https://www.linkedin.com/company/lollypop-vietnam/" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-linkedin.svg" alt=""/>
+                                <h6><a href=''>LinkedIn</a></h6>
+                            </a>
                         </li>
                         <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-insta.svg" alt=""/>
-                            <h6><a href=''>Instagram</a></h6>
+                            <a href="https://www.instagram.com/lollypop_vn/" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-insta.svg" alt=""/>
+                                <h6><a href=''>Instagram</a></h6>
+                            </a>
                         </li>
                         <li>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-facebook.svg" alt=""/>
-                            <h6><a href=''>Facebook</a></h6>
+                            <a href="https://www.facebook.com/lollypopvietnam" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-facebook.svg" alt=""/>
+                                <h6><a href=''>Facebook</a></h6>
+                            </a>
                         </li>
                     </ul>
                 </div>
