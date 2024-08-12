@@ -161,9 +161,10 @@ table {
     .header {
         display: none;
     }
-    .change-lang{
+    .btn-mobile-res{
         display:none !important;
     }
+ 
     footer:not(.footer-designathon){
         display:none;
     }
@@ -899,6 +900,7 @@ table {
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/layer-hour.svg");
         background-size:100%;
         background-repeat:no-repeat;
+        pointer-events:none;
         /* opacity:0.5; */
         /* background-color:rgba(0,0,0,0.2); */
     }
@@ -1494,7 +1496,7 @@ table {
     }
     @media (max-width:1280px){
         .banner-designathon24 .dragon-right{
-            right: 7px;
+            right: 0px;
             top: -4px;
             width: 26.56vw;
         }
@@ -1609,6 +1611,9 @@ table {
         .banner-designathon24 .container .block-content-0{
             padding-top: 5.68vw;
         }
+        .banner-designathon24 .change-lang{
+            top:5.68vw;
+        }
         .banner-designathon24 .container .block-content-1{
             justify-content:center;
             padding-top:0;
@@ -1616,6 +1621,7 @@ table {
         .banner-designathon24 .container .block-content-0 .image-talent{
             width: 75.3vw;
         }
+        
         .banner-designathon24 .wave .human.human-1{
             background-size: 120%;
             background-position: 22% 50%;
@@ -2334,12 +2340,12 @@ table {
             line-height:40px;
         }
         .banner-designathon24 .change-lang span{
-            font-size:14px !important;
+            font-size:12px !important;
             line-height:18px !important;
-            padding:4px 8px !important;
+            padding:2px 8px !important;
         }
         .banner-designathon24 .change-lang{
-            top:16px;
+            top:18px;
         }
         .banner-designathon24 .container .block-content-0 .image-talent img{
             width:91.38vw;
@@ -2513,8 +2519,8 @@ table {
   <section class="banner-designathon24 position-relative">
     <div class="bg"></div>
     <div class="change-lang">
-        <span class="active">VIE</span>
-        <span>EN</span>
+        <a href="https://lollypop.design/designathonvn-2024"><span class="active">VIE</span></a>
+        <a href="https://lollypop.design/designathonvn-2024-eng"><span>EN</span></a>
     </div>
     <div class="block-sticky">
         <div class="wave">
@@ -2621,7 +2627,7 @@ table {
                 <div class="inner-card-item">
                     <h3 class="font-dfvn-float blue-color title-1">Cố vấn<br/>
                     chuyên môn</h3>
-                    <p class="blue-color">Sáng tạo dưới sự dẫn dắt từ dàn cố vấn chuyên môn từ Lollypop và UEH, tiếp thu kinh nghiệm đắt giá và phát triển định hướng sự nghiệp.</p>
+                    <p class="blue-color">Sáng tạo dưới sự dẫn dắt từ dàn cố vấn chuyên môn từ Lollypop, tiếp thu kinh nghiệm đắt giá và phát triển định hướng sự nghiệp.</p>
 
                     <div class="wrapper-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-3.jpg" alt=""/>
@@ -2841,7 +2847,7 @@ table {
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-1-mobile.svg" alt=""/>
                         </div>
                         <div class="wrapper-image">
-                            <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-2-mobile.svg" alt=""/>
+                            <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-2-mobile.png" alt=""/>
                         </div>
                         <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-3-mobile.svg" alt=""/>
