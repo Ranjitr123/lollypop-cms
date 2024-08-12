@@ -475,6 +475,9 @@ table {
         height:100%;
         object-fit:contain;
     }
+    .banner-designathon24 .container .block-content-0 .image-talent .image-mobile{
+        display:none;
+    }
     .banner-designathon24 .container .block-content-0 .image-sponsor{
         margin-bottom:40px;
     }
@@ -1197,6 +1200,7 @@ table {
     }
     .section-old-candidate .grid{
         gap:16px;
+        /* height:fit-content; */
     }
     .section-old-candidate .grid .column{
         width:33.33%;
@@ -1776,6 +1780,23 @@ table {
         }
     }
     @media(max-width:768px){
+        .banner-designathon24 .container .block-content-0 .image-talent .image-mobile{
+            display:block;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent .image-mobile{
+            margin-bottom:16px;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent img {
+            width: 75.2vw;
+            height: 9.44vw;
+            margin: 0 auto;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent{
+            flex-direction:column;
+        }
+        .banner-designathon24 .container .block-content-0 .image-talent .image-desktop{
+            display:none;
+        }
         .banner-designathon24 .dragon-right{
             width: 42.27vw;
             top:1%;
@@ -1808,6 +1829,7 @@ table {
         .banner-designathon24 .container .block-content-0 h2 {
             font-size: 60px;
             line-height: 80px;
+            margin-bottom:16px;
         }
         .banner-designathon24 .wave .human.human-1{
             background-position: 28% -4%;
@@ -2347,10 +2369,7 @@ table {
         .banner-designathon24 .change-lang{
             top:18px;
         }
-        .banner-designathon24 .container .block-content-0 .image-talent img{
-            width:91.38vw;
-            height:auto;
-        }
+       
         .banner-designathon24 .container .block-content-1{
             padding-top:33.72vw;
         }
@@ -2556,7 +2575,9 @@ table {
             </div>
             <h2 class="font-dfvn-float white-color text-limit heading-1">break limits</h2>
             <div class="image-talent">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/text-talent-en.svg" alt=""/>
+                <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/text-talent-en.svg" alt=""/>
+                <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/talent-mobile-1.svg" alt=""/>
+                <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/talent-mobile-2.svg" alt=""/>
             </div>
         </div>
         <div class="block-content block-content-1">
@@ -2626,7 +2647,7 @@ table {
             <div class="card-item noHover">
                 <div class="inner-card-item">
                     <h3 class="font-dfvn-float blue-color title-1">Enthusiast  <br/>Mentorship</h3>
-                    <p class="blue-color">Be ready to gain valued knowledge and design insights under the mentorship from Lollypop.</p>
+                    <p class="blue-color">Be ready to gain valued knowledge and design insights under the mentorship from Lollypop Design Studio.</p>
 
                     <div class="wrapper-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/slide-card-3.jpg" alt=""/>
@@ -2757,7 +2778,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Event Format</h3>
-                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in Ho Chi Minh City, Vietnam.</span> </p>
+                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in<span class="yellow-color"> Ho Chi Minh City, Vietnam.</span> </p>
                     <p class="white-color">Each team has 24 hours to ideate, research, and complete solutions.</p>
                 </div>
             </div>
@@ -2786,7 +2807,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Awards</h3>
-                    <p class="white-color">Attractive rewards including 30 Million VND in cash, 1-on-1 mentoring with experts, exclusive gift sets, and certificates from Lollypop Design Studio.</p>
+                    <p class="white-color">Attractive rewards including <span class="yellow-color"> 30 Million VND</span> in cash, 1-on-1 mentoring with experts, exclusive gift sets, and certificates from Lollypop Design Studio.</p>
                 </div>
             </div>
         </div>
@@ -2815,7 +2836,7 @@ table {
             <p>Prestigious Sponsors and Partners are crucial to the grand success of Designathon 2024. Their unwavering support helps elevate the competition to new heights, making it a truly valuable experience for all participants.</p>
             <div class="grid-partner d-flex">
                 <div class="grid-item">
-                    <h3 class="blue-color title-2">In-kind sponsor</h3>
+                    <h3 class="blue-color title-2">In-kind Sponsor</h3>
                     <div class="image-partner">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/coolmate.svg" alt=""/>
                     </div>
@@ -3303,7 +3324,8 @@ get_footer('designathon2024');
     }
 
 (() => {
-	slider.addEventListener('mousedown', start);
+    if($(window).width()>1000){
+    slider.addEventListener('mousedown', start);
 	slider.addEventListener('touchstart', start);
 
 	slider.addEventListener('mousemove', move);
@@ -3312,6 +3334,7 @@ get_footer('designathon2024');
 	slider.addEventListener('mouseleave', end);
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
+    }
 })();
     // Set the date we're counting down to
     const countDownDate = new Date("Aug 26, 2024 23:59:59").getTime();
