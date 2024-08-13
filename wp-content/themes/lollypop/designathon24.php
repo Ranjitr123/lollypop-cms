@@ -312,6 +312,10 @@ table {
             max-width: calc(100% - 32px);
             padding:0 !important;
         }
+        .banner-designathon24 .container{
+            max-width: calc(100% - 32px) !important;
+            padding:0 !important;
+        }
     }
     .banner-designathon24{
     
@@ -341,7 +345,7 @@ table {
         display:flex;
         justify-content:center;
         align-items:center;
-        padding:4px;
+        padding:6px 4px;
     }
     .banner-designathon24 .change-lang span{
         padding:4px 12px;
@@ -1781,6 +1785,9 @@ table {
             top:1%;
             bottom:auto;
             height: 34.6vw;
+        }
+        .banner-designathon24 .change-lang{
+            padding:4px 2px;
         }
         .banner-designathon24 .dragon-right .body-dragon{
             width: 31.3vw;
