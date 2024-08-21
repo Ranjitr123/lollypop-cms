@@ -1069,8 +1069,33 @@ table {
         background-repeat:no-repeat;
         background-size:cover;
     }
+    .section-partner .sponsor-platinum{
+        padding:40px 9% 60px;
+        align-items:center;
+        border-bottom:2px solid #300375;
+    }
+    .section-partner .sponsor-platinum p{
+        width:50%;
+    }
+    .section-partner .sponsor-platinum h3{
+        font-weight:700;
+        margin-bottom:32px;
+    }
+    .section-partner .sponsor-platinum .grid-platinum{
+        gap:60px;
+        align-items:center;
+    }
+    .section-partner .sponsor-platinum .image-partner{
+        width:393px;
+        height:auto;
+    }
+    .section-partner .sponsor-platinum .image-partner img{
+        width:100%;
+        height:100%;
+    }
     .section-partner .grid-partner{
-        gap:160px;
+        gap:40px;
+        padding-top:60px;
     }
     .section-partner .grid-partner .image-mobile{
         display:none;
@@ -1101,16 +1126,19 @@ table {
     }
     .section-partner .grid-partner .grid-item .list-image{
         display:flex;
-        flex-wrap:wrap;
-        row-gap:16px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap:23.75px;
+        justify-content: space-between;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-        width:33.33%;
-        height:auto;
+        width:auto;
+        max-height:75px;
+        text-align: right;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
         width:100%;
-        height:auto;
+        height:100%;
     }
     .section-partner h2{
         font-size:54px;
@@ -1122,6 +1150,7 @@ table {
         line-height:24px;
         margin-bottom:60px;
         width:60%;
+        margin:0 auto;
     }
     .section-partner .image-desktop{
         display:block;
@@ -1355,7 +1384,7 @@ table {
     .section-register p{
         font-size:16px;
         line-height:24px;
-        font-weight:700;
+        font-weight:500;
         color:#221429;
         margin:0 auto;
 
@@ -2058,11 +2087,27 @@ table {
             line-height:36px;
             margin-bottom:8px
         }
+        
+        .section-partner .sponsor-platinum .grid-platinum{
+            flex-direction:column;
+            gap:21px;
+        }
+        .section-partner .sponsor-platinum{
+            padding:40px 0 20px;
+            border:none;
+        }
+        .section-partner .sponsor-platinum .image-partner{
+            width:68.3vw;
+        }
+        .section-partner .sponsor-platinum p{
+            text-align:center;
+            width:100%;
+        }
         .section-partner p{
             font-size:14px;
             line-height:18px;
             width:100%;
-            margin-bottom:40px;
+            /* margin-bottom:40px; */
         }
        
         .section-partner .grid-partner{
@@ -2078,16 +2123,23 @@ table {
             width:100%;
             margin-bottom:32px;
         }
-        .section-partner .image-desktop{
-            display:none;
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image{
+            width:calc(33.33% - 14px);
         }
         .section-partner .grid-partner .image-mobile{
             display:block;
         }
         .section-partner .grid-partner .grid-item .list-image{
-            row-gap:0;
+            row-gap:20px;
+            column-gap:14px;
         }
         .section-partner .grid-partner .grid-item:first-child .image-partner img{
+            width: 36%;
+        }
+        .section-partner .grid-partner{
+            padding-top:20px;
+        }
+        .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
             width: 72%;
         }
         .section-partner .grid-partner .grid-item:first-child:before{
@@ -2106,6 +2158,7 @@ table {
         .section-partner{
             padding:80px 0 85px;
         }
+    
         .section-video{
             padding:80px 0;
         }
@@ -2766,7 +2819,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Hình thức tổ chức</h3>
-                    <p class="white-color">Offline trong 2 ngày 21 - 22/09/2024 tại <span class="yellow-color"> Thành phố Hồ Chí Minh.</span> </p>
+                    <p class="white-color">Offline trong 2 ngày 21 - 22/09/2024 tại <span class="yellow-color"> Holiday Inn - 18E Đ. Cộng Hòa, Tân Bình, Hồ Chí Minh</span></p>
                     <p class="white-color">Mỗi đội sẽ có 24h để lên ý tưởng, nghiên cứu và hoàn thành giải pháp theo đề bài BTC đưa ra.</p>
                 </div>
             </div>
@@ -2795,7 +2848,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Giải thưởng</h3>
-                    <p class="white-color">Cơ hội thắng các giải thưởng hấp dẫn bao gồm: <span class="yellow-color">30 TRIỆU</span> tiền mặt, Cố vấn 1 - 1 với chuyên gia, Bộ quà tặng & Giấy chứng nhận độc quyền đến từ Lollypop.</p>
+                    <p class="white-color">Cơ hội thắng các giải thưởng hấp dẫn với tổng giá trị giải thưởng <span class="yellow-color">lên đến 50 triệu đồng,</span> bao gồm Khóa học tại Arena Multimedia, Cố vấn 1 - 1 với chuyên gia, Bộ quà tặng & Giấy chứng nhận độc quyền đến từ Lollypop.</p>
                 </div>
             </div>
         </div>
@@ -2820,9 +2873,24 @@ table {
   <!-- Section Partner -->
     <section class="section-partner">
         <div class="container">
-            <h2 class="font-dfvn-float pink-color heading-2">Nhà tài trợ <span class="blue-color">& Đối tác</span></h2>
-            <p>Để Designathon 2024 thực sự hoành tráng và đầy giá trị, sự đồng hành của các Nhà tài trợ và Đối tác uy tín là yếu tố không thể thiếu xuyên suốt hành trình tổ chức cuộc thi.</p>
+            <h2 class="font-dfvn-float pink-color heading-2 text-center">Nhà tài trợ <span class="blue-color">& Đối tác</span></h2>
+            <p class="text-center">Để Designathon 2024 thực sự hoành tráng và đầy giá trị, sự đồng hành của các Nhà tài trợ và Đối tác uy tín là yếu tố không thể thiếu xuyên suốt hành trình tổ chức cuộc thi.</p>
+            <div class="sponsor-platinum">
+                <h3 class="blue-color title-2 text-center">Nhà tài trợ bạch kim</h3>
+                <div class="grid-platinum d-flex">
+                    <div class="image-partner">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/platinum-partner.svg" alt=""/>
+                    </div>
+                    <p>Terralogic là công ty chuyên cung cấp các dịch vụ IT và phát triển phần mềm, có trụ sở chính tại Hoa Kỳ và các chi nhánh tại Ấn Độ, Dubai và Việt Nam. Với hơn 15 năm kinh nghiệm trong lĩnh vực, Terralogic đã thực hiện thành công 2400+ dự án cho 900+ khách hàng doanh nghiệp đến từ 16+ quốc gia khác nhau.</p>
+                </div>
+            </div>
             <div class="grid-partner d-flex">
+                <div class="grid-item">
+                    <h3 class="blue-color title-2">Nhà tài trợ bạc</h3>
+                    <div class="image-partner">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/silver-partner.svg" alt=""/>
+                    </div>
+                </div>
                 <div class="grid-item">
                     <h3 class="blue-color title-2">Nhà tài trợ hiện vật</h3>
                     <div class="image-partner">
@@ -2851,6 +2919,15 @@ table {
                             <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-6.svg" alt=""/>
                         </div>
                         <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-7.svg" alt=""/>
+                        </div>
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-8.svg" alt=""/>
+                        </div>
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-9.svg" alt=""/>
+                        </div>
+                        <!-- <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-1-mobile.svg" alt=""/>
                         </div>
                         <div class="wrapper-image">
@@ -2867,7 +2944,7 @@ table {
                         </div>
                         <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-6-mobile.svg" alt=""/>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -3083,7 +3160,7 @@ table {
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Designathon 2024 là sự kiện Offline được tổ chức tại Thành phố Hồ Chí Minh. 
+                        Designathon 2024 là sự kiện Offline được tổ chức tại Holiday Inn - 18E Đ. Cộng Hòa, Tân Bình, Hồ Chí Minh
                         </div>
                         </div>
                     </div>
