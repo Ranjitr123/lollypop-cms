@@ -1072,7 +1072,8 @@ table {
         overflow:hidden;
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/partner-bg.svg");
         background-repeat:no-repeat;
-        background-size:cover;
+        background-size:100%;
+        background-position:bottom;
     }
     .section-partner .grid-partner{
         gap:40px;
@@ -1134,7 +1135,7 @@ table {
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap:23.75px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
         width:auto;
@@ -1812,6 +1813,22 @@ table {
             margin: 0 auto;
             margin-top: 40px;
         }
+        .section-partner .grid-partner{
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:first-child {
+            width: 50%;
+        }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img {
+            width: 40%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:last-child h3{
+            text-align:center;
+        }
     }
     @media(max-width:768px){
         .banner-designathon24 .container .block-content-0 .image-talent .image-mobile{
@@ -2149,6 +2166,25 @@ table {
         .section-partner .grid-partner .grid-item .list-image .wrapper-image{
             width:calc(33.33% - 14px);
         }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:60%;
+            margin:0 auto;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .sponsor-platinum .image-partner{
+            text-align:center;
+        }
         .section-partner .grid-partner .image-mobile{
             display:block;
         }
@@ -2157,13 +2193,13 @@ table {
             column-gap:14px;
         }
         .section-partner .grid-partner .grid-item:first-child .image-partner img{
-            width: 36%;
+            width: 30%;
         }
         .section-partner .grid-partner{
             padding-top:20px;
         }
         .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
-            width: 72%;
+            width: 50%;
         }
       
         .section-partner .grid-partner .grid-item:first-child:before{
@@ -2568,6 +2604,28 @@ table {
             width:40px;
             height:40px;
         }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img{
+            width:42%;
+        }
+        .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
+            width:72%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:100%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:70%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            row-gap:30px;
+            column-gap:18px;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:100%;
+        }
     }
     @media(max-width:390px){
         .banner-designathon24{
@@ -2839,7 +2897,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Event Format</h3>
-                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in <span class=" yellow-color"> Holiday Inn - 18E Cộng Hòa Street, Tân Bình Ward, Hồ Chí Minh City.</span>                    </p>
+                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in <span class=" yellow-color"> Holiday Inn - 18E Cong Hoa Street, Tan Binh Ward, Ho Chi Minh City.</span></p>
                     <p class="white-color">Each team has 24 hours to ideate, research, and complete solutions.</p>
                 </div>
             </div>
@@ -3180,7 +3238,7 @@ table {
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                        Designathon 2024 is an Offline event organized in Ho Chi Minh City
+                        Designathon 2024 is an Offline event organized in Holiday Inn - 18E Cong Hoa Street, Tan Binh Ward, Ho Chi Minh City.
                         </div>
                         </div>
                     </div>

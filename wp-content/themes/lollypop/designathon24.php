@@ -1067,7 +1067,8 @@ table {
         overflow:hidden;
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/partner-bg.svg");
         background-repeat:no-repeat;
-        background-size:cover;
+        background-size:100%;
+        background-position: bottom;
     }
     .section-partner .sponsor-platinum{
         padding:40px 9% 60px;
@@ -1112,7 +1113,7 @@ table {
         width:70.7%
     }
     .section-partner .grid-partner .grid-item:first-child .image-partner img{
-        width:81%;
+        width:auto;
     }
     .section-partner .grid-partner .grid-item h3{
         font-size:32px;
@@ -1129,7 +1130,7 @@ table {
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap:23.75px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
         width:auto;
@@ -1807,6 +1808,23 @@ table {
             margin: 0 auto;
             margin-top: 40px;
         }
+        .section-partner .grid-partner{
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:first-child {
+            width: 50%;
+        }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img {
+            width: 40%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:last-child h3{
+            text-align:center;
+        }
+        
     }
     @media(max-width:768px){
         .banner-designathon24 .dragon-right{
@@ -2126,21 +2144,40 @@ table {
         .section-partner .grid-partner .grid-item .list-image .wrapper-image{
             width:calc(33.33% - 14px);
         }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:60%;
+            margin:0 auto;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .sponsor-platinum .image-partner{
+            text-align:center;
+        }
         .section-partner .grid-partner .image-mobile{
             display:block;
         }
         .section-partner .grid-partner .grid-item .list-image{
-            row-gap:20px;
+            row-gap:12px;
             column-gap:14px;
         }
         .section-partner .grid-partner .grid-item:first-child .image-partner img{
-            width: 36%;
+            width: 30%;
         }
         .section-partner .grid-partner{
             padding-top:20px;
         }
         .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
-            width: 72%;
+            width: 50%;
         }
         .section-partner .grid-partner .grid-item:first-child:before{
             content:none;
@@ -2547,6 +2584,28 @@ table {
         .section-old-candidate .grid .column .post-item .post-inner-item .post-header .block-info .avatar img{
             width:40px;
             height:40px;
+        }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img{
+            width:42%;
+        }
+        .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
+            width:72%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:100%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:70%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            row-gap:30px;
+            column-gap:18px;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:100%;
         }
     }
     @media(max-width:390px){
