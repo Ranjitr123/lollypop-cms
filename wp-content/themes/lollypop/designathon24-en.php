@@ -1072,10 +1072,36 @@ table {
         overflow:hidden;
         background-image:url("<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/partner-bg.svg");
         background-repeat:no-repeat;
-        background-size:cover;
+        background-size:100%;
+        background-position:bottom;
     }
     .section-partner .grid-partner{
-        gap:160px;
+        gap:40px;
+        padding-top:60px;
+    }
+    .section-partner .sponsor-platinum{
+        padding:40px 9% 60px;
+        align-items:center;
+        border-bottom:2px solid #300375;
+    }
+    .section-partner .sponsor-platinum p{
+        width:50%;
+    }
+    .section-partner .sponsor-platinum h3{
+        font-weight:700;
+        margin-bottom:32px;
+    }
+    .section-partner .sponsor-platinum .grid-platinum{
+        gap:60px;
+        align-items:center;
+    }
+    .section-partner .sponsor-platinum .image-partner{
+        width:393px;
+        height:auto;
+    }
+    .section-partner .sponsor-platinum .image-partner img{
+        width:100%;
+        height:100%;
     }
     .section-partner .grid-partner .image-mobile{
         display:none;
@@ -1106,16 +1132,19 @@ table {
     }
     .section-partner .grid-partner .grid-item .list-image{
         display:flex;
-        flex-wrap:wrap;
-        row-gap:16px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap:23.75px;
+        justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-        width:33.33%;
-        height:auto;
+        width:auto;
+        max-height:75px;
+        text-align: right;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
         width:100%;
-        height:auto;
+        height:100%;
     }
     .section-partner h2{
         font-size:54px;
@@ -1127,6 +1156,7 @@ table {
         line-height:24px;
         margin-bottom:60px;
         width:60%;
+        margin:0 auto;
     }
     .section-partner .image-desktop{
         display:block;
@@ -1361,7 +1391,7 @@ table {
     .section-register p{
         font-size:16px;
         line-height:24px;
-        font-weight:700;
+        font-weight:500;
         color:#221429;
         margin:0 auto;
 
@@ -1783,6 +1813,22 @@ table {
             margin: 0 auto;
             margin-top: 40px;
         }
+        .section-partner .grid-partner{
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:first-child {
+            width: 50%;
+        }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img {
+            width: 40%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            justify-content:center;
+        }
+        .section-partner .grid-partner .grid-item:last-child h3{
+            text-align:center;
+        }
     }
     @media(max-width:768px){
         .banner-designathon24 .container .block-content-0 .image-talent .image-mobile{
@@ -2081,12 +2127,28 @@ table {
             line-height:36px;
             margin-bottom:8px
         }
+        .section-partner .sponsor-platinum .grid-platinum{
+            flex-direction:column;
+            gap:21px;
+        }
+        .section-partner .sponsor-platinum{
+            padding:40px 0 20px;
+            border:none;
+        }
+        .section-partner .sponsor-platinum .image-partner{
+            width:68.3vw;
+        }
+        .section-partner .sponsor-platinum p{
+            text-align:center;
+            width:100%;
+        }
         .section-partner p{
             font-size:14px;
             line-height:18px;
             width:100%;
-            margin-bottom:40px;
+            /* margin-bottom:40px; */
         }
+  
        
         .section-partner .grid-partner{
             display:block !important;
@@ -2101,18 +2163,45 @@ table {
             width:100%;
             margin-bottom:32px;
         }
-        .section-partner .image-desktop{
-            display:none;
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image{
+            width:calc(33.33% - 14px);
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:60%;
+            margin:0 auto;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:50%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .sponsor-platinum .image-partner{
+            text-align:center;
         }
         .section-partner .grid-partner .image-mobile{
             display:block;
         }
         .section-partner .grid-partner .grid-item .list-image{
-            row-gap:0;
+            row-gap:20px;
+            column-gap:14px;
         }
         .section-partner .grid-partner .grid-item:first-child .image-partner img{
-            width: 72%;
+            width: 30%;
         }
+        .section-partner .grid-partner{
+            padding-top:20px;
+        }
+        .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
+            width: 50%;
+        }
+      
         .section-partner .grid-partner .grid-item:first-child:before{
             content:none;
         }
@@ -2515,6 +2604,28 @@ table {
             width:40px;
             height:40px;
         }
+        .section-partner .grid-partner .grid-item:first-child .image-partner img{
+            width:42%;
+        }
+        .section-partner .grid-partner .grid-item:nth-child(2) .image-partner img{
+            width:72%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
+            width:100%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(3) img{
+            width:70%;
+        }
+        .section-partner .grid-partner .grid-item .list-image .wrapper-image:nth-child(4) img{
+            width:60%;
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            row-gap:30px;
+            column-gap:18px;
+        }
+        .section-partner .sponsor-platinum .image-partner img{
+            width:100%;
+        }
     }
     @media(max-width:390px){
         .banner-designathon24{
@@ -2786,7 +2897,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-1.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Event Format</h3>
-                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in<span class="yellow-color"> Ho Chi Minh City, Vietnam.</span> </p>
+                    <p class="white-color">Offline, spanning 2 days from September 21-22, 2024, in <span class=" yellow-color"> Holiday Inn - 18E Cong Hoa Street, Tan Binh Ward, Ho Chi Minh City.</span></p>
                     <p class="white-color">Each team has 24 hours to ideate, research, and complete solutions.</p>
                 </div>
             </div>
@@ -2815,7 +2926,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-4.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Awards</h3>
-                    <p class="white-color">Attractive rewards including <span class="yellow-color"> 30 Million VND</span> in cash, 1-on-1 mentoring with experts, exclusive gift sets, and certificates from Lollypop Design Studio.</p>
+                    <p class="white-color">Attractive rewards with the total value up to <span class="yellow-color"> 50 Million VND,</span> including scholarships from Arena Multimedia, 1-on-1 mentoring with experts, exclusive gift sets, and certificates from Lollypop Design Studio.</p>
                 </div>
             </div>
         </div>
@@ -2840,9 +2951,24 @@ table {
   <!-- Section Partner -->
     <section class="section-partner">
         <div class="container">
-            <h2 class="font-dfvn-float pink-color heading-2">Sponsors <span class="blue-color">& Partners</span></h2>
-            <p>Prestigious Sponsors and Partners are crucial to the grand success of Designathon 2024. Their unwavering support helps elevate the competition to new heights, making it a truly valuable experience for all participants.</p>
+        <h2 class="font-dfvn-float pink-color heading-2 text-center">Sponsors <span class="blue-color">& Partners</span></h2>
+            <p class="text-center">Prestigious Sponsors and Partners are crucial to the grand success of Designathon 2024. Their unwavering support helps elevate the competition to new heights, making it a truly valuable experience for all participants.</p>
+            <div class="sponsor-platinum">
+                <h3 class="blue-color title-2 text-center">Platinum Sponsor</h3>
+                <div class="grid-platinum d-flex">
+                    <div class="image-partner">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/platinum-partner.svg" alt=""/>
+                    </div>
+                    <p>Terralogic is an IT services and software development company based in the USA with branches in India, Dubai, and Vietnam. With over 15 years of experience, Terralogic has successfully delivered 2400+ projects for 900+ clients across 16+ countries globally.</p>
+                </div>
+            </div>
             <div class="grid-partner d-flex">
+                <div class="grid-item">
+                    <h3 class="blue-color title-2">Silver Sponsor</h3>
+                    <div class="image-partner">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/silver-partner.svg" alt=""/>
+                    </div>
+                </div>
                 <div class="grid-item">
                     <h3 class="blue-color title-2">In-kind Sponsor</h3>
                     <div class="image-partner">
@@ -2850,7 +2976,7 @@ table {
                     </div>
                 </div>
                 <div class="grid-item">
-                    <h3 class="blue-color title-2">Our Media Partners</h3>
+                    <h3 class="blue-color title-2">Media Partners</h3>
                     <div class="list-image">
                         <div class="wrapper-image">
                             <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-1.svg" alt=""/>
@@ -2871,6 +2997,15 @@ table {
                             <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-6.svg" alt=""/>
                         </div>
                         <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-7.svg" alt=""/>
+                        </div>
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-8.svg" alt=""/>
+                        </div>
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-9.svg" alt=""/>
+                        </div>
+                        <!-- <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-1-mobile.svg" alt=""/>
                         </div>
                         <div class="wrapper-image">
@@ -2887,7 +3022,7 @@ table {
                         </div>
                         <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-6-mobile.svg" alt=""/>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -3103,7 +3238,7 @@ table {
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                        Designathon 2024 is an Offline event organized in Ho Chi Minh City
+                        Designathon 2024 is an Offline event organized in Holiday Inn - 18E Cong Hoa Street, Tan Binh Ward, Ho Chi Minh City.
                         </div>
                         </div>
                     </div>
