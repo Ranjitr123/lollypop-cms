@@ -2907,7 +2907,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-2.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Registration Timeline</h3>
-                    <p class="white-color">Registration Period: <span class="yellow-color">10/08/2024 - 26/08/2024.</span></p>
+                    <p class="white-color">Registration Period: <span class="yellow-color">10/08/2024 - 03/09/2024.</span></p>
                     <p class="white-color">Due to limited slots, early and suitable applicants will be prioritized. Results will be sent to each participant via email.</p>
                 </div>
             </div>
@@ -3305,7 +3305,7 @@ table {
                             </h2>
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                          <div class="accordion-body">
-                         The registration deadline for Designathon 2024 is August 26, 2024. However, the organizers reserve the right to close the registration form earlier than the stated deadline if they receive a sufficient number of qualified contestants.
+                         The registration deadline for Designathon 2024 is September 3, 2024. However, the organizers reserve the right to close the registration form earlier than the stated deadline if they receive a sufficient number of qualified contestants.
                         </div>
                         </div>
                     </div>
@@ -3480,7 +3480,7 @@ get_footer('designathon2024');
     }
 })();
     // Set the date we're counting down to
-    const countDownDate = new Date("Aug 26, 2024 23:59:59").getTime();
+    const countDownDate = new Date("Sep 3, 2024 23:59:59").getTime();
 
     // Update the count down every 1 second
     const x = setInterval(function() {

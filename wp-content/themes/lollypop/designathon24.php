@@ -2888,7 +2888,7 @@ table {
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/rule-2.svg" alt="rule-1"/>
                     </div>
                     <h3 class="font-dfvn-float pink-color title-1">Thời gian đăng ký</h3>
-                    <p class="white-color">Thời gian đăng ký: <span class="yellow-color">10/08/2024 - 26/08/2024.</span></p>
+                    <p class="white-color">Thời gian đăng ký: <span class="yellow-color">10/08/2024 - 03/09/2024.</span></p>
                     <p class="white-color">Vì số lượng thí sinh có hạn, BTC sẽ ưu tiên đánh giá và lựa chọn những thí sinh đăng ký sớm và phù hợp nhất. Kết quả sẽ được gửi đến từng thí sinh thông qua email.</p>
                 </div>
             </div>
@@ -3286,7 +3286,7 @@ table {
                             </h2>
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                          <div class="accordion-body">
-                         Hạn chót đăng ký là ngày 26/08/2024. Tuy nhiên, BTC có thể dừng nhận đơn đăng ký sớm hơn dự kiến nếu đủ thí sinh.
+                         Hạn chót đăng ký là ngày 03/09/2024. Tuy nhiên, BTC có thể dừng nhận đơn đăng ký sớm hơn dự kiến nếu đủ thí sinh.
                         </div>
                         </div>
                     </div>
@@ -3459,7 +3459,7 @@ get_footer('designathon2024');
 	slider.addEventListener('touchend', end);
 })();
     // Set the date we're counting down to
-    const countDownDate = new Date("Aug 26, 2024 23:59:59").getTime();
+    const countDownDate = new Date("Sep 3, 2024 23:59:59").getTime();
 
     // Update the count down every 1 second
     const x = setInterval(function() {
