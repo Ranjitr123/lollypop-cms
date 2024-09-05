@@ -255,6 +255,7 @@ table {
         .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item ul li .pink-color {
             width: 40px;
         }
+      
     }
     @media screen and (min-width:1100px) and (max-width:1200px){
         .container {
@@ -1138,7 +1139,7 @@ table {
         justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-        width:auto;
+        width:calc(20% - 30px);
         max-height:75px;
         text-align: right;
     }

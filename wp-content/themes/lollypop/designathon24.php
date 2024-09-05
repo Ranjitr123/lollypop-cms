@@ -248,7 +248,7 @@ table {
             align-items:center;
         }
     }
-    @media screen (max-width:1100px){
+    @media (max-width:1100px){
         .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item {
             padding: 20px;
         }   
@@ -1133,7 +1133,7 @@ table {
         justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-        width:auto;
+        width:calc(20% - 30px);
         max-height:75px;
         text-align: right;
     }
