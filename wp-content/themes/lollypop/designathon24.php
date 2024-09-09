@@ -248,7 +248,7 @@ table {
             align-items:center;
         }
     }
-    @media screen (max-width:1100px){
+    @media (max-width:1100px){
         .section-timeline-schedule .block-timeline .timeline-item .timeline-inner-item {
             padding: 20px;
         }   
@@ -1133,7 +1133,7 @@ table {
         justify-content: flex-start;
     }
     .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-        width:auto;
+        width:calc(20% - 30px);
         max-height:75px;
         text-align: right;
     }
@@ -2142,7 +2142,10 @@ table {
             margin-bottom:32px;
         }
         .section-partner .grid-partner .grid-item .list-image .wrapper-image{
-            width:calc(33.33% - 14px);
+            width:calc(25% - 14px);
+        }
+        .section-partner .grid-partner .grid-item .list-image{
+            justify-content:flex-start;
         }
         .section-partner .grid-partner .grid-item .list-image .wrapper-image img{
             width:60%;
@@ -2985,6 +2988,9 @@ table {
                         </div>
                         <div class="wrapper-image">
                             <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-9.svg" alt=""/>
+                        </div>
+                        <div class="wrapper-image">
+                            <img class="image-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-10.svg" alt=""/>
                         </div>
                         <!-- <div class="wrapper-image">
                             <img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/designathon24/logo-partner-1-mobile.svg" alt=""/>
