@@ -339,7 +339,18 @@ get_header();
             }
         }
 
-        >div:nth-child(4),
+        >div:nth-child(4) {
+            .content_img {
+                width: 130%;
+                max-width: 130%;
+                position: relative;
+            }
+
+            .define_web_image {
+                display: none;
+            }
+        }
+
         >div:nth-child(5),
         >div:nth-child(7),
         >div:nth-child(8),
@@ -358,6 +369,21 @@ get_header();
                 .title-desc {
                     color: #0C1121;
                     opacity: 0.1;
+                }
+            }
+        }
+
+        >div:nth-child(10) {
+            .title-desc-wrapper {
+                width: 130%;
+                text-align: center;
+
+                .title-desc {
+                    color: #0C1121;
+                    opacity: 0.1;
+                    display: inline-block;
+                    width: 100% !important;
+                    font-size: 164px;
                 }
             }
         }
@@ -402,6 +428,21 @@ get_header();
         }
     }
 
+    .vector_image {
+        width: 50% !important;
+        position: absolute;
+        bottom: 570px;
+        left: 600px;
+        color: linear-gradient(#E7131A 100%, #F7F5F3 100%);
+
+        img {
+            position: absolute;
+            bottom: 10px;
+            object-fit: cover;
+
+        }
+    }
+
     .define_web_image {
         margin-top: 40px;
     }
@@ -415,21 +456,67 @@ get_header();
 
     }
 
-    @media (max-width: 1168px) {
+    @media (max-width: 1200px) {
         .sub-title {
             font-size: 14px;
         }
 
+        .define_desc {
+
+            >div:nth-child(4),
+            >div:nth-child(5),
+            >div:nth-child(7),
+            >div:nth-child(8),
+            >div:nth-child(9),
+            >div:nth-child(10) {
+                .content_img {
+                    width: 100%;
+                }
+            }
+
+            .vector_image {
+                width: 47% !important;
+            }
+        }
+
     }
 
-    @media (max-width: 900px) {
-        .title-desc {
-            font-size: 90px;
-        }
+    @media (max-width: 992px) {
 
         .sub-title {
             font-size: 12px;
         }
+
+        .define_desc {
+            .vector_image {
+                width: 38% !important;
+
+                img {
+                    left: -154px;
+                    bottom: -95px;
+                }
+            }
+            >div:nth-child(4),
+            >div:nth-child(6),
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+
+                        font-size: 80px;
+                    }
+                }
+            }
+
+            .content_img {
+                width: 100%;
+            }
+        }
+
+        .vector_image {
+            width: 47% !important;
+        }
+    }
+
     }
 
     @media (max-width: 768px) {
@@ -439,6 +526,26 @@ get_header();
 
         .title-desc {
             font-size: 64px;
+            line-height: 68px;
+        }
+
+        .vector_image {
+            display: none;
+        }
+
+        .define_desc {
+            .define_desc__item {
+                .sub-title {
+                    div {
+                        max-width: 100% !important;
+                    }
+                }
+
+                .content_img {
+                    width: 100% !important;
+                }
+            }
+
         }
     }
 
@@ -448,7 +555,8 @@ get_header();
         }
 
         .title-desc {
-            font-size: 52px;
+            font-size: 74px;
+            font-weight: 900;
             line-height: 80px;
         }
     }
@@ -675,8 +783,21 @@ get_header();
                                     <?php
                                     $image = get_sub_field('define_selected_image');
                                     if ($image != '') { ?>
-                                        <div class="w-120 content_img"><img class="img-project-dtl data-scroll lazyloaded"
-                                                src="<?php the_sub_field('define_selected_image'); ?>" alt="Image"></div>
+                                        <div class="w-120 content_img">
+
+                                            <?php if (have_rows('web_image')):
+                                                while (have_rows('web_image')):
+                                                    the_row();
+                                                    $webImage = get_sub_field('images');
+                                                    if ($webImage != '') { ?>
+                                                        <div class="vector_image"><img class="img-project-dtl data-scroll"
+                                                                src="<?php the_sub_field('images'); ?>" alt="Image"></div>
+                                                    <?php } ?>
+                                                <?php endwhile;
+                                            endif; ?>
+                                            <img class="img-project-dtl data-scroll lazyloaded"
+                                                src="<?php the_sub_field('define_selected_image'); ?>" alt="Image">
+                                        </div>
                                     <?php } ?>
 
                                     <!-- Web IMG -->
@@ -796,7 +917,7 @@ get_header();
                                     <h2 class="fnt-50 fnt-800 clr-white">Let’s craft brilliance together!</h2>
                                 </div><a class="web-btn web-btn--red" style="color:white"
                                     href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
-                                    
+
                             </div>
                         </div>
                     </div>
