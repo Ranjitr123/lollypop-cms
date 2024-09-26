@@ -225,30 +225,6 @@ get_header();
         transform-origin: 82% 66%;
     }
 
-    @media (max-width: 768px) {
-        .titleSection {
-            font-size: 24px;
-            line-height: 30px;
-        }
-
-
-        .titleBlue::before {
-            width: 20px;
-            height: 20px;
-            left: -8px;
-            top: 0;
-        }
-
-        .titleSection__subtitle {
-            text-align: center;
-        }
-
-        .wireframe_images {
-            flex-direction: column;
-            gap: 1rem;
-        }
-    }
-
     .step-between {
         >div:first-of-type {
             margin: 0;
@@ -333,6 +309,26 @@ get_header();
             }
         }
 
+        >div:nth-child(4) {
+
+            >div:nth-child(3),
+            >div:nth-child(4) {
+                width: 55% !important;
+                position: relative;
+                left: -96px !important;
+            }
+
+            >div:nth-child(5) {
+                width: 130% !important;
+            }
+        }
+
+        >div:nth-child(5) {
+            >div:nth-child(3) {
+                width: 130% !important;
+            }
+        }
+
         >div:last-of-type {
             >div:last-of-type {
                 text-align: start;
@@ -346,16 +342,25 @@ get_header();
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 80px;
+        position: relative;
+    }
 
+    .define_title {
+        /* position: absolute;
+        left: -316px;
+        top: 331px;
+        z-index: 1; */
     }
 
     .title-desc {
-        font-size: 120px;
-        font: Alatsi;
-        background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%);
+        font-size: 48px;
+        font: Outfit;
+        color: #0D0E10;
+        /* background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
+        -webkit-text-fill-color: transparent; */
+        font-weight: 700;
         width: 100%;
     }
 
@@ -386,6 +391,37 @@ get_header();
             font-size: 14px;
         }
 
+        .define_desc {
+            >div:first-of-type {
+                >div:last-of-type {
+                    margin-bottom: -166px;
+                }
+            }
+            >div:nth-child(4) {
+                >div:nth-child(3),
+                >div:nth-child(4) {
+                    width: 55% !important;
+                    position: relative;
+                    left: -96px !important;
+                }
+
+                >div:nth-child(5) {
+                    width: 118% !important;
+                }
+            }
+
+            >div:nth-child(5) {
+                >div:nth-child(3) {
+                    width: 118% !important;
+                }
+            }
+
+            >div:last-of-type {
+                >div:last-of-type {
+                    text-align: start;
+                }
+            }
+        }
     }
 
     @media (max-width: 900px) {
@@ -399,8 +435,58 @@ get_header();
     }
 
     @media (max-width: 768px) {
-        .title-desc {
-            font-size: 80px;
+        .titleSection {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+
+        .titleBlue::before {
+            width: 20px;
+            height: 20px;
+            left: -8px;
+            top: 0;
+        }
+
+        .titleSection__subtitle {
+            text-align: center;
+        }
+
+        .wireframe_images {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .define_desc {
+            >div:first-of-type {
+                >div:last-of-type {
+                    margin-bottom: -166px;
+                }
+            }
+            >div:nth-child(4) {
+                >div:nth-child(3),
+                >div:nth-child(4) {
+                    width: 55% !important;
+                    position: relative;
+                    left: -96px !important;
+                }
+
+                >div:nth-child(5) {
+                    width: 100% !important;
+                }
+            }
+
+            >div:nth-child(5) {
+                >div:nth-child(3) {
+                    width: 100% !important;
+                }
+            }
+
+            >div:last-of-type {
+                >div:last-of-type {
+                    text-align: start;
+                }
+            }
         }
     }
 
@@ -420,7 +506,7 @@ get_header();
 
             img {
                 width: 100%;
-                transform: rotate(-4deg);
+                /* transform: rotate(-4deg); */
             }
         }
 
@@ -463,19 +549,6 @@ get_header();
         font-weight: 700;
         text-align: center;
         color: #FD2E35;
-    }
-
-    @media (max-width: 1168px) {
-
-        .conclusion-title {
-            /* font-size: 74px; */
-        }
-    }
-
-    @media (max-width: 576px) {
-        .conclusion-title {
-            /* font-size: 62px; */
-        }
     }
 
     .web-img {
@@ -533,9 +606,9 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <!-- <img class="wpdm-img" src="<?php the_field('thumbnail_image') ?>" alt="Image"> -->
+                    <img class="wpdm-img" src="<?php the_field('thumbnail_image') ?>" alt="Image">
 
-                    <?php $bannerVideo = get_field('banner_video_link'); ?>
+                    <!-- <?php $bannerVideo = get_field('banner_video_link'); ?>
                     <?php if ($bannerVideo != '') { ?>
                         <div class="reveal-project">
                             <div class="play-video-on-scroll">
@@ -550,7 +623,7 @@ get_header();
                                 </video>
                             </div>
                         </div>
-                    <?php } ?>
+                    <?php } ?> -->
                 </div>
             </div>
         </div>
@@ -605,10 +678,10 @@ get_header();
                                 the_row(); ?>
                                 <div class="define_desc__item">
                                     <!-- Title -->
-                                    <div class="col-12 text-center">
+                                    <div class="col-12 text-center define_title">
                                         <span class="data-scroll title-desc"><?php the_sub_field('title'); ?></span>
                                     </div>
-                                    <!-- content -->
+                                    <!-- Content -->
                                     <div class="col-12 sub-title">
                                         <?php the_sub_field('content'); ?>
                                     </div>
@@ -667,8 +740,8 @@ get_header();
                 if (have_rows('images_section')):
                     while (have_rows('images_section')):
                         the_row(); ?>
-                        <div class="m-img img-fullW mt-0"><img class="data-scroll" src="<?php the_sub_field('image'); ?>"
-                                alt="Image"></div>
+                        <div class="m-img img-fullW mt-0"><img class="data-scroll" src="<?php the_sub_field('image'); ?>" alt="Image">
+                        </div>
                     <?php endwhile; endif; ?>
             <?php endwhile;
         endif; ?>
@@ -689,7 +762,7 @@ get_header();
                                         <div class="project-step">
                                             <div class="project-step__item row text-center">
                                                 <div class="col-4">
-                                                    <h3 class="data-scroll conclusion-title">
+                                                    <h3 class="data-scroll conclusion-title text-uppercase">
                                                         Conclusion</h3>
                                                 </div>
                                                 <div class="col-8 project-step-disc">
