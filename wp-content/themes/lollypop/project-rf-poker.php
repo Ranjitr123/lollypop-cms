@@ -304,28 +304,46 @@ get_header();
         gap: 112px;
 
         >div:first-of-type {
-            >div:last-of-type {
-                margin-bottom: -166px;
+            margin-top: 0;
+            >div:nth-child(5) {
+                margin-top: 40px;
             }
         }
 
-        >div:nth-child(4) {
+        >div:last-of-type {
+            margin-top: 0px;
+        }
 
+        >div:nth-child(3) {
+            margin-top: 0;
+            >div:nth-child(3) {
+                width: 148% !important;
+            }
+
+        }
+
+        >div:nth-child(4) {
+            margin-top: 0;
             >div:nth-child(3),
             >div:nth-child(4) {
-                width: 55% !important;
+                width: 60% !important;
                 position: relative;
-                left: -96px !important;
+                left: -170px !important;
+                margin-top: 40px;
+
             }
 
             >div:nth-child(5) {
-                width: 130% !important;
+                width: 148% !important;
+                margin-top: 40px;
+
             }
         }
 
         >div:nth-child(5) {
+            margin-top: 0;
             >div:nth-child(3) {
-                width: 130% !important;
+                width: 148% !important;
             }
         }
 
@@ -342,7 +360,7 @@ get_header();
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 80px;
+        /* margin-top: 80px; */
         position: relative;
     }
 
@@ -375,7 +393,7 @@ get_header();
     }
 
     .define_web_image {
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
 
     .list_content {
@@ -397,6 +415,12 @@ get_header();
                     margin-bottom: -166px;
                 }
             }
+
+            >div:nth-child(3) {
+                >div:nth-child(3) {
+                    width: 110% !important;
+                }
+            }
             >div:nth-child(4) {
                 >div:nth-child(3),
                 >div:nth-child(4) {
@@ -406,7 +430,7 @@ get_header();
                 }
 
                 >div:nth-child(5) {
-                    width: 118% !important;
+                    width: 110% !important;
                 }
             }
 
@@ -422,6 +446,29 @@ get_header();
                 }
             }
         }
+    }
+
+    @media (max-width: 1024px) {
+        .define_desc {
+            >div:nth-child(3) {
+                >div:nth-child(3) {
+                    width: 103% !important;
+                }
+            }
+
+            >div:nth-child(4) {
+                >div:nth-child(5) {
+                    width: 103% !important;
+                }
+            }
+
+            >div:nth-child(5) {
+                >div:nth-child(3) {
+                    width: 107% !important;
+                }
+            }
+        }
+
     }
 
     @media (max-width: 900px) {
@@ -461,6 +508,12 @@ get_header();
             >div:first-of-type {
                 >div:last-of-type {
                     margin-bottom: -166px;
+                }
+            }
+
+            >div:nth-child(3) {
+                >div:nth-child(3) {
+                    width: 100% !important;
                 }
             }
             >div:nth-child(4) {
@@ -531,7 +584,6 @@ get_header();
             align-items: center;
 
             img {
-                max-width: 1160px;
                 width: 100%;
                 height: 100%;
             }
@@ -539,7 +591,6 @@ get_header();
     }
 
     .conclusion {
-        margin-top: 254px;
         background-color: #F7F5F3;
     }
 
@@ -733,7 +784,7 @@ get_header();
     </section>
 
     <!-- Emaars sections -->
-    <section class="p-r-80 pb-0 pare-define emaars">
+    <section class="p-r-80 pb-0 mt-5 pare-define emaars">
         <?php if (have_rows('emaars_digital_booking')):
             while (have_rows('emaars_digital_booking')):
                 the_row();
