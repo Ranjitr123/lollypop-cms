@@ -369,6 +369,7 @@ get_header();
                 .title-desc {
                     color: #0C1121;
                     opacity: 0.1;
+                    font-weight: 900;
                 }
             }
         }
@@ -396,9 +397,6 @@ get_header();
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-
-
     }
 
     .title-desc-wrapper {
@@ -431,7 +429,7 @@ get_header();
     .vector_image {
         width: 50% !important;
         position: absolute;
-        bottom: 570px;
+        bottom: 540px;
         left: 600px;
         color: linear-gradient(#E7131A 100%, #F7F5F3 100%);
 
@@ -450,12 +448,7 @@ get_header();
     .list_content {
         margin-top: 80px;
     }
-
-    .content_img {
-        margin-top: 50px;
-
-    }
-
+   
     @media (max-width: 1200px) {
         .sub-title {
             font-size: 14px;
@@ -469,6 +462,12 @@ get_header();
             >div:nth-child(8),
             >div:nth-child(9),
             >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        font-size: 130px;
+                    }
+                }
+
                 .content_img {
                     width: 100%;
                 }
@@ -479,6 +478,40 @@ get_header();
             }
         }
 
+    }
+
+    @media (max-width: 1024px) {
+        .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 164px;
+                        font-weight: 900;
+                        width: 82% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 52% !important;
+                    left: 460px;
+                    bottom: 480px;
+                }
+            }
+
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    width: 100%;
+                    .title-desc {
+                        font-size: 120px;
+                    }
+                }
+
+                .content_img {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     @media (max-width: 992px) {
@@ -496,6 +529,7 @@ get_header();
                     bottom: -95px;
                 }
             }
+
             >div:nth-child(4),
             >div:nth-child(6),
             >div:nth-child(10) {
@@ -517,7 +551,6 @@ get_header();
         }
     }
 
-    }
 
     @media (max-width: 768px) {
         .title-desc-wrapper {
@@ -529,11 +562,29 @@ get_header();
             line-height: 68px;
         }
 
-        .vector_image {
-            display: none;
-        }
-
         .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 64px;
+                        line-height: 68px;
+                        font-weight: 900;
+                        width: 82% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 28% !important;
+
+                    img {
+                        left: 40px;
+                        bottom: -55px;
+                        width: 109%;
+                    }
+                }
+            }
+
             .define_desc__item {
                 .sub-title {
                     div {
@@ -546,10 +597,50 @@ get_header();
                 }
             }
 
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    width: 80%;
+                }
+            }
         }
+
     }
 
     @media (max-width: 576px) {
+        .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 64px;
+                        line-height: 68px;
+                        font-weight: 900;
+                        width: 46% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 15% !important;
+
+                    img {
+                    left: -115px;
+                    bottom: -110px;
+                    max-width: 250%;
+                    width: 225%;
+                    }
+                }
+            }
+
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+
         .title-desc-wrapper {
             text-align: center;
         }
@@ -692,7 +783,7 @@ get_header();
                                         while (have_rows('tags')):
                                             the_row(); ?>
                                             <span class="fnt-14 clr-black354"><?php echo the_sub_field('list'); ?></span>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                 </div>
                             </div>
@@ -748,7 +839,7 @@ get_header();
                                                 <?php } ?>
                                             </div>
                                         </div>
-                                    <?php endwhile;
+                                <?php endwhile;
                                 endif; ?>
                             </div>
                         </div>
@@ -790,10 +881,9 @@ get_header();
                                                     the_row();
                                                     $webImage = get_sub_field('images');
                                                     if ($webImage != '') { ?>
-                                                        <div class="vector_image"><img class="img-project-dtl data-scroll"
-                                                                src="<?php the_sub_field('images'); ?>" alt="Image"></div>
+                                                        <div class="vector_image"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>" alt="Image"></div>
                                                     <?php } ?>
-                                                <?php endwhile;
+                                            <?php endwhile;
                                             endif; ?>
                                             <img class="img-project-dtl data-scroll lazyloaded"
                                                 src="<?php the_sub_field('define_selected_image'); ?>" alt="Image">
@@ -809,7 +899,7 @@ get_header();
                                                 <div class="w-100 define_web_image"><img class="img-project-dtl data-scroll"
                                                         src="<?php the_sub_field('images'); ?>" alt="Image"></div>
                                             <?php } ?>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                     <!-- List content -->
                                     <?php if (have_rows('list_content')):
@@ -828,10 +918,10 @@ get_header();
 
                                                 </div>
                                             <?php } ?>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                 </div>
-                            <?php endwhile;
+                        <?php endwhile;
                         endif; ?>
                     </div>
                 </div>
@@ -849,7 +939,8 @@ get_header();
                         the_row(); ?>
                         <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('image'); ?>"
                                 alt="Image"></div>
-                    <?php endwhile; endif; ?>
+                    <?php endwhile;
+                endif; ?>
             <?php endwhile;
         endif; ?>
     </section> -->
@@ -891,7 +982,7 @@ get_header();
 
     <!-- Section Web Image -->
 
-    <section class="p-r-80 pb-0 web-img">
+    <!-- <section class="p-r-80 pb-0 web-img">
         <?php if (have_rows('web_image')):
             while (have_rows('web_image')):
                 the_row();
@@ -900,12 +991,13 @@ get_header();
                     <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('project_gallery'); ?>"
                             alt="Image"></div>
                 <?php } ?>
-            <?php endwhile; endif; ?>
-    </section>
+            <?php endwhile;
+        endif; ?>
+    </section> -->
 
     <!-- Section Footer -->
 
-    <section class="sec-footer-trans">
+    <section class="sec-footer-trans" style="margin-top: 164px;">
         <div class="container z-1">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
