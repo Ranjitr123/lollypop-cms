@@ -338,6 +338,57 @@ get_header();
                 text-align: start;
             }
         }
+
+        >div:nth-child(4) {
+            .content_img {
+                width: 130%;
+                max-width: 130%;
+                position: relative;
+            }
+
+            .define_web_image {
+                display: none;
+            }
+        }
+
+        >div:nth-child(5),
+        >div:nth-child(7),
+        >div:nth-child(8),
+        >div:nth-child(9),
+        >div:nth-child(10) {
+            .content_img {
+                width: 130%;
+                max-width: 130%;
+            }
+        }
+
+        >div:nth-child(6) {
+            .title-desc-wrapper {
+                text-align: center;
+
+                .title-desc {
+                    color: #0C1121;
+                    opacity: 0.1;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        >div:nth-child(10) {
+            .title-desc-wrapper {
+                width: 130%;
+                text-align: center;
+
+                .title-desc {
+                    color: #0C1121;
+                    opacity: 0.1;
+                    display: inline-block;
+                    width: 100% !important;
+                    font-size: 164px;
+                }
+            }
+        }
+
     }
 
     .define_desc__item {
@@ -346,26 +397,47 @@ get_header();
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
 
+    .title-desc-wrapper {
+        text-align: left;
     }
 
     .title-desc {
-        font-size: 120px;
-        font: Alatsi;
-        background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
+        font-size: 200px;
+        font-weight: 900;
+        line-height: 170px;
+        color: #E8962A;
+        font: Inter;
+        opacity: 0.2;
+        /* background: linear-gradient(90deg, #FD2E35 0%, #971B20 100%); */
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
         width: 100%;
     }
 
     .sub-title {
         margin-top: 40px;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
 
         >div:nth-child(2) {
             text-align: start;
+        }
+    }
+
+    .vector_image {
+        width: 50% !important;
+        position: absolute;
+        bottom: 540px;
+        left: 600px;
+        color: linear-gradient(#E7131A 100%, #F7F5F3 100%);
+
+        img {
+            position: absolute;
+            bottom: 10px;
+            object-fit: cover;
+
         }
     }
 
@@ -376,37 +448,207 @@ get_header();
     .list_content {
         margin-top: 80px;
     }
-
-    .content_img {
-        margin-top: 80px;
-    }
-
-    @media (max-width: 1168px) {
+   
+    @media (max-width: 1200px) {
         .sub-title {
             font-size: 14px;
         }
 
+        .define_desc {
+
+            >div:nth-child(4),
+            >div:nth-child(5),
+            >div:nth-child(7),
+            >div:nth-child(8),
+            >div:nth-child(9),
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        font-size: 130px;
+                    }
+                }
+
+                .content_img {
+                    width: 100%;
+                }
+            }
+
+            .vector_image {
+                width: 47% !important;
+            }
+        }
+
     }
 
-    @media (max-width: 900px) {
-        .title-desc {
-            font-size: 90px;
+    @media (max-width: 1024px) {
+        .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 164px;
+                        font-weight: 900;
+                        width: 82% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 52% !important;
+                    left: 460px;
+                    bottom: 480px;
+                }
+            }
+
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    width: 100%;
+                    .title-desc {
+                        font-size: 120px;
+                    }
+                }
+
+                .content_img {
+                    width: 100%;
+                }
+            }
         }
+    }
+
+    @media (max-width: 992px) {
 
         .sub-title {
             font-size: 12px;
         }
-    }
 
-    @media (max-width: 768px) {
-        .title-desc {
-            font-size: 80px;
+        .define_desc {
+            .vector_image {
+                width: 38% !important;
+
+                img {
+                    left: -154px;
+                    bottom: -95px;
+                }
+            }
+
+            >div:nth-child(4),
+            >div:nth-child(6),
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+
+                        font-size: 80px;
+                    }
+                }
+            }
+
+            .content_img {
+                width: 100%;
+            }
+        }
+
+        .vector_image {
+            width: 47% !important;
         }
     }
 
-    @media (max-width: 576px) {
+
+    @media (max-width: 768px) {
+        .title-desc-wrapper {
+            text-align: center;
+        }
+
         .title-desc {
             font-size: 64px;
+            line-height: 68px;
+        }
+
+        .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 64px;
+                        line-height: 68px;
+                        font-weight: 900;
+                        width: 82% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 28% !important;
+
+                    img {
+                        left: 40px;
+                        bottom: -55px;
+                        width: 109%;
+                    }
+                }
+            }
+
+            .define_desc__item {
+                .sub-title {
+                    div {
+                        max-width: 100% !important;
+                    }
+                }
+
+                .content_img {
+                    width: 100% !important;
+                }
+            }
+
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        .define_desc {
+            >div:nth-child(4) {
+                .title-desc-wrapper {
+                    .title-desc {
+                        display: flex;
+                        font-size: 64px;
+                        line-height: 68px;
+                        font-weight: 900;
+                        width: 46% !important;
+                    }
+                }
+
+                .vector_image {
+                    width: 15% !important;
+
+                    img {
+                    left: -115px;
+                    bottom: -110px;
+                    max-width: 250%;
+                    width: 225%;
+                    }
+                }
+            }
+
+            >div:nth-child(10) {
+                .title-desc-wrapper {
+                    .title-desc {
+
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+
+        .title-desc-wrapper {
+            text-align: center;
+        }
+
+        .title-desc {
+            font-size: 74px;
+            font-weight: 900;
+            line-height: 80px;
         }
     }
 
@@ -541,7 +783,7 @@ get_header();
                                         while (have_rows('tags')):
                                             the_row(); ?>
                                             <span class="fnt-14 clr-black354"><?php echo the_sub_field('list'); ?></span>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                 </div>
                             </div>
@@ -557,7 +799,7 @@ get_header();
                                     <div id="play2" data-plyr-provider="youtube"
                                         data-plyr-embed-id="<?php the_field('banner_video_link'); ?>"></div>
                                 </div>
-                                <video class="playvid" controls autoplay muted loop playsinline
+                                <video class="playvid" autoplay muted loop playsinline
                                     embed-id="<?php the_field('banner_video_link'); ?>"
                                     provider="<?php the_field('banner_video_provider'); ?>"
                                     poster="<?php the_field('banner_video_poster'); ?>"></video>
@@ -597,7 +839,7 @@ get_header();
                                                 <?php } ?>
                                             </div>
                                         </div>
-                                    <?php endwhile;
+                                <?php endwhile;
                                 endif; ?>
                             </div>
                         </div>
@@ -619,19 +861,33 @@ get_header();
                                 the_row(); ?>
                                 <div class="define_desc__item">
                                     <!-- Title -->
-                                    <div class="col-12 text-center">
-                                        <span class="data-scroll title-desc"><?php the_sub_field('title'); ?></span>
+                                    <div class="col-12 text-uppercase title-desc-wrapper">
+                                        <span class="title-desc"><?php the_sub_field('title'); ?></span>
                                     </div>
                                     <!-- content -->
                                     <div class="col-12 sub-title">
-                                        <?php the_sub_field('content'); ?>
+                                        <div style="max-width: 638px;">
+                                            <?php the_sub_field('content'); ?>
+                                        </div>
                                     </div>
                                     <!-- Content IMG -->
                                     <?php
                                     $image = get_sub_field('define_selected_image');
                                     if ($image != '') { ?>
-                                        <div class="w-100 content_img"><img class="img-project-dtl data-scroll lazyloaded"
-                                                src="<?php the_sub_field('define_selected_image'); ?>" alt="Image"></div>
+                                        <div class="w-120 content_img">
+
+                                            <?php if (have_rows('web_image')):
+                                                while (have_rows('web_image')):
+                                                    the_row();
+                                                    $webImage = get_sub_field('images');
+                                                    if ($webImage != '') { ?>
+                                                        <div class="vector_image"><img class="img-project-dtl data-scroll" src="<?php the_sub_field('images'); ?>" alt="Image"></div>
+                                                    <?php } ?>
+                                            <?php endwhile;
+                                            endif; ?>
+                                            <img class="img-project-dtl data-scroll lazyloaded"
+                                                src="<?php the_sub_field('define_selected_image'); ?>" alt="Image">
+                                        </div>
                                     <?php } ?>
 
                                     <!-- Web IMG -->
@@ -643,7 +899,7 @@ get_header();
                                                 <div class="w-100 define_web_image"><img class="img-project-dtl data-scroll"
                                                         src="<?php the_sub_field('images'); ?>" alt="Image"></div>
                                             <?php } ?>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                     <!-- List content -->
                                     <?php if (have_rows('list_content')):
@@ -662,10 +918,10 @@ get_header();
 
                                                 </div>
                                             <?php } ?>
-                                        <?php endwhile;
+                                    <?php endwhile;
                                     endif; ?>
                                 </div>
-                            <?php endwhile;
+                        <?php endwhile;
                         endif; ?>
                     </div>
                 </div>
@@ -674,7 +930,7 @@ get_header();
     </section>
 
     <!-- Emaars sections -->
-    <section class="p-r-80 pb-0 pare-define emaars">
+    <!-- <section class="p-r-80 pb-0 pare-define emaars">
         <?php if (have_rows('emaars_digital_booking')):
             while (have_rows('emaars_digital_booking')):
                 the_row();
@@ -683,15 +939,16 @@ get_header();
                         the_row(); ?>
                         <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('image'); ?>"
                                 alt="Image"></div>
-                    <?php endwhile; endif; ?>
+                    <?php endwhile;
+                endif; ?>
             <?php endwhile;
         endif; ?>
-    </section>
+    </section> -->
 
 
     <!-- Section Conclusion -->
 
-    <?php if (get_field('conclusion') != '') { ?>
+    <!-- <?php if (get_field('conclusion') != '') { ?>
         <section class="conclusion-pad sec-pt">
             <div class="container conclusion">
                 <div class="row">
@@ -721,11 +978,11 @@ get_header();
                     </div>
                 </div>
         </section>
-    <?php } ?>
+    <?php } ?> -->
 
     <!-- Section Web Image -->
 
-    <section class="p-r-80 pb-0 web-img">
+    <!-- <section class="p-r-80 pb-0 web-img">
         <?php if (have_rows('web_image')):
             while (have_rows('web_image')):
                 the_row();
@@ -734,12 +991,13 @@ get_header();
                     <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('project_gallery'); ?>"
                             alt="Image"></div>
                 <?php } ?>
-            <?php endwhile; endif; ?>
-    </section>
+            <?php endwhile;
+        endif; ?>
+    </section> -->
 
     <!-- Section Footer -->
 
-    <section class="sec-footer-trans">
+    <section class="sec-footer-trans" style="margin-top: 164px;">
         <div class="container z-1">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
@@ -749,8 +1007,9 @@ get_header();
                                 <div class="mb-45"><span class="d-block fnt-24 mb-2 pb-2 mb-md-4 pb-md-0">Thinking of
                                         design?</span>
                                     <h2 class="fnt-50 fnt-800 clr-white">Let’s craft brilliance together!</h2>
-                                </div><a class="web-btn web-btn--red"
+                                </div><a class="web-btn web-btn--red" style="color:white"
                                     href="<?php echo site_url(); ?>/project-enquiry/">Get In Touch</a>
+
                             </div>
                         </div>
                     </div>
