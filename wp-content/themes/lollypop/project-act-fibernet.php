@@ -948,7 +948,7 @@ get_header();
 
     <!-- Section Conclusion -->
 
-    <?php if (get_field('conclusion') != '') { ?>
+    <!-- <?php if (get_field('conclusion') != '') { ?>
         <section class="conclusion-pad sec-pt">
             <div class="container conclusion">
                 <div class="row">
@@ -978,7 +978,7 @@ get_header();
                     </div>
                 </div>
         </section>
-    <?php } ?>
+    <?php } ?> -->
 
     <!-- Section Web Image -->
 
