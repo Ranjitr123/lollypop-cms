@@ -33,6 +33,7 @@ get_header();
         color: #C30010;
         padding-bottom: 56px;
         padding-top: 56px;
+        font-family: 'iCielBC Cubano';
     }
 
 
