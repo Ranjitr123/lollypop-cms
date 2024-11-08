@@ -358,12 +358,29 @@ get_header();
                         </div>
                     <?php } ?>
 
-                    <!-- Main Image 3 -->
-                    <?php if (get_sub_field('main_image_3') != '') { ?>
-                        <div class="w-100 main_image_3"><img class="img-project-dtl data-scroll"
-                                src="<?php the_sub_field('main_image_3'); ?>" alt="Image">
-                        </div>
-                    <?php } ?>
+                                  <!-- Main Images Wrapper -->
+        <div class="image-wrapper" style="position: relative; width: 100%;">
+
+        <!-- Main Image 3 (Background Image) -->
+        <?php if (get_sub_field('main_image_3') != '') { ?>
+            <div class="w-100 main_image_3">
+                <img class="img-project-dtl data-scroll"
+                    src="<?php the_sub_field('main_image_3'); ?>" 
+                        alt="Image">
+            </div>
+        <?php } ?>
+
+        <!-- Main Image 4 (Centered Overlap Image) -->
+        <?php if (get_sub_field('main_image_4') != '') { ?>
+            <div class="main_image_4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 280px;">
+                <img class="img-project-dtl data-scroll"
+                    src="<?php the_sub_field('main_image_4'); ?>" 
+                    alt="Image"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        <?php } ?>
+
+        </div>
                     <!-- Title 4 & content -->
                     <?php if (get_sub_field('title_4') != '') { ?>
                         <div class="row">
