@@ -13,7 +13,7 @@ get_header();
     /* Banner Section */
     .heading-banner-section {
         font-size: 72px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 86px;
         margin-bottom: 24px;
     }
@@ -24,7 +24,12 @@ get_header();
         line-height: 26px;
         margin-bottom: 22px;
     }
-
+    .clr-second{
+    color:#c30010!important; 
+    }
+    strong {
+    font-weight: 700; 
+    }
     .section-heading {
         font-size: 164px;
         font-weight: 400;
@@ -33,7 +38,8 @@ get_header();
         color: #C30010;
         padding-bottom: 56px;
         padding-top: 56px;
-        font-family: 'iCielBC Cubano';
+        /* font-family: 'iCielBC Cubano'!important; */
+        
     }
 
 
@@ -103,7 +109,7 @@ get_header();
 
         p {
             font-size: 24px;
-            font-weight: 400;
+            font-weight: 600;
             line-height: 36px;
             text-align: center;
             color: #C30010;
@@ -262,7 +268,7 @@ get_header();
                                                     <span
                                                         class="red-stroke clr-second fnt-24 text-start d-inline-block fnt-700 data-scroll disc-head text-rpd text-rpd--more"><?php the_sub_field('title_1'); ?></span>
                                                 </div>
-                                                <div class="col-12 col-md-8 project-step-disc gray-stroke position-relative px-0">
+                                                <div class="col-12 col-md-8 project-step-disc  gray-stroke position-relative px-0">
                                                     <div class="brief-content" style="position: relative;">
                                                         <?php the_sub_field('content_1'); ?>
                                                     </div>
@@ -405,7 +411,7 @@ get_header();
         </div>
     </section>
     <!-- Cards Section -->
-    <section class="sec-pd p-r-80">
+    <!-- <section class="sec-pd p-r-80">
         <div>
             <div class="w-100 cards-style">
                 <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -435,7 +441,7 @@ get_header();
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
     <!-- Section Footer -->
     <section class="sec-footer-trans" style="margin-top: 164px;">
         <div class="container z-1" style="max-width: 100%; padding: 0;">
