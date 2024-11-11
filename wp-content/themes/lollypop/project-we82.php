@@ -156,6 +156,33 @@ get_header();
         color: #00000099;
         text-decoration: underline;
     }
+    .full-width-background {
+        background-color: #C30010;
+        width: 100%;
+    }
+    .image-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px; /* Optional padding for better spacing */
+    }
+    .image-row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .image-item {
+        width: 22%; /* Adjust to fit four images per row with gaps */
+        display: flex;
+        justify-content: center;
+    }
+    .image-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 </style>
 
 <main class="main" style="background: #FFFFFF;
@@ -458,6 +485,35 @@ get_header();
         </div>
         </div>
     </section> -->
+
+    <?php if (have_rows('clickable_images')): ?>
+    <div class="full-width-background">
+        <div class="image-grid-container">
+            <div class="image-row">
+                <?php
+                $counter = 0;
+                while (have_rows('clickable_images')): the_row();
+                    $image = get_sub_field('image'); // This should be an array if set correctly in ACF
+                    $url = get_sub_field('url');
+                    $counter++;
+                    if ($counter > 8) break; // Ensures no more than 8 images are displayed
+                ?>
+                    <?php if ($image && is_array($image)): ?>
+                        <div class="image-item">
+                            <a href="<?php echo esc_url($url); ?>" target="_blank">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
+                            </a>
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($counter % 4 == 0): ?>
+                        </div><div class="image-row"> <!-- Start a new row after every 4 images -->
+                    <?php endif; ?>
+                <?php endwhile; ?>
+            </div> <!-- Closing the final row -->
+        </div>
+    </div>
+<?php endif; ?>
+
     <!-- Section Footer -->
     <section class="sec-footer-trans" style="margin-top: 164px;">
         <div class="container z-1" style="max-width: 100%; padding: 0;">
