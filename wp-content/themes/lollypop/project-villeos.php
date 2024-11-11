@@ -692,37 +692,59 @@ get_header();
 
     <!-- Section Conclusion -->
 
-    <?php if (get_field('conclusion') != '') { ?>
-        <section class="conclusion-pad sec-pt">
-            <div class="container conclusion">
-                <div class="row">
-                    <div class="col-md-12 mt-5">
-                        <div class="col-md-10 px-0 mx-auto">
-                            <div>
-                                <div class="col-md-10 px-0 mx-auto">
-                                    <div class="mb-r-80">
-                                        <div class="project-step">
-                                            <div class="project-step__item row text-center">
-                                                <div class="col-12">
-                                                    <h3 class="data-scroll conclusion-title">
-                                                        Conclusion</h3>
-                                                </div>
-                                                <div class="col-md-12 project-step-disc mt-4">
-                                                    <div
-                                                        class="project-step-disc__item conclusions data-scroll conclusion-subtitle">
-                                                        <?php echo the_field('conclusion'); ?>
+<?php if (have_rows('conclusion_2')): ?>
+    <section class="conclusion-pad sec-pt">
+        <div class="container conclusion">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <div class="col-md-10 px-0 mx-auto">
+                        <div class="mb-r-80">
+                            <div class="project-step">
+                                <?php while (have_rows('conclusion_2')): the_row(); ?>
+                                    <div class="row">
+                                        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+                                            <div class="col-md-10 px-0 mx-auto">
+                                                <div>
+                                                    <div class="project-step">
+                                                        <div class="brief-item row">
+                                                            <?php if (get_sub_field('title_1') != '' || get_sub_field('content_1') != ''): ?>
+                                                                <div class="col-12 mb-3">
+                                                                    <div class="title-content-block">
+                                                                        <?php if (get_sub_field('title_1') != ''): ?>
+                                                                            <div class="title mb-3"> <!-- Add margin-bottom here -->
+                                                                                <span class="clr-second fnt-24 text-start d-inline-block fnt-800 data-scroll disc-head text-rpd text-rpd--more">
+                                                                                    <?php the_sub_field('title_1'); ?>
+                                                                                </span>
+                                                                            </div>
+                                                                        <?php endif; ?>
+
+                                                                        <?php if (get_sub_field('content_1') != ''): ?>
+                                                                            <div class="content project-step-disc gray-stroke position-relative px-0">
+                                                                                <div class="brief-content" style="position: relative;">
+                                                                                    <?php the_sub_field('content_1'); ?>
+                                                                                </div>
+                                                                            </div>
+                                                                        <?php endif; ?>
+                                                                    </div>
+                                                                </div>
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php endwhile; ?>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-    <?php } ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
+
 
     <!-- Section Web Image -->
 
