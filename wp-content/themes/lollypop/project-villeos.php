@@ -48,7 +48,6 @@ get_header();
         display: flex;
         gap: 1rem;
     }
-/* Container for the image */
 
     .colour_title {
         font-family: "Rubik";
