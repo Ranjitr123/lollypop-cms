@@ -48,6 +48,7 @@ get_header();
         display: flex;
         gap: 1rem;
     }
+/* Container for the image */
 
     .colour_title {
         font-family: "Rubik";
@@ -292,7 +293,7 @@ get_header();
     }
 
     .defined-img {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .img-fullW {
@@ -321,11 +322,26 @@ get_header();
         height: auto;
     }
 
+    .image {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center;     /* Vertically center the image */
+    width: 100%;             /* Ensure the container takes full width */
+    height: 100%;            /* Make sure the container has a height (adjust as needed) */
+    text-align: center;      /* Center the image if it's inline */
+}
+
+/* Image styling */
+.custom-image-size {
+    width: 924px;
+    height: auto;
+}
+
     .define_desc {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 112px;
+        gap: 30px;
 
         >div:first-of-type {
             >div:last-of-type {
@@ -465,7 +481,7 @@ get_header();
     }
 
     .conclusion {
-        margin-top: 254px;
+        margin-top: 80px;
         background-color: #F7F5F3;
     }
 
@@ -608,6 +624,18 @@ get_header();
         </div>
     </section>
 
+    <!-- Section Image-->
+    <?php if (get_field('image') != ''): ?>
+    <div class="w-100 image">
+        <img class="img-project-dtl data-scroll custom-image-size"
+             src="<?php the_field('image'); ?>" 
+             alt="Image">
+    </div>
+<?php endif; ?>
+
+
+    
+
     <!-- Section  Define Description-->
 
     <section class="p-r-80 pb-0 pare-define">
@@ -674,29 +702,13 @@ get_header();
         </div>
     </section>
 
-    <!-- Emaars sections
-    <section class="p-r-80 pb-0 pare-define emaars">
-        <?php if (have_rows('emaars_digital_booking')):
-            while (have_rows('emaars_digital_booking')):
-                the_row();
-                if (have_rows('images_section')):
-                    while (have_rows('images_section')):
-                        the_row(); ?>
-                        <div class="mb-r-80 m-img img-fullW"><img class="data-scroll" src="<?php the_sub_field('image'); ?>"
-                                alt="Image"></div>
-                    <?php endwhile; endif; ?>
-            <?php endwhile;
-        endif; ?>
-    </section> -->
-
-
     <!-- Section Conclusion -->
 
 <?php if (have_rows('conclusion_2')): ?>
     <section class="conclusion-pad sec-pt">
         <div class="container conclusion">
             <div class="row">
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12">
                     <div class="col-md-10 px-0 mx-auto">
                         <div class="mb-r-80">
                             <div class="project-step">
