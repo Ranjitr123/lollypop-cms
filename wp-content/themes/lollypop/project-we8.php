@@ -184,6 +184,12 @@ get_header();
         height: auto;
         display: block;
     }
+       /* Apply iCielBC Cubano font family to all headings inside the .section-style */
+.section-style .section-heading, 
+.section-style .project-step .disc-head {
+    font-family: 'iCielBC Cubano', sans-serif;  /* Fallback to sans-serif if the font is not available */
+}
+
 </style>
 
 <main class="main" style="background: #FFFFFF;
