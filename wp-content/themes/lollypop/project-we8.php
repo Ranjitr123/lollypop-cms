@@ -109,7 +109,7 @@ get_header();
 
         p {
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 36px;
             text-align: center;
             color: #C30010;
@@ -400,17 +400,17 @@ get_header();
     <div class="w-100 main_image_3">
         <img class="img-project-dtl data-scroll"
             src="<?php the_sub_field('main_image_3'); ?>" 
-                alt="Image">
+            alt="Image">
     </div>
 <?php } ?>
 
 <!-- Main Image 4 (Centered Overlap Image) -->
 <?php if (get_sub_field('main_image_4') != '') { ?>
-    <div class="main_image_4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 280px;">
+    <div class="main_image_4" style="position: absolute; top: 49%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 300px; overflow: hidden; border-radius: 15px;">
         <img class="img-project-dtl data-scroll"
             src="<?php the_sub_field('main_image_4'); ?>" 
             alt="Image"
-            style="width: 100%; height: 100%; object-fit: cover;">
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
     </div>
 <?php } ?>
 
