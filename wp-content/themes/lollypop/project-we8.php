@@ -109,7 +109,7 @@ get_header();
 
         p {
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 36px;
             text-align: center;
             color: #C30010;
@@ -400,17 +400,17 @@ get_header();
     <div class="w-100 main_image_3">
         <img class="img-project-dtl data-scroll"
             src="<?php the_sub_field('main_image_3'); ?>" 
-                alt="Image">
+            alt="Image">
     </div>
 <?php } ?>
 
 <!-- Main Image 4 (Centered Overlap Image) -->
 <?php if (get_sub_field('main_image_4') != '') { ?>
-    <div class="main_image_4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 280px;">
+    <div class="main_image_4" style="position: absolute; top: 49%; left: 50%; transform: translate(-50%, -50%); width: 470px; height: 300px; overflow: hidden; border-radius: 15px;">
         <img class="img-project-dtl data-scroll"
             src="<?php the_sub_field('main_image_4'); ?>" 
             alt="Image"
-            style="width: 100%; height: 100%; object-fit: cover;">
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
     </div>
 <?php } ?>
 
@@ -493,35 +493,63 @@ get_header();
         </div>
     </section> -->
 
-    <?php if (have_rows('clickable_images')): ?>
-    <div class="full-width-background">
-        <div class="image-grid-container">
-            <div class="image-row">
-                <?php
-                $counter = 0;
-                while (have_rows('clickable_images')): the_row();
-                    $image = get_sub_field('image'); // This should be an array if set correctly in ACF
-                    $url = get_sub_field('url');
-                    $counter++;
+  
 
-                    if ($counter > 8) break; // Ensures no more than 8 images are displayed
-                ?>
-                    <?php if ($image && is_array($image)): ?>
-                        <div class="image-item">
-                            <a href="<?php echo esc_url($url); ?>" target="_blank">
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
-                            </a>
-                        </div>
-                    <?php endif; ?>
+   <!-- Persons Url Sections  -->
+   <section class="team-section-container" style="background-color: #C30010; padding: 40px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="team-section" style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
+                    <?php if( have_rows('team_members') ): ?>
+                        <?php while( have_rows('team_members') ): the_row(); 
+                            // Get subfields
+                            $image = get_sub_field('member_image');
+                            $name = get_sub_field('member_name');
+                            $linkedin_url = get_sub_field('linkedin_url');
+                            $linkedin_icon = get_sub_field('linkedin_icon'); // Get LinkedIn icon field as array
+                            $linkedin_link_text = get_sub_field('linkedin_link_text'); // Get LinkedIn link text field
+                        ?>
+                            <div class="team-member" style="width: calc(25% - 20px); padding: 10px; background-color: #FBEEDA; text-align: center; box-sizing: border-box; height: 400px;">
+                                <?php if( $image ): ?>
+                                    <div class="member-image" style="margin-bottom: 10px; background-color: #FDBA4D; border-radius: 10px; height: 310px; overflow: hidden;">
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                                    </div>
+                                <?php else: ?>
+                                    <div class="member-image" style="background-color: #FDBA4D; width: 100%; height: 150px; border-radius: 10px;"></div>
+                                <?php endif; ?>
 
-                    <?php if ($counter % 4 == 0): ?>
-                        </div><div class="image-row"> <!-- Start a new row after every 4 images -->
+                                <?php if( $name ): ?>
+                                    <h5 class="member-name" style="font-weight: bold; color: #C30010; margin-top: 10px; text-align: left; padding-left: 10px;"><?php echo esc_html($name); ?></h5>
+                                <?php endif; ?>
+
+                                <?php if( $linkedin_url ): ?>
+                                    <div style="display: flex; align-items: center; justify-content: left; margin-top: 5px; text-align: left; padding-left: 10px;">
+                                        <?php if( $linkedin_icon && is_array($linkedin_icon) ): ?>
+                                            <a href="<?php echo esc_url($linkedin_url); ?>" target="_blank" style="margin-right: 8px;">
+                                                <img src="<?php echo esc_url($linkedin_icon['url']); ?>" alt="LinkedIn" style="width: 16px; height: 16px; vertical-align: middle;">
+                                            </a>
+                                        <?php endif; ?>
+
+                                        <a href="<?php echo esc_url($linkedin_url); ?>" target="_blank" style="color: #000; text-decoration: underline; vertical-align: middle;">
+                                            <?php if( $linkedin_link_text ): ?>
+                                                <span style="font-size: 14px;"><?php echo esc_html($linkedin_link_text); ?></span>
+                                            <?php else: ?>
+                                                <span style="font-size: 14px;"><?php echo esc_html($name); ?></span>
+                                            <?php endif; ?>
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <p>No team members found.</p>
                     <?php endif; ?>
-                <?php endwhile; ?>
-            </div> <!-- Closing the final row -->
+                </div>
+            </div>
         </div>
     </div>
-<?php endif; ?>
+</section>
 
 
 
