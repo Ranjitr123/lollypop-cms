@@ -8,7 +8,7 @@
 
 get_header();
 ?>
-
+<link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
 <style>
     /* Banner Section */
     .heading-banner-section {
@@ -39,7 +39,7 @@ get_header();
         color: #C30010;
         padding-bottom: 56px;
         padding-top: 56px;
-        /* font-family: 'iCielBC Cubano'; */
+        font-family: 'Cubano', sans-serif; /* Updated font family */
     }
 
 
@@ -184,11 +184,7 @@ get_header();
         height: auto;
         display: block;
     }
-    /* Apply iCielBC Cubano font family to all headings inside the .section-style */
-.section-style .section-heading, 
-.section-style .project-step .disc-head {
-    font-family: 'iCielBC Cubano', sans-serif;  /* Fallback to sans-serif if the font is not available */
-}
+ 
 
 </style>
 
