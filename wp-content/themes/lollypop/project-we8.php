@@ -140,7 +140,7 @@ get_header();
     }
 
     .card-title {
-        /* font-family: 'iCielBC Cubano'; */
+        font-family: 'Cubano', sans-serif; /* Updated font family */
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400;
@@ -457,39 +457,7 @@ get_header();
             endif; ?>
         </div>
     </section>
-    <!-- Cards Section -->
-    <!-- <section class="sec-pd p-r-80">
-        <div>
-            <div class="w-100 cards-style">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <?php if (have_rows('card')):
-                        while (have_rows('card')):
-                            the_row(); ?>
-                            <div class="col">
-                                <div class="card-item">
-                                    <img class="img-project-dtl" src="<?php the_sub_field('card_image'); ?>" alt="Image">
-                                    <?php if (get_sub_field('name') != '') { ?>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><?php the_sub_field('name'); ?></h5>
-                                            <div class="d-flex">
-                                                <img style="width: 12px; margin-right: 8px;" class="img-project-dtl"
-                                                    src="<?php the_sub_field('card_icon'); ?>" alt="Image">
-                                                <a class="card-text"
-                                                    href="<?php the_sub_field('url'); ?>"><?php the_sub_field('linkedin'); ?></a>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-                                </div>
-                            </div>
-                        <?php endwhile;
-                    endif; ?>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </section> -->
-
+   
   
  <!-- Cards Section -->
  <section class="sec-pd p-r-80">
