@@ -117,8 +117,9 @@ get_header();
         }
     }
 
-    /* Cards Section */
-    .cards-style {
+     /* Cards Section */
+
+     .cards-style {
         background-color: #C30010;
         padding: 48px 84px;
     }
@@ -139,7 +140,7 @@ get_header();
     }
 
     .card-title {
-        /* font-family: 'iCielBC Cubano'; */
+        font-family: 'Cubano', sans-serif; /* Updated font family */
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400;
@@ -456,8 +457,10 @@ get_header();
             endif; ?>
         </div>
     </section>
+
+
     <!-- Cards Section -->
-    <!-- <section class="sec-pd p-r-80">
+ <section class="sec-pd p-r-80">
         <div>
             <div class="w-100 cards-style">
                 <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -487,67 +490,11 @@ get_header();
             </div>
         </div>
         </div>
-    </section> -->
- <!-- Persons Url Sections  -->
- <section class="team-section-container" style="background-color: #C30010; padding: 40px 0;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="team-section" style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
-                    <?php if( have_rows('team_members') ): ?>
-                        <?php while( have_rows('team_members') ): the_row(); 
-                            // Get subfields
-                            $image = get_sub_field('member_image');
-                            $name = get_sub_field('member_name');
-                            $linkedin_url = get_sub_field('linkedin_url');
-                            $linkedin_icon = get_sub_field('linkedin_icon'); // Get LinkedIn icon field as array
-                            $linkedin_link_text = get_sub_field('linkedin_link_text'); // Get LinkedIn link text field
-                        ?>
-                            <div class="team-member" style="width: calc(25% - 20px); padding: 10px; background-color: #FBEEDA; text-align: center; box-sizing: border-box; height: 400px;">
-                                <?php if( $image ): ?>
-                                    <div class="member-image" style="margin-bottom: 10px; background-color: #FDBA4D; border-radius: 10px; height: 310px; overflow: hidden;">
-                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                                    </div>
-                                <?php else: ?>
-                                    <div class="member-image" style="background-color: #FDBA4D; width: 100%; height: 150px; border-radius: 10px;"></div>
-                                <?php endif; ?>
-
-                                <?php if( $name ): ?>
-                                    <h5 class="member-name" style="font-weight: bold; color: #C30010; margin-top: 10px; text-align: left; padding-left: 10px;"><?php echo esc_html($name); ?></h5>
-                                <?php endif; ?>
-
-                                <?php if( $linkedin_url ): ?>
-                                    <div style="display: flex; align-items: center; justify-content: left; margin-top: 5px; text-align: left; padding-left: 10px;">
-                                        <?php if( $linkedin_icon && is_array($linkedin_icon) ): ?>
-                                            <a href="<?php echo esc_url($linkedin_url); ?>" target="_blank" style="margin-right: 8px;">
-                                                <img src="<?php echo esc_url($linkedin_icon['url']); ?>" alt="LinkedIn" style="width: 16px; height: 16px; vertical-align: middle;">
-                                            </a>
-                                        <?php endif; ?>
-
-                                        <a href="<?php echo esc_url($linkedin_url); ?>" target="_blank" style="color: #000; text-decoration: underline; vertical-align: middle;">
-                                            <?php if( $linkedin_link_text ): ?>
-                                                <span style="font-size: 14px;"><?php echo esc_html($linkedin_link_text); ?></span>
-                                            <?php else: ?>
-                                                <span style="font-size: 14px;"><?php echo esc_html($name); ?></span>
-                                            <?php endif; ?>
-                                        </a>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php else: ?>
-                        <p>No team members found.</p>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 
 
     <!-- Section Footer -->
-    <section class="sec-footer-trans" style="margin-top: 164px;">
+    <section class="sec-footer-trans" style="margin-top: 50px;">
         <div class="container z-1" style="max-width: 100%; padding: 0;">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto" style="width: 100%">
