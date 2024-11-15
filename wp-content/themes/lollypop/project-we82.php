@@ -2,8 +2,8 @@
 
 /**
  *
- *Template Name: project-we82
- *Template post type: projects
+ *Template Name: project-We8-viet
+ **@package WordPress
  **/
 
 get_header();
@@ -185,7 +185,41 @@ get_header();
         height: auto;
         display: block;
     }
- 
+    @media (max-width: 768px) {  
+        .heading-banner-section {
+        font-size: 48px;
+        line-height: 56px;
+    }
+        .section-heading {
+        font-size: 62px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+      
+    }
+    .branding-detail {
+        
+        p {
+            font-size: 20px;
+            width: 70%;
+        }
+    }
+    .main_image_4{
+        top: 46% !important;
+        width:220px !important;
+        height:140px !important;
+    }
+   
+    }
+    @media (max-width: 550px) {  
+     
+    .main_image_4{
+        top: 46% !important;
+        width:200px !important;
+        height:130px !important;
+    }
+   
+    }
+
 
 </style>
 
@@ -237,7 +271,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                    <div class="col-md-10 px-0 mx-auto">
+                    <div class="col-md-10 px-3 mx-auto">
                         <div>
                             <div class="project-step">
                                 <?php if (have_rows('brief_descriptions')):
@@ -268,7 +302,7 @@ get_header();
         </div>
     </section>
 
-    <!-- Start of Sections -->
+    <!-- Start of persona Sections -->
     <section class="section-style">
         <div class="container">
             <?php if (have_rows('main_content')):
@@ -290,7 +324,7 @@ get_header();
                     <?php if (get_sub_field('title_1') != ''): ?>
                         <div class="row">
                             <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                                <div class="col-md-10 px-0 mx-auto">
+                                <div class="col-md-10 px-4 mx-auto">
                                     <div>
                                         <div class="project-step">
                                             <div class="brief-item row">
@@ -327,7 +361,7 @@ get_header();
                     <?php if (get_sub_field('title_2') != '') { ?>
                         <div class="row">
                             <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                                <div class="col-md-10 px-0 mx-auto">
+                                <div class="col-md-10 px-4 mx-auto">
                                     <div>
                                         <div class="project-step">
                                             <div class="brief-item row">
@@ -367,7 +401,7 @@ get_header();
                     <?php if (get_sub_field('title_3') != '') { ?>
                         <div class="row">
                             <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                                <div class="col-md-10 px-0 mx-auto">
+                                <div class="col-md-10 px-4 mx-auto">
                                     <div>
                                         <div class="project-step">
                                             <div class="brief-item row">
@@ -416,7 +450,7 @@ get_header();
                     <?php if (get_sub_field('title_4') != '') { ?>
                         <div class="row">
                             <div class="col-12 col-md-11 col-lg-10 mx-auto">
-                                <div class="col-md-10 px-0 mx-auto">
+                                <div class="col-md-10 px-4 mx-auto">
                                     <div>
                                         <div class="project-step">
                                             <div class="brief-item row">
