@@ -9,6 +9,8 @@
 get_header();
 ?>
 <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bt-beau-sans" rel="stylesheet">
+
 <style>
     /* Banner Section */
     .heading-banner-section {
@@ -140,23 +142,23 @@ get_header();
     }
 
     .card-title {
-        font-family: 'Cubano', sans-serif; /* Updated font family */
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 20px;
-        text-align: left;
-        color: #C30010;
+        font-family: 'Cubano', sans-serif !important; 
+        text-transform: uppercase !important;
+        font-size: 20px !important;
+        font-weight: 400 !important; 
+        line-height: 20px !important;
+        text-align: left !important;
+        color: #C30010 !important;
     }
 
     .card-text {
-        font-family: BT Beau Sans;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 12px;
-        text-align: left;
-        color: #00000099;
-        text-decoration: underline;
+        font-family: BT Beau Sans !important;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 12px !important;
+        text-align: left !important;
+        color: #00000099 !important;
+        text-decoration: underline !important;
     }
     .full-width-background {
         background-color: #C30010;
@@ -184,6 +186,20 @@ get_header();
         width: 100%;
         height: auto;
         display: block;
+    }
+       .video-container {
+        position: relative;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     @media (max-width: 768px) {  
         .heading-banner-section {
@@ -229,44 +245,65 @@ get_header();
 ;">
     <!-- Project Info & Banner Video -->
     <section class="sec-pd sec-bnr p-r-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="mb-r-80 col-md-12 col-lg-12 px-0"> <span
-                            class="d-block fnt-14 text-capitalize mb-2 clr-default"><?php echo the_field('company_name'); ?></span>
-                        <h1 class="heading-banner-section px-md-0">
-                            <?php the_title(); ?>
-                        </h1>
-                        <p class="short-desc-banner-section"><?php echo the_field('short_descriptions'); ?></p>
-                        <div class="project-type">
-                            <?php if (have_rows('tags')):
-                                while (have_rows('tags')):
-                                    the_row(); ?>
-                                    <span class="fnt-14 clr-black354"><?php echo the_sub_field('list'); ?></span>
-                                <?php endwhile;
-                            endif; ?>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-r-80 col-md-12 col-lg-12 px-0">
+                    <span class="d-block fnt-14 text-capitalize mb-2 clr-default">
+                        <?php echo the_field('company_name'); ?>
+                    </span>
+                    <h1 class="heading-banner-section px-md-0">
+                        <?php the_title(); ?>
+                    </h1>
+                    <p class="short-desc-banner-section">
+                        <?php echo the_field('short_descriptions'); ?>
+                    </p>
+                    <div class="project-type">
+                        <?php if (have_rows('tags')):
+                            while (have_rows('tags')):
+                                the_row(); ?>
+                                <span class="fnt-14 clr-black354">
+                                    <?php echo the_sub_field('list'); ?>
+                                </span>
+                            <?php endwhile;
+                        endif; ?>
                     </div>
                 </div>
             </div>
-            <?php $bannerVideo = get_field('banner_video_link'); ?>
-            <?php if ($bannerVideo != '') { ?>
-                <div class="reveal-project">
-                    <div class="play-video-on-scroll">
-                        <div id="play2-out" style="display:none">
-                            <div id="play2" data-plyr-provider="youtube"
-                                data-plyr-embed-id="<?php the_field('banner_video_link'); ?>"></div>
-                        </div>
-                        <video class="playvid" autoplay muted loop playsinline
-                            embed-id="<?php the_field('banner_video_link'); ?>"
-                            provider="<?php the_field('banner_video_provider'); ?>"
-                            poster="<?php the_field('banner_video_poster'); ?>"></video>
-                        </video>
+        </div>
+        <?php 
+        // Get the full YouTube URL from ACF
+        $bannerVideoURL = get_field('banner_video_link');
+        
+        // Parse the video ID from the URL
+        if ($bannerVideoURL) {
+            $parsed_url = parse_url($bannerVideoURL);
+            parse_str($parsed_url['query'], $query_params);
+            $video_id = $query_params['v']; // Extracts 'k3YGof0b9DY' from the URL
+        }
+        ?>
+        <?php if (!empty($video_id)) { ?>
+            <div class="reveal-project">
+                <div class="play-video-on-scroll">
+                    <!-- Responsive video container -->
+                    <div class="video-container">
+                        <iframe 
+                            class="playvid" 
+                            src="https://www.youtube.com/embed/<?php echo $video_id; ?>?autoplay=1&mute=1&loop=1&playlist=<?php echo $video_id; ?>&controls=0" 
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
-            <?php } ?>
-        </div>
-    </section>
+            </div>
+        <?php } ?>
+    </div>
+</section>
+
+
+
+
 
     <!-- Brief Description -->
     <section class="p-r-80 pb-0 pare-define">
