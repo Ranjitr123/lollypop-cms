@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 'Off');
+ini_set('display_errors', 0);
 /**
  Template Name: Thank You
  */
