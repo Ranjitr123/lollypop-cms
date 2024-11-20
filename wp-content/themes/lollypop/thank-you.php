@@ -23,7 +23,7 @@ require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.ph
 
 require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
 
-if ($_COOKIE['email'] !="" && $_COOKIE['firstname'] !="") {
+if ($_COOKIE && $_COOKIE['email'] && $_COOKIE['email'] !="" && $_COOKIE['firstname'] !="") {
 	$mailReply = new PHPMailer();
 	$mailReply->IsSMTP();
 
