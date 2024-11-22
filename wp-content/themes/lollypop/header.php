@@ -167,10 +167,11 @@
         gtag('config', 'UA-42458763-1');
     </script>
     <!-- End Google Tag Manager -->
+     
 
     <script>
         var menu = document.getElementById('drop-menu');
-
+if(menu) {
         // Add an event listener to the document
         document.addEventListener('click', function(event) {
 
@@ -180,6 +181,7 @@
                 menu.style.display = 'none';
             }
         });
+    }
     </script>
 
     <!-- translate button end -->
