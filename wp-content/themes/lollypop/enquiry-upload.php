@@ -105,7 +105,7 @@ if ($greater_data == "2") {
 			$mailReply = new PHPMailer();
 			$mailReply->IsSMTP();
 
-			$mailReply->SMTPDebug = 1;
+			$mailReply->SMTPDebug = 0;
 			$mailReply->SMTPAuth = true;
 			$mailReply->SMTPSecure = "tls";
 			$mailReply->Port = 587;

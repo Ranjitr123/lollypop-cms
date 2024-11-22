@@ -125,8 +125,8 @@ a.fnt-30.fnt-800.link-insta {
    <div class="js-page-scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/img/pg-scroll.svg" alt="Image"></div>
 		
 	<!-- Start of HubSpot Embed Code -->
-	<!-- <script rel="preconnect" type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script> -->
-	<!-- End of HubSpot Embed Code -->
+	<script rel="preconnect" type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5176965.js"></script> -->
+	<!-- End of HubSpot Embed Code
 
     <script rel="preconnect" defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script rel="preconnect" defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -760,11 +760,12 @@ $('body').on('click', '.tab-head-item1__name', function() {
 			    	        	        		      			          }, 150);
 			    	        	        		      			          		});
 			    	        	        		      			          		</script>
-<!---------dynamic schema------------------>
+<!---------dynamic schema------------------> 
+
 	<?php if( get_field('each_page_schema') ): ?>
 		<?php the_field('each_page_schema')?>
 	<?php endif; ?>
-<?php /*
+
 <script type="text/javascript">
     _linkedin_partner_id = "2938441";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -782,7 +783,7 @@ $('body').on('click', '.tab-head-item1__name', function() {
 <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2938441&fmt=gif" />
 </noscript>
-*/?>
+
  <?php wp_footer(); ?>
 
 </body>
