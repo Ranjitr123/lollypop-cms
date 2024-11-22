@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 'off');
+ini_set('display_errors', 'Off');
 /**
  * * Template Name: Enquiry Upload
  * */
@@ -10,16 +10,11 @@ use PHPMailer\PHPMailer\Exception;
 require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/Exception.php';
 require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/PHPMailer.php';
 require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.php';
+
+
 require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
-
-// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\Exception.php';
-// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\PHPMailer.php';
-// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\SMTP.php';
-// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\vendor\autoload.php';
-
 $file_name = "";
 $maxsize = 2097152;
-
 if ($_FILES['attachment']['name'] != '') {
 	$file_size = $_FILES['attachment']['size'];
 	$file_tmp = $_FILES['attachment']['tmp_name'];
@@ -50,7 +45,7 @@ if ($greater_data == "2") {
 		$mail = new PHPMailer();
 		$mail->IsSMTP();
 
-		$mail->SMTPDebug = 1;
+		$mail->SMTPDebug = 0;
 		$mail->SMTPAuth = true;
 		$mail->SMTPSecure = "tls";
 		$mail->Port = 587;
@@ -71,12 +66,10 @@ if ($greater_data == "2") {
 		$mail->addAddress('manoj@terralogic.com','Manoj');
 		$mail->addAddress('sukshith.bs@lollypop.design','Sukshith');
 		$mail->addAddress('tony.nguyen@terralogic.com', 'Tony Nguyen');
-		$mail->addAddress('rajeeve@terralogic.com', 'Rajeeve Krishnan');
-		$mail->addAddress('charan.n@lollypop.design','Charan Babu N');
-					
-        //testing mails
-		//$mail->addAddress('ranjit.r@terralogic.com','Ranjit Rautaray');
 
+		//testing mails
+		//$mail->addAddress('b.bharath@terralogic.com','Bharath');
+        
 		$mail->SetFrom("hello@lollypop.design", "Lollypop Design");
 		$mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
 		if ($_FILES['attachment']['name'] != '' && !empty($_FILES['attachment']['name'])) {
@@ -93,8 +86,6 @@ if ($greater_data == "2") {
 			$_POST['phone'] .
 			'</b></span><br><br><span>Description : </span> <span><b>' .
 			$_POST['description'] .
-			'</b></span><br><br><span>Company : </span> <span><b>' .
-			$_POST['company_name'] .
 			'</b></span><br><br></div></div></div></div></body></html>';
 
 		$mail->MsgHTML($content);
@@ -124,7 +115,7 @@ if ($greater_data == "2") {
 				'<br><br> Thank you for considering us as your partner in design. We are looking forward to collaborating with you and ideating on the possibilities of crafting a seamless experience.</td></tr><tr><td align="left" style="width:100%;font-size:16px;padding: 8px 0;font-weight:400;line-height:24px;color:#333333;">We usually respond to all queries within 2 working days, emergencies notwithstanding. Rest assured, we will get back to you at the earliest.</td></tr><tr><table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 20px 0 0 0;"><tbody><tr><td align="center" style="padding-bottom: 16px;"><a href="#"><div class="" style="width:180px;height:70px;"><img style="width:100%" src="https://lollypop.design/wp-content/uploads/2022/03/lollypop-terralogic.png"/> <div></a></td></tr></tbody></table></tr><tr><td align="left" style="width:100%;"><table border="0" cellspacing="0" cellpadding="0" width="80%" align="center"><tbody><tr><td align="center"><a style="text-align:center;font-size:12px;color:#454545;line-height:29px;text-decoration:none;font-weight:bold" href="https://www.linkedin.com/company/lollypop-studio/" title="Lollypop on Linkedin" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.linkedin.com/company/lollypop-ui-ux-studio&amp;source=gmail&amp;ust=1644058795127000&amp;usg=AOvVaw1o0xSUL9Tl5mMYfcyBZMIh">LinkedIn</a></td><td align="center"><a style="text-align:center;font-size:12px;color:#454545;line-height:29px;text-decoration:none;font-weight:bold" href="https://twitter.com/lollypop_studio" title="Lollypop on Linkedin" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/lollypop_studio&amp;source=gmail&amp;ust=1644058795127000&amp;usg=AOvVaw1wplxBnSJhbnimcuWY25Xz">Twitter</a></td><td align="center"><a style="text-align:center;font-size:12px;color:#454545;line-height:29px;text-decoration:none;font-weight:bold" href="https://www.instagram.com/lollypop.design/" title="Lollypop on Linkedin" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/lollypop_design/&amp;source=gmail&amp;ust=1644058795127000&amp;usg=AOvVaw0ERXoRM-zappPtEM1HKoL0">Instagram</a></td><td align="center"><a style="text-align:center;font-size:12px;color:#454545;line-height:29px;text-decoration:none;font-weight:bold" href="https://www.facebook.com/lollypop.india" title="Lollypop on Linkedin" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/lollypop.india&amp;source=gmail&amp;ust=1644058795127000&amp;usg=AOvVaw2EiR7GPUt8GX91YE2cNrob">Facebook</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></body></html>';
 			$mailReply->MsgHTML($contentReply);
 
-			$company = $_POST['company_name'] || '';
+			$company = '';
 			$fname = $_POST['full_name'];
 			$phone = $_POST['phone'];
 			$email = $_POST['email'];

@@ -255,50 +255,19 @@ function setCookie(name,value,days) {
        $(function() {
          $("form#enquiry-form").submit(function(e) {
 		 e.preventDefault();	 
-         var data = new FormData($(this)[0]);
+             var data = new FormData($(this)[0]);
 	     var file = $('input[type="file"]').val();
 	     var email = $('input[type="email"]').val();
 	     var description = $('textarea[name="description"]').val();
 	     var fullname = $('input[name="full_name"]').val();
 	     var phone = $('input[name="phone"]').val();
-		 var company= $('input[name="company_name"]').val()
-	     if(email !='' && description !='' && fullname !='' && phone !='' && company !=''){
+	     if(email !='' && description !='' && fullname !='' && phone !=''){
+		     
 		     if($(".js-submit").prop("disabled", "disabled")){
 		     	$(".js-submit").addClass("disabled");
 		     } 
-
-			const match = fullname.match(/^[^ ]+|.+/g);
-
-			const firstName = match[0]; 
-			const lastName = match[1]?.trim(); 
 					$(".format_message").hide();
 					$("#pageloader").fadeIn();
-					var dataObject = {
-							"first_name": firstName,
-							"last_name": lastName,
-							"email": email,
-							"company": company,
-							"description": description,
-							"phone": phone,
-							"oid": "00DKj000008Pct2",
-							"retURL": "http://",
-							"submit": "Submit"
-						 }
-						 var serializedData = $.param(dataObject);
-					$.ajax({
-						 type: "POST",
-						 url: "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKj000008Pct2",
-						 data: serializedData,
-						 processData: false,
-						 contentType: 'application/x-www-form-urlencoded',
-						 cache: false,
-						 beforeSend: function(){
-						//$('.js-submit').html("Please wait. We are submitting your query");
-						 },
-						 success: function(data) {
-						 }
-						})
-
 					$.ajax({
 						 type: "POST",
 						 url: "<?php echo site_url(); ?>/enquiry-uploads/",
@@ -760,9 +729,8 @@ $('body').on('click', '.tab-head-item1__name', function() {
 			    	        	        		      			          }, 150);
 			    	        	        		      			          		});
 			    	        	        		      			          		</script>
-<!---------dynamic schema------------------> 
-
-<?php if( get_field('each_page_schema') ): ?>
+<!---------dynamic schema------------------>
+	<?php if( get_field('each_page_schema') ): ?>
 		<?php the_field('each_page_schema')?>
 	<?php endif; ?>
 
@@ -783,9 +751,7 @@ $('body').on('click', '.tab-head-item1__name', function() {
 <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2938441&fmt=gif" />
 </noscript>
-
  <?php wp_footer(); ?>
-
 
 </body>
 
