@@ -24,6 +24,11 @@ require '/var/www/html/lollypop/wp-content/themes/lollypop/PHPMailer/src/SMTP.ph
 
 require '/var/www/html/lollypop/wp-content/themes/lollypop/vendor/autoload.php';
 
+// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\Exception.php';
+// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\PHPMailer.php';
+// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\PHPMailer\src\SMTP.php';
+// require 'C:\xampp\htdocs\lollypop-cms\wp-content\themes\lollypop\vendor\autoload.php';
+
 if ($_COOKIE && $_COOKIE['email'] && $_COOKIE['email'] !="" && $_COOKIE['firstname'] !="") {
 	$mailReply = new PHPMailer();
 	$mailReply->IsSMTP();

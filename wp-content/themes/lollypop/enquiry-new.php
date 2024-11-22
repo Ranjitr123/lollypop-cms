@@ -12,6 +12,7 @@
  *   */
 
 get_header();
+
 ?>
 
 <style>
@@ -301,6 +302,24 @@ color: red;
                                   <div class="bx"></div>
                                 </div>
                               </div>
+                              <div class="col-12 col-md-6 mb-fld">
+                                <div class="input">
+                                  <input
+                                    class="in-animate"
+                                    type="text"
+                                    name="company_name"
+                                    id="company_name"
+                                    placeholder="Company Name"
+                                    required
+                                    data-parsley-error-message="Enter Your Company Name"
+                                  /><span class="input__require fnt-14"
+                                    >Important</span
+                                  >
+                                  <span class="focus-border"><i></i></span>
+                                  <div class="bx"></div>
+                                </div>
+                              </div>
+                            </div>
                             </div>
                             <div class="row">
                               <div class="col-12 col-md-6 mb-fld mb-md-0">
