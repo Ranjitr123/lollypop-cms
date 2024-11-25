@@ -292,7 +292,7 @@ color: red;
                                     type="text"
                                     name="full_name"
                                     id="full_name"
-                                    placeholder="Your Name"
+                                    placeholder="Your Full Name"
                                     required
                                     data-parsley-error-message="Enter Your Name"
                                   /><span class="input__require fnt-14"
