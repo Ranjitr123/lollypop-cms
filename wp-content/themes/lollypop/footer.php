@@ -262,7 +262,31 @@ function setCookie(name,value,days) {
 	     var fullname = $('input[name="full_name"]').val();
 	     var phone = $('input[name="phone"]').val();
 		 var company= $('input[name="company_name"]').val()
-	     if(email !='' && description !='' && fullname !='' && phone !='' && company !=''){
+		 var leadSourceDomain = ""; // Initialize lead source domain
+		 
+      // Extract domain name from the email
+if (email) {
+    const emailParts = email.split('@');
+    if (emailParts.length === 2) {
+        let domainName = emailParts[1];
+		leadSourceDomain = "www.lollypop.design";
+        
+        // Check if the domain name is gmail.com, outlook.com, or yahoo.com
+        if (['gmail.com', 'outlook.com', 'yahoo.com'].includes(domainName)) {
+            domainName = 'Not provided'; // Set to 'Not provided' for specific domains
+        }
+        
+        // Set the domain name (or 'Not provided') as the company name
+        company = domainName;
+        
+        // Update the input field with the company name
+        $('input[name="company_name"]').val(company);
+        
+        // Log the domain name (or 'Not provided') for debugging
+        // alert(`Extracted Domain Name: ${company}`);
+    }
+}
+	     if(email !='' && description !='' && fullname !='' && phone !='' ){
 		     if($(".js-submit").prop("disabled", "disabled")){
 		     	$(".js-submit").addClass("disabled");
 		     } 
@@ -282,6 +306,7 @@ function setCookie(name,value,days) {
 							"phone": phone,
 							"oid": "00DKj000008Pct2",
 							"retURL": "http://",
+							"00NKj00000ij80x": leadSourceDomain, // Add the Lead Source Domain field
 							"submit": "Submit"
 						 }
 						 var serializedData = $.param(dataObject);
@@ -296,6 +321,7 @@ function setCookie(name,value,days) {
 						//$('.js-submit').html("Please wait. We are submitting your query");
 						 },
 						 success: function(data) {
+							
 						 }
 						})
 

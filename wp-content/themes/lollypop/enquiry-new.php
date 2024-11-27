@@ -302,7 +302,8 @@ color: red;
                                   <div class="bx"></div>
                                 </div>
                               </div>
-                              <div class="col-12 col-md-6 mb-fld">
+                              
+                              <!-- <div class="col-12 col-md-6 mb-fld">
                                 <div class="input">
                                   <input
                                     class="in-animate"
@@ -318,7 +319,7 @@ color: red;
                                   <span class="focus-border"><i></i></span>
                                   <div class="bx"></div>
                                 </div>
-                              </div>
+                              </div> -->
                             </div>
                             </div>
                             <div class="row">

@@ -75,7 +75,7 @@ if ($greater_data == "2") {
 		$mail->addAddress('charan.n@lollypop.design','Charan Babu N');
 					
         //testing mails
-		//$mail->addAddress('ranjit.r@terralogic.com','Ranjit Rautaray');
+		// $mail->addAddress('ranjit.r@terralogic.com','Ranjit Rautaray');
 
 		$mail->SetFrom("hello@lollypop.design", "Lollypop Design");
 		$mail->AddReplyTo("hello@lollypop.design", "Lollypop Design");
@@ -85,18 +85,19 @@ if ($greater_data == "2") {
 
 		$mail->Subject = "New Enquiry " . $_POST['full_name'] . "";
 		$content .=
-			'<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{background: url(https://lollypop.design/lollypop-logo.PNG) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><div id=ample_service_widget-2 class="widget widget_service_block main-div-padding" style=background-color:#f5f5f5;padding:40px><div class="clearfix white-bg-align" style=background-color:#fff><div class=services-header style="text-align:center;padding-top:30px;"><a href=#><div class="asdjhdagsd"></div></a></div><div class="services-content clearfix"><div class=inner-text style="padding:40px 60px"><h2>Yay!! We received a new enquiry.</h2><span>Full Name : </span> <span><b>' .
-			$_POST['full_name'] .
-			'</b></span><br><br><span>Email : </span> <span><b>' .
-			$_POST['email'] .
-			'</b></span><br><br><span>Phone Number: </span> <span><b>' .
-			$_POST['phone'] .
-			'</b></span><br><br><span>Description : </span> <span><b>' .
-			$_POST['description'] .
-			'</b></span><br><br><span>Company : </span> <span><b>' .
-			$_POST['company_name'] .
-			'</b></span><br><br></div></div></div></div></body></html>';
-
+		'<html><head><style>@media screen and (max-width:768px){.white-bg-align{width:100%!important;margin:0!important}.inner-text{padding:30px!important}}.asdjhdagsd{background: url(https://lollypop.design/lollypop-logo.PNG) no-repeat center center;background-size: contain;padding:40px;}</style></head><body><div id=ample_service_widget-2 class="widget widget_service_block main-div-padding" style=background-color:#f5f5f5;padding:40px><div class="clearfix white-bg-align" style=background-color:#fff><div class=services-header style="text-align:center;padding-top:30px;"><a href=#><div class="asdjhdagsd"></div></a></div><div class="services-content clearfix"><div class=inner-text style="padding:40px 60px"><h2>Yay!! We received a new enquiry.</h2><span>Full Name : </span> <span><b>' . 
+		$_POST['full_name'] . 
+		'</b></span><br><br><span>Email : </span> <span><b>' . 
+		$_POST['email'] . 
+		'</b></span><br><br><span>Phone Number: </span> <span><b>' . 
+		$_POST['phone'] . 
+		'</b></span><br><br><span>Description : </span> <span><b>' . 
+		$_POST['description'] . 
+		'</b></span><br><br><span>Company : </span> <span><b>' . 
+		(isset($_POST['email']) && strpos($_POST['email'], '@') !== false ? 
+			(in_array(explode('@', $_POST['email'])[1], ['gmail.com', 'outlook.com', 'yahoo.com']) ? 'Not provided' : explode('@', $_POST['email'])[1]) 
+			: 'Invalid email address') . 
+		'</b></span><br><br></div></div></div></div></body></html>';
 		$mail->MsgHTML($content);
 		if (!$mail->Send()) {
 			//echo "False";
